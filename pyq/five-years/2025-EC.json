@@ -130,7 +130,13 @@
       "imagePath": "crops/2025-EC/Q11.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 10,
-      "imageEndPage": 11
+      "imageEndPage": 11,
+      "subject": "Engineering Mathematics",
+      "topic": "Linear Algebra",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.11 – Q.35 Carry ONE mark Each Q.11 Consider the matrix 𝐴 below: 2 3 4 5 0 6 7 8 𝐴= [ ] 0 0 𝛼 𝛽 0 0 0 𝛾 For which of the following combinations of 𝛼, 𝛽, and 𝛾, is the rank of 𝐴 at least three? (i) 𝛼= 0 and 𝛽= 𝛾≠0. (ii) 𝛼= 𝛽= 𝛾= 0. (iii) 𝛽= 𝛾= 0 and 𝛼≠0. (iv) 𝛼= 𝛽= 𝛾≠0. (A) Only (i), (iii), and (iv) (B) Only (iv) (C) Only (ii) (D) Only (i) and (iii) Organizing Institute: IIT Roorkee Page 10 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 12,
@@ -145,7 +151,13 @@
       "imagePath": "crops/2025-EC/Q12.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 11,
-      "imageEndPage": 12
+      "imageEndPage": 12,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.12 Consider the following series: ∞ 1 (i) ∑ 𝑛=1 √𝑛 ∞ 1 (ii) ∑ 𝑛=1 𝑛(𝑛+1) ∞ 1 (iii) ∑ 𝑛=1 𝑛! Choose the correct option. (A) Only (ii) converges (B) Only (ii) and (iii) converge (C) Only (iii) converges (D) All three converge Organizing Institute: IIT Roorkee Page 11 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 13,
@@ -160,7 +172,13 @@
       "imagePath": "crops/2025-EC/Q13.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 12,
-      "imageEndPage": 13
+      "imageEndPage": 13,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.13 A pot contains two red balls and two blue balls. Two balls are drawn from this pot randomly without replacement. What is the probability that the two balls drawn have different colours? (A) 2⁄ 3 (B) 1⁄ 3 (C) 1⁄ 2 (D) 1 Organizing Institute: IIT Roorkee Page 12 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 14,
@@ -175,7 +193,13 @@
       "imagePath": "crops/2025-EC/Q14.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 13,
-      "imageEndPage": 14
+      "imageEndPage": 14,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.14 Consider a frequency-modulated (FM) signal 𝑓(𝑡) = 𝐴𝑐 cos(2𝜋𝑓𝑐𝑡+ 3 sin(2𝜋𝑓1𝑡) + 4 sin(6𝜋𝑓1𝑡)), where 𝐴𝑐 and 𝑓𝑐 are, respectively, the amplitude and frequency (in Hz) of the carrier waveform. The frequency 𝑓1 is in Hz, and assume that 𝑓𝑐> 100𝑓1. The peak frequency deviation of the FM signal in Hz is _______. (A) 15𝑓1 (B) 12𝑓1 (C) 4𝑓1 (D) 2𝑓1 Organizing Institute: IIT Roorkee Page 13 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 15,
@@ -190,7 +214,13 @@
       "imagePath": "crops/2025-EC/Q15.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 14,
-      "imageEndPage": 15
+      "imageEndPage": 15,
+      "subject": "Communication Systems",
+      "topic": "Information Theory",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 1,
+      "sourceExtract": "Q.15 Consider an additive white Gaussian noise (AWGN) channel with bandwidth 𝑊 𝑁0 and noise power spectral density . Let 𝑃𝑎𝑣 denote the average transmit power 2 constraint. Which one of the following plots illustrates the dependence of the channel capacity 𝐶 on the bandwidth 𝑊 (keeping 𝑃𝑎𝑣 and 𝑁0 fixed)? (A) (B) (C) (D) Organizing Institute: IIT Roorkee Page 14 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 16,
@@ -205,7 +235,13 @@
       "imagePath": "crops/2025-EC/Q16.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 15,
-      "imageEndPage": 16
+      "imageEndPage": 16,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.16 The Nyquist plot of a system is given in the figure below. Let 𝜔𝑃, 𝜔𝑄, 𝜔𝑅, and 𝜔𝑆 be the positive frequencies at the points 𝑷, 𝑸, 𝑹, and 𝑺, respectively. Which one of the following statements is TRUE? (A) 𝜔𝑆 is the gain crossover frequency and 𝜔𝑃 is the phase crossover frequency (B) 𝜔𝑄 is the gain crossover frequency and 𝜔𝑅 is the phase crossover frequency (C) 𝜔𝑄 is the gain crossover frequency and 𝜔𝑆 is the phase crossover frequency (D) 𝜔𝑆 is the gain crossover frequency and 𝜔𝑄 is the phase crossover frequency Organizing Institute: IIT Roorkee Page 15 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 17,
@@ -220,7 +256,13 @@
       "imagePath": "crops/2025-EC/Q17.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 16,
-      "imageEndPage": 17
+      "imageEndPage": 17,
+      "subject": "Signals & Systems",
+      "topic": "LTI Systems and Sampling",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.17 Consider the discrete-time system below with input 𝑥[𝑛] and output 𝑦[𝑛]. In the figure, ℎ1[𝑛] and ℎ2[𝑛] denote the impulse responses of LTI Subsystems 1 and 2, respectively. Also, 𝛿[𝑛] is the unit impulse, and 𝑏> 0. Assuming ℎ2[𝑛] ≠𝛿[𝑛], the overall system (denoted by the dashed box) is _______. (A) linear and time invariant (B) linear and time variant (C) nonlinear and time invariant (D) nonlinear and time variant Organizing Institute: IIT Roorkee Page 16 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 18,
@@ -235,7 +277,13 @@
       "imagePath": "crops/2025-EC/Q18.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 17,
-      "imageEndPage": 18
+      "imageEndPage": 18,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.18 Consider a continuous-time, real-valued signal 𝑓(𝑡) whose Fourier transform ∞ 𝐹(𝜔) = ∫ 𝑓(𝑡) exp(−𝑗 𝜔𝑡) 𝑑𝑡 exists. −∞ Which one of the following statements is always TRUE? (A) ∞ |𝐹(𝜔)| ≤ ∫ |𝑓(𝑡)| 𝑑𝑡 −∞ (B) ∞ |𝐹(𝜔)| > ∫ |𝑓(𝑡)| 𝑑𝑡 −∞ (C) ∞ |𝐹(𝜔)| ≤ ∫ 𝑓(𝑡) 𝑑𝑡 −∞ (D) ∞ |𝐹(𝜔)| ≥ ∫ 𝑓(𝑡) 𝑑𝑡 −∞ Organizing Institute: IIT Roorkee Page 17 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 19,
@@ -250,7 +298,13 @@
       "imagePath": "crops/2025-EC/Q19.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 18,
-      "imageEndPage": 19
+      "imageEndPage": 19,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.19 Consider a part of an electrical network as shown below. Some node voltages, and the current flowing through the 3Ω resistor are as indicated. The voltage (in Volts) at node 𝑋 is ______. (A) 20⁄ 3 (B) 32⁄ 3 (C) 22⁄ 3 (D) 2⁄ 3 Organizing Institute: IIT Roorkee Page 18 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 20,
@@ -265,7 +319,13 @@
       "imagePath": "crops/2025-EC/Q20.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 19,
-      "imageEndPage": 20
+      "imageEndPage": 20,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.20 Let 𝑖𝐶, 𝑖𝐿, and 𝑖𝑅 be the currents flowing through the capacitor, inductor, and resistor, respectively, in the circuit given below. The AC admittances are given in Siemens (S). Which one of the following is TRUE? (A) 𝑖𝐶= 0.25∠180° A, 𝑖𝐿= 0.1∠0° A, 𝑖𝑅= 0.2∠90° A (B) 𝑖𝐶= 4∠180° A, 𝑖𝐿= 10∠0° A, 𝑖𝑅= 5∠90° A (C) 𝑖𝐶= 0.25∠270° A, 𝑖𝐿= 0.1∠90° A, 𝑖𝑅= 0.2∠90° A (D) 𝑖𝐶= 4∠90° A, 𝑖𝐿= 10∠270° A, 𝑖𝑅= 5∠0° A Organizing Institute: IIT Roorkee Page 19 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 21,
@@ -280,7 +340,13 @@
       "imagePath": "crops/2025-EC/Q21.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 20,
-      "imageEndPage": 21
+      "imageEndPage": 21,
+      "subject": "Analog Electronics",
+      "topic": "Transistor Amplifiers",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.21 A simplified small-signal equivalent circuit of a BJT-based amplifier is given below. The small-signal voltage gain vo/vs (in V/V) is ___________. (A) −𝛽RL RS + rπ (B) +𝛽RL RS (C) −𝛽RL RS (D) +𝛽RL RS + rπ Organizing Institute: IIT Roorkee Page 20 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 22,
@@ -295,7 +361,13 @@
       "imagePath": "crops/2025-EC/Q22.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 21,
-      "imageEndPage": 22
+      "imageEndPage": 22,
+      "subject": "Analog Electronics",
+      "topic": "Transistor Amplifiers",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.22 The ideal BJT in the circuit given below is biased in the active region with a 𝛽 of 100. If 𝐼𝐵 is 10 µA, then 𝑉𝐶𝐸 (in Volts, rounded off to two decimal places) is _______ . (A) 4.95 (B) 3.03 (C) 1.92 (D) 3.73 Organizing Institute: IIT Roorkee Page 21 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 23,
@@ -310,7 +382,13 @@
       "imagePath": "crops/2025-EC/Q23.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 22,
-      "imageEndPage": 23
+      "imageEndPage": 23,
+      "subject": "Digital Electronics",
+      "topic": "Combinational and Sequential Logic",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 15,
+      "sourceExtract": "Q.23 A 3-input majority logic gate has inputs 𝑋, 𝑌, and 𝑍. The output 𝐹 of the gate is logic ‘1’ if two or more of the inputs are logic ‘1’. The output 𝐹 is logic ‘0’ if two or more of the inputs are logic ‘0’. Which one of the following options is a Boolean expression of the output 𝐹? (A) 𝑋𝑌+ 𝑌𝑍+ 𝑍𝑋 (B) 𝑋⊕𝑌⊕𝑍 (C) 𝑋+ 𝑌+ 𝑍 (D) 𝑋𝑌𝑍 Organizing Institute: IIT Roorkee Page 22 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 24,
@@ -325,7 +403,13 @@
       "imagePath": "crops/2025-EC/Q24.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 23,
-      "imageEndPage": 24
+      "imageEndPage": 24,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.24 A full adder and an XOR gate are used to design a digital circuit with inputs X, Y, and Z, and output F, as shown below. The input Z is connected to the carry-in input of the full adder. If the input Z is set to logic ‘1’, then the circuit functions as ________ with X and Y as inputs. (A) an adder (B) a subtractor (C) a multiplier (D) a binary to Gray code converter Organizing Institute: IIT Roorkee Page 23 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 25,
@@ -340,7 +424,13 @@
       "imagePath": "crops/2025-EC/Q25.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 24,
-      "imageEndPage": 25
+      "imageEndPage": 25,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.25 Consider the function 𝑓: ℝ→ℝ, defined as 𝑓(𝑥) = 2𝑥3 −3𝑥2 −12𝑥+ 1. Which of the following statements is/are correct? (Here, ℝ is the set of real numbers.) (A) 𝑓 has no global maximizer (B) 𝑓 has no global minimizer (C) 𝑥= −1 is a local minimizer of 𝑓 (D) 𝑥= 2 is a local maximizer of 𝑓 Organizing Institute: IIT Roorkee Page 24 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 26,
@@ -355,7 +445,13 @@
       "imagePath": "crops/2025-EC/Q26.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 25,
-      "imageEndPage": 26
+      "imageEndPage": 26,
+      "subject": "Control Systems",
+      "topic": "Control Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 16,
+      "sourceExtract": "Q.26 Consider the unity-negative-feedback system shown in Figure (i) below, where gain 𝐾 ≥0. The root locus of this system is shown in Figure (ii) below. For what value(s) of 𝐾 will the system in Figure (i) have a pole at −1 + 𝑗1? (A) 𝐾= 5 (B) 1 𝐾= ⁄ 5 (C) For no positive value of 𝐾 (D) For all positive values of 𝐾 Organizing Institute: IIT Roorkee Page 25 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 27,
@@ -370,7 +466,13 @@
       "imagePath": "crops/2025-EC/Q27.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 26,
-      "imageEndPage": 27
+      "imageEndPage": 27,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 27,
+      "sourceExtract": "Q.27 Let 𝑥[𝑛] be a discrete-time signal whose 𝑧-transform is 𝑋(𝑧). Which of the following statements is/are TRUE? (A) The discrete-time Fourier transform (DTFT) of 𝑥[𝑛] always exists (B) The region of convergence (RoC) of 𝑋(𝑧) contains neither poles nor zeros (C) The discrete-time Fourier transform (DTFT) exists if the region of convergence (RoC) contains the unit circle (D) If 𝑥[𝑛] = 𝛼𝛿[𝑛], where 𝛿[𝑛] is the unit impulse and 𝛼 is a scalar, then the region of convergence (RoC) is the entire 𝑧-plane Organizing Institute: IIT Roorkee Page 26 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 28,
@@ -385,7 +487,13 @@
       "imagePath": "crops/2025-EC/Q28.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 27,
-      "imageEndPage": 28
+      "imageEndPage": 28,
+      "subject": "Communication Systems",
+      "topic": "Communication Theory",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 17,
+      "sourceExtract": "Q.28 Consider a message signal 𝑚(𝑡) which is bandlimited to [−𝑊, 𝑊], where 𝑊 is in Hz. Consider the following two modulation schemes for the message signal: • Double sideband-suppressed carrier (DSB-SC): 𝑓𝐷𝑆𝐵(𝑡) = 𝐴𝑐 𝑚(𝑡) cos(2𝜋𝑓𝑐𝑡) • Amplitude modulation (AM): 𝑓𝐴𝑀(𝑡) = 𝐴𝑐 (1 + 𝜇 𝑚(𝑡)) cos(2𝜋𝑓𝑐𝑡) Here, 𝐴𝑐 and 𝑓𝑐 are the amplitude and frequency (in Hz) of the carrier, respectively. In the case of AM, 𝜇 denotes the modulation index. Consider the following statements: (i) An envelope detector can be used for demodulation in the DSB-SC scheme if 𝑚(𝑡) > 0 for all 𝑡. (ii) An envelope detector can be used for demodulation in the AM scheme only if 𝑚(𝑡) > 0 for all 𝑡. Which of the following options is/are correct? (A) (i) is TRUE (B) (i) is FALSE (C) (ii) is TRUE (D) (ii) is FALSE Organizing Institute: IIT Roorkee Page 27 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 29,
@@ -400,7 +508,13 @@
       "imagePath": "crops/2025-EC/Q29.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 28,
-      "imageEndPage": 28
+      "imageEndPage": 28,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.29 Which of the following statements is/are TRUE with respect to an ideal opamp? (A) It has an infinite input resistance (B) It has an infinite output resistance (C) It has an infinite open-loop differential gain (D) It has an infinite open-loop common-mode gain"
     },
     {
       "number": 30,
@@ -415,7 +529,13 @@
       "imagePath": "crops/2025-EC/Q30.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 28,
-      "imageEndPage": 29
+      "imageEndPage": 29,
+      "subject": "Analog Electronics",
+      "topic": "Amplifiers and Op-Amps",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 29,
+      "sourceExtract": "Q.30 Which of the following statements is/are TRUE with respect to ideal MOSFET- based DC-coupled single-stage amplifiers having finite load resistors? (A) The common-gate amplifier has an infinite input resistance (B) The common-source amplifier has an infinite input resistance (C) The input and output voltages of the common-source amplifier are in phase (D) The input and output voltages of the common-drain amplifier are in phase Organizing Institute: IIT Roorkee Page 28 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 31,
@@ -430,7 +550,13 @@
       "imagePath": "crops/2025-EC/Q31.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 29,
-      "imageEndPage": 29
+      "imageEndPage": 29,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.31 Which of the following can be used as an n-type dopant for silicon? Select the correct option(s). (A) Arsenic (B) Boron (C) Gallium (D) Phosphorous"
     },
     {
       "number": 32,
@@ -445,7 +571,13 @@
       "imagePath": "crops/2025-EC/Q32.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 29,
-      "imageEndPage": 29
+      "imageEndPage": 29,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.32 The function 𝑦(𝑡) satisfies 𝑡2𝑦′′(𝑡) −2𝑡𝑦′(𝑡) + 2𝑦(𝑡) = 0, where 𝑦′(𝑡) and 𝑦′′(𝑡) denote the first and second derivatives of 𝑦(𝑡), respectively. Given 𝑦′(0) = 1 and 𝑦′(1) = −1, the maximum value of 𝑦(𝑡) over [0,1] is _____ (rounded off to two decimal places)."
     },
     {
       "number": 33,
@@ -460,7 +592,13 @@
       "imagePath": "crops/2025-EC/Q33.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 29,
-      "imageEndPage": 30
+      "imageEndPage": 30,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.33 The generator matrix of a (6,3) binary linear block code is given by 1 0 0 1 0 1 𝐺= [ 0 1 0 0 1 1 ]. 0 0 1 1 1 0 The minimum Hamming distance 𝑑𝑚𝑖𝑛 between codewords equals _____ (answer in integer). Organizing Institute: IIT Roorkee Page 29 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 34,
@@ -475,7 +613,13 @@
       "imagePath": "crops/2025-EC/Q34.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 30,
-      "imageEndPage": 30
+      "imageEndPage": 30,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.34 All the components in the bandpass filter given below are ideal. The lower −3 dB frequency of the filter is 1 MHz. The upper −3 dB frequency (in MHz, rounded off to the nearest integer) is __________."
     },
     {
       "number": 35,
@@ -490,7 +634,13 @@
       "imagePath": "crops/2025-EC/Q35.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 30,
-      "imageEndPage": 31
+      "imageEndPage": 31,
+      "subject": "Digital Electronics",
+      "topic": "Converters",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.35 A 4-bit weighted-resistor DAC with inputs b3, b2, b1, and b0 (MSB to LSB) is designed using an ideal opamp, as shown below. The switches are closed when the corresponding input bits are logic ‘1’ and open otherwise. When the input b3b2b1b0 changes from 1110 to 1101, the magnitude of the change in the output voltage VO (in mV, rounded off to the nearest integer) is ________. Organizing Institute: IIT Roorkee Page 30 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 36,
@@ -505,7 +655,13 @@
       "imagePath": "crops/2025-EC/Q36.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 31,
-      "imageEndPage": 32
+      "imageEndPage": 32,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.36 – Q.65 Carry TWO marks Each Q.36 1 Let 𝐺(𝑠) = be the transfer function of a second-order system. A controller 10𝑠2 𝑀(𝑠) is connected to the system 𝐺(𝑠) in the configuration shown below. Consider the following statements. 𝐾𝐼 (i) There exists no controller of the form 𝑀(𝑠) = 𝑠, where 𝐾𝐼 is a positive real number, such that the closed loop system is stable. (ii) There exists at least one controller of the form 𝑀(𝑠) = 𝐾𝑃+ 𝑠𝐾𝐷, where 𝐾𝑃 and 𝐾𝐷 are positive real numbers, such that the closed loop system is stable. Which one of the following options is correct? (A) (i) is TRUE and (ii) is FALSE (B) (i) is FALSE and (ii) is TRUE (C) Both (i) and (ii) are FALSE (D) Both (i) and (ii) are TRUE Organizing Institute: IIT Roorkee Page 31 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 37,
@@ -520,7 +676,13 @@
       "imagePath": "crops/2025-EC/Q37.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 32,
-      "imageEndPage": 33
+      "imageEndPage": 33,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.37 Consider the polynomial 𝑝(𝑠) = 𝑠5 + 7𝑠4 + 3𝑠3 −33𝑠2 + 2𝑠−40. Let (𝐿, 𝐼, 𝑅) be defined as follows. 𝐿 is the number of roots of 𝑝(𝑠) with negative real parts. 𝐼 is the number of roots of 𝑝(𝑠) that are purely imaginary. 𝑅 is the number of roots of 𝑝(𝑠) with positive real parts. Which one of the following options is correct? (A) 𝐿= 2, 𝐼= 2, and 𝑅= 1 (B) 𝐿= 3, 𝐼= 2, and 𝑅= 0 (C) 𝐿= 1, 𝐼= 2, and 𝑅= 2 (D) 𝐿= 0, 𝐼= 4, and 𝑅= 1 Organizing Institute: IIT Roorkee Page 32 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 38,
@@ -535,7 +697,13 @@
       "imagePath": "crops/2025-EC/Q38.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 33,
-      "imageEndPage": 34
+      "imageEndPage": 34,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.38 Consider a continuous-time finite-energy signal 𝑓(𝑡) whose Fourier transform vanishes outside the frequency interval [−𝜔 𝑐, 𝜔𝑐], where 𝜔𝑐 is in rad/sec. The signal 𝑓(𝑡) is uniformly sampled to obtain 𝑦(𝑡) = 𝑓(𝑡) 𝑝(𝑡). Here, ∞ 𝑝(𝑡) = ∑𝛿(𝑡−𝜏−𝑛𝑇𝑠) , 𝑛=−∞ with 𝛿(𝑡) being the Dirac impulse, 𝑇𝑠> 0, and 𝜏> 0. The sampled signal 𝑦(𝑡) sin (𝜔𝑐𝑡) is passed through an ideal lowpass filter ℎ(𝑡) = 𝜔𝑐𝑇𝑠 with cutoff 𝜋𝜔𝑐𝑡 frequency 𝜔𝑐 and passband gain 𝑇𝑠. The output of the filter is given by ________________. (A) 𝑓(𝑡) if 𝑇𝑠< 𝜋/𝜔𝑐 (B) 𝑓(𝑡−𝜏) if 𝑇𝑠< 𝜋/𝜔𝑐 (C) 𝑓(𝑡−𝜏) if 𝑇𝑠< 2𝜋/𝜔𝑐 (D) 𝑇𝑠𝑓(𝑡) if 𝑇𝑠< 2𝜋/𝜔𝑐 Organizing Institute: IIT Roorkee Page 33 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 39,
@@ -550,7 +718,13 @@
       "imagePath": "crops/2025-EC/Q39.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 34,
-      "imageEndPage": 35
+      "imageEndPage": 35,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.39 In the circuit below, 𝑀1 is an ideal AC voltmeter and 𝑀2 is an ideal AC ammeter. The source voltage (in Volts) is 𝑣𝑠(𝑡) = 100 cos(200𝑡). What should be the value of the variable capacitor 𝐶 such that the RMS readings on 𝑀1 and 𝑀2 are 25 V and 5 A, respectively? (A) 25 μF (B) 4 μF (C) 0.25 μF (D) Insufficient information to find 𝐶 Organizing Institute: IIT Roorkee Page 34 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 40,
@@ -565,7 +739,13 @@
       "imagePath": "crops/2025-EC/Q40.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 35,
-      "imageEndPage": 36
+      "imageEndPage": 36,
+      "subject": "Network Theory",
+      "topic": "Two-Port Networks",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 15,
+      "sourceExtract": "Q.40 The 𝑍-parameter matrix of a two port network relates the port voltages and port currents as follows: [𝑉1 = 𝑍[𝐼1 𝑉2] 𝐼2] The 𝑍-parameter matrix (with each entry in Ohms) of the network shown below is __________. (A) 10 2 ⁄ ⁄ 3 3 [ ] 2 10 ⁄ ⁄ 3 3 (B) 2 10 ⁄ ⁄ 3 3 [ ] 10 2 ⁄ ⁄ 3 3 (C) 10 2 [ ] 2 10 (D) 10 1 ⁄ ⁄ 3 3 [ ] 1 10 ⁄ ⁄ 3 3 Organizing Institute: IIT Roorkee Page 35 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 41,
@@ -580,7 +760,13 @@
       "imagePath": "crops/2025-EC/Q41.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 36,
-      "imageEndPage": 37
+      "imageEndPage": 37,
+      "subject": "Digital Electronics",
+      "topic": "Combinational and Sequential Logic",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 2,
+      "sourceExtract": "Q.41 A source transmits symbol 𝑆 that takes values uniformly at random from the set {−2,0,2}. The receiver obtains 𝑌= 𝑆+ 𝑁, where 𝑁 is a zero-mean Gaussian random variable independent of 𝑆. The receiver uses the maximum likelihood decoder to estimate the transmitted symbol 𝑆. Suppose the probability of symbol estimation error 𝑃𝑒 is expressed as follows: 𝑃𝑒= 𝛼 𝑃(𝑁> 1), where 𝑃(𝑁> 1) denotes the probability that 𝑁 exceeds 1. What is the value of 𝛼 ? (A) 1 ⁄ 3 (B) 1 (C) 2 ⁄ 3 (D) 4 ⁄ 3 Organizing Institute: IIT Roorkee Page 36 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 42,
@@ -595,7 +781,13 @@
       "imagePath": "crops/2025-EC/Q42.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 37,
-      "imageEndPage": 38
+      "imageEndPage": 38,
+      "subject": "Signals & Systems",
+      "topic": "LTI Systems and Sampling",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.42 Consider a real-valued random process 𝑁 𝑓(𝑡) = ∑𝑎𝑛 𝑝(𝑡−𝑛𝑇), 𝑛=1 where 𝑇> 0 and 𝑁 is a positive integer. Here, 𝑝(𝑡) = 1 for 𝑡∈[0, 0.5𝑇] and 0 otherwise. The coefficients 𝑎𝑛 are pairwise independent, zero-mean unit- variance random variables. Read the following statements about the random process and choose the correct option. (i) The mean of the process 𝑓(𝑡) is independent of time 𝑡. (ii) The autocorrelation function 𝐸[ 𝑓(𝑡)𝑓(𝑡+ 𝜏)] is independent of time 𝑡 for all 𝜏. (Here, 𝐸[⋅] is the expectation operation.) (A) (i) is TRUE and (ii) is FALSE (B) Both (i) and (ii) are TRUE (C) Both (i) and (ii) are FALSE (D) (i) is FALSE and (ii) is TRUE Organizing Institute: IIT Roorkee Page 37 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 43,
@@ -610,7 +802,13 @@
       "imagePath": "crops/2025-EC/Q43.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 38,
-      "imageEndPage": 39
+      "imageEndPage": 39,
+      "subject": "Analog Electronics",
+      "topic": "Transistor Amplifiers",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.43 The identical MOSFETs M1 and M2 in the circuit given below are ideal and biased in the saturation region. M1 and M2 have a transconductance 𝑔𝑚 of 5 mS. The input signals (in Volts) are: 𝑉1 = 2.5 + 0.01 sin 𝜔𝑡 𝑉2 = 2.5 −0.01 sin 𝜔𝑡 The output signal 𝑉3 (in Volts) is __________. (A) 3 + 0.05 sin 𝜔𝑡 (B) 3 −0.1 sin 𝜔𝑡 (C) 4 + 0.1 sin 𝜔𝑡 (D) 4 −0.05 sin 𝜔𝑡 Organizing Institute: IIT Roorkee Page 38 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 44,
@@ -625,7 +823,13 @@
       "imagePath": "crops/2025-EC/Q44.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 39,
-      "imageEndPage": 40
+      "imageEndPage": 40,
+      "subject": "Signals & Systems",
+      "topic": "LTI Systems and Sampling",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.44 A 10-bit analog-to-digital converter (ADC) has a sampling frequency of 1 MHz and a full scale voltage of 3.3 V. For an input sinusoidal signal with frequency 500 kHz, the maximum SNR (in dB, rounded off to two decimal places) and the data rate (in Mbps) at the output of the ADC are ________, respectively. (A) 61.96 and 10 (B) 61.96 and 5 (C) 33.36 and 10 (D) 33.36 and 5 Organizing Institute: IIT Roorkee Page 39 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 45,
@@ -640,7 +844,13 @@
       "imagePath": "crops/2025-EC/Q45.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 40,
-      "imageEndPage": 41
+      "imageEndPage": 41,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.45 A positive-edge-triggered sequential circuit is shown below. There are no timing violations in the circuit. Input P0 is set to logic ‘0’ and P1 is set to logic ‘1’ at all times. The timing diagram of the inputs SEL and S are also shown below. The sequence of output Y from time T0 to T3 is ________. (A) 1011 (B) 0100 (C) 0010 (D) 1101 Organizing Institute: IIT Roorkee Page 40 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 46,
@@ -655,7 +865,13 @@
       "imagePath": "crops/2025-EC/Q46.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 41,
-      "imageEndPage": 42
+      "imageEndPage": 42,
+      "subject": "Analog Electronics",
+      "topic": "Semiconductor Devices",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.46 The intrinsic carrier concentration of a semiconductor is 2.5 × 1016 /m3 at 300 K. If the electron and hole mobilities are 0.15 m2/Vs and 0.05 m2/Vs, respectively, then the intrinsic resistivity of the semiconductor (in kΩ.m) at 300 K is ________. (Charge of an electron 𝑒 = 1.6 × 10−19 C.) (A) 1.65 (B) 1.25 (C) 0.85 (D) 1.95 Organizing Institute: IIT Roorkee Page 41 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 47,
@@ -670,7 +886,13 @@
       "imagePath": "crops/2025-EC/Q47.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 42,
-      "imageEndPage": 43
+      "imageEndPage": 43,
+      "subject": "Analog Electronics",
+      "topic": "Diode Circuits",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.47 In the circuit shown, the identical transistors Q1 and Q2 are biased in the active region with 𝛽= 120. The Zener diode is in the breakdown region with VZ = 5 V and IZ = 25 mA. If IL = 12 mA and VEB1 = VEB2 = 0.7 V, then the values of R1 and R2 (in kΩ, rounded off to one decimal place) are ______, respectively. (A) 0.6 and 0.4 (B) 1.4 and 2.5 (C) 14.0 and 25.0 (D) 6.0 and 4.0 Organizing Institute: IIT Roorkee Page 42 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 48,
@@ -685,7 +907,13 @@
       "imagePath": "crops/2025-EC/Q48.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 43,
-      "imageEndPage": 44
+      "imageEndPage": 44,
+      "subject": "Analog Electronics",
+      "topic": "Semiconductor Devices",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.48 The electron mobility µn in a non-degenerate germanium semiconductor at 300 K is 0.38 m2/Vs. The electron diffusivity 𝐷𝑛 at 300 K (in cm2/s, rounded off to the nearest integer) is _______. (Consider the Boltzmann constant 𝑘B = 1.38 × 10−23J/K and the charge of an electron 𝑒 = 1.6 × 10−19 C.) (A) 26 (B) 98 (C) 38 (D) 10 Organizing Institute: IIT Roorkee Page 43 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 49,
@@ -700,7 +928,13 @@
       "imagePath": "crops/2025-EC/Q49.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 44,
-      "imageEndPage": 45
+      "imageEndPage": 45,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.49 A square metal sheet of 4 m × 4 m is placed on the x-y plane as shown in the figure below. If the surface charge density (in µC/m2) on the sheet is 𝜌𝑠(𝑥, 𝑦) = 4|𝑦|, then the total charge (in µC, rounded off to the nearest integer) on the sheet is ________. (A) 16 (B) 85 (C) 64 (D) 256 Organizing Institute: IIT Roorkee Page 44 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 50,
@@ -715,7 +949,13 @@
       "imagePath": "crops/2025-EC/Q50.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 45,
-      "imageEndPage": 45
+      "imageEndPage": 45,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.50 An electric field of 0.01 V/m is applied along the length of a copper wire of circular cross-section with diameter 1 mm. Copper has a conductivity of 5.8 × 107 S/m. The current (in Amperes, rounded off to two decimal places) flowing through the wire is _________. (A) 0.46 (B) 1.82 (C) 0.58 (D) 1.12"
     },
     {
       "number": 51,
@@ -730,7 +970,13 @@
       "imagePath": "crops/2025-EC/Q51.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 45,
-      "imageEndPage": 46
+      "imageEndPage": 46,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.51 Consider a non-negative function 𝑓(𝑥) which is continuous and bounded over the interval [2, 8]. Let 𝑀 and 𝑚 denote, respectively, the maximum and the minimum values of 𝑓(𝑥) over the interval. Among the combinations of 𝛼 and 𝛽 given below, choose the one(s) for which the inequality 8 𝛽≤∫𝑓(𝑥) 𝑑𝑥 ≤𝛼 2 is guaranteed to hold. (A) 𝛽= 5𝑚, 𝛼= 7𝑀 (B) 𝛽= 6𝑚, 𝛼= 5𝑀 (C) 𝛽= 7𝑚, 𝛼= 6𝑀 (D) 𝛽= 7𝑚, 𝛼= 5𝑀 Organizing Institute: IIT Roorkee Page 45 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 52,
@@ -745,7 +991,13 @@
       "imagePath": "crops/2025-EC/Q52.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 46,
-      "imageEndPage": 46
+      "imageEndPage": 46,
+      "subject": "Engineering Mathematics",
+      "topic": "Complex Variables",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 12,
+      "sourceExtract": "Q.52 Which of the following statements involving contour integrals (evaluated counter- clockwise) on the unit circle 𝐶 in the complex plane is/are TRUE? (A) ∮𝑒𝑧 𝑑𝑧= 0 𝐶 (B) ∮𝑧𝑛 𝑑𝑧= 0, where 𝑛 is an even integer 𝐶 (C) ∮cos 𝑧 𝑑𝑧≠0 𝐶 (D) ∮sec 𝑧 𝑑𝑧≠0 𝐶"
     },
     {
       "number": 53,
@@ -760,7 +1012,13 @@
       "imagePath": "crops/2025-EC/Q53.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 46,
-      "imageEndPage": 47
+      "imageEndPage": 47,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.53 Consider a system where 𝑥1(𝑡), 𝑥2(𝑡), and 𝑥3(𝑡) are three internal state signals and 𝑢(𝑡) is the input signal. The differential equations governing the system are given by 𝑥1(𝑡) 2 0 0 𝑥1(𝑡) 1 𝑑 𝑑𝑡[ 𝑥2(𝑡) ] = [0 −2 0 ] [𝑥2(𝑡) ] + [ 1 ] 𝑢(𝑡). 𝑥3(𝑡) 0 0 0 𝑥3(𝑡) 1 Which of the following statements is/are TRUE? (A) The signals 𝑥1(𝑡), 𝑥2(𝑡), and 𝑥3(𝑡) are bounded for all bounded inputs (B) There exists a bounded input such that at least one of the signals 𝑥1(𝑡), 𝑥2(𝑡), and 𝑥3(𝑡) is unbounded (C) There exists a bounded input such that the signals 𝑥1(𝑡), 𝑥2(𝑡), and 𝑥3(𝑡) are unbounded (D) The signals 𝑥1(𝑡), 𝑥2(𝑡), and 𝑥3(𝑡) are unbounded for all bounded inputs Organizing Institute: IIT Roorkee Page 46 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 54,
@@ -775,7 +1033,13 @@
       "imagePath": "crops/2025-EC/Q54.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 47,
-      "imageEndPage": 47
+      "imageEndPage": 47,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.54 The random variable 𝑋 takes values in {−1,0,1} with probabilities 𝑃(𝑋= −1) = 𝑃(𝑋= 1) = 𝛼 and 𝑃(𝑋= 0) = 1 −2𝛼, where 0 < 𝛼< 1⁄ . 2 Let 𝑔(𝛼) denote the entropy of 𝑋 (in bits), parameterized by 𝛼. Which of the following statements is/are TRUE? (A) 𝑔(0.4) > 𝑔(0.3) (B) 𝑔(0.3) > 𝑔(0.4) (C) 𝑔(0.3) > 𝑔(0.25) (D) 𝑔(0.25) > 𝑔(0.3)"
     },
     {
       "number": 55,
@@ -790,7 +1054,13 @@
       "imagePath": "crops/2025-EC/Q55.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 47,
-      "imageEndPage": 48
+      "imageEndPage": 48,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.55 Let 𝑓(𝑡) be a periodic signal with fundamental period 𝑇0 > 0. Consider the signal 𝑦(𝑡) = 𝑓(𝛼𝑡), where 𝛼> 1. The Fourier series expansions of 𝑓(𝑡) and 𝑦(𝑡) are given by ∞ ∞ 𝑗2𝜋 𝑘𝑡 𝑗2𝜋 𝛼𝑘𝑡 𝑓(𝑡) = ∑𝑐𝑘 𝑒 𝑇0 and 𝑦(𝑡) = ∑𝑑𝑘 𝑒 𝑇0 . 𝑘=−∞ 𝑘=−∞ Which of the following statements is/are TRUE? (A) 𝑐𝑘= 𝑑𝑘 for all 𝑘 (B) 𝑦(𝑡) is periodic with a fundamental period 𝛼𝑇0 (C) 𝑐𝑘= 𝑑𝑘/𝛼 for all 𝑘 (D) 𝑦(𝑡) is periodic with a fundamental period 𝑇0/𝛼 Organizing Institute: IIT Roorkee Page 47 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 56,
@@ -805,7 +1075,13 @@
       "imagePath": "crops/2025-EC/Q56.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 48,
-      "imageEndPage": 49
+      "imageEndPage": 49,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.56 Consider a system represented by the block diagram shown below. Which of the following signal flow graphs represent(s) this system? Choose the correct option(s). (A) (B) (C) (D) Organizing Institute: IIT Roorkee Page 48 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 57,
@@ -820,7 +1096,13 @@
       "imagePath": "crops/2025-EC/Q57.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 49,
-      "imageEndPage": 50
+      "imageEndPage": 50,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.57 All the diodes in the circuit given below are ideal. Which of the following plots is/are correct when VI (in Volts) is swept from –M to M ? (A) (B) (C) (D) Organizing Institute: IIT Roorkee Page 49 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 58,
@@ -835,7 +1117,13 @@
       "imagePath": "crops/2025-EC/Q58.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 50,
-      "imageEndPage": 50
+      "imageEndPage": 50,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.58 Two fair dice (with faces labeled 1, 2, 3, 4, 5, and 6) are rolled. Let the random variable 𝑋 denote the sum of the outcomes obtained. The expectation of 𝑋 is______ (rounded off to two decimal places)."
     },
     {
       "number": 59,
@@ -850,7 +1138,13 @@
       "imagePath": "crops/2025-EC/Q59.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 50,
-      "imageEndPage": 50
+      "imageEndPage": 50,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.59 Consider the vectors 1 0 𝒂= [ ] , 𝒃= [ ]. 1 3√2 For real-valued scalar variable 𝑥, the value of min𝑥‖𝒂𝑥−𝒃‖2 is ____________ (rounded off to two decimal places). 𝑦1 ‖⋅‖2 denotes the Euclidean norm, i.e., for 𝒚= [ ], ‖𝒚‖2 = √𝑦12 + 𝑦22. 𝑦2"
     },
     {
       "number": 60,
@@ -865,7 +1159,13 @@
       "imagePath": "crops/2025-EC/Q60.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 50,
-      "imageEndPage": 51
+      "imageEndPage": 51,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.60 𝑋 and 𝑌 are Bernoulli random variables taking values in {0,1}. The joint probability mass function of the random variables is given by: 𝑃(𝑋= 0, 𝑌= 0) = 0.06 𝑃(𝑋= 0, 𝑌= 1) = 0.14 𝑃(𝑋= 1, 𝑌= 0) = 0.24 𝑃(𝑋= 1, 𝑌= 1) = 0.56 The mutual information 𝐼(𝑋; 𝑌) is _________ (rounded off to two decimal places). Organizing Institute: IIT Roorkee Page 50 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 61,
@@ -880,7 +1180,13 @@
       "imagePath": "crops/2025-EC/Q61.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 51,
-      "imageEndPage": 51
+      "imageEndPage": 51,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.61 The diode in the circuit shown below is ideal. The input voltage (in Volts) is given by 𝑉𝐼= 10 sin 100𝜋𝑡, where time 𝑡 is in seconds. The time duration (in ms, rounded off to two decimal places) for which the diode is forward biased during one period of the input is ___________."
     },
     {
       "number": 62,
@@ -895,7 +1201,13 @@
       "imagePath": "crops/2025-EC/Q62.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 51,
-      "imageEndPage": 52
+      "imageEndPage": 52,
+      "subject": "Digital Electronics",
+      "topic": "Digital Logic",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 12,
+      "sourceExtract": "Q.62 In the circuit shown below, the AND gate has a propagation delay of 1 ns. The edge- triggered flip-flops have a set-up time of 2 ns, a hold-time of 0 ns, and a clock-to-Q delay of 2 ns. The maximum clock frequency (in MHz, rounded off to the nearest integer) such that there are no setup violations is ________. Organizing Institute: IIT Roorkee Page 51 of 52 Electronics and Communication Engineering (EC)"
     },
     {
       "number": 63,
@@ -910,7 +1222,13 @@
       "imagePath": "crops/2025-EC/Q63.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 52,
-      "imageEndPage": 52
+      "imageEndPage": 52,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.63 An ideal p-n junction germanium diode has a reverse saturation current of 10 µA at 300 K. The voltage (in Volts, rounded off to two decimal places) to be applied across the junction to get a forward bias current of 100 mA at 300 K is _____. (Consider the Boltzmann constant 𝑘B = 1.38 × 10−23J/K and the charge of an electron 𝑒 = 1.6 × 10−19 C.)"
     },
     {
       "number": 64,
@@ -925,7 +1243,13 @@
       "imagePath": "crops/2025-EC/Q64.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 52,
-      "imageEndPage": 52
+      "imageEndPage": 52,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.64 A 50 Ω lossless transmission line is terminated with a load ZL of (50 – j75) Ω. If the average incident power on the line is 10 mW, then the average power delivered to the load (in mW, rounded off to one decimal place) is __________."
     },
     {
       "number": 65,
@@ -940,7 +1264,13 @@
       "imagePath": "crops/2025-EC/Q65.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 52,
-      "imageEndPage": 52
+      "imageEndPage": 52,
+      "subject": "Network Theory",
+      "topic": "Circuit Analysis",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 9,
+      "sourceExtract": "Q.65 Two resistors are connected in a circuit loop of area 5 m2, as shown in the figure below. The circuit loop is placed on the x-y plane. When a time-varying magnetic flux, with flux-density 𝐵(𝑡) = 0.5𝑡 (in Tesla), is applied along the positive z-axis, the magnitude of current I (in Amperes, rounded off to two decimal places) in the loop is ________. Organizing Institute: IIT Roorkee Page 52 of 52"
     }
   ]
 }

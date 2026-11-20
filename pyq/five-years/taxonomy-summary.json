@@ -1,0 +1,113 @@
+{
+  "status": "provisional_machine_classification",
+  "byPaper": {
+    "2022-EC": {
+      "Unclassified": 24,
+      "Signals & Systems": 6,
+      "Analog Electronics": 9,
+      "Digital Electronics": 2,
+      "Control Systems": 2,
+      "Engineering Mathematics": 8,
+      "Communication Systems": 2,
+      "Network Theory": 1,
+      "Electromagnetics": 1
+    },
+    "2022-EE": {
+      "Unclassified": 27,
+      "Analog Electronics": 3,
+      "Electrical Machines": 8,
+      "Power Systems": 1,
+      "Network Theory": 4,
+      "Power Electronics": 3,
+      "Electromagnetics": 2,
+      "Digital Electronics": 1,
+      "Engineering Mathematics": 2,
+      "Signals & Systems": 3,
+      "Communication Systems": 1
+    },
+    "2023-EC": {
+      "Unclassified": 28,
+      "Engineering Mathematics": 5,
+      "Analog Electronics": 5,
+      "Network Theory": 6,
+      "Digital Electronics": 4,
+      "Signals & Systems": 6,
+      "Electromagnetics": 1
+    },
+    "2023-EE": {
+      "Unclassified": 29,
+      "Electrical Machines": 7,
+      "Signals & Systems": 5,
+      "Power Systems": 2,
+      "Power Electronics": 2,
+      "Engineering Mathematics": 4,
+      "Analog Electronics": 3,
+      "Digital Electronics": 1,
+      "Network Theory": 1,
+      "Electromagnetics": 1
+    },
+    "2024-EC": {
+      "Engineering Mathematics": 5,
+      "Network Theory": 3,
+      "Unclassified": 24,
+      "Signals & Systems": 8,
+      "Communication Systems": 4,
+      "Analog Electronics": 6,
+      "Microprocessors": 1,
+      "Digital Electronics": 4
+    },
+    "2024-EE": {
+      "Unclassified": 23,
+      "Signals & Systems": 5,
+      "Electrical Machines": 5,
+      "Power Systems": 2,
+      "Network Theory": 4,
+      "Digital Electronics": 2,
+      "Power Electronics": 5,
+      "Engineering Mathematics": 6,
+      "Analog Electronics": 2,
+      "Control Systems": 1
+    },
+    "2025-EC": {
+      "Engineering Mathematics": 6,
+      "Unclassified": 26,
+      "Communication Systems": 2,
+      "Signals & Systems": 7,
+      "Analog Electronics": 7,
+      "Digital Electronics": 4,
+      "Control Systems": 1,
+      "Network Theory": 2
+    },
+    "2025-EE": {
+      "Unclassified": 28,
+      "Engineering Mathematics": 4,
+      "Analog Electronics": 3,
+      "Signals & Systems": 5,
+      "Power Systems": 3,
+      "Electrical Machines": 6,
+      "Control Systems": 1,
+      "Power Electronics": 3,
+      "Network Theory": 2
+    },
+    "2026-EC": {
+      "Engineering Mathematics": 2,
+      "Unclassified": 28,
+      "Signals & Systems": 2,
+      "Analog Electronics": 8,
+      "Electromagnetics": 2,
+      "Network Theory": 4,
+      "Communication Systems": 6,
+      "Digital Electronics": 3
+    },
+    "2026-EE": {
+      "Signals & Systems": 4,
+      "Unclassified": 25,
+      "Electrical Machines": 8,
+      "Power Systems": 2,
+      "Network Theory": 5,
+      "Analog Electronics": 5,
+      "Engineering Mathematics": 5,
+      "Power Electronics": 1
+    }
+  }
+}

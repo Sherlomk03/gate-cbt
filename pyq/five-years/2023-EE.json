@@ -130,7 +130,13 @@
       "imagePath": "crops/2023-EE/Q11.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 10,
-      "imageEndPage": 11
+      "imageEndPage": 11,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.11 – Q.35 Carry ONE mark Each Q.11 For a given vector w = [1 2 3]T, the vector normal to the plane defined by wTx = 1 is (A) [−2 −2 2]𝑇 (B) [3 0 −1]𝑇 (C) [3 2 1]𝑇 (D) [1 2 3]𝑇 Page 10 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 12,
@@ -145,7 +151,13 @@
       "imagePath": "crops/2023-EE/Q12.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 11,
-      "imageEndPage": 12
+      "imageEndPage": 12,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.12 𝑌(𝑠) For the block diagram shown in the figure, the transfer function is 𝑅(𝑠) (A) 2𝑠+ 3 𝑠+ 1 (B) 3𝑠+ 2 𝑠−1 (C) 𝑠+ 1 3𝑠+ 2 (D) 3𝑠+ 2 𝑠+ 1 Page 11 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 13,
@@ -160,7 +172,13 @@
       "imagePath": "crops/2023-EE/Q13.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 12,
-      "imageEndPage": 13
+      "imageEndPage": 13,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.13 In the Nyquist plot of the open-loop transfer function 3𝑠+ 5 𝐺(𝑠)𝐻(𝑠) = 𝑠−1 corresponding to the feedback loop shown in the figure, the infinite semi-circular arc of the Nyquist contour in s-plane is mapped into a point at G(s) - H(s) (A) 𝐺(𝑠)𝐻(𝑠) = ∞ (B) 𝐺(𝑠)𝐻(𝑠) = 0 (C) 𝐺(𝑠)𝐻(𝑠) = 3 (D) 𝐺(𝑠)𝐻(𝑠) = −5 Page 12 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 14,
@@ -175,7 +193,13 @@
       "imagePath": "crops/2023-EE/Q14.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 13,
-      "imageEndPage": 13
+      "imageEndPage": 13,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.14 Consider a unity-gain negative feedback system consisting of the plant G(s) (given below) and a proportional-integral controller. Let the proportional gain and integral gain be 3 and 1, respectively. For a unit step reference input, the final values of the controller output and the plant output, respectively, are 1 𝐺(𝑠) = 𝑠−1 (A) ∞, ∞ (B) 1, 0 (C) 1, -1 (D) -1, 1"
     },
     {
       "number": 15,
@@ -190,7 +214,13 @@
       "imagePath": "crops/2023-EE/Q15.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 13,
-      "imageEndPage": 14
+      "imageEndPage": 14,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.15 The following columns present various modes of induction machine operation and the ranges of slip A B Mode of operation Range of Slip a. Running in generator mode p) From 0.0 to 1.0 b. Running in motor mode q) From 1.0 to 2.0 c. Plugging in motor mode r) From -1.0 to 0.0 The correct matching between the elements in column A with those of column B is (A) a-r, b-p, and c-q (B) a-r, b-q, and c-p (C) a-p, b-r, and c-q (D) a-q, b-p, and c-r Page 13 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 16,
@@ -205,7 +235,13 @@
       "imagePath": "crops/2023-EE/Q16.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 14,
-      "imageEndPage": 14
+      "imageEndPage": 14,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.16 A 10-pole, 50 Hz, 240 V, single phase induction motor runs at 540 RPM while driving rated load. The frequency of induced rotor currents due to backward field is (A) 100 Hz (B) 95 Hz (C) 10 Hz (D) 5 Hz A continuous-time system that is initially at rest is described by"
     },
     {
       "number": 17,
@@ -220,7 +256,13 @@
       "imagePath": "crops/2023-EE/Q17.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 14,
-      "imageEndPage": 15
+      "imageEndPage": 15,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "y y y Q.17 𝑑𝑦(𝑡) + 3𝑦(𝑡) = 2𝑥(𝑡), 𝑑𝑡 where 𝑥(𝑡) is the input voltage and 𝑦(𝑡) is the output voltage. The impulse response of the system is (A) 3𝑒−2𝑡 (B) 1 𝑒−2𝑡𝑢(𝑡) 3 (C) 2𝑒−3𝑡𝑢(𝑡) (D) 2𝑒−3𝑡 Page 14 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 18,
@@ -235,7 +277,13 @@
       "imagePath": "crops/2023-EE/Q18.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 15,
-      "imageEndPage": 15
+      "imageEndPage": 15,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.18 The Fourier transform 𝑋(𝜔) of the signal 𝑥(𝑡) is given by 𝑋(𝜔) = 1, for |𝜔| < 𝑊𝑜 = 0, for |𝜔| > 𝑊0 Which one of the following statements is true? (A) 𝑥(𝑡) tends to be an impulse as 𝑊0 →∞. (B) 𝑥(0) decreases as 𝑊0increases. (C) At 𝑡= 𝜋 𝑥(𝑡) = − 1 2𝑊0, 𝜋 (D) At 𝑡= 𝜋 𝑥(𝑡) = 1 2𝑊0, 𝜋"
     },
     {
       "number": 19,
@@ -250,7 +298,13 @@
       "imagePath": "crops/2023-EE/Q19.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 15,
-      "imageEndPage": 16
+      "imageEndPage": 16,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.19 The 𝑍-transform of a discrete signal 𝑥[𝑛] is 4𝑧 𝑋(𝑧) = with 𝑅𝑂𝐶= 𝑅 . (𝑧−15)(𝑧−23)(𝑧−3) Which one of the following statements is true? (A) Discrete-time Fourier transform of x[n] converges if R is |𝑧| > 3 (B) Discrete-time Fourier transform of x[n] converges if R is 2 < |𝑧| < 3 3 (C) Discrete-time Fourier transform of x[n] converges if R is such that x[n] is a left- sided sequence (D) Discrete-time Fourier transform of x[n] converges if R is such that x[n] is a right- sided sequence Page 15 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 20,
@@ -265,7 +319,13 @@
       "imagePath": "crops/2023-EE/Q20.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 16,
-      "imageEndPage": 17
+      "imageEndPage": 17,
+      "subject": "Power Systems",
+      "topic": "Power System Analysis",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 17,
+      "sourceExtract": "Q.20 For the three-bus power system shown in the figure, the trip signals to the circuit breakers B1 to B9 are provided by overcurrent relays R1 to R9, respectively, some of which have directional properties also. The necessary condition for the system to be protected for short circuit fault at any part of the system between bus 1 and the R-L loads with isolation of minimum portion of the network using minimum number of directional relays is 1 2 B1 Line 1 B3 3 B9 B5 B7 B8 Line 3 B2 B4 R-L Line 2 B6 load R-L load (A) R3 and R4 are directional overcurrent relays blocking faults towards bus 2 (B) R3 and R4 are directional overcurrent relays blocking faults towards bus 2 and R7 is directional overcurrent relay blocking faults towards bus 3 R3 and R4 are directional overcurrent relays blocking faults towards Line 1 and Line (C) 2, respectively, R7 is directional overcurrent relay blocking faults towards Line 3 and R5 is directional overcurrent relay blocking faults towards bus 2 R3 and R4 are directional overcurrent relays blocking faults towards Line 1 and Line (D) 2, respectively. Page 16 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE) The expressions of fuel cost of two thermal generating units as a function of the"
     },
     {
       "number": 21,
@@ -280,7 +340,13 @@
       "imagePath": "crops/2023-EE/Q21.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 17,
-      "imageEndPage": 18
+      "imageEndPage": 18,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "p g g Q.21 respective power generation 𝑃𝐺1 and 𝑃𝐺2 are given as 𝐹1(𝑃𝐺1) = 0.1𝑎𝑃𝐺12 + 40 𝑃𝐺1 + 120 𝑅𝑠/ℎ𝑜𝑢𝑟 0 𝑀𝑊 ≤𝑃𝐺1 ≤350 𝑀𝑊 𝐹2(𝑃𝐺2) = 0.2𝑃𝐺22 + 30 𝑃𝐺2 + 100 𝑅𝑠/ℎ𝑜𝑢𝑟 0 𝑀𝑊 ≤𝑃𝐺2 ≤300 𝑀𝑊 where a is a constant. For a given value of a, optimal dispatch requires the total load of 290 MW to be shared as 𝑃𝐺1 = 175 𝑀𝑊 and 𝑃𝐺2 = 115 𝑀𝑊. With the load remaining unchanged, the value of a is increased by 10% and optimal dispatch is carried out. The changes in 𝑃𝐺1 and the total cost of generation, F (= F1 + F2) in Rs/hour will be as follows (A) 𝑃𝐺1will decrease and F will increase (B) Both 𝑃𝐺1 and F will increase (C) 𝑃𝐺1 will increase and F will decrease (D) Both 𝑃𝐺1 and F will decrease Page 17 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 22,
@@ -295,7 +361,13 @@
       "imagePath": "crops/2023-EE/Q22.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 18,
-      "imageEndPage": 19
+      "imageEndPage": 19,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.22 The four stator conductors (A, A, B and B) of a rotating machine are carrying DC currents of the same value, the directions of which are shown in the figure (i). The rotor coils a-a and b-b are formed by connecting the back ends of conductors ‘a’ and ‘a’ and ‘b’ and ‘b’, respectively, as shown in figure (ii). The e.m.f. induced in coil a-a and coil b-b are denoted by Ea-a and Eb-b, respectively. If the rotor is rotated at uniform angular speed  rad/s in the clockwise direction then which of the following correctly describes the Ea-a and Eb-b? figure (i): cross-sectional view figure (ii): rotor winding connection diagram (A) Ea-a and Eb-b have finite magnitudes and are in the same phase (B) Ea-a and Eb-b have finite magnitudes with Eb-b leading Ea-a (C) Ea-a and Eb-b have finite magnitudes with Ea-a leading Eb-b (D) Ea-a = Eb-b = 0 Page 18 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 23,
@@ -310,7 +382,13 @@
       "imagePath": "crops/2023-EE/Q23.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 19,
-      "imageEndPage": 20
+      "imageEndPage": 20,
+      "subject": "Power Electronics",
+      "topic": "Converters and Drives",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 29,
+      "sourceExtract": "Q.23 The chopper circuit shown in figure (i) feeds power to a 5 A DC constant current source. The switching frequency of the chopper is 100 kHz. All the components can be assumed to be ideal. The gate signals of switches S1 and S2 are shown in figure (ii). Average voltage across the 5 A current source is High Gate S1 D1 Signal Low + of S1 20 V Gate S2 D2 5 A Signal of S2 0 3 5 8 10 time in s figure (i) figure (ii) (A) 10 V (B) 6 V (C) 12 V (D) 20 V Page 19 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 24,
@@ -325,7 +403,13 @@
       "imagePath": "crops/2023-EE/Q24.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 20,
-      "imageEndPage": 21
+      "imageEndPage": 21,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.24 In the figure, the vectors u and v are related as: Au = v by a transformation matrix A. The correct choice of A is (A) 4 3 5 5 [ ] −3 4 5 5 (B) 4 −3 5 5 [ ] 3 4 5 5 (C) 4 3 5 5 [ ] 3 4 5 5 (D) 4 −3 5 5 [ ] 3 −4 5 5 Page 20 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 25,
@@ -340,7 +424,13 @@
       "imagePath": "crops/2023-EE/Q25.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 21,
-      "imageEndPage": 22
+      "imageEndPage": 22,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.25 One million random numbers are generated from a statistically stationary process with a Gaussian distribution with mean zero and standard deviation 𝜎𝑜. The 𝜎𝑜 is estimated by randomly drawing out 10,000 numbers of samples (𝑥𝑛). The estimates 𝜎̂1, 𝜎̂2 are computed in the following two ways. 1 1 𝜎̂12 = ∑10000𝑛=1 𝑥𝑛2 𝜎̂22 = ∑10000𝑛=1 𝑥𝑛2 10000 9999 Which of the following statements is true? (A) 𝐸(𝜎̂22) = 𝜎𝑜2 (B) 𝐸(𝜎̂2) = 𝜎𝑜 (C) 𝐸(𝜎̂12) = 𝜎𝑜2 (D) 𝐸(𝜎̂1) = 𝐸(𝜎̂2) Page 21 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 26,
@@ -355,7 +445,13 @@
       "imagePath": "crops/2023-EE/Q26.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 22,
-      "imageEndPage": 23
+      "imageEndPage": 23,
+      "subject": "Analog Electronics",
+      "topic": "Semiconductor Devices",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.26 A semiconductor switch needs to block voltage V of only one polarity (V > 0) during OFF state as shown in figure (i) and carry current in both directions during ON state as shown in figure (ii). Which of the following switch combination(s) will realize the same? P Q P Q + V - I figure (i) figure (ii) (A) P Q (B) P Q (C) P Q (D) P Q Page 22 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 27,
@@ -370,7 +466,13 @@
       "imagePath": "crops/2023-EE/Q27.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 23,
-      "imageEndPage": 23
+      "imageEndPage": 23,
+      "subject": "Power Systems",
+      "topic": "Power System Analysis",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 3,
+      "sourceExtract": "Q.27 Which of the following statement(s) is/are true? (A) If an LTI system is causal, it is stable (B) A discrete time LTI system is causal if and only if its response to a step input 𝑢[𝑛] is 0 for 𝑛< 0 (C) If a discrete time LTI system has an impulse response ℎ[𝑛] of finite duration the system is stable (D) If the impulse response 0 < |ℎ[𝑛]| < 1 for all 𝑛, then the LTI system is stable. The bus admittance (Ybus) matrix of a 3-bus power system is given below."
     },
     {
       "number": 28,
@@ -385,7 +487,13 @@
       "imagePath": "crops/2023-EE/Q28.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 23,
-      "imageEndPage": 24
+      "imageEndPage": 24,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "( ) p y g Q.28 1 2 3 1 −𝑗15 𝑗10 𝑗5 2 [ 𝑗10 −𝑗13.5 𝑗4 ] 3 𝑗5 𝑗4 −𝑗8 Considering that there is no shunt inductor connected to any of the buses, which of the following can NOT be true? (A) Line charging capacitor of finite value is present in all three lines (B) Line charging capacitor of finite value is present in line 2-3 only (C) Line charging capacitor of finite value is present in line 2-3 only and shunt capacitor of finite value is present in bus 1 only (D) Line charging capacitor of finite value is present in line 2-3 only and shunt capacitor of finite value is present in bus 3 only Page 23 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE) The value of parameters of the circuit shown in the figure are"
     },
     {
       "number": 29,
@@ -401,7 +509,13 @@
       "imagePath": "crops/2023-EE/Q29.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 24,
-      "imageEndPage": 24
+      "imageEndPage": 24,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "p g Q.29 R1 = 2, R2 = 2, R3 = 3, L = 10 mH, C = 100 F For time t < 0, the circuit is at steady state with the switch ‘K’ in closed condition. If the switch is opened at t = 0, the value of the voltage across the inductor (VL) at t = 0+ in Volts is ____________ (Round off to 1 decimal place). L R1 VL R1 = 2, R2 = 2, K R2 C R3 = 3 10 A, L = 10 mH DC C = 100 F R3"
     },
     {
       "number": 30,
@@ -416,7 +530,13 @@
       "imagePath": "crops/2023-EE/Q30.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 24,
-      "imageEndPage": 25
+      "imageEndPage": 25,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.30 A separately excited DC motor rated 400 V, 15 A, 1500 RPM drives a constant torque load at rated speed operating from 400 V DC supply drawing rated current. The armature resistance is 1.2 . If the supply voltage drops by 10% with field current unaltered then the resultant speed of the motor in RPM is ____________ (Round off to the nearest integer). Page 24 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 31,
@@ -431,7 +551,13 @@
       "imagePath": "crops/2023-EE/Q31.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 25,
-      "imageEndPage": 25
+      "imageEndPage": 25,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.31 For the signals 𝑥(𝑡)and 𝑦(𝑡) shown in the figure, 𝑧(𝑡) = 𝑥(𝑡) ∗𝑦(𝑡) is maximum at 𝑡= 𝑇1. Then 𝑇1 in seconds is ___________ (Round off to the nearest integer). 3 y(t) 2 1 -3 -2 -1 0 1 2 3 4 5 6 7 t -2 -3 3 x(t) 2 1 -3 -2 -1 0 1 2 3 t -1 -2 -3"
     },
     {
       "number": 32,
@@ -446,7 +572,13 @@
       "imagePath": "crops/2023-EE/Q32.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 25,
-      "imageEndPage": 26
+      "imageEndPage": 26,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.32 For the circuit shown in the figure, V1 = 8 V, DC and I1 = 8 A, DC. The voltage Vab in Volts is _________ (Round off to 1 decimal place). Vab 0.5Ω a b 3Ω V1 I1 3Ω V1 = 8 V, DC I1 = 8 A, DC 2Ω 2Ω Page 25 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 33,
@@ -461,7 +593,13 @@
       "imagePath": "crops/2023-EE/Q33.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 26,
-      "imageEndPage": 26
+      "imageEndPage": 26,
+      "subject": "Engineering Mathematics",
+      "topic": "Differential Equations",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 12,
+      "sourceExtract": "Q.33 A 50 Hz, 275 kV line of length 400 km has the following parameters: Resistance, R = 0.035 /km; Inductance, L = 1 mH /km; Capacitance, C = 0.01 F/km; The line is represented by the nominal- model. With the magnitudes of the sending end and the receiving end voltages of the line (denoted by VS and VR, respectively) maintained at 275 kV, the phase angle difference () between VS and VR required for maximum possible active power to be delivered to the receiving end, in degree is _____________ (Round off to 2 decimal places). In the following differential equation, the numerically obtained value of y(t), at t =1,"
     },
     {
       "number": 34,
@@ -476,7 +614,13 @@
       "imagePath": "crops/2023-EE/Q34.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 26,
-      "imageEndPage": 26
+      "imageEndPage": 26,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "g q , y y( ), , Q.34 is _______________ (Round off to 2 decimal places). 𝑑𝑦 𝑒−𝛼𝑡 𝑑𝑡= 2 + 𝛼𝑡, 𝛼= 0.01 and 𝑦(0) = 0"
     },
     {
       "number": 35,
@@ -491,7 +635,13 @@
       "imagePath": "crops/2023-EE/Q35.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 26,
-      "imageEndPage": 27
+      "imageEndPage": 27,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.35 Three points in the x-y plane are (-1, 0.8), (0, 2.2) and (1, 2.8). The value of the slope of the best fit straight line in the least square sense is ____________ (Round off to 2 decimal places). Page 26 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 36,
@@ -506,7 +656,13 @@
       "imagePath": "crops/2023-EE/Q36.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 27,
-      "imageEndPage": 28
+      "imageEndPage": 28,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.36 – Q.65 Carry TWO marks Each The magnitude and phase plots of an LTI system are shown in the figure. The Q.36 transfer function of the system is (A) 2.51𝑒−0.032𝑠 (B) 𝑒−2.514𝑠 𝑠+ 1 (C) 1.04𝑒−2.514𝑠 (D) 2.51𝑒−1.047𝑠 Page 27 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 37,
@@ -521,7 +677,13 @@
       "imagePath": "crops/2023-EE/Q37.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 28,
-      "imageEndPage": 29
+      "imageEndPage": 29,
+      "subject": "Analog Electronics",
+      "topic": "Amplifiers and Op-Amps",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 16,
+      "sourceExtract": "Q.37 Consider the OP AMP based circuit shown in the figure. Ignore the conduction drops of diodes D1 and D2. All the components are ideal and the breakdown voltage of the Zener is 5 V. Which of the following statements is true? D1 1 k DZ D2 1 k +15 V - + + OP Vin = 10sin(1000t) V + VO -15 V (A) The maximum and minimum values of the output voltage VO are +15 V and -10 V, respectively. (B) The maximum and minimum values of the output voltage VO are +5 V and -15 V, respectively. The maximum and minimum values of the output voltage VO are +10 V and -5 V, (C) respectively. (D) The maximum and minimum values of the output voltage VO are +5 V and -10 V, respectively. Page 28 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE) Consider a lead compensator of the form"
     },
     {
       "number": 38,
@@ -536,7 +698,13 @@
       "imagePath": "crops/2023-EE/Q38.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 29,
-      "imageEndPage": 30
+      "imageEndPage": 30,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "p Q.38 𝑠 1 + 𝑎 𝐾(𝑠) = , 𝛽> 1, 𝑎> 0 𝑠 1 + 𝛽𝑎 The frequency at which this compensator produces maximum phase lead is 4 rad/s. At this frequency, the gain amplification provided by the controller, assuming asymptotic Bode-magnitude plot of 𝐾(𝑠), is 6 dB. The values of 𝑎, 𝛽, respectively, are (A) 1, 16 (B) 2, 4 (C) 3, 5 (D) 2.66, 2.25 Page 29 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 39,
@@ -551,7 +719,13 @@
       "imagePath": "crops/2023-EE/Q39.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 30,
-      "imageEndPage": 31
+      "imageEndPage": 31,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.39 A 3-phase, star-connected, balanced load is supplied from a 3-phase, 400 V (rms), balanced voltage source with phase sequence R-Y-B, as shown in the figure. If the wattmeter reading is −400 W and the line current is 𝐼𝑅= 2 A (rms), then the power factor of the load per phase is Wattmeter R IR M L C V 3 Phase 3 Phase + - Star 400 V Y Connected Balanced Balanced Source B Load (A) Unity (B) 0.5 leading (C) 0.866 leading (D) 0.707 lagging Page 30 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 40,
@@ -566,7 +740,13 @@
       "imagePath": "crops/2023-EE/Q40.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 31,
-      "imageEndPage": 32
+      "imageEndPage": 32,
+      "subject": "Digital Electronics",
+      "topic": "Converters",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.40 An 8 bit ADC converts analog voltage in the range of 0 to +5 V to the corresponding digital code as per the conversion characteristics shown in figure. For 𝑉𝑖𝑛= 1.9922 𝑉, which of the following digital output, given in hex, is true ? Digital Output in Hex 03H 02H 01H 00H Vin in mV 0 9.8 19.6 39.2 58.8 Analog Input (A) 64H (B) 65H (C) 66H (D) 67H Page 31 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 41,
@@ -581,7 +761,13 @@
       "imagePath": "crops/2023-EE/Q41.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 32,
-      "imageEndPage": 33
+      "imageEndPage": 33,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 1,
+      "sourceExtract": "Q.41 The three-bus power system shown in the figure has one alternator connected to bus 2 which supplies 200 MW and 40 MVAr power. Bus 3 is infinite bus having a voltage of magnitude |V3| =1.0 p.u. and angle of -15. A variable current source, |I| is connected at bus 1 and controlled such that the magnitude of the bus 1 voltage is maintained at 1.05 p.u. and the phase angle of the source current, = 1 𝜋 where 1 is the phase angle of the bus 1 voltage. The three buses can be 2, categorized for load flow analysis as (A) 𝐵𝑢𝑠 1 𝑆𝑙𝑎𝑐𝑘 𝑏𝑢𝑠 𝐵𝑢𝑠 2 𝑃−|𝑉| 𝑏𝑢𝑠 𝐵𝑢𝑠 3 𝑃−𝑄 𝑏𝑢𝑠 (B) 𝐵𝑢𝑠 1 𝑃−|𝑉| 𝑏𝑢𝑠 𝐵𝑢𝑠 2 𝑃−|𝑉| 𝑏𝑢𝑠 𝐵𝑢𝑠 3 𝑆𝑙𝑎𝑐𝑘 𝑏𝑢𝑠 (C) 𝐵𝑢𝑠 1 𝑃−𝑄 𝑏𝑢𝑠 𝐵𝑢𝑠 2 𝑃−𝑄 𝑏𝑢𝑠 𝐵𝑢𝑠 3 𝑆𝑙𝑎𝑐𝑘 𝑏𝑢𝑠 (D) 𝐵𝑢𝑠 1 𝑃−|𝑉| 𝑏𝑢𝑠 𝐵𝑢𝑠 2 𝑃−𝑄 𝑏𝑢𝑠 𝐵𝑢𝑠 3 𝑆𝑙𝑎𝑐𝑘 𝑏𝑢𝑠 Page 32 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 42,
@@ -596,7 +782,13 @@
       "imagePath": "crops/2023-EE/Q42.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 33,
-      "imageEndPage": 33
+      "imageEndPage": 33,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.42 Consider the following equation in a 2-D real-space. |𝑥1|𝑝+ |𝑥2|𝑝= 1 for 𝑝> 0 Which of the following statement(s) is/are true. (A) When p = 2, the area enclosed by the curve is 𝜋. (B) When p tends to ∞, the area enclosed by the curve tends to 4. (C) When p tends to 0, the area enclosed by the curve is 1. (D) When p = 1, the area enclosed by the curve is 2."
     },
     {
       "number": 43,
@@ -611,7 +803,13 @@
       "imagePath": "crops/2023-EE/Q43.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 33,
-      "imageEndPage": 34
+      "imageEndPage": 34,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.43 In the figure, the electric field E and the magnetic field B point to x and z directions, respectively, and have constant magnitudes. A positive charge ‘q’ is released from rest at the origin. Which of the following statement(s) is/are true. (A) The charge will move in the direction of z with constant velocity. (B) The charge will always move on the y-z plane only. (C) The trajectory of the charge will be a circle. (D) The charge will progress in the direction of y. Page 33 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 44,
@@ -626,7 +824,13 @@
       "imagePath": "crops/2023-EE/Q44.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 34,
-      "imageEndPage": 34
+      "imageEndPage": 34,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.44 All the elements in the circuit shown in the following figure are ideal. Which of the following statements is/are true? D1 4 A, DC 2 A, DC D3 D2 + + 10 V 20 V S + 40 V (A) When switch S is ON, both D1 and D2 conducts and D3 is reverse biased (B) When switch S is ON, D1 conducts and both D2 and D3 are reverse biased (C) When switch S is OFF, D1 is reverse biased and both D2 and D3 conduct (D) When switch S is OFF, D1 conducts, D2 is reverse biased and D3 conducts"
     },
     {
       "number": 45,
@@ -641,7 +845,13 @@
       "imagePath": "crops/2023-EE/Q45.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 34,
-      "imageEndPage": 34
+      "imageEndPage": 34,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.45 The expected number of trials for first occurrence of a “head” in a biased coin is known to be 4. The probability of first occurrence of a “head” in the second trial is _____________ (Round off to 3 decimal places)."
     },
     {
       "number": 46,
@@ -656,7 +866,13 @@
       "imagePath": "crops/2023-EE/Q46.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 34,
-      "imageEndPage": 35
+      "imageEndPage": 35,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.46 Consider the state-space description of an LTI system with matrices 0 1 𝐴= [ , 𝐵= [0 , 𝐶= [3 −2], 𝐷= 1 −1 −2] 1] For the input, sin(𝜔𝑡), 𝜔> 0, the value of 𝜔 for which the steady-state output of the system will be zero, is ___________ (Round off to the nearest integer). Page 34 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 47,
@@ -671,7 +887,13 @@
       "imagePath": "crops/2023-EE/Q47.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 35,
-      "imageEndPage": 35
+      "imageEndPage": 35,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 3,
+      "sourceExtract": "Q.47 A three-phase synchronous motor with synchronous impedance of 0.1+j0.3 per unit per phase has a static stability limit of 2.5 per unit. The corresponding excitation voltage in per unit is ___________ (Round off to 2 decimal places)."
     },
     {
       "number": 48,
@@ -686,7 +908,13 @@
       "imagePath": "crops/2023-EE/Q48.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 35,
-      "imageEndPage": 35
+      "imageEndPage": 35,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.48 A three phase 415 V, 50 Hz, 6-pole, 960 RPM, 4 HP squirrel cage induction motor drives a constant torque load at rated speed operating from rated supply and delivering rated output. If the supply voltage and frequency are reduced by 20%, the resultant speed of the motor in RPM (neglecting the stator leakage impedance and rotational losses) is __________ (Round off to the nearest integer)."
     },
     {
       "number": 49,
@@ -701,7 +929,13 @@
       "imagePath": "crops/2023-EE/Q49.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 35,
-      "imageEndPage": 35
+      "imageEndPage": 35,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.49 The period of the discrete-time signal 𝑥[𝑛] described by the equation below is 𝑁= ___________________ (Round off to the nearest integer). 3𝜋 𝑥[𝑛] = 1 + 3𝑠𝑖𝑛(15𝜋 𝑛+ ) −5sin (𝜋 𝑛−𝜋 8 4 3 4)"
     },
     {
       "number": 50,
@@ -716,7 +950,13 @@
       "imagePath": "crops/2023-EE/Q50.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 35,
-      "imageEndPage": 36
+      "imageEndPage": 36,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.50 The discrete-time Fourier transform of a signal 𝑥[𝑛] is 𝑋(Ω) = (1 + 𝑐𝑜𝑠Ω)𝑒−𝑗Ω. Consider that 𝑥𝑝[𝑛] is a periodic signal of period N = 5 such that 𝑥𝑝[𝑛] = 𝑥[𝑛], for 𝑛= 0, 1 ,2 = 0, for 𝑛= 3, 4 𝑁𝑘𝑛 . The magnitude of the Fourier series coefficient Note that 𝑥𝑝[𝑛] = ∑ 𝑁−1𝑘=0 𝑎𝑘𝑒𝑗2𝜋 𝑎3 is _______________ (Round off to 3 decimal places). Page 35 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 51,
@@ -731,7 +971,13 @@
       "imagePath": "crops/2023-EE/Q51.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 36,
-      "imageEndPage": 36
+      "imageEndPage": 36,
+      "subject": "Network Theory",
+      "topic": "Two-Port Networks",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 29,
+      "sourceExtract": "Q.51 For the circuit shown, if 𝑖= 𝑠𝑖𝑛1000𝑡, the instantaneous value of the Thevenin’s equivalent voltage (in Volts) across the terminals a-b at time t = 5 ms is __________ (Round off to 2 decimal places). 4ix a ix 10Ω 10 i = sin1000t j1010 mH -100j10F b The admittance parameters of the passive resistive two-port network shown in the"
     },
     {
       "number": 52,
@@ -746,7 +992,13 @@
       "imagePath": "crops/2023-EE/Q52.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 36,
-      "imageEndPage": 37
+      "imageEndPage": 37,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "p p p Q.52 figure are 𝑦11 = 5 𝑆, 𝑦22 = 1 𝑆, 𝑦12 = 𝑦21 = −2.5 𝑆 The power delivered to the load resistor RL in Watt is __________ (Round off to 2 decimal places). Page 36 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 53,
@@ -761,7 +1013,13 @@
       "imagePath": "crops/2023-EE/Q53.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 37,
-      "imageEndPage": 37
+      "imageEndPage": 37,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.53 When the winding c-d of the single-phase, 50 Hz, two winding transformer is supplied from an AC current source of frequency 50 Hz, the rated voltage of 200 V (rms), 50 Hz is obtained at the open-circuited terminals a-b. The cross sectional area of the core is 5000 mm2 and the average core length traversed by the mutual flux is 500 mm. The maximum allowable flux density in the core is Bmax = 1 Wb/m2 and the relative permeability of the core material is 5000. The leakage impedance of the winding a-b and winding c-d at 50 Hz are (5 + j100×0.16)  and (11.25 + j100×0.36) , respectively. Considering the magnetizing characteristics to be linear and neglecting core loss, the self-inductance of the winding a-b in millihenry is ___________ (Round off to 1 decimal place). a c Vab = 50 Hz, AC 200 V, 50 Hz current source b d"
     },
     {
       "number": 54,
@@ -776,7 +1034,13 @@
       "imagePath": "crops/2023-EE/Q54.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 37,
-      "imageEndPage": 38
+      "imageEndPage": 38,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.54 The circuit shown in the figure is initially in the steady state with the switch K in open condition and 𝐾̅ in closed condition. The switch K is closed and 𝐾̅ is opened simultaneously at the instant t = t1, where t1 > 0. The minimum value of t1 in milliseconds, such that there is no transient in the voltage across the 100 F capacitor, is ____________ (Round off to 2 decimal places). K 100F 10 𝒊ሺ𝒕ሻ= 𝒔𝒊𝒏𝟏𝟎𝟎𝟎𝒕 𝑲ഥ 10 5V Page 37 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 55,
@@ -791,7 +1055,13 @@
       "imagePath": "crops/2023-EE/Q55.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 38,
-      "imageEndPage": 38
+      "imageEndPage": 38,
+      "subject": "Power Electronics",
+      "topic": "Converters and Drives",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 17,
+      "sourceExtract": "Q.55 The circuit shown in the figure has reached steady state with thyristor ‘T’ in OFF condition. Assume that the latching and holding currents of the thyristor are zero. The thyristor is turned ON at t = 0 sec. The duration in microseconds for which the thyristor would conduct, before it turns off, is _____ (Round off to 2 decimal places). C = 1 F T L = 4 + 100 V 4"
     },
     {
       "number": 56,
@@ -806,7 +1076,13 @@
       "imagePath": "crops/2023-EE/Q56.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 38,
-      "imageEndPage": 39
+      "imageEndPage": 39,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.56 Neglecting the delays due to the logic gates in the circuit shown in figure, the decimal equivalent of the binary sequence [ABCD] of initial logic states, which will not change with clock, is ____________. Page 38 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 57,
@@ -821,7 +1097,13 @@
       "imagePath": "crops/2023-EE/Q57.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 39,
-      "imageEndPage": 39
+      "imageEndPage": 39,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.57 In a given 8-bit general purpose micro-controller there are following flags. C-Carry, A-Auxiliary Carry, O-Overflow flag, P-Parity (0 for even, 1 for odd) R0 and R1 are the two general purpose registers of the micro-controller. After execution of the following instructions, the decimal equivalent of the binary sequence of the flag pattern [CAOP] will be __________. MOV R0, +0x60 MOV R1, +0x46 ADD R0, R1"
     },
     {
       "number": 58,
@@ -836,7 +1118,13 @@
       "imagePath": "crops/2023-EE/Q58.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 39,
-      "imageEndPage": 39
+      "imageEndPage": 39,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.58 The single phase rectifier consisting of three thyristors T1, T2, T3 and a diode D1 feed power to a 10 A constant current load. T1 and T3 are fired at α = 60° and T2 is fired at α = 240°. The reference for α is the positive zero crossing of Vin. The average voltage VO across the load in volts is _____ (Round off to 2 decimal places). + T1 D1 + Vin = 100 sin(100 t) V 10 A VO T2 T3 -"
     },
     {
       "number": 59,
@@ -851,7 +1139,13 @@
       "imagePath": "crops/2023-EE/Q59.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 39,
-      "imageEndPage": 40
+      "imageEndPage": 40,
+      "subject": "Analog Electronics",
+      "topic": "Diode Circuits",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.59 The Zener diode in circuit has a breakdown voltage of 5 V. The current gain β of the transistor in the active region in 99. Ignore base-emitter voltage drop VBE. The current through the 20 Ω resistance in milliamperes is ________(Round off to 2 decimal places). = 99 10 + 7 k 5 V Zener 20 25 V Page 39 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 60,
@@ -866,7 +1160,13 @@
       "imagePath": "crops/2023-EE/Q60.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 40,
-      "imageEndPage": 41
+      "imageEndPage": 41,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 1,
+      "sourceExtract": "Q.60 The two-bus power system shown in figure (i) has one alternator supplying a synchronous motor load through a Y-Δ transformer. The positive, negative and zero-sequence diagrams of the system are shown in figures (ii), (iii) and (iv), respectively. All reactances in the sequence diagrams are in p.u. For a bolted line- to-line fault (fault impedance = zero) between phases ‘b’ and ‘c’ at bus 1, neglecting all pre-fault currents, the magnitude of the fault current (from phase ‘b’ to ‘c’) in p.u. is _____________ (Round off to 2 decimal places). 1 2 jxn T1 Synchronous Motor Alternator figure (i): Single-line diagram of the power system 2 1 j0.1 2 1 j0.1 j0.3 j0.1 j0.3 j0.1 \" \" 𝐸𝑔 𝐸𝑚 figure (ii): Positive-sequence network figure (iii): Negative-sequence network 2 1 j0.1 j0.06 j0.05 j0.15 j0.09 figure (iv): Zero-sequence network Page 40 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE)"
     },
     {
       "number": 61,
@@ -881,7 +1181,13 @@
       "imagePath": "crops/2023-EE/Q61.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 41,
-      "imageEndPage": 41
+      "imageEndPage": 41,
+      "subject": "Electromagnetics",
+      "topic": "Electrostatics and Magnetostatics",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 11,
+      "sourceExtract": "Q.61 An infinite surface of linear current density 𝐊= 5𝐚̂𝐱 A/m exists on the x-y plane, as shown in the figure. The magnitude of the magnetic field intensity (H) at a point (1,1,1) due to the surface current in Ampere/meter is _______ (Round off to 2 decimal places)."
     },
     {
       "number": 62,
@@ -896,7 +1202,13 @@
       "imagePath": "crops/2023-EE/Q62.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 41,
-      "imageEndPage": 42
+      "imageEndPage": 42,
+      "subject": "Engineering Mathematics",
+      "topic": "Calculus",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 12,
+      "sourceExtract": "Q.62 The closed curve shown in the figure is described by 𝑟= 1 + 𝑐𝑜𝑠𝜃, where 𝑟= √𝑥2 + 𝑦2; 𝑥= 𝑟𝑐𝑜𝑠𝜃, 𝑦= 𝑟𝑠𝑖𝑛𝜃 The magnitude of the line integral of the vector field 𝐹= −𝑦𝑖̂ + 𝑥𝑗̂ around the closed curve is ____________ (Round off to 2 decimal places). Page 41 of 42 Organizing Institute: IIT Kanpur Electrical Engineering (EE) A signal 𝑥(𝑡) = 2𝑐𝑜𝑠(180𝜋𝑡)𝑐𝑜𝑠(60𝜋𝑡) is sampled at 200 Hz and then passed"
     },
     {
       "number": 63,
@@ -912,7 +1224,13 @@
       "imagePath": "crops/2023-EE/Q63.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 42,
-      "imageEndPage": 42
+      "imageEndPage": 42,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "A signal 𝑥(𝑡) = 2𝑐𝑜𝑠(180𝜋𝑡)𝑐𝑜𝑠(60𝜋𝑡) is sampled at 200 Hz and then passedQ.63 through an ideal low pass filter having cut-off frequency of 100 Hz. The maximum frequency present in the filtered signal in Hz is _____________ (Round off to the nearest integer)."
     },
     {
       "number": 64,
@@ -927,7 +1245,13 @@
       "imagePath": "crops/2023-EE/Q64.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 42,
-      "imageEndPage": 42
+      "imageEndPage": 42,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.64 A balanced delta connected load consisting of the series connection of one resistor (R = 15 ) and a capacitor (C = 212.21 F) in each phase is connected to three- phase, 50 Hz, 415 V supply terminals through a line having an inductance of L = 31.83 mH per phase, as shown in the figure. Considering the change in the supply terminal voltage with loading to be negligible, the magnitude of the voltage across the terminals VAB in Volts is _____________ (Round off to the nearest integer). L A R C 3-phase, 50 Hz, L C B R 415 V (r.m.s.) supply L C R C terminals R = 15 , L = 31.83 mH, C = 212.21 F"
     },
     {
       "number": 65,
@@ -942,7 +1266,13 @@
       "imagePath": "crops/2023-EE/Q65.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 42,
-      "imageEndPage": 42
+      "imageEndPage": 42,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.65 A quadratic function of two variables is given as 𝑓(𝑥1, 𝑥2) = 𝑥12 + 2𝑥22 + 3𝑥1 + 3𝑥2 + 𝑥1𝑥2 + 1 The magnitude of the maximum rate of change of the function at the point (1,1) is _________ (Round off to the nearest integer). END OF QUESTION PAPER Page 42 of 42 Organizing Institute: IIT Kanpur"
     }
   ]
 }

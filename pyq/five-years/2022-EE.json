@@ -132,7 +132,13 @@
       "imagePath": "crops/2022-EE/Q11.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 11,
-      "imageEndPage": 11
+      "imageEndPage": 11,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.11 – Q.35 Carry ONE mark Each Q.11 The transfer function of a real system, 𝐻(𝑠), is given as: ஺௦ା஻ , 𝐻(𝑠) = ௦మା஼௦ା஽ where 𝐴, 𝐵, 𝐶and 𝐷 are positive constants. This system cannot operate as (A) low pass filter. (B) high pass filter. (C) band pass filter. (D) an integrator."
     },
     {
       "number": 12,
@@ -147,7 +153,13 @@
       "imagePath": "crops/2022-EE/Q12.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 11,
-      "imageEndPage": 12
+      "imageEndPage": 12,
+      "subject": "Analog Electronics",
+      "topic": "Amplifiers and Op-Amps",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 29,
+      "sourceExtract": "Q.12 For an ideal MOSFET biased in saturation, the magnitude of the small signal current gain for a common drain amplifier is (A) 0 (B) 1 (C) 100 (D) infinite Page 11 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 13,
@@ -162,7 +174,13 @@
       "imagePath": "crops/2022-EE/Q13.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 12,
-      "imageEndPage": 12
+      "imageEndPage": 12,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.13 The most commonly used relay, for the protection of an alternator against loss of excitation, is (A) offset Mho relay. (B) over current relay. (C) differential relay. (D) Buchholz relay."
     },
     {
       "number": 14,
@@ -177,7 +195,13 @@
       "imagePath": "crops/2022-EE/Q14.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 12,
-      "imageEndPage": 13
+      "imageEndPage": 13,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.14 The geometric mean radius of a conductor, having four equal strands with each strand of radius ‘𝑟’, as shown in the figure below, is r (A) 4 𝑟 (B) 1.414 𝑟 (C) 2 𝑟 (D) 1.723 𝑟 Page 12 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 15,
@@ -192,7 +216,13 @@
       "imagePath": "crops/2022-EE/Q15.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 13,
-      "imageEndPage": 13
+      "imageEndPage": 13,
+      "subject": "Power Systems",
+      "topic": "Power System Analysis",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 17,
+      "sourceExtract": "Q.15 The valid positive, negative and zero sequence impedances (in p.u.), respectively, for a 220 kV, fully transposed three-phase transmission line, from the given choices are (A) 1.1, 0.15 and 0.08 (B) 0.15, 0.15 and 0.35 (C) 0.2, 0.2 and 0.2 (D) 0.1, 0.3 and 0.1"
     },
     {
       "number": 16,
@@ -207,7 +237,13 @@
       "imagePath": "crops/2022-EE/Q16.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 13,
-      "imageEndPage": 14
+      "imageEndPage": 14,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.16 The steady state output (𝑉௢௨௧), of the circuit shown below, will (A) saturate to +VDD (B) saturate to -VEE (C) become equal to 0.1 V (D) become equal to –0.1 V Page 13 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 17,
@@ -222,7 +258,13 @@
       "imagePath": "crops/2022-EE/Q17.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 14,
-      "imageEndPage": 14
+      "imageEndPage": 14,
+      "subject": "Network Theory",
+      "topic": "Network Functions and Filters",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 10,
+      "sourceExtract": "Q.17 The Bode magnitude plot of a first order stable system is constant with frequency. The asymptotic value of the high frequency phase, for the system, is −180୭. This system has (A) one LHP pole and one RHP zero at the same frequency. (B) one LHP pole and one LHP zero at the same frequency. (C) two LHP poles and one RHP zero. (D) two RHP poles and one LHP zero."
     },
     {
       "number": 18,
@@ -237,7 +279,13 @@
       "imagePath": "crops/2022-EE/Q18.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 14,
-      "imageEndPage": 15
+      "imageEndPage": 15,
+      "subject": "Network Theory",
+      "topic": "Network Functions",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 15,
+      "sourceExtract": "Q.18 A balanced Wheatstone bridge 𝐴𝐵𝐶𝐷 has the following arm resistances: 𝑅஺஻= 1 𝑘Ω ± 2.1% ; 𝑅஻஼= 100 Ω± 0.5% ; 𝑅஼஽ is an unknown resistance; 𝑅஽஺= 300 Ω± 0.4%. The value of 𝑅஼஽and its accuracy is (A) 30 Ω± 3 Ω (B) 30 Ω± 0.9 Ω (C) 3000 Ω± 90 Ω (D) 3000 Ω± 3 Ω Page 14 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 19,
@@ -252,7 +300,13 @@
       "imagePath": "crops/2022-EE/Q19.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 15,
-      "imageEndPage": 15
+      "imageEndPage": 15,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.19 The open loop transfer function of a unity gain negative feedback system is given by 𝐺(𝑠) = ௞ The range of 𝑘 for which the system is stable, is ௦మାସ௦ିହ. (A) 𝑘> 3 (B) 𝑘< 3 (C) 𝑘> 5 (D) 𝑘< 5"
     },
     {
       "number": 20,
@@ -267,7 +321,13 @@
       "imagePath": "crops/2022-EE/Q20.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 15,
-      "imageEndPage": 16
+      "imageEndPage": 16,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.20 Consider a 3 x 3 matrix 𝐴 whose (𝑖, 𝑗)-th element, 𝑎௜,௝= (𝑖−𝑗)ଷ. Then the matrix 𝐴 will be (A) symmetric. (B) skew-symmetric. (C) unitary. (D) null. Page 15 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 21,
@@ -282,7 +342,13 @@
       "imagePath": "crops/2022-EE/Q21.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 16,
-      "imageEndPage": 16
+      "imageEndPage": 16,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.21 In the circuit shown below, a three-phase star-connected unbalanced load is connected to a balanced three-phase supply of 100√3 𝑉 with phase sequence 𝐴𝐵𝐶. The star connected load has 𝑍஺= 10 Ωand 𝑍஻= 20∠60୭Ω. The value of 𝑍஼ in Ω, for which the voltage difference across the nodes 𝑛 and 𝑛′ is zero, is (A) 20∠−30୭ (B) 20∠30୭ (C) 20∠−60୭ (D) 20∠60୭"
     },
     {
       "number": 22,
@@ -297,7 +363,13 @@
       "imagePath": "crops/2022-EE/Q22.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 16,
-      "imageEndPage": 17
+      "imageEndPage": 17,
+      "subject": "Power Electronics",
+      "topic": "Converters and Drives",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 16,
+      "sourceExtract": "Q.22 A charger supplies 100 W at 20 V for charging the battery of a laptop. The power devices, used in the converter inside the charger, operate at a switching frequency of 200 kHz. Which power device is best suited for this purpose? (A) IGBT (B) Thyristor (C) MOSFET (D) BJT Page 16 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 23,
@@ -312,7 +384,13 @@
       "imagePath": "crops/2022-EE/Q23.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 17,
-      "imageEndPage": 17
+      "imageEndPage": 17,
+      "subject": "Electromagnetics",
+      "topic": "Electrostatics and Magnetostatics",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 11,
+      "sourceExtract": "Q.23 A long conducting cylinder having a radius ‘b’ is placed along the z axis. The current density is 𝐉= Jୟrଷzො for the region r < b where r is the distance in the radial direction. The magnetic field intensity (H) for the region inside the conductor (i.e. for r < b) is (A) Jୟ rସ 4 (B) Jୟ rଷ 3 (C) Jୟ rସ 5 (D) Jୟrଷ"
     },
     {
       "number": 24,
@@ -327,7 +405,13 @@
       "imagePath": "crops/2022-EE/Q24.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 17,
-      "imageEndPage": 18
+      "imageEndPage": 18,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.24 The type of single-phase induction motor, expected to have the maximum power factor during steady state running condition, is (A) split phase (resistance start). (B) shaded pole. (C) capacitor start. (D) capacitor start, capacitor run. Page 17 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 25,
@@ -342,7 +426,13 @@
       "imagePath": "crops/2022-EE/Q25.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 18,
-      "imageEndPage": 18
+      "imageEndPage": 18,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.25 For the circuit shown below with ideal diodes, the output will be (A) 𝑉௢௨௧= 𝑉௜௡ for 𝑉௜௡> 0 (B) 𝑉௢௨௧= 𝑉௜௡ for 𝑉௜௡< 0 (C) 𝑉௢௨௧= −𝑉௜௡ for 𝑉௜௡> 0 (D) 𝑉௢௨௧= −𝑉௜௡ for 𝑉௜௡< 0"
     },
     {
       "number": 26,
@@ -357,7 +447,13 @@
       "imagePath": "crops/2022-EE/Q26.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 18,
-      "imageEndPage": 18
+      "imageEndPage": 18,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.26 A MOD 2 and a MOD 5 up-counter when cascaded together results in a MOD ______ counter. (in integer)"
     },
     {
       "number": 27,
@@ -372,7 +468,13 @@
       "imagePath": "crops/2022-EE/Q27.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 18,
-      "imageEndPage": 19
+      "imageEndPage": 19,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.27 An inductor having a 𝑄-factor of 60 is connected in series with a capacitor having a 𝑄- factor of 240. The overall 𝑄-factor of the circuit is ________. (round off to nearest integer) Page 18 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 28,
@@ -387,7 +489,13 @@
       "imagePath": "crops/2022-EE/Q28.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 19,
-      "imageEndPage": 19
+      "imageEndPage": 19,
+      "subject": "Network Theory",
+      "topic": "AC Circuits and Transients",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 12,
+      "sourceExtract": "Q.28 The network shown below has a resonant frequency of 150 kHz and a bandwidth of 600 Hz. The 𝑄-factor of the network is __________. (round off to nearest integer)"
     },
     {
       "number": 29,
@@ -402,7 +510,13 @@
       "imagePath": "crops/2022-EE/Q29.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 19,
-      "imageEndPage": 19
+      "imageEndPage": 19,
+      "subject": "Digital Electronics",
+      "topic": "Combinational and Sequential Logic",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 27,
+      "sourceExtract": "Q.29 The maximum clock frequency in MHz of a 4-stage ripple counter, utilizing flip- flops, with each flip-flop having a propagation delay of 20 ns, is ___________. (round off to one decimal place)"
     },
     {
       "number": 30,
@@ -417,7 +531,13 @@
       "imagePath": "crops/2022-EE/Q30.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 19,
-      "imageEndPage": 19
+      "imageEndPage": 19,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.30 If only 5% of the supplied power to a cable reaches the output terminal, the power loss in the cable, in decibels, is _________. (round off to nearest integer)"
     },
     {
       "number": 31,
@@ -432,7 +552,13 @@
       "imagePath": "crops/2022-EE/Q31.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 19,
-      "imageEndPage": 20
+      "imageEndPage": 20,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.31 In the circuit shown below, the switch 𝑆 is closed at 𝑡= 0. The magnitude of the steady state voltage, in volts, across the 6 Ω resistor is _________. (round off to two decimal places). Page 19 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 32,
@@ -447,7 +573,13 @@
       "imagePath": "crops/2022-EE/Q32.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 20,
-      "imageEndPage": 20
+      "imageEndPage": 20,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.32 A single-phase full-bridge diode rectifier feeds a resistive load of 50 Ω from a 200 V, 50 Hz single phase AC supply. If the diodes are ideal, then the active power, in watts, drawn by the load is _____________. (round off to nearest integer)."
     },
     {
       "number": 33,
@@ -462,7 +594,13 @@
       "imagePath": "crops/2022-EE/Q33.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 20,
-      "imageEndPage": 20
+      "imageEndPage": 20,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.33 The voltage at the input of an AC-DC rectifier is given by 𝑣(𝑡) = 230√2 sin 𝜔𝑡 where 𝜔= 2𝜋× 50 rad/s. The input current drawn by the rectifier is given by గ గ గ 𝑖(𝑡) = 10 sin ቀ𝜔𝑡− ଷቁ+ 4 sin ቀ3𝜔𝑡− ଺ቁ+ 3sin ቀ5𝜔𝑡− ଷቁ. The input power factor, (rounded off to two decimal places), is, _________________ lag."
     },
     {
       "number": 34,
@@ -477,7 +615,13 @@
       "imagePath": "crops/2022-EE/Q34.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 20,
-      "imageEndPage": 20
+      "imageEndPage": 20,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.34 Two balanced three-phase loads, as shown in the figure, are connected to a 100√3 V, three-phase, 50 Hz main supply. Given 𝑍ଵ= (18 + 𝑗24) Ω and 𝑍ଶ= (6 + 𝑗8) Ω . The ammeter reading, in amperes, is _______. (round off to nearest integer)"
     },
     {
       "number": 35,
@@ -492,7 +636,13 @@
       "imagePath": "crops/2022-EE/Q35.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 20,
-      "imageEndPage": 21
+      "imageEndPage": 21,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.35 The frequencies of the stator and rotor currents flowing in a three-phase 8-pole induction motor are 40 Hz and 1 Hz, respectively. The motor speed, in rpm, is _________________. (round off to nearest integer) Page 20 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 36,
@@ -507,7 +657,13 @@
       "imagePath": "crops/2022-EE/Q36.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 21,
-      "imageEndPage": 22
+      "imageEndPage": 22,
+      "subject": "Analog Electronics",
+      "topic": "Amplifiers and Op-Amps",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 16,
+      "sourceExtract": "Q.36 – Q.65 Carry TWO marks Each Q.36 The output impedance of a non-ideal operational amplifier is denoted by Z୭୳୲. The variation in the magnitude of Z୭୳୲ with increasing frequency, f, in the circuit shown below, is best represented by (A) (B) log(|Zout|) log(f) (C) Page 21 of 36 GATE 2022 Electrical Engineering (EE) (D)"
     },
     {
       "number": 37,
@@ -522,7 +678,13 @@
       "imagePath": "crops/2022-EE/Q37.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 22,
-      "imageEndPage": 23
+      "imageEndPage": 23,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.37 An LTI system is shown in the figure where ଵ଴଴ . 𝐺(𝑠) = ௦మା଴.ଵ௦ାଵ଴ The steady state output of the system, to the input 𝑟(𝑡), is given as 𝑦(𝑡) = 𝑎+ 𝑏𝑠𝑖𝑛(10𝑡+ 𝜃). The values of ‘𝑎’ and ‘𝑏’ will be (A) 𝑎= 1, 𝑏= 10 (B) 𝑎= 10, 𝑏= 1 (C) 𝑎= 1, 𝑏= 100 (D) 𝑎= 100, 𝑏= 1 Page 22 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 38,
@@ -537,7 +699,13 @@
       "imagePath": "crops/2022-EE/Q38.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 23,
-      "imageEndPage": 24
+      "imageEndPage": 24,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.38 The open loop transfer function of a unity gain negative feedback system is given as ଵ . 𝐺(𝑠) = ௦(௦ାଵ) The Nyquist contour in the 𝑠-plane encloses the entire right half plane and a small neighbourhood around the origin in the left half plane, as shown in the figure below. The number of encirclements of the point (−1 + 𝑗0) by the Nyquist plot of 𝐺(𝑠), corresponding to the Nyquist contour, is denoted as 𝑁. Then 𝑁 equals to (A) 0 (B) 1 (C) 2 (D) 3 Page 23 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 39,
@@ -552,7 +720,13 @@
       "imagePath": "crops/2022-EE/Q39.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 24,
-      "imageEndPage": 24
+      "imageEndPage": 24,
+      "subject": "Network Theory",
+      "topic": "AC Circuits and Transients",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 12,
+      "sourceExtract": "Q.39 The damping ratio and undamped natural frequency of a closed loop system as shown in the figure, are denoted as 𝜁 and 𝜔௡, respectively. The values of 𝜁 and 𝜔௡ are (A) 𝜁= 0.5 and 𝜔௡= 10 rad/s (B) 𝜁= 0.1 and 𝜔௡= 10 rad/s (C) 𝜁= 0.707 and 𝜔௡= 10 rad/s (D) 𝜁= 0.707 and 𝜔௡= 100 rad/s"
     },
     {
       "number": 40,
@@ -567,7 +741,13 @@
       "imagePath": "crops/2022-EE/Q40.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 24,
-      "imageEndPage": 25
+      "imageEndPage": 25,
+      "subject": "Engineering Mathematics",
+      "topic": "Linear Algebra",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.40 𝑒஺ denotes the exponential of a square matrix A. Suppose 𝜆 is an eigenvalue and 𝑣 is the corresponding eigen-vector of matrix A. Consider the following two statements: Statement 1: 𝑒ఒ is an eigenvalue of 𝑒஺. Statement 2: 𝑣 is an eigen-vector of 𝑒஺. Which one of the following options is correct? (A) Statement 1 is true and statement 2 is false. (B) Statement 1 is false and statement 2 is true. (C) Both the statements are correct. (D) Both the statements are false. Page 24 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 41,
@@ -582,7 +762,13 @@
       "imagePath": "crops/2022-EE/Q41.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 25,
-      "imageEndPage": 25
+      "imageEndPage": 25,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.41 Let 𝑓(𝑥) = ∫𝑒௧(𝑡−1)(𝑡−2)𝑑𝑡.௫ Then 𝑓(𝑥) decreases in the interval ଴ (A) 𝑥∈(1,2) (B) 𝑥∈(2,3) (C) 𝑥∈(0,1) (D) 𝑥∈(0.5,1)"
     },
     {
       "number": 42,
@@ -597,7 +783,13 @@
       "imagePath": "crops/2022-EE/Q42.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 25,
-      "imageEndPage": 26
+      "imageEndPage": 26,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.42 1 0 0 Consider a matrix 𝐴= ൥ 0 4 −2 ൩ . 0 1 1 The matrix A satisfies the equation 6𝐴ିଵ= 𝐴ଶ+ 𝑐𝐴+ 𝑑𝐼, where 𝑐 and 𝑑 are scalars and 𝐼 is the identity matrix. Then (𝑐+ 𝑑) is equal to (A) 5 (B) 17 (C) −6 (D) 11 Page 25 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 43,
@@ -612,7 +804,13 @@
       "imagePath": "crops/2022-EE/Q43.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 26,
-      "imageEndPage": 27
+      "imageEndPage": 27,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.43 The fuel cost functions in rupees/hour for two 600 MW thermal power plants are given by Plant 1: 𝐶ଵ= 350 + 6𝑃ଵ+ 0.004𝑃ଵଶ Plant 2: 𝐶ଶ= 450 + 𝑎𝑃ଶ+ 0.003𝑃ଶଶ where 𝑃ଵ and 𝑃ଶ are power generated by plant 1 and plant 2, respectively, in MW and 𝑎 is constant. The incremental cost of power (𝜆) is 8 rupees per MWh. The two thermal power plants together meet a total power demand of 550 MW. The optimal generation of plant 1 and plant 2 in MW, respectively, are (A) 200, 350 (B) 250, 300 (C) 325, 225 (D) 350, 200 Page 26 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 44,
@@ -627,7 +825,13 @@
       "imagePath": "crops/2022-EE/Q44.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 27,
-      "imageEndPage": 27
+      "imageEndPage": 27,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.44 The current gain (Iout/Iin) in the circuit with an ideal current amplifier given below is Cf Cc ∞ Iin Iout (A) 𝐶௙ 𝐶௖ (B) −𝐶௙ 𝐶௖ (C) 𝐶௖ 𝐶௙ (D) −𝐶௖ 𝐶௙"
     },
     {
       "number": 45,
@@ -642,7 +846,13 @@
       "imagePath": "crops/2022-EE/Q45.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 27,
-      "imageEndPage": 28
+      "imageEndPage": 28,
+      "subject": "Electromagnetics",
+      "topic": "Electrostatics and Magnetostatics",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 11,
+      "sourceExtract": "Q.45 If the magnetic field intensity (H) in a conducting region is given by the expression, 𝐇= 𝑥ଶı̂ + 𝑥ଶ𝑦ଶ ȷ̂ + 𝑥ଶ𝑦ଶ 𝑧ଶ k෠A/m. The magnitude of the current density, in A/m2, at 𝑥= 1 m, 𝑦= 2 m, and 𝑧= 1 m, is (A) 8 (B) 12 (C) 16 (D) 20 Page 27 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 46,
@@ -657,7 +867,13 @@
       "imagePath": "crops/2022-EE/Q46.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 28,
-      "imageEndPage": 28
+      "imageEndPage": 28,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 2,
+      "sourceExtract": "Q.46 Let a causal LTI system be governed by the following differential equation ଵ ௗ௬ 𝑦(𝑡) + 2𝑥(𝑡), where 𝑥(𝑡) and 𝑦(𝑡) are the input and output respectively. ସ ௗ௧= Its impulse response is (A) భ 2𝑒ି ర௧𝑢(𝑡) (B) 2𝑒ି ସ௧𝑢(𝑡) (C) భ 8𝑒ି ర௧𝑢(𝑡) (D) 8𝑒ି ସ௧𝑢(𝑡)"
     },
     {
       "number": 47,
@@ -672,7 +888,13 @@
       "imagePath": "crops/2022-EE/Q47.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 28,
-      "imageEndPage": 29
+      "imageEndPage": 29,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.47 Let an input 𝑥(𝑡) = 2 sin(10𝜋𝑡) + 5cos(15𝜋𝑡) + 7sin(42𝜋𝑡) + 4cos(45𝜋𝑡) is passed through an LTI system having an impulse response, ୱ୧୬(ଵ଴గ௧) ℎ(𝑡) = 2 ቀ ቁcos (40𝜋𝑡). గ௧ The output of the system is (A) 2 sin(10𝜋𝑡) + 5𝑐𝑜𝑠(15𝜋𝑡) (B) 5𝑐𝑜𝑠(15𝜋𝑡) + 7 sin(42𝜋𝑡) (C) 7 sin(42𝜋𝑡) + 4𝑐𝑜𝑠(45𝜋𝑡) (D) 2 sin(10𝜋𝑡) + 4𝑐𝑜𝑠(45𝜋𝑡) Page 28 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 48,
@@ -687,7 +909,13 @@
       "imagePath": "crops/2022-EE/Q48.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 29,
-      "imageEndPage": 29
+      "imageEndPage": 29,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.48 Consider the system as shown below where 𝑦(𝑡) = 𝑥(𝑒௧). The system is (A) linear and causal. (B) linear and non-causal. (C) non-linear and causal. (D) non-linear and non-causal."
     },
     {
       "number": 49,
@@ -702,7 +930,13 @@
       "imagePath": "crops/2022-EE/Q49.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 29,
-      "imageEndPage": 30
+      "imageEndPage": 30,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.49 The discrete time Fourier series representation of a signal 𝑥[𝑛] with period 𝑁 is written as 𝑥[𝑛] = ∑ேିଵ௞ୀ଴ 𝑎௞𝑒௝(ଶ௞௡గே)⁄ . A discrete time periodic signal with period 𝑁= 3, has the non-zero Fourier series coefficients: 𝑎ିଷ= 2 and 𝑎ସ= 1. The signal is (A) ቀ௝మഏ 2 + 2𝑒ି ల௡ቁcos ൬2𝜋 𝑛൰ 6 (B) 1 + 2𝑒ቀ௝మഏల௡ቁcos ൬2𝜋 𝑛൰ 6 (C) 1 + 2𝑒ቀ௝మഏయ௡ቁcos ൬2𝜋 𝑛൰ 6 (D) 2 + 2𝑒ቀ௝మഏల௡ቁcos ൬2𝜋 𝑛൰ 6 Page 29 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 50,
@@ -717,7 +951,13 @@
       "imagePath": "crops/2022-EE/Q50.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 30,
-      "imageEndPage": 30
+      "imageEndPage": 30,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.50 Let, f(𝑥, 𝑦, 𝑧) = 4𝑥ଶ+ 7𝑥𝑦+ 3𝑥𝑧ଶ . The direction in which the function 𝑓(𝑥, 𝑦, 𝑧) increases most rapidly at point 𝑃= (1,0,2) is (A) 20𝚤̂ + 7𝚥̂ (B) 20𝚤̂ + 7𝚥̂ + 12𝑘෠ (C) 20𝚤̂ + 12𝑘෠ (D) 20𝚤̂"
     },
     {
       "number": 51,
@@ -732,7 +972,13 @@
       "imagePath": "crops/2022-EE/Q51.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 30,
-      "imageEndPage": 31
+      "imageEndPage": 31,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.51 Let 𝑅 be a region in the first quadrant of the 𝑥𝑦 plane enclosed by a closed curve 𝐶 considered in counter-clockwise direction. Which of the following expressions does not represent the area of the region 𝑅? (A) ඵ𝑑𝑥𝑑𝑦 ோ (B) ර𝑥𝑑𝑦 ஼ (C) ර𝑦𝑑𝑥 ஼ (D) 1 ර(𝑥𝑑𝑦−𝑦𝑑𝑥) 2 ஼ Page 30 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 52,
@@ -747,7 +993,13 @@
       "imagePath": "crops/2022-EE/Q52.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 31,
-      "imageEndPage": 32
+      "imageEndPage": 32,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.52 Let 𝐸ሬ⃗(𝑥, 𝑦, 𝑧) = 2𝑥ଶ𝚤̂ + 5𝑦𝚥̂ + 3𝑧𝑘෠. The value of ∭(∇ሬ⃗⋅𝐸ሬ⃗)𝑑𝑉 , where 𝑉 is the ௏ volume enclosed by the unit cube defined by 0 ≤𝑥≤1, 0 ≤𝑦≤1, 𝑎𝑛𝑑0 ≤𝑧≤ 1, is (A) 3 (B) 8 (C) 10 (D) 5 Page 31 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 53,
@@ -762,7 +1014,13 @@
       "imagePath": "crops/2022-EE/Q53.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 32,
-      "imageEndPage": 33
+      "imageEndPage": 33,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.53 As shown in the figure below, two concentric conducting spherical shells, centered at r = 0 and having radii r = c and r = d are maintained at potentials such that the potential V(r) at r = c is Vଵ and V(r) at r = d is Vଶ. Assume that V(r) depends only on r, where r is the radial distance. The expression for V(r) in the region between r = c and r = d is (A) c d (Vଶ−Vଵ) + Vଶd −2 Vଵd V(r) = −Vଵc (d −c) r d −c (B) c d (Vଵ−Vଶ) Vଶd −Vଵc V(r) = + (d −c) r d −c (C) c d (Vଵ−Vଶ) −Vଶc V(r) = −Vଵc (d −c) r d −c (D) c d (Vଶ−Vଵ) −Vଵc V(r) = −Vଶc (d −c) r d −c Page 32 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 54,
@@ -777,7 +1035,13 @@
       "imagePath": "crops/2022-EE/Q54.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 33,
-      "imageEndPage": 33
+      "imageEndPage": 33,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.54 Let the probability density function of a random variable 𝑥 be given as 𝑓(𝑥) = 𝑎𝑒ି ଶ|௫| The value of ‘a’ is __________."
     },
     {
       "number": 55,
@@ -792,7 +1056,13 @@
       "imagePath": "crops/2022-EE/Q55.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 33,
-      "imageEndPage": 33
+      "imageEndPage": 33,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.55 In the circuit shown below, the magnitude of the voltage Vଵ in volts, across the 8 𝑘Ω resistor is ______________. (round off to nearest integer)"
     },
     {
       "number": 56,
@@ -807,7 +1077,13 @@
       "imagePath": "crops/2022-EE/Q56.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 33,
-      "imageEndPage": 33
+      "imageEndPage": 33,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.56 Two generating units rated for 250 MW and 400 MW have governor speed regulations of 6% and 6.4%, respectively, from no load to full load. Both the generating units are operating in parallel to share a load of 500 MW. Assuming free governor action, the load shared in MW, by the 250 MW generating unit is _________. (round off to nearest integer)"
     },
     {
       "number": 57,
@@ -822,7 +1098,13 @@
       "imagePath": "crops/2022-EE/Q57.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 33,
-      "imageEndPage": 34
+      "imageEndPage": 34,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.57 A 20 MVA, 11.2 kV, 4-pole, 50 Hz alternator has an inertia constant of 15 MJ/MVA. If the input and output powers of the alternator are 15 MW and 10 MW, respectively, the angular acceleration in mechanical degree/s2 is __________. (round off to nearest integer) Page 33 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 58,
@@ -837,7 +1119,13 @@
       "imagePath": "crops/2022-EE/Q58.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 34,
-      "imageEndPage": 34
+      "imageEndPage": 34,
+      "subject": "Power Electronics",
+      "topic": "Converters and Drives",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 17,
+      "sourceExtract": "Q.58 Consider an ideal full-bridge single-phase DC-AC inverter with a DC bus voltage magnitude of 1000 V. The inverter output voltage 𝑣(𝑡) shown below, is obtained when diagonal switches of the inverter are switched with 50 % duty cycle. The inverter feeds a load with a sinusoidal current given by, 𝑖(𝑡) = 10 sin(𝜔𝑡− గ A, ଷ) where 𝜔= ଶగ் . The active power, in watts, delivered to the load is _________. (round off to nearest integer)"
     },
     {
       "number": 59,
@@ -852,7 +1140,13 @@
       "imagePath": "crops/2022-EE/Q59.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 34,
-      "imageEndPage": 34
+      "imageEndPage": 34,
+      "subject": "Analog Electronics",
+      "topic": "Diode Circuits",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.59 For the ideal AC-DC rectifier circuit shown in the figure below, the load current magnitude is Idc = 15 A and is ripple free. The thyristors are fired with a delay angle of 45o. The amplitude of the fundamental component of the source current, in amperes, is __________. (round off to two decimal places)"
     },
     {
       "number": 60,
@@ -867,7 +1161,13 @@
       "imagePath": "crops/2022-EE/Q60.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 34,
-      "imageEndPage": 35
+      "imageEndPage": 35,
+      "subject": "Communication Systems",
+      "topic": "Communication Theory",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 17,
+      "sourceExtract": "Q.60 A 3-phase grid-connected voltage source converter with DC link voltage of 1000 V is switched using sinusoidal Pulse Width Modulation (PWM) technique. If the grid phase current is 10 A and the 3-phase complex power supplied by the converter is given by (−4000 −𝑗3000) VA, then the modulation index used in sinusoidal PWM is ___________. (round off to two decimal places) Page 34 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 61,
@@ -882,7 +1182,13 @@
       "imagePath": "crops/2022-EE/Q61.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 35,
-      "imageEndPage": 35
+      "imageEndPage": 35,
+      "subject": "Power Electronics",
+      "topic": "Converters and Drives",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 17,
+      "sourceExtract": "Q.61 The steady state current flowing through the inductor of a DC-DC buck boost converter is given in the figure below. If the peak-to-peak ripple in the output voltage of the converter is 1 V, then the value of the output capacitor, in µF, is _______________. (round off to nearest integer)"
     },
     {
       "number": 62,
@@ -897,7 +1203,13 @@
       "imagePath": "crops/2022-EE/Q62.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 35,
-      "imageEndPage": 36
+      "imageEndPage": 36,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.62 A 280 V, separately excited DC motor with armature resistance of 1 Ω and constant field excitation drives a load. The load torque is proportional to the speed. The motor draws a current of 30 A when running at a speed of 1000 rpm. Neglect frictional losses in the motor. The speed, in rpm, at which the motor will run, if an additional resistance of value 10 Ω is connected in series with the armature, is __________. (round off to nearest integer) Page 35 of 36 GATE 2022 Electrical Engineering (EE)"
     },
     {
       "number": 63,
@@ -912,7 +1224,13 @@
       "imagePath": "crops/2022-EE/Q63.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 36,
-      "imageEndPage": 36
+      "imageEndPage": 36,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.63 A 4-pole induction motor with inertia of 0.1 kg-m2 drives a constant load torque of 2 Nm. The speed of the motor is increased linearly from 1000 rpm to 1500 rpm in 4 seconds as shown in the figure below. Neglect losses in the motor. The energy, in joules, consumed by the motor during the speed change is ____________. (round off to nearest integer)"
     },
     {
       "number": 64,
@@ -927,7 +1245,13 @@
       "imagePath": "crops/2022-EE/Q64.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 36,
-      "imageEndPage": 36
+      "imageEndPage": 36,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.64 A star-connected 3-phase, 400 V, 50 kVA, 50 Hz synchronous motor has a synchronous reactance of 1 ohm per phase with negligible armature resistance. The shaft load on the motor is 10 kW while the power factor is 0.8 leading. The loss in the motor is 2 kW. The magnitude of the per phase excitation emf of the motor, in volts, is __________. (round off to nearest integer)."
     },
     {
       "number": 65,
@@ -942,7 +1266,13 @@
       "imagePath": "crops/2022-EE/Q65.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 36,
-      "imageEndPage": 36
+      "imageEndPage": 36,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.65 A 3-phase, 415 V, 4-pole, 50 Hz induction motor draws 5 times the rated current at rated voltage at starting. It is required to bring down the starting current from the supply to 2 times of the rated current using a 3-phase autotransformer. If the magnetizing impedance of the induction motor and no load current of the autotransformer is neglected, then the transformation ratio of the autotransformer is given by ____________. (round off to two decimal places). Page 36 of 36"
     }
   ]
 }

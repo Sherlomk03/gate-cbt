@@ -130,7 +130,13 @@
       "imagePath": "crops/2026-EE/Q11.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 11,
-      "imageEndPage": 12
+      "imageEndPage": 12,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.11 – Q.35 Carry ONE mark Each Q.11 Consider the infinite-length, discrete-time sequence 𝑥[𝑛] = 0.9|𝑛|, where 𝑛 is an integer. The region of convergence of its Z-transform 𝑋(𝑧) is given by: (Note: 𝑧 is a complex variable) (A) |𝑧| > 0.9 (B) |𝑧| < 0.9 (C) 0.9 < |𝑧| < 1/0.9 (D) {𝑧 such that |𝑧| < 0.9 } ∪ { 𝑧 such that |𝑧| > 1/0.9 } Organizing Institute: IIT Guwahati Page 11 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 12,
@@ -145,7 +151,13 @@
       "imagePath": "crops/2026-EE/Q12.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 12,
-      "imageEndPage": 13
+      "imageEndPage": 13,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.12 Let 𝑥𝑐(𝑡) be any continuous-time periodic signal with period 𝑇 . It is sampled uniformly with a sampling period 𝑇𝑠 where 𝑇𝑠 ≠ 𝑇 , resulting in the discrete sequence where 𝑛 is an integer. 𝑥[𝑛] = 𝑥𝑐(𝑛𝑇𝑠), Which one of the following statements is correct about 𝑥[𝑛]? (A) 𝑥[𝑛] will always be periodic with period 𝑇/𝑇𝑠 for all values of 𝑇/𝑇𝑠 (B) 𝑥[𝑛] will always be periodic with period 1 for all values of 𝑇/𝑇𝑠 (C) 𝑥[𝑛] will never be periodic is a rational number (D) 𝑥[𝑛] will be periodic if and only if 𝑇/𝑇𝑠 Organizing Institute: IIT Guwahati Page 12 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 13,
@@ -160,7 +172,13 @@
       "imagePath": "crops/2026-EE/Q13.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 13,
-      "imageEndPage": 14
+      "imageEndPage": 14,
+      "subject": "Signals & Systems",
+      "topic": "LTI Systems and Sampling",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.13 The Laplace transform of the step response of a system is given by 100 𝑌(𝑠) = 𝑠(𝑠+ 100) The rise time is defined as the time taken for the response to go from 0.1 to 0.9 of its final value. The settling time is defined as the time taken for the response to reach 0.98 of its final value. For this system, the rise time (Tr), settling time (Ts), and time constant (Tc), all expressed in seconds, are (A) Tr = 0.022, Ts = 0.04, Tc = 0.01 (B) Tr = 0.22, Ts = 0.404, Tc = 0.01 (C) Tr = 2.2, Ts = 4.04, Tc = 1.01 (D) Tr = 22, Ts = 40.4, Tc = 10.1 Organizing Institute: IIT Guwahati Page 13 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 14,
@@ -175,7 +193,13 @@
       "imagePath": "crops/2026-EE/Q14.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 14,
-      "imageEndPage": 15
+      "imageEndPage": 15,
+      "subject": "Signals & Systems",
+      "topic": "LTI Systems and Sampling",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 1,
+      "sourceExtract": "Q.14 Consider the following differential equation: d2y dy t2 + 7t + 8ty = 10 sin(t) dt2 dt Which one of the following options is correct? (A) It is a linear differential equation (B) It is a nonlinear differential equation (C) It is a time-invariant differential equation (D) It is a second-order partial differential equation Organizing Institute: IIT Guwahati Page 14 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 15,
@@ -190,7 +214,13 @@
       "imagePath": "crops/2026-EE/Q15.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 15,
-      "imageEndPage": 16
+      "imageEndPage": 16,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.15 A uniform ring charge of radius R carries a total charge 𝑄. Which one of the following options correctly quantifies the magnitude of the force on a point charge of strength 𝑞 kept at the center of the ring? (𝜖 is the permittivity of the medium) (A) 𝑄𝑞 4𝜋𝜖𝑅 (B) 𝑄𝑞 4𝜋𝜖𝑅2 (C) 0 (D) 𝑞 𝑄 × 4𝜋𝜖𝑅 2𝜋𝑅 Organizing Institute: IIT Guwahati Page 15 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 16,
@@ -205,7 +235,13 @@
       "imagePath": "crops/2026-EE/Q16.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 16,
-      "imageEndPage": 16
+      "imageEndPage": 16,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.16 A positive point charge with velocity 𝑣⃗ = 5 𝑥̂ enters a region having electric field 𝐸⃗⃗ = 4 𝑦̂ and magnetic field 𝐵⃗⃗ = − 6 𝑧̂. Which one of the following statements is correct for the force on the charge as it enters the region? (A) The force will be along the magnetic field but perpendicular to the electric field (B) The force will be along the electric field but perpendicular to the magnetic field (C) The force will be perpendicular to both electric and magnetic field (D) The magnetic field does not exert any force on the charge"
     },
     {
       "number": 17,
@@ -220,7 +256,13 @@
       "imagePath": "crops/2026-EE/Q17.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 16,
-      "imageEndPage": 17
+      "imageEndPage": 17,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.17 A 15 kVA, 1100 V/220 V, single-phase two-winding transformer is configured as a 1.32 kV/1.1 kV autotransformer. What will be the rating of the autotransformer? (A) 60 kVA (B) 75 kVA (C) 90 kVA (D) 100 kVA Organizing Institute: IIT Guwahati Page 16 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 18,
@@ -235,7 +277,13 @@
       "imagePath": "crops/2026-EE/Q18.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 17,
-      "imageEndPage": 18
+      "imageEndPage": 18,
+      "subject": "Power Systems",
+      "topic": "Power System Analysis",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 17,
+      "sourceExtract": "Q.18 Consider a power system with N buses, of which P are generator buses and the remaining Q are load buses (where there is no generation). Assume that there are no reactive power-limit violations at the generator buses. What is the size of the Jacobian matrix in the Newton-Raphson load flow method? (A) 2𝑁× 2𝑁 (B) (2𝑁−1 −𝑃) × (2𝑁−1 −𝑃) (C) (2𝑁− 𝑄) × (2𝑁−𝑄) (D) (𝑃+ 𝑄) × (𝑃+ 𝑄) Organizing Institute: IIT Guwahati Page 17 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 19,
@@ -250,7 +298,13 @@
       "imagePath": "crops/2026-EE/Q19.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 18,
-      "imageEndPage": 19
+      "imageEndPage": 19,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.19 The initial three-phase voltage phasors (𝑉̅𝐴 , 𝑉̅𝐵 , and 𝑉̅𝐶) at a bus of a power network are as shown in Case-1. Due to a disturbance, the bus voltage phasors changed in phase by a small angle 𝛥𝜃, and the magnitudes remained the same as depicted in Case-2. Which one of the following statements is correct about the zero sequence components? (A) The zero sequence components in Case-1 and Case-2 have the same phase angle and magnitude (B) The magnitude of the zero sequence component in Case-1 is greater than that in Case-2 (C) The magnitude of the zero sequence component in Case-2 is greater than that in Case-1 (D) The zero sequence components in Case-1 and Case-2 have the same magnitude but different phase angles Organizing Institute: IIT Guwahati Page 18 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 20,
@@ -265,7 +319,13 @@
       "imagePath": "crops/2026-EE/Q20.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 19,
-      "imageEndPage": 19
+      "imageEndPage": 19,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 3,
+      "sourceExtract": "Q.20 A certain application requires power at a frequency of 16.67 Hz, while the available grid frequency is 50 Hz. A 3-phase synchronous motor connected to the 50 Hz, 3-phase grid, driving a synchronous generator, is used for this application. Which one of the following combinations is a suitable choice for the number of poles in the motor and generator, respectively? (A) 2, 6 (B) 6, 2 (C) 4, 6 (D) 6, 4"
     },
     {
       "number": 21,
@@ -280,7 +340,13 @@
       "imagePath": "crops/2026-EE/Q21.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 19,
-      "imageEndPage": 20
+      "imageEndPage": 20,
+      "subject": "Electrical Machines",
+      "topic": "Induction Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 15,
+      "sourceExtract": "Q.21 Which one of the following options is correct regarding the typical double-squirrel-cage structure used in induction motors? (A) At starting, a larger portion of the rotor current flows in the outer cage (B) At starting, a larger portion of the rotor current flows in the inner cage (C) At rated speed, most of the rotor current flows in the outer cage (D) The purpose of the double-squirrel-cage structure is to lower the effective rotor resistance at starting Organizing Institute: IIT Guwahati Page 19 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 22,
@@ -295,7 +361,13 @@
       "imagePath": "crops/2026-EE/Q22.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 20,
-      "imageEndPage": 21
+      "imageEndPage": 21,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.22 The figure shows the single-line diagram of a synchronous generator delivering P = 50 MW of power at unity power factor to an infinite bus. 𝐼𝑠 denotes the stator current phasor. If the field excitation is increased, which one of the following options correctly describes its effect on the stator current, power factor, and load angle of the machine? (A) Stator current increases, power factor becomes lagging, load angle remains the same (B) Stator current decreases, power factor becomes leading, load angle remains the same (C) Stator current increases, power factor becomes lagging, load angle decreases (D) Stator current increases, power factor becomes leading, load angle increases Organizing Institute: IIT Guwahati Page 20 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 23,
@@ -310,7 +382,13 @@
       "imagePath": "crops/2026-EE/Q23.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 21,
-      "imageEndPage": 22
+      "imageEndPage": 22,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.23 A circuit with ideal elements is shown. Which one of the following options correctly identifies all the linear elements in the circuit? (A) R only (B) R, L, and C only (C) D only (D) L, C, and D only Organizing Institute: IIT Guwahati Page 21 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 24,
@@ -325,7 +403,13 @@
       "imagePath": "crops/2026-EE/Q24.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 22,
-      "imageEndPage": 23
+      "imageEndPage": 23,
+      "subject": "Network Theory",
+      "topic": "Network Theorems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.24 For the circuit shown, which one of the following options correctly identifies the Thevenin’s equivalent parameters between nodes Y and Z? (A) VTH = 100 V, RTH = 10 kΩ (B) VTH = 140 V, RTH = 0 Ω (C) VTH = 100 V, RTH = 0 Ω (D) VTH = 140 V, RTH = 10 kΩ Organizing Institute: IIT Guwahati Page 22 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 25,
@@ -340,7 +424,13 @@
       "imagePath": "crops/2026-EE/Q25.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 23,
-      "imageEndPage": 24
+      "imageEndPage": 24,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.25 Refer to the four circuits shown. Which one of the following options for k1, k2, k3, and k4 makes all of them realizable? (A) k1 = 1, k4 = –1/3, for all values of k2 and k3 (B) k2 = –2, k3 = +1/3, for all values of k1 and k4 (C) k1 = 2, k2 = 0.5, k3 = –2/3, k4 = –3 (D) k1 = 2, k2 = –0.5, k3 = –2/3, k4 = +3 Organizing Institute: IIT Guwahati Page 23 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 26,
@@ -355,7 +445,13 @@
       "imagePath": "crops/2026-EE/Q26.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 24,
-      "imageEndPage": 25
+      "imageEndPage": 25,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.26 A single-phase voltage source vs = 325 sin(2𝜋50𝑡) V delivers a current, 𝑖 = 12 sin(2𝜋50𝑡) + 9 sin(2𝜋150𝑡) A to a load. The load power factor, correct up to two decimal places, is: (A) 1.00 (B) 0.80 (C) 0.65 (D) 0.57 Organizing Institute: IIT Guwahati Page 24 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 27,
@@ -370,7 +466,13 @@
       "imagePath": "crops/2026-EE/Q27.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 25,
-      "imageEndPage": 26
+      "imageEndPage": 26,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.27 The figure shows a straight-line approximation for the forward characteristics of a power diode. A continuous on-state current of 15 A is flowing through the diode. What is the power loss in the diode? (A) 32.8 W (B) 21.2 W (C) 18.6 W (D) 23.1 W Organizing Institute: IIT Guwahati Page 25 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 28,
@@ -385,7 +487,13 @@
       "imagePath": "crops/2026-EE/Q28.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 26,
-      "imageEndPage": 27
+      "imageEndPage": 27,
+      "subject": "Analog Electronics",
+      "topic": "Transistor Amplifiers",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.28 Consider the circuit shown in Figure (a). A gate pulse vg is applied between time instants t0 and t1. After t1, during the MOSFET turn OFF process, it experiences a voltage overshoot. (a) (b) Based on the vds waveforms shown in Figure (b), which one of the following options is correct? (A) 𝑅1 > 𝑅2 > 𝑅3 (B) 𝑅1 > 𝑅3 > 𝑅2 (C) 𝑅3 > 𝑅2 > 𝑅1 (D) 𝑅2 > 𝑅3 > 𝑅1 Organizing Institute: IIT Guwahati Page 26 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 29,
@@ -400,7 +508,13 @@
       "imagePath": "crops/2026-EE/Q29.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 27,
-      "imageEndPage": 28
+      "imageEndPage": 28,
+      "subject": "Network Theory",
+      "topic": "Network Functions and Filters",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 10,
+      "sourceExtract": "Q.29 The asymptotic Bode magnitude plot of a system is shown. Which one of the following options best represents the transfer function of the system? (A) 1 + 𝑠 𝜔0 𝐺(𝑠) = 𝑠 𝜔0 (B) 𝑠 𝜔0 𝐺(𝑠) = 𝑠 1 + 𝜔0 (C) 1 + 𝑠 𝜔0 𝐺(𝑠) = 1 −𝑠 𝜔0 (D) 1 −𝑠 𝜔0 𝐺(𝑠) = 𝑠 1 + 𝜔0 Organizing Institute: IIT Guwahati Page 27 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 30,
@@ -415,7 +529,13 @@
       "imagePath": "crops/2026-EE/Q30.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 28,
-      "imageEndPage": 29
+      "imageEndPage": 29,
+      "subject": "Engineering Mathematics",
+      "topic": "Linear Algebra",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.30 Two n × n matrices A and B have a common eigenvalue 2, and the same corresponding nonzero eigenvector. Which of the following options is/are correct? (Note: I is the n × n identity matrix.) (A) Determinant ( A − 2I ) = 0 (B) Determinant ( B − 2I ) = 0 (C) Determinant ( A + B − 2I ) = 0 (D) Determinant ( A + B − 4I ) = 0 Organizing Institute: IIT Guwahati Page 28 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 31,
@@ -430,7 +550,13 @@
       "imagePath": "crops/2026-EE/Q31.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 29,
-      "imageEndPage": 30
+      "imageEndPage": 30,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 3,
+      "sourceExtract": "Q.31 A 220V/12V single-phase transformer is designed for use in India and rated 100 VA at 50 Hz. Later, this unit is shipped to the USA where it is used as a 110V/6V transformer at 60 Hz. Which of the following statements is/are correct? (A) No-load current drawn would be smaller for operation in the USA compared to that in India (B) For the same load current, the losses would be higher in the USA compared to that in India (C) The peak magnetic flux density in the core would be higher while operating in the USA compared to that in India (D) The eddy current losses in the core would be approximately 44% higher while operating in the USA compared to that in India Organizing Institute: IIT Guwahati Page 29 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 32,
@@ -445,7 +571,13 @@
       "imagePath": "crops/2026-EE/Q32.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 30,
-      "imageEndPage": 30
+      "imageEndPage": 30,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.32 Given that 𝐹⃗(𝑥, 𝑦, 𝑧) = sin(𝑦) 𝑥̂ + cos(𝑥) 𝑦̂ + 5 𝑧̂ , the integral ∯𝐹⃗(𝑥, 𝑦, 𝑧) ∙ 𝑑𝑠⃗⃗⃗⃗⃗ over the unit sphere S centered at the origin evaluates 𝑆 to ________ (Round off to one decimal place)"
     },
     {
       "number": 33,
@@ -460,7 +592,13 @@
       "imagePath": "crops/2026-EE/Q33.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 30,
-      "imageEndPage": 30
+      "imageEndPage": 30,
+      "subject": "Analog Electronics",
+      "topic": "Transistor Amplifiers",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 26,
+      "sourceExtract": "Q.33 In the linear regulator circuit shown, the base to emitter voltage VBE of the BJT is 0.6 V. The Zener diode clamps the base voltage to 5.4 V. Ignore the biasing current of the Zener diode and BJT. The maximum possible efficiency of the regulator circuit is ___________ % (Round off to one decimal place)"
     },
     {
       "number": 34,
@@ -475,7 +613,13 @@
       "imagePath": "crops/2026-EE/Q34.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 30,
-      "imageEndPage": 31
+      "imageEndPage": 31,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.34 Consider the circuit shown. Assume that the diode D is ideal. The supply voltage vs = 325 sin(2𝜋50𝑡) V, 𝐿= 500 µH, and 𝑅 = 10 Ω. The peak diode current (in amperes) is ______________ (Round off to one decimal place) Organizing Institute: IIT Guwahati Page 30 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 35,
@@ -490,7 +634,13 @@
       "imagePath": "crops/2026-EE/Q35.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 31,
-      "imageEndPage": 32
+      "imageEndPage": 32,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.35 A is an m×m skew-symmetric matrix with real-valued entries, and x is an m-dimensional column vector with real-valued entries such that xTx = 1. The quantity xTAx evaluates to _________ (Answer in integer) Organizing Institute: IIT Guwahati Page 31 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 36,
@@ -505,7 +655,13 @@
       "imagePath": "crops/2026-EE/Q36.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 32,
-      "imageEndPage": 33
+      "imageEndPage": 33,
+      "subject": "Signals & Systems",
+      "topic": "Transforms and LTI Systems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.36 – Q.65 Carry TWO marks Each Q.36 A time-limited waveform g(𝑥) is specified as follows: −𝑘, − 𝜋 < 𝑥 ≤0 g(𝑥) = { +𝑘, 0 < 𝑥 ≤𝜋 0, otherwise A new waveform f(𝑥) is constructed from g(𝑥) as follows: ∞ f(𝑥) = ∑g(𝑥+ 2𝜋𝑚), for all 𝑥∈𝑅 𝑚=−∞ The sum of the coefficients of the third harmonics of the sine and cosine 2 terms in the trigonometric Fourier series expansion of f(𝑥) is . 3𝜋 What is the value of 𝑘 ? (A) 1 (B) 1 2 (C) 1 3 (D) 1 4 Organizing Institute: IIT Guwahati Page 32 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 37,
@@ -520,7 +676,13 @@
       "imagePath": "crops/2026-EE/Q37.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 33,
-      "imageEndPage": 34
+      "imageEndPage": 34,
+      "subject": "Analog Electronics",
+      "topic": "Amplifiers and Op-Amps",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 16,
+      "sourceExtract": "Q.37 In the circuit shown, the open loop gain of the operational amplifier is A0 = 105. What is the voltage gain of the circuit? (Round off to two decimal places) (A) –16.67 (B) –20.00 (C) –21.00 (D) –12.67 Organizing Institute: IIT Guwahati Page 33 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 38,
@@ -535,7 +697,13 @@
       "imagePath": "crops/2026-EE/Q38.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 34,
-      "imageEndPage": 35
+      "imageEndPage": 35,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.38 Three single-phase 11kV/3.3kV transformers are connected to form a three-phase transformer bank with connections as shown. Considering ABC phase sequence, the vector group of the transformer is: (A) Dd0 (B) Dd4 (C) Dd6 (D) Dd10 Organizing Institute: IIT Guwahati Page 34 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 39,
@@ -550,7 +718,13 @@
       "imagePath": "crops/2026-EE/Q39.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 35,
-      "imageEndPage": 36
+      "imageEndPage": 36,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.39 In the circuit shown, the phase currents are I A  572.812  j 50.115 A BI 254.525  j 459.175 A CI 207.083  j 444.091 A Given that the CTs are ideal with no saturation, and the turns ratio of the Main CT is 300:5 and that of the Auxiliary Transformer (ΥnΔ) is 2:1 on every phase, the value of I AR , rounded off to three decimal places, is: (A) 0 A (B) 0.653  17.556o A (C) 537.240  4.105o A (D) 8.954  4.105o A Organizing Institute: IIT Guwahati Page 35 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 40,
@@ -565,7 +739,13 @@
       "imagePath": "crops/2026-EE/Q40.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 36,
-      "imageEndPage": 37
+      "imageEndPage": 37,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.40 The operating characteristic of a reactance relay is given by X  1 , where X is the reactance calculated by the relay. Its operating characteristic in the admittance plane (G-B plane, where G and B denote conductance and susceptance, respectively, expressed in Ʊ) is given by: (A) 2 2 1 G  ( B  0.5)  4 (B) B  1 (C) 2 2 1 (G  1)  B  2 (D) 2 2 1 G  ( B  1)  2 Organizing Institute: IIT Guwahati Page 36 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 41,
@@ -580,7 +760,13 @@
       "imagePath": "crops/2026-EE/Q41.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 37,
-      "imageEndPage": 38
+      "imageEndPage": 38,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.41 A three-phase two-winding transformer has a voltage transformation ratio VP  0.866  j 0.5 , where VP is the primary side voltage in p.u., and VS is the VS secondary side voltage in p.u. PI and SI represent the currents injected into the primary and secondary sides of the transformer, respectively. The admittance corresponding to the leakage impedance of the transformer referred to the secondary is ty p.u. Neglect the magnetizing branch. The Y bus representation of this transformer is: (A)  yt yt      I P  0.866  j 0.5 0.866  j 0.5 VP          I S   yt yt  VS      0.866  j 0.5 0.866  j 0.5  (B)  I P   yt  yt VP         I S    yt yt VS  (C)  yt   yt    I P  0.866  j 0.5 VP          I S   yt  VS    yt   0.866  j 0.5  (D)  yt   yt    I P  0.866  j 0.5 VP          I S   yt  VS    yt   0.866  j 0.5  Organizing Institute: IIT Guwahati Page 37 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 42,
@@ -595,7 +781,13 @@
       "imagePath": "crops/2026-EE/Q42.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 38,
-      "imageEndPage": 39
+      "imageEndPage": 39,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.42 An electrical component has voltage drop v  Vm sin(t ) , when the current through it is i  I m sin(t ) . What is the average power dissipated over a half cycle corresponding to ? (A) 0 (B) Vm I m cos (C) Vm I m cos 2 (D) Vm I m cos 4 Organizing Institute: IIT Guwahati Page 38 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 43,
@@ -610,7 +802,13 @@
       "imagePath": "crops/2026-EE/Q43.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 39,
-      "imageEndPage": 40
+      "imageEndPage": 40,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.43 The electrical network shown has an independent voltage source (10 V) and a current source (1 u(t) mA). The voltage across the capacitor at time instants (in seconds) t = 0+, t = 0.50, and t = ∞, respectively, is: (A) 8.00 V, 28.00 V, 26.36 V (B) 8.00 V, 26.36 V, 28.00 V (C) 10.00 V, 26.36 V, 28.00 V (D) 10.00 V, 28.00 V, 26.36 V Organizing Institute: IIT Guwahati Page 39 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 44,
@@ -625,7 +823,13 @@
       "imagePath": "crops/2026-EE/Q44.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 40,
-      "imageEndPage": 41
+      "imageEndPage": 41,
+      "subject": "Network Theory",
+      "topic": "Network Theorems",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 14,
+      "sourceExtract": "Q.44 The terminal voltage and current of a linear electrical network shown in Figure (a) are given in the table. Terminal voltage (vt) Terminal current (it) 18 V – 0.5 A 30 V 0.5 A 36 V 1.0 A The correct choice for the parameters (IN, RN) of the Norton equivalent circuit shown in Figure (b) is: (A) IN = 3.0 A, RN = 24.0 Ω (B) IN = 12.0 A, RN = 2.0 Ω (C) IN = 2.0 A, RN = 12.0 Ω (D) IN = 2.0 A, RN = 24.0 Ω Organizing Institute: IIT Guwahati Page 40 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 45,
@@ -640,7 +844,13 @@
       "imagePath": "crops/2026-EE/Q45.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 41,
-      "imageEndPage": 42
+      "imageEndPage": 42,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.45 The digital circuit shown has 3 inputs (x, y, and z). The simplified logical expression for the output (OUT) is: (A) 𝑥̅ 𝑦𝑧̅̅̅ (B) 0 (C) 𝑥̅( 𝑦+ 𝑧 ) (D) 1 Organizing Institute: IIT Guwahati Page 41 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 46,
@@ -655,7 +865,13 @@
       "imagePath": "crops/2026-EE/Q46.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 42,
-      "imageEndPage": 43
+      "imageEndPage": 43,
+      "subject": "Analog Electronics",
+      "topic": "Transistor Amplifiers",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.46 The MOSFET switches shown in the circuit are ideal. Which of the following is the correct option for Boolean logical expression of the output (OUT), and the maximum possible power (P) consumed by the circuit? (A) OUT = AB + C̅ ̅̅̅̅̅̅̅̅̅̅, P = 5 mW (B) OUT = (A + B)C̅̅̅̅̅̅̅̅̅̅̅̅̅ , P = 5 mW (C) OUT = ABC̅̅̅̅̅̅̅ + C̅ , P = 7.5 mW (D) OUT = AB̅̅̅̅C , P = 7.5 mW Organizing Institute: IIT Guwahati Page 42 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 47,
@@ -670,7 +886,13 @@
       "imagePath": "crops/2026-EE/Q47.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 43,
-      "imageEndPage": 44
+      "imageEndPage": 44,
+      "subject": "Analog Electronics",
+      "topic": "Transistor Amplifiers",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.47 Consider the single-phase voltage source inverter circuit feeding an inductive load (L). Assume that the power MOSFET switches are ideal. S1 and S2 are switched on during the first 10 µs, and S3 and S4 are switched on during the next 10 µs in a switching cycle. The switches in the same leg are thus switched in a complementary fashion. Neglect the dead time. The waveform of the inductor current (iL) in the steady state is triangular with a peak value of 5 A as shown. The rms value of the current through the switch S1 is: (A) 2.88 A (B) 2.04 A (C) 3.54 A (D) 2.50 A Organizing Institute: IIT Guwahati Page 43 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 48,
@@ -685,7 +907,13 @@
       "imagePath": "crops/2026-EE/Q48.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 44,
-      "imageEndPage": 45
+      "imageEndPage": 45,
+      "subject": "Power Electronics",
+      "topic": "Converters and Drives",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 4,
+      "sourceExtract": "Q.48 Consider the boost converter circuit shown. Assume that the semiconductor devices are ideal. In steady state, the inductor current rises linearly from 0 A to 6 A in the first 10 µs and then falls linearly from 6 A to 0 A in the next 10 µs of every switching cycle as shown. The load resistance R is 10 Ω and the capacitance C is 500 µF. Neglect the ripple in the output voltage. What is the input voltage Vdc? (A) 10.0 V (B) 15.0 V (C) 7.5 V (D) 12.5 V Organizing Institute: IIT Guwahati Page 44 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 49,
@@ -700,7 +928,13 @@
       "imagePath": "crops/2026-EE/Q49.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 45,
-      "imageEndPage": 46
+      "imageEndPage": 46,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.49 Which one of the following statements is ALWAYS correct about a collection of 𝑝 column vectors, each having n real-valued entries? (A) If 𝑝 > n, then the column vectors must be linearly dependent (B) If 𝑝 > n, then the column vectors must be linearly independent (C) If 𝑝 = n, then the column vectors must be orthogonal (D) If 𝑝 < n, then the column vectors must be linearly independent Organizing Institute: IIT Guwahati Page 45 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 50,
@@ -715,7 +949,13 @@
       "imagePath": "crops/2026-EE/Q50.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 46,
-      "imageEndPage": 47
+      "imageEndPage": 47,
+      "subject": "Engineering Mathematics",
+      "topic": "Differential Equations",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 12,
+      "sourceExtract": "Q.50 Consider the second-order differential equation 𝑑2𝑦 𝑑𝑦 + 𝑦= 0 𝑑𝑥2 𝑑𝑥+ with initial conditions 𝑑𝑦 𝑦(0) = 1, 𝑑𝑥| 𝑥=0 = 1 The solution is given by (A) 𝑦(𝑥) = exp(−𝑥/2) (cos (√3𝑥 ) + √3sin (√3𝑥 )) 2 2 (B) 1 𝑦(𝑥) = exp(−𝑥/2) (cos (√3𝑥 ) + sin (√3𝑥 )) 2 √3 2 (C) 1 𝑦(𝑥) = exp(−𝑥/2) (cos (√3𝑥 ) − sin (√3𝑥 )) 2 √3 2 (D) 𝑦(𝑥) = exp(−𝑥/2) (cos (√3𝑥 ) − √3sin (√3𝑥 )) 2 2 Organizing Institute: IIT Guwahati Page 46 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 51,
@@ -730,7 +970,13 @@
       "imagePath": "crops/2026-EE/Q51.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 47,
-      "imageEndPage": 48
+      "imageEndPage": 48,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.51 The figure shows an arbitrarily shaped planar conducting loop A in the XY plane. Two nonintersecting regions with areas 𝑎1 and 𝑎2 within the loop are subjected to 𝑚 magnetic fields 𝐵⃗⃗1 = sin(𝜔𝑡) (1 𝑥̂ + 0 𝑦̂ + 1 𝑧̂ ) , and √2 𝑛 𝐵⃗⃗2 = − cos(2𝜔𝑡+ 𝜋/4) (0 𝑥̂ + 1 𝑦̂ + 1 𝑧̂ ) , respectively. √2 What is the expression for the induced rms voltage in loop A? (A) √𝑎12𝜔2𝑚2 + 4𝑎22𝜔2𝑛2 4 (B) √𝑎12𝜔2𝑚2 + 4𝑎22𝜔2𝑛2 2 (C) √𝑎12𝜔2𝑚2 −2𝑎22𝜔2𝑛2 2 (D) √𝑎12𝜔2𝑚2 + 2𝑎22𝜔2𝑛2 Organizing Institute: IIT Guwahati Page 47 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 52,
@@ -745,7 +991,13 @@
       "imagePath": "crops/2026-EE/Q52.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 48,
-      "imageEndPage": 49
+      "imageEndPage": 49,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.52 A system is characterized by the following state equation and output equation (𝑢: input, 𝐱: state vector, 𝑦: output) 𝑎 𝑏 𝐱̇ = [ 𝐱+ [1 𝑢 −𝑎 0] 0] 𝑦 = [1 2] 𝐱 What are the values of 𝑎 and 𝑏 for which the poles of the transfer function are at –2 + j3 and –2 – j3 ? (A) 𝑎 = 4, 𝑏 = 3.25 (B) 𝑎 = – 4, 𝑏 = 3.25 (C) 𝑎 = 4, 𝑏 = – 3.25 (D) 𝑎 = – 4, 𝑏 = – 3.25 Organizing Institute: IIT Guwahati Page 48 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 53,
@@ -760,7 +1012,13 @@
       "imagePath": "crops/2026-EE/Q53.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 49,
-      "imageEndPage": 50
+      "imageEndPage": 50,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.53 A system is represented in state-space form as follows: (𝑢: input, 𝐱: state vector, 𝑦: output) 1 2 𝐱̇ = [ 𝐱+ [1 𝑢 −3 0] 2] 𝑦 = [1 2] 𝐱 2 1 Consider the new state vector 𝐳 = [ 𝐱 −1 0] What is the state-space representation of the system in terms of the new state vector 𝐳 ? (A) 4 4 𝐳̇ = [−1 𝐳+ [ 𝑢 −1 −2] −1] 𝑦 = [2 3] 𝐳 (B) 3 𝐳̇ = [2 𝐳+ [3 𝑢 0 3] 5] 𝑦 = [2 3] 𝐳 (C) 4 9 4 𝐳̇ = [ 𝐳+ [ 𝑢 −2 −3] −1] 𝑦 = [2 3] 𝐳 (D) 2 1 4 𝐳̇ = [ 𝐳+ [ 𝑢 −4 1] −1] 𝑦 = [4 −1] 𝐳 Organizing Institute: IIT Guwahati Page 49 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 54,
@@ -775,7 +1033,13 @@
       "imagePath": "crops/2026-EE/Q54.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 50,
-      "imageEndPage": 51
+      "imageEndPage": 51,
+      "subject": "Power Systems",
+      "topic": "Power System Analysis",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 17,
+      "sourceExtract": "Q.54 For the balanced 3-phase transmission line shown, consider the following cases: Case-1: |𝑉1| = 1.1 p. u. , |𝑉2| = 0.9 p. 𝑢. , 𝑍= 0.75∠0𝑜 𝑝. 𝑢. and 𝜃12 = 𝜃1 −𝜃2 = 0𝑜 Case-2: |𝑉1| = 1.1 p. u. , |𝑉2| = 0.9 p. u. , 𝑍= 0.75∠90𝑜 𝑝. 𝑢. and 𝜃12 = 𝜃1 −𝜃2 = 90𝑜 Which of the following statements is/are correct about real power loss and reactive power loss in the line? (A) Real power loss in Case-1 is more than that in Case-2 (B) Real power loss in Case-2 is more than that in Case-1 (C) Reactive power loss in Case-1 is more than that in Case-2 (D) Reactive power loss in Case-2 is more than that in Case-1 Organizing Institute: IIT Guwahati Page 50 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 55,
@@ -790,7 +1054,13 @@
       "imagePath": "crops/2026-EE/Q55.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 51,
-      "imageEndPage": 52
+      "imageEndPage": 52,
+      "subject": "Engineering Mathematics",
+      "topic": "Linear Algebra",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 23,
+      "sourceExtract": "Q.55 Consider an n × n orthogonal matrix 𝐴 with real entries and each column having unit Euclidean norm. Which of the following statements is/are correct? (A) The value of the determinant of 𝐴 is either +1 or –1 (B) The eigenvalues of 𝐴 have modulus 1 (C) ∥𝐴𝒙∥ = ∥𝒙∥, for all x ∈ 𝑅𝑛, where ∥𝒙∥ denotes the Euclidean norm of 𝒙, and (𝐴𝒙)𝑇(𝐴𝒚) ≠𝒙𝑇𝒚, for all distinct x, y ∈ 𝑅𝑛 (D) ∥𝐴𝒙∥ = ∥𝒙∥, for all x ∈ 𝑅𝑛, where ∥𝒙∥ denotes the Euclidean norm of 𝒙, and (𝐴𝒙)𝑇(𝐴𝒚) = 𝒙𝑇𝒚, for all x, y ∈ 𝑅𝑛 Organizing Institute: IIT Guwahati Page 51 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 56,
@@ -805,7 +1075,13 @@
       "imagePath": "crops/2026-EE/Q56.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 52,
-      "imageEndPage": 53
+      "imageEndPage": 53,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.56 Consider the system of linear equations: Ax = b, where A is an n × n matrix, and x and b are n-dimensional column vectors. Suppose this system of equations has a unique solution. Which of the following statements is/are correct? (A) A-1 exists (B) The system of equations Amx = b also has a unique solution for m = 1, 2, 3,… (C) rank(A) = rank(Am), for m = 1, 2, 3,… (D) rank(A) < rank([A | b ]), where [A | b ] denotes the augmented matrix. Organizing Institute: IIT Guwahati Page 52 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 57,
@@ -820,7 +1096,13 @@
       "imagePath": "crops/2026-EE/Q57.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 53,
-      "imageEndPage": 53
+      "imageEndPage": 53,
+      "subject": "Network Theory",
+      "topic": "Network Functions",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 15,
+      "sourceExtract": "Q.57 The resistance values of the Wheatstone bridge shown are: P = 2000 Ω, Q = 500 Ω,R = 3000 Ω. The battery voltage E = 50V. The battery has an internal resistance of 1  and the Galvanometer (G) has a resistance of 50 . The value of the resistance S for balanced condition is _____________ Ω (Answer in integer)"
     },
     {
       "number": 58,
@@ -835,7 +1117,13 @@
       "imagePath": "crops/2026-EE/Q58.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 53,
-      "imageEndPage": 54
+      "imageEndPage": 54,
+      "subject": "Engineering Mathematics",
+      "topic": "Calculus",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 12,
+      "sourceExtract": "Q.58 A system with two generators G1 and G2 (without generator limits) is shown. The total load on the system is 1184 MW. The expressions for the cost of generation (𝐶1 and 𝐶2) and real power loss (𝑃𝐿𝑜𝑠𝑠) are as follows: 𝐶1(𝑃𝐺1) = 1000 + 50𝑃𝐺1 + 0.01(𝑃𝐺1)2 Rs/MWh 𝐶2(𝑃𝐺2) = 2000 + 50𝑃𝐺2 + 0.001(𝑃𝐺2)2 Rs/MWh 𝑃𝐿𝑜𝑠𝑠= 0.001(𝑃𝐺2 −50)2 MW When the generators are operating at their optimal generation, meeting the total load requirement, the real power loss in the system is ________ MW (Round off to one decimal place) Consider the Lagrange multiplier 𝜆 = 70.25 for optimal generation. Organizing Institute: IIT Guwahati Page 53 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 59,
@@ -850,7 +1138,13 @@
       "imagePath": "crops/2026-EE/Q59.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 54,
-      "imageEndPage": 54
+      "imageEndPage": 54,
+      "subject": "Electrical Machines",
+      "topic": "Electrical Machines",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 18,
+      "sourceExtract": "Q.59 A balanced three-phase supply is given to a 30 kW, 4-pole, 400 V, 50 Hz, wound rotor induction motor with Y-connected stator and rotor windings. The motor is driving a constant torque load. With shorted sliprings, the machine runs at 1476 rpm. When an external non-inductive resistance of 0.27 Ω per phase is connected in series in the rotor circuit, the steady-state speed drops to 1404 rpm. Neglecting rotational losses, the actual per phase rotor winding resistance is ____ Ω (Round off to two decimal places)"
     },
     {
       "number": 60,
@@ -865,7 +1159,13 @@
       "imagePath": "crops/2026-EE/Q60.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 54,
-      "imageEndPage": 54
+      "imageEndPage": 54,
+      "subject": "Network Theory",
+      "topic": "Two-Port Networks",
+      "classificationStatus": "high_auto",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 29,
+      "sourceExtract": "Q.60 Consider the two-port network shown. For maximum power transfer to the resistive load (RL), the value of RL should be__________ Ω (Round off to two decimal places)"
     },
     {
       "number": 61,
@@ -880,7 +1180,13 @@
       "imagePath": "crops/2026-EE/Q61.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 54,
-      "imageEndPage": 55
+      "imageEndPage": 55,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.61 Consider the circuit shown. Assume that the diode (D) is ideal. Given vs = 100 sin(2𝜋50𝑡) V, 𝑉𝑑𝑐 = 50 V, and 𝑅 = 10 Ω, the average value of the current through the diode is ___________ A (Round off to two decimal places) Organizing Institute: IIT Guwahati Page 54 of 55 Electrical Engineering (EE)"
     },
     {
       "number": 62,
@@ -895,7 +1201,13 @@
       "imagePath": "crops/2026-EE/Q62.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 55,
-      "imageEndPage": 55
+      "imageEndPage": 55,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.62 The magnitude of the contour integral (𝑧+1)2 ∮( 𝑑𝑧 𝐶 (𝑧−𝑖)(𝑧−2)) over the contour 𝐶: |𝑧−2 − 𝑖| = 3/2 is ______ (Round off to two decimal places) Note: 𝑧 is a complex variable and 𝑖= √−1"
     },
     {
       "number": 63,
@@ -910,7 +1222,13 @@
       "imagePath": "crops/2026-EE/Q63.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 55,
-      "imageEndPage": 55
+      "imageEndPage": 55,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.63 A uniform spherical volume charge distribution of radius 2 m, centered at 3 the origin, has a strength of 𝜋× 10−6 C/m3. A point charge of strength 𝜋× 8.854 × 10−12 C is moved from (– 3, 0, – 4) to (0, 0, 4) in Cartesian coordinate system. The relative permittivity of the medium is 1 and the coordinate values are in meters. The work done during the process is ______ µJ (Round off to two decimal places)"
     },
     {
       "number": 64,
@@ -925,7 +1243,13 @@
       "imagePath": "crops/2026-EE/Q64.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 55,
-      "imageEndPage": 55
+      "imageEndPage": 55,
+      "subject": "Engineering Mathematics",
+      "topic": "Probability and Statistics",
+      "classificationStatus": "provisional",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 13,
+      "sourceExtract": "Q.64 Let X and Y be two real-valued random variables with E(X) = 1, E(Y) = 2, E(X2) = 4, E(Y2) = 9, and E(XY) = 0.9, where E denotes the expectation operator. The value of α that minimizes E( (X−αY)2 ) is __________ (Round off to one decimal place)"
     },
     {
       "number": 65,
@@ -940,7 +1264,13 @@
       "imagePath": "crops/2026-EE/Q65.webp",
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 55,
-      "imageEndPage": 55
+      "imageEndPage": 55,
+      "subject": "Unclassified",
+      "topic": "Topic requires review",
+      "classificationStatus": "unclassified",
+      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "classificationMargin": 0,
+      "sourceExtract": "Q.65 The integral 1 ∞ 𝑥2026 ∫ d𝑥 π (1 + 𝑥2026)(1 + 𝑥2) 0 evaluates to _________ (Round off to two decimal places)"
     }
   ]
 }
