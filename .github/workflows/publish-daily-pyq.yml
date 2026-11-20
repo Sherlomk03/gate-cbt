@@ -39,7 +39,7 @@ jobs:
               assert len(q)==40 and len({x['id'] for x in q})==40
               assert [sum(x['subject']==s for x in q) for s in d['subjects']]==[10,10,10,10]
               assert all(x['officialKey'] for x in q)
-              assert all((x.get('sourceType')=='ace_classroom' and x.get('stem') and x.get('options') and x.get('officialGatePYQ') is False) or (x.get('imagePath') and x.get('paperUrl') and x.get('keyUrl')) for x in q)
+              assert all((x.get('sourceType')=='ace_classroom' and x.get('stem') and isinstance(x.get('options'),list) and x.get('officialGatePYQ') is False) or (x.get('imagePath') and x.get('paperUrl') and x.get('keyUrl')) for x in q)
               ace=[x for x in q if x.get('sourceType')=='ace_classroom']
               assert not ace or all(x['subject']=='Signals & Systems' for x in ace)
           print('Daily question-source inventory checked:',len(entries))
