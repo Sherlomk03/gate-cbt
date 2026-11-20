@@ -1,0 +1,442 @@
+{
+  "id": "gate-2026-11-20",
+  "title": "GATE 2027 EE/EC — 20 November 2026",
+  "durationMinutes": 180,
+  "notes": "Imported from the previous 20 November chat test. Historical PYQ labels are not independently re-verified in this file.",
+  "questions": [
+    {
+      "id": "M1",
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "Let v₁ and v₂ be eigenvectors corresponding to distinct eigenvalues of a real symmetric 3×3 matrix. Which statement is true?",
+      "tag": "Previously labeled 2025 EE Q12 (not independently reverified here)",
+      "options": [
+        "v₁ᵀv₂ ≠ 0",
+        "v₁ᵀv₂ = 0",
+        "v₁+v₂ = 0",
+        "v₁−v₂ = 0"
+      ]
+    },
+    {
+      "id": "M2",
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "Let P be the 3×3 matrix with rows (2,1,0), (−1,0,0), (0,0,1). Let I be the identity matrix. P² equals:",
+      "tag": "Previously labeled 2025 EE Q14 (not independently reverified here)",
+      "options": [
+        "2P−I",
+        "P",
+        "I",
+        "P+I"
+      ]
+    },
+    {
+      "id": "M3",
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "For binary random variables X and Y, the joint probabilities are P(0,0)=1/4, P(1,0)=1/8, P(0,1)=1/2 and P(1,1)=1/8, with arguments (X,Y). Find E[Y|X=1].",
+      "tag": "Previously labeled 2025 EE Q15 (not independently reverified here)",
+      "options": [
+        "1/4",
+        "1/2",
+        "1/8",
+        "1/3"
+      ]
+    },
+    {
+      "id": "M4",
+      "subject": "Mathematics",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "The joint density f(x,y)=c(x+y) for 0≤x≤1 and 0≤y≤1, and zero elsewhere. Find P(X+Y≤1), to four decimals.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "M5",
+      "subject": "Mathematics",
+      "type": "NAT",
+      "marks": 1,
+      "stem": "For V(x,y)=x²+x+y²+1, find its rate of change at the origin in the direction toward (1,2), rounded to the nearest integer.",
+      "tag": "Previously labeled 2025 EE Q53 (not independently reverified here)"
+    },
+    {
+      "id": "M6",
+      "subject": "Mathematics",
+      "type": "NAT",
+      "marks": 1,
+      "stem": "Let x₁′(t)=2x₂(t) and x₂′(t)=r(t), with x₁(0)=1 and x₂(0)=0. For r(t)=1 when t≥0 and 0 otherwise, find x₁(1), rounded to the nearest integer.",
+      "tag": "Previously labeled 2025 EE Q54 (not independently reverified here)"
+    },
+    {
+      "id": "M7",
+      "subject": "Mathematics",
+      "type": "NAT",
+      "marks": 1,
+      "stem": "Let C be the clockwise-oriented circle |z|=1 and f(z)=jz, where j²=−1. Evaluate ∮C f(z) dz, rounded to the nearest integer.",
+      "tag": "Previously labeled 2025 EE Q55 (not independently reverified here)"
+    },
+    {
+      "id": "M8",
+      "subject": "Mathematics",
+      "type": "MCQ",
+      "marks": 2,
+      "stem": "Which function is analytic everywhere on the complex plane?",
+      "tag": "Original GATE-style",
+      "options": [
+        "|z|²",
+        "e^(z²)",
+        "conjugate(z)",
+        "Re(z)"
+      ]
+    },
+    {
+      "id": "M9",
+      "subject": "Mathematics",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "Evaluate ∫₀^∞ x e^(−2x) dx, to four decimals.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "M10",
+      "subject": "Mathematics",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "Find the minimum value of x²+2y² subject to 2x+y=8.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "N1",
+      "subject": "Networks",
+      "type": "MSQ",
+      "marks": 2,
+      "stem": "Two circuits have self-inductances L₁ and L₂, mutual inductance M and unity coupling coefficient. Both currents I₁ and I₂ are nonzero. Select all values of I₁/I₂ at which their stored magnetic energy is minimum.",
+      "tag": "Previously labeled 2025 EE Q52 (not independently reverified here)",
+      "options": [
+        "−M/L₁",
+        "−M/L₂",
+        "−L₁/M",
+        "−L₂/M"
+      ]
+    },
+    {
+      "id": "N2",
+      "subject": "Networks",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "Two clockwise mesh currents I₁ and I₂ share a 4 Ω resistor. The first mesh has an additional 6 Ω resistor and a 20 V source, while the second has an additional 8 Ω resistor and a 12 V source. Both sources drive their respective clockwise mesh currents. Find I₁ in amperes.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "N3",
+      "subject": "Networks",
+      "type": "MCQ",
+      "marks": 2,
+      "stem": "A reciprocal two-port has impedance matrix Z=[[5,2],[2,8]] Ω. The input admittance Y₁₁ with port 2 short-circuited is:",
+      "tag": "Original GATE-style",
+      "options": [
+        "8/36 S",
+        "5/36 S",
+        "1/5 S",
+        "2/36 S"
+      ]
+    },
+    {
+      "id": "N4",
+      "subject": "Networks",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "An initially uncharged capacitor C=100 µF is connected at t=0 to a 10 V source through R=2 kΩ. Find the capacitor voltage at t=0.2 s, to three decimals.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "N5",
+      "subject": "Networks",
+      "type": "MSQ",
+      "marks": 2,
+      "stem": "Which properties are necessary for a driving-point impedance of a passive RLC network?",
+      "tag": "Original GATE-style",
+      "options": [
+        "It is positive real",
+        "It has no poles in the open right-half plane",
+        "Its real part is nonnegative for Re(s)>0",
+        "All its poles must lie strictly on the negative real axis"
+      ]
+    },
+    {
+      "id": "N6",
+      "subject": "Networks",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "Three resistors 10 Ω, 20 Ω and 40 Ω are connected in star to an ideal balanced 3-phase 400 V line-to-line supply. The neutral is connected to the source neutral. Find the magnitude of current in the 20 Ω branch in amperes, to three decimals.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "N7",
+      "subject": "Networks",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "When determining the Thevenin resistance of a linear circuit containing an independent current source and a dependent voltage source, which operation is appropriate?",
+      "tag": "Original GATE-style",
+      "options": [
+        "Open the independent current source and retain the dependent source",
+        "Short both sources",
+        "Open both sources",
+        "Short the independent current source and open the dependent source"
+      ]
+    },
+    {
+      "id": "N8",
+      "subject": "Networks",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "A first-order low-pass circuit has transfer function H(s)=1000/(s+1000). Find its −3 dB frequency in hertz, to two decimals.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "N9",
+      "subject": "Networks",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "A series RLC circuit has R=10 Ω and L=0.1 H. Its angular-frequency bandwidth is:",
+      "tag": "Original GATE-style",
+      "options": [
+        "10 rad/s",
+        "100 rad/s",
+        "1000 rad/s",
+        "1 rad/s"
+      ]
+    },
+    {
+      "id": "N10",
+      "subject": "Networks",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "A node V is connected to a 20 V node through 5 Ω and to ground through 10 Ω. A voltage-controlled current source of value 0.05V A draws current from the node toward ground. Find V in volts, to three decimals.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "P1",
+      "subject": "Power Systems",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "During a power outage, a household UPS supplies a limited set of lights and fans. In a Newton–Raphson power-flow model of this isolated household system, the UPS is represented as:",
+      "tag": "Previously labeled 2025 EE Q24 (not independently reverified here)",
+      "options": [
+        "Slack bus",
+        "PV bus",
+        "PQ bus",
+        "PQV bus"
+      ]
+    },
+    {
+      "id": "P2",
+      "subject": "Power Systems",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "A three-bus network has prefault voltages of 1 pu. The relevant bus-impedance entries are Z₂₂=j0.25 pu and Z₁₂=j0.10 pu. A bolted three-phase fault occurs at bus 2. Find the magnitude of the voltage at bus 1 during the fault.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "P3",
+      "subject": "Power Systems",
+      "type": "MCQ",
+      "marks": 2,
+      "stem": "A nominal-π transmission line has total series impedance Z and total shunt admittance Y. Its ABCD parameter A is:",
+      "tag": "Original GATE-style",
+      "options": [
+        "1+YZ/2",
+        "1+YZ",
+        "YZ/2",
+        "1−YZ/2"
+      ]
+    },
+    {
+      "id": "P4",
+      "subject": "Power Systems",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "Three buses have lossless lines of reactance X₁₂=0.2 pu, X₁₃=0.4 pu and X₂₃=0.2 pu. Bus 1 is the slack with θ₁=0. Net active-power injections at buses 2 and 3 are +0.5 pu and −0.5 pu. Using Pij=(θi−θj)/Xij, find θ₂ in radians.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "P5",
+      "subject": "Power Systems",
+      "type": "MSQ",
+      "marks": 2,
+      "stem": "For a balanced three-phase set of positive-sequence currents, select the true statements.",
+      "tag": "Original GATE-style",
+      "options": [
+        "The zero-sequence component is zero",
+        "The negative-sequence component is zero",
+        "The positive-sequence component can be nonzero",
+        "All three phase currents are equal phasors"
+      ]
+    },
+    {
+      "id": "P6",
+      "subject": "Power Systems",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "A generator has sequence reactances X₁=0.2 pu, X₂=0.2 pu and X₀=0.1 pu, with negligible resistance. Its prefault phase voltage is 1 pu. For a solid single-line-to-ground fault with zero fault impedance, find the magnitude of faulted-phase current in pu.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "P7",
+      "subject": "Power Systems",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "In an overcurrent protection system, primary and backup relays are coordinated mainly so that:",
+      "tag": "Original GATE-style",
+      "options": [
+        "The backup operates before the primary",
+        "The closest appropriate primary relay trips first",
+        "All relays trip simultaneously",
+        "The farthest relay always trips first"
+      ]
+    },
+    {
+      "id": "P8",
+      "subject": "Power Systems",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "Two generators have incremental fuel costs dC₁/dP₁=10+0.02P₁ and dC₂/dP₂=12+0.01P₂, with power in MW. Neglect losses and limits. For a total demand of 300 MW, find P₁ in MW, to two decimals.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "P9",
+      "subject": "Power Systems",
+      "type": "MSQ",
+      "marks": 2,
+      "stem": "Select the correct statements about synchronous-generator transient stability.",
+      "tag": "Original GATE-style",
+      "options": [
+        "Rotor-angle dynamics follow the swing equation",
+        "Fault-clearing time can affect stability",
+        "Increasing transfer reactance generally increases maximum transferable power",
+        "The equal-area criterion can analyze a single-machine infinite-bus system"
+      ]
+    },
+    {
+      "id": "P10",
+      "subject": "Power Systems",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "A transformer has leakage reactance 0.12 pu on a 50 MVA, 132 kV base. Find its per-unit reactance on a 100 MVA, 132 kV base.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "D1",
+      "subject": "DC Machines",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "For a separately excited DC motor with constant field flux, the electromagnetic torque is directly proportional to:",
+      "tag": "Original GATE-style",
+      "options": [
+        "Armature current",
+        "Square of armature current",
+        "Armature terminal voltage squared",
+        "Inverse of speed"
+      ]
+    },
+    {
+      "id": "D2",
+      "subject": "DC Machines",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "An unsaturated DC series motor operates at speed N₁ with current I₁. Its load torque is proportional to N². If speed decreases to 0.8N₁, find I₂/I₁, to four decimals.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "D3",
+      "subject": "DC Machines",
+      "type": "MCQ",
+      "marks": 2,
+      "stem": "In a DC generator, armature reaction primarily causes:",
+      "tag": "Original GATE-style",
+      "options": [
+        "Distortion of the main field and a shift in magnetic neutral axis",
+        "An increase in pole count",
+        "Elimination of commutation",
+        "A constant armature current regardless of load"
+      ]
+    },
+    {
+      "id": "D4",
+      "subject": "DC Machines",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "A 4-pole wave-wound DC generator has 600 armature conductors, flux per pole 0.025 Wb and speed 1000 rpm. Find generated EMF in volts.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "D5",
+      "subject": "DC Machines",
+      "type": "MSQ",
+      "marks": 2,
+      "stem": "Select all correct statements about starting a DC shunt motor.",
+      "tag": "Original GATE-style",
+      "options": [
+        "At standstill, back EMF is zero",
+        "A starter can limit initial armature current",
+        "The field circuit should be properly energized",
+        "Direct application of rated voltage always produces rated armature current"
+      ]
+    },
+    {
+      "id": "D6",
+      "subject": "DC Machines",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "A 220 V shunt motor has armature resistance 0.5 Ω. At 20 A armature current, speed is 1000 rpm. Assuming constant field flux, find speed at 40 A armature current in rpm, to two decimals.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "D7",
+      "subject": "DC Machines",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "A DC motor operating in regenerative braking mode:",
+      "tag": "Original GATE-style",
+      "options": [
+        "Returns electrical power to the supply",
+        "Always dissipates all energy in an external resistor",
+        "Has zero back EMF",
+        "Must rotate in the reverse direction"
+      ]
+    },
+    {
+      "id": "D8",
+      "subject": "DC Machines",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "A 20 kW DC generator has constant losses of 400 W and full-load copper losses of 900 W. Assuming copper loss varies as load fraction squared, find the fraction of rated load at maximum efficiency, to four decimals.",
+      "tag": "Original GATE-style"
+    },
+    {
+      "id": "D9",
+      "subject": "DC Machines",
+      "type": "MSQ",
+      "marks": 2,
+      "stem": "Select the true statements about commutation in a DC machine.",
+      "tag": "Original GATE-style",
+      "options": [
+        "The current in a coil reverses as it passes through the brush zone",
+        "Interpoles can improve commutation",
+        "Poor commutation may cause sparking",
+        "Commutation is unrelated to armature inductance"
+      ]
+    },
+    {
+      "id": "D10",
+      "subject": "DC Machines",
+      "type": "NAT",
+      "marks": 2,
+      "stem": "A separately excited DC motor has armature voltage 240 V, armature resistance 0.4 Ω, armature current 30 A and speed 1200 rpm. Neglect mechanical and iron losses. Find developed electromagnetic torque in N·m, to two decimals.",
+      "tag": "Original GATE-style"
+    }
+  ]
+}
