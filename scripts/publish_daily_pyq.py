@@ -36,7 +36,7 @@ def get_questions():
               "subject":q.get("subject") or "Unclassified","topic":q.get("topic","Needs review"),
               "classificationStatus":q.get("classificationStatus","unclassified"),
               "type":q["type"],"marks":q["marks"],"officialKey":q["officialKey"],
-              "imagePath":"../../pyq/five-years/"+q["imagePath"],
+              "imagePath":"./pyq/five-years/"+q["imagePath"],
               "paperUrl":source["paperUrl"],"keyUrl":source["keyUrl"],
               "pdfPage":q.get("imageStartPage") or q.get("pdfPage"),
               "imageAuditStatus":q.get("imageAuditStatus","automated_crop")
