@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "description": "Audited historical GATE EE/EC question bank. Correct answers held in bank for authenticated review, not for pre-submission display.",
   "asOf": "2026-11-20",
-  "verifiedCount": 11,
-  "questionCount": 11,
+  "verifiedCount": 14,
+  "questionCount": 14,
   "years": [
     2025
   ],
@@ -289,6 +289,75 @@
       "sourceAudit": "Matched master question and official final key on 2026 IITG archive; figures-dependent items excluded",
       "attemptHistory": "Not recorded as attempted in current 18–20 Nov graded ledger",
       "tolerance": 0.005
+    },
+    {
+      "id": "2025-EE-Q40",
+      "year": 2025,
+      "branch": "EE",
+      "questionNumber": 40,
+      "subject": "Signals & Systems",
+      "topic": "Continuous-time convolution · integral property",
+      "type": "MCQ",
+      "marks": 2,
+      "stem": "Let x₁(t)=1 on [0,1], x₁(t)=2−t on [1,2], zero otherwise. Let x₂(t)=t on [0,1], x₂(t)=2−t on [1,2], zero otherwise. For y(t)=x₁(t)*x₂(t), find ∫(−∞..∞) y(t)dt.",
+      "options": [
+        "1.5",
+        "2.5",
+        "3.5",
+        "4"
+      ],
+      "answer": "A",
+      "explanation": "∫(x₁*x₂)dt=(∫x₁dt)(∫x₂dt)=(1+1/2)(1/2+1/2)=1.5.",
+      "verified": true,
+      "sourceId": "2025 EE Q40",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf"
+    },
+    {
+      "id": "2025-EE-Q42",
+      "year": 2025,
+      "branch": "EE",
+      "questionNumber": 42,
+      "subject": "Signals & Systems",
+      "topic": "LTI systems · BIBO stability",
+      "type": "MCQ",
+      "marks": 2,
+      "stem": "A continuous-time LTI system has the unit step u(t) as the output when its input is δ(t). Which statement is necessarily true?",
+      "options": [
+        "Every bounded input gives bounded output",
+        "There exists a bounded input that produces an unbounded output",
+        "Every input produces a bounded output",
+        "Every input produces an unbounded output"
+      ],
+      "answer": "B",
+      "explanation": "The impulse response h(t)=u(t) is not absolutely integrable, so the system is not BIBO stable; a bounded constant input produces a ramp.",
+      "verified": true,
+      "sourceId": "2025 EE Q42",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf"
+    },
+    {
+      "id": "2025-EC-Q44",
+      "year": 2025,
+      "branch": "EC",
+      "questionNumber": 44,
+      "subject": "Digital Electronics",
+      "topic": "Analog-to-digital converters · quantization SNR and bit rate",
+      "type": "MCQ",
+      "marks": 2,
+      "stem": "A 10-bit ADC samples at 1 MHz, has a full-scale voltage of 3.3 V, and receives a 500 kHz sinusoidal input. Find the maximum signal-to-noise ratio (dB, two decimal places) and ADC output data rate (Mbps), respectively.",
+      "options": [
+        "61.96 and 10",
+        "61.96 and 5",
+        "33.36 and 10",
+        "33.36 and 5"
+      ],
+      "answer": "A",
+      "explanation": "Ideal quantization SNR is 6.02N+1.76≈61.96 dB for N=10. Data rate=10 bits/sample × 10⁶ samples/s=10 Mbps.",
+      "verified": true,
+      "sourceId": "2025 EC Q44",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EC2025.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EC_Keys.pdf"
     }
   ]
 }
