@@ -43,6 +43,33 @@ def get_questions():
             })
     return questions
 
+
+def get_ace_signals():
+    """Supplement Signals block with user-provided ACE classroom questions.
+    A classroom question is NEVER labeled as an official GATE PYQ.
+    Exclude missing keys, ambiguous diagrams and questions requiring image-only context.
+    """
+    source=json.loads(pathlib.Path("practice/ace-signals-2022.json").read_text())
+    allowed={1,2,3,4,5,6,8,9,10,11,17}
+    output=[]
+    for q in source["questions"]:
+        if q["number"] not in allowed or q["answer"] is None:
+            continue
+        output.append({
+          "id":q["id"],"sourceId":f'ACE 2022 Signals & Systems Q{q["number"]}',
+          "year":2022,"branch":"ACE EEE","questionNumber":q["number"],
+          "subject":"Signals & Systems","topic":q["topic"],
+          "classificationStatus":"user_supplied_classroom_test",
+          "sourceType":"ace_classroom","officialGatePYQ":False,
+          "answerStatus":q["answerStatus"],
+          "type":q["type"],"marks":q["marks"],"officialKey":q["answer"] if isinstance(q["answer"],str) else ",".join(q["answer"]),
+          "stem":q["stem"],"options":q.get("options",[]),
+          "imagePath":None,"paperUrl":None,"keyUrl":None,
+          "pdfPage":q["sourcePages"],
+          "sourceNote":"ACE Engineering Academy 2022 classroom test photographed by user; individually solved key, not official GATE answer key."
+        })
+    return output
+
 def deterministic_sort(questions,day,seed):
     return sorted(questions,key=lambda q:hashlib.sha256(f'{seed}-{day.isoformat()}-{q["id"]}'.encode()).hexdigest())
 
@@ -50,13 +77,28 @@ def choose(items, subject, today,used,history):
     candidates=[q for q in items if q["subject"]==subject]
     distinct=[q for q in candidates if q["id"] not in used]
     selected=[]
-    # Favor previously unused, sample years/branches as widely as possible.
-    for pool in (distinct,[q for q in candidates if q["id"] in used]):
-        for q in deterministic_sort(pool,today,subject):
+    if subject=="Signals & Systems":
+        # Six actual GATE PYQs + four explicitly labeled ACE classroom problems.
+        # Prefer unseen for both sources; fall back transparently if exhausted.
+        pools=[
+            ([q for q in candidates if q.get("sourceType")=="ace_classroom"],4),
+            ([q for q in candidates if q.get("sourceType")!="ace_classroom"],6)
+        ]
+    else:
+        pools=[(candidates,10)]
+    for pool,limit in pools:
+        start=len(selected)
+        for q in deterministic_sort([x for x in pool if x["id"] not in used],today,subject+"fresh"):
+            if len(selected)-start>=limit:break
+            if q["id"] not in {x["id"] for x in selected}:selected.append(q)
+        for q in deterministic_sort([x for x in pool if x["id"] in used],today,subject+"repeat"):
+            if len(selected)-start>=limit:break
+            if q["id"] not in {x["id"] for x in selected}:selected.append(q)
+    # Avoid failing a daily paper if fewer than 4 ACE problems are eligible.
+    if len(selected)<10:
+        for q in deterministic_sort(candidates,today,subject+"remaining"):
             if len(selected)==10:break
-            if q["id"] in {x["id"] for x in selected}:continue
-            selected.append(q)
-        if len(selected)==10:break
+            if q["id"] not in {x["id"] for x in selected}:selected.append(q)
     return selected,len(distinct),len(candidates)
 
 def day_subjects(allq,today):
@@ -73,7 +115,7 @@ def day_subjects(allq,today):
     return list(REQUIRED)+[a,b],f'Requested pair {pair} is too small in current classified bank; used {a}, {b} as verified-source substitutes.'
 
 def main():
-    bank=get_questions()
+    bank=get_questions()+get_ace_signals()
     existing=[]
     for path in sorted(OUT.glob("20??-??-??.json")):
         try:
@@ -106,10 +148,10 @@ def main():
       "title":"GATE EE/EC Actual PYQs · "+target.isoformat(),
       "questionCount":40,"durationMinutes":180,
       "subjects":subjects,"sourceYears":[2022,2023,2024,2025,2026],
-      "status":"official_original_screenshots_with_provisional_topic_classifications",
-      "classificationNote":"Subject/topic tags are automated and provisional; official image and final key are original. No AI-generated questions.",
+      "status":"official_gate_pyqs_plus_labeled_ace_classroom_problems",
+      "classificationNote":"Official GATE PYQs use original paper screenshots and official keys; ACE classroom questions are user-supplied, transcribed and independently solved, not official GATE PYQs. Machine topic tags remain provisional. No AI-generated questions.",
       "rotationNote":note,
-      "selectionNote":f'Fresh PYQs are prioritized, but {repeats} previously published question IDs had to repeat because the classified pool is limited.',
+      "selectionNote":f'Selected {sum(q.get("sourceType")=="ace_classroom" for q in picks)} labeled ACE classroom questions alongside original GATE PYQs; {repeats} source question IDs were previously published.',
       "repeatCount":repeats,"selectionCounts":counts,
       "questions":picks
     }
