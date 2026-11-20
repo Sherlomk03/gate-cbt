@@ -47,10 +47,10 @@ def get_questions():
 def get_ace_signals():
     """Supplement Signals block with user-provided ACE classroom questions.
     A classroom question is NEVER labeled as an official GATE PYQ.
-    Exclude missing keys, ambiguous diagrams and questions requiring image-only context.
+    Exclude missing keys or ambiguous questions; preserve explanatory diagram descriptions.
     """
     source=json.loads(pathlib.Path("practice/ace-signals-2022.json").read_text())
-    allowed={1,2,3,4,5,6,8,9,10,11,17}
+    allowed={1,2,3,4,5,6,8,9,10,11,12,13,14,15,16,17,18}
     output=[]
     for q in source["questions"]:
         if q["number"] not in allowed or q["answer"] is None:
