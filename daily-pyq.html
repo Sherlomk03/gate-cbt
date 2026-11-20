@@ -18,6 +18,15 @@ function dateIST(){const parts=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/K
 function localKey(){return 'gateCBT.realDaily.v1.'+data.paper.date}
 function save(){if(data.paper)try{localStorage.setItem(localKey(),JSON.stringify(data.attempt))}catch(e){console.warn(e)}}
 function readSaved(){try{return JSON.parse(localStorage.getItem(localKey())||'null')}catch{return null}}
+function startAttemptClock(){if(data.attempt&&!data.attempt.startedAt&&!data.attempt.submittedAt){data.attempt.startedAt=new Date().toISOString();save()}}
+function updateClock(){if(!data.paper||!data.attempt)return;const el=$('#clock');if(!el)return;
+if(data.attempt.submittedAt){el.textContent='Submitted';return}
+if(!data.attempt.startedAt){el.textContent='Timer: 03:00:00 (starts with first answer)';return}
+const limit=data.paper.durationMinutes||180;
+const seconds=Math.max(0,Math.ceil(limit*60-(Date.now()-Date.parse(data.attempt.startedAt))/1000));
+const hh=String(Math.floor(seconds/3600)).padStart(2,'0'),mm=String(Math.floor((seconds%3600)/60)).padStart(2,'0'),ss=String(seconds%60).padStart(2,'0');
+el.textContent='Time remaining '+hh+':'+mm+':'+ss;
+if(seconds===0){data.attempt.submittedAt=new Date().toISOString();save();syncMistakes();qView()}}
 function answer(q){return data.attempt.answers[q.id]}
 function hasAnswer(q){const a=answer(q);return Array.isArray(a)?a.length>0:String(a??'').trim().length>0}
 function chars(x){return [...new Set(String(x??'').toUpperCase().match(/[A-D]/g)||[])].sort().join('')}
@@ -36,8 +45,8 @@ $('#pdf').classList.remove('open');$('#fullPdf').textContent='View complete orig
 const done=p.questions.filter(hasAnswer).length;$('#count').textContent=done+'/40';$('#bar').style.width=(done*2.5)+'%';
 let groups='';for(const s of p.subjects){groups+='<div class="subject-label">'+esc(s)+' (10)</div><div class="palette">'+p.questions.map((x,i)=>x.subject===s?'<button data-i="'+i+'" class="'+(hasAnswer(x)?'done ':'')+(a.flagged[x.id]?'flagged ':'')+(data.pos===i?'selected':'')+'">'+(i+1)+'</button>':'').join('')+'</div>'}
 $('#palette').innerHTML=groups;$('#palette').querySelectorAll('button').forEach(b=>b.onclick=()=>{data.pos=Number(b.dataset.i);qView()});
-const v=answer(q);if(q.type==='NAT'){$('#input').innerHTML='<input class="nat" id="nat" inputmode="decimal" placeholder="Enter numerical answer" '+(locked?'disabled':'')+'>';$('#nat').value=v??'';$('#nat').oninput=e=>{a.answers[q.id]=e.target.value;save()}}
-else{$('#input').innerHTML='<div class="choices">'+[...'ABCD'].map(letter=>'<label><input type="'+(q.type==='MSQ'?'checkbox':'radio')+'" name="dailyResponse" value="'+letter+'" '+((Array.isArray(v)?v.includes(letter):v===letter)?'checked':'')+' '+(locked?'disabled':'')+'><b>'+letter+'</b></label>').join('')+'</div>';$('#input').querySelectorAll('input').forEach(el=>el.onchange=()=>{a.answers[q.id]=q.type==='MCQ'?el.value:[...$('#input').querySelectorAll('input:checked')].map(z=>z.value);save();qView()})}
+const v=answer(q);if(q.type==='NAT'){$('#input').innerHTML='<input class="nat" id="nat" inputmode="decimal" placeholder="Enter numerical answer" '+(locked?'disabled':'')+'>';$('#nat').value=v??'';$('#nat').oninput=e=>{startAttemptClock();a.answers[q.id]=e.target.value;save();updateClock()}}
+else{$('#input').innerHTML='<div class="choices">'+[...'ABCD'].map(letter=>'<label><input type="'+(q.type==='MSQ'?'checkbox':'radio')+'" name="dailyResponse" value="'+letter+'" '+((Array.isArray(v)?v.includes(letter):v===letter)?'checked':'')+' '+(locked?'disabled':'')+'><b>'+letter+'</b></label>').join('')+'</div>';$('#input').querySelectorAll('input').forEach(el=>el.onchange=()=>{startAttemptClock();a.answers[q.id]=q.type==='MCQ'?el.value:[...$('#input').querySelectorAll('input:checked')].map(z=>z.value);save();qView()})}
 $('#prev').disabled=data.pos===0;$('#next').disabled=data.pos===39;$('#clear').disabled=locked;$('#flag').disabled=locked;$('#submit').disabled=locked;$('#flag').textContent=a.flagged[q.id]?'★ Unflag':'☆ Flag';
 $('#clear').onclick=()=>{delete a.answers[q.id];save();qView()};
 $('#flag').onclick=()=>{a.flagged[q.id]=!a.flagged[q.id];save();qView()};
@@ -45,7 +54,7 @@ $('#prev').onclick=()=>{data.pos=Math.max(0,data.pos-1);qView()};
 $('#next').onclick=()=>{data.pos=Math.min(39,data.pos+1);qView()};
 $('#fullPdf').onclick=()=>{const open=!$('#pdf').classList.contains('open');$('#pdf').classList.toggle('open',open);$('#fullPdf').textContent=open?'Hide complete original PDF':'View complete original PDF';if(open&&$('#pdf').src!==src)$('#pdf').src=src};
 $('#submit').onclick=()=>{if(!confirm('Submit today’s 40 GATE PYQs and lock your answers?'))return;a.submittedAt=new Date().toISOString();save();syncMistakes();qView()};
-$('#result').innerHTML=locked?review(): '<p class="small">Answers are saved in this browser. Official answers stay hidden until submission. Refreshing will preserve your progress.</p>';
+updateClock();$('#result').innerHTML=locked?review(): '<p class="small">Answers are saved in this browser. Official answers stay hidden until submission. Refreshing will preserve your progress.</p>';
 }
 function review(){const p=data.paper,a=data.attempt;
 const results=p.questions.map(q=>({q,r:grade(q,a.answers[q.id])}));let total=0,available=0;for(const {q,r} of results){total+=r.net;available+=q.marks}
@@ -57,7 +66,8 @@ for(const q of p.questions){const r=grade(q,a.answers[q.id]);if(!['wrong','skipp
 main.prior.push({paperId:p.id,date:p.date,id:q.id,subject:q.subject,topic:q.topic,stem:q.sourceId+' — original official question image below.',imagePath:q.imagePath,sourceUrl:q.paperUrl,type:q.type,answer:a.answers[q.id],correct:q.officialKey,status:r.status,explanation:'Official final key; review the exact question screenshot and the source paper.'})}
 localStorage.setItem(K,JSON.stringify(main))}catch(e){console.warn('Could not update revision history',e)}}
 async function loadPaper(){const date=$('#dates').value;const entry=data.manifest?.papers?.find(x=>x.date===date);if(!entry)return;
-try{$('#loadStatus').textContent='Loading '+date+'...';const response=await fetch('./papers/daily-pyq/'+entry.file+'?t='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('Paper not yet published');const p=await response.json();if(p.questions.length!==40||new Set(p.questions.map(q=>q.id)).size!==40)throw Error('Invalid paper contents');data.paper=p;data.pos=0;data.attempt=readSaved()||{answers:{},flagged:{},submittedAt:null,startedAt:new Date().toISOString()};$('#intro').classList.remove('hidden');$('#intro').textContent=p.date+' · '+p.subjects.join(' · ')+' · '+p.selectionNote+(p.rotationNote?' '+p.rotationNote:'')+' Subject and topic classifications are provisional.';$('#loadStatus').textContent='Loaded '+date;if(data.attempt.submittedAt)syncMistakes();qView()}catch(e){$('#loadStatus').textContent='Could not load paper: '+e.message}}
+try{$('#loadStatus').textContent='Loading '+date+'...';const response=await fetch('./papers/daily-pyq/'+entry.file+'?t='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('Paper not yet published');const p=await response.json();if(p.questions.length!==40||new Set(p.questions.map(q=>q.id)).size!==40)throw Error('Invalid paper contents');data.paper=p;data.pos=0;data.attempt=readSaved()||{answers:{},flagged:{},submittedAt:null,startedAt:null};$('#intro').classList.remove('hidden');$('#intro').textContent=p.date+' · '+p.subjects.join(' · ')+' · '+p.selectionNote+(p.rotationNote?' '+p.rotationNote:'')+' Subject and topic classifications are provisional.';$('#loadStatus').textContent='Loaded '+date;if(data.attempt.submittedAt)syncMistakes();qView()}catch(e){$('#loadStatus').textContent='Could not load paper: '+e.message}}
 (async()=>{try{const response=await fetch('./papers/daily-pyq/manifest.json?t='+Date.now(),{cache:'no-store'});if(!response.ok)throw Error('No daily PYQ manifest published');data.manifest=await response.json();const dates=data.manifest.papers.map(x=>x.date);$('#dates').innerHTML=dates.map(d=>'<option>'+d+'</option>').join('');const today=dateIST();if(dates.includes(today))$('#dates').value=today;else $('#dates').value=dates[0];await loadPaper()}catch(e){$('#loadStatus').textContent='No verified-source daily paper available: '+e.message}})();
 $('#load').onclick=loadPaper;
+setInterval(updateClock,1000);
 </script></body></html>
