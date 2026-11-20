@@ -61,6 +61,7 @@ function syncMainMistakes(){
  if(!p||!a?.submittedAt)return;
  try{
  const k='gateCBT.v2'; const main=JSON.parse(localStorage.getItem(k)||'null')||{};
+ main.papers??={};main.attempts??={};main.feed??='./papers/manifest.json';
  if(!Array.isArray(main.prior))main.prior=[];
  const pid='official-'+p.year+'-'+p.branch;
  main.prior=main.prior.filter(x=>x.paperId!==pid);
