@@ -4,8 +4,8 @@
   "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EC.pdf",
   "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EC_Keys.pdf",
   "paperPages": 58,
-  "format": "official_pdf_linked_answer_sheet",
-  "questionSource": "official PDF shown in viewer, not transcribed",
+  "format": "official_pdf_individual_image_crops",
+  "questionSource": "automatically cropped original official PDF; diagram and option boundaries require visual audit",
   "questions": [
     {
       "number": 1,
@@ -126,7 +126,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q11",
       "pdfPage": 11,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q11.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 11,
+      "imageEndPage": 12
     },
     {
       "number": 12,
@@ -137,7 +141,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q12",
       "pdfPage": 12,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q12.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 12,
+      "imageEndPage": 13
     },
     {
       "number": 13,
@@ -148,7 +156,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q13",
       "pdfPage": 13,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q13.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 13,
+      "imageEndPage": 14
     },
     {
       "number": 14,
@@ -159,7 +171,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q14",
       "pdfPage": 14,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q14.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 14,
+      "imageEndPage": 15
     },
     {
       "number": 15,
@@ -171,7 +187,11 @@
       "id": "2026-EC-Q15",
       "pdfPage": 14,
       "answerStatus": "official_key",
-      "pdfPageEstimated": true
+      "pdfPageEstimated": true,
+      "imagePath": "crops/2026-EC/Q15.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 15,
+      "imageEndPage": 16
     },
     {
       "number": 16,
@@ -182,7 +202,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q16",
       "pdfPage": 16,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q16.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 16,
+      "imageEndPage": 17
     },
     {
       "number": 17,
@@ -193,7 +217,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q17",
       "pdfPage": 17,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q17.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 17,
+      "imageEndPage": 18
     },
     {
       "number": 18,
@@ -204,7 +232,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q18",
       "pdfPage": 18,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q18.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 18,
+      "imageEndPage": 19
     },
     {
       "number": 19,
@@ -215,7 +247,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q19",
       "pdfPage": 19,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q19.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 19,
+      "imageEndPage": 20
     },
     {
       "number": 20,
@@ -226,7 +262,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q20",
       "pdfPage": 20,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q20.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 20,
+      "imageEndPage": 21
     },
     {
       "number": 21,
@@ -237,7 +277,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q21",
       "pdfPage": 21,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q21.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 21,
+      "imageEndPage": 22
     },
     {
       "number": 22,
@@ -248,7 +292,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q22",
       "pdfPage": 22,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q22.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 22,
+      "imageEndPage": 23
     },
     {
       "number": 23,
@@ -260,7 +308,11 @@
       "id": "2026-EC-Q23",
       "pdfPage": 22,
       "answerStatus": "official_key",
-      "pdfPageEstimated": true
+      "pdfPageEstimated": true,
+      "imagePath": "crops/2026-EC/Q23.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 23,
+      "imageEndPage": 24
     },
     {
       "number": 24,
@@ -272,7 +324,11 @@
       "id": "2026-EC-Q24",
       "pdfPage": 22,
       "answerStatus": "official_key",
-      "pdfPageEstimated": true
+      "pdfPageEstimated": true,
+      "imagePath": "crops/2026-EC/Q24.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 24,
+      "imageEndPage": 25
     },
     {
       "number": 25,
@@ -283,7 +339,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q25",
       "pdfPage": 25,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q25.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 25,
+      "imageEndPage": 26
     },
     {
       "number": 26,
@@ -294,7 +354,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q26",
       "pdfPage": 26,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q26.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 26,
+      "imageEndPage": 27
     },
     {
       "number": 27,
@@ -305,7 +369,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q27",
       "pdfPage": 27,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q27.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 27,
+      "imageEndPage": 28
     },
     {
       "number": 28,
@@ -316,7 +384,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q28",
       "pdfPage": 28,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q28.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 28,
+      "imageEndPage": 29
     },
     {
       "number": 29,
@@ -327,7 +399,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q29",
       "pdfPage": 29,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q29.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 29,
+      "imageEndPage": 30
     },
     {
       "number": 30,
@@ -338,7 +414,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q30",
       "pdfPage": 30,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q30.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 30,
+      "imageEndPage": 30
     },
     {
       "number": 31,
@@ -349,7 +429,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q31",
       "pdfPage": 30,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q31.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 30,
+      "imageEndPage": 31
     },
     {
       "number": 32,
@@ -360,7 +444,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q32",
       "pdfPage": 31,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q32.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 31,
+      "imageEndPage": 31
     },
     {
       "number": 33,
@@ -371,7 +459,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q33",
       "pdfPage": 31,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q33.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 31,
+      "imageEndPage": 31
     },
     {
       "number": 34,
@@ -382,7 +474,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q34",
       "pdfPage": 31,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q34.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 31,
+      "imageEndPage": 32
     },
     {
       "number": 35,
@@ -393,7 +489,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q35",
       "pdfPage": 32,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q35.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 32,
+      "imageEndPage": 33
     },
     {
       "number": 36,
@@ -404,7 +504,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q36",
       "pdfPage": 33,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q36.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 33,
+      "imageEndPage": 34
     },
     {
       "number": 37,
@@ -415,7 +519,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q37",
       "pdfPage": 34,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q37.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 34,
+      "imageEndPage": 35
     },
     {
       "number": 38,
@@ -426,7 +534,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q38",
       "pdfPage": 35,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q38.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 35,
+      "imageEndPage": 36
     },
     {
       "number": 39,
@@ -437,7 +549,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q39",
       "pdfPage": 36,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q39.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 36,
+      "imageEndPage": 37
     },
     {
       "number": 40,
@@ -448,7 +564,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q40",
       "pdfPage": 37,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q40.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 37,
+      "imageEndPage": 38
     },
     {
       "number": 41,
@@ -459,7 +579,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q41",
       "pdfPage": 38,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q41.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 38,
+      "imageEndPage": 39
     },
     {
       "number": 42,
@@ -470,7 +594,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q42",
       "pdfPage": 39,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q42.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 39,
+      "imageEndPage": 40
     },
     {
       "number": 43,
@@ -481,7 +609,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q43",
       "pdfPage": 40,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q43.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 40,
+      "imageEndPage": 41
     },
     {
       "number": 44,
@@ -492,7 +624,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q44",
       "pdfPage": 41,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q44.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 41,
+      "imageEndPage": 42
     },
     {
       "number": 45,
@@ -503,7 +639,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q45",
       "pdfPage": 42,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q45.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 42,
+      "imageEndPage": 43
     },
     {
       "number": 46,
@@ -514,7 +654,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q46",
       "pdfPage": 43,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q46.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 43,
+      "imageEndPage": 44
     },
     {
       "number": 47,
@@ -525,7 +669,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q47",
       "pdfPage": 44,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q47.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 44,
+      "imageEndPage": 45
     },
     {
       "number": 48,
@@ -536,7 +684,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q48",
       "pdfPage": 45,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q48.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 45,
+      "imageEndPage": 46
     },
     {
       "number": 49,
@@ -547,7 +699,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q49",
       "pdfPage": 46,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q49.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 46,
+      "imageEndPage": 47
     },
     {
       "number": 50,
@@ -558,7 +714,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q50",
       "pdfPage": 47,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q50.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 47,
+      "imageEndPage": 48
     },
     {
       "number": 51,
@@ -569,7 +729,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q51",
       "pdfPage": 48,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q51.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 48,
+      "imageEndPage": 49
     },
     {
       "number": 52,
@@ -580,7 +744,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q52",
       "pdfPage": 49,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q52.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 49,
+      "imageEndPage": 50
     },
     {
       "number": 53,
@@ -591,7 +759,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q53",
       "pdfPage": 50,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q53.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 50,
+      "imageEndPage": 51
     },
     {
       "number": 54,
@@ -602,7 +774,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q54",
       "pdfPage": 51,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q54.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 51,
+      "imageEndPage": 52
     },
     {
       "number": 55,
@@ -613,7 +789,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q55",
       "pdfPage": 52,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q55.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 52,
+      "imageEndPage": 53
     },
     {
       "number": 56,
@@ -624,7 +804,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q56",
       "pdfPage": 53,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q56.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 53,
+      "imageEndPage": 54
     },
     {
       "number": 57,
@@ -635,7 +819,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q57",
       "pdfPage": 54,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q57.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 54,
+      "imageEndPage": 55
     },
     {
       "number": 58,
@@ -646,7 +834,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q58",
       "pdfPage": 55,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q58.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 55,
+      "imageEndPage": 56
     },
     {
       "number": 59,
@@ -657,7 +849,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q59",
       "pdfPage": 56,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q59.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 56,
+      "imageEndPage": 56
     },
     {
       "number": 60,
@@ -668,7 +864,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q60",
       "pdfPage": 56,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q60.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 56,
+      "imageEndPage": 57
     },
     {
       "number": 61,
@@ -679,7 +879,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q61",
       "pdfPage": 57,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q61.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 57,
+      "imageEndPage": 57
     },
     {
       "number": 62,
@@ -690,7 +894,11 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q62",
       "pdfPage": 57,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "imagePath": "crops/2026-EC/Q62.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 57,
+      "imageEndPage": 58
     },
     {
       "number": 63,
@@ -702,7 +910,11 @@
       "id": "2026-EC-Q63",
       "pdfPage": 57,
       "answerStatus": "official_key",
-      "pdfPageEstimated": true
+      "pdfPageEstimated": true,
+      "imagePath": "crops/2026-EC/Q63.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 58,
+      "imageEndPage": 58
     },
     {
       "number": 64,
@@ -714,7 +926,11 @@
       "id": "2026-EC-Q64",
       "pdfPage": 57,
       "answerStatus": "official_key",
-      "pdfPageEstimated": true
+      "pdfPageEstimated": true,
+      "imagePath": "crops/2026-EC/Q64.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 58,
+      "imageEndPage": 58
     },
     {
       "number": 65,
@@ -726,7 +942,11 @@
       "id": "2026-EC-Q65",
       "pdfPage": 57,
       "answerStatus": "official_key",
-      "pdfPageEstimated": true
+      "pdfPageEstimated": true,
+      "imagePath": "crops/2026-EC/Q65.webp",
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "imageStartPage": 58,
+      "imageEndPage": 58
     }
   ]
 }
