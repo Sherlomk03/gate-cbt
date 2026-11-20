@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'index.html'
+      - 'five-years.html'
       - 'papers/**'
       - 'pyq/**'
       - '.github/workflows/deploy.yml'
