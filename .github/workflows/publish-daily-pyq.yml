@@ -1,0 +1,49 @@
+name: Publish Daily Real GATE PYQ Practice
+on:
+  schedule:
+    # 07:50 IST each day; GitHub scheduled runs can be delayed.
+    - cron: '20 2 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/publish_daily_pyq.py'
+      - '.github/workflows/publish-daily-pyq.yml'
+permissions:
+  contents: write
+concurrency:
+  group: gate-daily-pyq-publisher
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Select 40 source-verified PYQ images
+        run: python scripts/publish_daily_pyq.py
+      - name: Audit and commit
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          entries=list(pathlib.Path('papers/daily-pyq').glob('20??-??-??.json'))
+          assert entries
+          for f in entries:
+              d=json.loads(f.read_text())
+              q=d['questions']
+              assert len(q)==40 and len({x['id'] for x in q})==40
+              assert [sum(x['subject']==s for x in q) for s in d['subjects']]==[10,10,10,10]
+              assert all(x['imagePath'] and x['officialKey'] and x['paperUrl'] and x['keyUrl'] for x in q)
+          print('Daily question-source inventory checked:',len(entries))
+          PY
+          git config user.name "gate-cbt-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add papers/daily-pyq/
+          if ! git diff --staged --quiet; then
+            git commit -m "Publish next 40-question source-authentic GATE PYQ daily test"
+            git fetch origin main
+            git rebase origin/main
+            git push
+          fi
