@@ -19,8 +19,8 @@ function ranges(k){const parts=String(k).replace(/[−–]/g,'-').split(/\s+OR\s
 function grade(q,v){if(/\bMTA\b/i.test(q.officialKey))return{status:'MTA',score:q.marks};
  if(!answered(q))return{status:'skipped',score:0};
  let correct=false;
- if(q.type==='MCQ')correct=v===q.officialKey.trim();
- if(q.type==='MSQ')correct=canonical(Array.isArray(v)?v.join(''):v)===canonical(q.officialKey);
+ if(q.type==='MCQ')correct=String(q.officialKey).split(/\s+OR\s+/i).some(k=>String(v).trim().toUpperCase()===k.trim().toUpperCase());
+ if(q.type==='MSQ')correct=String(q.officialKey).split(/\s+OR\s+/i).some(k=>canonical(Array.isArray(v)?v.join(''):v)===canonical(k));
  if(q.type==='NAT'){const n=Number(v);correct=Number.isFinite(n)&&ranges(q.officialKey).some(([l,h])=>l<=n&&n<=h)}
  return{status:correct?'correct':'wrong',score:correct?q.marks:q.type==='MCQ'?-q.marks/3:0}}
 function render(){const p=state.paper;if(!p)return;const a=state.attempt,q=p.questions[state.number-1],locked=!!a.submittedAt;
