@@ -53,8 +53,33 @@ function render(){const p=state.paper;if(!p)return;const a=state.attempt,q=p.que
  $('#next').onclick=()=>{state.number=Math.min(65,state.number+1);render()};
  $('#clear').onclick=()=>{delete a.answers[q.number];save();render()};
  $('#mark').onclick=()=>{a.marked[q.number]=!a.marked[q.number];save();render()};
- $('#submit').onclick=()=>{if(!confirm('Submit all 55 technical questions and lock this attempt?'))return;a.submittedAt=new Date().toISOString();save();render()};
+ $('#submit').onclick=()=>{if(!confirm('Submit all 55 technical questions and lock this attempt?'))return;a.submittedAt=new Date().toISOString();save();syncMainMistakes();render()};
  $('#results').innerHTML=locked?makeResults():'<p class="small">Your selections are saved in this browser. The official key is applied only after submission.</p>';
+}
+function syncMainMistakes(){
+ const p=state.paper,a=state.attempt;
+ if(!p||!a?.submittedAt)return;
+ try{
+ const k='gateCBT.v2'; const main=JSON.parse(localStorage.getItem(k)||'null')||{};
+ if(!Array.isArray(main.prior))main.prior=[];
+ const pid='official-'+p.year+'-'+p.branch;
+ main.prior=main.prior.filter(x=>x.paperId!==pid);
+ for(const q of p.questions.slice(10)){
+  const evaluation=grade(q,a.answers[q.number]);
+  if(!['wrong','skipped'].includes(evaluation.status))continue;
+  main.prior.push({
+   paperId:pid, date:String(a.submittedAt).slice(0,10), id:q.id,
+   subject:p.branch==='EE'?'Electrical Engineering (EE)':'Electronics & Communication (EC)',
+   topic:'GATE '+p.year+' / Topic not yet classified',
+   type:q.type, stem:'Official GATE '+p.year+' '+p.branch+' Question '+q.number+' — see original image below.',
+   imagePath:q.imagePath?'./pyq/five-years/'+q.imagePath:null,
+   sourceUrl:p.paperUrl, answer:a.answers[q.number],
+   correct:q.officialKey, explanation:'Official key shown. Check the original master paper for complete wording and figures.',
+   status:evaluation.status
+  });
+ }
+ localStorage.setItem(k,JSON.stringify(main));
+ }catch(e){console.warn('Could not synchronize historical mistakes:',e)}
 }
 function makeResults(){const p=state.paper,a=state.attempt;const records=p.questions.slice(10).map(q=>({...q,grade:grade(q,a.answers[q.number])}));
  const sum=records.reduce((s,q)=>s+q.grade.score,0),max=records.reduce((s,q)=>s+q.marks,0);
@@ -65,7 +90,7 @@ function makeResults(){const p=state.paper,a=state.attempt;const records=p.quest
 }
 async function loadPaper(){if(!state.manifest)return;const year=Number($('#year').value),branch=$('#branch').value,m=state.manifest.papers.find(x=>x.year===year&&x.branch===branch);if(!m){showStatus('Paper metadata not available');return}
  showStatus('Loading official paper and answer sheet...');
- try{const response=await fetch('./pyq/five-years/'+m.file,{cache:'no-store'});if(!response.ok)throw Error('Paper metadata HTTP '+response.status);state.paper=await response.json();state.number=11;state.attempt=readSaved()||{answers:{},marked:{},submittedAt:null};$('#count').textContent=state.paper.questions.length+' key-verified questions · 55 technical';showStatus('Loaded '+year+' '+branch);render()}catch(e){showStatus('Not imported yet: '+e.message)}
+ try{const response=await fetch('./pyq/five-years/'+m.file,{cache:'no-store'});if(!response.ok)throw Error('Paper metadata HTTP '+response.status);state.paper=await response.json();state.number=11;state.attempt=readSaved()||{answers:{},marked:{},submittedAt:null};$('#count').textContent=state.paper.questions.length+' key-verified questions · 55 technical';showStatus('Loaded '+year+' '+branch);if(state.attempt.submittedAt)syncMainMistakes();render()}catch(e){showStatus('Not imported yet: '+e.message)}
 }
 $('#openPaper').onclick=loadPaper;
 $('#results').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;if(b.dataset.w){state.number=Number(b.dataset.w);render();return}if(b.id==='reset'){if(!confirm('Erase this paper attempt?'))return;state.attempt={answers:{},marked:{},submittedAt:null};save();render()}});
