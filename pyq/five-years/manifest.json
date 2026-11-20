@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "status": "official_pdf_linked_answer_sheet_not_transcribed",
+  "years": [
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "papers": [
+    {
+      "year": 2026,
+      "branch": "EE",
+      "file": "2026-EE.json",
+      "questionCount": 65,
+      "technicalCount": 55,
+      "mappedPages": 65
+    },
+    {
+      "year": 2026,
+      "branch": "EC",
+      "file": "2026-EC.json",
+      "questionCount": 65,
+      "technicalCount": 55,
+      "mappedPages": 59
+    },
+    {
+      "year": 2025,
+      "branch": "EE",
+      "file": "2025-EE.json",
+      "questionCount": 65,
+      "technicalCount": 55,
+      "mappedPages": 65
+    },
+    {
+      "year": 2025,
+      "branch": "EC",
+      "file": "2025-EC.json",
+      "questionCount": 65,
+      "technicalCount": 55,
+      "mappedPages": 65
+    },
+    {
+      "year": 2024,
+      "branch": "EE",
+      "file": "2024-EE.json",
+      "questionCount": 65,
+      "technicalCount": 55,
+      "mappedPages": 65
+    },
+    {
+      "year": 2024,
+      "branch": "EC",
+      "file": "2024-EC.json",
+      "questionCount": 65,
+      "technicalCount": 55,
+      "mappedPages": 63
+    },
+    {
+      "year": 2023,
+      "branch": "EE",
+      "file": "2023-EE.json",
+      "questionCount": 65,
+      "technicalCount": 55,
+      "mappedPages": 63
+    },
+    {
+      "year": 2023,
+      "branch": "EC",
+      "file": "2023-EC.json",
+      "questionCount": 65,
+      "technicalCount": 55,
+      "mappedPages": 65
+    },
+    {
+      "year": 2022,
+      "branch": "EE",
+      "file": "2022-EE.json",
+      "questionCount": 65,
+      "technicalCount": 55,
+      "mappedPages": 63
+    },
+    {
+      "year": 2022,
+      "branch": "EC",
+      "file": "2022-EC.json",
+      "questionCount": 65,
+      "technicalCount": 55,
+      "mappedPages": 63
+    }
+  ]
+}
