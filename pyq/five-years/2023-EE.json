@@ -323,8 +323,9 @@
       "officialKey": "7.9 to 8.1",
       "keyVerifiedFromTable": true,
       "id": "2023-EE-Q29",
-      "pdfPage": null,
-      "answerStatus": "official_key"
+      "pdfPage": 23,
+      "answerStatus": "official_key",
+      "pdfPageEstimated": true
     },
     {
       "number": 30,
@@ -697,8 +698,9 @@
       "officialKey": "80 to 80",
       "keyVerifiedFromTable": true,
       "id": "2023-EE-Q63",
-      "pdfPage": null,
-      "answerStatus": "official_key"
+      "pdfPage": 41,
+      "answerStatus": "official_key",
+      "pdfPageEstimated": true
     },
     {
       "number": 64,
