@@ -169,8 +169,9 @@
       "officialKey": "D",
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q15",
-      "pdfPage": null,
-      "answerStatus": "official_key"
+      "pdfPage": 14,
+      "answerStatus": "official_key",
+      "pdfPageEstimated": true
     },
     {
       "number": 16,
@@ -257,8 +258,9 @@
       "officialKey": "A",
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q23",
-      "pdfPage": null,
-      "answerStatus": "official_key"
+      "pdfPage": 22,
+      "answerStatus": "official_key",
+      "pdfPageEstimated": true
     },
     {
       "number": 24,
@@ -268,8 +270,9 @@
       "officialKey": "A",
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q24",
-      "pdfPage": null,
-      "answerStatus": "official_key"
+      "pdfPage": 22,
+      "answerStatus": "official_key",
+      "pdfPageEstimated": true
     },
     {
       "number": 25,
@@ -697,8 +700,9 @@
       "officialKey": "0.10 to 0.20",
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q63",
-      "pdfPage": null,
-      "answerStatus": "official_key"
+      "pdfPage": 57,
+      "answerStatus": "official_key",
+      "pdfPageEstimated": true
     },
     {
       "number": 64,
@@ -708,8 +712,9 @@
       "officialKey": "-36.50 to -34.50 OR 34.50 to 36.50",
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q64",
-      "pdfPage": null,
-      "answerStatus": "official_key"
+      "pdfPage": 57,
+      "answerStatus": "official_key",
+      "pdfPageEstimated": true
     },
     {
       "number": 65,
@@ -719,8 +724,9 @@
       "officialKey": "3.70 to 4.30",
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q65",
-      "pdfPage": null,
-      "answerStatus": "official_key"
+      "pdfPage": 57,
+      "answerStatus": "official_key",
+      "pdfPageEstimated": true
     }
   ]
 }
