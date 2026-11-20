@@ -6,6 +6,7 @@ on:
     paths:
       - 'index.html'
       - 'papers/**'
+      - 'pyq/**'
       - '.github/workflows/deploy.yml'
 permissions:
   contents: read
