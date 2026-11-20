@@ -62,7 +62,7 @@ def get_ace_signals():
           "classificationStatus":"user_supplied_classroom_test",
           "sourceType":"ace_classroom","officialGatePYQ":False,
           "answerStatus":q["answerStatus"],
-          "type":q["type"],"marks":q["marks"],"officialKey":q["answer"] if isinstance(q["answer"],str) else ",".join(q["answer"]),
+          "type":q["type"],"marks":q["marks"],"officialKey":",".join(q["answer"]) if isinstance(q["answer"],list) else str(q["answer"]),
           "stem":q["stem"],"options":q.get("options",[]),
           "imagePath":None,"paperUrl":None,"keyUrl":None,
           "pdfPage":q["sourcePages"],
