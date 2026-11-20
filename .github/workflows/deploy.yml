@@ -1,5 +1,5 @@
 name: Publish GATE CBT website (verified paper library)
-# Includes the official 2022–2026 linked-paper answer-sheet data
+# Includes official 2022–2026 linked-paper data, screenshots and daily source-authentic PYQ exams
 on:
   workflow_dispatch:
   push:
@@ -7,6 +7,8 @@ on:
     paths:
       - 'index.html'
       - 'five-years.html'
+      - 'daily-pyq.html'
+      - 'pyq-library.html'
       - 'papers/**'
       - 'pyq/**'
       - '.github/workflows/deploy.yml'
