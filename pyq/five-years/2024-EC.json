@@ -147,8 +147,9 @@
       "officialKey": "D",
       "keyVerifiedFromTable": true,
       "id": "2024-EC-Q13",
-      "pdfPage": null,
-      "answerStatus": "official_key"
+      "pdfPage": 10,
+      "answerStatus": "official_key",
+      "pdfPageEstimated": true
     },
     {
       "number": 14,
@@ -477,8 +478,9 @@
       "officialKey": "D",
       "keyVerifiedFromTable": true,
       "id": "2024-EC-Q43",
-      "pdfPage": null,
-      "answerStatus": "official_key"
+      "pdfPage": 32,
+      "answerStatus": "official_key",
+      "pdfPageEstimated": true
     },
     {
       "number": 44,
