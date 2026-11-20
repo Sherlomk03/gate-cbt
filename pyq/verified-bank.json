@@ -2,18 +2,21 @@
   "schemaVersion": 1,
   "description": "Audited historical GATE EE/EC question bank. Correct answers held in bank for authenticated review, not for pre-submission display.",
   "asOf": "2026-11-20",
-  "verifiedCount": 14,
-  "questionCount": 14,
+  "verifiedCount": 19,
+  "questionCount": 19,
   "years": [
+    2024,
     2025
   ],
   "sourcePapers": [
     "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
-    "https://gate2026.iitg.ac.in/doc/download/2025/EC2025.pdf"
+    "https://gate2026.iitg.ac.in/doc/download/2025/EC2025.pdf",
+    "https://gate2024.iisc.ac.in/wp-content/uploads/2024/EE24S8.pdf"
   ],
   "officialKeys": [
     "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
-    "https://gate2026.iitg.ac.in/doc/download/2025_Key/EC_Keys.pdf"
+    "https://gate2026.iitg.ac.in/doc/download/2025_Key/EC_Keys.pdf",
+    "https://gate2024.iisc.ac.in/wp-content/uploads/2024/EEFinalAnswerKey.pdf"
   ],
   "questions": [
     {
@@ -358,6 +361,126 @@
       "sourceId": "2025 EC Q44",
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EC2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EC_Keys.pdf"
+    },
+    {
+      "id": "2024-EE-Q11",
+      "year": 2024,
+      "branch": "EE",
+      "questionNumber": 11,
+      "subject": "Engineering Mathematics",
+      "topic": "Linear algebra · invertible matrices",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "Which of these 3×3 matrices is invertible?",
+      "options": [
+        "[[1,4,8],[0,4,2],[0.5,2,4]]",
+        "[[1,2,3],[2,4,6],[3,2,9]]",
+        "[[1,4,8],[0,4,2],[1,2,4]]",
+        "[[1,4,8],[0,4,2],[3,12,24]]"
+      ],
+      "answer": "C",
+      "explanation": "A and D each have proportional rows; B has its second row twice its first. Only C has nonzero determinant.",
+      "verified": true,
+      "sourceId": "2024 EE Q11",
+      "paperUrl": "https://gate2024.iisc.ac.in/wp-content/uploads/2024/EE24S8.pdf",
+      "keyUrl": "https://gate2024.iisc.ac.in/wp-content/uploads/2024/EEFinalAnswerKey.pdf",
+      "sourceAudit": "Matched official IISc 2024 master paper and final key"
+    },
+    {
+      "id": "2024-EE-Q15",
+      "year": 2024,
+      "branch": "EE",
+      "questionNumber": 15,
+      "subject": "Signals & Systems",
+      "topic": "Convolution · time reversal",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "Let y(t)=x(−t), the time reversal of x(t), for all real t. Which property necessarily holds for x(t)*y(t)?",
+      "options": [
+        "It is an even signal",
+        "It is an odd signal",
+        "It is causal",
+        "It is anticausal"
+      ],
+      "answer": "A",
+      "explanation": "Convolution of x(t) with x(−t) is its autocorrelation-like function, which is even (for real x).",
+      "verified": true,
+      "sourceId": "2024 EE Q15",
+      "paperUrl": "https://gate2024.iisc.ac.in/wp-content/uploads/2024/EE24S8.pdf",
+      "keyUrl": "https://gate2024.iisc.ac.in/wp-content/uploads/2024/EEFinalAnswerKey.pdf",
+      "sourceAudit": "Matched official IISc 2024 master paper and final key"
+    },
+    {
+      "id": "2024-EE-Q16",
+      "year": 2024,
+      "branch": "EE",
+      "questionNumber": 16,
+      "subject": "Signals & Systems",
+      "topic": "Bilateral Laplace transform · finite-duration ROC",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "For x(t)=exp(t²)[u(t−1)−u(t−10)], what is the region of convergence of its bilateral Laplace transform?",
+      "options": [
+        "−∞ < Re(s) < ∞",
+        "Re(s) ≥ 10",
+        "Re(s) ≤ 1",
+        "1 ≤ Re(s) ≤ 10"
+      ],
+      "answer": "A",
+      "explanation": "Finite-duration absolutely integrable signal has a bilateral Laplace transform for every finite s.",
+      "verified": true,
+      "sourceId": "2024 EE Q16",
+      "paperUrl": "https://gate2024.iisc.ac.in/wp-content/uploads/2024/EE24S8.pdf",
+      "keyUrl": "https://gate2024.iisc.ac.in/wp-content/uploads/2024/EEFinalAnswerKey.pdf",
+      "sourceAudit": "Matched official IISc 2024 master paper and final key"
+    },
+    {
+      "id": "2024-EE-Q17",
+      "year": 2024,
+      "branch": "EE",
+      "questionNumber": 17,
+      "subject": "Electrical Machines",
+      "topic": "Induction motors · efficiency and slip",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "A three-phase 50 Hz, six-pole induction motor runs at 960 rpm. Neglect stator copper, core and rotational losses. Find the percentage efficiency.",
+      "options": [
+        "92",
+        "94",
+        "96",
+        "98"
+      ],
+      "answer": "C",
+      "explanation": "Synchronous speed is 1000 rpm; slip=0.04, so mechanical power/air-gap power=1−s=0.96.",
+      "verified": true,
+      "sourceId": "2024 EE Q17",
+      "paperUrl": "https://gate2024.iisc.ac.in/wp-content/uploads/2024/EE24S8.pdf",
+      "keyUrl": "https://gate2024.iisc.ac.in/wp-content/uploads/2024/EEFinalAnswerKey.pdf",
+      "sourceAudit": "Matched official IISc 2024 master paper and final key"
+    },
+    {
+      "id": "2024-EE-Q23",
+      "year": 2024,
+      "branch": "EE",
+      "questionNumber": 23,
+      "subject": "Power Systems",
+      "topic": "Instrument transformers · CT and PT features",
+      "type": "MCQ",
+      "marks": 1,
+      "stem": "Match instrument transformers X=Current Transformer (CT), Y=Potential Transformer (PT) to properties P=primary connected in parallel to grid, Q=open-circuit secondary undesirable, R=primary current equals line current, S=secondary burden affects primary current. Which mapping is correct?",
+      "options": [
+        "X: P,Q; Y: R,S",
+        "X: P,R; Y: Q,S",
+        "X: Q,R; Y: P,S",
+        "X: Q,S; Y: P,R"
+      ],
+      "answer": "C",
+      "explanation": "CT primary is series with line; CT secondary open circuit is unsafe. PT primary connects in parallel. Official mapping X:Q,R; Y:P,S.",
+      "verified": true,
+      "sourceId": "2024 EE Q23",
+      "paperUrl": "https://gate2024.iisc.ac.in/wp-content/uploads/2024/EE24S8.pdf",
+      "keyUrl": "https://gate2024.iisc.ac.in/wp-content/uploads/2024/EEFinalAnswerKey.pdf",
+      "sourceAudit": "Matched official IISc 2024 master paper and final key"
     }
   ]
 }
