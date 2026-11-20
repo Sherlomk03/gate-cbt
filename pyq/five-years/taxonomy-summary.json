@@ -1,26 +1,16 @@
 {
-  "status": "mixed_manual_audit_and_provisional_automatic_tags",
-  "totalTechnicalQuestions": 550,
-  "manualAuditedSourceText": 272,
-  "automaticHigh": 139,
-  "automaticProvisional": 138,
-  "remainingUnclassified": 1,
-  "bySubject": {
-    "Signals & Systems": 75,
-    "Analog Electronics": 80,
-    "Electrical Machines": 40,
-    "Power Systems": 24,
-    "Control Systems": 44,
-    "Network Theory": 64,
-    "Engineering Mathematics": 100,
-    "Power Electronics": 23,
-    "Electromagnetics": 30,
-    "Digital Electronics": 41,
-    "Communication Systems": 26,
-    "Microprocessors": 2,
-    "Unclassified": 1
-  },
+  "status": "provisional_machine_classification",
   "byPaper": {
+    "2022-EC": {
+      "Engineering Mathematics": 15,
+      "Network Theory": 5,
+      "Signals & Systems": 6,
+      "Analog Electronics": 13,
+      "Digital Electronics": 6,
+      "Control Systems": 3,
+      "Electromagnetics": 3,
+      "Communication Systems": 4
+    },
     "2022-EE": {
       "Signals & Systems": 6,
       "Analog Electronics": 6,
@@ -34,15 +24,15 @@
       "Digital Electronics": 2,
       "Communication Systems": 1
     },
-    "2022-EC": {
-      "Engineering Mathematics": 15,
-      "Network Theory": 5,
-      "Signals & Systems": 6,
-      "Analog Electronics": 13,
-      "Digital Electronics": 6,
-      "Control Systems": 3,
-      "Electromagnetics": 3,
-      "Communication Systems": 4
+    "2023-EC": {
+      "Engineering Mathematics": 11,
+      "Analog Electronics": 11,
+      "Network Theory": 7,
+      "Electromagnetics": 4,
+      "Digital Electronics": 5,
+      "Control Systems": 4,
+      "Signals & Systems": 11,
+      "Communication Systems": 2
     },
     "2023-EE": {
       "Engineering Mathematics": 10,
@@ -57,15 +47,16 @@
       "Electromagnetics": 2,
       "Microprocessors": 1
     },
-    "2023-EC": {
-      "Engineering Mathematics": 11,
+    "2024-EC": {
+      "Engineering Mathematics": 9,
+      "Network Theory": 5,
+      "Control Systems": 3,
+      "Signals & Systems": 9,
+      "Electromagnetics": 3,
+      "Communication Systems": 7,
+      "Digital Electronics": 7,
       "Analog Electronics": 11,
-      "Network Theory": 7,
-      "Electromagnetics": 4,
-      "Digital Electronics": 5,
-      "Control Systems": 4,
-      "Signals & Systems": 11,
-      "Communication Systems": 2
+      "Microprocessors": 1
     },
     "2024-EE": {
       "Engineering Mathematics": 9,
@@ -80,16 +71,15 @@
       "Analog Electronics": 3,
       "Electromagnetics": 2
     },
-    "2024-EC": {
-      "Engineering Mathematics": 9,
-      "Network Theory": 5,
-      "Control Systems": 3,
-      "Signals & Systems": 9,
-      "Electromagnetics": 3,
-      "Communication Systems": 7,
-      "Digital Electronics": 7,
-      "Analog Electronics": 11,
-      "Microprocessors": 1
+    "2025-EC": {
+      "Engineering Mathematics": 11,
+      "Communication Systems": 4,
+      "Control Systems": 6,
+      "Signals & Systems": 7,
+      "Network Theory": 6,
+      "Analog Electronics": 12,
+      "Digital Electronics": 6,
+      "Electromagnetics": 3
     },
     "2025-EE": {
       "Engineering Mathematics": 10,
@@ -103,15 +93,15 @@
       "Power Electronics": 6,
       "Digital Electronics": 1
     },
-    "2025-EC": {
-      "Engineering Mathematics": 11,
-      "Communication Systems": 4,
-      "Control Systems": 6,
-      "Signals & Systems": 7,
-      "Network Theory": 6,
-      "Analog Electronics": 12,
-      "Digital Electronics": 6,
-      "Electromagnetics": 3
+    "2026-EC": {
+      "Engineering Mathematics": 6,
+      "Signals & Systems": 9,
+      "Analog Electronics": 10,
+      "Control Systems": 4,
+      "Digital Electronics": 8,
+      "Electromagnetics": 4,
+      "Communication Systems": 8,
+      "Network Theory": 6
     },
     "2026-EE": {
       "Signals & Systems": 5,
@@ -124,17 +114,6 @@
       "Control Systems": 3,
       "Engineering Mathematics": 11,
       "Digital Electronics": 1
-    },
-    "2026-EC": {
-      "Engineering Mathematics": 6,
-      "Signals & Systems": 9,
-      "Analog Electronics": 10,
-      "Control Systems": 4,
-      "Digital Electronics": 8,
-      "Electromagnetics": 4,
-      "Communication Systems": 8,
-      "Network Theory": 6
     }
-  },
-  "disclaimer": "Subject/topic labels are supported by original GATE paper extracts but some labels are machine-assigned and provisional. Manual audits use text plus selected image checks, not exhaustive image audit."
+  }
 }
