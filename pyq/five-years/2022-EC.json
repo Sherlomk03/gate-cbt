@@ -81,8 +81,9 @@
       "officialKey": "C",
       "keyVerifiedFromTable": true,
       "id": "2022-EC-Q7",
-      "pdfPage": null,
-      "answerStatus": "official_key"
+      "pdfPage": 5,
+      "answerStatus": "official_key",
+      "pdfPageEstimated": true
     },
     {
       "number": 8,
@@ -92,8 +93,9 @@
       "officialKey": "C",
       "keyVerifiedFromTable": true,
       "id": "2022-EC-Q8",
-      "pdfPage": null,
-      "answerStatus": "official_key"
+      "pdfPage": 5,
+      "answerStatus": "official_key",
+      "pdfPageEstimated": true
     },
     {
       "number": 9,
