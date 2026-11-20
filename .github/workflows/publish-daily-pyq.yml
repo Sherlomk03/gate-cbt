@@ -1,4 +1,4 @@
-name: Publish Daily Real GATE PYQ Practice
+name: Publish Daily GATE PYQ and ACE Classroom Practice
 on:
   schedule:
     # 07:50 IST each day; GitHub scheduled runs can be delayed.
@@ -22,8 +22,11 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Select 40 source-verified PYQ images
-        run: python scripts/publish_daily_pyq.py
+      - name: Select 40 daily official PYQs plus labeled ACE Signals questions
+        run: |
+          python scripts/publish_daily_pyq.py
+          # Prepublish first Signals rotation for 22 Nov; later runs leave it unchanged.
+          python scripts/publish_daily_pyq.py 2026-11-22
       - name: Audit and commit
         run: |
           python - <<'PY'
@@ -35,7 +38,10 @@ jobs:
               q=d['questions']
               assert len(q)==40 and len({x['id'] for x in q})==40
               assert [sum(x['subject']==s for x in q) for s in d['subjects']]==[10,10,10,10]
-              assert all(x['imagePath'] and x['officialKey'] and x['paperUrl'] and x['keyUrl'] for x in q)
+              assert all(x['officialKey'] for x in q)
+              assert all((x.get('sourceType')=='ace_classroom' and x.get('stem') and x.get('options') and x.get('officialGatePYQ') is False) or (x.get('imagePath') and x.get('paperUrl') and x.get('keyUrl')) for x in q)
+              ace=[x for x in q if x.get('sourceType')=='ace_classroom']
+              assert not ace or all(x['subject']=='Signals & Systems' for x in ace)
           print('Daily question-source inventory checked:',len(entries))
           PY
           git config user.name "gate-cbt-bot"
