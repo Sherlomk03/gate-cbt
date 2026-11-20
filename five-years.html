@@ -35,7 +35,7 @@ function render(){const p=state.paper;if(!p)return;const a=state.attempt,q=p.que
  $('#markTag').textContent=(q.pdfPage?'PDF page '+q.pdfPage:'Find question in official PDF')+(a.marked[q.number]?' · Flagged':'');
  let x=val(q)||'';
  if(q.type==='NAT')$('#answerInput').innerHTML='<input id="nat" class="nat" type="text" inputmode="decimal" placeholder="Numerical answer" '+(locked?'disabled':'')+'>';
- else $('#answerInput').innerHTML='ABCD'.split('').map(c=>'<label class="choice"><input type="'+(q.type==='MSQ'?'checkbox':'radio')+'" name="a" value="'+c+'" '+(Array.isArray(x)?x.includes(c):x===c?'checked':'')+' '+(locked?'disabled':'')+'>'+c+'</label>').join('');
+ else $('#answerInput').innerHTML='ABCD'.split('').map(c=>'<label class="choice"><input type="'+(q.type==='MSQ'?'checkbox':'radio')+'" name="a" value="'+c+'" '+((Array.isArray(x)?x.includes(c):x===c)?'checked':'')+' '+(locked?'disabled':'')+'>'+c+'</label>').join('');
  if(q.type==='NAT'){$('#nat').value=x;$('#nat').oninput=e=>{a.answers[q.number]=e.target.value;save()}}
  else $('#answerInput').querySelectorAll('input').forEach(input=>input.onchange=()=>{
  a.answers[q.number]=q.type==='MCQ'?input.value:[...$('#answerInput').querySelectorAll('input:checked')].map(i=>i.value);
