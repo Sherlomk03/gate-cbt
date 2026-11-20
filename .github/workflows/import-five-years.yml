@@ -28,5 +28,7 @@ jobs:
           git add pyq/five-years/
           if ! git diff --staged --quiet; then
             git commit -m "Import GATE 2022-2026 EE EC official keys and PDF-linked questions"
+            git fetch origin main
+            git rebase origin/main
             git push
           fi
