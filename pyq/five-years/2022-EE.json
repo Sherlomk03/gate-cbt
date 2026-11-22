@@ -172,8 +172,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 29,
       "sourceExtract": "Q.12 For an ideal MOSFET biased in saturation, the magnitude of the small signal current gain for a common drain amplifier is (A) 0 (B) 1 (C) 100 (D) infinite Page 11 of 36 GATE 2022 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 13,
@@ -242,8 +242,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.15 The valid positive, negative and zero sequence impedances (in p.u.), respectively, for a 220 kV, fully transposed three-phase transmission line, from the given choices are (A) 1.1, 0.15 and 0.08 (B) 0.15, 0.15 and 0.35 (C) 0.2, 0.2 and 0.2 (D) 0.1, 0.3 and 0.1",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 16,
@@ -404,8 +404,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 16,
       "sourceExtract": "Q.22 A charger supplies 100 W at 20 V for charging the battery of a laptop. The power devices, used in the converter inside the charger, operate at a switching frequency of 200 kHz. Which power device is best suited for this purpose? (A) IGBT (B) Thyristor (C) MOSFET (D) BJT Page 16 of 36 GATE 2022 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 23,
@@ -427,7 +427,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 11,
       "sourceExtract": "Q.23 A long conducting cylinder having a radius ‘b’ is placed along the z axis. The current density is 𝐉= Jୟrଷzො for the region r < b where r is the distance in the radial direction. The magnetic field intensity (H) for the region inside the conductor (i.e. for r < b) is (A) Jୟ rସ 4 (B) Jୟ rଷ 3 (C) Jୟ rସ 5 (D) Jୟrଷ",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -450,8 +450,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.24 The type of single-phase induction motor, expected to have the maximum power factor during steady state running condition, is (A) split phase (resistance start). (B) shaded pole. (C) capacitor start. (D) capacitor start, capacitor run. Page 17 of 36 GATE 2022 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 25,
@@ -542,7 +542,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.28 The network shown below has a resonant frequency of 150 kHz and a bandwidth of 600 Hz. The 𝑄-factor of the network is __________. (round off to nearest integer)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -565,8 +565,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 27,
       "sourceExtract": "Q.29 The maximum clock frequency in MHz of a 4-stage ripple counter, utilizing flip- flops, with each flip-flop having a propagation delay of 20 ns, is ___________. (round off to one decimal place)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 30,
@@ -705,8 +705,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.35 The frequencies of the stator and rotor currents flowing in a three-phase 8-pole induction motor are 40 Hz and 1 Hz, respectively. The motor speed, in rpm, is _________________. (round off to nearest integer) Page 20 of 36 GATE 2022 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 36,
@@ -728,8 +728,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 16,
       "sourceExtract": "Q.36 – Q.65 Carry TWO marks Each Q.36 The output impedance of a non-ideal operational amplifier is denoted by Z୭୳୲. The variation in the magnitude of Z୭୳୲ with increasing frequency, f, in the circuit shown below, is best represented by (A) (B) log(|Zout|) log(f) (C) Page 21 of 36 GATE 2022 Electrical Engineering (EE) (D)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 37,
@@ -820,7 +820,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.40 𝑒஺ denotes the exponential of a square matrix A. Suppose 𝜆 is an eigenvalue and 𝑣 is the corresponding eigen-vector of matrix A. Consider the following two statements: Statement 1: 𝑒ఒ is an eigenvalue of 𝑒஺. Statement 2: 𝑣 is an eigen-vector of 𝑒஺. Which one of the following options is correct? (A) Statement 1 is true and statement 2 is false. (B) Statement 1 is false and statement 2 is true. (C) Both the statements are correct. (D) Both the statements are false. Page 24 of 36 GATE 2022 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -935,7 +935,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 11,
       "sourceExtract": "Q.45 If the magnetic field intensity (H) in a conducting region is given by the expression, 𝐇= 𝑥ଶı̂ + 𝑥ଶ𝑦ଶ ȷ̂ + 𝑥ଶ𝑦ଶ 𝑧ଶ k෠A/m. The magnitude of the current density, in A/m2, at 𝑥= 1 m, 𝑦= 2 m, and 𝑧= 1 m, is (A) 8 (B) 12 (C) 16 (D) 20 Page 27 of 36 GATE 2022 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -958,7 +958,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 2,
       "sourceExtract": "Q.46 Let a causal LTI system be governed by the following differential equation ଵ ௗ௬ 𝑦(𝑡) + 2𝑥(𝑡), where 𝑥(𝑡) and 𝑦(𝑡) are the input and output respectively. ସ ௗ௧= Its impulse response is (A) భ 2𝑒ି ర௧𝑢(𝑡) (B) 2𝑒ି ସ௧𝑢(𝑡) (C) భ 8𝑒ି ర௧𝑢(𝑡) (D) 8𝑒ି ସ௧𝑢(𝑡)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -981,8 +981,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.47 Let an input 𝑥(𝑡) = 2 sin(10𝜋𝑡) + 5cos(15𝜋𝑡) + 7sin(42𝜋𝑡) + 4cos(45𝜋𝑡) is passed through an LTI system having an impulse response, ୱ୧୬(ଵ଴గ௧) ℎ(𝑡) = 2 ቀ ቁcos (40𝜋𝑡). గ௧ The output of the system is (A) 2 sin(10𝜋𝑡) + 5𝑐𝑜𝑠(15𝜋𝑡) (B) 5𝑐𝑜𝑠(15𝜋𝑡) + 7 sin(42𝜋𝑡) (C) 7 sin(42𝜋𝑡) + 4𝑐𝑜𝑠(45𝜋𝑡) (D) 2 sin(10𝜋𝑡) + 4𝑐𝑜𝑠(45𝜋𝑡) Page 28 of 36 GATE 2022 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 48,
@@ -1027,8 +1027,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.49 The discrete time Fourier series representation of a signal 𝑥[𝑛] with period 𝑁 is written as 𝑥[𝑛] = ∑ேିଵ௞ୀ଴ 𝑎௞𝑒௝(ଶ௞௡గே)⁄ . A discrete time periodic signal with period 𝑁= 3, has the non-zero Fourier series coefficients: 𝑎ିଷ= 2 and 𝑎ସ= 1. The signal is (A) ቀ௝మഏ 2 + 2𝑒ି ల௡ቁcos ൬2𝜋 𝑛൰ 6 (B) 1 + 2𝑒ቀ௝మഏల௡ቁcos ൬2𝜋 𝑛൰ 6 (C) 1 + 2𝑒ቀ௝మഏయ௡ቁcos ൬2𝜋 𝑛൰ 6 (D) 2 + 2𝑒ቀ௝మഏల௡ቁcos ൬2𝜋 𝑛൰ 6 Page 29 of 36 GATE 2022 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 50,
@@ -1142,7 +1142,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.54 Let the probability density function of a random variable 𝑥 be given as 𝑓(𝑥) = 𝑎𝑒ି ଶ|௫| The value of ‘a’ is __________.",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1235,8 +1235,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.58 Consider an ideal full-bridge single-phase DC-AC inverter with a DC bus voltage magnitude of 1000 V. The inverter output voltage 𝑣(𝑡) shown below, is obtained when diagonal switches of the inverter are switched with 50 % duty cycle. The inverter feeds a load with a sinusoidal current given by, 𝑖(𝑡) = 10 sin(𝜔𝑡− గ A, ଷ) where 𝜔= ଶగ் . The active power, in watts, delivered to the load is _________. (round off to nearest integer)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 59,
@@ -1306,8 +1306,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.61 The steady state current flowing through the inductor of a DC-DC buck boost converter is given in the figure below. If the peak-to-peak ripple in the output voltage of the converter is 1 V, then the value of the output capacitor, in µF, is _______________. (round off to nearest integer)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 62,
@@ -1329,8 +1329,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.62 A 280 V, separately excited DC motor with armature resistance of 1 Ω and constant field excitation drives a load. The load torque is proportional to the speed. The motor draws a current of 30 A when running at a speed of 1000 rpm. Neglect frictional losses in the motor. The speed, in rpm, at which the motor will run, if an additional resistance of value 10 Ω is connected in series with the armature, is __________. (round off to nearest integer) Page 35 of 36 GATE 2022 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 63,
@@ -1352,8 +1352,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.63 A 4-pole induction motor with inertia of 0.1 kg-m2 drives a constant load torque of 2 Nm. The speed of the motor is increased linearly from 1000 rpm to 1500 rpm in 4 seconds as shown in the figure below. Neglect losses in the motor. The energy, in joules, consumed by the motor during the speed change is ____________. (round off to nearest integer)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 64,
@@ -1375,8 +1375,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.64 A star-connected 3-phase, 400 V, 50 kVA, 50 Hz synchronous motor has a synchronous reactance of 1 ohm per phase with negligible armature resistance. The shaft load on the motor is 10 kW while the power factor is 0.8 leading. The loss in the motor is 2 kW. The magnitude of the per phase excitation emf of the motor, in volts, is __________. (round off to nearest integer).",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 65,
@@ -1398,8 +1398,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.65 A 3-phase, 415 V, 4-pole, 50 Hz induction motor draws 5 times the rated current at rated voltage at starting. It is required to bring down the starting current from the supply to 2 times of the rated current using a 3-phase autotransformer. If the magnetizing impedance of the induction motor and no load current of the autotransformer is neglected, then the transformation ratio of the autotransformer is given by ____________. (round off to two decimal places). Page 36 of 36",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     }
   ]
 }
