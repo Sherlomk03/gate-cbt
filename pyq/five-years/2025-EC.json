@@ -147,7 +147,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.11 – Q.35 Carry ONE mark Each Q.11 Consider the matrix 𝐴 below: 2 3 4 5 0 6 7 8 𝐴= [ ] 0 0 𝛼 𝛽 0 0 0 𝛾 For which of the following combinations of 𝛼, 𝛽, and 𝛾, is the rank of 𝐴 at least three? (i) 𝛼= 0 and 𝛽= 𝛾≠0. (ii) 𝛼= 𝛽= 𝛾= 0. (iii) 𝛽= 𝛾= 0 and 𝛼≠0. (iv) 𝛼= 𝛽= 𝛾≠0. (A) Only (i), (iii), and (iv) (B) Only (iv) (C) Only (ii) (D) Only (i) and (iii) Organizing Institute: IIT Roorkee Page 10 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -193,7 +193,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.13 A pot contains two red balls and two blue balls. Two balls are drawn from this pot randomly without replacement. What is the probability that the two balls drawn have different colours? (A) 2⁄ 3 (B) 1⁄ 3 (C) 1⁄ 2 (D) 1 Organizing Institute: IIT Roorkee Page 12 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -239,7 +239,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 1,
       "sourceExtract": "Q.15 Consider an additive white Gaussian noise (AWGN) channel with bandwidth 𝑊 𝑁0 and noise power spectral density . Let 𝑃𝑎𝑣 denote the average transmit power 2 constraint. Which one of the following plots illustrates the dependence of the channel capacity 𝐶 on the bandwidth 𝑊 (keeping 𝑃𝑎𝑣 and 𝑁0 fixed)? (A) (B) (C) (D) Organizing Institute: IIT Roorkee Page 14 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -285,7 +285,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.17 Consider the discrete-time system below with input 𝑥[𝑛] and output 𝑦[𝑛]. In the figure, ℎ1[𝑛] and ℎ2[𝑛] denote the impulse responses of LTI Subsystems 1 and 2, respectively. Also, 𝛿[𝑛] is the unit impulse, and 𝑏> 0. Assuming ℎ2[𝑛] ≠𝛿[𝑛], the overall system (denoted by the dashed box) is _______. (A) linear and time invariant (B) linear and time variant (C) nonlinear and time invariant (D) nonlinear and time variant Organizing Institute: IIT Roorkee Page 16 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -308,8 +308,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.18 Consider a continuous-time, real-valued signal 𝑓(𝑡) whose Fourier transform ∞ 𝐹(𝜔) = ∫ 𝑓(𝑡) exp(−𝑗 𝜔𝑡) 𝑑𝑡 exists. −∞ Which one of the following statements is always TRUE? (A) ∞ |𝐹(𝜔)| ≤ ∫ |𝑓(𝑡)| 𝑑𝑡 −∞ (B) ∞ |𝐹(𝜔)| > ∫ |𝑓(𝑡)| 𝑑𝑡 −∞ (C) ∞ |𝐹(𝜔)| ≤ ∫ 𝑓(𝑡) 𝑑𝑡 −∞ (D) ∞ |𝐹(𝜔)| ≥ ∫ 𝑓(𝑡) 𝑑𝑡 −∞ Organizing Institute: IIT Roorkee Page 17 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 19,
@@ -377,7 +377,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.21 A simplified small-signal equivalent circuit of a BJT-based amplifier is given below. The small-signal voltage gain vo/vs (in V/V) is ___________. (A) −𝛽RL RS + rπ (B) +𝛽RL RS (C) −𝛽RL RS (D) +𝛽RL RS + rπ Organizing Institute: IIT Roorkee Page 20 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -400,7 +400,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.22 The ideal BJT in the circuit given below is biased in the active region with a 𝛽 of 100. If 𝐼𝐵 is 10 µA, then 𝑉𝐶𝐸 (in Volts, rounded off to two decimal places) is _______ . (A) 4.95 (B) 3.03 (C) 1.92 (D) 3.73 Organizing Institute: IIT Roorkee Page 21 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -423,8 +423,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.23 A 3-input majority logic gate has inputs 𝑋, 𝑌, and 𝑍. The output 𝐹 of the gate is logic ‘1’ if two or more of the inputs are logic ‘1’. The output 𝐹 is logic ‘0’ if two or more of the inputs are logic ‘0’. Which one of the following options is a Boolean expression of the output 𝐹? (A) 𝑋𝑌+ 𝑌𝑍+ 𝑍𝑋 (B) 𝑋⊕𝑌⊕𝑍 (C) 𝑋+ 𝑌+ 𝑍 (D) 𝑋𝑌𝑍 Organizing Institute: IIT Roorkee Page 22 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 24,
@@ -492,8 +492,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 16,
       "sourceExtract": "Q.26 Consider the unity-negative-feedback system shown in Figure (i) below, where gain 𝐾 ≥0. The root locus of this system is shown in Figure (ii) below. For what value(s) of 𝐾 will the system in Figure (i) have a pole at −1 + 𝑗1? (A) 𝐾= 5 (B) 1 𝐾= ⁄ 5 (C) For no positive value of 𝐾 (D) For all positive values of 𝐾 Organizing Institute: IIT Roorkee Page 25 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 27,
@@ -515,8 +515,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 27,
       "sourceExtract": "Q.27 Let 𝑥[𝑛] be a discrete-time signal whose 𝑧-transform is 𝑋(𝑧). Which of the following statements is/are TRUE? (A) The discrete-time Fourier transform (DTFT) of 𝑥[𝑛] always exists (B) The region of convergence (RoC) of 𝑋(𝑧) contains neither poles nor zeros (C) The discrete-time Fourier transform (DTFT) exists if the region of convergence (RoC) contains the unit circle (D) If 𝑥[𝑛] = 𝛼𝛿[𝑛], where 𝛿[𝑛] is the unit impulse and 𝛼 is a scalar, then the region of convergence (RoC) is the entire 𝑧-plane Organizing Institute: IIT Roorkee Page 26 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 28,
@@ -538,8 +538,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.28 Consider a message signal 𝑚(𝑡) which is bandlimited to [−𝑊, 𝑊], where 𝑊 is in Hz. Consider the following two modulation schemes for the message signal: • Double sideband-suppressed carrier (DSB-SC): 𝑓𝐷𝑆𝐵(𝑡) = 𝐴𝑐 𝑚(𝑡) cos(2𝜋𝑓𝑐𝑡) • Amplitude modulation (AM): 𝑓𝐴𝑀(𝑡) = 𝐴𝑐 (1 + 𝜇 𝑚(𝑡)) cos(2𝜋𝑓𝑐𝑡) Here, 𝐴𝑐 and 𝑓𝑐 are the amplitude and frequency (in Hz) of the carrier, respectively. In the case of AM, 𝜇 denotes the modulation index. Consider the following statements: (i) An envelope detector can be used for demodulation in the DSB-SC scheme if 𝑚(𝑡) > 0 for all 𝑡. (ii) An envelope detector can be used for demodulation in the AM scheme only if 𝑚(𝑡) > 0 for all 𝑡. Which of the following options is/are correct? (A) (i) is TRUE (B) (i) is FALSE (C) (ii) is TRUE (D) (ii) is FALSE Organizing Institute: IIT Roorkee Page 27 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 29,
@@ -584,8 +584,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 29,
       "sourceExtract": "Q.30 Which of the following statements is/are TRUE with respect to ideal MOSFET- based DC-coupled single-stage amplifiers having finite load resistors? (A) The common-gate amplifier has an infinite input resistance (B) The common-source amplifier has an infinite input resistance (C) The input and output voltages of the common-source amplifier are in phase (D) The input and output voltages of the common-drain amplifier are in phase Organizing Institute: IIT Roorkee Page 28 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 31,
@@ -699,7 +699,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.35 A 4-bit weighted-resistor DAC with inputs b3, b2, b1, and b0 (MSB to LSB) is designed using an ideal opamp, as shown below. The switches are closed when the corresponding input bits are logic ‘1’ and open otherwise. When the input b3b2b1b0 changes from 1110 to 1101, the magnitude of the change in the output voltage VO (in mV, rounded off to the nearest integer) is ________. Organizing Institute: IIT Roorkee Page 30 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -768,8 +768,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.38 Consider a continuous-time finite-energy signal 𝑓(𝑡) whose Fourier transform vanishes outside the frequency interval [−𝜔 𝑐, 𝜔𝑐], where 𝜔𝑐 is in rad/sec. The signal 𝑓(𝑡) is uniformly sampled to obtain 𝑦(𝑡) = 𝑓(𝑡) 𝑝(𝑡). Here, ∞ 𝑝(𝑡) = ∑𝛿(𝑡−𝜏−𝑛𝑇𝑠) , 𝑛=−∞ with 𝛿(𝑡) being the Dirac impulse, 𝑇𝑠> 0, and 𝜏> 0. The sampled signal 𝑦(𝑡) sin (𝜔𝑐𝑡) is passed through an ideal lowpass filter ℎ(𝑡) = 𝜔𝑐𝑇𝑠 with cutoff 𝜋𝜔𝑐𝑡 frequency 𝜔𝑐 and passband gain 𝑇𝑠. The output of the filter is given by ________________. (A) 𝑓(𝑡) if 𝑇𝑠< 𝜋/𝜔𝑐 (B) 𝑓(𝑡−𝜏) if 𝑇𝑠< 𝜋/𝜔𝑐 (C) 𝑓(𝑡−𝜏) if 𝑇𝑠< 2𝜋/𝜔𝑐 (D) 𝑇𝑠𝑓(𝑡) if 𝑇𝑠< 2𝜋/𝜔𝑐 Organizing Institute: IIT Roorkee Page 33 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 39,
@@ -814,8 +814,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.40 The 𝑍-parameter matrix of a two port network relates the port voltages and port currents as follows: [𝑉1 = 𝑍[𝐼1 𝑉2] 𝐼2] The 𝑍-parameter matrix (with each entry in Ohms) of the network shown below is __________. (A) 10 2 ⁄ ⁄ 3 3 [ ] 2 10 ⁄ ⁄ 3 3 (B) 2 10 ⁄ ⁄ 3 3 [ ] 10 2 ⁄ ⁄ 3 3 (C) 10 2 [ ] 2 10 (D) 10 1 ⁄ ⁄ 3 3 [ ] 1 10 ⁄ ⁄ 3 3 Organizing Institute: IIT Roorkee Page 35 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 41,
@@ -954,7 +954,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.46 The intrinsic carrier concentration of a semiconductor is 2.5 × 1016 /m3 at 300 K. If the electron and hole mobilities are 0.15 m2/Vs and 0.05 m2/Vs, respectively, then the intrinsic resistivity of the semiconductor (in kΩ.m) at 300 K is ________. (Charge of an electron 𝑒 = 1.6 × 10−19 C.) (A) 1.65 (B) 1.25 (C) 0.85 (D) 1.95 Organizing Institute: IIT Roorkee Page 41 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -977,7 +977,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.47 In the circuit shown, the identical transistors Q1 and Q2 are biased in the active region with 𝛽= 120. The Zener diode is in the breakdown region with VZ = 5 V and IZ = 25 mA. If IL = 12 mA and VEB1 = VEB2 = 0.7 V, then the values of R1 and R2 (in kΩ, rounded off to one decimal place) are ______, respectively. (A) 0.6 and 0.4 (B) 1.4 and 2.5 (C) 14.0 and 25.0 (D) 6.0 and 4.0 Organizing Institute: IIT Roorkee Page 42 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1000,7 +1000,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.48 The electron mobility µn in a non-degenerate germanium semiconductor at 300 K is 0.38 m2/Vs. The electron diffusivity 𝐷𝑛 at 300 K (in cm2/s, rounded off to the nearest integer) is _______. (Consider the Boltzmann constant 𝑘B = 1.38 × 10−23J/K and the charge of an electron 𝑒 = 1.6 × 10−19 C.) (A) 26 (B) 98 (C) 38 (D) 10 Organizing Institute: IIT Roorkee Page 43 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1092,7 +1092,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.52 Which of the following statements involving contour integrals (evaluated counter- clockwise) on the unit circle 𝐶 in the complex plane is/are TRUE? (A) ∮𝑒𝑧 𝑑𝑧= 0 𝐶 (B) ∮𝑧𝑛 𝑑𝑧= 0, where 𝑛 is an even integer 𝐶 (C) ∮cos 𝑧 𝑑𝑧≠0 𝐶 (D) ∮sec 𝑧 𝑑𝑧≠0 𝐶",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1162,8 +1162,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.55 Let 𝑓(𝑡) be a periodic signal with fundamental period 𝑇0 > 0. Consider the signal 𝑦(𝑡) = 𝑓(𝛼𝑡), where 𝛼> 1. The Fourier series expansions of 𝑓(𝑡) and 𝑦(𝑡) are given by ∞ ∞ 𝑗2𝜋 𝑘𝑡 𝑗2𝜋 𝛼𝑘𝑡 𝑓(𝑡) = ∑𝑐𝑘 𝑒 𝑇0 and 𝑦(𝑡) = ∑𝑑𝑘 𝑒 𝑇0 . 𝑘=−∞ 𝑘=−∞ Which of the following statements is/are TRUE? (A) 𝑐𝑘= 𝑑𝑘 for all 𝑘 (B) 𝑦(𝑡) is periodic with a fundamental period 𝛼𝑇0 (C) 𝑐𝑘= 𝑑𝑘/𝛼 for all 𝑘 (D) 𝑦(𝑡) is periodic with a fundamental period 𝑇0/𝛼 Organizing Institute: IIT Roorkee Page 47 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 56,
@@ -1231,7 +1231,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.58 Two fair dice (with faces labeled 1, 2, 3, 4, 5, and 6) are rolled. Let the random variable 𝑋 denote the sum of the outcomes obtained. The expectation of 𝑋 is______ (rounded off to two decimal places).",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1277,7 +1277,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.60 𝑋 and 𝑌 are Bernoulli random variables taking values in {0,1}. The joint probability mass function of the random variables is given by: 𝑃(𝑋= 0, 𝑌= 0) = 0.06 𝑃(𝑋= 0, 𝑌= 1) = 0.14 𝑃(𝑋= 1, 𝑌= 0) = 0.24 𝑃(𝑋= 1, 𝑌= 1) = 0.56 The mutual information 𝐼(𝑋; 𝑌) is _________ (rounded off to two decimal places). Organizing Institute: IIT Roorkee Page 50 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1323,7 +1323,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.62 In the circuit shown below, the AND gate has a propagation delay of 1 ns. The edge- triggered flip-flops have a set-up time of 2 ns, a hold-time of 0 ns, and a clock-to-Q delay of 2 ns. The maximum clock frequency (in MHz, rounded off to the nearest integer) such that there are no setup violations is ________. Organizing Institute: IIT Roorkee Page 51 of 52 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
