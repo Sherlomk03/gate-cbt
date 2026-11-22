@@ -18,7 +18,7 @@
     2026
   ],
   "status": "official_gate_pyqs_plus_labeled_ace_classroom_problems",
-  "classificationNote": "Official GATE PYQs use original paper screenshots and official keys; ACE classroom questions are user-supplied, transcribed and independently solved, not official GATE PYQs. Machine topic tags remain provisional. No AI-generated questions.",
+  "classificationNote": "Subject labels were corrected after publication using question source excerpts. Original 40 questions, source URLs, official keys and saved browser answers are unchanged. This historical paper may no longer contain exactly 10 questions from each corrected subject.",
   "rotationNote": null,
   "selectionNote": "Selected 4 labeled ACE classroom questions alongside original GATE PYQs; 0 source question IDs were previously published.",
   "repeatCount": 0,
@@ -83,7 +83,10 @@
           "**Option D:** With \\(c=1,\\ d=-2\\), obtain \\(\\sum_{n=1}^{\\infty}\\frac1{n^2}\\), a \\(p\\)-series with \\(p=2>1\\). It **converges**.",
           "**Correct options: B and D."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reading original official question extract; screenshot remains primary source"
     },
     {
       "id": "2023-EC-Q52",
@@ -91,9 +94,9 @@
       "year": 2023,
       "branch": "EC",
       "questionNumber": 52,
-      "subject": "Engineering Mathematics",
-      "topic": "Calculus",
-      "classificationStatus": "provisional",
+      "subject": "Electromagnetics",
+      "topic": "Transmission Lines · Standing-Wave Ratio",
+      "classificationStatus": "curated_source_text",
       "type": "MSQ",
       "marks": 2,
       "officialKey": "B,C",
@@ -124,7 +127,12 @@
           "Both equivalent representations satisfy the standing-wave observations. **Correct options: B and C.**"
         ]
       },
-      "contentAuditNote": "Original problem is on transmission-line standing waves, not Calculus. Daily subject/topic was assigned provisionally."
+      "contentAuditNote": "Original problem is on transmission-line standing waves, not Calculus. Daily subject/topic was assigned provisionally.",
+      "originalSubject": "Engineering Mathematics",
+      "reclassifiedFrom": "Engineering Mathematics",
+      "taxonomyReviewStatus": "source_text_curated",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Content-based audit of source question excerpt; original diagram and PDF remain available for visual verification"
     },
     {
       "id": "2025-EE-Q51",
@@ -164,7 +172,10 @@
           "For \\(n=2\\), the coefficient \\(2-n=0\\), hence \\(\\nabla\\cdot\\mathbf F=0\\) for \\(R>0\\). **Option D**.",
           "For the other listed values, the divergence depends on \\(R\\). **Correct options: B and D.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reviewing official question extract; original screenshot is primary source"
     },
     {
       "id": "2024-EE-Q29",
@@ -204,7 +215,10 @@
           "**C:** \\((X-5)^2\\) repeats values for inputs equally spaced from \\(5\\), e.g., \\(X=4,6\\). **Not uniform.**",
           "**D:** \\(X+10\\in\\{0,1,\\dots,20\\}\\). Squaring is one-to-one on these nonnegative values, so \\((X+10)^2\\) is **uniform**. **Correct options: B and D.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligibleForFuture": false,
+      "classificationMethod": "keyword scoring on original official PDF; review required"
     },
     {
       "id": "2024-EC-Q11",
@@ -242,7 +256,10 @@
           "Replace \\(r\\) by the differentiation operator \\(D=\\frac{d}{dt}\\): \\[(D^2+4D+4)y=f(t).\\]",
           "Therefore \\[\\boxed{\\frac{d^2y}{dt^2}+4\\frac{dy}{dt}+4y=f(t)}\\] which corresponds to **option A**."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligibleForFuture": false,
+      "classificationMethod": "keyword scoring on original official PDF; review required"
     },
     {
       "id": "2023-EE-Q35",
@@ -280,7 +297,10 @@
           "The denominator is \\[\\sum_i x_i^2=(-1)^2+0^2+1^2=2.\\]",
           "Thus the best-fit slope is \\[\\boxed{m=\\frac{2.0}{2}=1.00}\\] which lies in the official accepted interval."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reading original official question extract; screenshot remains primary source"
     },
     {
       "id": "2024-EE-Q11",
@@ -320,7 +340,10 @@
           "**C:** Compute the determinant directly: \\[\\begin{vmatrix}1&4&8\\\\0&4&2\\\\1&2&4\\end{vmatrix}=1(16-4)-4(0-2)+8(0-4)=-12\\neq0.\\]",
           "Only **option C** is invertible."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reviewing official question extract; original screenshot is primary source"
     },
     {
       "id": "2023-EE-Q42",
@@ -360,7 +383,10 @@
           "As \\(p\\to0^+\\), the enclosed area tends to \\(0\\), not \\(1\\). **C is false.**",
           "**Correct options: A, B and D.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reading original official question extract; screenshot remains primary source"
     },
     {
       "id": "2026-EE-Q58",
@@ -368,9 +394,9 @@
       "year": 2026,
       "branch": "EE",
       "questionNumber": 58,
-      "subject": "Engineering Mathematics",
-      "topic": "Calculus",
-      "classificationStatus": "provisional",
+      "subject": "Power Systems",
+      "topic": "Economic Dispatch · Transmission Losses",
+      "classificationStatus": "curated_source_text",
       "type": "NAT",
       "marks": 2,
       "officialKey": "MTA*",
@@ -403,7 +429,12 @@
           "Keep the **MTA** status for scoring; do not treat this numerical calculation as a replacement for the official marks-to-all decision."
         ]
       },
-      "contentAuditNote": "Original problem is Power Systems economic dispatch, not Calculus. Official result is marks to all (MTA)."
+      "contentAuditNote": "Original problem is Power Systems economic dispatch, not Calculus. Official result is marks to all (MTA).",
+      "originalSubject": "Engineering Mathematics",
+      "reclassifiedFrom": "Engineering Mathematics",
+      "taxonomyReviewStatus": "source_text_curated",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Content-based audit of source question excerpt; original diagram and PDF remain available for visual verification"
     },
     {
       "id": "2026-EC-Q61",
@@ -443,7 +474,10 @@
           "The polar second moment of a square of side \\(a\\) about its center is \\(J=a^4/6\\). Here \\[J=\\frac{(\\sqrt2)^4}{6}=\\frac46=\\frac23.\\]",
           "Therefore \\[\\boxed{\\iint_R(x^2+y^2-1)\\,dx\\,dy=\\frac23\\approx0.67}\\] which agrees with the official numerical range."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained"
     },
     {
       "id": "2022-EE-Q27",
@@ -481,7 +515,10 @@
           "Invert to obtain \\[\\boxed{Q=\\frac{240}{5}=48}.\\]",
           "**Answer: 48** (nearest integer)."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reading original official question extract; screenshot remains primary source"
     },
     {
       "id": "2022-EE-Q31",
@@ -521,7 +558,10 @@
           "Source current: \\(I=10/4=2.5\\,\\mathrm A\\). The voltage across the parallel equivalent is \\[V=IR_p=(2.5)(2)=5.00\\,\\mathrm V.\\]",
           "The \\(6\\,\\Omega\\) resistor shares this voltage: **answer \\(5.00\\,\\mathrm V\\)**."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reading original official question extract; screenshot remains primary source"
     },
     {
       "id": "2022-EC-Q13",
@@ -561,7 +601,10 @@
           "Solve: \\(5-V_N+2=V_N\\), so \\(\\boxed{V_N=3.5\\,\\mathrm V}\\).",
           "The requested current is \\[I=\\frac{5-3.5}{2}\\,\\mathrm{mA}=0.75\\,\\mathrm{mA}=\\boxed{0.75\\times10^{-3}\\,\\mathrm A}.\\] **Option B.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reading original official question extract; screenshot remains primary source"
     },
     {
       "id": "2026-EE-Q60",
@@ -601,7 +644,10 @@
           "Hence \\[R_{\\mathrm{Th}}=10\\parallel4=\\frac{10\\times4}{10+4}=\\frac{20}{7}\\,\\Omega\\approx2.85714\\,\\Omega.\\]",
           "Therefore \\(\\boxed{R_L=2.86\\,\\Omega}\\) to two decimal places."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "keyword scoring on original official PDF; review required"
     },
     {
       "id": "2023-EE-Q51",
@@ -645,7 +691,10 @@
           "Therefore \\(V_1=12.5\\,i\\), so the time-domain voltage is \\(v_{\\mathrm{Th}}(t)=12.5\\sin(1000t)\\,\\mathrm V\\).",
           "At \\(t=5\\,\\mathrm{ms}\\): \\[\\boxed{v_{\\mathrm{Th}}(0.005)=12.5\\sin5\\approx-11.99\\,\\mathrm V}.\\]"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "keyword scoring on original official PDF; review required"
     },
     {
       "id": "2026-EE-Q42",
@@ -685,7 +734,10 @@
           "Over any half-cycle of length \\(\\pi/\\omega\\), the double-frequency term \\(\\cos(2\\omega t-\\theta)\\) has zero average.",
           "Thus \\[\\boxed{P_{\\mathrm{avg}}=\\frac{V_mI_m}{2}\\cos\\theta}.\\] **Option C.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained"
     },
     {
       "id": "2023-EE-Q52",
@@ -727,7 +779,10 @@
           "Load power is \\[P_L=\\frac{(340/9)^2}{6}=\\boxed{237.86\\,\\mathrm W}.\\]",
           "The result lies within the official accepted range."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reading original official question extract; screenshot remains primary source"
     },
     {
       "id": "2026-EE-Q24",
@@ -768,7 +823,10 @@
           "To calculate Thevenin resistance, deactivate the ideal independent voltage sources by shorting them. This directly joins terminals \\(Y\\) and \\(Z\\).",
           "Hence \\(R_{\\mathrm{Th}}=0\\,\\Omega\\). **Option B: \\((140\\,\\mathrm V,\\ 0\\,\\Omega)\\)**."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "keyword scoring on original official PDF; review required"
     },
     {
       "id": "2024-EE-Q13",
@@ -810,7 +868,10 @@
           "Therefore \\(V=10\\,\\mathrm V\\). The voltage across the \\(\\alpha\\) resistor is zero, so \\(I_{10\\mathrm V}=0\\,\\mathrm A\\).",
           "Thus \\[\\boxed{P_{10\\mathrm V}=10\\times0=0\\,\\mathrm W}.\\] **Option A.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reviewing official question extract; original screenshot is primary source"
     },
     {
       "id": "2026-EE-Q43",
@@ -854,7 +915,10 @@
           "Hence \\[v_C(t)=28-20e^{-t/0.20}\\,\\mathrm V.\\]",
           "At \\(t=0.50\\,\\mathrm s\\): \\[\\boxed{v_C(0.5)=28-20e^{-2.5}=26.36\\,\\mathrm V}.\\] **Option B:** \\((8.00,\\ 26.36,\\ 28.00)\\,\\mathrm V\\)."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained"
     },
     {
       "id": "ACE-GSS-2022-Q11",
@@ -1078,7 +1142,10 @@
           "Thus \\[h(0)=\\frac1{2\\pi}\\int_{-200\\pi}^{200\\pi}1\\,d\\omega.\\]",
           "Evaluate the interval length: \\[h(0)=\\frac1{2\\pi}(200\\pi-(-200\\pi))=\\frac{400\\pi}{2\\pi}=\\boxed{200}.\\]"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reviewing official question extract; original screenshot is primary source"
     },
     {
       "id": "2026-EC-Q15",
@@ -1118,7 +1185,10 @@
           "Observe that \\(\\frac{5\\pi n}{2}=\\frac{\\pi n}{2}+2\\pi n\\). Cosine is \\(2\\pi\\)-periodic, so \\[x_2[n]=\\cos\\!\\left(\\frac{\\pi n}{2}+2\\pi n\\right)=x_1[n]\\quad\\text{for all integer }n.\\]",
           "In particular, samples 4 through 7 are equal. **Correct option D.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained"
     },
     {
       "id": "2023-EE-Q19",
@@ -1158,7 +1228,10 @@
           "The right-sided ROC \\(|z|>3\\) excludes the unit circle; the left-sided ROC inside the innermost pole also excludes it.",
           "Therefore the **correct option is B**, with \\(\\displaystyle\\frac23<|z|<3\\)."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "keyword scoring on original official PDF; review required"
     },
     {
       "id": "2023-EC-Q27",
@@ -1196,7 +1269,10 @@
           "By Parseval's relation, each shifted copy has energy \\((1/2)^2E=E/4\\).",
           "Add energies of these disjoint copies: \\[E_{\\mathrm{out}}=\\frac E4+\\frac E4=\\boxed{\\frac E2}.\\] **Option B.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reading original official question extract; screenshot remains primary source"
     },
     {
       "id": "2023-EC-Q26",
@@ -1236,7 +1312,10 @@
           "In general \\(x(e^t-t_0)\\ne x(e^{t-t_0})\\). Thus the system is **time-varying**.",
           "**Correct option B: non-causal and time-varying.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reading original official question extract; screenshot remains primary source"
     },
     {
       "id": "2024-EE-Q53",
@@ -1274,7 +1353,10 @@
           "Then \\[E_y=4\\cdot\\frac12\\int_{-\\infty}^{\\infty}|x(u)|^2du=2E.\\]",
           "Since \\(E_y=cE\\), \\(\\boxed{c=2.0}\\)."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reviewing official question extract; original screenshot is primary source"
     },
     {
       "id": "2023-EC-Q24",
@@ -1314,7 +1396,10 @@
           "Each input bit traverses **three** sequential registers, so its latency is \\[3T_{\\mathrm{clk}}=\\boxed{3\\,\\mathrm{ns}}.\\]",
           "**Correct option A:** \\((1000\\,\\mathrm{Mbit/s},\\ 3\\,\\mathrm{ns})\\)."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "keyword scoring on original official PDF; review required"
     },
     {
       "id": "2022-EC-Q43",
@@ -1356,7 +1441,10 @@
           "The output remains high for two input cycles and low for two cycles: \\[\\text{duty cycle}=\\frac{2T_0}{4T_0}\\times100\\%=\\boxed{50\\%}.\\]",
           "**Option A.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "keyword scoring on original official PDF; review required"
     },
     {
       "id": "2024-EE-Q26",
@@ -1395,7 +1483,10 @@
           "A \\(4\\!:\\!1\\) MUX selects \\(P,Q,R,S\\) in that same order, so \\[\\boxed{PQRS=1110}.\\]",
           "**Option B.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "keyword scoring on original official PDF; review required"
     },
     {
       "id": "2026-EC-Q48",
@@ -1435,7 +1526,10 @@
           "Use absorption \\(\\overline z+zA=\\overline z+A\\): \\[\\boxed{f=\\overline z+xy}.\\]",
           "**Correct option C.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "keyword scoring on original official PDF; review required"
     },
     {
       "id": "2025-EC-Q41",
@@ -1443,9 +1537,9 @@
       "year": 2025,
       "branch": "EC",
       "questionNumber": 41,
-      "subject": "Digital Electronics",
-      "topic": "Combinational and Sequential Logic",
-      "classificationStatus": "provisional",
+      "subject": "Communication Systems",
+      "topic": "Maximum-Likelihood Symbol Detection",
+      "classificationStatus": "curated_source_text",
       "type": "MCQ",
       "marks": 2,
       "officialKey": "D",
@@ -1478,7 +1572,12 @@
           "Average across the three symbols: \\[P_e=\\frac{p+2p+p}{3}=\\frac43p=\\frac43\\Pr(N>1).\\] Thus \\(\\boxed{\\alpha=\\tfrac43}\\), **option D**."
         ]
       },
-      "contentAuditNote": "Original problem is Communications probability/maximum-likelihood decoding, not combinational or sequential logic."
+      "contentAuditNote": "Original problem is Communications probability/maximum-likelihood decoding, not combinational or sequential logic.",
+      "originalSubject": "Digital Electronics",
+      "reclassifiedFrom": "Digital Electronics",
+      "taxonomyReviewStatus": "source_text_curated",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Content-based audit of source question excerpt; original diagram and PDF remain available for visual verification"
     },
     {
       "id": "2026-EC-Q56",
@@ -1518,7 +1617,10 @@
           "Alternatively, group \\(14\\) with \\(10\\) to obtain \\(wy\\overline z\\). Thus \\[f=\\overline x\\,\\overline z+xz+wy\\overline z,\\] which is **option D**.",
           "Both expressions produce exactly the specified minterms. **Correct options: A and D.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained"
     },
     {
       "id": "2023-EE-Q56",
@@ -1560,7 +1662,10 @@
           "Then \\(B=\\overline A=0\\), and \\(D=B\\oplus C=0\\).",
           "The stable binary word is \\[\\boxed{ABCD=1000_2=8_{10}}.\\]"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reading original official question extract; screenshot remains primary source"
     },
     {
       "id": "2023-EC-Q23",
@@ -1600,7 +1705,10 @@
           "Substitute: \\[Y=0\\cdot\\overline Q+P\\cdot Q=\\boxed{PQ}.\\]",
           "This is an AND function. **Option A.**"
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Subject/topic assigned after reading original official question extract; screenshot remains primary source"
     },
     {
       "id": "2026-EE-Q45",
@@ -1641,7 +1749,10 @@
           "When \\(\\overline y\\,\\overline z=1\\), both \\(y\\) and \\(z\\) are zero, hence \\(y+z=0\\). Otherwise the NOR term vanishes.",
           "Thus the product is identically \\(\\boxed{\\mathrm{OUT}=0}\\), **option B**."
         ]
-      }
+      },
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained"
     },
     {
       "id": "2024-EC-Q57",
@@ -1649,9 +1760,9 @@
       "year": 2024,
       "branch": "EC",
       "questionNumber": 57,
-      "subject": "Digital Electronics",
-      "topic": "Converters",
-      "classificationStatus": "provisional",
+      "subject": "Communication Systems",
+      "topic": "Quantization · Signal-to-Noise Ratio",
+      "classificationStatus": "curated_source_text",
       "type": "NAT",
       "marks": 2,
       "officialKey": "45.00 to 45.30",
@@ -1684,7 +1795,28 @@
           "Convert to decibels: \\[\\boxed{\\mathrm{SQNR}_{\\mathrm{dB}}=10\\log_{10}(32768)=45.15\\,\\mathrm{dB}}.\\]"
         ]
       },
-      "contentAuditNote": "Original problem is random-process quantization and SQNR, not combinational or sequential logic."
+      "contentAuditNote": "Original problem is random-process quantization and SQNR, not combinational or sequential logic.",
+      "originalSubject": "Digital Electronics",
+      "reclassifiedFrom": "Digital Electronics",
+      "taxonomyReviewStatus": "source_text_curated",
+      "selectionEligibleForFuture": true,
+      "classificationMethod": "Content-based audit of source question excerpt; original diagram and PDF remain available for visual verification"
     }
-  ]
+  ],
+  "originalPublishedSubjects": [
+    "Engineering Mathematics",
+    "Network Theory",
+    "Signals & Systems",
+    "Digital Electronics"
+  ],
+  "actualSubjectCounts": {
+    "Engineering Mathematics": 8,
+    "Electromagnetics": 1,
+    "Power Systems": 1,
+    "Network Theory": 10,
+    "Signals & Systems": 10,
+    "Digital Electronics": 8,
+    "Communication Systems": 2
+  },
+  "taxonomyCorrectedAt": "2026-11-22"
 }
