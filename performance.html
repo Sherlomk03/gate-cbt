@@ -36,7 +36,7 @@ a{color:#245cb4}.row{display:flex;justify-content:space-between;gap:12px;align-i
 <div id="notice"></div>
 <section id="summary" class="card"><h2>Overall performance</h2><p class="small">Loading records…</p></section>
 <section id="bySection" class="card"><h2>Subject-wise marks by CBT paper section</h2><p class="small">These totals use the subject section shown when each question was attempted; they are not affected by later topic-label corrections.</p><div id="sectionTable"></div></section>
-<section id="mastery" class="card"><h2>Strong and weak topics within each subject</h2><p class="small">Topic mastery uses content-corrected subjects for four identified classification errors. Other subject/topic tags remain partly machine-assigned and provisional. Each topic is assessed across all submitted daily tests.</p><div id="topicGroups"></div></section>
+<section id="mastery" class="card"><h2>Strong and weak topics within each subject</h2><p class="small">Topic mastery uses content-corrected subjects for four identified classification errors. Other subject/topic tags remain partly machine-assigned and provisional. Each topic is assessed across all submitted daily tests.</p><p class="small"><b>Classification guide:</b> Strong requires at least three attempted questions, 75% accuracy, at least 60% net marks and few skips. Needs revision flags repeated errors, low marks or frequent skips. Limited evidence means more questions are needed. Official marks-to-all credit counts toward scores but not mastery ratings.</p><div id="topicGroups"></div></section>
 <section id="revision" class="card"><h2>Priorities for your next revision</h2><div id="revisionContent"></div></section>
 <section id="history" class="card"><h2>Test-by-test score history</h2><div id="historyContent"></div></section>
 </main>
@@ -71,7 +71,7 @@ function totals(rows){const x={marks:0,net:0,correct:0,wrong:0,skipped:0,MTA:0,a
  for(const r of rows){x.marks+=r.marks;x.net+=r.net;x.count++;x[r.status]++;if(r.status==='correct'||r.status==='wrong')x.attempted++}
  return x}
 function bucket(list,key){const m=new Map;for(const r of list){const k=r[key]||'Unclassified';if(!m.has(k))m.set(k,[]);m.get(k).push(r)}return m}
-function classify(rows){const t=totals(rows),assessed=t.correct+t.wrong+t.skipped,accuracy=t.attempted?t.correct/t.attempted:0,skipRate=assessed?t.skipped/assessed:0;
+function classify(rows){const t=totals(rows.filter(r=>r.status!=='MTA')),assessed=t.correct+t.wrong+t.skipped,accuracy=t.attempted?t.correct/t.attempted:0,skipRate=assessed?t.skipped/assessed:0;
  if(!assessed)return {name:'Not assessed',level:'limited'};
  if(assessed>=3&&t.attempted>=3&&accuracy>=.75&&skipRate<=.25&&t.net/t.marks>=.6)return {name:'Strong',level:'strong'};
  if((assessed>=2&&skipRate>=.5)||(t.attempted>=2&&(accuracy<.5||t.net/t.marks<.35)))return {name:'Needs revision',level:'weak'};
