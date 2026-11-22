@@ -74,7 +74,15 @@
           "Therefore exactly options B and D converge, matching the official key."
         ],
         "examTip": "First check whether the nth term tends to zero; then use the ratio test for exponentials and the p-series test when c=1.",
-        "reference": "Official GATE 2022 EC question paper, Q45, page 38; official key B,D."
+        "reference": "Official GATE 2022 EC question paper, Q45, page 38; official key B,D.",
+        "mathFormula": "\\[\\sum_{n=1}^{\\infty}\\frac{n^d}{c^n}\\]",
+        "mathSteps": [
+          "**Option A:** With \\(c=1,\\ d=-1\\), the series becomes \\(\\sum_{n=1}^{\\infty}\\frac1n\\). This is the divergent harmonic series.",
+          "**Option B:** With \\(c=2,\\ d=1\\), apply the ratio test: \\[\\lim_{n\\to\\infty}\\frac{(n+1)/2^{n+1}}{n/2^n}=\\lim_{n\\to\\infty}\\frac{n+1}{2n}=\\frac12<1.\\] Therefore this series **converges**.",
+          "**Option C:** With \\(c=0.5,\\ d=-10\\), the terms are \\(\\frac{2^n}{n^{10}}\\). They do not approach zero, so the series **diverges**.",
+          "**Option D:** With \\(c=1,\\ d=-2\\), obtain \\(\\sum_{n=1}^{\\infty}\\frac1{n^2}\\), a \\(p\\)-series with \\(p=2>1\\). It **converges**.",
+          "**Correct options: B and D."
+        ]
       }
     },
     {
@@ -106,7 +114,15 @@
           "Both B and C describe the same input reflection magnitude and observed minimum location."
         ],
         "examTip": "When a lossless-line input is described by a standing wave, resistance equivalents greater and less than Z0 can both occur with different line lengths.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[\\mathrm{SWR}=\\max\\!\\left(\\frac{R_m}{Z_0},\\frac{Z_0}{R_m}\\right),\\qquad d_{\\min}=\\frac{\\lambda}{2}\\]",
+        "mathSteps": [
+          "Given \\(Z_0=50\\,\\Omega\\) and \\(\\mathrm{SWR}=2\\), the resistive termination may be \\[R_m=2Z_0=100\\,\\Omega\\quad\\text{or}\\quad R_m=\\frac{Z_0}{2}=25\\,\\Omega.\\]",
+          "Successive voltage minima are separated by \\(30\\,\\mathrm{cm}\\). Hence \\[\\frac{\\lambda}{2}=30\\,\\mathrm{cm}\\quad\\Longrightarrow\\quad \\lambda=60\\,\\mathrm{cm}.\\]",
+          "For \\(R_m=25\\,\\Omega\\), a voltage minimum occurs at the resistive termination. Matching the observed first minimum \\(10\\,\\mathrm{cm}\\) from the load requires an equivalent line length \\(l_m=20\\,\\mathrm{cm}\\). Thus **option B**.",
+          "For \\(R_m=100\\,\\Omega\\), a voltage maximum is at the resistive termination; the nearest minimum is \\(\\lambda/4=15\\,\\mathrm{cm}\\) away. Taking \\(l_m=5\\,\\mathrm{cm}\\) puts the observed minimum \\(10\\,\\mathrm{cm}\\) from the load. Thus **option C**.",
+          "Both equivalent representations satisfy the standing-wave observations. **Correct options: B and C.**"
+        ]
       },
       "contentAuditNote": "Original problem is on transmission-line standing waves, not Calculus. Daily subject/topic was assigned provisionally."
     },
@@ -139,7 +155,15 @@
           "For n=1 and other listed values, a nonzero R-dependent term remains."
         ],
         "examTip": "Remember both ways a power-law divergence can become independent of radius: zero exponent or zero coefficient. The field is considered for R>0.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[\\nabla\\cdot\\bigl(F_R\\mathbf a_R\\bigr)=\\frac1{R^2}\\frac{d}{dR}\\bigl(R^2F_R\\bigr)\\]",
+        "mathSteps": [
+          "The given radial field is \\(\\mathbf F(R)=R^{-n}\\mathbf a_R\\). Substitute \\(F_R=R^{-n}\\) into the spherical divergence formula.",
+          "Differentiate: \\[\\nabla\\cdot\\mathbf F=\\frac{1}{R^2}\\frac{d}{dR}R^{2-n}=(2-n)R^{-n-1}.\\]",
+          "For \\(n=-1\\), the exponent is \\(-(-1)-1=0\\), so \\(\\nabla\\cdot\\mathbf F=3\\), a constant. **Option B**.",
+          "For \\(n=2\\), the coefficient \\(2-n=0\\), hence \\(\\nabla\\cdot\\mathbf F=0\\) for \\(R>0\\). **Option D**.",
+          "For the other listed values, the divergence depends on \\(R\\). **Correct options: B and D.**"
+        ]
       }
     },
     {
@@ -171,7 +195,15 @@
           "X+10 ranges over 0,...,20. Squaring nonnegative values is one-to-one, so (X+10)² is uniform over its 21 possible values. D is correct."
         ],
         "examTip": "Check uniqueness of transformed outcomes; an equal-probability input does not guarantee an equal-probability output.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[X\\sim\\mathrm{Uniform}\\{-10,-9,\\dots,10\\},\\qquad \\Pr(X=x)=\\frac1{21}\\]",
+        "mathSteps": [
+          "A transformation \\(g(X)\\) remains uniform on its distinct outputs when each output has the same number of preimages; in particular, any **one-to-one** mapping works.",
+          "**A:** \\(X^2\\) is not one-to-one, because \\(x^2=(-x)^2\\). Zero has only one preimage while many squares have two. **Not uniform.**",
+          "**B:** \\(X^3\\) is strictly increasing: every value maps to a unique output of probability \\(1/21\\). **Uniform.**",
+          "**C:** \\((X-5)^2\\) repeats values for inputs equally spaced from \\(5\\), e.g., \\(X=4,6\\). **Not uniform.**",
+          "**D:** \\(X+10\\in\\{0,1,\\dots,20\\}\\). Squaring is one-to-one on these nonnegative values, so \\((X+10)^2\\) is **uniform**. **Correct options: B and D.**"
+        ]
       }
     },
     {
@@ -202,7 +234,14 @@
           "That is y''+4y'+4y=f(t), corresponding to option A."
         ],
         "examTip": "A multiplicity-two root r creates the pair e^(rt) and t e^(rt).",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[y_c(t)=(At+B)e^{-2t}\\quad\\Longrightarrow\\quad (r+2)^2=0\\]",
+        "mathSteps": [
+          "The factor \\(t e^{-2t}\\) indicates that the characteristic equation has a **repeated root** \\(r=-2\\).",
+          "Its characteristic polynomial is \\[(r+2)^2=r^2+4r+4.\\]",
+          "Replace \\(r\\) by the differentiation operator \\(D=\\frac{d}{dt}\\): \\[(D^2+4D+4)y=f(t).\\]",
+          "Therefore \\[\\boxed{\\frac{d^2y}{dt^2}+4\\frac{dy}{dt}+4y=f(t)}\\] which corresponds to **option A**."
+        ]
       }
     },
     {
@@ -233,7 +272,14 @@
           "Hence the least-squares slope is m=2/2=1.00, within the official 0.9–1.1 acceptance range."
         ],
         "examTip": "When x values are symmetric about zero, the slope simplifies to Σxy/Σx².",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[m=\\frac{\\sum_i(x_i-\\bar x)(y_i-\\bar y)}{\\sum_i(x_i-\\bar x)^2}\\]",
+        "mathSteps": [
+          "The three points are \\((-1,0.8)\\), \\((0,2.2)\\) and \\((1,2.8)\\). Their mean abscissa is \\(\\bar x=(-1+0+1)/3=0\\).",
+          "Since \\(\\bar x=0\\), the numerator simplifies: \\[\\sum_i x_i y_i=(-1)(0.8)+0(2.2)+(1)(2.8)=2.0.\\]",
+          "The denominator is \\[\\sum_i x_i^2=(-1)^2+0^2+1^2=2.\\]",
+          "Thus the best-fit slope is \\[\\boxed{m=\\frac{2.0}{2}=1.00}\\] which lies in the official accepted interval."
+        ]
       }
     },
     {
@@ -265,7 +311,15 @@
           "Only option C has nonzero determinant and an inverse."
         ],
         "examTip": "Search for proportional rows first; calculate a determinant only for the remaining candidate.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[A^{-1}\\text{ exists}\\quad\\Longleftrightarrow\\quad\\det(A)\\neq0\\]",
+        "mathSteps": [
+          "**A:** The third row is half the first, so the rows are linearly dependent and \\(\\det(A)=0\\).",
+          "**B:** The second row is twice the first, so \\(\\det(B)=0\\).",
+          "**D:** The third row is three times the first, so \\(\\det(D)=0\\).",
+          "**C:** Compute the determinant directly: \\[\\begin{vmatrix}1&4&8\\\\0&4&2\\\\1&2&4\\end{vmatrix}=1(16-4)-4(0-2)+8(0-4)=-12\\neq0.\\]",
+          "Only **option C** is invertible."
+        ]
       }
     },
     {
@@ -297,7 +351,15 @@
           "Thus options A, B and D are correct."
         ],
         "examTip": "Visualize p=1 as a diamond, p=2 as a circle, and p→∞ as a square.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[|x_1|^p+|x_2|^p=1,\\qquad p>0\\]",
+        "mathSteps": [
+          "At \\(p=2\\), this is \\(x_1^2+x_2^2=1\\), a unit circle with area \\(A=\\pi\\). **Option A is true.**",
+          "As \\(p\\to\\infty\\), the shape tends to \\(\\max(|x_1|,|x_2|)=1\\), a square of side \\(2\\): \\(A\\to 2^2=4\\). **B is true.**",
+          "At \\(p=1\\), \\(|x_1|+|x_2|=1\\) is a diamond with diagonal lengths \\(2\\) and \\(2\\): \\[A=\\frac{2\\times2}{2}=2.\\] **D is true.**",
+          "As \\(p\\to0^+\\), the enclosed area tends to \\(0\\), not \\(1\\). **C is false.**",
+          "**Correct options: A, B and D.**"
+        ]
       }
     },
     {
@@ -330,7 +392,16 @@
           "This is a derivation using the provided approximate λ; MTA remains the authoritative scoring status, not 20.0 as an official keyed NAT value."
         ],
         "examTip": "When marginal transmission loss depends on a generator, use its loss penalty factor in equal-incremental-cost dispatch.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[\\frac{dC_1}{dP_1}=\\lambda,\\qquad \\frac{dC_2}{dP_2}=\\lambda\\left(1-\\frac{\\partial P_{\\mathrm{loss}}}{\\partial P_2}\\right)\\]",
+        "mathSteps": [
+          "**Official scoring:** This question is marked **MTA (marks to all)**. The following is an illustrative derivation using the stated \\(\\lambda=70.25\\); it is **not an official unique keyed answer**.",
+          "For generator 1, \\[C_1'=50+0.02P_1=70.25\\quad\\Longrightarrow\\quad P_1=\\frac{20.25}{0.02}=1012.5\\,\\mathrm{MW}.\\]",
+          "For generator 2, the losses are \\(P_{\\mathrm{loss}}=0.001(P_2-50)^2\\), so \\[\\frac{\\partial P_{\\mathrm{loss}}}{\\partial P_2}=0.002(P_2-50).\\]",
+          "Use the optimality condition: \\[50+0.002P_2=70.25[1-0.002(P_2-50)]\\quad\\Longrightarrow\\quad P_2\\approx191.40\\,\\mathrm{MW}.\\]",
+          "The illustrative loss is \\[P_{\\mathrm{loss}}=0.001(191.40-50)^2\\approx20.0\\,\\mathrm{MW}.\\] Check the balance: \\(1012.5+191.4-20.0\\approx1183.9\\,\\mathrm{MW}\\), close to the \\(1184\\,\\mathrm{MW}\\) load after rounding.",
+          "Keep the **MTA** status for scoring; do not treat this numerical calculation as a replacement for the official marks-to-all decision."
+        ]
       },
       "contentAuditNote": "Original problem is Power Systems economic dispatch, not Calculus. Official result is marks to all (MTA)."
     },
@@ -363,7 +434,15 @@
           "Therefore the integral is 2/3≈0.67, within the official 0.60–0.70 acceptance interval."
         ],
         "examTip": "Shift coordinates to exploit symmetry of rotated regions before integrating.",
-        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional.",
+        "mathFormula": "\\[\\iint_R(x^2+y^2-1)\\,dx\\,dy\\]",
+        "mathSteps": [
+          "The shaded diamond has vertices \\((0,0),(1,1),(2,0),(1,-1)\\) and center \\((1,0)\\). Its side length is \\(\\sqrt2\\).",
+          "Shift coordinates to the center using \\(u=x-1,\\;v=y\\). Then \\[x^2+y^2-1=u^2+v^2+2u.\\]",
+          "The shifted region is symmetric about \\(u=0\\), so the odd term integrates to zero: \\[\\iint_R 2u\\,dA=0.\\]",
+          "The polar second moment of a square of side \\(a\\) about its center is \\(J=a^4/6\\). Here \\[J=\\frac{(\\sqrt2)^4}{6}=\\frac46=\\frac23.\\]",
+          "Therefore \\[\\boxed{\\iint_R(x^2+y^2-1)\\,dx\\,dy=\\frac23\\approx0.67}\\] which agrees with the official numerical range."
+        ]
       }
     },
     {
