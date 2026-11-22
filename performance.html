@@ -101,7 +101,7 @@ body{background:#f7f9fc;color:#20314b}
 <details class="extra" id="extra"><summary>Detailed analysis and test history <span class="tiny">Optional</span></summary>
  <div class="extra-inner">
   <details class="extra-sub"><summary>All subject and topic breakdowns</summary>
-    <section id="bySection" class="card"><h2>Subject marks from daily website papers</h2><p class="small">Scores reflect the original paper sections, including negative marking.</p><div id="sectionTable"></div></section>
+    <section id="bySection" class="card"><h2>Subject-wise marks (corrected categories)</h2><p class="small">Scores use corrected question subjects and include MCQ negative marking. Submitted question IDs and scores remain unchanged.</p><div id="sectionTable"></div></section>
     <section id="mastery" class="card"><h2>Topic-by-topic analysis</h2><p class="small">Topics with limited attempts are not treated as established strengths or weaknesses. Some source classifications are provisional.</p><div id="topicGroups"></div></section>
   </details>
   <details class="extra-sub"><summary>Detailed revision priorities</summary><section id="revision" class="card"><h2>Revision evidence</h2><div id="revisionContent"></div></section></details>
@@ -119,7 +119,7 @@ body{background:#f7f9fc;color:#20314b}
   <p class="small" id="status" role="status">Loading saved submissions…</p><p class="small" id="chatImportStatus"></p>
  </div>
 </details>
-<p class="footerline">Website PYQ scores and earlier ChatGPT practice are kept distinct. Subject/topic tags may be provisional; detailed calculations remain accessible above.</p>
+<p class="footerline">Website PYQ scores and earlier ChatGPT practice remain separate. Source-based corrections are reflected in subject totals; uncertain topic labels remain provisional.</p>
 </main>
 <script>
 'use strict';
@@ -286,8 +286,8 @@ async function refresh(){
  try{const response=await fetch('./papers/daily-pyq/'+encodeURIComponent(entry.file)+'?t='+Date.now(),{cache:'no-store'});
  if(!response.ok)throw Error('HTTP '+response.status);
  const paper=await response.json();if(!Array.isArray(paper.questions)||paper.questions.length!==40||paper.date!==entry.date)throw Error('Paper metadata mismatch');
- const rows=paper.questions.map(q=>{const g=grade(q,attempt.answers[q.id]);const fix=corrected[q.id];
- return {date:paper.date,id:q.id,sourceId:q.sourceId||q.id,section:q.subject,subject:fix?.subject||q.subject,topic:fix?.topic||q.topic||'Unclassified',audit:fix?'reviewed':q.classificationStatus==='manually_audited_source_text'?'reviewed':'provisional',status:g.status,marks:+q.marks,net:g.net,questionType:q.type,sourceType:q.sourceType||'gate'}});
+ const rows=paper.questions.map(q=>{const g=grade(q,attempt.answers[q.id]);const fix=q.taxonomyReviewStatus?null:corrected[q.id];
+ return {date:paper.date,id:q.id,sourceId:q.sourceId||q.id,section:q.subject,subject:fix?.subject||q.subject,topic:fix?.topic||q.topic||'Unclassified',audit:fix?'reviewed':(['manually_audited_source_text','curated_source_text'].includes(q.classificationStatus))?'reviewed':'provisional',status:g.status,marks:+q.marks,net:g.net,questionType:q.type,sourceType:q.sourceType||'gate'}});
  return {date:entry.date,rows};
  }catch(e){return {date:entry.date,error:String(e.message||e)}}}));
  STATE={records:report.filter(x=>!x.error).flatMap(x=>x.rows),tests:report.filter(x=>!x.error).map(x=>({date:x.date})),unavailable:report.filter(x=>x.error).map(x=>x.date+' ('+x.error+')'),unlisted:savedDates.filter(date=>!known.has(date))};
