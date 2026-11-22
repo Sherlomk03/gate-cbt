@@ -1,16 +1,34 @@
 {
-  "status": "provisional_machine_classification",
+  "schemaVersion": 2,
+  "scope": "2022-2026 GATE EE/EC technical Q11-Q65; General Aptitude Q1-Q10 unchanged",
+  "technicalQuestions": 550,
+  "yearlyPapers": 10,
+  "changedSubjectCount": 44,
+  "eligibleForDaily": 436,
+  "excludedPendingReview": 114,
+  "status": "source-text audited plus contextual machine screening; diagrams and ambiguous labels may need visual review; not a claim of 550 manually verified questions",
+  "reviewStatus": {
+    "source_text_audited": 269,
+    "automatic_context_match": 227,
+    "source_text_curated": 44,
+    "requires_visual_review": 10
+  },
+  "eligibleBySubject": {
+    "Signals & Systems": 56,
+    "Analog Electronics": 46,
+    "Power Systems": 29,
+    "Control Systems": 45,
+    "Electrical Measurements": 5,
+    "Engineering Mathematics": 56,
+    "Network Theory": 52,
+    "Power Electronics": 27,
+    "Electrical Machines": 29,
+    "Digital Electronics": 34,
+    "Electromagnetics": 32,
+    "Communication Systems": 23,
+    "Microprocessors": 2
+  },
   "byPaper": {
-    "2022-EC": {
-      "Engineering Mathematics": 12,
-      "Network Theory": 5,
-      "Signals & Systems": 6,
-      "Analog Electronics": 13,
-      "Digital Electronics": 6,
-      "Control Systems": 3,
-      "Electromagnetics": 3,
-      "Communication Systems": 7
-    },
     "2022-EE": {
       "Signals & Systems": 5,
       "Analog Electronics": 5,
@@ -24,15 +42,15 @@
       "Electrical Machines": 6,
       "Digital Electronics": 2
     },
-    "2023-EC": {
-      "Engineering Mathematics": 9,
-      "Analog Electronics": 11,
-      "Network Theory": 6,
-      "Electromagnetics": 6,
-      "Digital Electronics": 5,
-      "Control Systems": 5,
-      "Signals & Systems": 11,
-      "Communication Systems": 2
+    "2022-EC": {
+      "Engineering Mathematics": 12,
+      "Network Theory": 5,
+      "Signals & Systems": 6,
+      "Analog Electronics": 13,
+      "Digital Electronics": 6,
+      "Control Systems": 3,
+      "Electromagnetics": 3,
+      "Communication Systems": 7
     },
     "2023-EE": {
       "Engineering Mathematics": 9,
@@ -47,16 +65,15 @@
       "Electromagnetics": 2,
       "Microprocessors": 1
     },
-    "2024-EC": {
+    "2023-EC": {
       "Engineering Mathematics": 9,
-      "Network Theory": 5,
-      "Control Systems": 4,
-      "Communication Systems": 6,
-      "Electromagnetics": 3,
-      "Analog Electronics": 14,
-      "Digital Electronics": 6,
-      "Signals & Systems": 7,
-      "Microprocessors": 1
+      "Analog Electronics": 11,
+      "Network Theory": 6,
+      "Electromagnetics": 6,
+      "Digital Electronics": 5,
+      "Control Systems": 5,
+      "Signals & Systems": 11,
+      "Communication Systems": 2
     },
     "2024-EE": {
       "Engineering Mathematics": 9,
@@ -71,15 +88,16 @@
       "Analog Electronics": 3,
       "Electromagnetics": 2
     },
-    "2025-EC": {
-      "Engineering Mathematics": 10,
-      "Communication Systems": 6,
-      "Control Systems": 6,
-      "Signals & Systems": 6,
+    "2024-EC": {
+      "Engineering Mathematics": 9,
       "Network Theory": 5,
-      "Analog Electronics": 12,
+      "Control Systems": 4,
+      "Communication Systems": 6,
+      "Electromagnetics": 3,
+      "Analog Electronics": 14,
       "Digital Electronics": 6,
-      "Electromagnetics": 4
+      "Signals & Systems": 7,
+      "Microprocessors": 1
     },
     "2025-EE": {
       "Engineering Mathematics": 10,
@@ -94,15 +112,15 @@
       "Digital Electronics": 1,
       "Electrical Measurements": 2
     },
-    "2026-EC": {
-      "Engineering Mathematics": 6,
-      "Signals & Systems": 9,
-      "Analog Electronics": 12,
-      "Control Systems": 4,
-      "Digital Electronics": 8,
-      "Electromagnetics": 6,
+    "2025-EC": {
+      "Engineering Mathematics": 10,
       "Communication Systems": 6,
-      "Network Theory": 4
+      "Control Systems": 6,
+      "Signals & Systems": 6,
+      "Network Theory": 5,
+      "Analog Electronics": 12,
+      "Digital Electronics": 6,
+      "Electromagnetics": 4
     },
     "2026-EE": {
       "Signals & Systems": 4,
@@ -115,6 +133,282 @@
       "Control Systems": 3,
       "Analog Electronics": 2,
       "Digital Electronics": 2
+    },
+    "2026-EC": {
+      "Engineering Mathematics": 6,
+      "Signals & Systems": 9,
+      "Analog Electronics": 12,
+      "Control Systems": 4,
+      "Digital Electronics": 8,
+      "Electromagnetics": 6,
+      "Communication Systems": 6,
+      "Network Theory": 4
     }
-  }
+  },
+  "subjectCorrections": [
+    {
+      "id": "2022-EE-Q13",
+      "from": "Electrical Machines",
+      "to": "Power Systems",
+      "topic": "Generator Protection · Loss of Excitation"
+    },
+    {
+      "id": "2022-EE-Q18",
+      "from": "Network Theory",
+      "to": "Electrical Measurements",
+      "topic": "Wheatstone Bridge · Tolerance Analysis"
+    },
+    {
+      "id": "2022-EE-Q30",
+      "from": "Signals & Systems",
+      "to": "Electrical Measurements",
+      "topic": "Power Ratios · Decibels"
+    },
+    {
+      "id": "2022-EE-Q33",
+      "from": "Power Systems",
+      "to": "Power Electronics",
+      "topic": "Rectifier Input Harmonics · Power Factor"
+    },
+    {
+      "id": "2022-EE-Q57",
+      "from": "Electrical Machines",
+      "to": "Power Systems",
+      "topic": "Swing Equation · Generator Inertia"
+    },
+    {
+      "id": "2022-EE-Q59",
+      "from": "Analog Electronics",
+      "to": "Power Electronics",
+      "topic": "Controlled Rectifiers · Firing Angle"
+    },
+    {
+      "id": "2022-EE-Q60",
+      "from": "Communication Systems",
+      "to": "Power Electronics",
+      "topic": "Grid-Connected Voltage Source Converters"
+    },
+    {
+      "id": "2022-EC-Q61",
+      "from": "Engineering Mathematics",
+      "to": "Communication Systems",
+      "topic": "Discrete Memoryless Channels · Information Theory"
+    },
+    {
+      "id": "2022-EC-Q63",
+      "from": "Engineering Mathematics",
+      "to": "Communication Systems",
+      "topic": "Maximum-Likelihood Detection"
+    },
+    {
+      "id": "2022-EC-Q64",
+      "from": "Engineering Mathematics",
+      "to": "Communication Systems",
+      "topic": "Quantizer Design · Mean-Square Error"
+    },
+    {
+      "id": "2023-EE-Q26",
+      "from": "Analog Electronics",
+      "to": "Power Electronics",
+      "topic": "Power Semiconductor Switches"
+    },
+    {
+      "id": "2023-EE-Q27",
+      "from": "Power Systems",
+      "to": "Signals & Systems",
+      "topic": "LTI Systems · Causality and Stability"
+    },
+    {
+      "id": "2023-EE-Q33",
+      "from": "Engineering Mathematics",
+      "to": "Power Systems",
+      "topic": "Transmission Lines · Maximum Power Transfer"
+    },
+    {
+      "id": "2023-EE-Q41",
+      "from": "Electrical Machines",
+      "to": "Power Systems",
+      "topic": "Power Flow · Bus Classification"
+    },
+    {
+      "id": "2023-EE-Q60",
+      "from": "Electrical Machines",
+      "to": "Power Systems",
+      "topic": "Symmetrical Components · Line-to-Line Fault"
+    },
+    {
+      "id": "2023-EC-Q43",
+      "from": "Engineering Mathematics",
+      "to": "Control Systems",
+      "topic": "State-Space Dynamics · Eigenvalues"
+    },
+    {
+      "id": "2023-EC-Q51",
+      "from": "Network Theory",
+      "to": "Electromagnetics",
+      "topic": "Microwave Networks · Scattering Parameters"
+    },
+    {
+      "id": "2023-EC-Q52",
+      "from": "Engineering Mathematics",
+      "to": "Electromagnetics",
+      "topic": "Transmission Lines · Standing-Wave Ratio"
+    },
+    {
+      "id": "2024-EE-Q12",
+      "from": "Unclassified",
+      "to": "Network Theory",
+      "topic": "Circuit Topology · Junctions"
+    },
+    {
+      "id": "2024-EE-Q23",
+      "from": "Electrical Machines",
+      "to": "Electrical Measurements",
+      "topic": "Current and Potential Transformers"
+    },
+    {
+      "id": "2024-EE-Q65",
+      "from": "Electrical Machines",
+      "to": "Power Electronics",
+      "topic": "Thyristor Converter · Regenerative Braking"
+    },
+    {
+      "id": "2024-EC-Q14",
+      "from": "Signals & Systems",
+      "to": "Communication Systems",
+      "topic": "Nyquist Pulse Shaping · Zero ISI"
+    },
+    {
+      "id": "2024-EC-Q17",
+      "from": "Communication Systems",
+      "to": "Analog Electronics",
+      "topic": "MOSFET Small-Signal Input Impedance"
+    },
+    {
+      "id": "2024-EC-Q18",
+      "from": "Communication Systems",
+      "to": "Analog Electronics",
+      "topic": "Feedback Amplifiers · Closed-Loop Gain"
+    },
+    {
+      "id": "2024-EC-Q37",
+      "from": "Signals & Systems",
+      "to": "Control Systems",
+      "topic": "Feedback Control · Closed-Loop Poles"
+    },
+    {
+      "id": "2024-EC-Q51",
+      "from": "Communication Systems",
+      "to": "Analog Electronics",
+      "topic": "MOSFET Small-Signal Gain"
+    },
+    {
+      "id": "2024-EC-Q57",
+      "from": "Digital Electronics",
+      "to": "Communication Systems",
+      "topic": "Quantization · Signal-to-Noise Ratio"
+    },
+    {
+      "id": "2025-EE-Q58",
+      "from": "Network Theory",
+      "to": "Electrical Measurements",
+      "topic": "Three-Voltmeter Power Measurement"
+    },
+    {
+      "id": "2025-EE-Q59",
+      "from": "Network Theory",
+      "to": "Electrical Measurements",
+      "topic": "Wheatstone Bridge · Sensitivity"
+    },
+    {
+      "id": "2025-EE-Q63",
+      "from": "Electrical Machines",
+      "to": "Power Systems",
+      "topic": "Reactive Compensation · Power Factor Correction"
+    },
+    {
+      "id": "2025-EC-Q41",
+      "from": "Digital Electronics",
+      "to": "Communication Systems",
+      "topic": "Maximum-Likelihood Symbol Detection"
+    },
+    {
+      "id": "2025-EC-Q44",
+      "from": "Signals & Systems",
+      "to": "Digital Electronics",
+      "topic": "ADC Resolution · SNR and Bit Rate"
+    },
+    {
+      "id": "2025-EC-Q54",
+      "from": "Engineering Mathematics",
+      "to": "Communication Systems",
+      "topic": "Source Entropy · Information Theory"
+    },
+    {
+      "id": "2025-EC-Q65",
+      "from": "Network Theory",
+      "to": "Electromagnetics",
+      "topic": "Faraday's Law · Induced EMF"
+    },
+    {
+      "id": "2026-EE-Q14",
+      "from": "Signals & Systems",
+      "to": "Engineering Mathematics",
+      "topic": "Ordinary Differential Equations"
+    },
+    {
+      "id": "2026-EE-Q28",
+      "from": "Analog Electronics",
+      "to": "Power Electronics",
+      "topic": "MOSFET Switching · Voltage Overshoot"
+    },
+    {
+      "id": "2026-EE-Q39",
+      "from": "Electrical Machines",
+      "to": "Power Systems",
+      "topic": "Protection · Current Transformers"
+    },
+    {
+      "id": "2026-EE-Q46",
+      "from": "Analog Electronics",
+      "to": "Digital Electronics",
+      "topic": "MOSFET Switch Logic · Boolean Functions"
+    },
+    {
+      "id": "2026-EE-Q47",
+      "from": "Analog Electronics",
+      "to": "Power Electronics",
+      "topic": "Voltage-Source Inverter · Switch RMS Current"
+    },
+    {
+      "id": "2026-EE-Q58",
+      "from": "Engineering Mathematics",
+      "to": "Power Systems",
+      "topic": "Economic Dispatch · Transmission Losses"
+    },
+    {
+      "id": "2026-EC-Q34",
+      "from": "Network Theory",
+      "to": "Electromagnetics",
+      "topic": "Microwave Two-Port Networks · S-Parameters"
+    },
+    {
+      "id": "2026-EC-Q52",
+      "from": "Network Theory",
+      "to": "Electromagnetics",
+      "topic": "Smith Chart · Impedance Transformation"
+    },
+    {
+      "id": "2026-EC-Q60",
+      "from": "Communication Systems",
+      "to": "Analog Electronics",
+      "topic": "MOSFET Bias · Transconductance"
+    },
+    {
+      "id": "2026-EC-Q62",
+      "from": "Communication Systems",
+      "to": "Analog Electronics",
+      "topic": "Op-Amp Closed-Loop Gain"
+    }
+  ]
 }
