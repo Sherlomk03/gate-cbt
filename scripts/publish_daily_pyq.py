@@ -40,6 +40,7 @@ def get_questions():
               "subject":q.get("subject") or "Unclassified","topic":q.get("topic","Needs review"),
               "classificationStatus":q.get("classificationStatus","unclassified"),
               "taxonomyReviewStatus":q.get("taxonomyReviewStatus","requires_visual_review"),
+              "selectionEligibleForFuture":True,
               "classificationMethod":q.get("classificationMethod","source-linked classification"),
               "sourceExcerpt":(q.get("sourceExtract") or "")[:220],
               "type":q["type"],"marks":q["marks"],"officialKey":q["officialKey"],
