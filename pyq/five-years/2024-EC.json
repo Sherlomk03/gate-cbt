@@ -147,7 +147,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.11 – Q.35 Carry ONE mark Each Q.11 The general form of the complementary function of a differential equation is given by y (t ) = ( At + B ) e−2 t , where Aand B are real constants determined by the initial condition. The corresponding differential equation is _____. (A) d 2 y d y 2 + 4 + 4 y = f (t ) d t d t (B) d 2 y 2 + 4 y = f (t ) d t (C) d 2 y d y 2 + 3 + 2 y = f (t ) d t d t (D) d 2 y d y 2 + 5 + 6 y = f (t ) d t d t",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -358,7 +358,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 0,
       "sourceExtract": "Q.20 N 0 A white Gaussian noise w(t ) with zero mean and power spectral density , 2 when applied to a first-order RC low pass filter produces an output 𝑛(𝑡). At a particular time 𝑡= 𝑡𝑘, the variance of the random variable 𝑛(𝑡𝑘) is ________. (A) N 0 4 RC (B) N 0 2 RC (C) N 0 RC (D) 2N 0 RC Page 17 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -381,8 +381,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.21 A causal and stable LTI system with impulse response ℎ(𝑡) produces an output 𝑦(𝑡) for an input signal 𝑥(𝑡). A signal 𝑥(0.5𝑡) is applied to another causal and stable LTI system with impulse response ℎ(0.5𝑡). The resulting output is _____. (A) 2𝑦(0.5𝑡) (B) 4𝑦(0.5𝑡) (C) 0.25𝑦(2𝑡) (D) 0.25𝑦(0.25𝑡) Page 18 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 22,
@@ -450,8 +450,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.24 For a causal discrete-time LTI system with transfer function 2𝑧2+3 𝐻(𝑧) = 1 1 (𝑧 + 3)(𝑧 − 3) which of the following statements is/are true? (A) The system is stable. (B) The system is a minimum phase system. (C) The initial value of the impulse response is 2. (D) The final value of the impulse response is 0. Page 21 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 25,
@@ -496,7 +496,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.26 The free electron concentration profile n(x) in a doped semiconductor at equilibrium is shown in the figure, where the points A, B, and C mark three different positions. Which of the following statements is/are true? (A) For 𝑥 between B and C, the electron diffusion current is directed from C to B. (B) For 𝑥 between B and A, the electron drift current is directed from B to A. (C) For 𝑥 between B and C, the electric field is directed from B to C. (D) For 𝑥 between B and A, the electric field is directed from A to B.",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -519,8 +519,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 16,
       "sourceExtract": "Q.27 A machine has a 32-bit architecture with 1-word long instructions. It has 24 registers and supports an instruction set of size 40. Each instruction has five distinct fields, namely opcode, two source register identifiers, one destination register identifier, and an immediate value. Assuming that the immediate operand is an unsigned integer, its maximum value is ________. Page 23 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 28,
@@ -588,7 +588,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 10,
       "sourceExtract": "Q.30 Let ℝ and ℝ3 denote the set of real numbers and the three dimensional vector space over it, respectively. The value of 𝛼 for which the set of vectors {[2 −3 𝛼], [3 −1 3], [1 −5 7]} does not form a basis of ℝ3 is _______. Page 24 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -657,7 +657,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.33 Suppose X and Y are independent and identically distributed random variables that are distributed uniformly in the interval [0,1] . The probability that X  Y is _______ . Page 25 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -703,7 +703,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.35 As shown in the circuit, the initial voltage across the capacitor is 10 V, with the switch being open. The switch is then closed at 𝑡= 0. The total energy dissipated in the ideal Zener diode (𝑉𝑍= 5 𝑉) after the switch is closed (in mJ, rounded off to three decimal places) is __________. 𝑡= 0 + 10 kΩ 10 μF 𝑉(0−) = 10 V − 𝑉𝑍= 5 V Page 26 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -819,8 +819,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.40 A 4-bit priority encoder has inputs 𝐷3, 𝐷2, 𝐷1, and 𝐷0 in descending order of priority. The two-bit output 𝐴𝐵 is generated as 00, 01, 10, and 11 corresponding to inputs 𝐷3, 𝐷2, 𝐷1, and 𝐷0, respectively. The Boolean expression of the output bit 𝐵 is _______. (A) 𝐷3̅̅̅ 𝐷2̅̅̅ (B) 𝐷3̅̅̅𝐷2 + 𝐷3̅̅̅ 𝐷1̅̅̅ (C) 𝐷3𝐷2̅̅̅ + 𝐷3̅̅̅ 𝐷1 (D) 𝐷3̅̅̅ 𝐷1̅̅̅ Page 30 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 41,
@@ -842,7 +842,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.41 The propagation delay of the 2 × 1 MUX shown in the circuit is 10 ns. Consider the propagation delay of the inverter as 0 ns. 0 2 X 1 MUX Y 1 S If S is set to 1 then the output Y is _______. (A) a square wave of frequency 100 MHz (B) a square wave of frequency 50 MHz (C) constant at 0 (D) constant at 1 Page 31 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -912,8 +912,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.44 Consider two continuous time signals 𝑥(𝑡) and 𝑦(𝑡) as shown below 𝑦(𝑡) 𝑥(𝑡) 1 -1 0.5 0 𝑡 𝑡 -2 0 2 -1 If 𝑋(𝑓) denotes the Fourier transform of 𝑥(𝑡), then the Fourier transform of 𝑦(𝑡) is _______. (A) −4𝑋(4𝑓)𝑒−𝑗𝜋𝑓 (B) −4𝑋(4𝑓)𝑒−𝑗4𝜋𝑓 (C) −1 𝑋(𝑓/4)𝑒−𝑗𝜋𝑓 4 (D) −1 𝑋(𝑓/4)𝑒−𝑗4𝜋𝑓 4 Page 34 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 45,
@@ -935,7 +935,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 4,
       "sourceExtract": "Q.45 A source transmits a symbol ,s taken from {−4,0,4} with equal probability, over an additive white Gaussian noise channel. The received noisy symbol r is given by r = s + w, where the noise w is zero mean with variance 4 and is independent of .s −𝑡2 1 ∞ Using 𝑄(𝑥) = √2𝜋∫𝑥 𝑒 2 𝑑𝑡, the optimum symbol error probability is _______. (A) 2 Q (2) 3 (B) 4 Q (1) 3 (C) 2 Q (1) 3 (D) 4 Q (2) 3",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -958,7 +958,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.46 A full scale sinusoidal signal is applied to a 10-bit ADC. The fundamental signal component in the ADC output has a normalized power of 1 W, and the total noise and distortion normalized power is 10 μW. The effective number of bits (rounded off to the nearest integer) of the ADC is _______. (A) 7 (B) 8 (C) 9 (D) 10 Page 35 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1004,8 +1004,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.48 A continuous time signal 𝑥(𝑡) = 2 cos(8𝜋𝑡+ 𝜋/3) is sampled at a rate of 15 Hz. The sampled signal 𝑥𝑠(𝑡) when passed through an LTI system with impulse response sin 2𝜋𝑡 ℎ(𝑡) = ( 𝜋𝑡) cos(38𝜋𝑡−𝜋/2) produces an output 𝑥𝑜(𝑡). The expression for 𝑥𝑜(𝑡) is _____. (A) 15 sin(38𝜋𝑡+ 𝜋/3) (B) 15 sin(38𝜋𝑡−𝜋/3) (C) 15 cos(38𝜋𝑡−𝜋/6) (D) 15 cos(38𝜋𝑡+ 𝜋/6) Page 36 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 49,
@@ -1097,7 +1097,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.52 Which of the following statements is/are true for a BJT with respect to its DC current gain β? (A) Under high-level injection condition in forward active mode, β will decrease with increase in the magnitude of collector current. (B) Under low-level injection condition in forward active mode, where the current at the emitter-base junction is dominated by recombination-generation process, β will decrease with increase in the magnitude of collector current. (C) β will be lower when the BJT is in saturation region compared to when it is in active region. (D) A higher value of β will lead to a lower value of the collector-to-emitter breakdown voltage. Page 40 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1143,7 +1143,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.54 Let F1 , F2 , and F3 be functions of ( x, y , z ) . Suppose that for every given pair of points 𝐴 and 𝐵 in space, the line integral C ( F1dx + F2 dy + F3 dz ) evaluates to the same value along any path C that starts at 𝐴 and ends at B . Then which of the following is/are true? (A) ( F1dx + F2 dy + F3 dz ) = 0 . For every closed path , we have   (B) There exists a differentiable scalar function f ( x, y , z ) such that f f f F1 = , F2 = , F3 = x y .z (C) F1 F2 F3 + + = 0 . x y z (D) F3 F2 F1 F3 F2 F1 = , = , = . y z z x x y Page 42 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)  1 k ",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1166,7 +1166,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": " 1 k  Q.55 Consider the matrix   , where 𝑘 is a positive real number. Which of the  2 1  following vectors is/are eigenvector(s) of this matrix? (A)  1     − 2 / k  (B)  1     2 / k  (C)  2 k     1  (D)  2 k     − 1 ",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1259,8 +1259,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.59 The relationship between any N-length sequence 𝑥[𝑛] and its corresponding N-point discrete Fourier transform 𝑋[𝑘] is defined as 𝑋[𝑘] = ℱ{𝑥[𝑛]}. Another sequence 𝑦[𝑛] is formed as below 𝑦[𝑛] = ℱ{ℱ{ℱ{ℱ{𝑥[𝑛]}}}} . For the sequence 𝑥[𝑛] = {1, 2, 1, 3}, the value of 𝑌[0] is _______. Page 44 of 46 Organizing Institute: IISc, Bengaluru Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 60,
@@ -1282,8 +1282,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.60 For the two port network shown below, the value of the Y21 parameter (in Siemens) is ______. I1 I2 1 2 + + 2 4 V1 - V2 8V1 + - - 1' 2'",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 61,
@@ -1351,7 +1351,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.63 A non-degenerate n-type semiconductor has 5 % neutral dopant atoms. Its Fermi level is located at 0.25 eV below the conduction band (𝐸𝐶) and the donor energy level (𝐸𝐷) has a degeneracy of 2. Assuming the thermal voltage to be 20 mV, the difference between 𝐸𝐶 and 𝐸𝐷 (in eV, rounded off to two decimal places) is _________.",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1374,7 +1374,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.64 An NMOS transistor operating in the linear region has 𝐼𝐷𝑆 of 5 μA at 𝑉𝐷𝑆 of 0.1 V. Keeping 𝑉𝐺𝑆 constant, the 𝑉𝐷𝑆 is increased to 1.5 V. 𝑊 Given that 𝜇𝑛𝐶𝑜𝑥 𝐿= 50 μA/V2, the transconductance at the new operating point (in μA/V, rounded off to two decimal places) is ______.",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1397,7 +1397,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.65 The photocurrent of a PN junction diode solar cell is 1 mA. The voltage corresponding to its maximum power point is 0.3 V. If the thermal voltage is 30 mV, the reverse saturation current of the diode (in nA, rounded off to two decimal places) is _____. Page 46 of 46 Organizing Institute: IISc, Bengaluru",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     }
   ]
