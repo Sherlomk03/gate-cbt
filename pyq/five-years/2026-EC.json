@@ -147,7 +147,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.11 – Q.35 Carry ONE mark Each Q.11 Consider the differential equation 𝑤⃗⃗ = 𝐴𝑤⃗⃗ , with 𝑤⃗⃗ (𝑡= 0) = [1 1]. If 𝑤⃗⃗ (𝑡) = 𝑒𝑡𝑢⃗𝑥+ 𝑒−2𝑡𝑢⃗𝑦 be the solution to the equation where 𝑢⃗𝑥 and 𝑢⃗𝑦 are unit vectors along the positive x and y axes respectively, then which of the following options is the correct matrix representing A? (A) [1 0 0 −2] (B) [−1 0 0 2] (C) [0 −2 ] 1 0 (D) 0 2 [ −1 0] OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1111 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -193,8 +193,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 27,
       "sourceExtract": "Q.13 The Laplace Transform of the signal 𝑥(𝑡) = 𝑢(𝑡−2) ∗(𝑡𝑢(𝑡)) is given by which of the following expressions? [“∗” represents convolution operator] (A) 𝑒−2𝑠 𝑠2(𝑠−2) (B) 𝑒−2(𝑠−2) 𝑠3 (C) 𝑠𝑒−2𝑠 (𝑠−2)2 (D) 𝑒−2𝑠 𝑠3 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1313 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 14,
@@ -216,7 +216,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.14 Consider carrier transport in a Zener diode in the breakdown region. Which is the dominant transport mechanism for current flow in this case? (A) Drift (B) Diffusion (C) Tunneling (D) Ballistic transport OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1414 ofof 5858 Electronics and Communication Engineering (EC) Two analog signals 𝑥1(𝑡) and 𝑥2(𝑡) (t in second), are sampled at a rate",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -286,8 +286,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 16,
       "sourceExtract": "Q.17 The ideal OP-AMP circuit shown in the Figure produces output voltage 𝑉𝑜= 𝑥 when the Switch, S, is open. Which of the options represents the output voltage when S is closed? S 2 kΩ 1 kΩ 1 kΩ - Vo + Vi = 1 V (A) 𝑥 (B) 2 𝑥 3 (C) 3 𝑥 4 (D) 1 𝑥 2 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1717 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 18,
@@ -309,7 +309,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.18 Consider the circuit shown in the Figure with 𝑉𝑖= 3 V and 𝑉𝐶𝐶= 12 V. Assume 𝑉𝐵𝐸= 0.7 V and 𝛽𝑑𝑐= 99 for the BJT. Which of the following options is the correct value of the current 𝑰𝒐? (A) 60 μA (B) 6 μA (C) 3 μA (D) 30 μA OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1818 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -449,8 +449,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "p g p Q.24 and homogenous medium is given by 𝐸⃗ (𝑧, 𝑡) = 𝐸0[𝑥̂𝑐𝑜𝑠(𝜔𝑡−𝑘𝑧) + 𝑦̂𝑠𝑖𝑛(𝜔𝑡−𝑘𝑧)] in a right-handed orthogonal co-ordinate system. Which of the following is the correct polarization of the electromagnetic wave? (A) Right-handed circularly polarized (B) Left-handed circularly polarized (C) Linearly polarized (D) Linearly polarized with −45o angle to 𝑥̂ OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2424 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 25,
@@ -564,7 +564,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.29 Figure shows the output characteristics of two different Bipolar Junction Transistors (BJT), BJT 1 with magnitude of Early voltage |VA1|, and BJT 2 with magnitude of Early voltage |VA2|. Which of the following options is/are correct regarding the Early voltages? BJT 1 IC BJT 2 IB = constant VCE (A) |VA1| > |VA2| (B) |VA1| is infinitely large (C) |VA1| < |VA2| (D) |VA2| is finite OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2929 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -610,7 +610,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.31 Consider the circuit shown in the Figure, where the input vi (t) is in Volt. The average power (in mW) dissipated in the load resistance of 1 kΩ at the resonant frequency is __. (rounded off to two decimal places) vi (t) 1 μF 2.2 mH 1 kΩ vi (t) = 12 sin(ωt) OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3030 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -633,8 +633,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.32 A wireless digital transmission scheme is using 16-QAM over an additive white Gaussian noise channel and a maximum-likelihood receiver. Consider the information bit rate from source to be 4 × 106 bits per second. The minimum transmission bandwidth (in MHz) of the modulated signal necessary for optimum recovery of information at the receiver is __. (rounded off to two decimal places)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 33,
@@ -656,8 +656,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.33 The cutoff frequency (in GHz) for the dominant TE10 mode of an air-filled rectangular waveguide of inner dimension 0.28 inch × 0.14 inch is __. (rounded off to two decimal places).",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 34,
@@ -703,8 +703,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.35 The negative edge triggered JK flip-flop in the Figure has J and K inputs tied to Logic High and a square wave of 10 cycles/second is applied to its clock (C) input. The frequency of the output Q (in cycles/second) is __. (rounded off to two decimal places) C K OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3232 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 36,
@@ -749,8 +749,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.37 The continuous time signal x(t) is real, periodic with period T and satisfies the Dirichlet conditions. 𝑇) and x(t) satisfies The Fourier series representation of 𝑥(𝑡) = ∑ ∞−∞ 𝑎𝑛𝑒𝑗(2𝜋𝑛𝑡 𝑇 the following: 𝑥(𝑡− 2) = −𝑥(𝑡). For any integer m, which of the following options is correct? (A) a2m = 0 (B) a2m = 1 (C) a2m = a2m+1 (D) a2m = -1 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3434 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 38,
@@ -772,7 +772,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.38 Let X, N, Y and Z be random variables. The variables X and N are independent of each other. X is uniformly distributed between -1 and 1; N follows Normal distribution with zero mean and unity variance. Y and Z are defined as, 𝑌= 𝑋+ 𝑁 and 𝑍= 𝑋2 + 𝑁. Which of the following pairs represents the values of correlation between X and Y and that between X and Z? (A) 1/3 and 0 (B) 1/3 and 1/9 (C) 1/3 and 1/3 (D) 1 and 0 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3535 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -910,8 +910,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.44 A QPSK modulated signal from an additive white Gaussian noise (AWGN) channel is received with an Eb/No = 8.4 dB at the input of a coherent QPSK demodulator. A maximum-likelihood reception method is used in the demodulator. Assume the complimentary error function 𝑒𝑟𝑓𝑐(𝑢) ≅ [1 ⁄ (𝑢√𝜋) ]𝑒𝑥𝑝(−𝑢2). Which is the nearest bit error rate (BER) at the output of the demodulator? (A) 10-3 (B) 10-4 (C) 10-5 (D) 10-6 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4141 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 45,
@@ -1002,8 +1002,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.48 A Boolean function, f(x,y,z) with x as MSB and z as LSB is realized by 4:1 multiplexer (MUX) with select lines, S1 and S0 ( S1 is MSB, S0 is LSB) and inputs, I0, I1, I2, I3 as shown in the Figure. Which of the following options is the correct expression of f(x,y,z)? 1 I0 0 I1 4:1 f(x,y,z) I2 MUX y I3 S1 S0 x z (A) 𝑥𝑧+ 𝑦 (B) 𝑥𝑦̅ + 𝑧 (C) 𝑥𝑦+ 𝑧̅ (D) 𝑥̅𝑦+ 𝑧̅ OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4545 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 49,
@@ -1025,8 +1025,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 27,
       "sourceExtract": "Q.49 A shift-left Shift Register (SR) and a D flip-flop are connected to a synchronized clock as shown in the Figure. Assume that the SR and D flip-flops are initially cleared and the XOR gate has no propagation delay. Which of the following options gives the correct binary representation (b7b6b5b4b3b2b1b0) of the content of the shift register immediately after the 5th clock transition (positive edge)? SR (Shift Left) b7 b6 b5 b4 b3 b2 b1 b0 D Q C 1 Clock pulse (A) 00011111 (B) 10111111 (C) 00111111 (D) 11000011 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4646 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 50,
@@ -1048,7 +1048,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.50 A small signal source, 𝑉𝑖(𝑡) = 𝐴cos(105𝑡) + 𝐵sin(107𝑡) is applied to a BJT circuit as shown in the Figure. Assume zero source resistance, VBE = 0.7 V, βdc = 99, Early voltage = 100 V and Thermal voltage = 25 mV. Effect of internal parasitic capacitances of the BJT may be neglected. Which expression is the best approximation of the output voltage 𝑉𝑜(𝑡)? (A) −9.1[𝐴cos(105𝑡) + 𝐵sin(107𝑡)] (B) 9.1[𝐴cos(105𝑡) −𝐵sin(107𝑡)] (C) −190.4[𝐴cos(105𝑡) + 𝐵sin(107𝑡)] (D) 190.4[𝐴cos(105𝑡) −𝐵sin(107𝑡)] OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4747 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1071,8 +1071,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.51 Consider the two-port network as shown in the Figure. Which of the following options provides the correct set of values of A, B, C and D parameters? 1 kΩ 1 kΩ P1 P2 1 kΩ (A) A = 1/2, B = 3×103 Ω, C = 10-3 Ω-1, D = 1/2 (B) A = 2, B = 3 Ω, C = 1 Ω-1, D = 2 (C) A = 2, B = 6×103 Ω, C = 2×10-3 Ω-1, D = 2 (D) A = 2, B = 3×103 Ω, C = 10-3 Ω-1, D = 2 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4848 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 52,
@@ -1118,8 +1118,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 16,
       "sourceExtract": "Q.53 A circuit using an ideal OP-AMP is shown in the Figure. Which of the following options gives the correct value of the current 𝐼𝑋? (A) 2.0 mA (B) 1.5 mA (C) 3.0 mA (D) 0 mA OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5050 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 54,
@@ -1141,7 +1141,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.54 Consider an LED based on a direct bandgap semiconductor material with energy bandgap 1.3 eV. Given: Plank’s constant, ℎ= 6.63 × 10−34 J s and speed of light in free space is 3 × 108 m s−1. In which of the following wavelength ranges the LED will NOT emit? (A) 1410 ± 20 nm (B) 1090 ± 20 nm (C) 950 ± 20 nm (D) 510 ± 20 nm OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5151 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1210,8 +1210,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.57 Consider a real, narrowband signal 𝑥(𝑡) = 𝐴(𝑡)cos[2𝜋𝑓𝑐𝑡+ 𝜃(𝑡)] where the maximum frequency components of A(t) and θ(t) are fM and fc (= 1000 fM), respectively. Which of the following statements is/are correct for −∞< 𝑡< ∞? (A) x(t) represents a PSK modulated signal for suitable choices of A(t) and θ(t). (B) x(t) represents an amplitude modulated signal for suitable choices of A(t) and θ(t). (C) x(t) represents a band-limited Gaussian noise process. (D) x(t) never represents a narrowband FM signal. OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5454 ofof 5858 Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "requires_visual_review",
-      "selectionEligible": false
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 58,
@@ -1351,7 +1351,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 2,
       "sourceExtract": "The average bit error rate at the input of a (7, 4, 1) Hamming decoder is 0.10.Q.63 The probability that the decoder will fail to decode a received word correctly is __. (rounded off to two decimal places) Consider that the concentration of electrons in a semiconductor bar varies linearly",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
@@ -1375,7 +1375,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Consider that the concentration of electrons in a semiconductor bar varies linearlyQ.64 from 2 × 1017cm−3 at x = 1 m to 1× 1016 cm−3 at x = 4 m along the x-direction. Assume that the concentration of electrons is not varying along other directions (that is along y- and z-directions). [Given: the mobility of electron is 1400 cm2V−1s−1, thermal voltage is 25 mV and electronic charge is 1.6× 10−19 Coulomb.] The density of electron diffusion current (in A/mm2) is __. (rounded off to two decimal places) Consider the ideal diodes D1 and D2 as shown in the Figure with cut in voltage",
-      "taxonomyReviewStatus": "requires_visual_review",
+      "taxonomyReviewStatus": "automatic_context_match",
       "selectionEligible": false
     },
     {
