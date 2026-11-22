@@ -93,7 +93,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ec_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EC_ANS_GATE2023.pdf",
       "pdfPage": 38,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Lossless transmission-line standing-wave ratio and impedance transformation",
+        "formula": "SWR = max(R/Z0,Z0/R); voltage-minimum spacing = λ/2.",
+        "steps": [
+          "SWR=2 with Z0=50 Ω. A purely resistive equivalent load can be Rm=100 Ω (Γ positive) or Rm=25 Ω (Γ negative).",
+          "Successive voltage minima are 30 cm apart; thus λ/2=30 cm and λ=60 cm.",
+          "For Rm=25 Ω, a voltage minimum occurs at the resistive termination. The next one is 30 cm along the line, so placing the actual load 20 cm away from that termination makes the nearest minimum 10 cm from the load: (Rm,lm)=(25 Ω,20 cm), option B.",
+          "For Rm=100 Ω, a voltage maximum occurs at the resistive termination and the first minimum is λ/4=15 cm from it. Placing the load 5 cm away makes that minimum 10 cm from the load: (Rm,lm)=(100 Ω,5 cm), option C.",
+          "Both B and C describe the same input reflection magnitude and observed minimum location."
+        ],
+        "examTip": "When a lossless-line input is described by a standing wave, resistance equivalents greater and less than Z0 can both occur with different line lengths.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2025-EE-Q51",
@@ -111,7 +125,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
       "pdfPage": 39,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Divergence of a radial field in spherical coordinates",
+        "formula": "div(F_R a_R)= (1/R²) d(R²F_R)/dR.",
+        "steps": [
+          "The question specifies F_R=1/R^n, so div F=(1/R²) d(R^(2−n))/dR.",
+          "Differentiate: div F=(2−n)R^(−n−1).",
+          "For n=−1, the exponent is zero; div F=3, independent of R, giving option B.",
+          "For n=2, the coefficient (2−n) vanishes; div F=0 for R>0, also independent of R, giving option D.",
+          "For n=1 and other listed values, a nonzero R-dependent term remains."
+        ],
+        "examTip": "Remember both ways a power-law divergence can become independent of radius: zero exponent or zero coefficient. The field is considered for R>0.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2024-EE-Q29",
@@ -129,7 +157,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
       "pdfPage": 26,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Uniform discrete distribution under one-to-one transformations",
+        "formula": "If X is uniform on a finite set, g(X) is uniform on its image when g is one-to-one there.",
+        "steps": [
+          "X takes each integer from −10 through 10 with probability 1/21.",
+          "X² gives equal output for x and −x; 0 has one preimage but positive squares have two, so A is not uniform.",
+          "X³ is strictly increasing, hence one-to-one: every output has probability 1/21. B is correct.",
+          "(X−5)² repeats values for inputs on both sides of 5 within the given range, so C is not uniform.",
+          "X+10 ranges over 0,...,20. Squaring nonnegative values is one-to-one, so (X+10)² is uniform over its 21 possible values. D is correct."
+        ],
+        "examTip": "Check uniqueness of transformed outcomes; an equal-probability input does not guarantee an equal-probability output.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2024-EC-Q11",
@@ -147,7 +189,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EC24S7.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/ECFinalAnswerKey.pdf",
       "pdfPage": 10,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Repeated characteristic roots of a differential equation",
+        "formula": "A repeated root r=−2 yields homogeneous solution (At+B)e^(−2t).",
+        "steps": [
+          "The complementary function y_c=(At+B)e^(−2t) implies that the characteristic root −2 has multiplicity two.",
+          "Therefore the characteristic polynomial is (r+2)²=r²+4r+4.",
+          "Replace r by the derivative operator D: (D²+4D+4)y=f(t).",
+          "That is y''+4y'+4y=f(t), corresponding to option A."
+        ],
+        "examTip": "A multiplicity-two root r creates the pair e^(rt) and t e^(rt).",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2023-EE-Q35",
@@ -165,7 +220,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 26,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Least-squares straight-line slope",
+        "formula": "m=Σ(x_i−x̄)(y_i−ȳ)/Σ(x_i−x̄)².",
+        "steps": [
+          "The data are (−1,0.8),(0,2.2),(1,2.8); mean x̄=0.",
+          "Since x̄=0, the numerator is Σx_i y_i=(−1)(0.8)+0(2.2)+(1)(2.8)=2.0.",
+          "The denominator is Σx_i²=1+0+1=2.",
+          "Hence the least-squares slope is m=2/2=1.00, within the official 0.9–1.1 acceptance range."
+        ],
+        "examTip": "When x values are symmetric about zero, the slope simplifies to Σxy/Σx².",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2024-EE-Q11",
@@ -183,7 +251,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
       "pdfPage": 10,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Invertibility of square matrices",
+        "formula": "An n×n matrix has an inverse iff det(A)≠0.",
+        "steps": [
+          "In option A, the last row is half the first; the determinant vanishes.",
+          "In option B, the second row is twice the first; the determinant vanishes.",
+          "In option D, the last row is three times the first; the determinant vanishes.",
+          "Option C has rows [1,4,8], [0,4,2], [1,2,4]. Its determinant is 1(16−4)−4(0−2)+8(0−4)=12+8−32=−12.",
+          "Only option C has nonzero determinant and an inverse."
+        ],
+        "examTip": "Search for proportional rows first; calculate a determinant only for the remaining candidate.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2023-EE-Q42",
@@ -201,7 +283,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 33,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Area enclosed by Lp-unit curves",
+        "formula": "|x₁|^p+|x₂|^p=1.",
+        "steps": [
+          "For p=2 the equation is x₁²+x₂²=1, a unit circle of area π, so A is true.",
+          "As p tends to infinity, the curve approaches the square max(|x₁|,|x₂|)=1 with side length 2 and area 4, so B is true.",
+          "For p=1, |x₁|+|x₂|=1 is a diamond with diagonals length 2 each, giving area (2×2)/2=2, so D is true.",
+          "As p tends to 0 from above, the shape contracts toward the axes with limiting enclosed area 0, not 1. C is false.",
+          "Thus options A, B and D are correct."
+        ],
+        "examTip": "Visualize p=1 as a diamond, p=2 as a circle, and p→∞ as a square.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2026-EE-Q58",
@@ -219,7 +315,22 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EE.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EE_Keys.pdf",
       "pdfPage": 53,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Economic dispatch including transmission losses; official marks-to-all",
+        "formula": "C₁'=λ; C₂'=λ(1−∂P_loss/∂P_G2).",
+        "steps": [
+          "The official key marks this question MTA (marks to all), so it must not be graded against a unique numerical answer.",
+          "From C₁=1000+50P₁+0.01P₁², marginal cost C₁'=50+0.02P₁. With the supplied λ=70.25, P₁=(70.25−50)/0.02=1012.5 MW.",
+          "P_loss=0.001(P₂−50)², so ∂P_loss/∂P₂=0.002(P₂−50). The optimality condition is 50+0.002P₂=70.25[1−0.002(P₂−50)].",
+          "Rearrange: 0.1425P₂=27.275, yielding P₂≈191.40 MW.",
+          "The corresponding illustrative loss is 0.001(191.40−50)²≈20.0 MW. The approximate generation balance is 1012.5+191.4−20.0≈1183.9 MW, consistent with 1184 MW to rounding.",
+          "This is a derivation using the provided approximate λ; MTA remains the authoritative scoring status, not 20.0 as an official keyed NAT value."
+        ],
+        "examTip": "When marginal transmission loss depends on a generator, use its loss penalty factor in equal-incremental-cost dispatch.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2026-EC-Q61",
@@ -255,7 +366,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ee_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ee_2022.pdf",
       "pdfPage": 18,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Quality factor of a series resonant circuit",
+        "formula": "1/Q_total=1/Q_L+1/Q_C.",
+        "steps": [
+          "For series-resonant lossy elements, quality factors combine through their reciprocal sum.",
+          "Given Q_L=60 and Q_C=240, 1/Q_total=1/60+1/240=4/240+1/240=5/240.",
+          "Thus Q_total=240/5=48.",
+          "The required nearest integer is 48, matching the official key."
+        ],
+        "examTip": "Do not add Q-factors directly; add loss contributions, which gives the reciprocal relation.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2022-EE-Q31",
@@ -345,7 +469,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EE.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EE_Keys.pdf",
       "pdfPage": 38,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Average real power of sinusoidal voltage and current",
+        "formula": "p(t)=V_m I_m sin(ωt)sin(ωt−θ)=(V_m I_m/2)[cos θ−cos(2ωt−θ)].",
+        "steps": [
+          "Write the instantaneous power as the product of voltage and current.",
+          "Use sin A sin B = ½[cos(A−B)−cos(A+B)].",
+          "Therefore p(t)=(V_m I_m/2)[cos θ−cos(2ωt−θ)].",
+          "The second term has period π/ω and integrates to zero over a half-cycle of the original wave (duration π/ω).",
+          "Hence the half-cycle average power is V_m I_m cos θ/2, option C."
+        ],
+        "examTip": "Average active power is V_rms I_rms cos θ, even when averaging over an exact half-period.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2023-EE-Q52",
@@ -590,7 +728,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
       "pdfPage": 43,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Inverse Fourier transform of an ideal low-pass filter",
+        "formula": "h(t)=(1/2π)∫H(jω)e^(jωt)dω.",
+        "steps": [
+          "The frequency response is H(jω)=1 for |ω|≤200π and 0 elsewhere.",
+          "At t=0, the exponential factor in the inverse transform is e^0=1.",
+          "Thus h(0)=(1/2π)∫_(−200π)^(200π)1 dω=(1/2π)(400π).",
+          "Consequently h(0)=200, matching the official numeric answer."
+        ],
+        "examTip": "For rectangular frequency responses, h(0) is simply the signed area under H(jω), divided by 2π.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2026-EC-Q15",
@@ -608,7 +759,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EC.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EC_Keys.pdf",
       "pdfPage": 15,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Sampling aliasing of two cosine frequencies",
+        "formula": "x[n]=cos(2π f n/F_s). Frequencies differing by kF_s produce identical samples for integer n.",
+        "steps": [
+          "The sampling frequency is F_s=40 Hz, so sample instants are t=n/40.",
+          "For x₁(t)=cos(20πt), x₁[n]=cos(20πn/40)=cos(πn/2).",
+          "For x₂(t)=cos(100πt), x₂[n]=cos(100πn/40)=cos(5πn/2).",
+          "Since 5πn/2=πn/2+2πn and cos(φ+2πn)=cos φ for integer n, x₂[n]=x₁[n] for every n.",
+          "Therefore, in particular, the fourth through seventh samples are all equal. Option D is the true statement."
+        ],
+        "examTip": "Compare discrete-time angular frequencies modulo 2π, not continuous-time frequencies directly.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2023-EE-Q19",
@@ -626,7 +791,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 15,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Z-transform regions of convergence and DTFT existence",
+        "formula": "A DTFT exists (in the conventional sense) when the unit circle |z|=1 lies in the ROC.",
+        "steps": [
+          "The rational Z-transform has poles at 1/5, 2/3 and 3 as displayed in the original question.",
+          "The annular ROC 2/3<|z|<3 excludes all poles and contains the unit circle |z|=1.",
+          "Therefore the DTFT X(e^(jω)) is obtained by substituting z=e^(jω) only for this annular ROC.",
+          "The right-sided ROC outside the outer pole |z|>3 excludes the unit circle; the left-sided ROC inside the smallest pole also excludes it.",
+          "Option B is correct."
+        ],
+        "examTip": "Mark the pole radii and test whether radius 1 lies strictly inside the proposed ROC.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2023-EC-Q27",
@@ -644,7 +823,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ec_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EC_ANS_GATE2023.pdf",
       "pdfPage": 19,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Energy of a band-limited signal after cosine modulation",
+        "formula": "M_mod(ω)=½[M(ω−ω₀)+M(ω+ω₀)].",
+        "steps": [
+          "Multiplying m(t) by cos(ω₀t) creates two frequency-shifted copies of M(ω), each with factor 1/2.",
+          "Because ω₀=10B and the original signal is strictly limited to bandwidth B, the shifted spectra do not overlap.",
+          "Parseval's relation then gives total energy (1/4)E+(1/4)E=E/2.",
+          "Thus option B is correct."
+        ],
+        "examTip": "For non-overlapping spectral shifts, sum the energies of the separate copies; a 1/2 amplitude produces 1/4 energy.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2023-EC-Q26",
@@ -662,7 +854,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ec_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EC_ANS_GATE2023.pdf",
       "pdfPage": 18,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Causality and time invariance of time-warped systems",
+        "formula": "y(t)=x(e^t).",
+        "steps": [
+          "To test causality, consider output at t=0: y(0)=x(e^0)=x(1), which requires input at future time 1. The system is non-causal.",
+          "For a delayed input x(t−t₀), the system output becomes x(e^t−t₀).",
+          "But delaying the original output gives y(t−t₀)=x(e^(t−t₀)).",
+          "These expressions are generally unequal, so the system is time varying.",
+          "Therefore option B, non-causal and time varying, is correct."
+        ],
+        "examTip": "A simple counterexample at t=0 often establishes non-causality without lengthy casework.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2024-EE-Q53",
@@ -680,7 +886,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
       "pdfPage": 40,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Energy scaling in continuous-time signals",
+        "formula": "E[a x(bt−t₀)] = |a|² E[x]/|b|.",
+        "steps": [
+          "For y(t)=2x(2t−1), E_y=∫|2x(2t−1)|²dt=4∫|x(2t−1)|²dt.",
+          "Substitute u=2t−1, so dt=du/2.",
+          "Then E_y=4×(1/2)∫|x(u)|²du=2E.",
+          "Therefore c=2.0, as in the official key."
+        ],
+        "examTip": "Time shifts do not change signal energy; amplitude and time scaling do.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2023-EC-Q24",
@@ -698,7 +917,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ec_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EC_ANS_GATE2023.pdf",
       "pdfPage": 17,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Pipeline registers, throughput and latency",
+        "formula": "T_clk=1/f_clk.",
+        "steps": [
+          "The circuit contains three clocked D flip-flops connected in series.",
+          "Clock frequency 1 GHz implies one clock period T=1 ns.",
+          "Once the pipeline is full, one output bit is produced each cycle: throughput 1 bit/ns = 10^9 bits/s = 1000 Mbits/s.",
+          "A new bit passes through three sequential registers, requiring three clock cycles, or 3 ns, before emerging.",
+          "The pair is (1000 Mbits/s,3 ns), option A."
+        ],
+        "examTip": "Pipeline depth affects latency but not steady-state throughput when all stages can accept one item per clock.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2022-EC-Q43",
@@ -734,7 +967,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
       "pdfPage": 24,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Truth table and 4:1 multiplexer realization",
+        "formula": "F=XȲ+X̄=X̄+Ȳ, by absorption.",
+        "steps": [
+          "Simplify F=XȲ+X̄: apply X̄+XA=X̄+A with A=Ȳ to get F=X̄+Ȳ.",
+          "With S1=X (MSB) and S0=Y (LSB), evaluate for (X,Y)=00,01,10,11.",
+          "The output values are respectively 1,1,1,0.",
+          "Therefore the MUX data inputs (P,Q,R,S) must be (1,1,1,0), i.e. 1110, option B."
+        ],
+        "examTip": "For a 4:1 MUX with both variables on select lines, write the truth-table output in binary input order 00,01,10,11.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2026-EC-Q48",
@@ -752,7 +998,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EC.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EC_Keys.pdf",
       "pdfPage": 45,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "4:1 MUX Boolean-expression derivation",
+        "formula": "f=I0 x̄z̄+I1 x̄z+I2 xz̄+I3 xz.",
+        "steps": [
+          "The select inputs are S1=x and S0=z.",
+          "From the diagram, the four data inputs I0,I1,I2,I3 are 1,0,1,y respectively.",
+          "Substitute into the MUX expansion: f=x̄z̄+0+xz̄+xyz.",
+          "Factor z̄(x̄+x)+xyz=z̄+xyz.",
+          "By absorption, z̄+xyz=z̄+xy, giving option C."
+        ],
+        "examTip": "Read the selector order carefully: MSB S1 determines the 2's bit of the input index.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2025-EC-Q41",
@@ -770,7 +1030,22 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EC2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EC_Keys.pdf",
       "pdfPage": 36,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Maximum-likelihood detection of three equally likely symbols",
+        "formula": "P_e=(1/3)[P(N>1)+P(|N|>1)+P(N<−1)].",
+        "steps": [
+          "The equally likely signal symbols are −2,0,+2, and additive noise is symmetric zero-mean Gaussian.",
+          "ML decoding uses nearest-neighbor decision boundaries halfway between symbols, at −1 and +1.",
+          "If S=−2, error occurs only if N>1, with probability p=P(N>1).",
+          "If S=0, error occurs if N<−1 or N>1, so error probability is 2p.",
+          "If S=+2, error occurs only if N<−1, again probability p by symmetry.",
+          "Average over the three equiprobable symbols: P_e=(p+2p+p)/3=(4/3)p. Thus α=4/3, option D."
+        ],
+        "examTip": "For equally likely symbols in symmetric Gaussian noise, decision thresholds are midpoints; average conditional error probabilities.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2026-EC-Q56",
@@ -788,7 +1063,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EC.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EC_Keys.pdf",
       "pdfPage": 53,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Four-variable Karnaugh-map minimization and equivalent SOP forms",
+        "formula": "f(w,x,y,z)=Σm(0,2,5,7,8,10,13,14,15).",
+        "steps": [
+          "Group minterms {0,2,8,10}: x=0,z=0 while w and y vary, giving x̄z̄.",
+          "Group minterms {5,7,13,15}: x=1,z=1 while w and y vary, giving xz.",
+          "The remaining minterm 14 can be grouped with 15, giving wxy; hence f=x̄z̄+xz+wxy (option A).",
+          "Alternatively group 14 with 10, giving wyz̄; hence f=x̄z̄+xz+wyz̄ (option D).",
+          "Other offered expressions do not cover the entire specified minterm set without omission or addition. Both A and D are valid."
+        ],
+        "examTip": "MSQ K-map questions can have multiple distinct valid minimal or nonminimal SOP representations.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     },
     {
       "id": "2023-EE-Q56",
@@ -860,7 +1149,22 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EC24S7.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/ECFinalAnswerKey.pdf",
       "pdfPage": 44,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Quantization signal-to-noise ratio with random amplitude",
+        "formula": "SQNR=10log10(P_signal/(Δ²/12)).",
+        "steps": [
+          "X(t)=A cos(2πf₀t+θ), with A uniform on [−2,2] and θ uniform on [0,2π].",
+          "The mean-square signal power is E[A²]E[cos²θ]=(4/3)×(1/2)=2/3, consistent with R_X(0)=2/3.",
+          "For an 8-bit uniform mid-rise quantizer spanning −2 through +2, Δ=4/256=1/64.",
+          "For the standard uniform quantization-noise model, noise variance is Δ²/12=1/(4096×12)=1/49152.",
+          "Thus SQNR=(2/3)×49152=32768 and 10log10(32768)=45.1545... dB.",
+          "To two decimals the result is 45.15 dB, within the official 45.00–45.30 acceptance range."
+        ],
+        "examTip": "Signal power must come from E[A²], not (E[A])²; using mean amplitude would incorrectly give zero.",
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+      }
     }
   ]
 }
