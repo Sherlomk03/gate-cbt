@@ -889,7 +889,15 @@
           "Numerically, A ≈ 0.09245, which rounds to 0.092 to three decimal places."
         ],
         "examTip": "For steady-state sinusoidal response, the output amplitude equals input amplitude times |H(jω)|.",
-        "reference": "Derived from the exact user-supplied ACE question stem; not an official GATE worked solution."
+        "reference": "Derived from the exact user-supplied ACE question stem; not an official GATE worked solution.",
+        "mathFormula": "\\[A=|H(j\\omega)|\\,A_{\\mathrm{in}}\\]",
+        "mathSteps": [
+          "The sinusoidal input is \\(x(t)=\\cos(3t)\\). Thus \\(\\omega=3\\,\\mathrm{rad/s}\\) and \\(A_{\\mathrm{in}}=1\\).",
+          "Substitute \\(s=j3\\) into the transfer function: \\[H(j3)=\\frac{1}{j3(j3+2)}.\\]",
+          "Calculate the magnitude: \\[|H(j3)|=\\frac{1}{|j3|\\,|2+j3|}=\\frac{1}{3\\sqrt{2^2+3^2}}=\\frac{1}{3\\sqrt{13}}.\\]",
+          "Since the input amplitude is \\(1\\), the output amplitude is \\[\\boxed{A=\\frac{1}{3\\sqrt{13}}\\approx0.09245\\approx0.092}.\\]",
+          "This is an **ACE classroom problem**, not an official GATE previous-year question."
+        ]
       }
     },
     {
@@ -931,7 +939,15 @@
           "Thus h[n]={1,−1,1,−1}, which is option C."
         ],
         "examTip": "Use z-transform polynomial division or the recurrence y[n]=h[n]+h[n−1].",
-        "reference": "Derived from the exact user-supplied ACE question stem; not an official GATE worked solution."
+        "reference": "Derived from the exact user-supplied ACE question stem; not an official GATE worked solution.",
+        "mathFormula": "\\[Y(z)=X(z)H(z),\\qquad H(z)=\\frac{Y(z)}{X(z)}\\]",
+        "mathSteps": [
+          "Given \\(x[n]=\\{1,1\\}\\), with the first sample at \\(n=0\\): \\[X(z)=1+z^{-1}.\\]",
+          "The output \\(y[n]=\\{1,0,0,0,-1\\}\\) has transform \\[Y(z)=1-z^{-4}.\\]",
+          "Find the system response: \\[H(z)=\\frac{1-z^{-4}}{1+z^{-1}}.\\]",
+          "Factor and cancel: \\[\\begin{aligned}1-z^{-4}&=(1-z^{-1})(1+z^{-1})(1+z^{-2}),\\\\H(z)&=(1-z^{-1})(1+z^{-2})\\\\&=1-z^{-1}+z^{-2}-z^{-3}.\\end{aligned}\\]",
+          "Read off the impulse response: \\[\\boxed{h[n]=\\{1,-1,1,-1\\}}\\] **Option C.**"
+        ]
       }
     },
     {
@@ -972,7 +988,14 @@
           "For zero initial voltage, v_C(t)=6u(t)/C, corresponding to option D."
         ],
         "examTip": "An impulse of charge Q produces a capacitor voltage jump ΔV=Q/C.",
-        "reference": "Derived from the exact user-supplied ACE question stem; not an official GATE worked solution."
+        "reference": "Derived from the exact user-supplied ACE question stem; not an official GATE worked solution.",
+        "mathFormula": "\\[i_C(t)=C\\frac{dv_C(t)}{dt}\\]",
+        "mathSteps": [
+          "The supplied current impulse is \\(i_C(t)=6\\delta(t)\\).",
+          "Use the capacitor relation: \\[\\frac{dv_C(t)}{dt}=\\frac6C\\,\\delta(t).\\]",
+          "Integrate across the impulse, using \\(\\displaystyle\\int_{-\\infty}^{t}\\delta(\\tau)\\,d\\tau=u(t)\\): \\[v_C(t)=v_C(0^-)+\\frac6C u(t).\\]",
+          "For zero initial voltage, \\[\\boxed{v_C(t)=\\frac6C u(t)}.\\] **Option D.**"
+        ]
       }
     },
     {
@@ -1008,7 +1031,15 @@
           "The Nyquist sampling rate is 2×5=10 Hz."
         ],
         "examTip": "Convert angular frequency ω to hertz using f=ω/(2π); amplitude coefficients do not affect the sampling rate.",
-        "reference": "Derived from the exact user-supplied ACE question stem; not an official GATE worked solution."
+        "reference": "Derived from the exact user-supplied ACE question stem; not an official GATE worked solution.",
+        "mathFormula": "\\[f_s^{\\min}=2f_{\\max}\\quad\\text{(Nyquist rate)}\\]",
+        "mathSteps": [
+          "Use \\(f=\\omega/(2\\pi)\\) to convert each angular frequency to hertz.",
+          "For \\(\\sin(6\\pi t)\\): \\(\\displaystyle f_1=\\frac{6\\pi}{2\\pi}=3\\,\\mathrm{Hz}\\).",
+          "For \\(\\sin(8\\pi t)\\): \\(\\displaystyle f_2=\\frac{8\\pi}{2\\pi}=4\\,\\mathrm{Hz}\\).",
+          "For \\(\\sin(10\\pi t)\\): \\(\\displaystyle f_3=\\frac{10\\pi}{2\\pi}=5\\,\\mathrm{Hz}\\).",
+          "The highest frequency is \\(f_{\\max}=5\\,\\mathrm{Hz}\\), hence \\[\\boxed{f_s^{\\min}=2(5)=10\\,\\mathrm{Hz}}.\\]"
+        ]
       }
     },
     {
@@ -1039,7 +1070,14 @@
           "Consequently h(0)=200, matching the official numeric answer."
         ],
         "examTip": "For rectangular frequency responses, h(0) is simply the signed area under H(jω), divided by 2π.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[h(t)=\\frac1{2\\pi}\\int_{-\\infty}^{\\infty}H(j\\omega)e^{j\\omega t}\\,d\\omega\\]",
+        "mathSteps": [
+          "The ideal low-pass filter has \\(H(j\\omega)=1\\) for \\(|\\omega|\\le200\\pi\\), and \\(0\\) elsewhere.",
+          "At \\(t=0\\), the exponential factor is \\(e^{j\\omega\\cdot0}=1\\).",
+          "Thus \\[h(0)=\\frac1{2\\pi}\\int_{-200\\pi}^{200\\pi}1\\,d\\omega.\\]",
+          "Evaluate the interval length: \\[h(0)=\\frac1{2\\pi}(200\\pi-(-200\\pi))=\\frac{400\\pi}{2\\pi}=\\boxed{200}.\\]"
+        ]
       }
     },
     {
@@ -1071,7 +1109,15 @@
           "Therefore, in particular, the fourth through seventh samples are all equal. Option D is the true statement."
         ],
         "examTip": "Compare discrete-time angular frequencies modulo 2π, not continuous-time frequencies directly.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[x[n]=x\\!\\left(\\frac n{F_s}\\right)=\\cos\\!\\left(\\frac{2\\pi fn}{F_s}\\right)\\]",
+        "mathSteps": [
+          "The sample rate is \\(F_s=40\\,\\mathrm{Hz}\\), giving sample instants \\(t=n/40\\).",
+          "For the first signal: \\[x_1[n]=\\cos\\!\\left(\\frac{20\\pi n}{40}\\right)=\\cos\\!\\left(\\frac{\\pi n}{2}\\right).\\]",
+          "For the second signal: \\[x_2[n]=\\cos\\!\\left(\\frac{100\\pi n}{40}\\right)=\\cos\\!\\left(\\frac{5\\pi n}{2}\\right).\\]",
+          "Observe that \\(\\frac{5\\pi n}{2}=\\frac{\\pi n}{2}+2\\pi n\\). Cosine is \\(2\\pi\\)-periodic, so \\[x_2[n]=\\cos\\!\\left(\\frac{\\pi n}{2}+2\\pi n\\right)=x_1[n]\\quad\\text{for all integer }n.\\]",
+          "In particular, samples 4 through 7 are equal. **Correct option D.**"
+        ]
       }
     },
     {
@@ -1103,7 +1149,15 @@
           "Option B is correct."
         ],
         "examTip": "Mark the pole radii and test whether radius 1 lies strictly inside the proposed ROC.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[\\text{DTFT exists if the ROC of }X(z)\\text{ contains }|z|=1.\\]",
+        "mathSteps": [
+          "The \\(Z\\)-transform has pole magnitudes \\(1/5,\\ 2/3,\\ 3\\). Mark them on the \\(z\\)-plane.",
+          "For the proposed annulus \\(\\displaystyle \\frac23<|z|<3\\), the unit circle satisfies \\[\\frac23<1<3.\\] Thus the unit circle lies **inside** this region of convergence.",
+          "The discrete-time Fourier transform is \\(X(e^{j\\omega})\\), obtainable by setting \\(z=e^{j\\omega}\\) when the unit circle lies in the ROC.",
+          "The right-sided ROC \\(|z|>3\\) excludes the unit circle; the left-sided ROC inside the innermost pole also excludes it.",
+          "Therefore the **correct option is B**, with \\(\\displaystyle\\frac23<|z|<3\\)."
+        ]
       }
     },
     {
@@ -1134,7 +1188,14 @@
           "Thus option B is correct."
         ],
         "examTip": "For non-overlapping spectral shifts, sum the energies of the separate copies; a 1/2 amplitude produces 1/4 energy.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[m(t)\\cos(\\omega_0 t)\\ \\xleftrightarrow{\\ \\mathcal F\\ }\\ \\frac12[M(\\omega-\\omega_0)+M(\\omega+\\omega_0)]\\]",
+        "mathSteps": [
+          "Multiplying by \\(\\cos(\\omega_0 t)\\) shifts the original spectrum to \\(\\omega=\\pm\\omega_0\\), with **amplitude factor \\(1/2\\)** for each copy.",
+          "Because \\(\\omega_0=10B\\) and the signal bandwidth is \\(B\\), the two shifted spectra do not overlap.",
+          "By Parseval's relation, each shifted copy has energy \\((1/2)^2E=E/4\\).",
+          "Add energies of these disjoint copies: \\[E_{\\mathrm{out}}=\\frac E4+\\frac E4=\\boxed{\\frac E2}.\\] **Option B.**"
+        ]
       }
     },
     {
@@ -1166,7 +1227,15 @@
           "Therefore option B, non-causal and time varying, is correct."
         ],
         "examTip": "A simple counterexample at t=0 often establishes non-causality without lengthy casework.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[y(t)=x(e^t)\\]",
+        "mathSteps": [
+          "**Causality test:** At \\(t=0\\), \\[y(0)=x(e^0)=x(1).\\] Output at time \\(0\\) needs input at future time \\(1\\), so the system is **non-causal**.",
+          "**Time-shift test:** Delay the input by \\(t_0\\): \\(x_1(t)=x(t-t_0)\\). Its system output is \\[T\\{x_1\\}(t)=x(e^t-t_0).\\]",
+          "But delaying the original output gives \\[y(t-t_0)=x(e^{t-t_0}).\\]",
+          "In general \\(x(e^t-t_0)\\ne x(e^{t-t_0})\\). Thus the system is **time-varying**.",
+          "**Correct option B: non-causal and time-varying.**"
+        ]
       }
     },
     {
@@ -1197,7 +1266,14 @@
           "Therefore c=2.0, as in the official key."
         ],
         "examTip": "Time shifts do not change signal energy; amplitude and time scaling do.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[E\\{a\\,x(bt-t_0)\\}=\\frac{|a|^2}{|b|}\\,E\\{x(t)\\}\\]",
+        "mathSteps": [
+          "The output is \\(y(t)=2x(2t-1)\\). Its energy is \\[E_y=\\int_{-\\infty}^{\\infty}|2x(2t-1)|^2dt=4\\int_{-\\infty}^{\\infty}|x(2t-1)|^2dt.\\]",
+          "Substitute \\(u=2t-1\\), so \\(\\displaystyle dt=\\frac{du}{2}\\).",
+          "Then \\[E_y=4\\cdot\\frac12\\int_{-\\infty}^{\\infty}|x(u)|^2du=2E.\\]",
+          "Since \\(E_y=cE\\), \\(\\boxed{c=2.0}\\)."
+        ]
       }
     },
     {
