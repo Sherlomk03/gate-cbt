@@ -45,20 +45,81 @@ a{color:#245cb4}.row{display:flex;justify-content:space-between;gap:12px;align-i
 .snapTrack>span{display:block;background:#4373d8;height:100%;border-radius:99px}
 .snapFlag{background:#fef5e5;border:1px solid #f0dfbd;border-radius:8px;padding:12px;font-size:13px;color:#74582c}
 @media(max-width:900px){.snapContent{grid-template-columns:1fr}}@media(max-width:680px){.snapGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.snapHero{padding:15px}.snapSubject{grid-template-columns:116px 1fr 50px}}
-</style></head><body>
-<header><div><h1>GATE 2027 · Cumulative Performance</h1><div class="small" style="color:#bfd0ea">EE / EC authentic-source technical CBT · AIR under 100 preparation</div></div><nav><a href="./daily-pyq.html">Daily CBT</a><a href="./pyq-library.html">PYQ library</a><a href="./index.html">Dashboard</a></nav></header>
-<main>
-<div class="note"><b>How tracking works:</b> Every submitted daily technical CBT in <b>this browser</b> is included automatically. A refresh or return to this tab recalculates your overall subject-wise marks, strong topics and weak topics. Unsubmitted attempts are not counted. The separate General Aptitude test and imported ChatGPT-created papers are presented separately from authenticated website-paper scores.</div>
-<div class="actions"><button class="primary" id="refresh">Refresh cumulative results</button><button id="export">Export my performance (JSON)</button><span id="status" class="small" role="status">Reading your saved submissions…</span></div>
-<div class="actions"><label class="btn" for="chatFile" role="button" tabindex="0">Import previous ChatGPT test data (JSON)</label><input id="chatFile" type="file" accept=".json,application/json" hidden><button id="clearChat">Remove imported history from this browser</button><span id="chatImportStatus" class="small" role="status"></span></div>
+
+/* Compact default experience: detailed reports remain available only on demand. */
+body{background:#f7f9fc;color:#20314b}
+.simple-header{padding:20px max(18px,calc((100% - 1030px)/2));background:#162c4b}
+.simple-header h1{font-size:24px;letter-spacing:-.025em}
+.simple-main{max-width:1060px;margin:24px auto;padding:0 16px}
+.simple-main .card{box-shadow:none;border:1px solid #e4e9f2;padding:22px}
+.simple-main h2{font-size:19px}
+#snapshot{border:0;background:transparent;padding:0;margin:0 0 14px}
+.top-progress{background:#fff;border:1px solid #e3e8f0;border-radius:14px;padding:24px;margin-bottom:14px}
+.top-progress h2{font-size:23px;margin:0 0 5px}
+.top-progress .intro{color:#687991;font-size:13px;margin:0}
+.simple-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:19px 0 9px}
+.simple-metric{border:1px solid #e6eaf3;background:#f8faff;border-radius:10px;padding:13px}
+.simple-metric strong{font-size:25px;font-weight:800;display:block;line-height:1.28;white-space:nowrap}
+.simple-metric span{color:#61718b;font-size:12px;display:block;margin-top:3px}
+.one-line-trend{display:flex;align-items:center;gap:8px;margin-top:14px;font-size:13px;color:#60728b}
+.one-line-trend svg{width:140px;max-width:45%;height:44px}
+.quick-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,0.85fr);gap:14px}
+.quick-grid .card{margin:0;padding:20px}
+.quick-grid p.small{margin-top:3px}
+.subject-line{display:grid;grid-template-columns:minmax(0,145px) 1fr 48px;align-items:center;gap:10px;font-size:13px;margin:13px 0}
+.subject-line .subject-label{font-weight:650;overflow-wrap:anywhere}
+.subject-track{height:9px;border-radius:99px;background:#e8eef6;overflow:hidden}
+.subject-track>span{display:block;height:100%;border-radius:99px;background:#4776c6}
+.subject-value{text-align:right;font-variant-numeric:tabular-nums;font-weight:650}
+.focus-item{display:flex;gap:10px;align-items:start;padding:13px 0;border-bottom:1px solid #eef1f6}
+.focus-item:last-child{border-bottom:0}
+.focus-no{flex:none;width:26px;height:26px;border-radius:50%;background:#edf2fa;display:grid;place-items:center;font-size:12px;font-weight:700;color:#53709d}
+.focus-item b{display:block;font-size:14px;font-weight:680}
+.focus-item small{color:#6b798d;font-size:12px}
+.focus-note{font-size:12px;color:#687991}
+.extra{border:1px solid #e3e8f0;background:#fff;border-radius:11px;margin:13px 0;overflow:hidden}
+.extra>summary{list-style:none;padding:16px 20px;cursor:pointer;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.extra>summary::-webkit-details-marker{display:none}
+.extra>summary::after{content:'+';font-size:20px;font-weight:500;color:#77859a}
+.extra[open]>summary::after{content:'−'}
+.extra-inner{padding:0 16px 14px}
+.extra-sub{border-top:1px solid #edf1f7;padding:12px 0}
+.extra-sub>summary{cursor:pointer;font-weight:650;padding:6px}
+.extra-sub .card{background:#fbfcfe;margin:12px 0}
+.footerline{color:#8090a2;font-size:12px;text-align:center;margin:20px 0 32px}
+#notice>.note{margin:0 0 13px}
+#snapshot .soft-button{padding:0;border:none;color:#2059ae;font-size:13px;background:none;font-weight:650}
+@media(max-width:740px){.quick-grid{grid-template-columns:1fr}.simple-metrics{gap:7px}.simple-metric{padding:10px}.simple-metric strong{font-size:21px}.top-progress{padding:17px}.simple-header nav a{margin:0 12px 0 0}}
+@media(max-width:430px){.simple-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.simple-metric strong{font-size:17px}.simple-metric span{font-size:11px}.subject-line{grid-template-columns:minmax(0,117px) 1fr 45px;gap:7px}}
+@media print{.extra{display:none!important}.quick-grid{grid-template-columns:1fr 1fr}}
+</style></head>
+<body>
+<header class="simple-header"><div><h1>GATE Progress</h1><div class="small" style="color:#c8d8f1">A clear view of what to improve next</div></div><nav><a href="./daily-pyq.html">Daily practice</a><a href="./index.html">Home</a></nav></header>
+<main class="simple-main">
 <div id="notice"></div>
-<section id="snapshot" class="card"><h2>My progress snapshot</h2><p class="small">Your private submitted CBT scores and imported history appear here.</p></section>
-<section id="chatHistory" class="card"><h2>Historical ChatGPT test attempts</h2><div class="empty">Import your historical test data file to add past results without publishing personal scores.</div></section>
-<section id="summary" class="card"><h2>Overall performance</h2><p class="small">Loading records…</p></section>
-<section id="bySection" class="card"><h2>Subject-wise marks by CBT paper section</h2><p class="small">These totals use the subject section shown when each question was attempted; they are not affected by later topic-label corrections.</p><div id="sectionTable"></div></section>
-<section id="mastery" class="card"><h2>Strong and weak topics within each subject</h2><p class="small">Topic mastery uses content-corrected subjects for four identified classification errors. Other subject/topic tags remain partly machine-assigned and provisional. Each topic is assessed across all submitted daily tests.</p><p class="small"><b>Classification guide:</b> Strong requires at least three attempted questions, 75% accuracy, at least 60% net marks and few skips. Needs revision flags repeated errors, low marks or frequent skips. Limited evidence means more questions are needed. Official marks-to-all credit counts toward scores but not mastery ratings.</p><div id="topicGroups"></div></section>
-<section id="revision" class="card"><h2>Priorities for your next revision</h2><div id="revisionContent"></div></section>
-<section id="history" class="card"><h2>Test-by-test score history</h2><div id="historyContent"></div></section>
+<section id="snapshot" class="card"><p class="small">Loading your results…</p></section>
+<details class="extra" id="extra"><summary>Detailed analysis and test history <span class="tiny">Optional</span></summary>
+ <div class="extra-inner">
+  <details class="extra-sub"><summary>All subject and topic breakdowns</summary>
+    <section id="bySection" class="card"><h2>Subject marks from daily website papers</h2><p class="small">Scores reflect the original paper sections, including negative marking.</p><div id="sectionTable"></div></section>
+    <section id="mastery" class="card"><h2>Topic-by-topic analysis</h2><p class="small">Topics with limited attempts are not treated as established strengths or weaknesses. Some source classifications are provisional.</p><div id="topicGroups"></div></section>
+  </details>
+  <details class="extra-sub"><summary>Detailed revision priorities</summary><section id="revision" class="card"><h2>Revision evidence</h2><div id="revisionContent"></div></section></details>
+  <details class="extra-sub"><summary>Full test history</summary>
+    <section id="history" class="card"><h2>Submitted CBT test history</h2><div id="historyContent"></div></section>
+    <section id="chatHistory" class="card"><h2>Earlier ChatGPT tests</h2></section>
+  </details>
+  <details class="extra-sub"><summary>Additional website statistics</summary><section id="summary" class="card"><h2>Website statistics</h2></section></details>
+ </div>
+</details>
+<details class="extra" id="dataTools"><summary>Manage data <span class="tiny">Import, export or refresh</span></summary>
+ <div class="extra-inner">
+  <p class="small">Completed daily CBTs are read automatically from this browser. Import historical ChatGPT results once to include them privately. Results are never uploaded to the public GitHub repository.</p>
+  <div class="actions"><button id="refresh">Refresh results</button><button id="export">Export performance JSON</button><label class="btn" for="chatFile" role="button" tabindex="0">Import history JSON</label><input id="chatFile" type="file" accept=".json,application/json" hidden><button id="clearChat">Remove imported history</button></div>
+  <p class="small" id="status" role="status">Loading saved submissions…</p><p class="small" id="chatImportStatus"></p>
+ </div>
+</details>
+<p class="footerline">Website PYQ scores and earlier ChatGPT practice are kept distinct. Subject/topic tags may be provisional; detailed calculations remain accessible above.</p>
 </main>
 <script>
 'use strict';
@@ -72,29 +133,45 @@ const clean=records.slice().sort((a,b)=>String(b.date).localeCompare(String(a.da
 return '<div class="tablewrap"><table><thead><tr><th>Date</th><th>Test / origin</th><th class="num">Net / max</th><th class="num">Correct</th><th class="num">Wrong</th><th class="num">Skipped</th><th class="num">Questions</th></tr></thead><tbody>'+clean.map(r=>'<tr><td>'+esc(r.date)+'</td><td><b>'+esc(r.title)+'</b><br><span class="tiny">'+esc(r.category)+' · '+esc(r.sourceIntegrity||'historical report')+'</span></td><td class="num">'+(Number.isFinite(r.score)&&Number.isFinite(r.maxMarks)?round(r.score)+' / '+round(r.maxMarks):'Not recorded')+'</td><td class="num">'+(r.correct??'—')+'</td><td class="num">'+(r.wrong??'—')+'</td><td class="num">'+(r.skipped??'—')+'</td><td class="num">'+(r.questionCount??'—')+'</td></tr>').join('')+'</tbody></table></div>';
 }
 
-function renderSnapshot(){
- const el=$('#snapshot'),chat=readChat(),daily=(chat?.records||[]).filter(x=>x.category==='daily'&&Number.isFinite(x.score)&&Number.isFinite(x.maxMarks));
- const known=new Set(STATE.tests.map(x=>x.date));
- const additional=daily.filter(x=>!known.has(x.date));
- const byDate=new Map();
- for(const x of additional)byDate.set(x.date,{date:x.date,score:x.score,max:x.maxMarks});
- for(const x of STATE.tests){const t=totals(STATE.records.filter(r=>r.date===x.date));byDate.set(x.date,{date:x.date,score:t.net,max:t.marks})}
- const points=[...byDate.values()].sort((a,b)=>a.date.localeCompare(b.date));
- if(!points.length){el.className='card';el.innerHTML='<h2>My progress snapshot</h2><div class="empty">No submitted tests found here yet. Import the historical ChatGPT test JSON above, or complete a daily CBT using this same browser, to see your progress chart and subject priorities.</div>';return}
- const net=points.reduce((n,x)=>n+x.score,0),max=points.reduce((n,x)=>n+x.max,0),totalPct=max?100*net/max:0;
- const subjects=new Map();
- for(const r of additional)for(const b of r.subjectCorrect||[]){if(!b||!Number.isFinite(b.correct)||!Number.isFinite(b.total))continue;const key=b.subject;if(!subjects.has(key))subjects.set(key,{name:key,correct:0,total:0});const v=subjects.get(key);v.correct+=b.correct;v.total+=b.total}
- const bands=[...subjects.values()].map(v=>({...v,rate:100*v.correct/v.total})).sort((a,b)=>a.rate-b.rate),highRisk=bands.filter(x=>x.total>=20&&x.rate<50);
- const metric=(label,val)=>'<div class="snapMetric"><strong>'+val+'</strong><span>'+label+'</span></div>';
- const sx=540,sy=183,L=34,R=20,T=20,B=35;const graphPoints=points.map((x,i)=>({x:L+i*((sx-L-R)/Math.max(1,points.length-1)),y:T+(100-Math.max(0,Math.min(100,100*x.score/x.max)))/100*(sy-T-B),date:x.date,rate:100*x.score/x.max}));
- const path=graphPoints.map((p,i)=>(i?'L':'M')+p.x.toFixed(1)+' '+p.y.toFixed(1)).join(' ');
- const grid=[0,50,100].map(y=>{const yy=T+(100-y)/100*(sy-T-B);return '<line x1="'+L+'" y1="'+yy+'" x2="'+(sx-R)+'" y2="'+yy+'" stroke="#e5ebf5" stroke-dasharray="3 4"/><text x="'+(L-7)+'" y="'+(yy+4)+'" fill="#8594ad" font-size="10" text-anchor="end">'+y+'%</text>'}).join('');
- const dots=graphPoints.map(p=>'<circle cx="'+p.x+'" cy="'+p.y+'" r="4.4" fill="#fff" stroke="#3569d6" stroke-width="2.5"><title>'+esc(p.date)+' · '+p.rate.toFixed(1)+'%</title></circle><text x="'+p.x+'" y="'+(sy-10)+'" fill="#7084a0" font-size="10" text-anchor="middle">'+p.date.slice(5)+'</text>').join('');
- const row=x=>'<div class="snapSubject"><div>'+esc(x.name)+'</div><div class="snapTrack"><span style="width:'+x.rate.toFixed(1)+'%;background:'+(x.rate<40?'#ca6657':'#4b78d6')+'"></span></div><b style="text-align:right">'+x.rate.toFixed(0)+'%</b></div>';
- el.className='card';
- el.innerHTML='<div class="snapshotHero"><h2>My GATE 2027 progress</h2><p class="small">Combined daily-score snapshot · private browser records and imported historical summaries</p><div class="snapGrid">'+metric('Daily papers',points.length)+metric('Reported net marks',round(net)+' / '+round(max))+metric('Score fraction',round(totalPct,1)+'%')+metric('Historical subject splits',subjects.size)+'</div><p class="small">The chart uses each day’s net marks divided by its maximum; different paper difficulties are not normalized.</p></div><div class="snapContent"><div class="snapPanel"><h3>Daily score trend</h3><svg class="snapTrend" viewBox="0 0 '+sx+' '+sy+'" aria-label="Daily net score percentage chart" role="img">'+grid+'<path d="'+path+'" fill="none" stroke="#3569d6" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>'+dots+'</svg></div><div class="snapPanel"><h3>Subject readiness (historical answers)</h3><p class="small">Correct counts, not subject marks; excludes website attempts without subject counts in the imported file.</p>'+(bands.length?bands.slice(0,8).map(row).join(''):'<p class="small">Import the historical JSON to unlock subject-level summary bars.</p>')+'</div></div>'+(highRisk.length?'<div class="snapFlag"><b>Suggested revision focus:</b> '+highRisk.slice(0,4).map(x=>esc(x.name)+' ('+x.correct+'/'+x.total+')').join(' · ')+'. Subject labels and some historic results remain provisional.</div>':'')+'<p class="small" style="margin-top:12px">No scores have been published to GitHub. Website attempts replace matching historical dates to prevent double-counting.</p>';
-}
 
+function renderSnapshot(){
+ const el=$('#snapshot'),history=readChat(),byDate=new Map();
+ for(const r of history?.records||[]){if(r.category==='daily'&&Number.isFinite(r.score)&&Number.isFinite(r.maxMarks)&&r.maxMarks>0){byDate.set(r.date,{date:r.date,score:r.score,max:r.maxMarks})}}
+ for(const x of STATE.tests){const t=totals(STATE.records.filter(r=>r.date===x.date));if(t.marks)byDate.set(x.date,{date:x.date,score:t.net,max:t.marks})}
+ const points=[...byDate.values()].sort((a,b)=>a.date.localeCompare(b.date));
+ const bySubject=new Map();
+ const aliases={'Mathematics':'Engineering Mathematics','Networks':'Network Theory','Network':'Network Theory','Signals and Systems':'Signals & Systems','Digital':'Digital Electronics','Analog':'Analog Electronics'};
+ const add=(name,correct,total)=>{if(!Number.isFinite(correct)||!Number.isFinite(total)||total<=0)return;const k=aliases[name]||name;if(!bySubject.has(k))bySubject.set(k,{name:k,correct:0,total:0});const v=bySubject.get(k);v.correct+=correct;v.total+=total};
+ const siteDates=new Set(STATE.tests.map(x=>x.date));
+ for(const r of history?.records||[]){if(r.category!=='daily'||siteDates.has(r.date))continue;for(const b of r.subjectCorrect||[])add(b.subject,b.correct,b.total)}
+ const webSubjects=new Map();
+ for(const r of STATE.records){if(r.status==='MTA')continue;const k=r.subject||'Other';if(!webSubjects.has(k))webSubjects.set(k,{correct:0,total:0});const v=webSubjects.get(k);v.total++;if(r.status==='correct')v.correct++}
+ for(const [name,v]of webSubjects)add(name,v.correct,v.total);
+ const allSubjects=[...bySubject.values()].filter(x=>x.total>=1).map(x=>({...x,rate:100*x.correct/x.total})).sort((a,b)=>a.rate-b.rate);
+ const latest=points[points.length-1],net=points.reduce((a,x)=>a+x.score,0),max=points.reduce((a,x)=>a+x.max,0),pctScore=max?100*net/max:0;
+ const metric=(val,label)=>'<div class="simple-metric"><strong>'+val+'</strong><span>'+label+'</span></div>';
+ if(!points.length){
+ el.innerHTML='<div class="top-progress"><h2>See your progress at a glance</h2><p class="intro">Submit a daily CBT to start tracking progress, or import your earlier ChatGPT test history.</p><div class="simple-metrics">'+metric('0','Daily papers')+metric('—','Average score')+metric('—','Latest score')+'</div><button class="soft-button" id="openTools">Add past test results</button></div>';
+ $('#openTools').onclick=()=>{$('#dataTools').open=true;$('#dataTools').scrollIntoView({behavior:'smooth',block:'start'})};return
+ }
+ const pts=points.slice(-8),x0=6,x1=134,y0=4,y1=38;
+ const ys=p=>y1-Math.max(0,Math.min(100,100*p.score/p.max))/100*(y1-y0);
+ const d=pts.map((p,i)=>(i?'L':'M')+(x0+i*(x1-x0)/Math.max(1,pts.length-1)).toFixed(1)+' '+ys(p).toFixed(1)).join(' ');
+ const trend='<svg viewBox="0 0 140 44" aria-label="Score percentage trend for most recent daily papers" role="img"><path d="M6 39H134" stroke="#e4e9f2" fill="none"/><path d="'+d+'" fill="none" stroke="#4373bd" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+ const subjectRows=arr=>arr.map(x=>'<div class="subject-line"><span class="subject-label">'+esc(x.name)+'</span><div class="subject-track"><span style="width:'+x.rate.toFixed(1)+'%;background:'+(x.rate<45?'#bd7160':'#4674c5')+'"></span></div><span class="subject-value">'+Math.round(x.rate)+'%</span></div>').join('');
+ const focus=new Map();
+ for(const r of STATE.records)if(r.status==='wrong'||r.status==='skipped'){const key=(r.subject||'Unknown')+' · '+(r.topic||'Unclassified');const v=focus.get(key)||{count:0,marks:0};v.count++;v.marks+=r.marks;focus.set(key,v)}
+ if(!focus.size)for(const r of history?.records||[]){if(r.category==='daily'&&siteDates.has(r.date))continue;for(const topic of r.reviewTopics||[]){const name=String(topic).trim();if(!name)continue;const v=focus.get(name)||{count:0,marks:0};v.count++;focus.set(name,v)}}
+ const focusRows=[...focus].sort((a,b)=>b[1].marks-a[1].marks||b[1].count-a[1].count).slice(0,3);
+ const priorities=focusRows.length?focusRows.map(([topic,v],i)=>'<div class="focus-item"><span class="focus-no">'+(i+1)+'</span><div><b>'+esc(topic)+'</b><small>'+(v.marks?v.marks+' marks in wrong/skipped questions':v.count+' earlier revision flag'+(v.count===1?'':'s'))+'</small></div></div>').join(''):allSubjects.filter(x=>x.total>=8).slice(0,3).map((x,i)=>'<div class="focus-item"><span class="focus-no">'+(i+1)+'</span><div><b>'+esc(x.name)+'</b><small>'+x.correct+' of '+x.total+' correct · practice weak topics</small></div></div>').join('');
+ const good=allSubjects.filter(x=>x.total>=8&&x.rate>=70).sort((a,b)=>b.rate-a.rate).slice(0,2);
+ const sub=allSubjects.length?subjectRows(allSubjects.slice(0,5))+(allSubjects.length>5?'<details class="extra-sub"><summary>Show all '+allSubjects.length+' subjects</summary>'+subjectRows(allSubjects.slice(5))+'</details>':''):'<p class="small">Add earlier results to see subject accuracy. Website-submitted questions are included automatically.</p>';
+ el.innerHTML='<div class="top-progress"><h2>Your progress</h2><p class="intro">Daily GATE practice · '+esc(points[0].date)+' to '+esc(latest.date)+'</p><div class="simple-metrics">'+metric(points.length,'Daily papers')+metric(pctScore.toFixed(1)+'%','Overall net score')+metric((latest.score/latest.max*100).toFixed(1)+'%','Latest paper')+'</div><div class="one-line-trend">'+trend+'<span>Last '+pts.length+' daily papers · '+round(net)+' / '+round(max)+' total marks</span></div></div>'+
+ '<div class="quick-grid"><section class="card"><h2>Subject accuracy</h2><p class="small">Correct answers out of questions with known subject counts</p>'+sub+(good.length?'<p class="focus-note"><b>Doing well:</b> '+good.map(x=>esc(x.name)).join(' · ')+'</p>':'')+'</section>'+
+ '<section class="card"><h2>Revise next</h2><p class="small">Top three priorities from missed questions and past feedback</p>'+(priorities||'<p class="small">No revision topics are recorded yet.</p>')+'<a class="btn primary" style="display:inline-block;margin-top:14px" href="./daily-pyq.html">Start practice</a></section></div>'+
+ (!history?'<p class="focus-note" style="margin:12px 4px">You can add your earlier ChatGPT tests through <button class="soft-button" id="openTools">Manage data</button>.</p>':'');
+ const tools=$('#openTools');if(tools)tools.onclick=()=>{$('#dataTools').open=true;$('#dataTools').scrollIntoView({behavior:'smooth',block:'start'})};
+}
 function renderChatHistory(){
 renderSnapshot();
 CHAT=readChat();const el=$('#chatHistory');
