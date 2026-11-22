@@ -140,7 +140,7 @@ def main():
   counts={}
   for q in paper['questions']:
    if q['number']<=10:continue
-   if q.get('classificationStatus') in ('manually_audited_source_text','curated_source_text'):
+   if q.get('taxonomyReviewStatus') or q.get('classificationStatus') in ('manually_audited_source_text','curated_source_text'):
     counts[q['subject']]=counts.get(q['subject'],0)+1
     continue
    raw=texts.get(q['number'],'')
