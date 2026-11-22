@@ -31,9 +31,11 @@ a{color:#245cb4}.row{display:flex;justify-content:space-between;gap:12px;align-i
 </style></head><body>
 <header><div><h1>GATE 2027 · Cumulative Performance</h1><div class="small" style="color:#bfd0ea">EE / EC authentic-source technical CBT · AIR under 100 preparation</div></div><nav><a href="./daily-pyq.html">Daily CBT</a><a href="./pyq-library.html">PYQ library</a><a href="./index.html">Dashboard</a></nav></header>
 <main>
-<div class="note"><b>How tracking works:</b> Every submitted daily technical CBT in <b>this browser</b> is included automatically. A refresh or return to this tab recalculates your overall subject-wise marks, strong topics and weak topics. Unsubmitted attempts are not counted. The separate General Aptitude test and older ChatGPT-created papers are not merged.</div>
+<div class="note"><b>How tracking works:</b> Every submitted daily technical CBT in <b>this browser</b> is included automatically. A refresh or return to this tab recalculates your overall subject-wise marks, strong topics and weak topics. Unsubmitted attempts are not counted. The separate General Aptitude test and imported ChatGPT-created papers are presented separately from authenticated website-paper scores.</div>
 <div class="actions"><button class="primary" id="refresh">Refresh cumulative results</button><button id="export">Export my performance (JSON)</button><span id="status" class="small" role="status">Reading your saved submissions…</span></div>
+<div class="actions"><label class="btn" for="chatFile" role="button" tabindex="0">Import previous ChatGPT test data (JSON)</label><input id="chatFile" type="file" accept=".json,application/json" hidden><button id="clearChat">Remove imported history from this browser</button><span id="chatImportStatus" class="small" role="status"></span></div>
 <div id="notice"></div>
+<section id="chatHistory" class="card"><h2>Historical ChatGPT test attempts</h2><div class="empty">Import your historical test data file to add past results without publishing personal scores.</div></section>
 <section id="summary" class="card"><h2>Overall performance</h2><p class="small">Loading records…</p></section>
 <section id="bySection" class="card"><h2>Subject-wise marks by CBT paper section</h2><p class="small">These totals use the subject section shown when each question was attempted; they are not affected by later topic-label corrections.</p><div id="sectionTable"></div></section>
 <section id="mastery" class="card"><h2>Strong and weak topics within each subject</h2><p class="small">Topic mastery uses content-corrected subjects for four identified classification errors. Other subject/topic tags remain partly machine-assigned and provisional. Each topic is assessed across all submitted daily tests.</p><p class="small"><b>Classification guide:</b> Strong requires at least three attempted questions, 75% accuracy, at least 60% net marks and few skips. Needs revision flags repeated errors, low marks or frequent skips. Limited evidence means more questions are needed. Official marks-to-all credit counts toward scores but not mastery ratings.</p><div id="topicGroups"></div></section>
@@ -44,6 +46,40 @@ a{color:#245cb4}.row{display:flex;justify-content:space-between;gap:12px;align-i
 'use strict';
 const $=s=>document.querySelector(s);
 const PREFIX='gateCBT.realDaily.v1.';
+const CHAT_KEY='gateCBT.chatHistory.v1';
+let CHAT=null;
+function readChat(){try{const raw=localStorage.getItem(CHAT_KEY);if(!raw)return null;const d=JSON.parse(raw);return d?.schema==='gate-chat-history-v1'&&Array.isArray(d.records)?d:null}catch(e){console.warn('Historical import read failed',e);return null}}
+function chatSummaryTable(records){
+const clean=records.slice().sort((a,b)=>String(b.date).localeCompare(String(a.date))||String(a.title).localeCompare(String(b.title)));
+return '<div class="tablewrap"><table><thead><tr><th>Date</th><th>Test / origin</th><th class="num">Net / max</th><th class="num">Correct</th><th class="num">Wrong</th><th class="num">Skipped</th><th class="num">Questions</th></tr></thead><tbody>'+clean.map(r=>'<tr><td>'+esc(r.date)+'</td><td><b>'+esc(r.title)+'</b><br><span class="tiny">'+esc(r.category)+' · '+esc(r.sourceIntegrity||'historical report')+'</span></td><td class="num">'+(Number.isFinite(r.score)&&Number.isFinite(r.maxMarks)?round(r.score)+' / '+round(r.maxMarks):'Not recorded')+'</td><td class="num">'+(r.correct??'—')+'</td><td class="num">'+(r.wrong??'—')+'</td><td class="num">'+(r.skipped??'—')+'</td><td class="num">'+(r.questionCount??'—')+'</td></tr>').join('')+'</tbody></table></div>';
+}
+function renderChatHistory(){
+CHAT=readChat();const el=$('#chatHistory');
+if(!CHAT){el.innerHTML='<h2>Historical ChatGPT test attempts</h2><div class="empty">Your earlier ChatGPT practice scores are not stored in this website by default. Import the prepared JSON history file once; it stays in this browser and does not upload to GitHub.</div>';$('#chatImportStatus').textContent='No ChatGPT history imported';return}
+const websiteDays=new Set(STATE.tests.map(x=>x.date));
+const records=CHAT.records.filter(r=>r&&r.id&&r.date&&r.title);
+const duplicates=records.filter(r=>r.category==='daily'&&websiteDays.has(r.date));
+const unique=records.filter(r=>!(r.category==='daily'&&websiteDays.has(r.date)));
+const totalScored=unique.filter(r=>Number.isFinite(r.score)&&Number.isFinite(r.maxMarks));
+const daily=unique.filter(r=>r.category==='daily'),short=unique.filter(r=>r.category!=='daily');
+const seenSubjects=new Map();
+for(const r of daily)for(const b of r.subjectCorrect||[]){if(!b||!Number.isFinite(b.correct)||!Number.isFinite(b.total))continue;const label=String(b.subject);if(!seenSubjects.has(label))seenSubjects.set(label,{correct:0,total:0,sessions:0});const v=seenSubjects.get(label);v.correct+=b.correct;v.total+=b.total;v.sessions++}
+const subjectHtml=seenSubjects.size?'<div class="tablewrap"><table><thead><tr><th>Reported historical subject</th><th class="num">Correct</th><th class="num">Questions</th><th class="num">Correct rate</th><th class="num">Tests</th></tr></thead><tbody>'+[...seenSubjects].sort((a,b)=>a[0].localeCompare(b[0])).map(([name,v])=>'<tr><td>'+esc(name)+'</td><td class="num">'+v.correct+'</td><td class="num">'+v.total+'</td><td class="num">'+percent(v.correct,v.total)+'</td><td class="num">'+v.sessions+'</td></tr>').join('')+'</tbody></table></div>':'<p class="small">No per-subject answer totals were supplied in the imported history.</p>';
+const hintCounts=new Map();for(const r of unique)for(const x of r.reviewTopics||[]){const name=String(x||'').trim();if(!name)continue;hintCounts.set(name,(hintCounts.get(name)||0)+1)}
+const hints=[...hintCounts].sort((a,b)=>b[1]-a[1]).slice(0,18);
+const hintHtml=hints.length?'<div class="revision">'+hints.map(([name,c])=>'<div><b>'+esc(name)+'</b><div class="small">Flagged in '+c+' earlier test '+(c===1?'summary':'summaries')+'</div></div>').join('')+'</div>':'<p class="small">No qualitative weakness notes recorded.</p>';
+const siteText=duplicates.length?'<div class="note warning">'+duplicates.length+' chat daily summary record(s) match dates with full submitted website data (for example '+duplicates.map(r=>esc(r.date)).join(', ')+'). The website result is preferred and those chat summaries are excluded from the historical totals to prevent double counting.</div>':'';
+el.innerHTML='<h2>Historical ChatGPT attempts</h2><p class="small">Private imported archive · '+records.length+' recovered entries · '+unique.length+' additional sessions · '+duplicates.length+' replaced by website records. Earlier tests include original GATE-style and mixed-source questions; they are <b>not</b> reclassified as authentic official PYQs.</p>'+siteText+
+'<div class="grid">'+[['Imported test entries',records.length],['Additional sessions',unique.length],['Daily papers with reports',daily.length],['Chapter quizzes and mocks',short.length]].map(([k,v])=>'<div class="metric"><div class="small">'+k+'</div><div class="big">'+v+'</div></div>').join('')+'</div>'+
+'<p class="small">Across '+totalScored.length+' additional sessions with reported scores, the sum of reported net marks is <b>'+round(totalScored.reduce((n,r)=>n+r.score,0))+' / '+round(totalScored.reduce((n,r)=>n+r.maxMarks,0))+'</b>. This is a descriptive total across <b>different paper types</b>, not a standardized GATE percentile or an official-PYQ-only score.</p>'+
+'<h3>Reported daily-test subject performance</h3><p class="small">These are correct-answer counts only, because many historical tests do not provide subject-wise mark allocations. They do not substitute for the precise website marks table below.</p>'+subjectHtml+
+'<h3>Weak topic signals from earlier feedback</h3><p class="small">The following are qualitative review flags from historical conversations. They do not provide question-level mastery percentages and must not be confused with audited official PYQ tags.</p>'+hintHtml+
+'<details><summary><b>All '+records.length+' recovered test records (expand)</b></summary>'+chatSummaryTable(records)+'</details>'+
+'<details><summary><b>Earlier wrong / skipped topic notes ('+(CHAT.historicalReviewEvidence||[]).length+')</b></summary><p class="small">These 18 November notes contain inconsistent wrong/skipped counts relative to the graded score, so they are kept only as review references.</p><div class="tablewrap"><table><thead><tr><th>Question</th><th>Reported topic</th><th>Status</th></tr></thead><tbody>'+(CHAT.historicalReviewEvidence||[]).map(x=>'<tr><td>'+esc(x.date)+' · '+esc(x.id)+'</td><td>'+esc(x.subject)+' · '+esc(x.topic)+'</td><td>'+esc(x.status)+'</td></tr>').join('')+'</tbody></table></div></details>'+
+'<p class="small">Unconfirmed submissions are excluded. Your file is read and stored only within this browser. To retain it across devices, keep the JSON file and import it again on the other device.</p>';
+$('#chatImportStatus').textContent=records.length+' historical test records imported';
+}
+
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const corrected={
  '2023-EC-Q52':{subject:'Electromagnetics',topic:'Transmission Lines / Standing Waves'},
@@ -85,6 +121,7 @@ function scoreTable(rows,key,withRevision=false){
 }
 function render(){
  const rows=STATE.records,tests=STATE.tests,t=totals(rows),assessment=t.correct+t.wrong+t.skipped;
+ renderChatHistory();
  $('#status').textContent=tests.length+' submitted paper'+(tests.length===1?'':'s')+' in this browser';
  $('#notice').innerHTML=(STATE.unavailable.length?'<div class="note warning"><b>Incomplete data:</b> Could not load '+esc(STATE.unavailable.join(', '))+'. These saved tests are excluded until their published question files can be accessed.</div>':'')+(STATE.unlisted.length?'<div class="note warning">There are '+STATE.unlisted.length+' locally saved submitted date(s) absent from the current published manifest. They cannot be safely graded here without their original question data.</div>':'');
  if(!tests.length){const msg='<p class="empty">No submitted 40-question website CBT papers were found in this browser. Submit a paper on the <a href="./daily-pyq.html">daily CBT page</a>, then return here. If you used another device or browser, its results cannot appear here automatically.</p>';$('#summary').innerHTML='<h2>Overall performance</h2>'+msg;$('#sectionTable').innerHTML=msg;$('#topicGroups').innerHTML=msg;$('#revisionContent').innerHTML=msg;$('#historyContent').innerHTML=msg;return}
@@ -135,13 +172,23 @@ async function refresh(){
  render();
 }
 function exportProgress(){
- const file={generatedAt:new Date().toISOString(),source:'GATE EE/EC technical daily CBT (same-browser submitted attempts only)',notes:'Provisional subject/topic tags; four content-reviewed corrections applied for mastery.',tests:STATE.tests,questions:STATE.records};
+ const file={generatedAt:new Date().toISOString(),source:'GATE EE/EC technical daily CBT with optional locally imported ChatGPT history',notes:'Provisional subject/topic tags; four content-reviewed corrections applied for website question mastery. Imported historical data remains separate.',tests:STATE.tests,questions:STATE.records,chatHistory:readChat()};
  const blob=new Blob([JSON.stringify(file,null,2)],{type:'application/json'}),u=URL.createObjectURL(blob),a=document.createElement('a');
  a.href=u;a.download='gate-2027-cumulative-performance.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),3000);
 }
+$('#chatFile').onchange=async e=>{
+ const file=e.target.files?.[0];if(!file)return;
+ try{if(file.size>2_000_000)throw Error('File exceeds the 2 MB import limit');
+ const obj=JSON.parse(await file.text());
+ if(obj?.schema!=='gate-chat-history-v1'||!Array.isArray(obj.records)||obj.records.length>500||!obj.records.every(x=>x&&typeof x.id==='string'&&/^\\d{4}-\\d{2}-\\d{2}$/.test(x.date)))throw Error('Not a valid GATE historical-chat data file');
+ localStorage.setItem(CHAT_KEY,JSON.stringify(obj));renderChatHistory();
+ }catch(err){$('#chatImportStatus').textContent='Import failed: '+err.message}
+ finally{e.target.value=''}
+};
+$('#clearChat').onclick=()=>{if(!readChat())return;if(!confirm('Remove the imported ChatGPT history from this browser? The download file will not be deleted.'))return;localStorage.removeItem(CHAT_KEY);renderChatHistory()};
 $('#refresh').onclick=()=>refresh().catch(e=>{$('#status').textContent='Unable to update: '+e.message});
 $('#export').onclick=exportProgress;
-window.addEventListener('storage',e=>{if(e.key?.startsWith(PREFIX))refresh().catch(console.warn)});
+window.addEventListener('storage',e=>{if(e.key===CHAT_KEY)renderChatHistory();else if(e.key?.startsWith(PREFIX))refresh().catch(console.warn)});
 document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh().catch(console.warn)});
 refresh().catch(e=>{$('#status').textContent='Unable to load results';$('#summary').innerHTML='<div class="empty">'+esc(e.message)+' — check internet access, then retry.</div>'});
 </script></body></html>
