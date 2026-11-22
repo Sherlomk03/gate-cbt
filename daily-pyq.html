@@ -94,14 +94,15 @@ el.innerHTML='<h2>Complete solved-paper review · '+esc(data.paper.date)+'</h2><
 el.querySelectorAll('.filterBtn').forEach(b=>b.onclick=()=>{el.dataset.filter=b.dataset.filter;renderFullReview(true)});
 $('#expandAll').onclick=()=>el.querySelectorAll('.review-question').forEach(d=>d.open=true);
 $('#collapseAll').onclick=()=>el.querySelectorAll('.review-question').forEach(d=>d.open=false);
-$('#printReview').onclick=()=>{el.querySelectorAll('.review-question').forEach(d=>d.open=true);window.print()};
+$('#printReview').onclick=async()=>{el.querySelectorAll('.review-question').forEach(d=>d.open=true);if(window.MathJax?.typesetPromise)try{await window.MathJax.typesetPromise([el])}catch(e){console.warn(e)}window.print()};
 const jump=$('#jumpReview');if(jump)jump.onclick=()=>el.scrollIntoView({behavior:'smooth',block:'start'});
 typesetReviewMath(el);
 }
+function mathProse(t){return esc(t).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')}
 function solutionHTML(q){const sol=q.verifiedSolution;if(!sol||sol.status!=='verified'||!Array.isArray(sol.steps)||!sol.steps.length){return '<p class="solution-pending"><b>Worked solution pending verification.</b> The answer key is available, but a complete derivation has not yet been checked against this exact question.</p>'}
 const formula=sol.mathFormula||sol.formula||'';
 const steps=Array.isArray(sol.mathSteps)&&sol.mathSteps.length?sol.mathSteps:sol.steps;
-return (sol.concept?'<p><b>Concept:</b> '+esc(sol.concept)+'</p>':'')+(formula?'<div class="math-formula"><b>Key formula</b><div>'+esc(formula)+'</div></div>':'')+'<ol class="math-steps">'+steps.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol>'+(sol.examTip?'<p><b>GATE exam tip:</b> '+esc(sol.examTip)+'</p>':'')+(sol.reference?'<p class="small"><b>Source:</b> '+esc(sol.reference)+'</p>':'')
+return (sol.concept?'<p><b>Concept:</b> '+esc(sol.concept)+'</p>':'')+(formula?'<div class="math-formula"><b>Key formula</b><div>'+esc(formula)+'</div></div>':'')+'<ol class="math-steps">'+steps.map(x=>'<li>'+mathProse(x)+'</li>').join('')+'</ol>'+(sol.examTip?'<p><b>GATE exam tip:</b> '+esc(sol.examTip)+'</p>':'')+(sol.reference?'<p class="small"><b>Source:</b> '+esc(sol.reference)+'</p>':'')
 }
 function typesetReviewMath(el){if(window.MathJax?.typesetPromise){window.MathJax.typesetPromise([el]).catch(e=>console.warn('Math typesetting issue:',e))}}
 function syncMistakes(){const p=data.paper,a=data.attempt;try{const K='gateCBT.v2';const main=JSON.parse(localStorage.getItem(K)||'null')||{};main.papers??={};main.attempts??={};main.prior??=[];main.prior=main.prior.filter(x=>x.paperId!==p.id);
