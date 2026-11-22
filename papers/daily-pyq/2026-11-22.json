@@ -61,7 +61,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ec_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ec_2022.pdf",
       "pdfPage": 38,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Convergence of infinite series using the term test, geometric growth, and p-series",
+        "formula": "Σ(n^d/c^n); for c>1 exponential decay dominates polynomial growth; for c=1 use Σ1/n^p, convergent iff p>1.",
+        "steps": [
+          "Option A: c=1, d=−1 gives Σ1/n, the harmonic series, which diverges.",
+          "Option B: c=2, d=1 gives Σn/2^n. The ratio of consecutive terms is [(n+1)/2^(n+1)]/[n/2^n]=(n+1)/(2n), tending to 1/2<1, so it converges.",
+          "Option C: c=0.5, d=−10 gives Σ(2^n/n^10). Its terms do not tend to zero (exponential growth dominates n^10), so the series diverges.",
+          "Option D: c=1, d=−2 gives Σ1/n², a convergent p-series with p=2>1.",
+          "Therefore exactly options B and D converge, matching the official key."
+        ],
+        "examTip": "First check whether the nth term tends to zero; then use the ratio test for exponentials and the p-series test when c=1.",
+        "reference": "Official GATE 2022 EC question paper, Q45, page 38; official key B,D."
+      }
     },
     {
       "id": "2023-EC-Q52",
