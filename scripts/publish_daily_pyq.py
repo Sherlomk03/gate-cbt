@@ -28,6 +28,10 @@ def get_questions():
         for q in source["questions"]:
             if q["number"]<=10:continue
             if q.get("subject") in EXCLUDED:continue
+            # Never select questions whose source-based category was not approved.
+            if q.get("selectionEligible") is not True:continue
+            lead=(q.get("sourceExtract") or "")[:480].lower()
+            if q["subject"]=="Engineering Mathematics" and re.search(r"standing wave ratio|economic dispatch|generator buses|nominal.π model|nominal.pi model|transmission line|\bpower system\b|\bpower network\b|\bthevenin\b|\bload flow\b",lead):continue
             if not q.get("imagePath") or not q.get("officialKey"):continue
             if q["type"] not in ("MCQ","MSQ","NAT"):continue
             questions.append({
@@ -35,6 +39,9 @@ def get_questions():
               "year":source["year"],"branch":source["branch"],"questionNumber":q["number"],
               "subject":q.get("subject") or "Unclassified","topic":q.get("topic","Needs review"),
               "classificationStatus":q.get("classificationStatus","unclassified"),
+              "taxonomyReviewStatus":q.get("taxonomyReviewStatus","requires_visual_review"),
+              "classificationMethod":q.get("classificationMethod","source-linked classification"),
+              "sourceExcerpt":(q.get("sourceExtract") or "")[:220],
               "type":q["type"],"marks":q["marks"],"officialKey":q["officialKey"],
               "imagePath":"./pyq/five-years/"+q["imagePath"],
               "paperUrl":source["paperUrl"],"keyUrl":source["keyUrl"],
@@ -149,7 +156,7 @@ def main():
       "questionCount":40,"durationMinutes":180,
       "subjects":subjects,"sourceYears":[2022,2023,2024,2025,2026],
       "status":"official_gate_pyqs_plus_labeled_ace_classroom_problems",
-      "classificationNote":"Official GATE PYQs use original paper screenshots and official keys; ACE classroom questions are user-supplied, transcribed and independently solved, not official GATE PYQs. Machine topic tags remain provisional. No AI-generated questions.",
+      "classificationNote":"Official GATE screenshots and keys are retained. Only subject-tagged questions approved by source-text audit or specific contextual matching enter daily technical paper selection; remaining classifications are withheld pending review. ACE classroom questions are labeled separately.",
       "rotationNote":note,
       "selectionNote":f'Selected {sum(q.get("sourceType")=="ace_classroom" for q in picks)} labeled ACE classroom questions alongside original GATE PYQs; {repeats} source question IDs were previously published.',
       "repeatCount":repeats,"selectionCounts":counts,
