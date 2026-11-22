@@ -426,7 +426,20 @@
       "paperUrl": null,
       "keyUrl": null,
       "pdfPage": 3,
-      "sourceNote": "ACE Engineering Academy 2022 classroom test photographed by user; individually solved key, not official GATE answer key."
+      "sourceNote": "ACE Engineering Academy 2022 classroom test photographed by user; individually solved key, not official GATE answer key.",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Sinusoidal steady-state response of an LTI system",
+        "formula": "A = |H(jω)| for a unit-amplitude sinusoidal input",
+        "steps": [
+          "The input is cos(3t), so the angular frequency is ω = 3 rad/s.",
+          "Evaluate H(j3) = 1/[j3(j3+2)].",
+          "Its magnitude is 1/[|j3| |2+j3|] = 1/[3√(2²+3²)] = 1/(3√13).",
+          "Numerically, A ≈ 0.09245, which rounds to 0.092 to three decimal places."
+        ],
+        "examTip": "For steady-state sinusoidal response, the output amplitude equals input amplitude times |H(jω)|.",
+        "reference": "Derived from the exact user-supplied ACE question stem; not an official GATE worked solution."
+      }
     },
     {
       "id": "ACE-GSS-2022-Q12",
@@ -454,7 +467,21 @@
       "paperUrl": null,
       "keyUrl": null,
       "pdfPage": 3,
-      "sourceNote": "ACE Engineering Academy 2022 classroom test photographed by user; individually solved key, not official GATE answer key."
+      "sourceNote": "ACE Engineering Academy 2022 classroom test photographed by user; individually solved key, not official GATE answer key.",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Discrete-time convolution and deconvolution",
+        "formula": "y[n]=x[n]*h[n]=h[n]+h[n−1] for x[n]=δ[n]+δ[n−1]",
+        "steps": [
+          "Given x[n]={1,1}, its z-transform is X(z)=1+z⁻¹.",
+          "Given y[n]={1,0,0,0,−1}, Y(z)=1−z⁻⁴.",
+          "Divide: H(z)=Y(z)/X(z)=(1−z⁻⁴)/(1+z⁻¹).",
+          "Factor 1−z⁻⁴=(1−z⁻¹)(1+z⁻¹)(1+z⁻²), so H(z)=(1−z⁻¹)(1+z⁻²)=1−z⁻¹+z⁻²−z⁻³.",
+          "Thus h[n]={1,−1,1,−1}, which is option C."
+        ],
+        "examTip": "Use z-transform polynomial division or the recurrence y[n]=h[n]+h[n−1].",
+        "reference": "Derived from the exact user-supplied ACE question stem; not an official GATE worked solution."
+      }
     },
     {
       "id": "ACE-GSS-2022-Q01",
@@ -482,7 +509,20 @@
       "paperUrl": null,
       "keyUrl": null,
       "pdfPage": 1,
-      "sourceNote": "ACE Engineering Academy 2022 classroom test photographed by user; individually solved key, not official GATE answer key."
+      "sourceNote": "ACE Engineering Academy 2022 classroom test photographed by user; individually solved key, not official GATE answer key.",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Capacitor voltage under impulse current",
+        "formula": "i_C(t)=C dv_C(t)/dt",
+        "steps": [
+          "The applied current is i_C(t)=6δ(t).",
+          "Therefore dv_C/dt=(6/C)δ(t).",
+          "Integrate with respect to time: v_C(t)=v_C(0⁻)+(6/C)u(t).",
+          "For zero initial voltage, v_C(t)=6u(t)/C, corresponding to option D."
+        ],
+        "examTip": "An impulse of charge Q produces a capacitor voltage jump ΔV=Q/C.",
+        "reference": "Derived from the exact user-supplied ACE question stem; not an official GATE worked solution."
+      }
     },
     {
       "id": "ACE-GSS-2022-Q05",
@@ -505,7 +545,20 @@
       "paperUrl": null,
       "keyUrl": null,
       "pdfPage": 2,
-      "sourceNote": "ACE Engineering Academy 2022 classroom test photographed by user; individually solved key, not official GATE answer key."
+      "sourceNote": "ACE Engineering Academy 2022 classroom test photographed by user; individually solved key, not official GATE answer key.",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Nyquist sampling criterion",
+        "formula": "f_s ≥ 2f_max",
+        "steps": [
+          "sin(6πt) has frequency 6π/(2π)=3 Hz.",
+          "sin(8πt) has frequency 4 Hz.",
+          "sin(10πt) has frequency 5 Hz, the highest frequency present.",
+          "The Nyquist sampling rate is 2×5=10 Hz."
+        ],
+        "examTip": "Convert angular frequency ω to hertz using f=ω/(2π); amplitude coefficients do not affect the sampling rate.",
+        "reference": "Derived from the exact user-supplied ACE question stem; not an official GATE worked solution."
+      }
     },
     {
       "id": "2025-EE-Q61",
