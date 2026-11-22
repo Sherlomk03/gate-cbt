@@ -239,7 +239,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.15 Let the sets of eigenvalues and eigenvectors of a matrix 𝐵 be {𝜆𝑘 | 1 ≤𝑘≤𝑛} and {𝒗𝑘 | 1 ≤𝑘≤𝑛}, respectively. For any invertible matrix 𝑃, the sets of eigenvalues and eigenvectors of the matrix 𝐴, where 𝐵= 𝑃−1𝐴𝑃, respectively, are (A) {𝜆𝑘 det (𝐴) | 1 ≤𝑘≤𝑛} and {𝑃𝒗𝑘 | 1 ≤𝑘≤𝑛} (B) {𝜆𝑘 | 1 ≤𝑘≤𝑛} and {𝒗𝑘 | 1 ≤𝑘≤𝑛} (C) {𝜆𝑘 | 1 ≤𝑘≤𝑛} and {𝑃𝒗𝑘 | 1 ≤𝑘≤𝑛} (D) {𝜆𝑘 | 1 ≤𝑘≤𝑛} and {𝑃−1𝒗𝑘 | 1 ≤𝑘≤𝑛}",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -262,7 +262,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.16 In a semiconductor, if the Fermi energy level lies in the conduction band, then the semiconductor is known as (A) degenerate n-type. (B) degenerate p-type. (C) non-degenerate n-type. (D) non-degenerate p-type. Page 11 of 44 Organizing Institute: IIT Kanpur Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -285,7 +285,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.17 For an intrinsic semiconductor at temperature 𝑇= 0 𝐾, which of the following statement is true? (A) All energy states in the valence band are filled with electrons and all energy states in the conduction band are empty of electrons. (B) All energy states in the valence band are empty of electrons and all energy states in the conduction band are filled with electrons. (C) All energy states in the valence and conduction band are filled with holes. (D) All energy states in the valence and conduction band are filled with electrons.",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -308,7 +308,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.18 A series 𝑅𝐿𝐶 circuit has a quality factor 𝑄 of 1000 at a center frequency of 106 rad/s. The possible values of 𝑅, 𝐿 and C are (A) 𝑅= 1 Ω, 𝐿= 1 𝜇𝐻 and 𝐶= 1 𝜇𝐹 (B) 𝑅= 0.1 Ω, 𝐿= 1 𝜇𝐻 and 𝐶= 1 𝜇𝐹 (C) 𝑅= 0.01 Ω, 𝐿= 1 𝜇𝐻 and 𝐶= 1 𝜇𝐹 (D) 𝑅= 0.001 Ω, 𝐿= 1 𝜇𝐻 and 𝐶= 1 𝜇𝐹 Page 12 of 44 Organizing Institute: IIT Kanpur Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -446,8 +446,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.24 The synchronous sequential circuit shown below works at a clock frequency of 1 GHz. The throughput, in Mbits/s, and the latency, in ns, respectively, are Input Output D0 Q0 D1 Q1 D2 Q2 D D D Flip Flop Flip Flop Flip Flop CLK = 1 GHz (A) 1000, 3 (B) 333.33, 1 (C) 2000, 3 (D) 333.33, 3 Page 17 of 44 Organizing Institute: IIT Kanpur Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 25,
@@ -538,8 +538,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.28 The Fourier transform 𝑋(𝜔) of 𝑥(𝑡) = 𝑒−𝑡2 is ∞ Note: ∫ 𝑒−𝑦2𝑑𝑦 = √𝜋 −∞ (A) 𝜔2 √𝜋 𝑒 2 (B) 𝜔2 𝑒− 4 2√𝜋 (C) 𝜔2 4 √𝜋 𝑒− (D) 𝜔2 2 √𝜋 𝑒− Page 19 of 44 Organizing Institute: IIT Kanpur Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 29,
@@ -584,7 +584,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.30 For a real signal, which of the following is/are valid power spectral density/densities? (A) 2 𝑆𝑋(𝜔) = 9 + 𝜔2 (B) 𝑆𝑋(𝜔) = 𝑒−𝜔2 cos2 𝜔 (C) SX(ω ) 1 0 ω -1 (D) SX(ω ) 1 0 ω",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -607,7 +607,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.31 The signal-to-noise ratio (SNR) of an ADC with a full-scale sinusoidal input is given to be 61.96 dB. The resolution of the ADC is ________ bits (rounded off to the nearest integer). Page 21 of 44 Organizing Institute: IIT Kanpur Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -653,8 +653,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 29,
       "sourceExtract": "Q.33 For the two port network shown below, the [Y]-parameters is given as 1 2 −1 [𝑌] = [ 𝑆 100 −1 4/3] The value of load impedance ZL, in Ω, for maximum power transfer will be _______ (rounded off to the nearest integer). 10 Ω 120 V +_ [Y] Page 22 of 44 Organizing Institute: IIT Kanpur Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 34,
@@ -676,7 +676,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.34 For the circuit shown below, the propagation delay of each NAND gate is 1 ns. The critical path delay, in ns, is __________ (rounded off to the nearest integer). A Q Q B",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -722,7 +722,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.36 – Q.65 Carry TWO marks Each Q.36 A random variable X, distributed normally as 𝑁(0,1), undergoes the transformation Y = h(X), given in the figure. The form of the probability density function of 𝑌 is (In the options given below, 𝑎, 𝑏, 𝑐 are non-zero constants and 𝑔(𝑦) is piece-wise continuous function) y = h(x) 1 x -2 -1 1 2 -1 (A) 𝑎𝛿(𝑦−1) + 𝑏𝛿(𝑦+ 1) + 𝑔(𝑦) (B) 𝑎𝛿(𝑦+ 1) + 𝑏𝛿(𝑦) + 𝑐𝛿(𝑦−1) + 𝑔(𝑦) (C) 𝑎𝛿(𝑦+ 2) + 𝑏𝛿(𝑦) + 𝑐𝛿(𝑦−2) + 𝑔(𝑦) (D) 𝑎𝛿(𝑦+ 2) + 𝑏𝛿(𝑦−2) + 𝑔(𝑦) Page 24 of 44 Organizing Institute: IIT Kanpur Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -745,7 +745,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.37 𝑄 The value of the line integral ∫(𝑧2 𝑑𝑥+ 3𝑦2 𝑑𝑦+ 2𝑥𝑧 𝑑𝑧) along the straight line 𝑃 joining the points 𝑃 (1,1,2) and 𝑄 (2,3,1) is (A) 20 (B) 24 (C) 29 (D) -5",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -953,7 +953,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 2,
       "sourceExtract": "Q.46 The h-parameters of a two port network are shown below. The condition for the Vout maximum small signal voltage gain is Vs i1 h11 i2 RL v1 h22 h12v2 v2 h21v1 Vout Vs (A) h11 = 0, h12 = 0, h21 = very high and h22 = 0 (B) h11 = very high, h12 = 0, h21 = very high and h22 = 0 (C) h11 = 0, h12 = very high, h21 = very high and h22 = 0 (D) h11 = 0, h12 = 0, h21 = very high and h22 = very high Page 33 of 44 Organizing Institute: IIT Kanpur Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -976,8 +976,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.47 Consider a discrete-time periodic signal with period 𝑁= 5. Let the discrete-time 𝑗𝑘2𝜋𝑛 5 , where 𝑎0 = 1, 𝑎1 = Fourier series (DTFS) representation be 𝑥[𝑛] = ∑ 4𝑘=0 𝑎𝑘𝑒 4 4𝜋𝑛 3𝑗, 𝑎2 = 2𝑗, 𝑎3 = −2𝑗 and 𝑎4 = −3𝑗. The value of the sum ∑ 𝑛=0 𝑥[𝑛] sin is 5 (A) −10 (B) 10 (C) −2 (D) 2",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 48,
@@ -999,8 +999,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.48 Let an input 𝑥[𝑛] having discrete time Fourier transform 𝑋(𝑒𝑗𝛺) = 1 −𝑒−𝑗𝛺+ 2𝑒−3𝑗𝛺 be passed through an LTI system. The frequency 1 response of the LTI system is 𝐻(𝑒𝑗𝛺) = 1 − 𝑒−𝑗2𝛺. The output 𝑦[𝑛] of the system 2 is (A) 𝛿[𝑛] + 𝛿[𝑛−1] −1 𝛿[𝑛−2] −5 𝛿[𝑛−3] + 𝛿[𝑛−5] 2 2 (B) 𝛿[𝑛] −𝛿[𝑛−1] −1 𝛿[𝑛−2] −5 𝛿[𝑛−3] + 𝛿[𝑛−5] 2 2 (C) 5 𝛿[𝑛] −𝛿[𝑛−1] −1 𝛿[𝑛−2] + 𝛿[𝑛−3] −𝛿[𝑛−5] 2 2 (D) 1 5 𝛿[𝑛] + 𝛿[𝑛−1] + 𝛿[𝑛−2] + 𝛿[𝑛−3] + 𝛿[𝑛−5] 2 2 Page 34 of 44 Organizing Institute: IIT Kanpur Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 49,
@@ -1045,8 +1045,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 27,
       "sourceExtract": "Q.50 Let x1(t) and x2(t) be two band-limited signals having bandwidth 𝐵= 4𝜋× 103 rad/s each. In the figure below, the Nyquist sampling frequency, in rad/s, required to sample y(t), is cos(4π×103t) x1(t) cos(12π×103t) y(t) x2(t) (A) 20𝜋× 103 (B) 40𝜋× 103 (C) 8𝜋× 103 (D) 32𝜋× 103 Page 36 of 44 Organizing Institute: IIT Kanpur Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 51,
@@ -1116,8 +1116,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.53 The electric field of a plane electromagnetic wave is 𝑬= 𝒂𝒙𝐶1𝑥cos(𝜔𝑡−𝛽𝑧) + 𝒂𝒚𝐶1𝑦cos(𝜔𝑡−𝛽𝑧+ 𝜃) V/m. Which of the following combination(s) will give rise to a left handed elliptically polarized (LHEP) wave? (A) 𝐶1𝑥= 1, 𝐶1𝑦= 1, 𝜃= 𝜋/4 (B) 𝐶1𝑥= 2, 𝐶1𝑦= 1, 𝜃= 𝜋/2 (C) 𝐶1𝑥= 1, 𝐶1𝑦= 2, 𝜃= 3𝜋/2 (D) 𝐶1𝑥= 2, 𝐶1𝑦= 1, 𝜃= 3𝜋/4 Page 39 of 44 Organizing Institute: IIT Kanpur Electronics and Communication Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 54,
@@ -1185,7 +1185,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.56 In an extrinsic semiconductor, the hole concentration is given to be 1.5𝑛𝑖 where 𝑛𝑖 is the intrinsic carrier concentration of 1 × 1010 𝑐𝑚−3. The ratio of electron to hole mobility for equal hole and electron drift current is given as __________ (rounded off to two decimal places).",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -1254,8 +1254,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 27,
       "sourceExtract": "Q.59 Let 𝑋(𝑡) be a white Gaussian noise with power spectral density 1 W/Hz. If 𝑋(𝑡) is 2 input to an LTI system with impulse response 𝑒−𝑡𝑢(𝑡). The average power of the system output is ___________ W (rounded off to two decimal places).",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 60,
@@ -1300,7 +1300,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.61 In a semiconductor device, the Fermi-energy level is 0.35 eV above the valence band energy. The effective density of states in the valence band at T = 300 K is 1 × 1019cm−3. The thermal equilibrium hole concentration in silicon at 400 K is ____________ × 1013cm−3 (rounded off to two decimal places). Given kT at 300 K is 0.026 eV.",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -1346,8 +1346,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.63 In a given sequential circuit, initial states are Q1 = 1 and Q2 = 0. For a clock frequency of 1 MHz, the frequency of signal Q2 in kHz, is ___________ (rounded off to the nearest integer). D1 Q1 D2 Q2 D D Flip Flop Flip Flop Q1 Q2 CLK = 1 MHz",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 64,

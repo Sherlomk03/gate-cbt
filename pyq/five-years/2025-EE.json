@@ -170,7 +170,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.12 Let 𝒗𝟏 and 𝒗𝟐 be the two eigenvectors corresponding to distinct eigenvalues of a 3 × 3 real symmetric matrix. Which one of the following statements is true? (A) 𝒗𝟏𝑻𝒗𝟐≠0 (B) 𝒗𝟏𝑻𝒗𝟐= 0 (C) 𝒗𝟏+ 𝒗𝟐= 𝟎 (D) 𝒗𝟏−𝒗𝟐= 𝟎 Organizing Institute: IIT Roorkee Page 11 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -262,8 +262,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 29,
       "sourceExtract": "Q.16 Which one of the following statements is true about the small signal voltage gain of a MOSFET based single stage amplifier? (A) Common source and common gate amplifiers are both inverting amplifiers (B) Common source and common gate amplifiers are both non-inverting amplifiers (C) Common source amplifier is inverting and common gate amplifier is non-inverting amplifier (D) Common source amplifier is non-inverting and common gate amplifier is inverting amplifier Organizing Institute: IIT Roorkee Page 14 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 17,
@@ -354,7 +354,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.20 Consider a discrete-time linear time-invariant (LTI) system 𝑺, where 𝑦[𝑛] = 𝑺{𝑥[𝑛]} Let 𝑛∈{0, 1, 2} 𝑺{𝛿[𝑛]} = {1, 0, 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒 where 𝛿[𝑛] is the discrete-time unit impulse function. For an input signal 𝑥[𝑛], the output 𝑦[𝑛] is (A) 𝑥[𝑛] + 𝑥[𝑛−1] + 𝑥[𝑛−2] (B) 𝑥[𝑛−1] + 𝑥[𝑛] + 𝑥[𝑛+ 1] (C) 𝑥[𝑛] + 𝑥[𝑛+ 1] + 𝑥[𝑛+ 2] (D) 𝑥[𝑛+ 1] + 𝑥[𝑛+ 2] + 𝑥[𝑛+ 3] Organizing Institute: IIT Roorkee Page 17 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -377,7 +377,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.21 Consider a continuous-time signal 𝑥(𝑡) = −𝑡2{𝑢(𝑡+ 4) −𝑢(𝑡−4)} where 𝑢(𝑡) is the continuous-time unit step function. Let 𝛿(𝑡) be the continuous- time unit impulse function. The value of ∞ ∫ 𝑥(𝑡)𝛿(𝑡+ 3)𝑑𝑡 −∞ is (A) −9 (B) 9 (C) 3 (D) −3",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -400,7 +400,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.22 Selected data points of the step response of a stable first-order linear time-invariant (LTI) system are given below. The closest value of the time-constant, in sec, of the system is Time (sec) 0.6 1.6 2.6 10 ∞ Output 0.78 1.65 2.18 2.98 3 (A) 1 (B) 2 (C) 3 (D) 4 Organizing Institute: IIT Roorkee Page 18 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -446,7 +446,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.24 During a power failure, a domestic household uninterruptible power supply (UPS) supplies AC power to a limited number of lights and fans in various rooms. As per a Newton-Raphson load-flow formulation, the UPS would be represented as a (A) Slack bus (B) PV bus (C) PQ bus (D) PQV bus Organizing Institute: IIT Roorkee Page 19 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -492,8 +492,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.26 The operating region of the developed torque (𝑇𝑒𝑚) and speed (𝜔) of an induction motor drive is given by the shaded region OQRE in the figure. The load torque (𝑇𝐿) characteristic is also shown. The motor drive moves from the initial operating point O to the final operating point S. Which one of the following trajectories will take the shortest time? Tem Q R P S TL F ω O E (A) 𝑂−𝑄−𝑅−𝑆 (B) 𝑂−𝑃−𝑆 (C) 𝑂−𝐸−𝑆 (D) 𝑂−𝐹−𝑆 Organizing Institute: IIT Roorkee Page 21 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 27,
@@ -538,8 +538,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.28 Instrument(s) required to synchronize an alternator to the grid is/are (A) Voltmeter (B) Wattmeter (C) Synchroscope (D) Stroboscope Organizing Institute: IIT Roorkee Page 22 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 29,
@@ -561,8 +561,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 16,
       "sourceExtract": "Q.29 The open-loop transfer function of the system shown in the figure, is 𝐾𝑠(𝑠+ 2) 𝐺(𝑠) = (𝑠+ 5)(𝑠+ 7) For 𝐾≥0, which of the following real axis point(s) is/are on the root locus? Input + Output G(s) _ (A) −1 (B) −4 (C) −6 (D) −10",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 30,
@@ -630,8 +630,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.32 Consider a distribution feeder, with 𝑅/𝑋 ratio of 5. At the receiving end, a 350 kVA load is connected. The maximum voltage drop will occur from the sending end to the receiving end, when the power factor of the load is ___________(round off to three decimal places).",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 33,
@@ -653,8 +653,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.33 The bus impedance matrix of a 3-bus system (in pu) is 𝑗0.059 𝑗0.061 𝑗0.038 𝑍𝑏𝑢𝑠= [ 𝑗0.061 𝑗0.093 𝑗0.066] 𝑗0.038 𝑗0.066 𝑗0.110 A symmetrical fault (through a fault impedance of 𝑗0.007 pu) occurs at bus 2. Neglecting pre-fault loading conditions, the voltage at bus 1, during the fault is ________ pu (round off to three decimal places). Organizing Institute: IIT Roorkee Page 24 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 34,
@@ -699,8 +699,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.35 The induced emf in a 3.3 kV, 4 pole, 3-phase star connected synchronous motor is considered to be equal and in phase with the terminal voltage under no load condition. On application of a mechanical load, the induced emf phasor is deflected by an angle of 2° mechanical with respect to the terminal voltage phasor. If the synchronous reactance is 2 Ω, and stator resistance is negligible, then the motor armature current magnitude, in ampere, during loaded condition is closest to, ____________ (round off to two decimal places). Organizing Institute: IIT Roorkee Page 25 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 36,
@@ -722,7 +722,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.36 – Q.65 Carry TWO marks Each Q.36 Let 𝑋 and 𝑌 be continuous random variables with probability density functions 𝑃𝑋(𝑥) and 𝑃𝑌(𝑦), respectively. Further, let 𝑌= 𝑋2 and 𝑥∈(0,1] 𝑃𝑋(𝑥) = {1, 0, 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒. Which one of the following options is correct? (A) 1 , 𝑦∈(0,1] 𝑃𝑌(𝑦) = { 2√𝑦 0, 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒 (B) 𝑦∈(0,1] 𝑃𝑌(𝑦) = {1, 0, 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒 (C) √𝑦, 𝑦∈(0,1] 𝑃𝑌(𝑦) = {1.5 0, 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒 (D) 𝑦∈(0,1] 𝑃𝑌(𝑦) = {2𝑦, 0, 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒 Organizing Institute: IIT Roorkee Page 26 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -814,8 +814,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.40 Let continuous-time signals 𝑥1(𝑡) and 𝑥2(𝑡) be 1, 𝑡∈[0,1] 𝑡, 𝑡∈[0,1] 𝑥1(𝑡) = { 2 −𝑡, 𝑡∈[1,2] and 𝑥2(𝑡) = { 2 −𝑡, 𝑡∈[1,2] 0, 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒 0, 𝑜𝑡ℎ𝑒𝑟𝑤𝑖𝑠𝑒 ∞ Consider the convolution 𝑦(𝑡) = 𝑥1(𝑡) ∗𝑥2(𝑡). Then ∫−∞ 𝑦(𝑡)𝑑𝑡 is (A) 1.5 (B) 2.5 (C) 3.5 (D) 4",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 41,
@@ -860,7 +860,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.42 The continuous-time unit impulse signal is applied as an input to a continuous-time linear time-invariant system 𝑺. The output is observed to be the continuous-time unit step signal 𝑢(𝑡). Which one of the following statements is true? (A) Every bounded input signal applied to 𝑺 results in a bounded output signal. (B) It is possible to find a bounded input signal which when applied to 𝑺 results in an unbounded output signal. (C) On applying any input signal to 𝑺, the output signal is always bounded. (D) On applying any input signal to 𝑺 the output signal is always unbounded. Organizing Institute: IIT Roorkee Page 31 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -883,8 +883,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.43 The transformer connection given in the figure is part of a balanced 3-phase circuit where the phase sequence is “𝑎𝑏𝑐”. The primary to secondary turns ratio is 2:1. If (𝐼𝑎+ 𝐼𝑏+ 𝐼𝑐= 0), then the relationship between 𝐼𝐴 and 𝐼𝑎𝑑 will be IA Iad A a Ic Icd Ia c Ib IB Ibd B IC b C primary secondary (A) |𝐼𝐴| 1 = and 𝐼𝑎𝑑 lags 𝐼𝐴 by 30°. |𝐼𝑎𝑑| 2√3 (B) |𝐼𝐴| 1 = and 𝐼𝑎𝑑 leads 𝐼𝐴 by 30°. |𝐼𝑎𝑑| 2√3 (C) |𝐼𝐴| = 2√3 and 𝐼𝑎𝑑 lags 𝐼𝐴 by 30°. |𝐼𝑎𝑑| (D) |𝐼𝐴| = 2√3 and 𝐼𝑎𝑑 leads 𝐼𝐴 by 30°. |𝐼𝑎𝑑| Organizing Institute: IIT Roorkee Page 32 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 44,
@@ -929,8 +929,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.45 A 3-phase, 400 V, 4 pole, 50 Hz star connected induction motor has the following parameters referred to the stator: 𝑅𝑟′ = 1Ω, 𝑋𝑠= 𝑋𝑟′ = 2Ω Stator resistance, magnetizing reactance and core loss of the motor are neglected. The motor is run with constant V/f control from a drive. For maximum starting torque, the voltage and frequency output, respectively, from the drive, is closest to, (A) 400 V and 50 Hz (B) 200 V and 25 Hz (C) 100 V and 12.5 Hz (D) 300 V and 37.5 Hz Organizing Institute: IIT Roorkee Page 33 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 46,
@@ -975,8 +975,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.47 An ideal sinusoidal voltage source 𝑣(𝑡) = 230√2 sin(2𝜋× 50𝑡) 𝑉 feeds an ideal inductor 𝐿 through an ideal SCR with firing angle 𝛼= 0°. If 𝐿= 100 𝑚𝐻, then the peak of the inductor current, in ampere, is closest to (A) 20.71 (B) 0 (C) 10.35 (D) 7.32 Organizing Institute: IIT Roorkee Page 35 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 48,
@@ -1159,7 +1159,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.55 Let 𝐶 be a clockwise oriented closed curve in the complex plane defined by |𝑧| = 1. Further, let 𝑓(𝑧) = 𝑗𝑧 be a complex function, where 𝑗= √−1. Then, ∮ 𝑓(𝑧)𝑑𝑧 = _______ (round off to the nearest integer). 𝐶 Organizing Institute: IIT Roorkee Page 40 of 50 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -1276,8 +1276,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.60 The steady state capacitor current of a conventional DC-DC buck converter, working in CCM, is shown in one switching cycle. If the input voltage is 30 V, the value of the inductor used, in mH, is _____________ (round off to one decimal place).",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 61,

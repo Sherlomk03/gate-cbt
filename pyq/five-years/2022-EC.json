@@ -241,8 +241,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.15 The Fourier transform 𝑋(𝑗𝜔) of the signal 𝑡 𝑥(𝑡) = (1 + 𝑡ଶ)ଶ is _________. (A) 𝜋 |ఠ| 2𝑗𝜔𝑒ି (B) 𝜋 |ఠ| 𝜔𝑒ି 2 (C) 𝜋 |ఠ| 2𝑗𝑒ି (D) 𝜋 |ఠ| 𝑒ି 2 Page 13 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 16,
@@ -264,7 +264,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.16 Consider a long rectangular bar of direct bandgap p-type semiconductor. The equilibrium hole density is 10ଵ଻ cm3 and the intrinsic carrier concentration is 10ଵ଴ cm3. Electron and hole diffusion lengths are 2 𝜇m and 1 𝜇m, respectively. The left side of the bar (𝑥= 0) is uniformly illuminated with a laser having photon energy greater than the bandgap of the semiconductor. Excess electron-hole pairs are generated ONLY at 𝑥= 0 because of the laser. The steady state electron density at 𝑥= 0 is 10ଵସ cm3 due to laser illumination. Under these conditions and ignoring electric field, the closest approximation (among the given options) of the steady state electron density at 𝑥= 2 𝜇m, is ___________ . (A) 0.37 × 10ଵସcm3 (B) 0.63 × 10ଵଷcm3 (C) 3.7 × 10ଵସcm3 (D) 10ଷcm3 Page 14 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -287,7 +287,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.17 In a non-degenerate bulk semiconductor with electron density 𝑛= 10ଵ଺cm3, the value of 𝐸஼−𝐸ி௡= 200 meV, where 𝐸஼ and 𝐸ி௡ denote the bottom of the conduction band energy and electron Fermi level energy, respectively. Assume thermal voltage as 26 meV and the intrinsic carrier concentration is 10ଵ଴ cm3. For 𝑛= 0.5 × 10ଵ଺cm3, the closest approximation of the value of (𝐸஼−𝐸ி௡), among the given options, is __________. (A) 226 meV (B) 174 meV (C) 218 meV (D) 182 meV Page 15 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -333,8 +333,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.19 Consider the 2-bit multiplexer (MUX) shown in the figure. For OUTPUT to be the XOR of C and D, the values for 𝐴଴, 𝐴ଵ, 𝐴ଶ, and 𝐴ଷ are ____________. (A) 𝐴଴= 0, 𝐴ଵ= 0, 𝐴ଶ= 1, 𝐴ଷ= 1 (B) 𝐴଴= 1, 𝐴ଵ= 0, 𝐴ଶ= 1, 𝐴ଷ= 0 (C) 𝐴଴= 0, 𝐴ଵ= 1, 𝐴ଶ= 1, 𝐴ଷ= 0 (D) 𝐴଴= 1, 𝐴ଵ= 1, 𝐴ଶ= 0, 𝐴ଷ= 0 Page 17 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 20,
@@ -356,7 +356,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.20 The ideal long channel nMOSFET and pMOSFET devices shown in the circuits have threshold voltages of 1 V and −1 V, respectively. The MOSFET substrates are connected to their respective sources. Ignore leakage currents and assume that the capacitors are initially discharged. For the applied voltages as shown, the steady state voltages are _________________. (A) 𝑉ଵ= 5 V, 𝑉ଶ= 5 V (B) 𝑉ଵ= 5 V, 𝑉ଶ= 4 V (C) 𝑉ଵ= 4 V, 𝑉ଶ= 5 V (D) 𝑉ଵ= 4 V, 𝑉ଶ= −5 V Page 18 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -379,7 +379,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 4,
       "sourceExtract": "Q.21 Consider a closed-loop control system with unity negative feedback and 𝐾𝐺(𝑠) in the forward path, where the gain 𝐾= 2. The complete Nyquist plot of the transfer function 𝐺(𝑠) is shown in the figure. Note that the Nyquist contour has been chosen to have the clockwise sense. Assume 𝐺(𝑠) has no poles on the closed right-half of the complex plane. The number of poles of the closed-loop transfer function in the closed right-half of the complex plane is ___________. (A) 0 (B) 1 (C) 2 (D) 3 Page 19 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -425,7 +425,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.23 The frequency response 𝐻(𝑓) of a linear time-invariant system has magnitude as shown in the figure. Statement I: The system is necessarily a pure delay system for inputs which are bandlimited to −𝛼≤𝑓≤𝛼. Statement II: For any wide-sense stationary input process with power spectral density 𝑆௑(𝑓), the output power spectral density 𝑆௒(𝑓) obeys 𝑆௒(𝑓) = 𝑆௑(𝑓) for −𝛼≤𝑓≤𝛼. Which one of the following combinations is true? (A) Statement I is correct, Statement II is correct (B) Statement I is correct, Statement II is incorrect (C) Statement I is incorrect, Statement II is correct (D) Statement I is incorrect, Statement II is incorrect Page 21 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -471,7 +471,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.25 Consider the following partial differential equation (PDE) 𝑎𝜕ଶ𝑓(𝑥, 𝑦) + 𝑏𝜕ଶ𝑓(𝑥, 𝑦) = 𝑓(𝑥, 𝑦), 𝜕𝑥ଶ 𝜕𝑦ଶ where 𝑎 and 𝑏 are distinct positive real numbers. Select the combination(s) of values of the real parameters 𝜉 and 𝜂 such that 𝑓(𝑥, 𝑦) = 𝑒(క௫ା ) is a solution of the given PDE. (A) 1 1 𝜉= , 𝜂= √2𝑎 √2𝑏 (B) 1 𝜉= √𝑎, 𝜂= 0 (C) 𝜉= 0 , 𝜂= 0 (D) 1 1 𝜉= √𝑎, 𝜂= √𝑏 Page 23 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -632,7 +632,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.32 A simple closed path 𝐶 in the complex plane is shown in the figure. If 2௭ ර 𝑑𝑧= −𝑖𝜋𝐴, ஼ 𝑧ଶ−1 where 𝑖= √−1, then the value of 𝐴 is ______ (rounded off to two decimal places).",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -655,8 +655,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.33 Let 𝑥ଵ(𝑡) = 𝑒ି ௧𝑢(𝑡) and 𝑥ଶ(𝑡) = 𝑢(𝑡) −𝑢(𝑡−2), where 𝑢(⋅) denotes the unit step function. If 𝑦(𝑡) denotes the convolution of 𝑥ଵ(𝑡) and 𝑥ଶ(𝑡), then ௧→ஶ𝑦(𝑡)lim = _________ (rounded off to one decimal place). Page 28 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 34,
@@ -678,7 +678,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.34 An ideal MOS capacitor (p-type semiconductor) is shown in the figure. The MOS capacitor is under strong inversion with 𝑉ீ= 2 V. The corresponding inversion charge density (𝑄ூே) is 2.2 𝜇C/cm2. Assume oxide capacitance per unit area as 𝐶ை௑= 1.7 𝜇F/cm2. For 𝑉ீ= 4 V, the value of 𝑄ூே is ______ 𝜇C/cm2 (rounded off to one decimal place).",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -701,8 +701,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.35 A symbol stream contains alternate QPSK and 16-QAM symbols. If symbols from this stream are transmitted at the rate of 1 mega-symbols per second, the raw (uncoded) data rate is _______ mega-bits per second (rounded off to one decimal place). Page 29 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 36,
@@ -747,7 +747,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.37 Let 𝛼, 𝛽 be two non-zero real numbers and 𝑣ଵ, 𝑣ଶ be two non-zero real vectors of size 3 × 1. Suppose that 𝑣ଵ and 𝑣ଶ satisfy 𝑣ଵ்𝑣ଶ= 0, 𝑣ଵ்𝑣ଵ= 1, and 𝑣ଶ்𝑣ଶ= 1. Let 𝐴 be the 3 × 3 matrix given by: 𝐴= 𝛼𝑣ଵ𝑣ଵ்+ 𝛽𝑣ଶ𝑣ଶ் The eigenvalues of 𝐴 are __________. (A) 0, 𝛼, 𝛽 (B) 0, 𝛼+ 𝛽, 𝛼−𝛽 (C) 𝛼+ 𝛽 0, , ඥ𝛼𝛽 2 (D) 0, 0, ඥ𝛼ଶ+ 𝛽ଶ Page 30 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -816,7 +816,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.40 Consider an ideal long channel nMOSFET (enhancement-mode) with gate length 10 µm and width 100 µm. The product of electron mobility (µ௡) and oxide capacitance per unit area (𝐶ை௑) is µ௡𝐶ை௑= 1 mA/V2. The threshold voltage of the transistor is 1 V. For a gate-to-source voltage 𝑉ீௌ= [2 −sin(2𝑡)] V and drain-to- source voltage 𝑉஽ௌ= 1 V (substrate connected to the source), the maximum value of the drain-to-source current is ________. (A) 40 mA (B) 20 mA (C) 15 mA (D) 5 mA Page 33 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -885,8 +885,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.43 For the circuit shown, the clock frequency is 𝑓଴ and the duty cycle is 25%. For the signal at the Q output of the Flip-Flop, _______. (A) frequency is 𝑓଴/4 and duty cycle is 50% (B) frequency is 𝑓଴/4 and duty cycle is 25% (C) frequency is 𝑓଴/2 and duty cycle is 50% (D) frequency is 𝑓଴ and duty cycle is 25% Page 36 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 44,
@@ -954,7 +954,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.46 The outputs of four systems (𝑆ଵ, 𝑆ଶ, 𝑆ଷ, and 𝑆ସ) corresponding to the input signal sin(𝑡), for all time 𝑡, are shown in the figure. Based on the given information, which of the four systems is/are definitely NOT LTI (linear and time-invariant)? (A) 𝑆ଵ (B) 𝑆ଶ (C) 𝑆ଷ (D) 𝑆ସ Page 39 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -977,8 +977,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 26,
       "sourceExtract": "Q.47 Select the CORRECT statement(s) regarding semiconductor devices. (A) Electrons and holes are of equal density in an intrinsic semiconductor at equilibrium. (B) Collector region is generally more heavily doped than Base region in a BJT. (C) Total current is spatially constant in a two terminal electronic device in dark under steady state condition. (D) Mobility of electrons always increases with temperature in Silicon beyond 300 K. Page 40 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 48,
@@ -1000,7 +1000,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.48 A state transition diagram with states 𝐴, 𝐵, and 𝐶, and transition probabilities 𝑝ଵ, 𝑝ଶ, … , 𝑝଻ is shown in the figure (e.g., 𝑝ଵ denotes the probability of transition from state 𝐴 to 𝐵). For this state diagram, select the statement(s) which is/are universally true. (A) 𝑝ଶ+ 𝑝ଷ= 𝑝ହ+ 𝑝଺ (B) 𝑝ଵ+ 𝑝ଷ= 𝑝ସ+ 𝑝଺ (C) 𝑝ଵ+ 𝑝ସ+ 𝑝଻= 1 /(D) 𝑝ଶ+ 𝑝ହ+ 𝑝଻= 1 Page 41 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -1046,7 +1046,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.50 Two linear time-invariant systems with transfer functions 10 10 𝐺ଵ(𝑠) = and 𝐺ଶ(𝑠) = 𝑠ଶ+ 𝑠+ 1 𝑠ଶ+ 𝑠√10 + 10 have unit step responses 𝑦ଵ(𝑡) and 𝑦ଶ(𝑡), respectively. Which of the following statements is/are true? (A) 𝑦ଵ(𝑡) and 𝑦ଶ(𝑡) have the same percentage peak overshoot. (B) 𝑦ଵ(𝑡) and 𝑦ଶ(𝑡) have the same steady-state value. (C) 𝑦ଵ(𝑡) and 𝑦ଶ(𝑡) have the same damped frequency of oscillation. (D) 𝑦ଵ(𝑡) and 𝑦ଶ(𝑡) have the same 2% settling time. Page 42 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -1092,8 +1092,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.52 A waveguide consists of two infinite parallel plates (perfect conductors) at a separation of 10ିସcm, with air as the dielectric. Assume the speed of light in air to be 3 × 10଼m/s. The frequency/frequencies of TM waves which can propagate in this waveguide is/are _______. (A) 6 × 10ଵହHz (B) 0.5 × 10ଵଶHz (C) 8 × 10ଵସHz (D) 1 × 10ଵଷHz Page 44 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 53,
@@ -1161,8 +1161,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.55 For a vector 𝒙ഥ=ൣ𝑥[0], 𝑥[1], … , 𝑥[7]൧, the 8-point discrete Fourier transform (DFT) is denoted by 𝑿ഥ= 𝐷𝐹𝑇(𝒙ഥ) =ൣ𝑋[0], 𝑋[1], … , 𝑋[7]൧, where ଻ 𝑋[𝑘] = ෍𝑥[𝑛] exp ൬−𝑗2𝜋 𝑛𝑘൰. 8 ௡ୀ଴ Here, 𝑗= √−1. If 𝒙ഥ= [1, 0, 0, 0, 2, 0, 0, 0] and 𝒚ഥ= 𝐷𝐹𝑇൫𝐷𝐹𝑇(𝒙ഥ)൯, then the value of 𝑦[0] is _________ (rounded off to one decimal place).",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 56,
@@ -1184,7 +1184,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.56 A p-type semiconductor with zero electric field is under illumination (low level injection) in steady state condition. Excess minority carrier density is zero at 𝑥= ±2𝑙௡, where 𝑙௡= 10ିସ cm is the diffusion length of electrons. Assume electronic charge, 𝑞= −1.6 × 10ିଵଽ C. The profiles of photo-generation rate of carriers and the recombination rate of excess minority carriers (𝑅) are shown. Under these conditions, the magnitude of the current density due to the photo-generated electrons at 𝑥= +2𝑙௡ is _________ mA/cm2 (rounded off to two decimal places). Page 47 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -1207,7 +1207,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.57 A circuit and the characteristics of the diode (D) in it are shown. The ratio of the డ௏೚ೠ೟ minimum to the maximum small signal voltage gain is ________ (rounded డ௏೔೙ off to two decimal places).",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -1253,7 +1253,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.59 Consider the circuit shown with an ideal long channel nMOSFET (enhancement- mode, substrate is connected to the source). The transistor is appropriately biased in the saturation region with 𝑉ீீ and 𝑉஽஽ such that it acts as a linear amplifier. 𝑣௜ is the small-signal ac input voltage. 𝑣஺ and 𝑣஻ represent the small-signal voltages at the ௩ಲ nodes A and B, respectively. The value of is ________ (rounded off to one ௩ಳ decimal place).",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -1276,8 +1276,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 16,
       "sourceExtract": "Q.60 The block diagram of a closed-loop control system is shown in the figure. 𝑅(𝑠), 𝑌(𝑠), and 𝐷(𝑠) are the Laplace transforms of the time-domain signals 𝑟(𝑡), 𝑦(𝑡), and 𝑑(𝑡), respectively. Let the error signal be defined as 𝑒(𝑡) = 𝑟(𝑡) −𝑦(𝑡). Assuming the reference input 𝑟(𝑡) = 0 for all 𝑡, the steady-state error 𝑒(∞), due to a unit step disturbance 𝑑(𝑡), is _________ (rounded off to two decimal places). Page 49 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 61,
@@ -1323,7 +1323,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 4,
       "sourceExtract": "Q.62 Consider communication over a memoryless binary symmetric channel using a (7, 4) Hamming code. Each transmitted bit is received correctly with probability (1 −𝜖), and flipped with probability 𝜖. For each codeword transmission, the receiver performs minimum Hamming distance decoding, and correctly decodes the message bits if and only if the channel introduces at most one bit error. For 𝜖= 0.1, the probability that a transmitted codeword is decoded correctly is _________ (rounded off to two decimal places). Page 50 GATE 2022 Electronics and Communications Engineering (EC)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {

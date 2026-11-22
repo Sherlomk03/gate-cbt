@@ -147,8 +147,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.11 – Q.35 Carry ONE mark Each Q.11 Consider the infinite-length, discrete-time sequence 𝑥[𝑛] = 0.9|𝑛|, where 𝑛 is an integer. The region of convergence of its Z-transform 𝑋(𝑧) is given by: (Note: 𝑧 is a complex variable) (A) |𝑧| > 0.9 (B) |𝑧| < 0.9 (C) 0.9 < |𝑧| < 1/0.9 (D) {𝑧 such that |𝑧| < 0.9 } ∪ { 𝑧 such that |𝑧| > 1/0.9 } Organizing Institute: IIT Guwahati Page 11 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 12,
@@ -193,7 +193,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.13 The Laplace transform of the step response of a system is given by 100 𝑌(𝑠) = 𝑠(𝑠+ 100) The rise time is defined as the time taken for the response to go from 0.1 to 0.9 of its final value. The settling time is defined as the time taken for the response to reach 0.98 of its final value. For this system, the rise time (Tr), settling time (Ts), and time constant (Tc), all expressed in seconds, are (A) Tr = 0.022, Ts = 0.04, Tc = 0.01 (B) Tr = 0.22, Ts = 0.404, Tc = 0.01 (C) Tr = 2.2, Ts = 4.04, Tc = 1.01 (D) Tr = 22, Ts = 40.4, Tc = 10.1 Organizing Institute: IIT Guwahati Page 13 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -286,8 +286,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.17 A 15 kVA, 1100 V/220 V, single-phase two-winding transformer is configured as a 1.32 kV/1.1 kV autotransformer. What will be the rating of the autotransformer? (A) 60 kVA (B) 75 kVA (C) 90 kVA (D) 100 kVA Organizing Institute: IIT Guwahati Page 16 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 18,
@@ -309,8 +309,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.18 Consider a power system with N buses, of which P are generator buses and the remaining Q are load buses (where there is no generation). Assume that there are no reactive power-limit violations at the generator buses. What is the size of the Jacobian matrix in the Newton-Raphson load flow method? (A) 2𝑁× 2𝑁 (B) (2𝑁−1 −𝑃) × (2𝑁−1 −𝑃) (C) (2𝑁− 𝑄) × (2𝑁−𝑄) (D) (𝑃+ 𝑄) × (𝑃+ 𝑄) Organizing Institute: IIT Guwahati Page 17 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 19,
@@ -355,7 +355,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 3,
       "sourceExtract": "Q.20 A certain application requires power at a frequency of 16.67 Hz, while the available grid frequency is 50 Hz. A 3-phase synchronous motor connected to the 50 Hz, 3-phase grid, driving a synchronous generator, is used for this application. Which one of the following combinations is a suitable choice for the number of poles in the motor and generator, respectively? (A) 2, 6 (B) 6, 2 (C) 4, 6 (D) 6, 4",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -378,8 +378,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.21 Which one of the following options is correct regarding the typical double-squirrel-cage structure used in induction motors? (A) At starting, a larger portion of the rotor current flows in the outer cage (B) At starting, a larger portion of the rotor current flows in the inner cage (C) At rated speed, most of the rotor current flows in the outer cage (D) The purpose of the double-squirrel-cage structure is to lower the effective rotor resistance at starting Organizing Institute: IIT Guwahati Page 19 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 22,
@@ -447,8 +447,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.24 For the circuit shown, which one of the following options correctly identifies the Thevenin’s equivalent parameters between nodes Y and Z? (A) VTH = 100 V, RTH = 10 kΩ (B) VTH = 140 V, RTH = 0 Ω (C) VTH = 100 V, RTH = 0 Ω (D) VTH = 140 V, RTH = 10 kΩ Organizing Institute: IIT Guwahati Page 22 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 25,
@@ -586,7 +586,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
       "sourceExtract": "Q.30 Two n × n matrices A and B have a common eigenvalue 2, and the same corresponding nonzero eigenvector. Which of the following options is/are correct? (Note: I is the n × n identity matrix.) (A) Determinant ( A − 2I ) = 0 (B) Determinant ( B − 2I ) = 0 (C) Determinant ( A + B − 2I ) = 0 (D) Determinant ( A + B − 4I ) = 0 Organizing Institute: IIT Guwahati Page 28 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -609,7 +609,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 3,
       "sourceExtract": "Q.31 A 220V/12V single-phase transformer is designed for use in India and rated 100 VA at 50 Hz. Later, this unit is shipped to the USA where it is used as a 110V/6V transformer at 60 Hz. Which of the following statements is/are correct? (A) No-load current drawn would be smaller for operation in the USA compared to that in India (B) For the same load current, the losses would be higher in the USA compared to that in India (C) The peak magnetic flux density in the core would be higher while operating in the USA compared to that in India (D) The eddy current losses in the core would be approximately 44% higher while operating in the USA compared to that in India Organizing Institute: IIT Guwahati Page 29 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -655,8 +655,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 26,
       "sourceExtract": "Q.33 In the linear regulator circuit shown, the base to emitter voltage VBE of the BJT is 0.6 V. The Zener diode clamps the base voltage to 5.4 V. Ignore the biasing current of the Zener diode and BJT. The maximum possible efficiency of the regulator circuit is ___________ % (Round off to one decimal place)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 34,
@@ -724,8 +724,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.36 – Q.65 Carry TWO marks Each Q.36 A time-limited waveform g(𝑥) is specified as follows: −𝑘, − 𝜋 < 𝑥 ≤0 g(𝑥) = { +𝑘, 0 < 𝑥 ≤𝜋 0, otherwise A new waveform f(𝑥) is constructed from g(𝑥) as follows: ∞ f(𝑥) = ∑g(𝑥+ 2𝜋𝑚), for all 𝑥∈𝑅 𝑚=−∞ The sum of the coefficients of the third harmonics of the sine and cosine 2 terms in the trigonometric Fourier series expansion of f(𝑥) is . 3𝜋 What is the value of 𝑘 ? (A) 1 (B) 1 2 (C) 1 3 (D) 1 4 Organizing Institute: IIT Guwahati Page 32 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 37,
@@ -747,8 +747,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 16,
       "sourceExtract": "Q.37 In the circuit shown, the open loop gain of the operational amplifier is A0 = 105. What is the voltage gain of the circuit? (Round off to two decimal places) (A) –16.67 (B) –20.00 (C) –21.00 (D) –12.67 Organizing Institute: IIT Guwahati Page 33 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 38,
@@ -770,8 +770,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.38 Three single-phase 11kV/3.3kV transformers are connected to form a three-phase transformer bank with connections as shown. Considering ABC phase sequence, the vector group of the transformer is: (A) Dd0 (B) Dd4 (C) Dd6 (D) Dd10 Organizing Institute: IIT Guwahati Page 34 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 39,
@@ -840,8 +840,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.41 A three-phase two-winding transformer has a voltage transformation ratio VP  0.866  j 0.5 , where VP is the primary side voltage in p.u., and VS is the VS secondary side voltage in p.u. PI and SI represent the currents injected into the primary and secondary sides of the transformer, respectively. The admittance corresponding to the leakage impedance of the transformer referred to the secondary is ty p.u. Neglect the magnetizing branch. The Y bus representation of this transformer is: (A)  yt yt      I P  0.866  j 0.5 0.866  j 0.5 VP          I S   yt yt  VS      0.866  j 0.5 0.866  j 0.5  (B)  I P   yt  yt VP         I S    yt yt VS  (C)  yt   yt    I P  0.866  j 0.5 VP          I S   yt  VS    yt   0.866  j 0.5  (D)  yt   yt    I P  0.866  j 0.5 VP          I S   yt  VS    yt   0.866  j 0.5  Organizing Institute: IIT Guwahati Page 37 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 42,
@@ -909,8 +909,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
       "sourceExtract": "Q.44 The terminal voltage and current of a linear electrical network shown in Figure (a) are given in the table. Terminal voltage (vt) Terminal current (it) 18 V – 0.5 A 30 V 0.5 A 36 V 1.0 A The correct choice for the parameters (IN, RN) of the Norton equivalent circuit shown in Figure (b) is: (A) IN = 3.0 A, RN = 24.0 Ω (B) IN = 12.0 A, RN = 2.0 Ω (C) IN = 2.0 A, RN = 12.0 Ω (D) IN = 2.0 A, RN = 24.0 Ω Organizing Institute: IIT Guwahati Page 40 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 45,
@@ -1003,7 +1003,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 4,
       "sourceExtract": "Q.48 Consider the boost converter circuit shown. Assume that the semiconductor devices are ideal. In steady state, the inductor current rises linearly from 0 A to 6 A in the first 10 µs and then falls linearly from 6 A to 0 A in the next 10 µs of every switching cycle as shown. The load resistance R is 10 Ω and the capacitance C is 500 µF. Neglect the ripple in the output voltage. What is the input voltage Vdc? (A) 10.0 V (B) 15.0 V (C) 7.5 V (D) 12.5 V Organizing Institute: IIT Guwahati Page 44 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -1049,7 +1049,7 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
       "sourceExtract": "Q.50 Consider the second-order differential equation 𝑑2𝑦 𝑑𝑦 + 𝑦= 0 𝑑𝑥2 𝑑𝑥+ with initial conditions 𝑑𝑦 𝑦(0) = 1, 𝑑𝑥| 𝑥=0 = 1 The solution is given by (A) 𝑦(𝑥) = exp(−𝑥/2) (cos (√3𝑥 ) + √3sin (√3𝑥 )) 2 2 (B) 1 𝑦(𝑥) = exp(−𝑥/2) (cos (√3𝑥 ) + sin (√3𝑥 )) 2 √3 2 (C) 1 𝑦(𝑥) = exp(−𝑥/2) (cos (√3𝑥 ) − sin (√3𝑥 )) 2 √3 2 (D) 𝑦(𝑥) = exp(−𝑥/2) (cos (√3𝑥 ) − √3sin (√3𝑥 )) 2 2 Organizing Institute: IIT Guwahati Page 46 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
+      "taxonomyReviewStatus": "requires_visual_review",
       "selectionEligible": false
     },
     {
@@ -1141,8 +1141,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
       "sourceExtract": "Q.54 For the balanced 3-phase transmission line shown, consider the following cases: Case-1: |𝑉1| = 1.1 p. u. , |𝑉2| = 0.9 p. 𝑢. , 𝑍= 0.75∠0𝑜 𝑝. 𝑢. and 𝜃12 = 𝜃1 −𝜃2 = 0𝑜 Case-2: |𝑉1| = 1.1 p. u. , |𝑉2| = 0.9 p. u. , 𝑍= 0.75∠90𝑜 𝑝. 𝑢. and 𝜃12 = 𝜃1 −𝜃2 = 90𝑜 Which of the following statements is/are correct about real power loss and reactive power loss in the line? (A) Real power loss in Case-1 is more than that in Case-2 (B) Real power loss in Case-2 is more than that in Case-1 (C) Reactive power loss in Case-1 is more than that in Case-2 (D) Reactive power loss in Case-2 is more than that in Case-1 Organizing Institute: IIT Guwahati Page 50 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 55,
@@ -1164,8 +1164,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 23,
       "sourceExtract": "Q.55 Consider an n × n orthogonal matrix 𝐴 with real entries and each column having unit Euclidean norm. Which of the following statements is/are correct? (A) The value of the determinant of 𝐴 is either +1 or –1 (B) The eigenvalues of 𝐴 have modulus 1 (C) ∥𝐴𝒙∥ = ∥𝒙∥, for all x ∈ 𝑅𝑛, where ∥𝒙∥ denotes the Euclidean norm of 𝒙, and (𝐴𝒙)𝑇(𝐴𝒚) ≠𝒙𝑇𝒚, for all distinct x, y ∈ 𝑅𝑛 (D) ∥𝐴𝒙∥ = ∥𝒙∥, for all x ∈ 𝑅𝑛, where ∥𝒙∥ denotes the Euclidean norm of 𝒙, and (𝐴𝒙)𝑇(𝐴𝒚) = 𝒙𝑇𝒚, for all x, y ∈ 𝑅𝑛 Organizing Institute: IIT Guwahati Page 51 of 55 Electrical Engineering (EE)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 56,
@@ -1210,8 +1210,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
       "sourceExtract": "Q.57 The resistance values of the Wheatstone bridge shown are: P = 2000 Ω, Q = 500 Ω,R = 3000 Ω. The battery voltage E = 50V. The battery has an internal resistance of 1  and the Galvanometer (G) has a resistance of 50 . The value of the resistance S for balanced condition is _____________ Ω (Answer in integer)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 58,
@@ -1257,8 +1257,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 18,
       "sourceExtract": "Q.59 A balanced three-phase supply is given to a 30 kW, 4-pole, 400 V, 50 Hz, wound rotor induction motor with Y-connected stator and rotor windings. The motor is driving a constant torque load. With shorted sliprings, the machine runs at 1476 rpm. When an external non-inductive resistance of 0.27 Ω per phase is connected in series in the rotor circuit, the steady-state speed drops to 1404 rpm. Neglecting rotational losses, the actual per phase rotor winding resistance is ____ Ω (Round off to two decimal places)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 60,
@@ -1280,8 +1280,8 @@
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 29,
       "sourceExtract": "Q.60 Consider the two-port network shown. For maximum power transfer to the resistive load (RL), the value of RL should be__________ Ω (Round off to two decimal places)",
-      "taxonomyReviewStatus": "automatic_context_match",
-      "selectionEligible": true
+      "taxonomyReviewStatus": "requires_visual_review",
+      "selectionEligible": false
     },
     {
       "number": 61,
