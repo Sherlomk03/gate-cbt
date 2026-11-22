@@ -348,7 +348,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EC.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EC_Keys.pdf",
       "pdfPage": 57,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Double integral over a rotated square",
+        "formula": "Let u=x−1, v=y; x²+y²−1=u²+v²+2u.",
+        "steps": [
+          "The shaded square (diamond) has vertices (0,0),(1,1),(2,0),(1,−1), center (1,0), diagonals 2 and 2, and area 2.",
+          "Shift origin to its center: u=x−1, v=y. Then x²+y²−1 = u²+v²+2u.",
+          "The domain is symmetric about u=0; therefore ∫∫_R 2u dA=0.",
+          "The polar second moment of a square of side a about its center is J=a⁴/6; its side here is a=√2, so J=(√2)⁴/6=4/6=2/3.",
+          "Therefore the integral is 2/3≈0.67, within the official 0.60–0.70 acceptance interval."
+        ],
+        "examTip": "Shift coordinates to exploit symmetry of rotated regions before integrating.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "2022-EE-Q27",
@@ -397,7 +411,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ee_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ee_2022.pdf",
       "pdfPage": 19,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Steady-state RC circuit after a switch closes",
+        "formula": "At DC steady state, a capacitor is an open circuit; V_R=V_s R/(R+R_series).",
+        "steps": [
+          "After sufficient time following closure at t=0, the capacitor current is zero, so its branch with the 10 Ω resistor carries no current.",
+          "The remaining circuit has 6 Ω and 3 Ω resistors in parallel: R_p=(6×3)/(6+3)=2 Ω.",
+          "This is in series with the 2 Ω resistor and the 10 V source, giving total 4 Ω.",
+          "The source current is 10/4=2.5 A; voltage across the parallel pair is 2.5×2=5.00 V.",
+          "The 6 Ω resistor is across this same voltage, so its steady-state magnitude is 5.00 V."
+        ],
+        "examTip": "At DC steady state, replace capacitors with open circuits and inductors with shorts before simplifying.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "2022-EC-Q13",
@@ -415,7 +443,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ec_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ec_2022.pdf",
       "pdfPage": 11,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Nodal analysis with a current source",
+        "formula": "KCL at central node: (5−V_N)/2 + 1 = V_N/2, with Ω in kΩ and currents in mA.",
+        "steps": [
+          "Take the bottom conductor as the 0 V reference and call the central node voltage V_N.",
+          "The right-side ideal current source forces 1 mA into the central node; its series 2 kΩ resistor does not change that forced current.",
+          "The 5 V source supplies (5−V_N)/2 mA through the left 2 kΩ resistor. The middle 2 kΩ branch carries V_N/2 mA to ground.",
+          "KCL: (5−V_N)/2+1=V_N/2. Multiply by 2: 5−V_N+2=V_N, so V_N=3.5 V.",
+          "The asked current is I=(5−3.5)/2 kΩ=0.75 mA=0.75×10⁻³ A, option B."
+        ],
+        "examTip": "An ideal current source fixes branch current; its series resistance need not appear in the nodal equation.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "2026-EE-Q60",
@@ -433,7 +475,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EE.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EE_Keys.pdf",
       "pdfPage": 54,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Maximum power transfer using Thevenin resistance",
+        "formula": "For a resistive load, P_L is maximized when R_L=R_th.",
+        "steps": [
+          "Deactivate the independent ideal voltage source at the left port by replacing it with a short circuit.",
+          "The 5 Ω left shunt of the π two-port is then bypassed by the short; it has no effect on resistance seen by the load.",
+          "From the load terminals, the remaining paths to ground are 10 Ω via the shorted left port and a 4 Ω shunt in parallel.",
+          "Therefore R_th=(10×4)/(10+4)=40/14=20/7≈2.85714 Ω.",
+          "Set R_L=R_th. To two decimals R_L=2.86 Ω, within the official 2.81–2.91 range."
+        ],
+        "examTip": "For maximum power transfer, deactivate independent sources before finding the resistance looking into the load terminals.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "2023-EE-Q51",
@@ -451,7 +507,23 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 36,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "AC Thevenin voltage with a dependent source",
+        "formula": "Z₁=10−j10 Ω, Z₂=10+j10 Ω; i_x=V₁/Z₁; V₂=V₁−4i_x.",
+        "steps": [
+          "At ω=1000 rad/s, use phasor impedances: the two parallel-branch combinations in the original circuit reduce to Z₁=10−j10 Ω and Z₂=10+j10 Ω.",
+          "Let V₁ denote the open-circuit a-b Thevenin voltage phasor. The controlling branch current is i_x=V₁/Z₁.",
+          "The dependent voltage source gives V₂=V₁−4i_x=V₁−4V₁/Z₁.",
+          "The input current i splits between the two branches: i=V₁/Z₁+V₂/Z₂=V₁(1/Z₁+1/Z₂−4/(Z₁Z₂)).",
+          "Because Z₁Z₂=200 and (Z₁+Z₂)/200=20/200=0.1, the multiplier is 0.1−0.02=0.08 S.",
+          "Hence V_th=V₁=i/0.08=12.5i and, for i(t)=sin(1000t), v_th(t)=12.5 sin(1000t) V.",
+          "At t=5 ms, 1000t=5 rad, and v_th=12.5 sin5≈−11.99 V, matching the official acceptance interval −12.1 to −11.9 V."
+        ],
+        "examTip": "Keep dependent sources active when evaluating Thevenin quantities; use phasor impedance at the specified ω.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "2026-EE-Q42",
@@ -501,7 +573,22 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 36,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Two-port y-parameters and resistive load power",
+        "formula": "I₂=y₂₁V₁+y₂₂V₂, P_L=V₂²/R_L.",
+        "steps": [
+          "The left-side ideal source sets V₁=20 V. The external 3 Ω branch is connected between port nodes; the load at port 2 is R_L=6 Ω.",
+          "The two-port has y₂₁=−2.5 S and y₂₂=1 S, so its port-2 current is I₂=−2.5(20)+V₂.",
+          "Applying KCL at the output node including the 3 Ω branch and 6 Ω load: −V₂/6=−2.5(20)+V₂+(V₂−20)/3.",
+          "Multiply by 6: −V₂=−300+6V₂+2V₂−40, hence 9V₂=340 and V₂=37.777... V.",
+          "Power in the 6 Ω load is P_L=V₂²/6=(340/9)²/6=237.86 W.",
+          "This agrees with the official numerical range 237–239 W."
+        ],
+        "examTip": "A negative y₂₁ represents transfer current from input to output; respect the two-port's sign convention when applying KCL.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "2026-EE-Q24",
@@ -519,7 +606,22 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EE.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EE_Keys.pdf",
       "pdfPage": 22,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Thevenin voltage and resistance with ideal voltage sources",
+        "formula": "V_th=V_Y−V_Z; R_th from deactivating ideal independent voltage sources.",
+        "steps": [
+          "The 100 V ideal source fixes V_X−V_W=100 V.",
+          "The top 20 V source sets V_Y−V_X=20 V. Therefore V_Y−V_W=120 V.",
+          "The diagonal 20 V source sets V_W−V_Z=20 V.",
+          "Combine: V_Y−V_Z=(V_Y−V_W)+(V_W−V_Z)=120+20=140 V.",
+          "To obtain R_th, short all ideal independent voltage sources. Then Y connects directly to X, X to W, and W to Z through ideal shorts, so Y and Z are the same node electrically.",
+          "Thus R_th=0 Ω, giving option B (140 V, 0 Ω)."
+        ],
+        "examTip": "An ideal voltage-source path can make two output nodes short-circuit-connected when sources are deactivated, regardless of intervening resistors.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "2024-EE-Q13",
@@ -537,7 +639,22 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
       "pdfPage": 12,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Nodal analysis and power from a voltage source",
+        "formula": "P_source=V_source×I_source.",
+        "steps": [
+          "Let the top center node voltage be V relative to the bottom rail. The 10 A current source forces 10 A through the 2 Ω top branch into that node.",
+          "The 10 V source's positive terminal is linked to the top center node through the resistor α Ω. The middle 1 Ω resistor connects the center node to ground.",
+          "KCL at the center node: V/1+(V−10)/α=10.",
+          "Multiply through by α: αV+V−10=10α, hence (α+1)V=10(α+1). For a physical nonnegative resistance α, V=10 V.",
+          "The voltage across α is V−10=0, so the current through α and the 10 V source is zero.",
+          "Thus the 10 V source delivers 10×0=0 W, option A."
+        ],
+        "examTip": "Do not assume a nonzero ideal voltage source necessarily delivers power: it can carry zero current.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "2026-EE-Q43",
@@ -555,7 +672,23 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EE.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EE_Keys.pdf",
       "pdfPage": 39,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "First-order capacitor charging after a current step",
+        "formula": "v_C(t)=v_C(∞)+[v_C(0⁺)−v_C(∞)]e^(−t/RC).",
+        "steps": [
+          "For t<0 the 1u(t) mA source is off and the capacitor is an open circuit at DC steady state. The 10 V supply's 25 kΩ and 100 kΩ divider gives v_C(0⁻)=10×100/(25+100)=8.00 V.",
+          "Capacitor voltage cannot jump without an impulse current, so v_C(0⁺)=8.00 V.",
+          "For t→∞, the current source injects 1 mA. With R_eq=25 kΩ ∥100 kΩ=20 kΩ, the incremental voltage is 1 mA×20 kΩ=20 V; thus v_C(∞)=8+20=28.00 V.",
+          "With C=10 μF, τ=R_eq C=20 kΩ×10 μF=0.20 s.",
+          "Therefore v_C(t)=28−20e^(−t/0.2) V for t≥0.",
+          "At t=0.50 s, v_C=28−20e^(−2.5)=26.3583... V≈26.36 V.",
+          "The ordered triple is (8.00,26.36,28.00) V: option B."
+        ],
+        "examTip": "Find initial value, final value, and time constant separately; then substitute into the standard first-order response.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "ACE-GSS-2022-Q11",
@@ -949,7 +1082,22 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ec_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ec_2022.pdf",
       "pdfPage": 36,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Counter output controlling a JK flip-flop",
+        "formula": "With J=K=1, a JK flip-flop toggles on its active clock edge.",
+        "steps": [
+          "The two-bit binary counter is driven by a clock of frequency f₀. Its LSB alternates 0,1,0,1 on successive clock edges.",
+          "The counter's LSB drives both J and K of a JK flip-flop, clocked by the same clock.",
+          "When LSB=1 at a triggering edge, J=K=1 and the flip-flop toggles; otherwise it holds. Consequently Q changes state once every two input clock cycles.",
+          "A complete high-low waveform of Q therefore spans four original clock cycles: f_Q=f₀/4.",
+          "Q stays high for two cycles and low for two cycles, so the duty cycle is 2/4=50%, option A.",
+          "The original 25% duty cycle of the driving clock does not determine the divide-by-four Q duty cycle."
+        ],
+        "examTip": "A counter-gated toggle flip-flop divides frequency according to how often the toggle condition occurs at active edges.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "2024-EE-Q26",
@@ -1095,7 +1243,22 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 38,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Fixed-point states of a D-flip-flop feedback network",
+        "formula": "A=Q̄₁, C=Q₂, B=Ā, D=B⊕C; Q₁(next)=C, Q₂(next)=D.",
+        "steps": [
+          "Read the NOR/XOR and two D-flip-flop network: A is the complement of Q₁, B=Ā, C=Q₂ and D=B⊕C.",
+          "For a stable state unchanged by clock edges, Q₁(next)=Q₁ gives C=Q₁=Ā.",
+          "The other flip-flop must also remain unchanged, so C=Q₂=Q₂(next)=D=Ā⊕C.",
+          "The equation C=Ā⊕C requires Ā=0. Hence A=1 and C=Ā=0.",
+          "Then B=Ā=0 and D=B⊕C=0⊕0=0.",
+          "Therefore [A B C D]=[1 0 0 0], binary 1000, which is decimal 8."
+        ],
+        "examTip": "Find stable states by equating each flip-flop's present output and next-state input, not by guessing waveforms.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "2023-EC-Q23",
@@ -1113,7 +1276,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ec_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EC_ANS_GATE2023.pdf",
       "pdfPage": 16,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "2:1 multiplexer as an AND gate",
+        "formula": "Y=I₀ S̄+I₁ S.",
+        "steps": [
+          "The figure shows a 2:1 multiplexer with lower select input S=Q.",
+          "Its data input I₀ is grounded (logic 0) and data input I₁ is P.",
+          "Apply the MUX equation: Y=I₀ Q̄+I₁ Q.",
+          "Substitute I₀=0 and I₁=P: Y=0×Q̄+P×Q=PQ.",
+          "This is an AND function, option A."
+        ],
+        "examTip": "A 2:1 MUX with its first data input at 0 implements an AND of the second data input and select.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "2026-EE-Q45",
@@ -1131,7 +1308,22 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EE.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EE_Keys.pdf",
       "pdfPage": 41,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Boolean cancellation of NOR and OR branches",
+        "formula": "OUT=(x+y+z)̄ × [x̄y+x̄z].",
+        "steps": [
+          "The top three-input NOR gate produces N=(x+y+z)̄=x̄ȳz̄.",
+          "The NOT gate on x produces x̄. The two AND gates produce x̄y and x̄z, and their OR gate produces O=x̄y+x̄z=x̄(y+z).",
+          "The final AND gate combines the NOR output and the OR output: OUT=N·O.",
+          "Substitute: OUT=x̄ȳz̄·x̄(y+z)=x̄ȳz̄(y+z).",
+          "Because ȳz̄ implies y=0 and z=0, y+z=0 whenever the NOR branch is 1. Thus the product is identically 0.",
+          "The simplified output is constant 0, option B."
+        ],
+        "examTip": "If one branch requires all inputs low while another requires at least one of those inputs high, their AND is always zero.",
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+      }
     },
     {
       "id": "2024-EC-Q57",
