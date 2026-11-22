@@ -140,14 +140,15 @@ def main():
   counts={}
   for q in paper['questions']:
    if q['number']<=10:continue
-   if q.get('classificationStatus')=='manually_audited_source_text':
+   if q.get('classificationStatus') in ('manually_audited_source_text','curated_source_text'):
     counts[q['subject']]=counts.get(q['subject'],0)+1
     continue
    raw=texts.get(q['number'],'')
    sub,topic,confidence,margin=classify(raw,paper['branch'])
    q.update({'subject':sub,'topic':topic,'classificationStatus':confidence,
              'classificationMethod':'keyword scoring on original official PDF; review required',
-             'classificationMargin':margin,'sourceExtract':raw[:1800]})
+             'classificationMargin':margin,'sourceExtract':raw[:1800],
+             'taxonomyReviewStatus':'requires_visual_review','selectionEligible':False})
    counts[sub]=counts.get(sub,0)+1
   file.write_text(json.dumps(paper,indent=2,ensure_ascii=False)+'\n')
   stats[file.stem]=counts
