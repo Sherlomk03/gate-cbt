@@ -1305,7 +1305,15 @@
           "The pair is (1000 Mbits/s,3 ns), option A."
         ],
         "examTip": "Pipeline depth affects latency but not steady-state throughput when all stages can accept one item per clock.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[T_{\\mathrm{clk}}=\\frac1{f_{\\mathrm{clk}}},\\qquad \\text{latency}=N T_{\\mathrm{clk}}\\]",
+        "mathSteps": [
+          "The diagram has **three clocked D flip-flops** in a pipeline.",
+          "At \\(f_{\\mathrm{clk}}=1\\,\\mathrm{GHz}\\), the clock period is \\[T_{\\mathrm{clk}}=\\frac1{10^9}=1\\,\\mathrm{ns}.\\]",
+          "After the pipeline fills, one bit leaves on each clock cycle. Therefore \\[\\mathrm{Throughput}=\\frac{1\\ \\mathrm{bit}}{1\\,\\mathrm{ns}}=10^9\\,\\mathrm{bit/s}=\\boxed{1000\\,\\mathrm{Mbit/s}}.\\]",
+          "Each input bit traverses **three** sequential registers, so its latency is \\[3T_{\\mathrm{clk}}=\\boxed{3\\,\\mathrm{ns}}.\\]",
+          "**Correct option A:** \\((1000\\,\\mathrm{Mbit/s},\\ 3\\,\\mathrm{ns})\\)."
+        ]
       }
     },
     {
@@ -1338,7 +1346,16 @@
           "The original 25% duty cycle of the driving clock does not determine the divide-by-four Q duty cycle."
         ],
         "examTip": "A counter-gated toggle flip-flop divides frequency according to how often the toggle condition occurs at active edges.",
-        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional.",
+        "mathFormula": "\\[f_Q=\\frac{f_0}{4},\\qquad \\text{duty cycle}=50\\%\\]",
+        "mathSteps": [
+          "The input clock has frequency \\(f_0\\) and a stated \\(25\\%\\) duty cycle. A two-bit counter changes its least significant bit on successive clock edges.",
+          "The counter's LSB controls the inputs of a JK flip-flop. When \\(J=K=1\\) on its active edge, the flip-flop **toggles**; otherwise it holds.",
+          "A toggle occurs once for every **two** input clock cycles, so \\(Q\\) needs four input cycles to complete one full high-low period.",
+          "Hence \\[T_Q=4T_0\\quad\\Longrightarrow\\quad \\boxed{f_Q=\\frac{f_0}{4}}.\\]",
+          "The output remains high for two input cycles and low for two cycles: \\[\\text{duty cycle}=\\frac{2T_0}{4T_0}\\times100\\%=\\boxed{50\\%}.\\]",
+          "**Option A.**"
+        ]
       }
     },
     {
@@ -1369,7 +1386,15 @@
           "Therefore the MUX data inputs (P,Q,R,S) must be (1,1,1,0), i.e. 1110, option B."
         ],
         "examTip": "For a 4:1 MUX with both variables on select lines, write the truth-table output in binary input order 00,01,10,11.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[F(X,Y)=X\\overline Y+\\overline X=\\overline X+\\overline Y\\]",
+        "mathSteps": [
+          "Apply Boolean absorption: \\(\\overline X+XA=\\overline X+A\\). With \\(A=\\overline Y\\): \\[F=\\overline X+\\overline Y.\\]",
+          "The MUX select inputs are \\(S_1=X\\) (MSB) and \\(S_0=Y\\) (LSB).",
+          "Write the output truth table: \\[\\begin{array}{c|cccc}(X,Y)&00&01&10&11\\\\\\hline F&1&1&1&0\\end{array}\\]",
+          "A \\(4\\!:\\!1\\) MUX selects \\(P,Q,R,S\\) in that same order, so \\[\\boxed{PQRS=1110}.\\]",
+          "**Option B.**"
+        ]
       }
     },
     {
@@ -1401,7 +1426,15 @@
           "By absorption, z̄+xyz=z̄+xy, giving option C."
         ],
         "examTip": "Read the selector order carefully: MSB S1 determines the 2's bit of the input index.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[f=I_0\\overline x\\,\\overline z+I_1\\overline xz+I_2x\\overline z+I_3xz\\]",
+        "mathSteps": [
+          "The select signals are \\(S_1=x\\) and \\(S_0=z\\). Read the inputs shown in the question: \\[(I_0,I_1,I_2,I_3)=(1,0,1,y).\\]",
+          "Insert into the MUX expansion: \\[f=\\overline x\\,\\overline z+0+x\\overline z+xyz.\\]",
+          "Factor the first and third terms: \\[f=\\overline z(\\overline x+x)+xyz=\\overline z+xyz.\\]",
+          "Use absorption \\(\\overline z+zA=\\overline z+A\\): \\[\\boxed{f=\\overline z+xy}.\\]",
+          "**Correct option C.**"
+        ]
       }
     },
     {
@@ -1434,7 +1467,16 @@
           "Average over the three equiprobable symbols: P_e=(p+2p+p)/3=(4/3)p. Thus α=4/3, option D."
         ],
         "examTip": "For equally likely symbols in symmetric Gaussian noise, decision thresholds are midpoints; average conditional error probabilities.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[P_e=\\frac13\\sum_{s\\in\\{-2,0,2\\}}\\Pr(\\text{decision error}\\mid S=s)\\]",
+        "mathSteps": [
+          "The three symbols \\(S\\in\\{-2,0,2\\}\\) are equally likely. With additive symmetric Gaussian noise, maximum-likelihood detection uses the nearest symbol.",
+          "Decision boundaries lie halfway between adjacent symbols, at \\(Y=-1\\) and \\(Y=1\\). Let \\(p=\\Pr(N>1)=\\Pr(N<-1)\\).",
+          "If \\(S=-2\\), an error requires \\(N>1\\), giving \\(P_{e|-2}=p\\).",
+          "If \\(S=0\\), an error occurs when \\(N<-1\\) or \\(N>1\\), giving \\(P_{e|0}=2p\\).",
+          "If \\(S=2\\), an error requires \\(N<-1\\), giving \\(P_{e|2}=p\\).",
+          "Average across the three symbols: \\[P_e=\\frac{p+2p+p}{3}=\\frac43p=\\frac43\\Pr(N>1).\\] Thus \\(\\boxed{\\alpha=\\tfrac43}\\), **option D**."
+        ]
       },
       "contentAuditNote": "Original problem is Communications probability/maximum-likelihood decoding, not combinational or sequential logic."
     },
@@ -1467,7 +1509,15 @@
           "Other offered expressions do not cover the entire specified minterm set without omission or addition. Both A and D are valid."
         ],
         "examTip": "MSQ K-map questions can have multiple distinct valid minimal or nonminimal SOP representations.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[f(w,x,y,z)=\\sum m(0,2,5,7,8,10,13,14,15)\\]",
+        "mathSteps": [
+          "Group minterms \\(\\{0,2,8,10\\}\\). Here \\(x=0\\) and \\(z=0\\), giving the implicant \\(\\overline x\\,\\overline z\\).",
+          "Group minterms \\(\\{5,7,13,15\\}\\). Here \\(x=1\\) and \\(z=1\\), giving \\(xz\\).",
+          "The remaining minterm \\(14\\) can be grouped with \\(15\\), giving \\(wxy\\). Thus \\[f=\\overline x\\,\\overline z+xz+wxy,\\] which is **option A**.",
+          "Alternatively, group \\(14\\) with \\(10\\) to obtain \\(wy\\overline z\\). Thus \\[f=\\overline x\\,\\overline z+xz+wy\\overline z,\\] which is **option D**.",
+          "Both expressions produce exactly the specified minterms. **Correct options: A and D.**"
+        ]
       }
     },
     {
@@ -1500,7 +1550,16 @@
           "Therefore [A B C D]=[1 0 0 0], binary 1000, which is decimal 8."
         ],
         "examTip": "Find stable states by equating each flip-flop's present output and next-state input, not by guessing waveforms.",
-        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional.",
+        "mathFormula": "\\[Q_{\\mathrm{next}}=Q_{\\mathrm{present}}\\quad\\text{for a stable flip-flop state}\\]",
+        "mathSteps": [
+          "Use the NOR/XOR network relations from the figure: \\(A=\\overline{Q_1}\\), \\(B=\\overline A\\), \\(C=Q_2\\), \\(D=B\\oplus C\\).",
+          "The two D flip-flops have next-state inputs \\(Q_1^+=C\\) and \\(Q_2^+=D\\). At a stable state: \\[Q_1=C,\\qquad Q_2=D.\\]",
+          "Since \\(Q_1=\\overline A\\), stability requires \\(C=\\overline A\\). Also \\(Q_2=C=D=\\overline A\\oplus C\\).",
+          "From \\(C=\\overline A\\oplus C\\), infer \\(\\overline A=0\\), so \\(A=1\\) and \\(C=0\\).",
+          "Then \\(B=\\overline A=0\\), and \\(D=B\\oplus C=0\\).",
+          "The stable binary word is \\[\\boxed{ABCD=1000_2=8_{10}}.\\]"
+        ]
       }
     },
     {
@@ -1532,7 +1591,15 @@
           "This is an AND function, option A."
         ],
         "examTip": "A 2:1 MUX with its first data input at 0 implements an AND of the second data input and select.",
-        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional.",
+        "mathFormula": "\\[Y=I_0\\overline S+I_1S\\]",
+        "mathSteps": [
+          "The figure is a \\(2\\!:\\!1\\) multiplexer. Its select input is \\(S=Q\\).",
+          "The data inputs are \\(I_0=0\\) and \\(I_1=P\\).",
+          "Use the multiplexer output equation: \\[Y=I_0\\overline Q+I_1Q.\\]",
+          "Substitute: \\[Y=0\\cdot\\overline Q+P\\cdot Q=\\boxed{PQ}.\\]",
+          "This is an AND function. **Option A.**"
+        ]
       }
     },
     {
@@ -1565,7 +1632,15 @@
           "The simplified output is constant 0, option B."
         ],
         "examTip": "If one branch requires all inputs low while another requires at least one of those inputs high, their AND is always zero.",
-        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional."
+        "reference": "Worked from the original question structure and checked against the published answer key; topic tags remain provisional.",
+        "mathFormula": "\\[\\mathrm{OUT}=\\overline{x+y+z}\\cdot\\overline x(y+z)\\]",
+        "mathSteps": [
+          "The three-input NOR gate produces \\[N=\\overline{x+y+z}=\\overline x\\,\\overline y\\,\\overline z.\\]",
+          "The inverter outputs \\(\\overline x\\). Two AND gates form \\(\\overline xy\\) and \\(\\overline xz\\), whose OR is \\[O=\\overline xy+\\overline xz=\\overline x(y+z).\\]",
+          "The final AND produces \\[\\mathrm{OUT}=NO=\\overline x\\,\\overline y\\,\\overline z\\cdot\\overline x(y+z).\\]",
+          "When \\(\\overline y\\,\\overline z=1\\), both \\(y\\) and \\(z\\) are zero, hence \\(y+z=0\\). Otherwise the NOR term vanishes.",
+          "Thus the product is identically \\(\\boxed{\\mathrm{OUT}=0}\\), **option B**."
+        ]
       }
     },
     {
@@ -1598,7 +1673,16 @@
           "To two decimals the result is 45.15 dB, within the official 45.00–45.30 acceptance range."
         ],
         "examTip": "Signal power must come from E[A²], not (E[A])²; using mean amplitude would incorrectly give zero.",
-        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
+        "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional.",
+        "mathFormula": "\\[\\mathrm{SQNR}_{\\mathrm{dB}}=10\\log_{10}\\!\\left(\\frac{P_s}{P_q}\\right),\\qquad P_q=\\frac{\\Delta^2}{12}\\]",
+        "mathSteps": [
+          "The random process is \\(X(t)=A\\cos(2\\pi f_0t+\\theta)\\), with \\(A\\sim\\mathcal U[-2,2]\\) and \\(\\theta\\sim\\mathcal U[0,2\\pi]\\).",
+          "Its signal power is \\[P_s=E[A^2]\\,E[\\cos^2\\theta]=\\frac43\\cdot\\frac12=\\frac23.\\]",
+          "For an 8-bit mid-rise quantizer spanning \\([-2,2]\\), the step is \\[\\Delta=\\frac{2-(-2)}{2^8}=\\frac4{256}=\\frac1{64}.\\]",
+          "Under the uniform quantization-noise model, \\[P_q=\\frac{\\Delta^2}{12}=\\frac{1}{64^2\\cdot12}=\\frac1{49152}.\\]",
+          "Therefore \\[\\mathrm{SQNR}=\\frac{2/3}{1/49152}=32768.\\]",
+          "Convert to decibels: \\[\\boxed{\\mathrm{SQNR}_{\\mathrm{dB}}=10\\log_{10}(32768)=45.15\\,\\mathrm{dB}}.\\]"
+        ]
       },
       "contentAuditNote": "Original problem is random-process quantization and SQNR, not combinational or sequential logic."
     }
