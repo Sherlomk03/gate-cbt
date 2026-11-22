@@ -37,7 +37,13 @@ jobs:
               d=json.loads(f.read_text())
               q=d['questions']
               assert len(q)==40 and len({x['id'] for x in q})==40
-              assert [sum(x['subject']==s for x in q) for s in d['subjects']]==[10,10,10,10]
+              if not d.get('taxonomyCorrectedAt'):
+                  assert [sum(x['subject']==subject for x in q) for subject in d['subjects']]==[10,10,10,10]
+                  assert all(x.get('sourceType')=='ace_classroom' or x.get('selectionEligibleForFuture') is not False for x in q)
+              else:
+                  # Historical papers are never rebalanced after a corrected taxonomy;
+                  # IDs, answer keys and previously saved answers must remain stable.
+                  assert sum(d['actualSubjectCounts'].values()) == 40
               assert all(x['officialKey'] for x in q)
               assert all((x.get('sourceType')=='ace_classroom' and x.get('stem') and isinstance(x.get('options'),list) and x.get('officialGatePYQ') is False) or (x.get('imagePath') and x.get('paperUrl') and x.get('keyUrl')) for x in q)
               ace=[x for x in q if x.get('sourceType')=='ace_classroom']
