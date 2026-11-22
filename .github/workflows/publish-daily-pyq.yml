@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/publish_daily_pyq.py'
+      - 'scripts/validate_taxonomy.py'
       - '.github/workflows/publish-daily-pyq.yml'
 permissions:
   contents: write
@@ -27,6 +28,8 @@ jobs:
           python scripts/publish_daily_pyq.py
           # Prepublish first Signals rotation for 22 Nov; later runs leave it unchanged.
           python scripts/publish_daily_pyq.py 2026-11-22
+      - name: Validate source taxonomy and every published question
+        run: python scripts/validate_taxonomy.py
       - name: Audit and commit
         run: |
           python - <<'PY'
@@ -39,7 +42,7 @@ jobs:
               assert len(q)==40 and len({x['id'] for x in q})==40
               if not d.get('taxonomyCorrectedAt'):
                   assert [sum(x['subject']==subject for x in q) for subject in d['subjects']]==[10,10,10,10]
-                  assert all(x.get('sourceType')=='ace_classroom' or x.get('selectionEligibleForFuture') is not False for x in q)
+                  assert all(x.get('sourceType')=='ace_classroom' or x.get('selectionEligibleForFuture') is True for x in q)
               else:
                   # Historical papers are never rebalanced after a corrected taxonomy;
                   # IDs, answer keys and previously saved answers must remain stable.
