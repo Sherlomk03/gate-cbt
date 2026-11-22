@@ -107,7 +107,8 @@
         ],
         "examTip": "When a lossless-line input is described by a standing wave, resistance equivalents greater and less than Z0 can both occur with different line lengths.",
         "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
-      }
+      },
+      "contentAuditNote": "Original problem is on transmission-line standing waves, not Calculus. Daily subject/topic was assigned provisionally."
     },
     {
       "id": "2025-EE-Q51",
@@ -330,7 +331,8 @@
         ],
         "examTip": "When marginal transmission loss depends on a generator, use its loss penalty factor in equal-incremental-cost dispatch.",
         "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
-      }
+      },
+      "contentAuditNote": "Original problem is Power Systems economic dispatch, not Calculus. Official result is marks to all (MTA)."
     },
     {
       "id": "2026-EC-Q61",
@@ -1193,7 +1195,8 @@
         ],
         "examTip": "For equally likely symbols in symmetric Gaussian noise, decision thresholds are midpoints; average conditional error probabilities.",
         "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
-      }
+      },
+      "contentAuditNote": "Original problem is Communications probability/maximum-likelihood decoding, not combinational or sequential logic."
     },
     {
       "id": "2026-EC-Q56",
@@ -1356,7 +1359,8 @@
         ],
         "examTip": "Signal power must come from E[A²], not (E[A])²; using mean amplitude would incorrectly give zero.",
         "reference": "Derived from the official source question and checked against the published answer key; subject tags may be provisional."
-      }
+      },
+      "contentAuditNote": "Original problem is random-process quantization and SQNR, not combinational or sequential logic."
     }
   ]
 }
