@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GATE 2027 · Cumulative Subject & Topic Performance</title>
+<style>
+:root{font:15px/1.55 system-ui,Segoe UI,sans-serif;color:#172a45;background:#f3f6fb}
+*{box-sizing:border-box}body{margin:0}header{background:#142b4d;color:#fff;padding:18px max(16px,calc((100% - 1350px)/2));display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px}
+h1{font-size:22px;margin:0}header a{color:#e4efff;text-decoration:none;margin-left:13px}header a:hover{text-decoration:underline}
+main{max-width:1360px;margin:20px auto;padding:0 18px}h2{font-size:20px;margin:4px 0 14px}h3{font-size:17px;margin:10px 0}
+.card{background:#fff;border:1px solid #dce4ee;border-radius:12px;padding:20px;margin-bottom:16px;min-width:0}
+.note{background:#eaf2ff;border-left:4px solid #2563eb;border-radius:8px;padding:12px 16px;margin-bottom:16px}
+.warning{background:#fff7e5;border-left-color:#b07815}.small{font-size:13px;color:#63748b}.muted{color:#64748b}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.metric{background:#f2f6fc;padding:13px;border-radius:9px}.metric .big{font-size:25px;font-weight:800;line-height:1.25}
+.actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:12px 0}
+button,.btn{padding:9px 13px;border:1px solid #bfcede;border-radius:8px;background:#fff;color:#193455;font:inherit;font-weight:650;cursor:pointer;text-decoration:none}
+button.primary,.btn.primary{background:#2563eb;color:#fff;border-color:#2563eb}
+button:hover,.btn:hover{filter:brightness(.96)}
+table{width:100%;border-collapse:collapse;font-size:14px}th,td{padding:10px 8px;text-align:left;border-bottom:1px solid #e7edf5;vertical-align:top}th{font-weight:700;color:#4a5b74;background:#f7faff;white-space:nowrap}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.tablewrap{width:100%;overflow-x:auto}
+progress{width:100%;height:10px;accent-color:#315ea3}.subject-group{border:1px solid #dee6f0;border-radius:10px;padding:15px;margin:14px 0}
+.overview{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0}
+.overview>div{padding:12px;background:#f7faff;border-radius:8px}.pill{display:inline-block;font-size:12px;padding:3px 9px;border-radius:100px;border:1px solid #cdd9e8;background:#f5f8fe;color:#344b69;font-weight:650}
+.pill.strong{background:#e4f5ec;border-color:#bde4d0;color:#116b46}.pill.weak{background:#fff0eb;border-color:#f1c7bd;color:#9a3d24}.pill.developing{background:#f1eeff;border-color:#dbd1fc;color:#59419a}
+.tiny{font-size:12px;color:#6c7b91}.topic-name{font-weight:650}
+.status-msg{font-weight:600}.empty{padding:22px;background:#fff;border:1px dashed #cad6e6;border-radius:10px;color:#546781}
+.revision{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.revision>div{border:1px solid #e2e9f3;border-radius:9px;padding:14px}
+a{color:#245cb4}.row{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+@media(max-width:880px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.overview,.revision{grid-template-columns:1fr}}
+@media(max-width:520px){main{padding:0 10px}.card{padding:14px}.grid{gap:8px}.metric .big{font-size:20px}header a{margin-left:0;margin-right:12px}}
+@media print{header,.actions,.note,.btn,button{display:none!important}main{max-width:none}.card,.subject-group{break-inside:avoid;box-shadow:none}body{background:#fff}}
+</style></head><body>
+<header><div><h1>GATE 2027 · Cumulative Performance</h1><div class="small" style="color:#bfd0ea">EE / EC authentic-source technical CBT · AIR under 100 preparation</div></div><nav><a href="./daily-pyq.html">Daily CBT</a><a href="./pyq-library.html">PYQ library</a><a href="./index.html">Dashboard</a></nav></header>
+<main>
+<div class="note"><b>How tracking works:</b> Every submitted daily technical CBT in <b>this browser</b> is included automatically. A refresh or return to this tab recalculates your overall subject-wise marks, strong topics and weak topics. Unsubmitted attempts are not counted. The separate General Aptitude test and older ChatGPT-created papers are not merged.</div>
+<div class="actions"><button class="primary" id="refresh">Refresh cumulative results</button><button id="export">Export my performance (JSON)</button><span id="status" class="small" role="status">Reading your saved submissions…</span></div>
+<div id="notice"></div>
+<section id="summary" class="card"><h2>Overall performance</h2><p class="small">Loading records…</p></section>
+<section id="bySection" class="card"><h2>Subject-wise marks by CBT paper section</h2><p class="small">These totals use the subject section shown when each question was attempted; they are not affected by later topic-label corrections.</p><div id="sectionTable"></div></section>
+<section id="mastery" class="card"><h2>Strong and weak topics within each subject</h2><p class="small">Topic mastery uses content-corrected subjects for four identified classification errors. Other subject/topic tags remain partly machine-assigned and provisional. Each topic is assessed across all submitted daily tests.</p><div id="topicGroups"></div></section>
+<section id="revision" class="card"><h2>Priorities for your next revision</h2><div id="revisionContent"></div></section>
+<section id="history" class="card"><h2>Test-by-test score history</h2><div id="historyContent"></div></section>
+</main>
+<script>
+'use strict';
+const $=s=>document.querySelector(s);
+const PREFIX='gateCBT.realDaily.v1.';
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const corrected={
+ '2023-EC-Q52':{subject:'Electromagnetics',topic:'Transmission Lines / Standing Waves'},
+ '2026-EE-Q58':{subject:'Power Systems',topic:'Economic Dispatch / Transmission Losses'},
+ '2025-EC-Q41':{subject:'Communication Systems',topic:'Maximum-Likelihood Symbol Detection'},
+ '2024-EC-Q57':{subject:'Communication Systems',topic:'Quantization / SQNR'}
+};
+let STATE={records:[],tests:[],unavailable:[],unlisted:[]};
+function cleanDate(v){return /^\d{4}-\d{2}-\d{2}$/.test(String(v))?v:null}
+function savedAttempt(date){try{const a=JSON.parse(localStorage.getItem(PREFIX+date)||'null');if(a&&a.submittedAt&&a.answers&&typeof a.answers==='object'&&!Array.isArray(a.answers))return a}catch(e){console.warn('Could not read saved attempt for',date,e)}return null}
+function uniqueLetters(v){return [...new Set(String(v??'').toUpperCase().match(/[A-D]/g)||[])].sort().join('')}
+function acceptedRanges(k){return String(k).replace(/[−–]/g,'-').split(/\s+OR\s+/i).flatMap(c=>{const m=c.match(/(-?\d+(?:\.\d+)?)\s+to\s+(-?\d+(?:\.\d+)?)/i);if(m)return [[+m[1],+m[2]]];const n=Number(c.trim());return Number.isFinite(n)?[[n-.005,n+.005]]:[]})}
+function grade(q,v){
+ if(/\bMTA\b/i.test(String(q.officialKey)))return {status:'MTA',net:q.marks};
+ if(v===undefined||v===null||v===''||(Array.isArray(v)&&v.length===0))return {status:'skipped',net:0};
+ let ok=false, keys=String(q.officialKey).split(/\s+OR\s+/i);
+ if(q.type==='MCQ')ok=keys.some(k=>String(v).trim().toUpperCase()===k.trim().toUpperCase());
+ else if(q.type==='MSQ')ok=keys.some(k=>uniqueLetters(Array.isArray(v)?v.join(''):v)===uniqueLetters(k));
+ else {const n=Number(v);ok=Number.isFinite(n)&&acceptedRanges(q.officialKey).some(([lo,hi])=>lo<=n&&n<=hi)}
+ return {status:ok?'correct':'wrong',net:ok?q.marks:q.type==='MCQ'?-q.marks/3:0};
+}
+function round(v,d=2){return (Math.round((v+Number.EPSILON)*10**d)/10**d).toFixed(d)}
+function percent(n,d){return d?round(100*n/d,1)+'%':'—'}
+function totals(rows){const x={marks:0,net:0,correct:0,wrong:0,skipped:0,MTA:0,attempted:0,count:0};
+ for(const r of rows){x.marks+=r.marks;x.net+=r.net;x.count++;x[r.status]++;if(r.status==='correct'||r.status==='wrong')x.attempted++}
+ return x}
+function bucket(list,key){const m=new Map;for(const r of list){const k=r[key]||'Unclassified';if(!m.has(k))m.set(k,[]);m.get(k).push(r)}return m}
+function classify(rows){const t=totals(rows),assessed=t.correct+t.wrong+t.skipped,accuracy=t.attempted?t.correct/t.attempted:0,skipRate=assessed?t.skipped/assessed:0;
+ if(!assessed)return {name:'Not assessed',level:'limited'};
+ if(assessed>=3&&t.attempted>=3&&accuracy>=.75&&skipRate<=.25&&t.net/t.marks>=.6)return {name:'Strong',level:'strong'};
+ if((assessed>=2&&skipRate>=.5)||(t.attempted>=2&&(accuracy<.5||t.net/t.marks<.35)))return {name:'Needs revision',level:'weak'};
+ if(assessed<3||t.attempted<2)return {name:'Limited evidence',level:'limited'};
+ return {name:'Developing',level:'developing'};
+}
+function quality(rows){return rows.every(r=>r.audit==='reviewed')?'Reviewed labels':rows.some(r=>r.audit==='provisional')?'Provisional tags present':'Mixed labels'}
+function scoreTable(rows,key,withRevision=false){
+ const groups=[...bucket(rows,key)].sort((a,b)=>a[0].localeCompare(b[0]));
+ return '<div class="tablewrap"><table><thead><tr><th>Subject</th><th class="num">Net marks</th><th class="num">Out of</th><th class="num">Score %</th><th class="num">Correct</th><th class="num">Wrong</th><th class="num">Skipped</th><th class="num">MTA</th><th class="num">Attempted accuracy</th></tr></thead><tbody>'+groups.map(([label,x])=>{const t=totals(x);return '<tr><td><b>'+esc(label)+'</b><br><span class="tiny">'+t.count+' questions across attempts</span></td><td class="num"><b>'+round(t.net)+'</b></td><td class="num">'+round(t.marks)+'</td><td class="num">'+percent(t.net,t.marks)+'</td><td class="num">'+t.correct+'</td><td class="num">'+t.wrong+'</td><td class="num">'+t.skipped+'</td><td class="num">'+t.MTA+'</td><td class="num">'+percent(t.correct,t.attempted)+'</td></tr>'}).join('')+'</tbody></table></div>';
+}
+function render(){
+ const rows=STATE.records,tests=STATE.tests,t=totals(rows),assessment=t.correct+t.wrong+t.skipped;
+ $('#status').textContent=tests.length+' submitted paper'+(tests.length===1?'':'s')+' in this browser';
+ $('#notice').innerHTML=(STATE.unavailable.length?'<div class="note warning"><b>Incomplete data:</b> Could not load '+esc(STATE.unavailable.join(', '))+'. These saved tests are excluded until their published question files can be accessed.</div>':'')+(STATE.unlisted.length?'<div class="note warning">There are '+STATE.unlisted.length+' locally saved submitted date(s) absent from the current published manifest. They cannot be safely graded here without their original question data.</div>':'');
+ if(!tests.length){const msg='<p class="empty">No submitted 40-question website CBT papers were found in this browser. Submit a paper on the <a href="./daily-pyq.html">daily CBT page</a>, then return here. If you used another device or browser, its results cannot appear here automatically.</p>';$('#summary').innerHTML='<h2>Overall performance</h2>'+msg;$('#sectionTable').innerHTML=msg;$('#topicGroups').innerHTML=msg;$('#revisionContent').innerHTML=msg;$('#historyContent').innerHTML=msg;return}
+ const MTA=t.MTA;
+ $('#summary').innerHTML='<h2>Overall performance · all submitted tests</h2><div class="grid">'+[
+ ['Tests completed',tests.length],
+ ['Cumulative net marks',round(t.net)+' / '+round(t.marks)],
+ ['Correct / wrong',t.correct+' / '+t.wrong],
+ ['Skipped / marks to all',t.skipped+' / '+MTA]
+ ].map(([a,b])=>'<div class="metric"><div class="small">'+a+'</div><div class="big">'+b+'</div></div>').join('')+'</div><p class="small">Net marks include MCQ negative marking and any official marks-to-all credit. Attempted accuracy: <b>'+percent(t.correct,t.attempted)+'</b>. Topic classifications remain partly provisional. Tests counted: '+tests.map(x=>esc(x.date)).join(', ')+'.</p>';
+ $('#sectionTable').innerHTML=scoreTable(rows,'section');
+ const groups=[...bucket(rows,'subject')].sort((a,b)=>a[0].localeCompare(b[0]));
+ $('#topicGroups').innerHTML=groups.map(([subject,subjectRows])=>{
+ const st=totals(subjectRows), topicRows=[...bucket(subjectRows,'topic')].map(([topic,items])=>({topic,items,stats:totals(items),band:classify(items)}));
+ const strong=topicRows.filter(x=>x.band.level==='strong');
+ const weak=topicRows.filter(x=>x.band.level==='weak').sort((a,b)=>(b.stats.wrong+b.stats.skipped)-(a.stats.wrong+a.stats.skipped));
+ const pill=x=>'<span class="pill '+x.level+'">'+esc(x.name)+'</span>';
+ return '<div class="subject-group"><div class="row"><h3>'+esc(subject)+'</h3><span class="small"><b>'+round(st.net)+' / '+round(st.marks)+'</b> net marks · '+percent(st.correct,st.attempted)+' attempted accuracy</span></div><div class="overview">'+
+ '<div><b>Strong topics ('+strong.length+')</b><div class="small">'+(strong.length?strong.map(x=>esc(x.topic)).join(' · '):'None established yet; requires repeated correct attempts')+'</div></div>'+
+ '<div><b>Weak topics ('+weak.length+')</b><div class="small">'+(weak.length?weak.map(x=>esc(x.topic)).join(' · '):'No topic meets the weak-topic threshold yet')+'</div></div>'+
+ '<div><b>Progress</b><div class="small">'+st.correct+' correct · '+st.wrong+' wrong · '+st.skipped+' skipped</div><progress max="100" value="'+Math.max(0,Math.min(100,st.marks?100*st.net/st.marks:0))+'"></progress></div></div>'+
+ '<div class="tablewrap"><table><thead><tr><th>Topic</th><th>Level</th><th class="num">Net / available</th><th class="num">Correct</th><th class="num">Wrong</th><th class="num">Skipped</th><th class="num">Accuracy</th></tr></thead><tbody>'+
+ topicRows.sort((a,b)=>({weak:0,developing:1,limited:2,strong:3}[a.band.level]-{weak:0,developing:1,limited:2,strong:3}[b.band.level])||a.topic.localeCompare(b.topic)).map(x=>'<tr><td><span class="topic-name">'+esc(x.topic)+'</span><br><span class="tiny">'+esc(quality(x.items))+' · '+x.items.length+' questions</span></td><td>'+pill(x.band)+'</td><td class="num">'+round(x.stats.net)+' / '+round(x.stats.marks)+'</td><td class="num">'+x.stats.correct+'</td><td class="num">'+x.stats.wrong+'</td><td class="num">'+x.stats.skipped+'</td><td class="num">'+percent(x.stats.correct,x.stats.attempted)+'</td></tr>').join('')+'</tbody></table></div></div>';
+ }).join('');
+ const topics=[...bucket(rows.map(x=>({...x,topicKey:x.subject+' › '+x.topic})), 'topicKey')].map(([name,items])=>({name,items,t:totals(items),band:classify(items)}));
+ const needs=topics.filter(x=>x.t.wrong+x.t.skipped>0).sort((a,b)=>{const av=a.items.reduce((s,q)=>s+((q.status==='wrong'||q.status==='skipped')?q.marks:0),0);const bv=b.items.reduce((s,q)=>s+((q.status==='wrong'||q.status==='skipped')?q.marks:0),0);return bv-av||(b.t.wrong+b.t.skipped)-(a.t.wrong+a.t.skipped)}).slice(0,12);
+ $('#revisionContent').innerHTML='<p class="small">Ranked by marks attached to wrong and skipped questions; these are review priorities, not new verified PYQs. Topics with few attempts need more evidence.</p>'+(needs.length?'<div class="revision">'+needs.map(x=>'<div><div class="row"><b>'+esc(x.name)+'</b><span class="pill '+x.band.level+'">'+esc(x.band.name)+'</span></div><div class="small">'+x.t.wrong+' wrong · '+x.t.skipped+' skipped · '+x.t.correct+' correct</div><div class="tiny">Source questions: '+x.items.filter(r=>r.status==='wrong'||r.status==='skipped').slice(-4).map(r=>esc(r.sourceId)+' ('+esc(r.date)+')').join(' · ')+'</div></div>').join('')+'</div>':'<div class="empty">No wrong or skipped questions in your completed tests.</div>');
+ $('#historyContent').innerHTML='<div class="tablewrap"><table><thead><tr><th>Date (IST)</th><th class="num">Net marks</th><th class="num">Maximum</th><th class="num">Correct</th><th class="num">Wrong</th><th class="num">Skipped</th><th>Review</th></tr></thead><tbody>'+tests.slice().sort((a,b)=>b.date.localeCompare(a.date)).map(p=>{const x=totals(rows.filter(r=>r.date===p.date));return '<tr><td>'+esc(p.date)+'</td><td class="num"><b>'+round(x.net)+'</b></td><td class="num">'+round(x.marks)+'</td><td class="num">'+x.correct+'</td><td class="num">'+x.wrong+'</td><td class="num">'+x.skipped+'</td><td><a href="./daily-pyq.html?date='+encodeURIComponent(p.date)+'">Full solved paper</a></td></tr>'}).join('')+'</tbody></table></div>';
+}
+async function refresh(){
+ $('#status').textContent='Updating from submitted tests…';
+ const manifestRes=await fetch('./papers/daily-pyq/manifest.json?t='+Date.now(),{cache:'no-store'});
+ if(!manifestRes.ok)throw Error('Could not load published paper manifest (HTTP '+manifestRes.status+')');
+ const manifest=await manifestRes.json();
+ const entries=(manifest.papers||[]).filter(x=>cleanDate(x.date)&&x.file);
+ const submitted=entries.map(e=>({entry:e,attempt:savedAttempt(e.date)})).filter(x=>x.attempt);
+ const savedDates=[];try{for(let i=0;i<localStorage.length;i++){const key=localStorage.key(i);if(key&&key.startsWith(PREFIX)){const dt=key.slice(PREFIX.length);if(cleanDate(dt)&&savedAttempt(dt))savedDates.push(dt)}}}catch(e){console.warn('Storage listing restricted:',e)}
+ const known=new Set(entries.map(x=>x.date));
+ const report=await Promise.all(submitted.map(async ({entry,attempt})=>{
+ try{const response=await fetch('./papers/daily-pyq/'+encodeURIComponent(entry.file)+'?t='+Date.now(),{cache:'no-store'});
+ if(!response.ok)throw Error('HTTP '+response.status);
+ const paper=await response.json();if(!Array.isArray(paper.questions)||paper.questions.length!==40||paper.date!==entry.date)throw Error('Paper metadata mismatch');
+ const rows=paper.questions.map(q=>{const g=grade(q,attempt.answers[q.id]);const fix=corrected[q.id];
+ return {date:paper.date,id:q.id,sourceId:q.sourceId||q.id,section:q.subject,subject:fix?.subject||q.subject,topic:fix?.topic||q.topic||'Unclassified',audit:fix?'reviewed':q.classificationStatus==='manually_audited_source_text'?'reviewed':'provisional',status:g.status,marks:+q.marks,net:g.net,questionType:q.type,sourceType:q.sourceType||'gate'}});
+ return {date:entry.date,rows};
+ }catch(e){return {date:entry.date,error:String(e.message||e)}}}));
+ STATE={records:report.filter(x=>!x.error).flatMap(x=>x.rows),tests:report.filter(x=>!x.error).map(x=>({date:x.date})),unavailable:report.filter(x=>x.error).map(x=>x.date+' ('+x.error+')'),unlisted:savedDates.filter(date=>!known.has(date))};
+ render();
+}
+function exportProgress(){
+ const file={generatedAt:new Date().toISOString(),source:'GATE EE/EC technical daily CBT (same-browser submitted attempts only)',notes:'Provisional subject/topic tags; four content-reviewed corrections applied for mastery.',tests:STATE.tests,questions:STATE.records};
+ const blob=new Blob([JSON.stringify(file,null,2)],{type:'application/json'}),u=URL.createObjectURL(blob),a=document.createElement('a');
+ a.href=u;a.download='gate-2027-cumulative-performance.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),3000);
+}
+$('#refresh').onclick=()=>refresh().catch(e=>{$('#status').textContent='Unable to update: '+e.message});
+$('#export').onclick=exportProgress;
+window.addEventListener('storage',e=>{if(e.key?.startsWith(PREFIX))refresh().catch(console.warn)});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh().catch(console.warn)});
+refresh().catch(e=>{$('#status').textContent='Unable to load results';$('#summary').innerHTML='<div class="empty">'+esc(e.message)+' — check internet access, then retry.</div>'});
+</script></body></html>
