@@ -16,7 +16,8 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q1",
       "pdfPage": 1,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "taxonomyReviewStatus": "general_aptitude"
     },
     {
       "number": 2,
@@ -27,7 +28,8 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q2",
       "pdfPage": 2,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "taxonomyReviewStatus": "general_aptitude"
     },
     {
       "number": 3,
@@ -38,7 +40,8 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q3",
       "pdfPage": 3,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "taxonomyReviewStatus": "general_aptitude"
     },
     {
       "number": 4,
@@ -49,7 +52,8 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q4",
       "pdfPage": 4,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "taxonomyReviewStatus": "general_aptitude"
     },
     {
       "number": 5,
@@ -60,7 +64,8 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q5",
       "pdfPage": 5,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "taxonomyReviewStatus": "general_aptitude"
     },
     {
       "number": 6,
@@ -71,7 +76,8 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q6",
       "pdfPage": 6,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "taxonomyReviewStatus": "general_aptitude"
     },
     {
       "number": 7,
@@ -82,7 +88,8 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q7",
       "pdfPage": 7,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "taxonomyReviewStatus": "general_aptitude"
     },
     {
       "number": 8,
@@ -93,7 +100,8 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q8",
       "pdfPage": 8,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "taxonomyReviewStatus": "general_aptitude"
     },
     {
       "number": 9,
@@ -104,7 +112,8 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q9",
       "pdfPage": 9,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "taxonomyReviewStatus": "general_aptitude"
     },
     {
       "number": 10,
@@ -115,7 +124,8 @@
       "keyVerifiedFromTable": true,
       "id": "2026-EC-Q10",
       "pdfPage": 10,
-      "answerStatus": "official_key"
+      "answerStatus": "official_key",
+      "taxonomyReviewStatus": "general_aptitude"
     },
     {
       "number": 11,
@@ -136,7 +146,9 @@
       "classificationStatus": "provisional",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
-      "sourceExtract": "Q.11 – Q.35 Carry ONE mark Each Q.11 Consider the differential equation 𝑤⃗⃗ = 𝐴𝑤⃗⃗ , with 𝑤⃗⃗ (𝑡= 0) = [1 1]. If 𝑤⃗⃗ (𝑡) = 𝑒𝑡𝑢⃗𝑥+ 𝑒−2𝑡𝑢⃗𝑦 be the solution to the equation where 𝑢⃗𝑥 and 𝑢⃗𝑦 are unit vectors along the positive x and y axes respectively, then which of the following options is the correct matrix representing A? (A) [1 0 0 −2] (B) [−1 0 0 2] (C) [0 −2 ] 1 0 (D) 0 2 [ −1 0] OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1111 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.11 – Q.35 Carry ONE mark Each Q.11 Consider the differential equation 𝑤⃗⃗ = 𝐴𝑤⃗⃗ , with 𝑤⃗⃗ (𝑡= 0) = [1 1]. If 𝑤⃗⃗ (𝑡) = 𝑒𝑡𝑢⃗𝑥+ 𝑒−2𝑡𝑢⃗𝑦 be the solution to the equation where 𝑢⃗𝑥 and 𝑢⃗𝑦 are unit vectors along the positive x and y axes respectively, then which of the following options is the correct matrix representing A? (A) [1 0 0 −2] (B) [−1 0 0 2] (C) [0 −2 ] 1 0 (D) 0 2 [ −1 0] OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1111 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": false
     },
     {
       "number": 12,
@@ -157,7 +169,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.12 A surface is given by 𝑧2 = 2𝑥2 − 𝑦2 and 𝑛⃗ and −𝑛⃗ are unit normal vectors to the surface at the point 𝑃⃗ = 𝒊̂ + √2 𝒌̂. Which of the following vectors can be 𝑛⃗ , where 𝒊̂, 𝒋̂ and 𝒌̂ are the unit vectors along x, y and z axes, respectively? (A) 𝒊̂ −√2 𝒌̂ (B) 2 𝒊̂ −1 𝒌̂ 3 3 (C) √2𝒊̂ −√3 𝒌̂ (D) √2𝒊̂ − 𝒌̂ √3 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1212 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.12 A surface is given by 𝑧2 = 2𝑥2 − 𝑦2 and 𝑛⃗ and −𝑛⃗ are unit normal vectors to the surface at the point 𝑃⃗ = 𝒊̂ + √2 𝒌̂. Which of the following vectors can be 𝑛⃗ , where 𝒊̂, 𝒋̂ and 𝒌̂ are the unit vectors along x, y and z axes, respectively? (A) 𝒊̂ −√2 𝒌̂ (B) 2 𝒊̂ −1 𝒌̂ 3 3 (C) √2𝒊̂ −√3 𝒌̂ (D) √2𝒊̂ − 𝒌̂ √3 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1212 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 13,
@@ -178,7 +192,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 27,
-      "sourceExtract": "Q.13 The Laplace Transform of the signal 𝑥(𝑡) = 𝑢(𝑡−2) ∗(𝑡𝑢(𝑡)) is given by which of the following expressions? [“∗” represents convolution operator] (A) 𝑒−2𝑠 𝑠2(𝑠−2) (B) 𝑒−2(𝑠−2) 𝑠3 (C) 𝑠𝑒−2𝑠 (𝑠−2)2 (D) 𝑒−2𝑠 𝑠3 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1313 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.13 The Laplace Transform of the signal 𝑥(𝑡) = 𝑢(𝑡−2) ∗(𝑡𝑢(𝑡)) is given by which of the following expressions? [“∗” represents convolution operator] (A) 𝑒−2𝑠 𝑠2(𝑠−2) (B) 𝑒−2(𝑠−2) 𝑠3 (C) 𝑠𝑒−2𝑠 (𝑠−2)2 (D) 𝑒−2𝑠 𝑠3 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1313 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 14,
@@ -199,7 +215,9 @@
       "classificationStatus": "provisional",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
-      "sourceExtract": "Q.14 Consider carrier transport in a Zener diode in the breakdown region. Which is the dominant transport mechanism for current flow in this case? (A) Drift (B) Diffusion (C) Tunneling (D) Ballistic transport OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1414 ofof 5858 Electronics and Communication Engineering (EC) Two analog signals 𝑥1(𝑡) and 𝑥2(𝑡) (t in second), are sampled at a rate"
+      "sourceExtract": "Q.14 Consider carrier transport in a Zener diode in the breakdown region. Which is the dominant transport mechanism for current flow in this case? (A) Drift (B) Diffusion (C) Tunneling (D) Ballistic transport OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1414 ofof 5858 Electronics and Communication Engineering (EC) Two analog signals 𝑥1(𝑡) and 𝑥2(𝑡) (t in second), are sampled at a rate",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": false
     },
     {
       "number": 15,
@@ -221,7 +239,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Two analog signals 𝑥1(𝑡) and 𝑥2(𝑡) (t in second), are sampled at a rate Q.15 𝐹𝑠= 40 Hz, where 𝑥1(𝑡) = 𝑐𝑜𝑠(20𝜋𝑡), 𝑡≥0, and 𝑥2(𝑡) = 𝑐𝑜𝑠(100𝜋𝑡), 𝑡≥0. The first ten samples (starting from t = 0) are considered for the analysis. Which of the following statements is TRUE? (A) All of the first three samples of 𝑥1(𝑡) are greater than the corresponding samples of 𝑥2(𝑡). (B) All of the last three samples of 𝑥1(𝑡) are greater than the corresponding samples of 𝑥2(𝑡). (C) All of the samples of 𝑥2(𝑡) are greater than the corresponding samples of 𝑥1(𝑡). (D) All of the fourth to seventh samples of 𝑥1(𝑡) are equal to the corresponding samples of 𝑥2(𝑡). OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1515 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Two analog signals 𝑥1(𝑡) and 𝑥2(𝑡) (t in second), are sampled at a rate Q.15 𝐹𝑠= 40 Hz, where 𝑥1(𝑡) = 𝑐𝑜𝑠(20𝜋𝑡), 𝑡≥0, and 𝑥2(𝑡) = 𝑐𝑜𝑠(100𝜋𝑡), 𝑡≥0. The first ten samples (starting from t = 0) are considered for the analysis. Which of the following statements is TRUE? (A) All of the first three samples of 𝑥1(𝑡) are greater than the corresponding samples of 𝑥2(𝑡). (B) All of the last three samples of 𝑥1(𝑡) are greater than the corresponding samples of 𝑥2(𝑡). (C) All of the samples of 𝑥2(𝑡) are greater than the corresponding samples of 𝑥1(𝑡). (D) All of the fourth to seventh samples of 𝑥1(𝑡) are equal to the corresponding samples of 𝑥2(𝑡). OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1515 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 16,
@@ -242,7 +262,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.16 The response of a discrete time system y[n] obeys the following relation: 5 1 𝑦[𝑛] = 𝑦[𝑛−1] − 𝑦[𝑛−2] + 𝑥[𝑛]. 6 6 1 The input to the system is 𝑥[𝑛] = 𝛿[𝑛] − 𝛿[𝑛−1]. 3 Which of the following options is TRUE for 𝑦[𝑛]? (A) Stable and causal response (B) Stable and non-causal response (C) Unstable and causal response (D) Unstable and non-causal response OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1616 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.16 The response of a discrete time system y[n] obeys the following relation: 5 1 𝑦[𝑛] = 𝑦[𝑛−1] − 𝑦[𝑛−2] + 𝑥[𝑛]. 6 6 1 The input to the system is 𝑥[𝑛] = 𝛿[𝑛] − 𝛿[𝑛−1]. 3 Which of the following options is TRUE for 𝑦[𝑛]? (A) Stable and causal response (B) Stable and non-causal response (C) Unstable and causal response (D) Unstable and non-causal response OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1616 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 17,
@@ -263,7 +285,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 16,
-      "sourceExtract": "Q.17 The ideal OP-AMP circuit shown in the Figure produces output voltage 𝑉𝑜= 𝑥 when the Switch, S, is open. Which of the options represents the output voltage when S is closed? S 2 kΩ 1 kΩ 1 kΩ - Vo + Vi = 1 V (A) 𝑥 (B) 2 𝑥 3 (C) 3 𝑥 4 (D) 1 𝑥 2 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1717 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.17 The ideal OP-AMP circuit shown in the Figure produces output voltage 𝑉𝑜= 𝑥 when the Switch, S, is open. Which of the options represents the output voltage when S is closed? S 2 kΩ 1 kΩ 1 kΩ - Vo + Vi = 1 V (A) 𝑥 (B) 2 𝑥 3 (C) 3 𝑥 4 (D) 1 𝑥 2 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1717 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 18,
@@ -284,7 +308,9 @@
       "classificationStatus": "provisional",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
-      "sourceExtract": "Q.18 Consider the circuit shown in the Figure with 𝑉𝑖= 3 V and 𝑉𝐶𝐶= 12 V. Assume 𝑉𝐵𝐸= 0.7 V and 𝛽𝑑𝑐= 99 for the BJT. Which of the following options is the correct value of the current 𝑰𝒐? (A) 60 μA (B) 6 μA (C) 3 μA (D) 30 μA OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1818 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.18 Consider the circuit shown in the Figure with 𝑉𝑖= 3 V and 𝑉𝐶𝐶= 12 V. Assume 𝑉𝐵𝐸= 0.7 V and 𝛽𝑑𝑐= 99 for the BJT. Which of the following options is the correct value of the current 𝑰𝒐? (A) 60 μA (B) 6 μA (C) 3 μA (D) 30 μA OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1818 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": false
     },
     {
       "number": 19,
@@ -305,7 +331,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.19 A control system is shown in the Figure. Which option represents the correct transfer function of the system? + ( ) ( ) ∑ − + − ∑ (A) 1 (𝑠+4)2 (B) 1 (𝑠+4) (C) 2 (𝑠+4) (D) 1 (𝑠2+8𝑠+17) OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1919 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.19 A control system is shown in the Figure. Which option represents the correct transfer function of the system? + ( ) ( ) ∑ − + − ∑ (A) 1 (𝑠+4)2 (B) 1 (𝑠+4) (C) 2 (𝑠+4) (D) 1 (𝑠2+8𝑠+17) OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 1919 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 20,
@@ -326,7 +354,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.20 In the circuit shown in the Figure, A and B are logic inputs and Y is the logic output. Which of the following logic operations is realized by the circuit? +VDD A B Y (A) NOR (B) OR (C) XOR (D) AND OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2020 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.20 In the circuit shown in the Figure, A and B are logic inputs and Y is the logic output. Which of the following logic operations is realized by the circuit? +VDD A B Y (A) NOR (B) OR (C) XOR (D) AND OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2020 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 21,
@@ -347,7 +377,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.21 Consider the Friis’ transmission equation 𝑃𝑅= (𝑃𝑇𝐺𝑇𝐺𝑅𝜆2)⁄ (4𝜋𝐷)2 , where 𝑃𝑅 and 𝑃𝑇 are the received and the transmitted powers, respectively. 𝐺𝑇 and 𝐺𝑅 are the gain of transmitting and receiving antennas, respectively, 𝐷 is the distance between the transmitting and receiving antennas, and 𝜆 is the wavelength in free space. Given: 𝐺𝑇= 𝐺𝑅= 1.0, 𝜆= 0.30 m and PT = +10 dBm. Choose the distance (D), in km, from the following options at which the received power, PR = −90 dBm? (A) 15 4𝜋 (B) 15 2𝜋 (C) 75 2𝜋 (D) 3 4𝜋 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2121 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.21 Consider the Friis’ transmission equation 𝑃𝑅= (𝑃𝑇𝐺𝑇𝐺𝑅𝜆2)⁄ (4𝜋𝐷)2 , where 𝑃𝑅 and 𝑃𝑇 are the received and the transmitted powers, respectively. 𝐺𝑇 and 𝐺𝑅 are the gain of transmitting and receiving antennas, respectively, 𝐷 is the distance between the transmitting and receiving antennas, and 𝜆 is the wavelength in free space. Given: 𝐺𝑇= 𝐺𝑅= 1.0, 𝜆= 0.30 m and PT = +10 dBm. Choose the distance (D), in km, from the following options at which the received power, PR = −90 dBm? (A) 15 4𝜋 (B) 15 2𝜋 (C) 75 2𝜋 (D) 3 4𝜋 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2121 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 22,
@@ -368,7 +400,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.22 Consider a discrete memoryless source with an alphabet of four source symbols. s(t) is a multi-level (-1, 0, +1, +2) signal representing a long sequence of random symbols from the above source which is generating 104 symbols per second. Which of the following options is the correct value of equivalent Nyquist bandwidth of s(t)? (A) 10 kHz (B) 64 kHz (C) 5 kHz (D) 20 kHz OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2222 ofof 5858 Electronics and Communication Engineering (EC) The relation between the input current (I) and the output voltage (V) of a circuit is"
+      "sourceExtract": "Q.22 Consider a discrete memoryless source with an alphabet of four source symbols. s(t) is a multi-level (-1, 0, +1, +2) signal representing a long sequence of random symbols from the above source which is generating 104 symbols per second. Which of the following options is the correct value of equivalent Nyquist bandwidth of s(t)? (A) 10 kHz (B) 64 kHz (C) 5 kHz (D) 20 kHz OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2222 ofof 5858 Electronics and Communication Engineering (EC) The relation between the input current (I) and the output voltage (V) of a circuit is",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 23,
@@ -390,7 +424,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "The relation between the input current (I) and the output voltage (V) of a circuit is Q.23 𝑑𝑉 governed by the equation: 𝐶 𝑑𝑡= 𝐼(𝑡) −𝑚(𝑡). The circuit is excited by I(t) = q(t), where q is a real valued constant. V at 𝑡= 0− is V0. Which of the following is an equivalent representation of the above case? (A) 𝑑𝑉 𝐶 𝑑𝑡= −𝑚(𝑡), with V(t = 0−) = V0 + q/C (B) 𝑑𝑉 𝐶 𝑑𝑡= −𝑚(𝑡), with V(t = 0−) = V0 + q/C + m(t = 0−) (C) 𝑑𝑉 𝐶 𝑑𝑡= −𝑚(𝑡), with V(t = 0−) = V0 - q/C + m(t = 0−) (D) 𝑑𝑉 𝐶 𝑑𝑡= −𝑚(𝑡), with V(t = 0−) = q/C OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2323 ofof 5858 Electronics and Communication Engineering (EC) The electric field of a monochromatic plane wave travelling in a lossless isotropic"
+      "sourceExtract": "The relation between the input current (I) and the output voltage (V) of a circuit is Q.23 𝑑𝑉 governed by the equation: 𝐶 𝑑𝑡= 𝐼(𝑡) −𝑚(𝑡). The circuit is excited by I(t) = q(t), where q is a real valued constant. V at 𝑡= 0− is V0. Which of the following is an equivalent representation of the above case? (A) 𝑑𝑉 𝐶 𝑑𝑡= −𝑚(𝑡), with V(t = 0−) = V0 + q/C (B) 𝑑𝑉 𝐶 𝑑𝑡= −𝑚(𝑡), with V(t = 0−) = V0 + q/C + m(t = 0−) (C) 𝑑𝑉 𝐶 𝑑𝑡= −𝑚(𝑡), with V(t = 0−) = V0 - q/C + m(t = 0−) (D) 𝑑𝑉 𝐶 𝑑𝑡= −𝑚(𝑡), with V(t = 0−) = q/C OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2323 ofof 5858 Electronics and Communication Engineering (EC) The electric field of a monochromatic plane wave travelling in a lossless isotropic",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 24,
@@ -412,7 +448,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
-      "sourceExtract": "p g p Q.24 and homogenous medium is given by 𝐸⃗ (𝑧, 𝑡) = 𝐸0[𝑥̂𝑐𝑜𝑠(𝜔𝑡−𝑘𝑧) + 𝑦̂𝑠𝑖𝑛(𝜔𝑡−𝑘𝑧)] in a right-handed orthogonal co-ordinate system. Which of the following is the correct polarization of the electromagnetic wave? (A) Right-handed circularly polarized (B) Left-handed circularly polarized (C) Linearly polarized (D) Linearly polarized with −45o angle to 𝑥̂ OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2424 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "p g p Q.24 and homogenous medium is given by 𝐸⃗ (𝑧, 𝑡) = 𝐸0[𝑥̂𝑐𝑜𝑠(𝜔𝑡−𝑘𝑧) + 𝑦̂𝑠𝑖𝑛(𝜔𝑡−𝑘𝑧)] in a right-handed orthogonal co-ordinate system. Which of the following is the correct polarization of the electromagnetic wave? (A) Right-handed circularly polarized (B) Left-handed circularly polarized (C) Linearly polarized (D) Linearly polarized with −45o angle to 𝑥̂ OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2424 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 25,
@@ -433,7 +471,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.25 Consider a p-n junction diode when it is forward biased with 2 V. Which of the following is/are the correct magnitude(s) of the energy difference between quasi Fermi-levels, Efn in the n-side and Efp in the p-side? (A) 2 eV (B) 1 eV (C) 2 V (D) 1 V OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2525 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.25 Consider a p-n junction diode when it is forward biased with 2 V. Which of the following is/are the correct magnitude(s) of the energy difference between quasi Fermi-levels, Efn in the n-side and Efp in the p-side? (A) 2 eV (B) 1 eV (C) 2 V (D) 1 V OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2525 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 26,
@@ -454,7 +494,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.26 2 1 1 Consider the matrix M = [ 1 3 0 ]. −1 𝑎 𝑏 Which of the following options is/ are TRUE if det(M) ≠ 0? (A) 𝑎= −1 and 𝑏= −1 2 2 (B) 1 1 𝑎= and 𝑏= 2 2 (C) 𝑎= −3 and 𝑏= 0 (D) 1 𝑎= and 𝑏= −3 2 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2626 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.26 2 1 1 Consider the matrix M = [ 1 3 0 ]. −1 𝑎 𝑏 Which of the following options is/ are TRUE if det(M) ≠ 0? (A) 𝑎= −1 and 𝑏= −1 2 2 (B) 1 1 𝑎= and 𝑏= 2 2 (C) 𝑎= −3 and 𝑏= 0 (D) 1 𝑎= and 𝑏= −3 2 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2626 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 27,
@@ -475,7 +517,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.27 A binary ripple counter is designed to count (0)10 to (64)10. Which of the following is/are the number of flip-flops required to design the counter? (A) 6 (B) 7 (C) 4 (D) 5 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2727 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.27 A binary ripple counter is designed to count (0)10 to (64)10. Which of the following is/are the number of flip-flops required to design the counter? (A) 6 (B) 7 (C) 4 (D) 5 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2727 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 28,
@@ -496,7 +540,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.28 Which option(s) represents/ represent the dielectric loss tangent of a substrate? (A) Ratio of the real to imaginary parts of the total displacement current (B) (𝜔𝜖′′ + 𝜎) ⁄ (𝜔𝜖′) (C) Ratio of the electric susceptibility to permittivity (D) Ratio of the polarization vector 𝑃⃗ to the displacement vector 𝐷⃗⃗ OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2828 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.28 Which option(s) represents/ represent the dielectric loss tangent of a substrate? (A) Ratio of the real to imaginary parts of the total displacement current (B) (𝜔𝜖′′ + 𝜎) ⁄ (𝜔𝜖′) (C) Ratio of the electric susceptibility to permittivity (D) Ratio of the polarization vector 𝑃⃗ to the displacement vector 𝐷⃗⃗ OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2828 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 29,
@@ -517,7 +563,9 @@
       "classificationStatus": "provisional",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
-      "sourceExtract": "Q.29 Figure shows the output characteristics of two different Bipolar Junction Transistors (BJT), BJT 1 with magnitude of Early voltage |VA1|, and BJT 2 with magnitude of Early voltage |VA2|. Which of the following options is/are correct regarding the Early voltages? BJT 1 IC BJT 2 IB = constant VCE (A) |VA1| > |VA2| (B) |VA1| is infinitely large (C) |VA1| < |VA2| (D) |VA2| is finite OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2929 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.29 Figure shows the output characteristics of two different Bipolar Junction Transistors (BJT), BJT 1 with magnitude of Early voltage |VA1|, and BJT 2 with magnitude of Early voltage |VA2|. Which of the following options is/are correct regarding the Early voltages? BJT 1 IC BJT 2 IB = constant VCE (A) |VA1| > |VA2| (B) |VA1| is infinitely large (C) |VA1| < |VA2| (D) |VA2| is finite OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 2929 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": false
     },
     {
       "number": 30,
@@ -538,7 +586,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.30 The output voltage Vo (in Volt) for the network given in the Figure is __. (rounded off to two decimal places) + 1 kΩ 1 kΩ Vo 6 V 1 mA 1 kΩ 1 kΩ -"
+      "sourceExtract": "Q.30 The output voltage Vo (in Volt) for the network given in the Figure is __. (rounded off to two decimal places) + 1 kΩ 1 kΩ Vo 6 V 1 mA 1 kΩ 1 kΩ -",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 31,
@@ -559,7 +609,9 @@
       "classificationStatus": "provisional",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 12,
-      "sourceExtract": "Q.31 Consider the circuit shown in the Figure, where the input vi (t) is in Volt. The average power (in mW) dissipated in the load resistance of 1 kΩ at the resonant frequency is __. (rounded off to two decimal places) vi (t) 1 μF 2.2 mH 1 kΩ vi (t) = 12 sin(ωt) OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3030 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.31 Consider the circuit shown in the Figure, where the input vi (t) is in Volt. The average power (in mW) dissipated in the load resistance of 1 kΩ at the resonant frequency is __. (rounded off to two decimal places) vi (t) 1 μF 2.2 mH 1 kΩ vi (t) = 12 sin(ωt) OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3030 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": false
     },
     {
       "number": 32,
@@ -580,7 +632,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
-      "sourceExtract": "Q.32 A wireless digital transmission scheme is using 16-QAM over an additive white Gaussian noise channel and a maximum-likelihood receiver. Consider the information bit rate from source to be 4 × 106 bits per second. The minimum transmission bandwidth (in MHz) of the modulated signal necessary for optimum recovery of information at the receiver is __. (rounded off to two decimal places)"
+      "sourceExtract": "Q.32 A wireless digital transmission scheme is using 16-QAM over an additive white Gaussian noise channel and a maximum-likelihood receiver. Consider the information bit rate from source to be 4 × 106 bits per second. The minimum transmission bandwidth (in MHz) of the modulated signal necessary for optimum recovery of information at the receiver is __. (rounded off to two decimal places)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 33,
@@ -601,7 +655,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
-      "sourceExtract": "Q.33 The cutoff frequency (in GHz) for the dominant TE10 mode of an air-filled rectangular waveguide of inner dimension 0.28 inch × 0.14 inch is __. (rounded off to two decimal places)."
+      "sourceExtract": "Q.33 The cutoff frequency (in GHz) for the dominant TE10 mode of an air-filled rectangular waveguide of inner dimension 0.28 inch × 0.14 inch is __. (rounded off to two decimal places).",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 34,
@@ -617,12 +673,15 @@
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 31,
       "imageEndPage": 32,
-      "subject": "Network Theory",
-      "topic": "Two-Port Networks",
-      "classificationStatus": "high_auto",
-      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "subject": "Electromagnetics",
+      "topic": "Microwave Two-Port Networks · S-Parameters",
+      "classificationStatus": "curated_source_text",
+      "classificationMethod": "Content-based audit of source question excerpt; original diagram and PDF remain available for visual verification",
       "classificationMargin": 15,
-      "sourceExtract": "Q.34 For a lossless passive two-port network, |S11| and |S21| intersect at –3 dB. For a lossy passive two-port network, |S11| and |S21| intersect at – 4 dB.. The percentage of power dissipated in the lossy network at the intersection frequency is __. (rounded off to two decimal places) OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3131 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.34 For a lossless passive two-port network, |S11| and |S21| intersect at –3 dB. For a lossy passive two-port network, |S11| and |S21| intersect at – 4 dB.. The percentage of power dissipated in the lossy network at the intersection frequency is __. (rounded off to two decimal places) OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3131 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_curated",
+      "selectionEligible": true,
+      "reclassifiedFrom": "Network Theory"
     },
     {
       "number": 35,
@@ -643,7 +702,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
-      "sourceExtract": "Q.35 The negative edge triggered JK flip-flop in the Figure has J and K inputs tied to Logic High and a square wave of 10 cycles/second is applied to its clock (C) input. The frequency of the output Q (in cycles/second) is __. (rounded off to two decimal places) C K OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3232 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.35 The negative edge triggered JK flip-flop in the Figure has J and K inputs tied to Logic High and a square wave of 10 cycles/second is applied to its clock (C) input. The frequency of the output Q (in cycles/second) is __. (rounded off to two decimal places) C K OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3232 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 36,
@@ -664,7 +725,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.36 – Q.65 Carry TWO mark Each Q.36 Consider the two series, SA and SB, where ∞ 𝑛2 𝑆𝐴= ∑ 𝑛=1 2𝑛 1 1 1 1 1 1 𝑆𝐵= 1 + + + + + + + ⋯ 2 8 16 64 128 512 Which of the following statements is correct for the two given series? (A) Both SA and SB converge. (B) Neither SA nor SB converges. (C) SA converges but SB does not converge. (D) SB converges but SA does not converge. OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3333 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.36 – Q.65 Carry TWO mark Each Q.36 Consider the two series, SA and SB, where ∞ 𝑛2 𝑆𝐴= ∑ 𝑛=1 2𝑛 1 1 1 1 1 1 𝑆𝐵= 1 + + + + + + + ⋯ 2 8 16 64 128 512 Which of the following statements is correct for the two given series? (A) Both SA and SB converge. (B) Neither SA nor SB converges. (C) SA converges but SB does not converge. (D) SB converges but SA does not converge. OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3333 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 37,
@@ -685,7 +748,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 14,
-      "sourceExtract": "Q.37 The continuous time signal x(t) is real, periodic with period T and satisfies the Dirichlet conditions. 𝑇) and x(t) satisfies The Fourier series representation of 𝑥(𝑡) = ∑ ∞−∞ 𝑎𝑛𝑒𝑗(2𝜋𝑛𝑡 𝑇 the following: 𝑥(𝑡− 2) = −𝑥(𝑡). For any integer m, which of the following options is correct? (A) a2m = 0 (B) a2m = 1 (C) a2m = a2m+1 (D) a2m = -1 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3434 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.37 The continuous time signal x(t) is real, periodic with period T and satisfies the Dirichlet conditions. 𝑇) and x(t) satisfies The Fourier series representation of 𝑥(𝑡) = ∑ ∞−∞ 𝑎𝑛𝑒𝑗(2𝜋𝑛𝑡 𝑇 the following: 𝑥(𝑡− 2) = −𝑥(𝑡). For any integer m, which of the following options is correct? (A) a2m = 0 (B) a2m = 1 (C) a2m = a2m+1 (D) a2m = -1 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3434 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 38,
@@ -706,7 +771,9 @@
       "classificationStatus": "provisional",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
-      "sourceExtract": "Q.38 Let X, N, Y and Z be random variables. The variables X and N are independent of each other. X is uniformly distributed between -1 and 1; N follows Normal distribution with zero mean and unity variance. Y and Z are defined as, 𝑌= 𝑋+ 𝑁 and 𝑍= 𝑋2 + 𝑁. Which of the following pairs represents the values of correlation between X and Y and that between X and Z? (A) 1/3 and 0 (B) 1/3 and 1/9 (C) 1/3 and 1/3 (D) 1 and 0 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3535 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.38 Let X, N, Y and Z be random variables. The variables X and N are independent of each other. X is uniformly distributed between -1 and 1; N follows Normal distribution with zero mean and unity variance. Y and Z are defined as, 𝑌= 𝑋+ 𝑁 and 𝑍= 𝑋2 + 𝑁. Which of the following pairs represents the values of correlation between X and Y and that between X and Z? (A) 1/3 and 0 (B) 1/3 and 1/9 (C) 1/3 and 1/3 (D) 1 and 0 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3535 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": false
     },
     {
       "number": 39,
@@ -727,7 +794,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.39 In the given circuit, L = 1 μH and C = 1 μF. The phasor diagram for IC and IL is also shown. Assume that the phase (θ1 + θ2) is 90o at a frequency of 159.15 kHz. Among the following options, what is the nearest integer value of RC × RL? IC + IC IL θ1 RC RL V V θ2 C L - IL (A) 0 (B) 1 (C) 2 (D) 10 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3636 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.39 In the given circuit, L = 1 μH and C = 1 μF. The phasor diagram for IC and IL is also shown. Assume that the phase (θ1 + θ2) is 90o at a frequency of 159.15 kHz. Among the following options, what is the nearest integer value of RC × RL? IC + IC IL θ1 RC RL V V θ2 C L - IL (A) 0 (B) 1 (C) 2 (D) 10 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3636 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 40,
@@ -748,7 +817,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.40 For the control system shown in the Figure, the transfer function of a plant, 1 𝐺(𝑠) = is connected in cascade with a compensator (𝑠+1)(𝑠+2) 𝐶(𝑠) = 𝐾 (𝑠+ 𝛼), where 𝐾 and 𝛼 are positive real valued constants. Which of the following pairs (𝐾, 𝛼) represent the correct values for the closed loop system to have poles at (−3 ± 𝑗√5)? ∑ (A) 2, 3 (B) 3, 4 (C) 2, 4 (D) 3, 3 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3737 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.40 For the control system shown in the Figure, the transfer function of a plant, 1 𝐺(𝑠) = is connected in cascade with a compensator (𝑠+1)(𝑠+2) 𝐶(𝑠) = 𝐾 (𝑠+ 𝛼), where 𝐾 and 𝛼 are positive real valued constants. Which of the following pairs (𝐾, 𝛼) represent the correct values for the closed loop system to have poles at (−3 ± 𝑗√5)? ∑ (A) 2, 3 (B) 3, 4 (C) 2, 4 (D) 3, 3 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3737 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 41,
@@ -769,7 +840,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.41 The state and output equations for a control system are: −1.5 𝑥̇ = [−4 ] 𝑥+ [2 𝑢 4 0 0] 𝑦= [1.5 0.625] 𝑥 𝑌(𝑠) Which of the following expressions correctly represents the transfer function 𝑈(𝑠) of the system with zero initial conditions? (A) 3𝑠 𝑠2+4𝑠−6 (B) 3𝑠+5 𝑠2+4𝑠−6 (C) 3𝑠+5 𝑠2+4𝑠+6 (D) 3𝑠 𝑠2+4𝑠+6 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3838 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.41 The state and output equations for a control system are: −1.5 𝑥̇ = [−4 ] 𝑥+ [2 𝑢 4 0 0] 𝑦= [1.5 0.625] 𝑥 𝑌(𝑠) Which of the following expressions correctly represents the transfer function 𝑈(𝑠) of the system with zero initial conditions? (A) 3𝑠 𝑠2+4𝑠−6 (B) 3𝑠+5 𝑠2+4𝑠−6 (C) 3𝑠+5 𝑠2+4𝑠+6 (D) 3𝑠 𝑠2+4𝑠+6 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3838 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 42,
@@ -790,7 +863,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.42 The address of the first location of a 256 kilo byte (KB) memory is (2500)H. Choose the correct address of the last location of the memory. (A) (2FFF)H (B) (124FF)H (C) (424FF)H (D) (324FF)H OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3939 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.42 The address of the first location of a 256 kilo byte (KB) memory is (2500)H. Choose the correct address of the last location of the memory. (A) (2FFF)H (B) (124FF)H (C) (424FF)H (D) (324FF)H OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 3939 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 43,
@@ -811,7 +886,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.43 Consider a real signal x(t), -∞ < t < ∞, such that x(t) = 0 for t <0, x(t) = 2 for 0 ≤ t < 1 and x(t) = 0 for t ≥ 1. ∞ Let 𝐸[𝑥(𝑡)] = ∫ [𝑥(𝑡)]2𝑑𝑡 . −∞ Which of the following options correctly represents the ratio, 𝐸[𝑥(𝑡)]⁄𝐸[3 𝑥(−3𝑡+ 5)]? (A) 3 (B) 1 (C) 1/3 (D) 1/9 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4040 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.43 Consider a real signal x(t), -∞ < t < ∞, such that x(t) = 0 for t <0, x(t) = 2 for 0 ≤ t < 1 and x(t) = 0 for t ≥ 1. ∞ Let 𝐸[𝑥(𝑡)] = ∫ [𝑥(𝑡)]2𝑑𝑡 . −∞ Which of the following options correctly represents the ratio, 𝐸[𝑥(𝑡)]⁄𝐸[3 𝑥(−3𝑡+ 5)]? (A) 3 (B) 1 (C) 1/3 (D) 1/9 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4040 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 44,
@@ -832,7 +909,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
-      "sourceExtract": "Q.44 A QPSK modulated signal from an additive white Gaussian noise (AWGN) channel is received with an Eb/No = 8.4 dB at the input of a coherent QPSK demodulator. A maximum-likelihood reception method is used in the demodulator. Assume the complimentary error function 𝑒𝑟𝑓𝑐(𝑢) ≅ [1 ⁄ (𝑢√𝜋) ]𝑒𝑥𝑝(−𝑢2). Which is the nearest bit error rate (BER) at the output of the demodulator? (A) 10-3 (B) 10-4 (C) 10-5 (D) 10-6 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4141 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.44 A QPSK modulated signal from an additive white Gaussian noise (AWGN) channel is received with an Eb/No = 8.4 dB at the input of a coherent QPSK demodulator. A maximum-likelihood reception method is used in the demodulator. Assume the complimentary error function 𝑒𝑟𝑓𝑐(𝑢) ≅ [1 ⁄ (𝑢√𝜋) ]𝑒𝑥𝑝(−𝑢2). Which is the nearest bit error rate (BER) at the output of the demodulator? (A) 10-3 (B) 10-4 (C) 10-5 (D) 10-6 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4141 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 45,
@@ -853,7 +932,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.45 What is the 10′𝑠 complement of (47)10? (A) 52 (B) 53 (C) 54 (D) 55 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4242 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.45 What is the 10′𝑠 complement of (47)10? (A) 52 (B) 53 (C) 54 (D) 55 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4242 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 46,
@@ -874,7 +955,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.46 Consider a real baseband signal 𝑥(𝑡) = 𝑒−2𝑡, for t (in seconds) ≥ 0. If 99% of energy of x(t) lies within B Hz, then which of the following options is TRUE for the value of B? (A) B > 1 kHz (B) 63/π Hz < B < 64/π Hz (C) 126/π Hz < B < 128/π Hz (D) B < 1 Hz OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4343 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.46 Consider a real baseband signal 𝑥(𝑡) = 𝑒−2𝑡, for t (in seconds) ≥ 0. If 99% of energy of x(t) lies within B Hz, then which of the following options is TRUE for the value of B? (A) B > 1 kHz (B) 63/π Hz < B < 64/π Hz (C) 126/π Hz < B < 128/π Hz (D) B < 1 Hz OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4343 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 47,
@@ -895,7 +978,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.47 Consider the discrete time system (S) with input x[n] and output y[n] as shown in the Figure. The two sub-systems represented by their impulse responses ℎ1[𝑛] and ℎ2[𝑛] are linear and time invariant. Which of the following statements is necessarily TRUE? n] ∑ ∑ n] (A) S is causal. (B) S is linear and time invariant. (C) S is linear and time varying. (D) S is non-linear. OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4444 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.47 Consider the discrete time system (S) with input x[n] and output y[n] as shown in the Figure. The two sub-systems represented by their impulse responses ℎ1[𝑛] and ℎ2[𝑛] are linear and time invariant. Which of the following statements is necessarily TRUE? n] ∑ ∑ n] (A) S is causal. (B) S is linear and time invariant. (C) S is linear and time varying. (D) S is non-linear. OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4444 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 48,
@@ -916,7 +1001,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
-      "sourceExtract": "Q.48 A Boolean function, f(x,y,z) with x as MSB and z as LSB is realized by 4:1 multiplexer (MUX) with select lines, S1 and S0 ( S1 is MSB, S0 is LSB) and inputs, I0, I1, I2, I3 as shown in the Figure. Which of the following options is the correct expression of f(x,y,z)? 1 I0 0 I1 4:1 f(x,y,z) I2 MUX y I3 S1 S0 x z (A) 𝑥𝑧+ 𝑦 (B) 𝑥𝑦̅ + 𝑧 (C) 𝑥𝑦+ 𝑧̅ (D) 𝑥̅𝑦+ 𝑧̅ OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4545 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.48 A Boolean function, f(x,y,z) with x as MSB and z as LSB is realized by 4:1 multiplexer (MUX) with select lines, S1 and S0 ( S1 is MSB, S0 is LSB) and inputs, I0, I1, I2, I3 as shown in the Figure. Which of the following options is the correct expression of f(x,y,z)? 1 I0 0 I1 4:1 f(x,y,z) I2 MUX y I3 S1 S0 x z (A) 𝑥𝑧+ 𝑦 (B) 𝑥𝑦̅ + 𝑧 (C) 𝑥𝑦+ 𝑧̅ (D) 𝑥̅𝑦+ 𝑧̅ OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4545 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 49,
@@ -937,7 +1024,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 27,
-      "sourceExtract": "Q.49 A shift-left Shift Register (SR) and a D flip-flop are connected to a synchronized clock as shown in the Figure. Assume that the SR and D flip-flops are initially cleared and the XOR gate has no propagation delay. Which of the following options gives the correct binary representation (b7b6b5b4b3b2b1b0) of the content of the shift register immediately after the 5th clock transition (positive edge)? SR (Shift Left) b7 b6 b5 b4 b3 b2 b1 b0 D Q C 1 Clock pulse (A) 00011111 (B) 10111111 (C) 00111111 (D) 11000011 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4646 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.49 A shift-left Shift Register (SR) and a D flip-flop are connected to a synchronized clock as shown in the Figure. Assume that the SR and D flip-flops are initially cleared and the XOR gate has no propagation delay. Which of the following options gives the correct binary representation (b7b6b5b4b3b2b1b0) of the content of the shift register immediately after the 5th clock transition (positive edge)? SR (Shift Left) b7 b6 b5 b4 b3 b2 b1 b0 D Q C 1 Clock pulse (A) 00011111 (B) 10111111 (C) 00111111 (D) 11000011 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4646 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 50,
@@ -958,7 +1047,9 @@
       "classificationStatus": "provisional",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
-      "sourceExtract": "Q.50 A small signal source, 𝑉𝑖(𝑡) = 𝐴cos(105𝑡) + 𝐵sin(107𝑡) is applied to a BJT circuit as shown in the Figure. Assume zero source resistance, VBE = 0.7 V, βdc = 99, Early voltage = 100 V and Thermal voltage = 25 mV. Effect of internal parasitic capacitances of the BJT may be neglected. Which expression is the best approximation of the output voltage 𝑉𝑜(𝑡)? (A) −9.1[𝐴cos(105𝑡) + 𝐵sin(107𝑡)] (B) 9.1[𝐴cos(105𝑡) −𝐵sin(107𝑡)] (C) −190.4[𝐴cos(105𝑡) + 𝐵sin(107𝑡)] (D) 190.4[𝐴cos(105𝑡) −𝐵sin(107𝑡)] OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4747 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.50 A small signal source, 𝑉𝑖(𝑡) = 𝐴cos(105𝑡) + 𝐵sin(107𝑡) is applied to a BJT circuit as shown in the Figure. Assume zero source resistance, VBE = 0.7 V, βdc = 99, Early voltage = 100 V and Thermal voltage = 25 mV. Effect of internal parasitic capacitances of the BJT may be neglected. Which expression is the best approximation of the output voltage 𝑉𝑜(𝑡)? (A) −9.1[𝐴cos(105𝑡) + 𝐵sin(107𝑡)] (B) 9.1[𝐴cos(105𝑡) −𝐵sin(107𝑡)] (C) −190.4[𝐴cos(105𝑡) + 𝐵sin(107𝑡)] (D) 190.4[𝐴cos(105𝑡) −𝐵sin(107𝑡)] OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4747 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": false
     },
     {
       "number": 51,
@@ -979,7 +1070,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 15,
-      "sourceExtract": "Q.51 Consider the two-port network as shown in the Figure. Which of the following options provides the correct set of values of A, B, C and D parameters? 1 kΩ 1 kΩ P1 P2 1 kΩ (A) A = 1/2, B = 3×103 Ω, C = 10-3 Ω-1, D = 1/2 (B) A = 2, B = 3 Ω, C = 1 Ω-1, D = 2 (C) A = 2, B = 6×103 Ω, C = 2×10-3 Ω-1, D = 2 (D) A = 2, B = 3×103 Ω, C = 10-3 Ω-1, D = 2 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4848 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.51 Consider the two-port network as shown in the Figure. Which of the following options provides the correct set of values of A, B, C and D parameters? 1 kΩ 1 kΩ P1 P2 1 kΩ (A) A = 1/2, B = 3×103 Ω, C = 10-3 Ω-1, D = 1/2 (B) A = 2, B = 3 Ω, C = 1 Ω-1, D = 2 (C) A = 2, B = 6×103 Ω, C = 2×10-3 Ω-1, D = 2 (D) A = 2, B = 3×103 Ω, C = 10-3 Ω-1, D = 2 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4848 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 52,
@@ -995,12 +1088,15 @@
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 49,
       "imageEndPage": 50,
-      "subject": "Network Theory",
-      "topic": "Network Functions",
-      "classificationStatus": "high_auto",
-      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "subject": "Electromagnetics",
+      "topic": "Smith Chart · Impedance Transformation",
+      "classificationStatus": "curated_source_text",
+      "classificationMethod": "Content-based audit of source question excerpt; original diagram and PDF remain available for visual verification",
       "classificationMargin": 15,
-      "sourceExtract": "Q.52 A complex load (in Ω) is represented as Γ𝐿= 0.5∠30𝑜 on the Smith chart. A co-axial cable with a characteristic impedance of 50 Ω is connected to the load. The new input impedance of the load now moves to a diametrically opposite point on the same Γ circle on the Smith chart. Which option is the nearest input impedance of the cable connected load (in Ω)? (A) 20.7 −𝑗5.1 (B) 17.7 −𝑗11.8 (C) 97.5 −𝑗65.0 (D) 97.5 + 𝑗65.0 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4949 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.52 A complex load (in Ω) is represented as Γ𝐿= 0.5∠30𝑜 on the Smith chart. A co-axial cable with a characteristic impedance of 50 Ω is connected to the load. The new input impedance of the load now moves to a diametrically opposite point on the same Γ circle on the Smith chart. Which option is the nearest input impedance of the cable connected load (in Ω)? (A) 20.7 −𝑗5.1 (B) 17.7 −𝑗11.8 (C) 97.5 −𝑗65.0 (D) 97.5 + 𝑗65.0 OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 4949 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_curated",
+      "selectionEligible": true,
+      "reclassifiedFrom": "Network Theory"
     },
     {
       "number": 53,
@@ -1021,7 +1117,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 16,
-      "sourceExtract": "Q.53 A circuit using an ideal OP-AMP is shown in the Figure. Which of the following options gives the correct value of the current 𝐼𝑋? (A) 2.0 mA (B) 1.5 mA (C) 3.0 mA (D) 0 mA OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5050 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.53 A circuit using an ideal OP-AMP is shown in the Figure. Which of the following options gives the correct value of the current 𝐼𝑋? (A) 2.0 mA (B) 1.5 mA (C) 3.0 mA (D) 0 mA OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5050 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 54,
@@ -1042,7 +1140,9 @@
       "classificationStatus": "provisional",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
-      "sourceExtract": "Q.54 Consider an LED based on a direct bandgap semiconductor material with energy bandgap 1.3 eV. Given: Plank’s constant, ℎ= 6.63 × 10−34 J s and speed of light in free space is 3 × 108 m s−1. In which of the following wavelength ranges the LED will NOT emit? (A) 1410 ± 20 nm (B) 1090 ± 20 nm (C) 950 ± 20 nm (D) 510 ± 20 nm OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5151 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.54 Consider an LED based on a direct bandgap semiconductor material with energy bandgap 1.3 eV. Given: Plank’s constant, ℎ= 6.63 × 10−34 J s and speed of light in free space is 3 × 108 m s−1. In which of the following wavelength ranges the LED will NOT emit? (A) 1410 ± 20 nm (B) 1090 ± 20 nm (C) 950 ± 20 nm (D) 510 ± 20 nm OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5151 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": false
     },
     {
       "number": 55,
@@ -1063,7 +1163,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.55 Let the relevant bandwidth (B) of a digital communication system be 1 MHz and kT = −174 dBm/Hz, where k is Boltzmann’s constant and ‘T’ is equivalent noise temperature of the receiver. The power (S) of signal received through an additive Gaussian channel is −80 dBm. Which of the following options is/are TRUE about Shannon capacity (C) of the channel? (A) C = B (B) C = 2B (C) C > 3B (D) C < B OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5252 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.55 Let the relevant bandwidth (B) of a digital communication system be 1 MHz and kT = −174 dBm/Hz, where k is Boltzmann’s constant and ‘T’ is equivalent noise temperature of the receiver. The power (S) of signal received through an additive Gaussian channel is −80 dBm. Which of the following options is/are TRUE about Shannon capacity (C) of the channel? (A) C = B (B) C = 2B (C) C > 3B (D) C < B OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5252 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 56,
@@ -1084,7 +1186,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.56 Consider the four-variable Boolean function, 𝑓(𝑤, 𝑥, 𝑦, 𝑧) = ∑𝑚(0,2,5,7,8,10,13,14,15) with ‘w’ as MSB and ‘z’ as LSB. Which of the following expressions is/are the valid form(s) of 𝑓(𝑤, 𝑥, 𝑦, 𝑧)? (A) 𝑥̅𝑧̅ + 𝑥𝑧+ 𝑤𝑥𝑦 (B) 𝑥𝑧+ 𝑤𝑥𝑦+ 𝑤𝑥̅𝑧̅ + 𝑤 𝑥𝑦𝑧̅ (C) 𝑥̅𝑧̅ + 𝑤𝑥𝑦+ 𝑤𝑥̅𝑧̅ + 𝑤 𝑥𝑦𝑧̅ (D) 𝑥̅𝑧̅ + 𝑥𝑧+ 𝑤𝑦𝑧̅ OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5353 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.56 Consider the four-variable Boolean function, 𝑓(𝑤, 𝑥, 𝑦, 𝑧) = ∑𝑚(0,2,5,7,8,10,13,14,15) with ‘w’ as MSB and ‘z’ as LSB. Which of the following expressions is/are the valid form(s) of 𝑓(𝑤, 𝑥, 𝑦, 𝑧)? (A) 𝑥̅𝑧̅ + 𝑥𝑧+ 𝑤𝑥𝑦 (B) 𝑥𝑧+ 𝑤𝑥𝑦+ 𝑤𝑥̅𝑧̅ + 𝑤 𝑥𝑦𝑧̅ (C) 𝑥̅𝑧̅ + 𝑤𝑥𝑦+ 𝑤𝑥̅𝑧̅ + 𝑤 𝑥𝑦𝑧̅ (D) 𝑥̅𝑧̅ + 𝑥𝑧+ 𝑤𝑦𝑧̅ OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5353 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 57,
@@ -1105,7 +1209,9 @@
       "classificationStatus": "high_auto",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 17,
-      "sourceExtract": "Q.57 Consider a real, narrowband signal 𝑥(𝑡) = 𝐴(𝑡)cos[2𝜋𝑓𝑐𝑡+ 𝜃(𝑡)] where the maximum frequency components of A(t) and θ(t) are fM and fc (= 1000 fM), respectively. Which of the following statements is/are correct for −∞< 𝑡< ∞? (A) x(t) represents a PSK modulated signal for suitable choices of A(t) and θ(t). (B) x(t) represents an amplitude modulated signal for suitable choices of A(t) and θ(t). (C) x(t) represents a band-limited Gaussian noise process. (D) x(t) never represents a narrowband FM signal. OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5454 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.57 Consider a real, narrowband signal 𝑥(𝑡) = 𝐴(𝑡)cos[2𝜋𝑓𝑐𝑡+ 𝜃(𝑡)] where the maximum frequency components of A(t) and θ(t) are fM and fc (= 1000 fM), respectively. Which of the following statements is/are correct for −∞< 𝑡< ∞? (A) x(t) represents a PSK modulated signal for suitable choices of A(t) and θ(t). (B) x(t) represents an amplitude modulated signal for suitable choices of A(t) and θ(t). (C) x(t) represents a band-limited Gaussian noise process. (D) x(t) never represents a narrowband FM signal. OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5454 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": true
     },
     {
       "number": 58,
@@ -1126,7 +1232,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.58 Let 𝑥1(𝑡) = cos(2𝜋𝑛𝑡) and 𝑥2(𝑡) = 2sin(4𝜋𝑛𝑡) represent two sinusoids for a positive integer n and −∞< 𝑡< ∞ . Which of the following statements about 𝑥1(𝑡) and 𝑥2(𝑡) is/are valid? (A) 𝑥1(𝑡) and 𝑥2(𝑡) are orthogonal to each other over 0 ≤ t < 1/n . (B) 𝑥1(𝑡) and 𝑥2(𝑡) are orthonormal to each other over 0 ≤ t < 1/n . (C) 𝑥2(𝑡) is a harmonic of 𝑥1(𝑡) . (D) 𝑥1(𝑡) and 𝑥2(𝑡) are non-orthogonal to each other over 0 ≤ t < 1/(2n) . OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5555 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.58 Let 𝑥1(𝑡) = cos(2𝜋𝑛𝑡) and 𝑥2(𝑡) = 2sin(4𝜋𝑛𝑡) represent two sinusoids for a positive integer n and −∞< 𝑡< ∞ . Which of the following statements about 𝑥1(𝑡) and 𝑥2(𝑡) is/are valid? (A) 𝑥1(𝑡) and 𝑥2(𝑡) are orthogonal to each other over 0 ≤ t < 1/n . (B) 𝑥1(𝑡) and 𝑥2(𝑡) are orthonormal to each other over 0 ≤ t < 1/n . (C) 𝑥2(𝑡) is a harmonic of 𝑥1(𝑡) . (D) 𝑥1(𝑡) and 𝑥2(𝑡) are non-orthogonal to each other over 0 ≤ t < 1/(2n) . OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5555 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 59,
@@ -1147,7 +1255,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.59 Consider the unity negative feedback control system shown in the Figure. The value of gain K (>0) at which the given system will remain marginally stable is __. (Answer in integer) ∑"
+      "sourceExtract": "Q.59 Consider the unity negative feedback control system shown in the Figure. The value of gain K (>0) at which the given system will remain marginally stable is __. (Answer in integer) ∑",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 60,
@@ -1163,12 +1273,15 @@
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 56,
       "imageEndPage": 57,
-      "subject": "Communication Systems",
-      "topic": "Communication Theory",
-      "classificationStatus": "provisional",
-      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "subject": "Analog Electronics",
+      "topic": "MOSFET Bias · Transconductance",
+      "classificationStatus": "curated_source_text",
+      "classificationMethod": "Content-based audit of source question excerpt; original diagram and PDF remain available for visual verification",
       "classificationMargin": 4,
-      "sourceExtract": "Q.60 An n-channel MOSFET is connected as shown in the Figure. 𝑊 Assume 𝑉𝑇𝐻= 1 V, 𝑉𝐷𝐷= 5 V, and 𝜇𝐶𝑜𝑥( 𝐿) = 2 mA V−2 and neglect channel length modulation effects. The gate voltage (𝑉𝐺) of the n-channel MOSFET (in Volt) is __. (rounded off to two decimal places) +VDD 1 kΩ VG OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5656 ofof 5858 Electronics and Communication Engineering (EC)"
+      "sourceExtract": "Q.60 An n-channel MOSFET is connected as shown in the Figure. 𝑊 Assume 𝑉𝑇𝐻= 1 V, 𝑉𝐷𝐷= 5 V, and 𝜇𝐶𝑜𝑥( 𝐿) = 2 mA V−2 and neglect channel length modulation effects. The gate voltage (𝑉𝐺) of the n-channel MOSFET (in Volt) is __. (rounded off to two decimal places) +VDD 1 kΩ VG OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5656 ofof 5858 Electronics and Communication Engineering (EC)",
+      "taxonomyReviewStatus": "source_text_curated",
+      "selectionEligible": true,
+      "reclassifiedFrom": "Communication Systems"
     },
     {
       "number": 61,
@@ -1189,7 +1302,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Q.61 Consider the square region R in the X-Y plane as shown with the dark shading in the Figure. The value of ∬(𝑥2 + 𝑦2 −1)𝑑𝑥𝑑𝑦 is ____. 𝑅 (rounded off to two decimal places) y R x 0,0 1 2"
+      "sourceExtract": "Q.61 Consider the square region R in the X-Y plane as shown with the dark shading in the Figure. The value of ∬(𝑥2 + 𝑦2 −1)𝑑𝑥𝑑𝑦 is ____. 𝑅 (rounded off to two decimal places) y R x 0,0 1 2",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     },
     {
       "number": 62,
@@ -1205,12 +1320,15 @@
       "imageAuditStatus": "automatic_boundary_needs_visual_review",
       "imageStartPage": 57,
       "imageEndPage": 58,
-      "subject": "Communication Systems",
-      "topic": "Communication Theory",
-      "classificationStatus": "provisional",
-      "classificationMethod": "keyword scoring on original official PDF; review required",
+      "subject": "Analog Electronics",
+      "topic": "Op-Amp Closed-Loop Gain",
+      "classificationStatus": "curated_source_text",
+      "classificationMethod": "Content-based audit of source question excerpt; original diagram and PDF remain available for visual verification",
       "classificationMargin": 1,
-      "sourceExtract": "Q.62 Consider an ideal OP-AMP circuit as shown in the Figure. The resistances R1 = R2 = R3 = R4 = 50 kΩ. The magnitude of the closed loop gain is ___. (rounded off to two decimal places) R2 R3 R4 R1 vi - vo + OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5757 ofof 5858 Electronics and Communication Engineering (EC) The average bit error rate at the input of a (7 4 1) Hamming decoder is 0 10"
+      "sourceExtract": "Q.62 Consider an ideal OP-AMP circuit as shown in the Figure. The resistances R1 = R2 = R3 = R4 = 50 kΩ. The magnitude of the closed loop gain is ___. (rounded off to two decimal places) R2 R3 R4 R1 vi - vo + OrganizingOrganizing Institute:Institute: IITIIT GuwahatiGuwahati PagePage 5757 ofof 5858 Electronics and Communication Engineering (EC) The average bit error rate at the input of a (7 4 1) Hamming decoder is 0 10",
+      "taxonomyReviewStatus": "source_text_curated",
+      "selectionEligible": true,
+      "reclassifiedFrom": "Communication Systems"
     },
     {
       "number": 63,
@@ -1232,7 +1350,9 @@
       "classificationStatus": "provisional",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 2,
-      "sourceExtract": "The average bit error rate at the input of a (7, 4, 1) Hamming decoder is 0.10.Q.63 The probability that the decoder will fail to decode a received word correctly is __. (rounded off to two decimal places) Consider that the concentration of electrons in a semiconductor bar varies linearly"
+      "sourceExtract": "The average bit error rate at the input of a (7, 4, 1) Hamming decoder is 0.10.Q.63 The probability that the decoder will fail to decode a received word correctly is __. (rounded off to two decimal places) Consider that the concentration of electrons in a semiconductor bar varies linearly",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": false
     },
     {
       "number": 64,
@@ -1254,7 +1374,9 @@
       "classificationStatus": "provisional",
       "classificationMethod": "keyword scoring on original official PDF; review required",
       "classificationMargin": 13,
-      "sourceExtract": "Consider that the concentration of electrons in a semiconductor bar varies linearlyQ.64 from 2 × 1017cm−3 at x = 1 m to 1× 1016 cm−3 at x = 4 m along the x-direction. Assume that the concentration of electrons is not varying along other directions (that is along y- and z-directions). [Given: the mobility of electron is 1400 cm2V−1s−1, thermal voltage is 25 mV and electronic charge is 1.6× 10−19 Coulomb.] The density of electron diffusion current (in A/mm2) is __. (rounded off to two decimal places) Consider the ideal diodes D1 and D2 as shown in the Figure with cut in voltage"
+      "sourceExtract": "Consider that the concentration of electrons in a semiconductor bar varies linearlyQ.64 from 2 × 1017cm−3 at x = 1 m to 1× 1016 cm−3 at x = 4 m along the x-direction. Assume that the concentration of electrons is not varying along other directions (that is along y- and z-directions). [Given: the mobility of electron is 1400 cm2V−1s−1, thermal voltage is 25 mV and electronic charge is 1.6× 10−19 Coulomb.] The density of electron diffusion current (in A/mm2) is __. (rounded off to two decimal places) Consider the ideal diodes D1 and D2 as shown in the Figure with cut in voltage",
+      "taxonomyReviewStatus": "automatic_context_match",
+      "selectionEligible": false
     },
     {
       "number": 65,
@@ -1276,7 +1398,9 @@
       "classificationStatus": "manually_audited_source_text",
       "classificationMethod": "Topic assigned from original GATE question source extract, screenshot retained",
       "classificationMargin": 0,
-      "sourceExtract": "Consider the ideal diodes D1 and D2 as shown in the Figure with cut-in voltageQ.65 Vγ = 0 Volt and vi(t) is in Volt. The maximum voltage (Volt) of the output vo(t) is __. (rounded off to two decimal places) 10 kΩ + 10 kΩ vo (t) vi (t) D1 D2 2 V 4 V - vi (t) = 6 sin(ωt)"
+      "sourceExtract": "Consider the ideal diodes D1 and D2 as shown in the Figure with cut-in voltageQ.65 Vγ = 0 Volt and vi(t) is in Volt. The maximum voltage (Volt) of the output vo(t) is __. (rounded off to two decimal places) 10 kΩ + 10 kΩ vo (t) vi (t) D1 D2 2 V 4 V - vi (t) = 6 sin(ωt)",
+      "taxonomyReviewStatus": "source_text_audited",
+      "selectionEligible": true
     }
   ]
 }
