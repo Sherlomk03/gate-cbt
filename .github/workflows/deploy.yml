@@ -2,6 +2,12 @@ name: Publish GATE CBT website (verified paper library)
 # Includes official 2022–2026 linked-paper data, screenshots and daily source-authentic PYQ exams
 on:
   workflow_dispatch:
+  # Daily paper commits use GITHUB_TOKEN and do not trigger normal push workflows.
+  # Deploy after the daily publishing workflow finishes successfully.
+  workflow_run:
+    workflows:
+      - Publish Daily GATE PYQ and ACE Classroom Practice
+    types: [completed]
   push:
     branches: [main]
     paths:
@@ -22,18 +28,24 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Verify PYQ subject labels, answer keys and future eligibility
         run: python scripts/validate_taxonomy.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
+      # Allow GitHub's artifact API time to index the just-uploaded Pages artifact.
+      - name: Wait for Pages artifact indexing
+        run: sleep 20
       - name: Deploy website to GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v4
