@@ -28,6 +28,7 @@ The current daily CBT continues to use eligible, source-matched questions only.
 Your current Maths restriction remains Linear Algebra, Probability and Complex Variables.
 General Aptitude is excluded from daily technical practice; Control Systems is archived but
 remains excluded from daily rotation until you request a change.</div>
+<p><a href="https://gate2027.iitm.ac.in/download" target="_blank" rel="noopener noreferrer">Official GATE 2027 downloads</a> · <a href="https://drive.google.com/drive/folders/1xUn7rGTzKlfvJDoo4SzCRi8jRlBD63ud?usp=sharing" target="_blank" rel="noopener noreferrer">Official bulk archive of 2007–2026 papers</a></p>
 <div class="controls">
 <label>Branch <select id="branch"><option value="all">EC + EE</option><option value="EC">EC</option><option value="EE">EE (Maths source)</option></select></label>
 <label>Year <select id="year"><option value="all">All years</option></select></label>
@@ -48,7 +49,7 @@ $('#summary').textContent=matches.length+' indexed branch/year sources · '+matc
 $('#cards').innerHTML=matches.map(e=>{
 const ready=!!e.paperUrl,imported=e.cbtStatus==='existing_bank_subject_tags_provisional';
 return '<article class="card"><div class="row"><div><h2>GATE '+esc(e.year)+' · '+esc(e.branch)+'</h2><span class="tag '+(ready?'available':'')+'">'+(ready?'PDF source available':'Link needs verification')+'</span> <span class="tag">'+(imported?'Existing 2022–2026 question bank':'Historical questions not imported')+'</span></div><span class="meta">'+esc(e.keyStatus)+'</span></div>'+
-'<div class="actions">'+(ready?'<a href="'+esc(e.paperUrl)+'" target="_blank" rel="noopener noreferrer">Original paper PDF</a>':'<span class="meta">Original paper link pending verification</span>')+
+'<div class="actions">'+(ready?'<a href="'+esc(e.paperUrl)+'" target="_blank" rel="noopener noreferrer">Original paper PDF</a>':(e.paperUrlCandidate?'<a href="'+esc(e.paperUrlCandidate)+'" target="_blank" rel="noopener noreferrer">Possible archive PDF (not verified)</a>':'<span class="meta">Original paper link pending verification</span>'))+
 (e.keyUrl?'<a href="'+esc(e.keyUrl)+'" target="_blank" rel="noopener noreferrer">Official key PDF</a>':'')+'</div>'+
 (e.sessionNote?'<p class="meta">'+esc(e.sessionNote)+'</p>':'')+'</article>'}).join('');
 }
