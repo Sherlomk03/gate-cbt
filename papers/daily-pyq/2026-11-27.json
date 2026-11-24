@@ -21,8 +21,8 @@
   "status": "official_gate_pyqs_only",
   "classificationNote": "Official historical GATE 2020–2026 EE/EC question images and matched official answer keys. Selected 2020 source crops are manually checked; some 2022–2026 tags remain provisional.",
   "rotationNote": null,
-  "selectionNote": "Source-authentic GATE PYQs: 6 from newly verified 2020 EC/EE official sources; 7 repeated IDs from these three future dates. Maths only Linear Algebra, Probability and Statistics, Complex Variables. No fabricated questions.",
-  "repeatCount": 7,
+  "selectionNote": "6 questions from individually source-checked 2020 GATE EC/EE papers. Exactly 40 technical PYQs; Mathematics only Linear Algebra, Probability and Statistics, Complex Variables. 15 source question IDs are repeats from earlier published days; repeat IDs: 2024-EE-Q32, 2022-EE-Q20, 2022-EE-Q40, 2025-EC-Q13, 2024-EE-Q11, 2023-EC-Q11, 2023-EE-Q51, 2022-EC-Q54, 2025-EC-Q19, 2022-EE-Q34, 2025-EC-Q20, 2026-EE-Q26, 2022-EC-Q38, 2024-EC-Q32, 2022-EC-Q39. Questions are not fabricated.",
+  "repeatCount": 15,
   "selectionCounts": {
     "Engineering Mathematics": {
       "selected": 10,
@@ -1022,5 +1022,22 @@
   "revisionId": "historical-2020-verified-v1-2026-11-27",
   "revisionNote": "Updated 24 Nov 2026 with individually source-image-reviewed official 2020 GATE EE/EC questions. Any saved attempt on an earlier revision is locally backed up and unchanged answers are preserved.",
   "historical2020VerifiedCount": 6,
-  "repeatAuditNote": "Historical 2020 update; duplicate-source IDs rebalanced to prioritize unused verified PYQs. Repeats accurately counted relative to earlier published paper dates."
+  "repeatAuditNote": "Historical 2020 update; duplicate-source IDs rebalanced to prioritize unused verified PYQs. Repeats accurately counted relative to earlier published paper dates.",
+  "repeatsVsPreviousDates": [
+    "2024-EE-Q32",
+    "2022-EE-Q20",
+    "2022-EE-Q40",
+    "2025-EC-Q13",
+    "2024-EE-Q11",
+    "2023-EC-Q11",
+    "2023-EE-Q51",
+    "2022-EC-Q54",
+    "2025-EC-Q19",
+    "2022-EE-Q34",
+    "2025-EC-Q20",
+    "2026-EE-Q26",
+    "2022-EC-Q38",
+    "2024-EC-Q32",
+    "2022-EC-Q39"
+  ]
 }
