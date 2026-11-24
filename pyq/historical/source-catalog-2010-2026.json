@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "preparedOnIST": "2026-11-24",
+  "range": {
+    "from": 2010,
+    "through": 2026
+  },
+  "allowedSources": [
+    "Official GATE EE/EC papers and matching authentic answer keys",
+    "Previously supplied ACE classroom questions, distinctly labeled"
+  ],
+  "requestedSubjectCollection": {
+    "EC": [
+      "Analog Electronics",
+      "Digital Electronics",
+      "Signals & Systems",
+      "Control Systems",
+      "Network Theory",
+      "Engineering Mathematics"
+    ],
+    "EE": [
+      "Engineering Mathematics"
+    ]
+  },
+  "mathsDailyRestrictionUntilUserChanges": [
+    "Linear Algebra",
+    "Probability and Statistics",
+    "Complex Variables"
+  ],
+  "dailyPaperExclusions": [
+    "General Aptitude",
+    "Control Systems"
+  ],
+  "notes": [
+    "All 34 year-branch combinations are indexed; older-year URL candidates are not verified PDFs or gradeable questions.",
+    "Original PDF existence does not mean its individual questions, options, diagrams, year/branch/sessions, official keys or subject tags have been imported.",
+    "No 2010-2021 question can enter the daily CBT until a matched official answer key, exact source image, subject review, and uniqueness checks pass.",
+    "Keep question ID as YEAR-BRANCH-SESSION-QNUMBER for multiple-session papers to avoid collisions.",
+    "2010 original paper uses different technical/GA numbering and linked-answer conventions; do not treat like later CBT.",
+    "Control Systems is in the collection request but remains excluded from the technical daily test unless the user changes that rule."
+  ],
+  "papers": [
+    {
+      "year": 2010,
+      "branch": "EC",
+      "id": "2010-EC",
+      "paperUrl": "https://gate.iitk.ac.in/GATE2023/doc/papers/2010/ec_2010.pdf",
+      "sourceStatus": "official_archive_pdf_found",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_verified_do_not_grade",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering"
+    },
+    {
+      "year": 2010,
+      "branch": "EE",
+      "id": "2010-EE",
+      "paperUrl": null,
+      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2010/ee_2010.pdf",
+      "sourceStatus": "official_archive_path_candidate_unverified",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_verified_do_not_grade",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering"
+    },
+    {
+      "year": 2011,
+      "branch": "EC",
+      "id": "2011-EC",
+      "paperUrl": null,
+      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2011/ec_2011.pdf",
+      "sourceStatus": "official_archive_path_candidate_unverified",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering"
+    },
+    {
+      "year": 2011,
+      "branch": "EE",
+      "id": "2011-EE",
+      "paperUrl": null,
+      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2011/ee_2011.pdf",
+      "sourceStatus": "official_archive_path_candidate_unverified",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering"
+    },
+    {
+      "year": 2012,
+      "branch": "EC",
+      "id": "2012-EC",
+      "paperUrl": "https://gate.iitk.ac.in/GATE2023/doc/papers/2012/ec_2012.pdf",
+      "sourceStatus": "official_archive_pdf_found",
+      "keyUrl": null,
+      "keyStatus": "official_booklet_code_key_embedded_code_mapping_required",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering"
+    },
+    {
+      "year": 2012,
+      "branch": "EE",
+      "id": "2012-EE",
+      "paperUrl": "https://gate.iitk.ac.in/GATE2023/doc/papers/2012/ee_2012.pdf",
+      "sourceStatus": "official_archive_pdf_found",
+      "keyUrl": null,
+      "keyStatus": "official_booklet_code_key_embedded_code_mapping_required",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering"
+    },
+    {
+      "year": 2013,
+      "branch": "EC",
+      "id": "2013-EC",
+      "paperUrl": "https://gate.iitk.ac.in/GATE2023/doc/papers/2013/ec_2013.pdf",
+      "sourceStatus": "official_archive_pdf_found",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+    },
+    {
+      "year": 2013,
+      "branch": "EE",
+      "id": "2013-EE",
+      "paperUrl": null,
+      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2013/ee_2013.pdf",
+      "sourceStatus": "official_archive_path_candidate_unverified",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+    },
+    {
+      "year": 2014,
+      "branch": "EC",
+      "id": "2014-EC",
+      "paperUrl": "https://gate.iitk.ac.in/GATE2023/doc/papers/2014/ec_2014.pdf",
+      "sourceStatus": "official_archive_pdf_found",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+    },
+    {
+      "year": 2014,
+      "branch": "EE",
+      "id": "2014-EE",
+      "paperUrl": null,
+      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2014/ee_2014.pdf",
+      "sourceStatus": "official_archive_path_candidate_unverified",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+    },
+    {
+      "year": 2015,
+      "branch": "EC",
+      "id": "2015-EC",
+      "paperUrl": null,
+      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2015/ec_2015.pdf",
+      "sourceStatus": "official_archive_path_candidate_unverified",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+    },
+    {
+      "year": 2015,
+      "branch": "EE",
+      "id": "2015-EE",
+      "paperUrl": null,
+      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2015/ee_2015.pdf",
+      "sourceStatus": "official_archive_path_candidate_unverified",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+    },
+    {
+      "year": 2016,
+      "branch": "EC",
+      "id": "2016-EC",
+      "paperUrl": null,
+      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2016/ec_2016.pdf",
+      "sourceStatus": "official_archive_path_candidate_unverified",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+    },
+    {
+      "year": 2016,
+      "branch": "EE",
+      "id": "2016-EE",
+      "paperUrl": null,
+      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2016/ee_2016.pdf",
+      "sourceStatus": "official_archive_path_candidate_unverified",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+    },
+    {
+      "year": 2017,
+      "branch": "EC",
+      "id": "2017-EC",
+      "paperUrl": null,
+      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2017/ec_2017.pdf",
+      "sourceStatus": "official_archive_path_candidate_unverified",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+    },
+    {
+      "year": 2017,
+      "branch": "EE",
+      "id": "2017-EE",
+      "paperUrl": null,
+      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2017/ee_2017.pdf",
+      "sourceStatus": "official_archive_path_candidate_unverified",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+    },
+    {
+      "year": 2018,
+      "branch": "EC",
+      "id": "2018-EC",
+      "paperUrl": "https://gate.iitk.ac.in/GATE2023/doc/papers/2018/ec_2018.pdf",
+      "sourceStatus": "official_archive_pdf_found",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+    },
+    {
+      "year": 2018,
+      "branch": "EE",
+      "id": "2018-EE",
+      "paperUrl": null,
+      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2018/ee_2018.pdf",
+      "sourceStatus": "official_archive_path_candidate_unverified",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+    },
+    {
+      "year": 2019,
+      "branch": "EC",
+      "id": "2019-EC",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2019/ec_2019.pdf",
+      "sourceStatus": "official_archive_pdf_found",
+      "keyUrl": null,
+      "keyStatus": "official_key_not_yet_individually_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+    },
+    {
+      "year": 2019,
+      "branch": "EE",
+      "id": "2019-EE",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2019/ee_2019.pdf",
+      "sourceStatus": "official_archive_pdf_found",
+      "keyUrl": null,
+      "keyStatus": "official_key_embedded_in_same_pdf_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+    },
+    {
+      "year": 2020,
+      "branch": "EC",
+      "id": "2020-EC",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2020/ec_2020.pdf",
+      "sourceStatus": "official_archive_pdf_found",
+      "keyUrl": null,
+      "keyStatus": "official_key_embedded_in_same_pdf_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+    },
+    {
+      "year": 2020,
+      "branch": "EE",
+      "id": "2020-EE",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2020/ee_2020.pdf",
+      "sourceStatus": "official_archive_pdf_found",
+      "keyUrl": null,
+      "keyStatus": "official_key_embedded_in_same_pdf_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+    },
+    {
+      "year": 2021,
+      "branch": "EC",
+      "id": "2021-EC",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2021/ec_2021.pdf",
+      "sourceStatus": "official_archive_pdf_found",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2021/ec_2021.pdf",
+      "keyStatus": "official_separate_key_link_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+    },
+    {
+      "year": 2021,
+      "branch": "EE",
+      "id": "2021-EE",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2021/ee_2021.pdf",
+      "sourceStatus": "official_archive_pdf_found",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2021/ee_2021.pdf",
+      "keyStatus": "official_separate_key_link_verified",
+      "cbtStatus": "not_imported_not_gradeable",
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+    },
+    {
+      "year": 2022,
+      "branch": "EC",
+      "id": "2022-EC",
+      "sourceStatus": "already_imported",
+      "keyStatus": "official_key_matched_65_questions",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ec_2022.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ec_2022.pdf",
+      "questionCount": 65,
+      "cbtStatus": "existing_bank_subject_tags_provisional",
+      "source": "IIT Guwahati official GATE 2026 archive"
+    },
+    {
+      "year": 2022,
+      "branch": "EE",
+      "id": "2022-EE",
+      "sourceStatus": "already_imported",
+      "keyStatus": "official_key_matched_65_questions",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ee_2022.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ee_2022.pdf",
+      "questionCount": 65,
+      "cbtStatus": "existing_bank_subject_tags_provisional",
+      "source": "IIT Guwahati official GATE 2026 archive"
+    },
+    {
+      "year": 2023,
+      "branch": "EC",
+      "id": "2023-EC",
+      "sourceStatus": "already_imported",
+      "keyStatus": "official_key_matched_65_questions",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ec_2023.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EC_ANS_GATE2023.pdf",
+      "questionCount": 65,
+      "cbtStatus": "existing_bank_subject_tags_provisional",
+      "source": "IIT Guwahati official GATE 2026 archive"
+    },
+    {
+      "year": 2023,
+      "branch": "EE",
+      "id": "2023-EE",
+      "sourceStatus": "already_imported",
+      "keyStatus": "official_key_matched_65_questions",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
+      "questionCount": 65,
+      "cbtStatus": "existing_bank_subject_tags_provisional",
+      "source": "IIT Guwahati official GATE 2026 archive"
+    },
+    {
+      "year": 2024,
+      "branch": "EC",
+      "id": "2024-EC",
+      "sourceStatus": "already_imported",
+      "keyStatus": "official_key_matched_65_questions",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EC24S7.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/ECFinalAnswerKey.pdf",
+      "questionCount": 65,
+      "cbtStatus": "existing_bank_subject_tags_provisional",
+      "source": "IIT Guwahati official GATE 2026 archive"
+    },
+    {
+      "year": 2024,
+      "branch": "EE",
+      "id": "2024-EE",
+      "sourceStatus": "already_imported",
+      "keyStatus": "official_key_matched_65_questions",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
+      "questionCount": 65,
+      "cbtStatus": "existing_bank_subject_tags_provisional",
+      "source": "IIT Guwahati official GATE 2026 archive"
+    },
+    {
+      "year": 2025,
+      "branch": "EC",
+      "id": "2025-EC",
+      "sourceStatus": "already_imported",
+      "keyStatus": "official_key_matched_65_questions",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EC2025.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EC_Keys.pdf",
+      "questionCount": 65,
+      "cbtStatus": "existing_bank_subject_tags_provisional",
+      "source": "IIT Guwahati official GATE 2026 archive"
+    },
+    {
+      "year": 2025,
+      "branch": "EE",
+      "id": "2025-EE",
+      "sourceStatus": "already_imported",
+      "keyStatus": "official_key_matched_65_questions",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
+      "questionCount": 65,
+      "cbtStatus": "existing_bank_subject_tags_provisional",
+      "source": "IIT Guwahati official GATE 2026 archive"
+    },
+    {
+      "year": 2026,
+      "branch": "EC",
+      "id": "2026-EC",
+      "sourceStatus": "already_imported",
+      "keyStatus": "official_key_matched_65_questions",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EC.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EC_Keys.pdf",
+      "questionCount": 65,
+      "cbtStatus": "existing_bank_subject_tags_provisional",
+      "source": "IIT Guwahati official GATE 2026 archive"
+    },
+    {
+      "year": 2026,
+      "branch": "EE",
+      "id": "2026-EE",
+      "sourceStatus": "already_imported",
+      "keyStatus": "official_key_matched_65_questions",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EE.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EE_Keys.pdf",
+      "questionCount": 65,
+      "cbtStatus": "existing_bank_subject_tags_provisional",
+      "source": "IIT Guwahati official GATE 2026 archive"
+    }
+  ]
+}
