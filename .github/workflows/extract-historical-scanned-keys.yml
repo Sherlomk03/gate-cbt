@@ -1,0 +1,52 @@
+name: Extract OCR Key Inventories from Scanned GATE 2019 and 2021 Sources
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/extract_historical_scanned_keys.py'
+      - '.github/workflows/extract-historical-scanned-keys.yml'
+permissions:
+  contents: write
+concurrency:
+  group: gate-ocr-source-keys
+  cancel-in-progress: false
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install OCR for image-only official historical key pages
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y tesseract-ocr
+          pip install Pillow pytesseract
+      - name: Extract provisional key text, never enable CBT grading
+        run: python scripts/extract_historical_scanned_keys.py
+      - name: Validate all OCR keys remain quarantined
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          p=pathlib.Path('pyq/historical/key-ocr')
+          docs=[json.loads(x.read_text()) for x in sorted(p.glob('20??-??.json'))]
+          assert len(docs)==4,len(docs)
+          assert all(x['cbtEligible'] is False for x in docs)
+          print('OCR source key sheets',[(x['id'],x['recognizedCount']) for x in docs])
+          PY
+      - name: Save scanned key inventories and source page OCR
+        run: |
+          git config user.name "gate-cbt-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add pyq/historical/key-ocr/
+          if ! git diff --staged --quiet; then
+            git commit -m "Record official scanned historical answer key OCR pending human verification"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
