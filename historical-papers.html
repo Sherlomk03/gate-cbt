@@ -45,12 +45,12 @@ let catalog=[];
 function render(){
 const branch=$('#branch').value,year=$('#year').value,status=$('#availability').value;
 const matches=catalog.filter(e=>(branch==='all'||e.branch===branch)&&(year==='all'||String(e.year)===year)&&(status==='all'||(status==='available'&&!!e.paperUrl)||(status==='pending'&&!e.paperUrl)));
-$('#summary').textContent=matches.length+' indexed branch/year sources · '+matches.filter(e=>e.paperUrl).length+' source-PDF links available · '+matches.filter(e=>e.cbtStatus==='existing_bank_subject_tags_provisional').length+' papers already in the current question bank';
+$('#summary').textContent=matches.length+' indexed branch/year sources · '+matches.filter(e=>e.paperUrl).length+' source-PDF links available · '+matches.filter(e=>e.cbtStatus==='existing_bank_subject_tags_provisional'||e.cbtStatus==='partially_verified_question_level').length+' paper sources with some gradeable PYQs';
 $('#cards').innerHTML=matches.map(e=>{
-const ready=!!e.paperUrl,imported=e.cbtStatus==='existing_bank_subject_tags_provisional';
-return '<article class="card"><div class="row"><div><h2>GATE '+esc(e.year)+' · '+esc(e.branch)+'</h2><span class="tag '+(ready?'available':'')+'">'+(ready?'PDF source available':'Link needs verification')+'</span> <span class="tag">'+(imported?'Existing 2022–2026 question bank':'Historical questions not imported')+'</span></div><span class="meta">'+esc(e.keyStatus)+'</span></div>'+
+const ready=!!e.paperUrl,imported=e.cbtStatus==='existing_bank_subject_tags_provisional',partial=e.cbtStatus==='partially_verified_question_level';
+return '<article class="card"><div class="row"><div><h2>GATE '+esc(e.year)+' · '+esc(e.branch)+'</h2><span class="tag '+(ready?'available':'')+'">'+(ready?'PDF source available':'Link needs verification')+'</span> <span class="tag">'+(imported?'Existing 2022–2026 question bank':partial?(e.verifiedQuestionCount+' individually source-reviewed PYQs imported'):'Individual questions not yet imported')+'</span></div><span class="meta">'+esc(e.keyStatus)+'</span></div>'+
 '<div class="actions">'+(ready?'<a href="'+esc(e.paperUrl)+'" target="_blank" rel="noopener noreferrer">Original paper PDF</a>':(e.paperUrlCandidate?'<a href="'+esc(e.paperUrlCandidate)+'" target="_blank" rel="noopener noreferrer">Possible archive PDF (not verified)</a>':'<span class="meta">Original paper link pending verification</span>'))+
-(e.keyUrl?'<a href="'+esc(e.keyUrl)+'" target="_blank" rel="noopener noreferrer">Official key PDF</a>':'')+'</div>'+
+(e.keyUrl?'<a href="'+esc(e.keyUrl)+'" target="_blank" rel="noopener noreferrer">Official key PDF</a>':'')+(partial?'<a href="./pyq-library.html">Browse verified 2020 questions by subject</a>':'')+'</div>'+
 (e.sessionNote?'<p class="meta">'+esc(e.sessionNote)+'</p>':'')+'</article>'}).join('');
 }
 (async()=>{try{
