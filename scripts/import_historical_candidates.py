@@ -16,7 +16,7 @@ CAND=pathlib.Path("pyq/historical/candidates")
 CROP=pathlib.Path("pyq/historical/crops")
 AGENT={"User-Agent":"Mozilla/5.0 GATE historical source importer"}
 QUESTION=re.compile(r'^\s*Q\s*\.?\s*(?:No\.?\s*)?(\d{1,2})(?:\s|[.:]|$)',re.I)
-SESSION={2020:{"EC":4,"EE":5},2021:{"EC":4,"EE":5}}
+SESSION={2020:{"EC":4,"EE":5},2021:{"EC":4,"EE":3}}
 
 def getpdf(url):
     for attempt in range(3):
