@@ -49,7 +49,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_verified_do_not_grade",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering"
+      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2010/ec_2010.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2010,
@@ -61,7 +63,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_verified_do_not_grade",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering"
+      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2010/ee_2010.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2011,
@@ -73,7 +77,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering"
+      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2011/ec_2011.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2011,
@@ -85,7 +91,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering"
+      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2011/ee_2011.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2012,
@@ -96,7 +104,9 @@
       "keyUrl": null,
       "keyStatus": "official_booklet_code_key_embedded_code_mapping_required",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering"
+      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2012/ec_2012.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2012,
@@ -107,7 +117,9 @@
       "keyUrl": null,
       "keyStatus": "official_booklet_code_key_embedded_code_mapping_required",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering"
+      "sessionNote": "Early paper has GA section at end and technical questions first; do not assume 2022+ numbering",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2012/ee_2012.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2013,
@@ -118,7 +130,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2013/ec_2013.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2013,
@@ -130,7 +144,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2013/ee_2013.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2014,
@@ -141,7 +157,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2014/ec_2014.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2014,
@@ -153,7 +171,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2014/ee_2014.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2015,
@@ -165,7 +185,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2015/ec_2015.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2015,
@@ -177,7 +199,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2015/ee_2015.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2016,
@@ -189,7 +213,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2016/ec_2016.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2016,
@@ -201,7 +227,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2016/ee_2016.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2017,
@@ -213,7 +241,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2017/ec_2017.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2017,
@@ -225,7 +255,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import"
+      "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2017/ee_2017.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2018,
@@ -236,7 +268,9 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2018/ec_2018.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2018,
@@ -248,73 +282,99 @@
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2018/ee_2018.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
     },
     {
       "year": 2019,
       "branch": "EC",
       "id": "2019-EC",
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2019/ec_2019.pdf",
-      "sourceStatus": "official_archive_pdf_found",
+      "sourceStatus": "official_pdf_http_and_format_verified",
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "pdfPages": 31,
+      "pdfSha256": "73c7b52338e5e1eb568639d6305df1a95b884f144230c1596d5b869bf00f6daa",
+      "textExtractable": false
     },
     {
       "year": 2019,
       "branch": "EE",
       "id": "2019-EE",
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2019/ee_2019.pdf",
-      "sourceStatus": "official_archive_pdf_found",
+      "sourceStatus": "official_pdf_http_and_format_verified",
       "keyUrl": null,
       "keyStatus": "official_key_embedded_in_same_pdf_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "pdfPages": 16,
+      "pdfSha256": "183c6acdab5b664b6c082acf5f9e302a2d557b61ec33b8144bd760d297bf4dbe",
+      "textExtractable": false
     },
     {
       "year": 2020,
       "branch": "EC",
       "id": "2020-EC",
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2020/ec_2020.pdf",
-      "sourceStatus": "official_archive_pdf_found",
+      "sourceStatus": "official_pdf_http_and_format_verified",
       "keyUrl": null,
       "keyStatus": "official_key_embedded_in_same_pdf_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "pdfPages": 20,
+      "pdfSha256": "f6b51c7f9f433cd7eaaeb276e66abe5b9e9b2e7b8b14034d551515b6d6e7de2d",
+      "textExtractable": true
     },
     {
       "year": 2020,
       "branch": "EE",
       "id": "2020-EE",
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2020/ee_2020.pdf",
-      "sourceStatus": "official_archive_pdf_found",
+      "sourceStatus": "official_pdf_http_and_format_verified",
       "keyUrl": null,
       "keyStatus": "official_key_embedded_in_same_pdf_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "pdfPages": 20,
+      "pdfSha256": "58a2d8e4e88d6f60af965404f92fdce4af17c080cbc766ed1e7812758ce8d385",
+      "textExtractable": true
     },
     {
       "year": 2021,
       "branch": "EC",
       "id": "2021-EC",
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2021/ec_2021.pdf",
-      "sourceStatus": "official_archive_pdf_found",
+      "sourceStatus": "official_pdf_http_and_format_verified",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2021/ec_2021.pdf",
       "keyStatus": "official_separate_key_link_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "pdfPages": 39,
+      "pdfSha256": "cab9167225d3c92c96e7397bce53f3ebdc0f39a64c9740996a166e9913ff415c",
+      "textExtractable": false
     },
     {
       "year": 2021,
       "branch": "EE",
       "id": "2021-EE",
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2021/ee_2021.pdf",
-      "sourceStatus": "official_archive_pdf_found",
+      "sourceStatus": "official_pdf_http_and_format_verified",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2021/ee_2021.pdf",
       "keyStatus": "official_separate_key_link_verified",
       "cbtStatus": "not_imported_not_gradeable",
-      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import"
+      "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
+      "lastProbeIST": "2026-11-24T20:06:41+05:30",
+      "pdfPages": 33,
+      "pdfSha256": "198f5ebecf32291aaaa1468bab5ed6b163100b5cc2b7674bb77c0153890c201f",
+      "textExtractable": false
     },
     {
       "year": 2022,
@@ -436,5 +496,11 @@
       "cbtStatus": "existing_bank_subject_tags_provisional",
       "source": "IIT Guwahati official GATE 2026 archive"
     }
-  ]
+  ],
+  "lastArchiveProbeIST": "2026-11-24T20:06:41+05:30",
+  "archiveProbeSummary": {
+    "totalChecked": 24,
+    "verifiedPdf": 6,
+    "unresolved": 18
+  }
 }
