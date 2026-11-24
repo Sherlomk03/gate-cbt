@@ -325,12 +325,16 @@
       "sourceStatus": "official_pdf_http_and_format_verified",
       "keyUrl": null,
       "keyStatus": "official_key_embedded_in_same_pdf_verified",
-      "cbtStatus": "not_imported_not_gradeable",
+      "cbtStatus": "partially_verified_question_level",
       "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
       "lastProbeIST": "2026-11-24T20:06:41+05:30",
       "pdfPages": 20,
       "pdfSha256": "f6b51c7f9f433cd7eaaeb276e66abe5b9e9b2e7b8b14034d551515b6d6e7de2d",
-      "textExtractable": true
+      "textExtractable": true,
+      "verifiedQuestionCount": 25,
+      "verifiedQuestionBank": "pyq/historical/verified/2020-EC-S4.json",
+      "officialKeyStatus": "65 official table entries recorded; selected 25 matched to inspected crop and source question",
+      "gradeableQuestionCount": 25
     },
     {
       "year": 2020,
@@ -340,12 +344,16 @@
       "sourceStatus": "official_pdf_http_and_format_verified",
       "keyUrl": null,
       "keyStatus": "official_key_embedded_in_same_pdf_verified",
-      "cbtStatus": "not_imported_not_gradeable",
+      "cbtStatus": "partially_verified_question_level",
       "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
       "lastProbeIST": "2026-11-24T20:06:41+05:30",
       "pdfPages": 20,
       "pdfSha256": "58a2d8e4e88d6f60af965404f92fdce4af17c080cbc766ed1e7812758ce8d385",
-      "textExtractable": true
+      "textExtractable": true,
+      "verifiedQuestionCount": 1,
+      "verifiedQuestionBank": "pyq/historical/verified/2020-EE-S5.json",
+      "officialKeyStatus": "65 official table entries recorded; selected 1 matched to inspected crop and source question",
+      "gradeableQuestionCount": 1
     },
     {
       "year": 2021,
@@ -354,13 +362,15 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2021/ec_2021.pdf",
       "sourceStatus": "official_pdf_http_and_format_verified",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2021/ec_2021.pdf",
-      "keyStatus": "official_separate_key_link_verified",
-      "cbtStatus": "not_imported_not_gradeable",
+      "keyStatus": "all_55_official_technical_key_rows_visually_transcribed_crop_mapping_pending",
+      "cbtStatus": "key_verified_photo_crops_pending",
       "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
       "lastProbeIST": "2026-11-24T20:06:41+05:30",
       "pdfPages": 39,
       "pdfSha256": "cab9167225d3c92c96e7397bce53f3ebdc0f39a64c9740996a166e9913ff415c",
-      "textExtractable": false
+      "textExtractable": false,
+      "reviewedTechnicalKeyCount": 55,
+      "reviewedKeyRecord": "pyq/historical/keys-reviewed/2021-EC-S4.json"
     },
     {
       "year": 2021,
@@ -369,13 +379,15 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2021/ee_2021.pdf",
       "sourceStatus": "official_pdf_http_and_format_verified",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2021/ee_2021.pdf",
-      "keyStatus": "official_separate_key_link_verified",
-      "cbtStatus": "not_imported_not_gradeable",
+      "keyStatus": "all_55_official_technical_key_rows_visually_transcribed_crop_mapping_pending",
+      "cbtStatus": "key_verified_photo_crops_pending",
       "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
       "lastProbeIST": "2026-11-24T20:06:41+05:30",
       "pdfPages": 33,
       "pdfSha256": "198f5ebecf32291aaaa1468bab5ed6b163100b5cc2b7674bb77c0153890c201f",
-      "textExtractable": false
+      "textExtractable": false,
+      "reviewedTechnicalKeyCount": 55,
+      "reviewedKeyRecord": "pyq/historical/keys-reviewed/2021-EE-S3.json"
     },
     {
       "year": 2022,
