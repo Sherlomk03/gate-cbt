@@ -96,7 +96,15 @@ function listCards(){
  let arr=state.stats.slice();
  if(state.view==='weak')arr=arr.filter(x=>x.currentWeak);
  if(state.view==='due')arr=arr.filter(x=>x.due||x.review.needPractice);
- if(state.view==='priority')arr=arr.filter(x=>x.currentWeak||x.improving||x.qualitative||x.due||x.total===0);
+ if(state.view==='priority'){
+  const flagged=arr.filter(x=>x.currentWeak||x.improving||x.qualitative||x.due);
+  if(flagged.length)arr=flagged;
+  else{
+   // No proven weakness: use a small varied daily starter set, not 29 fake 'weak' topics.
+   const anchors=['linear-core','probability','complex','network-ac','network-thevenin','fourier','zroc','analog-opamp','digital-boolean','machines','power-electronics'];
+   arr=arr.filter(x=>anchors.includes(x.pack.id));
+  }
+ }
  if(state.subject!=='All')arr=arr.filter(x=>x.pack.subject===state.subject);
  if(state.todayOnly){
   const focus=focusSubjects();
@@ -108,6 +116,7 @@ function listCards(){
   ?(a,b)=>a.pack.subject.localeCompare(b.pack.subject)||a.pack.title.localeCompare(b.pack.title)
   :state.sort==='recent'?(a,b)=>b.latestDate.localeCompare(a.latestDate)||b.priority-a.priority
   :(a,b)=>b.priority-a.priority||a.pack.subject.localeCompare(b.pack.subject)||a.pack.title.localeCompare(b.pack.title));
+ if(state.view==='priority')arr=arr.slice(0,10);
  return arr;
 }
 function renderSubjects(){
@@ -177,7 +186,7 @@ async function refresh(){
  const response=await fetch('./quick-revision-content.json?ts='+Date.now(),{cache:'no-store'});
  if(!response.ok)throw Error('Topic card catalog is unavailable');
  const catalog=await response.json();if(!Array.isArray(catalog.packs)||!catalog.packs.length)throw Error('Revision catalog has no topics');
- state.data=await GateRevision.load(catalog.packs);
+ state.data=await GateRevision.load(catalog.packs,selectedDate());
  state.stats=GateRevision.evaluate(state.data);
  state.ready=true;render();
 }
