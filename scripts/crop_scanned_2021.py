@@ -56,14 +56,13 @@ def ocr_anchors(src):
     return sorted(result),pages
 
 def technical_only(allq):
-    q1=[(p,y) for p,y,n in allq if n==1]
-    if len(q1)<2:
-        return {},False,"Did not find both GA and technical Q1"
-    # The later Q1 follows the General Aptitude section in 2021 EE and EC.
-    start=sorted(q1)[-1]
-    selected=[(p,y,n) for p,y,n in allq if (p,y)>=start]
-    found={}
-    last_n=0
+    # Confirmed against original 2021 EC and EE source scans: the technical
+    # section starts on PDF page 8 (zero-based page index 7), not at the
+    # first OCR-detected "Q1". OCR frequently misses Q.1 inside a table.
+    start_page=7
+    selected=[(p,y,n) for p,y,n in allq if p>=start_page]
+    found={1:(start_page,250)}  # original Q1 label near y=250 on both papers
+    last_n=1
     for pi,y,n in selected:
         if n<=last_n:continue
         found[n]=(pi,y)
@@ -99,8 +98,9 @@ def build(src,branch,session,year):
         if n not in found:continue
         a=found[n]
         later=next((m for m in range(n+1,56) if m in found),None)
-        if later is None:
-            # Never overflow into a later answer key or unrelated source page.
+        if later is None or later!=n+1:
+            # An OCR gap can hide intervening Q numbers: crop only the current
+            # page and mark it for visual review, never claim its boundary verified.
             pi=a[0]
             im=Image.open(paths[pi])
             b=(pi,im.height-24)
