@@ -1,0 +1,56 @@
+name: Import 2020-2021 GATE EE-EC Individual Historical Question Candidates
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/import_historical_candidates.py'
+      - '.github/workflows/import-historical-candidates.yml'
+permissions:
+  contents: write
+concurrency:
+  group: gate-historical-import
+  cancel-in-progress: false
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF extraction and crop dependencies
+        run: pip install PyMuPDF Pillow pdfplumber requests
+      - name: Build question candidates (no candidate enters CBT without audit)
+        run: python scripts/import_historical_candidates.py
+      - name: Validate all candidates remain excluded until human image verification
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          root=pathlib.Path('pyq/historical/candidates')
+          files=sorted(root.glob('20??-??.json'))
+          assert len(files)==4,len(files)
+          count=0
+          for f in files:
+            obj=json.loads(f.read_text())
+            assert obj['verificationStatus']=='automated_candidates_not_ready_for_daily'
+            for q in obj['questions']:
+              assert q['selectionEligible'] is False and q['imageCropReviewed'] is False
+              assert (pathlib.Path('pyq/historical')/q['imagePath']).exists()
+            count+=len(obj['questions'])
+          print('CHECK',len(files),'papers',count,'strictly quarantined question crops')
+          PY
+      - name: Commit original question crops and preliminary source metadata
+        run: |
+          git config user.name "gate-cbt-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add pyq/historical/crops/ pyq/historical/candidates/
+          if ! git diff --staged --quiet; then
+            git commit -m "Stage original 2020-2021 per-question source crops and keys for audit"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
