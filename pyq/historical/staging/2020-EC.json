@@ -332,6 +332,14 @@
       "officialKeyAsPrinted": "MTA"
     },
     {
+      "number": 34,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "A",
+      "verificationNote": "Individually checked against official GATE 2020 answer-key table in source paper PDF, page 20"
+    },
+    {
       "number": 35,
       "section": "EC",
       "type": "MCQ",
@@ -479,8 +487,8 @@
       "officialKeyAsPrinted": "30 to 30"
     }
   ],
-  "keyRowsComplete": false,
-  "keyStatus": "partial_key_needs_manual_review",
+  "keyRowsComplete": true,
+  "keyStatus": "all_65_key_rows_source_matched; per_question_crop_pending",
   "cbtStatus": "staged_original_pages_not_question_crops",
   "selectionEligible": false,
   "subjectTagsReviewStatus": "not_reviewed",
