@@ -138,15 +138,15 @@
       "year": 2013,
       "branch": "EE",
       "id": "2013-EE",
-      "paperUrl": null,
-      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2013/ee_2013.pdf",
-      "sourceStatus": "official_archive_path_candidate_unverified",
+      "paperUrl": "https://gate.iitk.ac.in/GATE2023/doc/papers/2013/ee_2013.pdf",
+      "sourceStatus": "official_institute_pdf_indexed_by_web_not_downloadable_in_github_action",
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
       "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
       "lastProbeIST": "2026-11-24T20:06:41+05:30",
-      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2013/ee_2013.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2013/ee_2013.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga",
+      "reviewNote": "Official IIT Kanpur archive search indexed this PDF, but GitHub Actions could not resolve old IIT host; key and individual questions remain unverified."
     },
     {
       "year": 2014,
@@ -165,15 +165,15 @@
       "year": 2014,
       "branch": "EE",
       "id": "2014-EE",
-      "paperUrl": null,
-      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2014/ee_2014.pdf",
-      "sourceStatus": "official_archive_path_candidate_unverified",
+      "paperUrl": "https://gate.iitk.ac.in/GATE2023/doc/papers/2014/ee_2014.pdf",
+      "sourceStatus": "official_institute_pdf_indexed_by_web_not_downloadable_in_github_action",
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
       "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
       "lastProbeIST": "2026-11-24T20:06:41+05:30",
-      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2014/ee_2014.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2014/ee_2014.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga",
+      "reviewNote": "Official IIT Kanpur archive search indexed this PDF, but GitHub Actions could not resolve old IIT host; key and individual questions remain unverified."
     },
     {
       "year": 2015,
@@ -193,29 +193,29 @@
       "year": 2015,
       "branch": "EE",
       "id": "2015-EE",
-      "paperUrl": null,
-      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2015/ee_2015.pdf",
-      "sourceStatus": "official_archive_path_candidate_unverified",
+      "paperUrl": "https://gate.iitk.ac.in/GATE2023/doc/papers/2015/ee_2015.pdf",
+      "sourceStatus": "official_institute_pdf_indexed_by_web_not_downloadable_in_github_action",
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
       "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
       "lastProbeIST": "2026-11-24T20:06:41+05:30",
-      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2015/ee_2015.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2015/ee_2015.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga",
+      "reviewNote": "Official IIT Kanpur archive search indexed this PDF, but GitHub Actions could not resolve old IIT host; key and individual questions remain unverified."
     },
     {
       "year": 2016,
       "branch": "EC",
       "id": "2016-EC",
-      "paperUrl": null,
-      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2016/ec_2016.pdf",
-      "sourceStatus": "official_archive_path_candidate_unverified",
+      "paperUrl": "https://gate.iitk.ac.in/GATE2023/doc/papers/2016/ec_2016.pdf",
+      "sourceStatus": "official_institute_pdf_indexed_by_web_not_downloadable_in_github_action",
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
       "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
       "lastProbeIST": "2026-11-24T20:06:41+05:30",
-      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2016/ec_2016.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2016/ec_2016.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga",
+      "reviewNote": "Official IIT Kanpur archive search indexed this PDF, but GitHub Actions could not resolve old IIT host; key and individual questions remain unverified."
     },
     {
       "year": 2016,
@@ -249,15 +249,15 @@
       "year": 2017,
       "branch": "EE",
       "id": "2017-EE",
-      "paperUrl": null,
-      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2017/ee_2017.pdf",
-      "sourceStatus": "official_archive_path_candidate_unverified",
+      "paperUrl": "https://gate.iitk.ac.in/GATE2023/doc/papers/2017/ee_2017.pdf",
+      "sourceStatus": "official_institute_pdf_indexed_by_web_not_downloadable_in_github_action",
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
       "sessionNote": "May include multiple distinct exam sessions; split paper and map keys to session before question import",
       "lastProbeIST": "2026-11-24T20:06:41+05:30",
-      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2017/ee_2017.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2017/ee_2017.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga",
+      "reviewNote": "Official IIT Kanpur archive search indexed this PDF, but GitHub Actions could not resolve old IIT host; key and individual questions remain unverified."
     },
     {
       "year": 2018,
@@ -276,15 +276,15 @@
       "year": 2018,
       "branch": "EE",
       "id": "2018-EE",
-      "paperUrl": null,
-      "paperUrlCandidate": "https://gate.iitk.ac.in/GATE2023/doc/papers/2018/ee_2018.pdf",
-      "sourceStatus": "official_archive_path_candidate_unverified",
+      "paperUrl": "https://gate.iitk.ac.in/GATE2023/doc/papers/2018/ee_2018.pdf",
+      "sourceStatus": "official_institute_pdf_indexed_by_web_not_downloadable_in_github_action",
       "keyUrl": null,
       "keyStatus": "official_key_not_yet_individually_verified",
       "cbtStatus": "not_imported_not_gradeable",
       "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
       "lastProbeIST": "2026-11-24T20:06:41+05:30",
-      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2018/ee_2018.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga"
+      "lastProbeError": "ConnectionError: HTTPSConnectionPool(host='gate.iitk.ac.in', port=443): Max retries exceeded with url: /GATE2023/doc/papers/2018/ee_2018.pdf (Caused by NameResolutionError(\"HTTPSConnection(host='ga",
+      "reviewNote": "Official IIT Kanpur archive search indexed this PDF, but GitHub Actions could not resolve old IIT host; key and individual questions remain unverified."
     },
     {
       "year": 2019,
