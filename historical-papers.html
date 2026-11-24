@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GATE 2010–2026 EE / EC Historical Papers</title>
+<style>
+:root{font:15px/1.55 system-ui,Segoe UI,Arial,sans-serif;color:#243047;background:#f4f6fa}*{box-sizing:border-box}
+body{margin:0}header{background:#152a4e;color:white;padding:18px 22px}header h1{margin:0;font-size:22px}
+nav{display:flex;flex-wrap:wrap;gap:16px;margin-top:6px}nav a{color:#cce0ff}
+main{max-width:1150px;margin:auto;padding:18px}
+.notice{background:#fff;border-left:4px solid #4268b5;border-radius:9px;padding:15px;margin:12px 0}
+.controls{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0}
+select,input{padding:9px;border:1px solid #becbe0;background:#fff;border-radius:8px;font:inherit}
+.card{background:white;border:1px solid #dce3ee;border-radius:11px;padding:15px;margin:12px 0}
+.row{display:flex;align-items:start;justify-content:space-between;flex-wrap:wrap;gap:12px}
+h2{font-size:18px;margin:0 0 7px}a{color:#1c53a5}.meta{color:#65738a;font-size:13px}
+.tag{display:inline-block;font-size:12px;padding:3px 8px;border-radius:50px;background:#f0f3f7;color:#485a70}
+.tag.available{background:#e7f4ed;color:#22683a}.actions{display:flex;flex-wrap:wrap;gap:15px;margin-top:12px}
+.actions a{font-weight:600}.hidden{display:none}#summary{font-weight:650;margin:10px 0}
+@media(max-width:600px){main{padding:9px}header h1{font-size:18px}}
+</style></head>
+<body><header><h1>GATE 2010–2026 · EE/EC Source Papers</h1><nav><a href="./daily-pyq.html">Daily CBT</a><a href="./pyq-library.html">Question library</a><a href="./index.html">Dashboard</a></nav></header>
+<main>
+<div class="notice"><strong>Original paper archive, not an automatic question bank.</strong>
+EC source papers support Analog Electronics, Digital Electronics, Signals &amp; Systems,
+Control Systems and Network Theory; both EC and EE source papers are used for Mathematics.
+The subject/topic extraction, diagram review and answer-key mapping of 2010–2021 papers
+are incomplete. An official PDF link does not mean its individual questions are gradeable.
+The current daily CBT continues to use eligible, source-matched questions only.
+Your current Maths restriction remains Linear Algebra, Probability and Complex Variables.
+General Aptitude is excluded from daily technical practice; Control Systems is archived but
+remains excluded from daily rotation until you request a change.</div>
+<div class="controls">
+<label>Branch <select id="branch"><option value="all">EC + EE</option><option value="EC">EC</option><option value="EE">EE (Maths source)</option></select></label>
+<label>Year <select id="year"><option value="all">All years</option></select></label>
+<label>Source <select id="availability"><option value="all">All statuses</option><option value="available">PDF link available</option><option value="pending">Awaiting verification</option></select></label>
+</div>
+<div id="summary" aria-live="polite">Loading official source catalog...</div>
+<div id="cards"></div>
+<p class="meta">Answer-key statuses and source dates are shown exactly as recorded in the GitHub catalog. Multi-session papers must be matched by session, booklet/code and question number before CBT import. ACE classroom material is a separate user-supplied practice source, never labeled an official GATE PYQ.</p>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','"':'&#39;'}[c]));
+let catalog=[];
+function render(){
+const branch=$('#branch').value,year=$('#year').value,status=$('#availability').value;
+const matches=catalog.filter(e=>(branch==='all'||e.branch===branch)&&(year==='all'||String(e.year)===year)&&(status==='all'||(status==='available'&&!!e.paperUrl)||(status==='pending'&&!e.paperUrl)));
+$('#summary').textContent=matches.length+' indexed branch/year sources · '+matches.filter(e=>e.paperUrl).length+' source-PDF links available · '+matches.filter(e=>e.cbtStatus==='existing_bank_subject_tags_provisional').length+' papers already in the current question bank';
+$('#cards').innerHTML=matches.map(e=>{
+const ready=!!e.paperUrl,imported=e.cbtStatus==='existing_bank_subject_tags_provisional';
+return '<article class="card"><div class="row"><div><h2>GATE '+esc(e.year)+' · '+esc(e.branch)+'</h2><span class="tag '+(ready?'available':'')+'">'+(ready?'PDF source available':'Link needs verification')+'</span> <span class="tag">'+(imported?'Existing 2022–2026 question bank':'Historical questions not imported')+'</span></div><span class="meta">'+esc(e.keyStatus)+'</span></div>'+
+'<div class="actions">'+(ready?'<a href="'+esc(e.paperUrl)+'" target="_blank" rel="noopener noreferrer">Original paper PDF</a>':'<span class="meta">Original paper link pending verification</span>')+
+(e.keyUrl?'<a href="'+esc(e.keyUrl)+'" target="_blank" rel="noopener noreferrer">Official key PDF</a>':'')+'</div>'+
+(e.sessionNote?'<p class="meta">'+esc(e.sessionNote)+'</p>':'')+'</article>'}).join('');
+}
+(async()=>{try{
+const sources=['https://raw.githubusercontent.com/Sherlomk03/gate-cbt/main/pyq/historical/source-catalog-2010-2026.json','./pyq/historical/source-catalog-2010-2026.json'];
+let d=null;for(const u of sources){try{const r=await fetch(u+'?ts='+Date.now(),{cache:'no-store'});if(r.ok){d=await r.json();break}}catch(e){console.warn(e)}}
+if(!d||!Array.isArray(d.papers))throw Error('Source catalog unavailable');
+catalog=d.papers.sort((a,b)=>b.year-a.year||a.branch.localeCompare(b.branch));
+for(const yr of [...new Set(catalog.map(x=>x.year))].sort((a,b)=>b-a))$('#year').add(new Option(yr,yr));
+render();
+}catch(e){$('#summary').textContent='Could not load source catalog: '+e.message}})();
+['#year','#branch','#availability'].forEach(s=>$(s).onchange=render);
+</script></body></html>
