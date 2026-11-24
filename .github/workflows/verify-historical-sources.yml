@@ -1,0 +1,39 @@
+name: Verify Historical GATE EE-EC Official Paper Sources
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/verify_historical_sources.py'
+      - '.github/workflows/verify-historical-sources.yml'
+permissions:
+  contents: write
+concurrency:
+  group: gate-historical-source-verification
+  cancel-in-progress: false
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install safe PDF source verifier dependencies
+        run: pip install requests PyMuPDF
+      - name: Verify official historical paper PDFs without publishing questions
+        run: python scripts/verify_historical_sources.py
+      - name: Commit verified archive source links and audit results
+        run: |
+          git config user.name "gate-cbt-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add pyq/historical/source-catalog-2010-2026.json
+          if ! git diff --staged --quiet; then
+            git commit -m "Record verified original GATE 2010-2021 source PDF links"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
