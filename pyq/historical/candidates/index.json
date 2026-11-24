@@ -1,0 +1,37 @@
+{
+  "status": "question_images_and_keys_need_manual_audit",
+  "papers": [
+    {
+      "id": "2020-EC",
+      "keyCount": 55,
+      "anchorCount": 55,
+      "complete55Anchors": true,
+      "questionCandidates": 49,
+      "cbtReady": 0
+    },
+    {
+      "id": "2020-EE",
+      "keyCount": 55,
+      "anchorCount": 55,
+      "complete55Anchors": true,
+      "questionCandidates": 51,
+      "cbtReady": 0
+    },
+    {
+      "id": "2021-EC",
+      "keyCount": 0,
+      "anchorCount": 0,
+      "complete55Anchors": false,
+      "questionCandidates": 0,
+      "cbtReady": 0
+    },
+    {
+      "id": "2021-EE",
+      "keyCount": 0,
+      "anchorCount": 0,
+      "complete55Anchors": false,
+      "questionCandidates": 0,
+      "cbtReady": 0
+    }
+  ]
+}

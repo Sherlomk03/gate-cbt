@@ -1,0 +1,16 @@
+{
+  "year": 2021,
+  "branch": "EE",
+  "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2021/ee_2021.pdf",
+  "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2021/ee_2021.pdf",
+  "session": 4,
+  "verificationStatus": "automated_candidates_not_ready_for_daily",
+  "imageBase": "./pyq/historical/",
+  "paperSha256": "198f5ebecf32291aaaa1468bab5ed6b163100b5cc2b7674bb77c0153890c201f",
+  "totalQuestionAnchors": 0,
+  "complete55Anchors": false,
+  "keyCount": 0,
+  "sourcePages": 33,
+  "questions": [],
+  "eligibilityNote": "Not CBT-ready. Key rows alone do not validate images or subject labels; each candidate requires visual crop review."
+}
