@@ -1,0 +1,28 @@
+{
+  "id": "2021-EE",
+  "status": "scanned_key_ocr_needs_visual_verification",
+  "keySourcePages": [
+    "pyq/historical/key-pages/2021-EE/p001.webp",
+    "pyq/historical/key-pages/2021-EE/p002.webp",
+    "pyq/historical/key-pages/2021-EE/p003.webp"
+  ],
+  "recognizedRows": [],
+  "recognizedCount": 0,
+  "unparsedCandidateLines": [],
+  "sourcePageOCR": [
+    {
+      "file": "pyq/historical/key-pages/2021-EE/p001.webp",
+      "ocrText": "GATE 2021 Answer Key for Electrical Engineering (EE)\n\nGraduate Aptitude Test in Engineering (GATE 2021)\n\nSubject/Paper: Electrical Engineering (EE)\n=== [= [=e\n\nMCQ/MSQ/NAT Key/Range Marks\n\neft fap. [= fe]\nPepe oe ae\nee\ni\nPepe we a fe [= [|\nPepe [we [a fe [= [|\nfete Pape [= fo]\nee\nre ee\na\n) Eee\nee fee ft | |\n_ Eero\nPe fet me fe Poe fe | # |\nPs fet we Pe | oa fe | # |\n_ | Ea a reo\npe fet we fe Poe Te |e |\nEa eer\nSo Ea er\neae em |e Te Te | |\n"
+    },
+    {
+      "file": "pyq/historical/key-pages/2021-EE/p002.webp",
+      "ocrText": "GATE 2021 Answer Key for Electrical Engineering (EE)\nepee = [= [=\nMCQ/MSQ/NAT}] Name Key/Range Marks\na\nPe fe [we Pe f= [= [|\nee\nee od\npss fw fe [owns [|\ned\nPeps f= [= [ewww | |\nPs [s [ [= [owwnel > [= |\nPs [s fo [= [awenef > [= |\nee\nee ed\nPao [we fewwee [fe |\nPes [oe [amen [oJ\nee\nps fs fw fe [owen | [oo |\nPfs fe Te fs [= fe]\nPas [wee [oe\nee a\nPe fo [owe Pe fe [= [|\np= fs [we Pe fs f= [|\npas [we Pe [oe f= [|\npee [we Pe fe\npee we Te fs = fe\n"
+    },
+    {
+      "file": "pyq/historical/key-pages/2021-EE/p003.webp",
+      "ocrText": "GATE 2021 Answer Key for Electrical Engineering (EE)\nepee = [= [=f\nMCQ/MSQ/NAT}| Name Key/Range Marks\nee\nPs[o pe fe fe. -= [=]\nPe fo [we Pe [= f= [|\nPape poe ee Pe [|\nee\nse\nPef> > [= [wew[ = [|\nPaps [f= [ool fe |\nPeps fo fe [ws [= [|\nee\nPe fs [wf [mowwef = [|\nPs fs fw [= [eww [= [|\nPe fs fw fe fewwnel = [= |\nPe fs fw fe [eww [|\nPeps fw [= fowl | |\nPets f= [ef [= fe]\nPes [we Yawn = [|\nee\nPe fs [wr |e panes [oJ\nPs fo fw | « [owes p= [|\nee\nPs [ow [« [aowam l= [= |\n"
+    }
+  ],
+  "complete": false,
+  "cbtEligible": false
+}

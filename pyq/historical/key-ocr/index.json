@@ -1,0 +1,29 @@
+{
+  "reports": [
+    {
+      "id": "2019-EC",
+      "recognizedCount": 0,
+      "complete": false,
+      "readyForCBT": false
+    },
+    {
+      "id": "2019-EE",
+      "recognizedCount": 0,
+      "complete": false,
+      "readyForCBT": false
+    },
+    {
+      "id": "2021-EC",
+      "recognizedCount": 0,
+      "complete": false,
+      "readyForCBT": false
+    },
+    {
+      "id": "2021-EE",
+      "recognizedCount": 0,
+      "complete": false,
+      "readyForCBT": false
+    }
+  ],
+  "status": "provisional_key_ocr_not_usable_for_grading"
+}

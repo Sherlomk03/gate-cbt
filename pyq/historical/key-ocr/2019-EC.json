@@ -1,0 +1,28 @@
+{
+  "id": "2019-EC",
+  "status": "scanned_key_ocr_needs_visual_verification",
+  "keySourcePages": [
+    "pyq/historical/source-pages/2019-EC/p029.webp",
+    "pyq/historical/source-pages/2019-EC/p030.webp",
+    "pyq/historical/source-pages/2019-EC/p031.webp"
+  ],
+  "recognizedRows": [],
+  "recognizedCount": 0,
+  "unparsedCandidateLines": [],
+  "sourcePageOCR": [
+    {
+      "file": "pyq/historical/source-pages/2019-EC/p029.webp",
+      "ocrText": "[ame [ne [ae [wd]\nee\na\nOO\na\na\nee\nes\nA\na\nee\nPe we [oe [Od\nPe [we fe [dT\na\na\nPs [we [oe [eT\na\nPa we [ee\nA\n"
+    },
+    {
+      "file": "pyq/historical/source-pages/2019-EC/p030.webp",
+      "ocrText": "[aim [ie [sae mY |\nPe [we [ ef» |= |\nPs we [oe fe i |\na\ni\nPe we [oe fT\nPa [we [ee\nPe [we [oe [id |\nse\na\n"
+    },
+    {
+      "file": "pyq/historical/source-pages/2019-EC/p031.webp",
+      "ocrText": "[aim [ee [sae Pm |\nPr [we [ef |= |\nPe [we [oe [ef |\ni\nes\nee\ni\nse\n"
+    }
+  ],
+  "complete": false,
+  "cbtEligible": false
+}

@@ -1,0 +1,28 @@
+{
+  "id": "2019-EE",
+  "status": "scanned_key_ocr_needs_visual_verification",
+  "keySourcePages": [
+    "pyq/historical/source-pages/2019-EE/p014.webp",
+    "pyq/historical/source-pages/2019-EE/p015.webp",
+    "pyq/historical/source-pages/2019-EE/p016.webp"
+  ],
+  "recognizedRows": [],
+  "recognizedCount": 0,
+  "unparsedCandidateLines": [],
+  "sourcePageOCR": [
+    {
+      "file": "pyq/historical/source-pages/2019-EE/p014.webp",
+      "ocrText": "[aie [ie | ae [ew]\nNe\nee\nee A\nee\nee\nee\nee\np> [we [oe [id\nee\nfe [oe [dT\nPs we [oe [eT\nPe fe [Te [eT\nPowe [ee\na\nPe fe [oe [eT\nPa we [oe [eT\nPe [wef [id |\nDe [we fe [td\n"
+    },
+    {
+      "file": "pyq/historical/source-pages/2019-EE/p015.webp",
+      "ocrText": "[ae [ee [see [ee Y\na os\nss\nPew fe fen i |\nPew [oe [mom [|\nPe fw [ef mem [=\na\ni\nPe [wea fe [i\ni\nss\nPa [we [ee\nPa [we [oe [ed\nss\nPs [we [oe [dT\n"
+    },
+    {
+      "file": "pyq/historical/source-pages/2019-EE/p016.webp",
+      "ocrText": "[ae [ie [see [mY |\nPs pw [ee [ses [> |\new fe | eswor [2 |\nPe [wr [ «| sioome [> |\nse\nes ee\nPe [om |e [sats [ 2 |\nPe [wr fe [mower [> |\ni\na\nPs [Pw fe [wen |\nee a\nDs [om [« [omen |\n"
+    }
+  ],
+  "complete": false,
+  "cbtEligible": false
+}

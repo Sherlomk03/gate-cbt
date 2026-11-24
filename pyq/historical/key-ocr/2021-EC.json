@@ -1,0 +1,28 @@
+{
+  "id": "2021-EC",
+  "status": "scanned_key_ocr_needs_visual_verification",
+  "keySourcePages": [
+    "pyq/historical/key-pages/2021-EC/p001.webp",
+    "pyq/historical/key-pages/2021-EC/p002.webp",
+    "pyq/historical/key-pages/2021-EC/p003.webp"
+  ],
+  "recognizedRows": [],
+  "recognizedCount": 0,
+  "unparsedCandidateLines": [],
+  "sourcePageOCR": [
+    {
+      "file": "pyq/historical/key-pages/2021-EC/p001.webp",
+      "ocrText": "GATE 2021 Answer Key for Electronics and Communication Engineering (EC)\n\nGraduate Aptitude Test in Engineering (GATE 2021)\n\nSubject/Paper: Electronics and Communication Engineering (EC)\neR =|=|-F\n\nMCQ/MSQ/NAT Name Key/Range Marks\n\na\ncc\nPe ee oe\nic\nPape Pa [ef |\nPepe [ve a fe fe [|\na\nee\nce a\na a\nPete [oe fel» |: [|\nPee [we Pe fs fo [|\nPee Pe fe fs [|\nPepe [oe Pe [= fo [|\nPee [oe Pe fe ff\na\ni\ncs a\ncs\nos\n"
+    },
+    {
+      "file": "pyq/historical/key-pages/2021-EC/p002.webp",
+      "ocrText": "GATE 2021 Answer Key for Electronics and Communication Engineering (EC)\nPE =|=|-F\nMcQ/MSQ/NAT Key/Range Marks\npape [ oe [ef = [= [|\nPee fe Pe [oe [= |\nCe\nPee foe De fe [= fe |\nPs ef fe fe [= fo]\nCe\nPepe fo [ef [= [|\nPee fom Le [we fo [|\nPeep [Le fee [of |\nPeep fe Poe [of |\npa ef [ie fae [fe |\npa ef e [oowe [fe |\nPe ef [oa [of |\nPe ef [e Pamwi [of |\nPs ef [Le [exe [| |\nPe fee me = [oe |\nPa ef oe [ef [= |\nPee [owe De foe |\nPee [oe Pe [ee oe]\nPe ef oe fe [f= fo]\nCe\nPefefoe [=f [= [|\npee fe Te [ee fe |\n"
+    },
+    {
+      "file": "pyq/historical/key-pages/2021-EC/p003.webp",
+      "ocrText": "GATE 2021 Answer Key for Electronics and Communication Engineering (EC)\nPE =|=|-F\nMcQ/MSQ/NAT Key/Range Marks\nPepe [ me [ef = [= [|\nPee fe fe fs [= [|\npee [we Paw [fe |\nPoe [|e [anwae [2 [e |\nP= ef [oe femvone [= [|\nPe [owe Poon [oe [|\nPepe fm [= [owe [= [|\nec\nPepe fom Le [wwe [= [|\nPepe fm Le [ww [= [|\npee fom [Le Pee fe [|\nPepe [ = [x pave [> [|\nPepe fo [ef [= [|\nPepe f om [fw [= [|\nPe ef | awa [|\nPete | «Part |\nPee [|e Perse [= [|\nPe [re ames [= [|\nPa [re wenwanee [|\nps Pe [ow [re Peovee [ [ |\nPepe [ow [Pie [= [|\npe Def [oe [emnweae [2 [|\n"
+    }
+  ],
+  "complete": false,
+  "cbtEligible": false
+}
