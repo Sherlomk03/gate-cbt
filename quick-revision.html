@@ -63,7 +63,7 @@ window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},opt
 <script>
 'use strict';
 const $=s=>document.querySelector(s);
-const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','&#39;':"'"}[c]));
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'" :'&#39;'}[c]));
 const PREFIX='gateCBT.realDaily.v1.',CHAT_KEY='gateCBT.chatHistory.v1',LEGACY_KEY='gateCBT.v2';
 const fixedLabels={
  '2023-EC-Q52':{subject:'Electromagnetics',topic:'Transmission Lines / Standing Waves'},
