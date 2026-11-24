@@ -1,0 +1,54 @@
+name: Crop 2021 Scanned Official GATE EE and EC Technical Questions
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/crop_scanned_2021.py'
+      - '.github/workflows/crop-scanned-2021.yml'
+permissions:
+  contents: write
+concurrency:
+  group: gate-scanned-2021-cropping
+  cancel-in-progress: false
+jobs:
+  crop:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install OCR boundary locator for scanned papers
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y tesseract-ocr
+          pip install Pillow pytesseract
+      - name: Split source scanned photos by question boundaries, still not gradeable
+        run: python scripts/crop_scanned_2021.py
+      - name: Enforce quarantine until crop and official key matched by source review
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          root=pathlib.Path('pyq/historical/candidates')
+          for name in ('2021-EC','2021-EE'):
+              p=json.loads((root/(name+'.json')).read_text())
+              assert all(q['selectionEligible'] is False for q in p['questions'])
+              assert all(q['imageCropReviewed'] is False for q in p['questions'])
+              assert len(set(q['id'] for q in p['questions']))==len(p['questions'])
+          print('Original source scans preserved; all candidates withheld pending question-level verification.')
+          PY
+      - name: Save candidate source screenshots and raw row positions
+        run: |
+          git config user.name "gate-cbt-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add pyq/historical/candidates/ pyq/historical/crops/2021-EC/ pyq/historical/crops/2021-EE/
+          if ! git diff --staged --quiet; then
+            git commit -m "Extract scanned official 2021 EC EE question image crops for audit"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
