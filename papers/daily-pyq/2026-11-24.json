@@ -417,7 +417,18 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
       "pdfPage": 16,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Norton source I–V characteristics",
+        "mathFormula": "\\[I_{XY}=1+\\frac{V_{XY}}{1000}\\quad(\\text{A, V})\\]",
+        "steps": [
+          "The 1 A ideal source and 1 kΩ resistor are in parallel between terminals X and Y. The current \\(I_{XY}\\) is defined downward.",
+          "The source contributes 1 A downward and the resistor contributes \\(V_{XY}/1000\\) downward by Ohm's law.",
+          "Consequently the I–V plot is a straight line with positive slope and 1 A intercept at \\(V_{XY}=0\\). **Answer: (B).**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2025-EE-Q19",
@@ -439,7 +450,18 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
       "pdfPage": 17,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Definition of a nullator",
+        "mathFormula": "\\[V_{\\text{nullator}}=0,\\quad I_{\\text{nullator}}=0\\implies V_R=IR=0\\]",
+        "steps": [
+          "A nullator imposes **both** zero current and zero voltage, unlike an ordinary open circuit or short circuit.",
+          "Because the nullator is in series with the resistor, the series current is zero. The resistor voltage is therefore \\(I R=0\\).",
+          "The entire two-element combination has zero current and zero terminal voltage and so behaves as another nullator. **Answer: (B).**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2024-EE-Q12",
@@ -461,7 +483,18 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
       "pdfPage": 11,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Circuit junction count",
+        "steps": [
+          "A junction is a point (or connected node) where three or more branches meet; a bend in a wire or an ordinary series connection does not count.",
+          "From the source diagram, count the top-middle connection, top-right connection, left-middle connection, central-middle connected node, bottom-middle connection and bottom-right connection.",
+          "The central middle wire joins the points across it into a single electrical node, so do not count separate touching points on that same wire twice. **Total = 6; answer: (A).**"
+        ],
+        "examTip": "Treat uninterrupted wires as one node before counting branch junctions.",
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2025-EC-Q20",
@@ -483,7 +516,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EC2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EC_Keys.pdf",
       "pdfPage": 19,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Branch currents from admittances in a parallel AC circuit",
+        "mathFormula": "\\[\\begin{aligned}I_C&=(j0.25)(1\\angle90^\\circ)=0.25\\angle180^\\circ\\text{ A}\\\\I_L&=(-j0.1)(1\\angle90^\\circ)=0.1\\angle0^\\circ\\text{ A}\\\\I_R&=0.2(1\\angle90^\\circ)=0.2\\angle90^\\circ\\text{ A}\\end{aligned}\\]",
+        "steps": [
+          "All parallel elements share the source phasor voltage \\(V=1\\angle90^\\circ\\ \\mathrm V\\).",
+          "Use \\(I=YV\\), not \\(I=V/Y\\). The capacitor admittance \\(j0.25\\) advances phase by \\(90^\\circ\\).",
+          "The inductor admittance \\(-j0.1\\) shifts phase by \\(-90^\\circ\\), while the resistor admittance \\(0.2\\) leaves phase unchanged.",
+          "The three currents are \\(I_C=0.25\\angle180^\\circ\\), \\(I_L=0.1\\angle0^\\circ\\) and \\(I_R=0.2\\angle90^\\circ\\) A. **Answer: (A).**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2025-EC-Q19",
@@ -505,7 +550,18 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EC2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EC_Keys.pdf",
       "pdfPage": 18,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Ohm's law in a known series portion of a circuit",
+        "mathFormula": "\\[V_X=8-2\\left(\\frac{8-(9-3\\cdot1)}{2+1}\\right)=\\frac{20}{3}\\ \\mathrm V\\]",
+        "steps": [
+          "The 3 Ω resistor carries 1 A downward from the 9 V node. Therefore the central node voltage is \\(9-1(3)=6\\) V.",
+          "Between the 8 V node and central 6 V node, the two series resistors are 2 Ω and 1 Ω. Their current is \\((8-6)/(2+1)=2/3\\) A from left to right.",
+          "Across the first 2 Ω resistor, the voltage drop is \\(2(2/3)=4/3\\) V. Hence \\(V_X=8-4/3=20/3\\) V. **Answer: (A).**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2025-EE-Q57",
@@ -527,7 +583,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
       "pdfPage": 41,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "First-order capacitor charging with a changed switch topology",
+        "mathFormula": "\\[v_C(t)=100-75e^{-t/10},\\qquad 50=100-75e^{-t/10}\\Rightarrow t=10\\ln\\frac32=4.05\\text{ s}\\]",
+        "steps": [
+          "Before \\(t=0\\), the capacitor is open in DC steady state. The right 3 A source drives the 25 Ω resistor, giving 75 V at its top; the left source is 100 V. Thus the initial capacitor voltage (left plate minus right plate) is \\(100-75=25\\) V.",
+          "After the switch closes, the right-side nodes are shorted. The capacitor approaches a final voltage of 100 V, and the resistance seen by the capacitor with the ideal voltage source shorted is 2 Ω.",
+          "The time constant is \\(\\tau=R_{\\mathrm{th}}C=2(5)=10\\) s. Using \\(v_C(t)=V_\\infty+(V_0-V_\\infty)e^{-t/\\tau}\\) gives \\(v_C(t)=100-75e^{-t/10}\\).",
+          "Set \\(v_C=50\\) V: \\(e^{-t/10}=2/3\\), hence \\(t=10\\ln(3/2)=4.055\\) s. Rounded to one decimal place: **4.1 s**."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2022-EC-Q39",
@@ -549,7 +617,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ec_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ec_2022.pdf",
       "pdfPage": 32,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Identify the reactive element from magnitude and phase",
+        "mathFormula": "\\[|Z_{\\rm total}|=\\frac{1}{1/\\sqrt2}=\\sqrt2\\ \\Omega,\\qquad |X|=\\sqrt{|Z|^2-R^2}=1\\ \\Omega\\]",
+        "steps": [
+          "The input is \\(v(t)=\\sin t\\) with angular frequency \\(\\omega=1\\) rad/s and 1 V amplitude. The plotted current amplitude is \\(1/\\sqrt2\\) A, hence \\(|Z|=\\sqrt2\\ \\Omega\\).",
+          "Because the series resistance is 1 Ω, the reactance magnitude is \\(|X|=\\sqrt{2-1}=1\\ \\Omega\\).",
+          "The current crosses zero with positive slope at \\(t=\\pi/4\\), so \\(i(t)=(1/\\sqrt2)\\sin(t-\\pi/4)\\). It **lags** the source, identifying an inductor.",
+          "For an inductor, \\(X_L=\\omega L=1\\), giving \\(L=1\\ \\mathrm H\\). **Answer: (B).**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2024-EC-Q32",
@@ -571,7 +651,18 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EC24S7.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/ECFinalAnswerKey.pdf",
       "pdfPage": 25,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "RL transient time constant after switching",
+        "mathFormula": "\\[\\tau_L=\\frac{L}{R_{\\mathrm{eq}}}=\\frac{3}{2+(4\\parallel4)}=\\frac34=0.75\\text{ s}\\]",
+        "steps": [
+          "For \\(t>0\\), the switch is closed. Deactivate the independent 5 A current source by opening it when finding the resistance seen by the inductor.",
+          "The inductor's left terminal sees 2 Ω to the common lower node. Its right terminal sees \\(4\\parallel4=2\\) Ω to that node.",
+          "The resistance between the inductor terminals is therefore \\(2+2=4\\) Ω, so \\(\\tau=L/R=3/4=0.75\\) s. **NAT answer: 0.75.**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2025-EC-Q40",
@@ -593,7 +684,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EC2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EC_Keys.pdf",
       "pdfPage": 35,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Two-port Z parameters by open-circuit port tests",
+        "mathFormula": "\\[\\mathbf Z=\\begin{bmatrix}10/3&2/3\\\\2/3&10/3\\end{bmatrix}\\ \\Omega\\]",
+        "steps": [
+          "All five resistors in the symmetric ladder are 2 Ω. With \\(I_2=0\\), the rightmost 2 Ω series resistor carries no current. Looking into port 1, \\(Z_{11}=2+[2\\parallel(2+2)]=2+4/3=10/3\\ \\Omega\\).",
+          "For the transfer parameter with \\(I_2=0\\), the left input current \\(I_1\\) enters the internal node, splitting between the 2 Ω shunt and the 4 Ω right-hand path. The current in the 4 Ω path is \\(I_1/3\\).",
+          "The open-circuit port-2 voltage is the drop across its right-hand 2 Ω shunt: \\(V_2=(I_1/3)\\cdot2=2I_1/3\\), hence \\(Z_{21}=2/3\\ \\Omega\\).",
+          "Reciprocity and symmetry imply \\(Z_{12}=2/3\\) and \\(Z_{22}=10/3\\ \\Omega\\). **Answer: (A).**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2023-EE-Q54",
@@ -615,7 +718,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 37,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Capacitor voltage continuity during switching",
+        "mathFormula": "\\[v_C(t)=5(\\sin1000t-\\cos1000t),\\quad v_C(t_1)=5\\Rightarrow t_1=\\frac{\\pi}{2000}\\text{ s}=1.57\\text{ ms}\\]",
+        "steps": [
+          "Before switching, \\(K\\) is open and \\(\\bar K\\) is closed. The 10 Ω resistor and 100 µF capacitor are in parallel with \\(i(t)=\\sin1000t\\) A.",
+          "Steady-state KCL is \\(v_C/10+100\\times10^{-6}\\,dv_C/dt=\\sin1000t\\). Trying \\(v_C=A\\sin1000t+B\\cos1000t\\) gives \\(A=5\\), \\(B=-5\\): \\(v_C=5(\\sin1000t-\\cos1000t)\\) V.",
+          "After \\(K\\) closes and \\(\\bar K\\) opens, the capacitor's zero-transient final voltage is fixed by the 5 V DC source at \\(+5\\) V. Thus switching must occur when its existing voltage is exactly \\(5\\) V.",
+          "Solve \\(\\sin1000t_1-\\cos1000t_1=1\\). The first positive solution is \\(1000t_1=\\pi/2\\), giving \\(t_1=\\pi/2000\\) s = **1.57 ms**."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2026-EE-Q19",
