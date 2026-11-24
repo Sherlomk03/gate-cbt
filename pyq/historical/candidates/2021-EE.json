@@ -3,7 +3,7 @@
   "branch": "EE",
   "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2021/ee_2021.pdf",
   "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2021/ee_2021.pdf",
-  "session": 5,
+  "session": 3,
   "verificationStatus": "automated_candidates_not_ready_for_daily",
   "imageBase": "./pyq/historical/",
   "paperSha256": "198f5ebecf32291aaaa1468bab5ed6b163100b5cc2b7674bb77c0153890c201f",
