@@ -73,7 +73,7 @@ const fixedLabels={
  '2024-EC-Q57':{subject:'Communication Systems',topic:'Quantization / SQNR'}
 };
 const aliases={'Mathematics':'Engineering Mathematics','Maths':'Engineering Mathematics','Networks':'Network Theory','Network':'Network Theory','Signals and Systems':'Signals & Systems','Signals':'Signals & Systems','Digital':'Digital Electronics','Analog':'Analog Electronics','EC':'Electronics and Communication'};
-const state={packs:[],paper:null,subjectMode:'today',selectedDate:'',rows:[],signals:[],reviewed:new Set(),issues:[],siteDates:new Set(),cacheReady:false};
+const state={packs:[],paper:null,subjectMode:'today',selectedDate:'',rows:[],signals:[],reviewed:new Set(),issues:[],siteDates:new Set(),cacheReady:false,recovery:new Map(),recoveryRowsCount:null};
 function dayIST(){const p=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Kolkata',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const x=Object.fromEntries(p.map(v=>[v.type,v.value]));return x.year+'-'+x.month+'-'+x.day}
 function localRead(key){try{const o=JSON.parse(localStorage.getItem(key)||'null');return o&&typeof o==='object'?o:null}catch{return null}}
 function canonical(s){return aliases[s]||s||''}
@@ -185,9 +185,12 @@ function pickItems(){
   if(x.pack.subject==='Engineering Mathematics'&&!dailyMathFocus.has(x.pack.id))return false;
   return x.pack.subject!=='Control Systems';
  });
- const seen=pool.filter(x=>x.wrong+x.skipped>0||x.hints>0);
+ const seen=pool.filter(x=>{
+  const evidence=state.recovery.get(x.pack.id);
+  return evidence?(evidence.currentWeak||evidence.qualitative>0||evidence.due||evidence.improving):(x.wrong+x.skipped>0||x.hints>0);
+ });
  seen.sort((a,b)=>{
-  const score=x=>x.missedMarks*3+x.wrong*2.5+x.skipped*1.2+x.hints*1.5-Math.min(3,x.correct*.3);
+  const score=x=>state.recovery.get(x.pack.id)?.priority??(x.missedMarks*3+x.wrong*2.5+x.skipped*1.2+x.hints*1.5-Math.min(3,x.correct*.3));
   return score(b)-score(a)||b.lastDate.localeCompare(a.lastDate)||a.pack.title.localeCompare(b.pack.title);
  });
  const max=state.subjectMode==='all'?9:5;
@@ -209,7 +212,7 @@ function pickItems(){
 function render(){
  const {items,hasEvidence}=pickItems(),today=state.subjectMode==='today',done=items.filter(x=>state.reviewed.has(x.pack.id)).length;
  $('#today').classList.toggle('active',today);$('#all').classList.toggle('active',!today);
- const totalSite=state.rows.length,flagCount=state.signals.length;
+ const totalSite=state.recoveryRowsCount??state.rows.length,flagCount=state.signals.length;
  $('#headline').textContent=hasEvidence?'Your '+items.length+' revision priorities':'Suggested 5-minute refresh';
  $('#subline').textContent=hasEvidence?'Ranked by missed marks and recurring mistakes from completed tests.':'No scored weak-topic evidence in this browser for this selection yet.';
  $('#status').textContent=items.length+' compact cards · '+done+' reviewed · '+(totalSite?totalSite+' scored question records':'no scored question records')+(flagCount?' · '+flagCount+' earlier feedback flags':'');
@@ -256,6 +259,11 @@ async function init(){
   await loadSiteResults(manifest);
  }
  loadOlderSignals();
+ if(window.GateRevision)try{
+  const source=await GateRevision.load(state.packs,state.selectedDate);
+  state.recovery=new Map(GateRevision.evaluate(source).map(x=>[x.pack.id,x]));
+  state.recoveryRowsCount=source.rows.length;
+ }catch(error){console.warn('Using previous ranking while revised history is unavailable',error)}
  $('#context').textContent=(state.paper?.date||state.selectedDate)+' · '+(state.paper?.subjects?.join(' / ')||'No dated paper selected');
  const link='./daily-pyq.html?date='+encodeURIComponent(state.selectedDate);
  for(const id of ['examLink','bottomExam','headExam'])$('#'+id).href=link;
