@@ -8,6 +8,7 @@ from zoneinfo import ZoneInfo
 import json,pathlib,hashlib,random,re,sys
 
 ROOT=pathlib.Path("pyq/five-years")
+HISTORICAL_VERIFIED=pathlib.Path("pyq/historical/verified")  # never read raw staging papers
 OUT=pathlib.Path("papers/daily-pyq")
 OUT.mkdir(parents=True,exist_ok=True)
 START=date(2026,11,21)
@@ -47,10 +48,20 @@ def maths_focus_topic(q):
 
 def get_questions():
     questions=[]
-    for path in sorted(ROOT.glob("20??-??.json")):
+    sources=sorted(ROOT.glob("20??-??.json"))+sorted(HISTORICAL_VERIFIED.glob("20??-??*.json"))
+    for path in sources:
         source=json.loads(path.read_text())
+        historical=path.parent==HISTORICAL_VERIFIED
+        if historical and source.get("verificationStatus")!="question_level_official_key_and_image_audited":
+            continue  # source PDF/keys alone are never enough for CBT eligibility
         for q in source["questions"]:
-            if q["number"]<=10:continue
+            if q.get("section")=="GA":continue
+            if historical:
+                # Older-year GA and technical question numbers may overlap.
+                # Use explicitly validated question section, never a numeric shortcut.
+                if q.get("section")!=source["branch"]:continue
+                if not q.get("sessionVerified") or not q.get("keyVerifiedForQuestion") or not q.get("imageCropReviewed"):continue
+            elif q["number"]<=10:continue
             if q.get("subject") in EXCLUDED:continue
             # Focus mathematics strictly on the user's three topics. Source
             # text-screened exceptions are explicit rather than auto-approved.
@@ -74,7 +85,7 @@ def get_questions():
               "mathsFocusSourceTextScreened":q["id"] in MATHS_SOURCE_TEXT_APPROVED,
               "sourceExcerpt":(q.get("sourceExtract") or "")[:220],
               "type":q["type"],"marks":q["marks"],"officialKey":q["officialKey"],
-              "imagePath":"./pyq/five-years/"+q["imagePath"],
+              "imagePath":(source.get("imageBase","./pyq/five-years/")+q["imagePath"]),
               "paperUrl":source["paperUrl"],"keyUrl":source["keyUrl"],
               "pdfPage":q.get("imageStartPage") or q.get("pdfPage"),
               "imageAuditStatus":q.get("imageAuditStatus","automated_crop")
@@ -211,7 +222,7 @@ def main():
       "date":target.isoformat(),"id":"gate-daily-pyq-"+target.isoformat(),
       "title":"GATE EE/EC Actual PYQs · "+target.isoformat(),
       "questionCount":40,"durationMinutes":180,
-      "subjects":subjects,"sourceYears":[2022,2023,2024,2025,2026],
+      "subjects":subjects,"sourceYears":sorted({q["year"] for q in picks}),
       "status":"official_gate_pyqs_plus_labeled_ace_classroom_problems",
       "classificationNote":"Only original 2022–2026 GATE EE/EC PYQs with source screenshots and matched official keys, plus clearly labeled user-supplied ACE Signals classroom problems with independently solved keys (not official GATE PYQs). No AI-generated questions. Subject/topic tags remain provisional and some crops require visual review.",
       "rotationNote":note,
