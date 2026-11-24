@@ -1,5 +1,5 @@
 {
-  "status": "question_images_and_keys_need_manual_audit",
+  "status": "Automated 2021 scanned crops require independent visual source+key audit; none enabled",
   "papers": [
     {
       "id": "2020-EC",
@@ -19,18 +19,18 @@
     },
     {
       "id": "2021-EC",
-      "keyCount": 0,
-      "anchorCount": 0,
+      "keyCount": 55,
+      "anchorCount": 37,
       "complete55Anchors": false,
-      "questionCandidates": 0,
+      "questionCandidates": 37,
       "cbtReady": 0
     },
     {
       "id": "2021-EE",
-      "keyCount": 0,
-      "anchorCount": 0,
+      "keyCount": 55,
+      "anchorCount": 35,
       "complete55Anchors": false,
-      "questionCandidates": 0,
+      "questionCandidates": 35,
       "cbtReady": 0
     }
   ]
