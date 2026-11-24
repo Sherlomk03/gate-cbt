@@ -42,15 +42,16 @@ mjx-container[display="true"]{max-width:100%;overflow-x:auto;overflow-y:hidden;p
 window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};
 </script>
 <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script src="./revision-engine.js"></script>
 </head>
 <body>
 <header><div><h1>GATE 2027 · Before the paper</h1><small>Fast revision · key formulas · mistake traps · recall</small></div>
-<nav><a href="./daily-pyq.html" id="headExam">Daily CBT</a><a href="./performance.html">Performance</a><a href="./index.html">Dashboard</a></nav></header>
+<nav><a href="./revision-library.html" id="libraryNav">All topic cards</a><a href="./daily-pyq.html" id="headExam">Daily CBT</a><a href="./performance.html">Performance</a><a href="./index.html">Dashboard</a></nav></header>
 <main>
 <div class="intro"><div class="muted">PRE-EXAM CHECKLIST · 5 MINUTES</div><h2>Revise what costs you marks</h2><p class="muted" id="context">Checking your submitted tests and today's paper…</p></div>
 <div class="topbar">
 <div><strong id="headline">Your focused revision</strong><p id="subline">Small concepts. No long notes.</p></div>
-<div class="actions"><a class="btn primary" id="examLink" href="./daily-pyq.html">Open daily exam</a><a class="btn" href="./performance.html">Full analysis</a></div>
+<div class="actions"><a class="btn primary" id="examLink" href="./daily-pyq.html">Open daily exam</a><a class="btn" id="fullLibraryLink" href="./revision-library.html">Browse all topics</a><a class="btn" href="./performance.html">Full analysis</a></div>
 </div>
 <div class="switches" role="group" aria-label="Revision scope">
 <button id="today" class="active" type="button">Today's paper subjects</button><button id="all" type="button">All weak areas</button>
@@ -227,7 +228,7 @@ function render(){
     '<p class="trap"><strong>Watch out:</strong> '+esc(p.pitfall)+'</p>'+
     '<details class="check"><summary>15-second self-check: '+esc(p.question)+'</summary><div class="check-answer"><strong>Answer</strong>'+esc(p.answer)+'</div></details></article>';
  }).join(''):'<div class="empty">No matching revision cards for this view. Try “All weak areas” or the complete performance page.</div>';
- document.querySelectorAll('.mark').forEach(b=>b.onclick=()=>{const id=b.dataset.id;state.reviewed.has(id)?state.reviewed.delete(id):state.reviewed.add(id);saveReviewed();render()});
+ document.querySelectorAll('.mark').forEach(b=>b.onclick=()=>{const id=b.dataset.id;const was=state.reviewed.has(id);was?state.reviewed.delete(id):state.reviewed.add(id);if(window.GateRevision)GateRevision.markCard(id,was?'reset':'reviewed',dayIST());saveReviewed();render()});
  if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([$('#cards')]).catch(console.warn);
 }
 async function init(){
@@ -243,6 +244,7 @@ async function init(){
  const library=await cardsRes.json();
  if(!Array.isArray(library.packs)||!library.packs.length)throw Error('Revision card library is empty');
  state.packs=library.packs;
+ if(window.GateRevision)for(const card of state.packs)if(GateRevision.cardReview(card.id,dayIST()).reviewedToday)state.reviewed.add(card.id);
  if(!manifestRes.ok)state.issues.push('Paper manifest not reachable; revision suggestions are available, but new submitted scores cannot be checked.');
  else{
   const manifest=await manifestRes.json();
@@ -257,6 +259,7 @@ async function init(){
  $('#context').textContent=(state.paper?.date||state.selectedDate)+' · '+(state.paper?.subjects?.join(' / ')||'No dated paper selected');
  const link='./daily-pyq.html?date='+encodeURIComponent(state.selectedDate);
  for(const id of ['examLink','bottomExam','headExam'])$('#'+id).href=link;
+ for(const id of ['fullLibraryLink','libraryNav'])$('#'+id).href='./revision-library.html?date='+encodeURIComponent(state.selectedDate);
  if(!state.paper)$('#examLink').textContent='View available daily papers';
  $('#updated').textContent='Updates after each submitted CBT · saved only in this browser';
  state.cacheReady=true;render();
