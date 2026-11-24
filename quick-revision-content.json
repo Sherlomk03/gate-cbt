@@ -1,0 +1,614 @@
+{
+  "schemaVersion": 1,
+  "usage": "General GATE EE/EC pre-exam refresher formulas and rapid checks, not official exam questions or keys",
+  "packs": [
+    {
+      "id": "linear-core",
+      "subject": "Engineering Mathematics",
+      "title": "Matrices: rank, eigenvalues, invertibility",
+      "patterns": [
+        "linear algebra",
+        "matrix",
+        "eigen",
+        "vector spaces",
+        "linear systems",
+        "matrix properties",
+        "trace",
+        "determinant",
+        "linear dependence",
+        "nilpotent",
+        "cayley-hamilton"
+      ],
+      "formula": [
+        "\\operatorname{rank}(A)+\\operatorname{nullity}(A)=n",
+        "\\lambda_1+\\lambda_2=\\operatorname{tr}(A),\\quad \\lambda_1\\lambda_2=\\det(A)"
+      ],
+      "pitfall": "A nonzero determinant requires a square matrix. Repeated eigenvalues do not automatically imply two eigenvectors.",
+      "question": "If a 3×3 matrix has rank 2, what is its nullity?",
+      "answer": "1, by rank–nullity."
+    },
+    {
+      "id": "linear-lsq",
+      "subject": "Engineering Mathematics",
+      "title": "Projection and least squares",
+      "patterns": [
+        "least squares",
+        "projection",
+        "orthogonal"
+      ],
+      "formula": [
+        "A^T A\\hat x=A^T b",
+        "P=A(A^TA)^{-1}A^T\\quad(\\text{full column rank})"
+      ],
+      "pitfall": "Check the full-column-rank condition before using the inverse; otherwise use a pseudoinverse.",
+      "question": "For a least-squares residual r=b−A x̂, what equals zero?",
+      "answer": "Aᵀr=0 (the residual is orthogonal to the column space)."
+    },
+    {
+      "id": "probability",
+      "subject": "Engineering Mathematics",
+      "title": "Conditional probability and expectation",
+      "patterns": [
+        "probability",
+        "bayes",
+        "expectation",
+        "variance",
+        "random variables",
+        "coin",
+        "geometric distribution"
+      ],
+      "formula": [
+        "P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}",
+        "\\operatorname{Var}(aX+b)=a^2\\operatorname{Var}(X)"
+      ],
+      "pitfall": "At least one success is 1−P(none). For conditional questions, reduce the sample space first.",
+      "question": "If Y=2X+3 and Var(X)=4, find Var(Y).",
+      "answer": "16. The constant shift has no effect; multiply the variance by 2²."
+    },
+    {
+      "id": "complex",
+      "subject": "Engineering Mathematics",
+      "title": "Complex variables: Cauchy and residues",
+      "patterns": [
+        "complex",
+        "analytic",
+        "contour",
+        "polynomial roots",
+        "residue"
+      ],
+      "formula": [
+        "\\oint_C\\frac{f(z)}{z-a}\\,dz=2\\pi j f(a)",
+        "\\oint_C f(z)\\,dz=2\\pi j\\sum\\operatorname{Res}(f)"
+      ],
+      "pitfall": "The contour must enclose the relevant singularity, be positively oriented, and satisfy the theorem's analyticity conditions.",
+      "question": "What is the CCW integral of 1/(z−2) around |z|=1?",
+      "answer": "0; z=2 is outside the contour."
+    },
+    {
+      "id": "calc-ode",
+      "subject": "Engineering Mathematics",
+      "title": "Calculus and differential equations",
+      "patterns": [
+        "differential",
+        "calculus",
+        "integrat",
+        "gradient",
+        "directional",
+        "derivative",
+        "monotonic"
+      ],
+      "formula": [
+        "\\frac{dy}{dx}+P(x)y=Q(x),\\quad \\mathrm{IF}=e^{\\int P(x)\\,dx}",
+        "D_{\\mathbf u}f=\\nabla f\\cdot \\mathbf u\\quad(\\|\\mathbf u\\|=1)"
+      ],
+      "pitfall": "A Bernoulli differential equation needs substitution before the linear integrating-factor formula.",
+      "question": "What is the integrating factor of y′+2y=x?",
+      "answer": "e^(2x)."
+    },
+    {
+      "id": "fourier",
+      "subject": "Signals & Systems",
+      "title": "Fourier transform essentials",
+      "patterns": [
+        "fourier transform",
+        "transforms",
+        "frequency response",
+        "bandwidth and signal",
+        "sinc",
+        "convolution theorem",
+        "symmetry"
+      ],
+      "formula": [
+        "X(j\\omega)=\\int_{-\\infty}^{\\infty}x(t)e^{-j\\omega t}\\,dt",
+        "x(t-t_0)\\ \\longleftrightarrow\\ e^{-j\\omega t_0}X(j\\omega)"
+      ],
+      "pitfall": "Use the specified Fourier transform convention. For real x(t): X(−jω)=X*(jω).",
+      "question": "If x(t) shifts right by t₀, what multiplies X(jω)?",
+      "answer": "e^(−jωt₀); magnitude stays unchanged."
+    },
+    {
+      "id": "fourier-series",
+      "subject": "Signals & Systems",
+      "title": "Fourier series and Parseval",
+      "patterns": [
+        "fourier series",
+        "parseval",
+        "signal power",
+        "average power",
+        "power spectral"
+      ],
+      "formula": [
+        "c_k=\\frac{1}{T_0}\\int_{T_0}x(t)e^{-jk\\omega_0t}\\,dt",
+        "P_{\\mathrm{avg}}=\\sum_{k=-\\infty}^{\\infty}|c_k|^2"
+      ],
+      "pitfall": "For real signals, ±k harmonic powers occur in pairs. Do not mix energy Parseval (Fourier transform) with average-power Parseval (Fourier series).",
+      "question": "A real periodic signal has c₁=c₋₁=2, all other cₖ=0. What is its power?",
+      "answer": "8 = |2|² + |2|²."
+    },
+    {
+      "id": "zroc",
+      "subject": "Signals & Systems",
+      "title": "Z-transform, ROC and stability",
+      "patterns": [
+        "z-transform",
+        "roc",
+        "pole-zero",
+        "pole zero",
+        "discrete-time system",
+        "causal",
+        "stability",
+        "transfer function"
+      ],
+      "formula": [
+        "a^n u[n]\\ \\longleftrightarrow\\ \\frac{1}{1-az^{-1}},\\quad |z|>|a|",
+        "\\text{BIBO stable LTI}\\ \\Longleftrightarrow\\ \\sum_n|h[n]|<\\infty"
+      ],
+      "pitfall": "ROC must exclude poles; stability requires the unit circle to belong to the ROC. The same algebraic X(z) can have different inverse signals for different ROCs.",
+      "question": "For x[n]=(0.5)ⁿu[n], is the unit circle in the ROC?",
+      "answer": "Yes. ROC |z|>0.5 includes |z|=1."
+    },
+    {
+      "id": "laplace-roc",
+      "subject": "Signals & Systems",
+      "title": "Laplace ROC and causality",
+      "patterns": [
+        "laplace",
+        "region of convergence",
+        "bilateral transform"
+      ],
+      "formula": [
+        "e^{-at}u(t)\\ \\longleftrightarrow\\ \\frac{1}{s+a},\\ \\Re(s)>-a",
+        "\\text{BIBO stable CT LTI}\\ \\Longleftrightarrow\\ \\int|h(t)|\\,dt<\\infty"
+      ],
+      "pitfall": "For a rational causal LTI system, ROC is to the right of the rightmost pole. Stability requires the jω axis in the ROC.",
+      "question": "For e^(−2t)u(t), what is the bilateral Laplace ROC?",
+      "answer": "Re(s)>−2."
+    },
+    {
+      "id": "sampling",
+      "subject": "Signals & Systems",
+      "title": "Sampling, Nyquist and DFT",
+      "patterns": [
+        "sampling",
+        "nyquist",
+        "alias",
+        "dft",
+        "spectrum"
+      ],
+      "formula": [
+        "f_s\\ge 2f_{\\max}\\quad(\\text{ideal band-limited sampling})",
+        "f_k=\\frac{k f_s}{N}\\quad(\\text{DFT bin frequency})"
+      ],
+      "pitfall": "Time compression expands frequency bandwidth; time expansion reduces it. Two physical frequencies can alias to the same discrete frequency.",
+      "question": "A signal bandlimited to 5 kHz needs which ideal minimum sampling rate?",
+      "answer": "10 kHz (the Nyquist rate)."
+    },
+    {
+      "id": "lti",
+      "subject": "Signals & Systems",
+      "title": "Convolution and LTI response",
+      "patterns": [
+        "lti",
+        "impulse response",
+        "system response",
+        "convolution",
+        "impulse",
+        "linear system"
+      ],
+      "formula": [
+        "y(t)=x(t)*h(t)",
+        "y[n]=\\sum_{k=-\\infty}^{\\infty}x[k]h[n-k]"
+      ],
+      "pitfall": "Impulse response determines the output only for an LTI system; check linearity and time invariance first.",
+      "question": "If x[n]=δ[n−3], what is y[n] for an LTI h[n]?",
+      "answer": "h[n−3]."
+    },
+    {
+      "id": "network-thevenin",
+      "subject": "Network Theory",
+      "title": "Thevenin, Norton and max power",
+      "patterns": [
+        "thevenin",
+        "norton",
+        "maximum power transfer",
+        "network theorem",
+        "resistive",
+        "dc circuit",
+        "circuit analysis",
+        "source i-v"
+      ],
+      "formula": [
+        "V_{\\mathrm{Th}}=V_{\\mathrm{OC}},\\quad I_{\\mathrm{N}}=I_{\\mathrm{SC}}",
+        "R_L=R_{\\mathrm{Th}}\\quad(\\text{real DC load}),\\quad Z_L=Z_{\\mathrm{Th}}^*\\quad(\\text{AC})"
+      ],
+      "pitfall": "Keep dependent sources active when finding RTh; use a test source when needed.",
+      "question": "For RTh=4 Ω, what resistive RL maximizes power?",
+      "answer": "4 Ω."
+    },
+    {
+      "id": "network-node",
+      "subject": "Network Theory",
+      "title": "KCL, node voltages and sources",
+      "patterns": [
+        "nodal",
+        "node",
+        "kcl",
+        "topology",
+        "ideal network",
+        "nullator",
+        "junction",
+        "current law"
+      ],
+      "formula": [
+        "\\sum I_{\\mathrm{entering}}=\\sum I_{\\mathrm{leaving}}",
+        "G\\,V=I\\quad(\\text{nodal admittance form})"
+      ],
+      "pitfall": "A voltage source between two nonreference nodes creates a supernode; include its voltage constraint.",
+      "question": "Two currents of 2 A and 3 A enter a node. What total current leaves?",
+      "answer": "5 A."
+    },
+    {
+      "id": "network-ac",
+      "subject": "Network Theory",
+      "title": "AC phasors, resonance and power",
+      "patterns": [
+        "ac phasor",
+        "impedance",
+        "rl circuit",
+        "rl transient",
+        "rlc",
+        "resonance",
+        "frequency response",
+        "reactive",
+        "admittance",
+        "bandpass",
+        "power factor",
+        "sinusoidal"
+      ],
+      "formula": [
+        "Z_L=j\\omega L,\\quad Z_C=\\frac{1}{j\\omega C}",
+        "P=V_{\\mathrm{rms}}I_{\\mathrm{rms}}\\cos\\phi"
+      ],
+      "pitfall": "Use rms quantities for average power; use the correct sign of capacitor reactance.",
+      "question": "If R=3 Ω and XL=4 Ω in series, what is |Z|?",
+      "answer": "5 Ω."
+    },
+    {
+      "id": "network-transient",
+      "subject": "Network Theory",
+      "title": "RC/RL switching and time constants",
+      "patterns": [
+        "transient",
+        "switching",
+        "capacitor charging",
+        "initial conditions",
+        "time constant",
+        "switched"
+      ],
+      "formula": [
+        "\\tau_{RC}=R_{\\mathrm{Th}}C,\\quad \\tau_{RL}=\\frac{L}{R_{\\mathrm{Th}}}",
+        "x(t)=x(\\infty)+[x(0^+)-x(\\infty)]e^{-t/\\tau}"
+      ],
+      "pitfall": "Capacitor voltage and inductor current cannot change instantaneously in ordinary finite-energy circuits.",
+      "question": "How much of the initial exponential difference remains after one time constant?",
+      "answer": "e⁻¹ ≈ 36.8%."
+    },
+    {
+      "id": "network-twoport",
+      "subject": "Network Theory",
+      "title": "Two-port Z and Y parameters",
+      "patterns": [
+        "two-port",
+        "two port",
+        "admittance parameters",
+        "z-parameter",
+        "y-parameter"
+      ],
+      "formula": [
+        "\\begin{bmatrix}V_1\\\\V_2\\end{bmatrix}=[Z]\\begin{bmatrix}I_1\\\\I_2\\end{bmatrix}",
+        "\\begin{bmatrix}I_1\\\\I_2\\end{bmatrix}=[Y]\\begin{bmatrix}V_1\\\\V_2\\end{bmatrix}"
+      ],
+      "pitfall": "Both port currents are conventionally defined entering the network. Sign errors can reverse off-diagonal entries.",
+      "question": "What is y₁₂?",
+      "answer": "(I₁/V₂) with V₁=0 (port 1 short-circuited)."
+    },
+    {
+      "id": "network-threephase",
+      "subject": "Network Theory",
+      "title": "Three-phase circuit shortcuts",
+      "patterns": [
+        "three-phase",
+        "three phase",
+        "balanced",
+        "delta",
+        "star",
+        "unbalanced"
+      ],
+      "formula": [
+        "P_{3\\phi}=\\sqrt{3}\\,V_L I_L\\cos\\phi",
+        "\\text{Y: }V_\\phi=V_L/\\sqrt3,\\quad \\Delta:\\ I_\\phi=I_L/\\sqrt3"
+      ],
+      "pitfall": "Do not mix star and delta line-to-phase conversions.",
+      "question": "For balanced unity-PF load, VL=400 V, IL=10 A. Total P?",
+      "answer": "√3×400×10 W ≈ 6.93 kW."
+    },
+    {
+      "id": "analog-opamp",
+      "subject": "Analog Electronics",
+      "title": "Ideal op-amps and feedback",
+      "patterns": [
+        "op-amp",
+        "operational amplifier",
+        "amplifier",
+        "feedback amplifier",
+        "closed-loop gain",
+        "positive feedback"
+      ],
+      "formula": [
+        "V_+\\approx V_-,\\quad I_+\\approx I_-\\approx0",
+        "A_{v,\\mathrm{inv}}=-R_f/R_{\\mathrm{in}}"
+      ],
+      "pitfall": "The virtual-short rule only applies with negative feedback in linear operation. Positive feedback often drives saturation.",
+      "question": "Inverting amplifier: Rin=2 kΩ, Rf=10 kΩ. Gain?",
+      "answer": "−5."
+    },
+    {
+      "id": "analog-devices",
+      "subject": "Analog Electronics",
+      "title": "MOSFETs, BJTs and device bias",
+      "patterns": [
+        "mosfet",
+        "bjt",
+        "mos capacitor",
+        "pn junction",
+        "diode",
+        "quasi-fermi",
+        "transistor",
+        "semiconductor"
+      ],
+      "formula": [
+        "I_D\\approx \\frac12\\mu_n C_{\\mathrm{ox}}\\frac WL(V_{GS}-V_T)^2",
+        "g_m\\approx I_C/V_T\\quad(\\text{BJT, forward active})"
+      ],
+      "pitfall": "The square-law model assumes long-channel saturation and neglects channel-length modulation; check region before applying.",
+      "question": "When an nMOS just reaches saturation, what is VDS?",
+      "answer": "VGS−VT (long-channel model)."
+    },
+    {
+      "id": "analog-rc",
+      "subject": "Analog Electronics",
+      "title": "Filters and bandwidth",
+      "patterns": [
+        "filter",
+        "frequency response",
+        "oscillator"
+      ],
+      "formula": [
+        "f_c=\\frac{1}{2\\pi RC}\\quad(\\text{first-order RC})",
+        "|H(j\\omega_c)|=\\frac{|H|_{\\mathrm{passband}}}{\\sqrt2}"
+      ],
+      "pitfall": "The −3 dB level means amplitude ×0.707, not half amplitude.",
+      "question": "A first-order RC low-pass has R=1 kΩ, C=1 μF. Cutoff?",
+      "answer": "≈159 Hz."
+    },
+    {
+      "id": "digital-boolean",
+      "subject": "Digital Electronics",
+      "title": "Boolean algebra, CMOS and MUX",
+      "patterns": [
+        "boolean",
+        "logic gate",
+        "cmos",
+        "mux",
+        "multiplex",
+        "combinational",
+        "logic"
+      ],
+      "formula": [
+        "A+\\bar A B=A+B",
+        "N_{\\mathrm{inputs}}=2^k\\quad(k\\text{ MUX select lines})"
+      ],
+      "pitfall": "Check whether the MUX enable is active-low. For CMOS gate networks, series and parallel transistor paths are dual.",
+      "question": "How many select lines for an 8:1 MUX?",
+      "answer": "3."
+    },
+    {
+      "id": "digital-sequential",
+      "subject": "Digital Electronics",
+      "title": "Flip-flops, timing and state machines",
+      "patterns": [
+        "sequential",
+        "flip-flop",
+        "flip flop",
+        "state",
+        "setup",
+        "hold",
+        "timing",
+        "sequence detector",
+        "clock"
+      ],
+      "formula": [
+        "T_{\\min}\\ge t_{CQ,\\max}+t_{\\mathrm{logic},\\max}+t_{\\mathrm{setup}}",
+        "f_{\\max}\\le\\frac1{T_{\\min}}"
+      ],
+      "pitfall": "Hold-time checks are separate from setup-time checks. State-machine overlapping sequences may restart in a noninitial state.",
+      "question": "For 2 ns clock-to-Q, 4 ns logic, 1 ns setup, find fmax.",
+      "answer": "≈142.9 MHz (1/7 ns)."
+    },
+    {
+      "id": "digital-data",
+      "subject": "Digital Electronics",
+      "title": "Binary codes, ADC and DAC",
+      "patterns": [
+        "adc",
+        "dac",
+        "number system",
+        "complement",
+        "address",
+        "binary",
+        "memory",
+        "resolution",
+        "bit rate"
+      ],
+      "formula": [
+        "\\mathrm{LSB}=\\frac{V_{\\mathrm{ref}}}{2^N}\\quad(\\text{common ideal DAC model})",
+        "\\mathrm{SQNR}_{\\mathrm{dB}}\\approx6.02N+1.76\\quad(\\text{full-scale sine})"
+      ],
+      "pitfall": "Some full-range calibration questions use 2ᴺ−1 steps instead of 2ᴺ; follow the paper's stated convention.",
+      "question": "An 8-bit ideal 0–8 V DAC uses 256 equal codes. LSB?",
+      "answer": "8/256 = 31.25 mV."
+    },
+    {
+      "id": "power-electronics",
+      "subject": "Power Electronics",
+      "title": "Rectifiers and controlled converters",
+      "patterns": [
+        "rectifier",
+        "thyristor",
+        "controlled bridge",
+        "converter",
+        "inverter",
+        "pwm",
+        "diode",
+        "power semiconductor"
+      ],
+      "formula": [
+        "V_{dc}=\\frac{2V_m}{\\pi}\\cos\\alpha\\quad(\\text{single-phase full converter, continuous }I)",
+        "V_m=\\sqrt2 V_{\\mathrm{rms}}"
+      ],
+      "pitfall": "The formula assumes ideal switches and continuous current without overlap. Discontinuous load current changes the answer.",
+      "question": "For α=90° in the ideal continuous-current formula, average Vdc?",
+      "answer": "0."
+    },
+    {
+      "id": "machines",
+      "subject": "Electrical Machines",
+      "title": "Machine speed, slip and back EMF",
+      "patterns": [
+        "machine",
+        "motor",
+        "generator",
+        "induction",
+        "synchronous",
+        "rotating",
+        "dc shunt",
+        "flux"
+      ],
+      "formula": [
+        "N_s=\\frac{120f}{P}\\ \\mathrm{rpm}",
+        "s=\\frac{N_s-N_r}{N_s}"
+      ],
+      "pitfall": "Induction-motor rotor speed is below synchronous speed in motor operation. For DC motors, speed roughly follows E/Φ.",
+      "question": "A 4-pole, 50 Hz induction motor runs at 1440 rpm. Slip?",
+      "answer": "(1500−1440)/1500 = 4%."
+    },
+    {
+      "id": "power-systems",
+      "subject": "Power Systems",
+      "title": "Power systems: flows and dispatch",
+      "patterns": [
+        "load flow",
+        "bus",
+        "admittance matrix",
+        "economic",
+        "dispatch",
+        "transmission",
+        "protection",
+        "power angle",
+        "reactive",
+        "compensation",
+        "current transformer"
+      ],
+      "formula": [
+        "P=\\frac{EV}{X}\\sin\\delta\\quad(\\text{lossless simple system})",
+        "Y_{ii}=\\sum y_{ik},\\quad Y_{ij}=-y_{ij}\\ (\\text{simple lines})"
+      ],
+      "pitfall": "PV bus: P and |V| specified, not Q. Keep generation/load signs and transformer tap effects consistent.",
+      "question": "What is specified at an ordinary PV bus?",
+      "answer": "Active power P and voltage magnitude |V|."
+    },
+    {
+      "id": "control",
+      "subject": "Control Systems",
+      "title": "Control stability and steady-state error",
+      "patterns": [
+        "control",
+        "routh",
+        "root locus",
+        "stability",
+        "steady-state error",
+        "nyquist",
+        "PI controller"
+      ],
+      "formula": [
+        "e_{ss,\\mathrm{ramp}}=\\frac{1}{K_v},\\quad K_v=\\lim_{s\\to0}sG(s)",
+        "1+G(s)H(s)=0\\quad(\\text{closed-loop characteristic equation})"
+      ],
+      "pitfall": "The ramp formula assumes stable unity negative feedback and finite position/velocity constants as appropriate.",
+      "question": "A type-1 unity-feedback system has Kv=20 s⁻¹. Unit-ramp error?",
+      "answer": "0.05."
+    },
+    {
+      "id": "em",
+      "subject": "Electromagnetics",
+      "title": "Fields and transmission lines",
+      "patterns": [
+        "electromagnetics",
+        "smith chart",
+        "field",
+        "antenna",
+        "transmission line",
+        "standing wave"
+      ],
+      "formula": [
+        "\\Gamma=\\frac{Z_L-Z_0}{Z_L+Z_0}",
+        "\\mathrm{VSWR}=\\frac{1+|\\Gamma|}{1-|\\Gamma|}"
+      ],
+      "pitfall": "Do not confuse voltage reflection coefficient Γ with power reflectance |Γ|².",
+      "question": "If |Γ|=0.5, VSWR?",
+      "answer": "3."
+    },
+    {
+      "id": "communications",
+      "subject": "Communication Systems",
+      "title": "Modulation, SNR and bandwidth",
+      "patterns": [
+        "communications",
+        "modulat",
+        "sqnr",
+        "pcm",
+        "noise",
+        "detection",
+        "bandwidth",
+        "channel"
+      ],
+      "formula": [
+        "C=B\\log_2(1+\\mathrm{SNR})",
+        "R_b=N f_s\\quad(\\text{PCM at }N\\text{ bits/sample})"
+      ],
+      "pitfall": "Convert SNR in dB to a linear ratio before Shannon's expression.",
+      "question": "An 8-bit PCM sampler at 10 kHz has what raw bit rate?",
+      "answer": "80 kbps."
+    }
+  ]
+}
