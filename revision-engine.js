@@ -65,8 +65,8 @@ async function requestJson(url){
  if(!response.ok)throw Error('HTTP '+response.status+' fetching '+url);
  return response.json();
 }
-async function load(packs){
- const state={packs,rows:[],hints:[],unmapped:[],issues:[],testDates:[],published:[],today:istDate(),exam:null};
+async function load(packs,examDate){
+ const state={packs,rows:[],hints:[],unmapped:[],issues:[],testDates:[],published:[],today:istDate(),examDate:validDate(examDate)?examDate:istDate(),exam:null};
  let manifest;
  try{manifest=await requestJson('./papers/daily-pyq/manifest.json');state.published=manifest.papers||[]}
  catch(e){state.issues.push('Published paper manifest unavailable; showing cards and previously saved review checks.');return state}
@@ -120,7 +120,7 @@ async function load(packs){
   if(p)state.hints.push({id:p.id,label:String(note.topic||p.title),source:'Earlier practice mistake'});
  }
  try{
-  const entry=byDate.get(state.today);
+  const entry=byDate.get(state.examDate);
   if(entry)state.exam=await requestJson('./papers/daily-pyq/'+encodeURIComponent(entry.file));
  }catch(e){state.issues.push('Today’s published subject rotation could not be loaded.')}
  return state;
@@ -140,7 +140,8 @@ function markCard(id,action,day){
  if(action==='reviewed'){
   if(!dates.includes(date))dates.push(date);
   const lapses=Math.max(0,Number(old.lapses)||0);
-  const streak=(old.lastReviewedDate&&old.lastReviewedDate!==date)?Math.max(1,Number(old.reviewStreak)||0)+1:Math.max(1,Number(old.reviewStreak)||0);
+  const gap=old.lastReviewedDate?Math.round((Date.parse(date+'T12:00:00Z')-Date.parse(old.lastReviewedDate+'T12:00:00Z'))/86400000):Infinity;
+  const streak=gap===0?Math.max(1,Number(old.reviewStreak)||0):gap>14?1:Math.max(1,Number(old.reviewStreak)||0)+1;
   const delay=Math.min(7,streak<=1?1:streak===2?3:7);
   log.cards[id]={...old,reviewDates:dates.slice(-25),lastReviewedDate:date,reviewStreak:streak,confidence:'reviewed',needPractice:false,nextReviewDate:dateShift(date,delay),lapses};
  }else if(action==='practice'){
