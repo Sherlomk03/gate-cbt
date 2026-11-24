@@ -331,10 +331,10 @@
       "pdfPages": 20,
       "pdfSha256": "f6b51c7f9f433cd7eaaeb276e66abe5b9e9b2e7b8b14034d551515b6d6e7de2d",
       "textExtractable": true,
-      "verifiedQuestionCount": 25,
+      "verifiedQuestionCount": 27,
       "verifiedQuestionBank": "pyq/historical/verified/2020-EC-S4.json",
-      "officialKeyStatus": "65 official table entries recorded; selected 25 matched to inspected crop and source question",
-      "gradeableQuestionCount": 25
+      "officialKeyStatus": "65 official table entries recorded; 27 questions matched to source image and exact official answer",
+      "gradeableQuestionCount": 27
     },
     {
       "year": 2020,
