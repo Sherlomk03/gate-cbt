@@ -16,6 +16,7 @@ on:
       - 'daily-pyq.html'
       - 'performance.html'
       - 'pyq-library.html'
+      - 'historical-papers.html'
       - 'papers/**'
       - 'pyq/**'
       - '.github/workflows/deploy.yml'
