@@ -177,7 +177,13 @@ function aggregate(){
 }
 function pickItems(){
  const allowed=new Set(state.paper?.subjects?.map(canonical)||[]);
- const pool=aggregate().filter(x=>state.subjectMode==='all'||!allowed.size||allowed.has(x.pack.subject));
+ const dailyMathFocus=new Set(['linear-core','linear-lsq','probability','complex']);
+ const pool=aggregate().filter(x=>{
+  if(state.subjectMode==='all')return true;
+  if(allowed.size&&!allowed.has(x.pack.subject))return false;
+  if(x.pack.subject==='Engineering Mathematics'&&!dailyMathFocus.has(x.pack.id))return false;
+  return x.pack.subject!=='Control Systems';
+ });
  const seen=pool.filter(x=>x.wrong+x.skipped>0||x.hints>0);
  seen.sort((a,b)=>{
   const score=x=>x.missedMarks*3+x.wrong*2.5+x.skipped*1.2+x.hints*1.5-Math.min(3,x.correct*.3);
@@ -196,7 +202,7 @@ function pickItems(){
    return {items:selected,hasEvidence:true};
  }
  const preferred=['fourier','zroc','linear-core','probability','complex','network-thevenin','network-transient','network-ac','analog-opamp','digital-sequential','machines','power-electronics','power-systems'];
- const starters=pool.sort((a,b)=>preferred.indexOf(a.pack.id)-preferred.indexOf(b.pack.id));
+ const starters=pool.sort((a,b)=>{const ia=preferred.indexOf(a.pack.id),ib=preferred.indexOf(b.pack.id);return (ia<0?100:ia)-(ib<0?100:ib)||a.pack.title.localeCompare(b.pack.title)});
  return {items:starters.slice(0,state.subjectMode==='all'?7:4).map(v=>({...v,suggested:true})),hasEvidence:false};
 }
 function render(){
