@@ -1,0 +1,50 @@
+name: Stage GATE 2019–2021 Source Pages and Key Inventories
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/stage_historical_sources.py'
+      - '.github/workflows/stage-historical-sources.yml'
+permissions:
+  contents: write
+concurrency:
+  group: gate-historical-stage
+  cancel-in-progress: false
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install PDF page rendering and key parsing
+        run: pip install PyMuPDF Pillow pdfplumber requests
+      - name: Stage original paper page images and matching key rows (quarantined)
+        run: python scripts/stage_historical_sources.py
+      - name: Confirm no extracted 2019–2021 question was enabled for daily practice
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          root=pathlib.Path('pyq/historical/staging')
+          reports=[json.loads(f.read_text()) for f in root.glob('20??-??.json')]
+          assert len(reports)==6,len(reports)
+          assert all(r['selectionEligible'] is False for r in reports)
+          assert all(len(r['sourcePages'])==r['sourcePageCount'] for r in reports)
+          print('CHECK: six original GATE EE/EC source papers staged with CBT quarantine')
+          PY
+      - name: Commit original page images and staging inventories
+        run: |
+          git config user.name "gate-cbt-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add pyq/historical/source-pages/ pyq/historical/staging/
+          if ! git diff --staged --quiet; then
+            git commit -m "Stage 2019-2021 EE EC official paper pages and key inventories for manual audit"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
