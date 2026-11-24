@@ -752,7 +752,18 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EE.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EE_Keys.pdf",
       "pdfPage": 18,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Zero-sequence component under common phasor rotation",
+        "mathFormula": "\\[V_0'=\\tfrac13(e^{j\\Delta\\theta}V_A+e^{j\\Delta\\theta}V_B+e^{j\\Delta\\theta}V_C)=e^{j\\Delta\\theta}V_0\\]",
+        "steps": [
+          "By symmetrical components, \\(V_0=(V_A+V_B+V_C)/3\\).",
+          "In Case 2 all three phase voltage phasors rotate through the same \\(\\Delta\\theta\\), without changes in magnitude. Factor out the common multiplier \\(e^{j\\Delta\\theta}\\).",
+          "Multiplication by a unit-magnitude phasor changes phase angle by \\(\\Delta\\theta\\) but leaves magnitude unchanged. **Answer: (D).**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2025-EE-Q64",
@@ -774,7 +785,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
       "pdfPage": 44,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Economic load dispatch with generator capacity limits",
+        "mathFormula": "\\[\\begin{aligned}P_1&=50+\\frac{11800-10000}{20}=140\\;\\text{MW}\\to100\\\\P_2&=80+\\frac{11800-10000}{50}=116\\;\\text{MW}\\\\P_{\\rm total}&=100+116=216\\;\\text{MW}\\end{aligned}\\]",
+        "steps": [
+          "For unit 1, incremental cost rises by \\(10600-10000=600\\) Rs/MWh as output rises \\(80-50=30\\) MW, giving slope \\(600/30=20\\) Rs/(MWh·MW).",
+          "For unit 2, the slope is \\(600/(92-80)=50\\) Rs/(MWh·MW).",
+          "At incremental cost \\(11800\\) Rs/MWh, unconstrained outputs are \\(P_1=50+1800/20=140\\) MW and \\(P_2=80+1800/50=116\\) MW.",
+          "Unit 1 is limited to 100 MW and unit 2 remains below its 150 MW limit. Total feasible generation is \\(100+116=\\mathbf{216}\\) MW."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2024-EE-Q34",
@@ -796,7 +819,18 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
       "pdfPage": 28,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Merit-order economic dispatch using incremental-cost curves",
+        "mathFormula": "\\[\\lambda_A=8000+20P_A,\\quad\\lambda_B=6000+40P_B,\\quad P_B=\\frac{7400-6000}{40}=35\\;\\text{MW}\\]",
+        "steps": [
+          "Read the two lines from the original plot: Gen A begins at 8000 Rs/MWh and rises by 2000 over 100 MW; Gen B begins at 6000 Rs/MWh and rises by 4000 over 100 MW.",
+          "At system incremental cost 7400 Rs/MWh, Gen A cannot economically supply positive power since its minimum marginal cost is 8000 Rs/MWh. Set \\(P_A=0\\).",
+          "For Gen B, \\(7400=6000+40P_B\\), so \\(P_B=35\\) MW. **Answer: 35 MW.**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2023-EE-Q41",
@@ -818,7 +852,18 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 32,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Load-flow bus classifications (PQ, PV, slack)",
+        "steps": [
+          "Bus 3 is specified as an infinite bus with known voltage magnitude \\(1.0\\) p.u. and phase angle \\(-15^\\circ\\), so it is the **slack bus**.",
+          "Bus 2's alternator supplies specified \\(P=200\\) MW and \\(Q=40\\) MVAr. Since both powers are given rather than voltage magnitude, it is a **PQ bus**.",
+          "At bus 1, the controlled current source maintains \\(|V_1|=1.05\\) p.u. Its phase differs from bus voltage by \\(\\pm\\pi/2\\), so its injected real power is \\(P_1=|V_1||I|\\cos(\\pm\\pi/2)=0\\). It is a **PV bus**.",
+          "Therefore Bus 1: PV; Bus 2: PQ; Bus 3: slack. **Answer: (D).**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2025-EE-Q63",
@@ -840,7 +885,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
       "pdfPage": 44,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Reactive-power compensation for power-factor improvement",
+        "mathFormula": "\\[\\begin{aligned}P&=390(0.77)=300.3\\text{ kW}\\\\Q_C&=P(\\tan\\phi_1-\\tan\\phi_2)=62.73\\text{ kVAr}\\\\I_C&=\\frac{Q_C}{\\sqrt3V_{LL}}=\\frac{62.73}{\\sqrt3\\cdot4}\\approx9.1\\text{ A}\\end{aligned}\\]",
+        "steps": [
+          "Real power remains constant under shunt-capacitor compensation: \\(P=S_1\\cos\\phi_1=390(0.77)=300.3\\) kW.",
+          "Initial reactive power \\(Q_1=P\\tan(\\cos^{-1}0.77)=248.84\\) kVAr; desired reactive power \\(Q_2=P\\tan(\\cos^{-1}0.85)=186.11\\) kVAr.",
+          "Capacitors supply the difference \\(Q_C=248.84-186.11=62.73\\) kVAr.",
+          "For balanced three-phase equipment at \\(V_{LL}=4\\) kV, capacitor-bank line current is \\(I_C=Q_C/(\\sqrt3V_{LL})=9.054\\) A, giving **9.1 A** to one decimal."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2023-EE-Q33",
@@ -862,7 +919,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 26,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Maximum receiving-end real power in a nominal-π transmission line",
+        "mathFormula": "\\[\\theta_{\\max}=\\angle B=\\tan^{-1}\\left(\\frac{\\omega L_{\\rm total}}{R_{\\rm total}}\\right)=\\tan^{-1}\\left(\\frac{125.664}{14}\\right)\\approx83.64^\\circ\\]",
+        "steps": [
+          "At 400 km, the total series resistance is \\(R=0.035(400)=14\\,\\Omega\\) and inductance is \\(L=(1\\,\\mathrm{mH/km})(400)=0.4\\) H.",
+          "At 50 Hz, series reactance is \\(X=\\omega L=2\\pi(50)(0.4)=125.664\\,\\Omega\\). For the nominal-\\(\\pi\\) transmission line, \\(B=Z=R+jX\\).",
+          "The receiving-end power term dependent on \\(\\theta=\\angle V_S-\\angle V_R\\) is proportional to \\(\\cos(\\angle B-\\theta)\\). It reaches its maximum when \\(\\theta=\\angle B\\).",
+          "Thus \\(\\theta_{\\max}=\\tan^{-1}(125.664/14)\\approx\\mathbf{83.64^\\circ}\\), consistent with the published 83–84° NAT interval."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2024-EE-Q56",
@@ -884,7 +953,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
       "pdfPage": 41,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Equal-area criterion at critical fault clearing",
+        "mathFormula": "\\[\\frac{A_{\\mathrm{acc}}}{P_{\\max}}=\\int_{\\pi/2}^{3\\pi/4}\\left(\\frac{\\sin\\delta}{\\sqrt2}-\\frac12\\right)d\\delta=\\frac12-\\frac{\\pi}{8}\\approx0.1073\\]",
+        "steps": [
+          "The initial operating point satisfies \\(P_m=P_{\\max}\\sin\\delta_0=0.5P_{\\max}\\), so \\(\\delta_0=\\pi/6\\). Fault clearing is at the critical angle \\(\\delta_c=\\pi/2\\).",
+          "After clearing, \\(P_e=(P_{\\max}/\\sqrt2)\\sin\\delta\\). The far (unstable) equilibrium is \\(\\sin\\delta=1/\\sqrt2\\), hence \\(\\delta_u=3\\pi/4\\).",
+          "At critical clearing, the equal-area criterion makes the accelerating area equal the available decelerating area from \\(\\delta_c\\) to \\(\\delta_u\\).",
+          "Evaluate \\(\\int_{\\pi/2}^{3\\pi/4}[(1/\\sqrt2)\\sin\\delta-0.5]\\,d\\delta=0.5-\\pi/8=0.1073\\). Therefore the accelerating area is **0.11 times \\(P_{\\max}\\)**."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2022-EE-Q13",
@@ -906,7 +987,17 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ee_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ee_2022.pdf",
       "pdfPage": 12,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Loss-of-excitation protection for synchronous generators",
+        "steps": [
+          "Loss of field excitation causes a synchronous generator to absorb reactive power and its apparent impedance trajectory to enter a characteristic underexcited region.",
+          "An **offset mho impedance relay** is commonly used to detect this condition in the generator's R–X plane.",
+          "Overcurrent and differential relays serve other functions; a Buchholz relay protects oil-filled transformers. **Answer: (A).**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2023-EE-Q28",
@@ -928,7 +1019,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 23,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Bus admittance row sums and capacitive charging",
+        "mathFormula": "\\[\\begin{aligned}\\sum_jY_{1j}&=-j15+j10+j5=0\\\\\\sum_jY_{2j}&=j10-j13.5+j4=j0.5\\\\\\sum_jY_{3j}&=j5+j4-j8=j1\\end{aligned}\\]",
+        "steps": [
+          "The sum of each row of \\(Y_{\\mathrm{bus}}\\) gives the net shunt admittance at that bus. From the given matrix, the row sums are \\(0\\), \\(+j0.5\\), and \\(+j1\\) at buses 1, 2 and 3.",
+          "(A) If every line has a finite charging capacitor, bus 1 must receive positive capacitive shunt admittance from lines 1–2 and 1–3. Its row sum is zero, so (A) **cannot** be true.",
+          "(C) A shunt capacitor at bus 1 alone would also make its row sum positive. The given zero at bus 1 rules out (C).",
+          "(B) may be accompanied by other bus shunt capacitance, and (D) can provide the unequal shunt sums at buses 2 and 3. Since the question asks what **cannot** be true, **answers: (A) and (C).**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2026-EE-Q39",
@@ -950,7 +1053,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EE.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EE_Keys.pdf",
       "pdfPage": 35,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "CT ratio conversion and zero-sequence cancellation",
+        "mathFormula": "\\[I_{AR}\\simeq\\frac{I_A-\\frac13(I_A+I_B+I_C)}{300/5}\\simeq8.95\\angle4.10^\\circ\\ \\mathrm A\\]",
+        "steps": [
+          "The main CT ratio is \\(300:5=60:1\\), so primary line currents are scaled by \\(1/60\\) for the relay circuit.",
+          "The Y-grounded/Δ auxiliary arrangement compensates the zero-sequence component. For phase A, the zero-sequence-free component is \\(I_A-(I_A+I_B+I_C)/3\\).",
+          "Using the given phasors, \\(I_A+I_B+I_C=111.204+j35.031\\) A. The compensated secondary current is approximately \\((8.929+j0.641)\\) A.",
+          "Its magnitude and angle are approximately \\(8.95\\) A and \\(4.10^\\circ\\); the listed answer is \\(8.954\\angle4.105^\\circ\\) A, **option (D)** (minor rounding difference from displayed phasors)."
+        ],
+        "examTip": "Do not compare the unconverted primary-current magnitude directly with CT secondary-current answer choices.",
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2022-EE-Q64",
