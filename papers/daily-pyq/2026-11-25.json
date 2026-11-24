@@ -21,7 +21,7 @@
   "status": "official_gate_pyqs_only",
   "classificationNote": "Official historical GATE 2020–2026 EE/EC question images and matched official answer keys. Selected 2020 source crops are manually checked; some 2022–2026 tags remain provisional.",
   "rotationNote": null,
-  "selectionNote": "7 newly introduced 2020 GATE PYQs alongside other official EE/EC PYQs. Mathematics restricted to Linear Algebra, Probability and Statistics, Complex Variables. 0 question IDs previously published on earlier days: none. Repeats are flagged; unused eligible topics were prioritized.",
+  "selectionNote": "7 questions from individually source-checked 2020 GATE EC/EE papers. Exactly 40 technical PYQs; Mathematics only Linear Algebra, Probability and Statistics, Complex Variables. 0 source question IDs are repeats from earlier published days; no repeats. Questions are not fabricated.",
   "repeatCount": 0,
   "selectionCounts": {
     "Engineering Mathematics": {
