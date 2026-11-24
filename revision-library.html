@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GATE 2027 · Topic-wise Revision Library</title>
+<style>
+:root{font:15px/1.6 system-ui,Segoe UI,Arial,sans-serif;color:#172a45;background:#f4f6fa}
+*{box-sizing:border-box}body{margin:0}header{background:#142b4d;padding:17px max(14px,calc((100% - 1200px)/2));display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;color:#fff}
+header h1{font-size:20px;margin:0}header p{font-size:12px;margin:3px 0;color:#c2d3ea}header nav{display:flex;gap:14px;flex-wrap:wrap}header a{color:#ecf3ff;text-decoration:none}
+main{max-width:1200px;margin:0 auto;padding:20px 16px 45px}
+h2{font-size:23px;margin:0 0 7px}h3{font-size:18px;margin:4px 0}p{margin:9px 0}
+.muted{font-size:13px;color:#64758b}.small{font-size:12px;color:#65768a}
+.toolbar,.summary,.card,.notice{border:1px solid #dce3ee;border-radius:12px;background:#fff}
+.toolbar{padding:17px 18px;margin:18px 0}.row{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:15px 0}
+.stat{background:#fff;border:1px solid #dce5f0;border-radius:11px;padding:13px 15px}
+.stat strong{font-size:23px;display:block;line-height:1.25}.stat span{font-size:12px;color:#6b7a91}
+.navtabs,.subjects,.controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:11px 0}
+button,.btn,select,input{border:1px solid #cbd6e5;border-radius:8px;padding:9px 12px;font:inherit;background:#fff;color:#173457}
+button,.btn{cursor:pointer;font-weight:650;text-decoration:none}button:focus-visible,input:focus-visible,select:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid #7ba6e2;outline-offset:2px}
+button.active,.btn.primary{color:#fff;background:#235aa3;border-color:#235aa3}
+.subjects button{font-size:12px;padding:6px 10px}.controls input{min-width:220px;flex:1}.controls select{max-width:220px}
+.chip{border-radius:30px;background:#eef3f9;color:#315173;padding:4px 9px;font-size:12px;font-weight:650;display:inline-block}
+.chip.warn{background:#fff0e9;color:#934c30}.chip.good{background:#eaf6ec;color:#27723b}
+.stack{display:grid;gap:12px}.card{padding:17px 19px;scroll-margin-top:15px}.card h3{margin-top:5px}
+.evidence{font-size:13px;color:#617189;margin:7px 0}.formula-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:9px;margin-top:12px}
+.formula{padding:11px 12px;border:1px solid #e0e9f6;background:#f7faff;border-radius:9px;min-height:62px;display:flex;justify-content:center;align-items:center;overflow-x:auto}
+.pitfall{padding:10px 0;font-size:13px;color:#435770}.pitfall b{color:#2c4c6f}
+.check{border:1px solid #e0e8f2;background:#f8fbfe;border-radius:8px;margin:11px 0}
+.check summary{padding:10px 12px;cursor:pointer;font-size:13px;font-weight:650}.check div{padding:0 12px 11px;font-size:13px}
+.actions{display:flex;gap:7px;flex-wrap:wrap;align-items:center}.actions button{font-size:12px;padding:7px 10px}
+.actions a{font-size:12px}.done{background:#e8f6ee;border-color:#add5bb;color:#216b3b}.flag{background:#fff1ed;border-color:#e4c0ad;color:#973e2d}
+.mistakes{font-size:13px;margin:11px 0;padding:11px 12px;background:#f5f7fa;border-radius:9px}.mistakes a{color:#19549e}
+.note{font-size:13px;color:#445c78;background:#edf4ff;border-left:3px solid #7399ce;border-radius:7px;padding:11px 13px;margin:14px 0}
+.note.warning{background:#fff6e8;border-left-color:#ca995d}.empty{padding:25px;background:#fff;border:1px dashed #cbd7e6;border-radius:10px}
+a{color:#255ba6}mjx-container[display="true"]{max-width:100%;overflow-x:auto;overflow-y:hidden;margin:0!important;padding:2px 0!important}
+@media(max-width:760px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.controls input{min-width:150px}.card{padding:14px}main{padding:12px 10px}}
+@media print{header,.toolbar,.subjects,.navtabs,.controls,.actions{display:none!important}.card{break-inside:avoid}main{max-width:none}}
+</style>
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script src="./revision-engine.js"></script>
+</head><body>
+<header><div><h1>GATE 2027 · Revision Library</h1><p>All subjects · Topic-wise formula cards · Focus on correcting mistakes</p></div>
+<nav><a href="./quick-revision.html">5-min Review</a><a href="./daily-pyq.html">Daily CBT</a><a href="./performance.html">Performance</a><a href="./index.html">Home</a></nav></header>
+<main>
+<div class="row"><div><div class="muted">YOUR PERSONAL REVISION DESK</div><h2>Every topic. Your weakest first.</h2><p class="muted" id="description">Loading cards and matching your saved submissions…</p></div><a href="./quick-revision.html" class="btn primary">Start 5-minute review</a></div>
+<div class="stats">
+<div class="stat"><strong id="cardCount">—</strong><span>Revision topics</span></div>
+<div class="stat"><strong id="needs">—</strong><span>Require practice</span></div>
+<div class="stat"><strong id="improving">—</strong><span>Showing improvement</span></div>
+<div class="stat"><strong id="tested">—</strong><span>Submitted CBT papers counted</span></div>
+</div>
+<div class="toolbar">
+<div class="row"><b>Explore your revision cards</b><span id="lastUpdate" class="small">Scored attempts stay in this browser</span></div>
+<div class="navtabs" role="group" aria-label="View revision cards">
+<button type="button" data-view="priority" class="active">My priorities</button>
+<button type="button" data-view="all">All topics</button>
+<button type="button" data-view="weak">Unresolved mistakes</button>
+<button type="button" data-view="due">Review due</button>
+</div>
+<div id="subjects" class="subjects" aria-label="Filter by subject"></div>
+<div class="controls">
+<input type="search" id="search" aria-label="Search revision topics and formulas" placeholder="Search topic, formula, concept or mistake…">
+<select id="sort" aria-label="Sort cards"><option value="priority">Recommended order</option><option value="subject">Subject and topic</option><option value="recent">Recently assessed</option></select>
+<label class="small"><input id="todayOnly" type="checkbox"> Today's exam subjects only</label>
+<button type="button" id="clear">Clear filters</button>
+</div>
+<div class="row"><span class="muted" id="resultCount"></span><a href="./performance.html" class="small">See full marks analysis</a></div>
+</div>
+<div id="notice"></div>
+<div id="cards" class="stack" aria-live="polite"></div>
+<div id="unmapped"></div>
+<p class="small" style="margin-top:22px">Formula cards are curated revision notes, not official PYQs. A card marked “reviewed” records your self-check, not exam mastery. Actual progress is determined from later completed CBT questions. Topic tags from older question banks may be provisional. Data never leaves this browser.</p>
+</main>
+<script>
+'use strict';
+const $=s=>document.querySelector(s),esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const state={data:null,stats:[],view:'priority',subject:'All',search:'',sort:'priority',todayOnly:false,ready:false,loaded:false};
+function paramDate(){const p=new URLSearchParams(location.search).get('date');return /^\d{4}-\d{2}-\d{2}$/.test(p||'')?p:GateRevision.istDate()}
+function selectedDate(){return paramDate()}
+function formatStatus(p){
+ if(p.review.needPractice)return '<span class="chip warn">You flagged this as unclear</span>';
+ if(p.verifiedRecovery)return '<span class="chip good">Recovery seen in later tests</span>';
+ if(p.improving)return '<span class="chip good">Improving · recheck once more</span>';
+ if(p.currentWeak)return '<span class="chip warn">Needs practice</span>';
+ if(p.qualitative)return '<span class="chip">Earlier review flag</span>';
+ if(p.due)return '<span class="chip">Revision due</span>';
+ return '<span class="chip">'+(p.total?'Scored evidence':'Reference card')+'</span>';
+}
+function focusSubjects(){
+ const papers=state.data?.published||[];
+ const today=selectedDate();const selected=state.data?.exam;
+ if(selected&&selected.date===today)return new Set(selected.subjects||[]);
+ return new Set();
+}
+function listCards(){
+ let arr=state.stats.slice();
+ if(state.view==='weak')arr=arr.filter(x=>x.currentWeak);
+ if(state.view==='due')arr=arr.filter(x=>x.due||x.review.needPractice);
+ if(state.view==='priority')arr=arr.filter(x=>x.currentWeak||x.improving||x.qualitative||x.due||x.total===0);
+ if(state.subject!=='All')arr=arr.filter(x=>x.pack.subject===state.subject);
+ if(state.todayOnly){
+  const focus=focusSubjects();
+  if(focus.size)arr=arr.filter(x=>focus.has(x.pack.subject)&&(x.pack.subject!=='Engineering Mathematics'||['linear-core','linear-lsq','probability','complex'].includes(x.pack.id)));
+ }
+ const query=state.search.trim().toLowerCase();
+ if(query)arr=arr.filter(x=>[x.pack.title,x.pack.subject,x.pack.pitfall,...x.pack.patterns,...x.pack.formula].join(' ').toLowerCase().includes(query));
+ arr.sort(state.sort==='subject'
+  ?(a,b)=>a.pack.subject.localeCompare(b.pack.subject)||a.pack.title.localeCompare(b.pack.title)
+  :state.sort==='recent'?(a,b)=>b.latestDate.localeCompare(a.latestDate)||b.priority-a.priority
+  :(a,b)=>b.priority-a.priority||a.pack.subject.localeCompare(b.pack.subject)||a.pack.title.localeCompare(b.pack.title));
+ return arr;
+}
+function renderSubjects(){
+ const unique=[...new Set(state.stats.map(x=>x.pack.subject))].sort();
+ const options=['All',...unique];
+ $('#subjects').innerHTML=options.map(sub=>{
+  const count=state.stats.filter(x=>sub==='All'||x.pack.subject===sub).length;
+  return '<button type="button" class="'+(sub===state.subject?'active':'')+'" data-subject="'+esc(sub)+'">'+esc(sub)+' ('+count+')</button>';
+ }).join('');
+ $('#subjects').querySelectorAll('button').forEach(b=>b.onclick=()=>{state.subject=b.dataset.subject;render()});
+}
+function renderCard(x,index){
+ const p=x.pack,r=x.review,done=r.reviewedToday;
+ const evidence=x.total?(x.wrong+' wrong · '+x.skipped+' skipped · '+x.correct+' correct · '+x.total+' scored questions'):
+   (x.qualitative?x.qualitative+' earlier qualitative flag(s)':'Not yet assessed in a submitted CBT');
+ const last=x.latestDate?' · Last assessed '+x.latestDate:'';
+ const next=r.nextReviewDate?' · Next self-review '+r.nextReviewDate:'';
+ const latestMissed=x.rows.filter(row=>row.status==='wrong'||row.status==='skipped')
+   .sort((a,b)=>b.date.localeCompare(a.date)).slice(0,2);
+ const missed=latestMissed.length?'<div class="mistakes"><b>Return to your missed question'+(latestMissed.length>1?'s':'')+':</b> '+
+   latestMissed.map(q=>'<a href="'+esc(q.questionLink)+'">'+esc(q.date+' · '+q.sourceId)+'</a>').join(' · ')+
+   '<div class="small">These are your submitted paper questions. Opening them does not regrade your results.</div></div>':'';
+ const feedback=r.needPractice?'This remains on your priority list until you review it or show improvement.':
+   x.currentWeak?'Your next correct answers in this topic will be counted as improvement, not assumed mastery.':
+   x.improving?'A different later question was answered correctly; aim for another correct result on a later date.':'';
+ return '<article class="card" id="topic-'+esc(p.id)+'">'+
+ '<div class="row"><div><span class="chip">'+esc(p.subject)+'</span><h3>'+esc(p.title)+'</h3></div>'+formatStatus(x)+'</div>'+
+ '<div class="evidence">'+esc(evidence+last+next)+'</div>'+
+ (x.total?'<div class="small">'+esc(x.status)+'</div>':'')+
+ '<div class="formula-grid">'+p.formula.map(f=>'<div class="formula">\\['+esc(f)+'\\]</div>').join('')+'</div>'+
+ '<p class="pitfall"><b>Common trap:</b> '+esc(p.pitfall)+'</p>'+
+ '<details class="check"><summary>15-second recall · '+esc(p.question)+'</summary><div><b>Answer:</b> '+esc(p.answer)+'</div></details>'+missed+
+ (feedback?'<p class="small">'+esc(feedback)+'</p>':'')+
+ '<div class="actions"><button type="button" class="'+(done?'done':'')+'" data-action="reviewed" data-id="'+esc(p.id)+'">'+(done?'✓ Reviewed today':'Mark revised')+'</button>'+
+ '<button type="button" class="'+(r.needPractice?'flag':'')+'" data-action="practice" data-id="'+esc(p.id)+'">Still unclear</button>'+
+ '<button type="button" data-action="reset" data-id="'+esc(p.id)+'">Clear self-mark</button>'+
+ '<a href="./quick-revision.html?date='+encodeURIComponent(selectedDate())+'">5-min review</a></div>'+
+ '</article>';
+}
+function render(){
+ if(!state.ready)return;
+ const results=listCards(),stats=state.stats,active=stats.filter(x=>x.currentWeak).length,
+ improving=stats.filter(x=>x.improving||x.verifiedRecovery).length;
+ $('#cardCount').textContent=String(stats.length);
+ $('#needs').textContent=String(active);
+ $('#improving').textContent=String(improving);
+ $('#tested').textContent=String(state.data.testDates.length);
+ $('#description').textContent='Browse every subject and topic, or begin with mistakes and spaced revision due today.';
+ $('#lastUpdate').textContent='Refreshed '+GateRevision.istDate()+' IST · same-browser saved attempts';
+ document.querySelectorAll('.navtabs button').forEach(b=>b.classList.toggle('active',b.dataset.view===state.view));
+ renderSubjects();
+ $('#search').value=state.search;$('#sort').value=state.sort;$('#todayOnly').checked=state.todayOnly;
+ $('#resultCount').textContent=results.length+' topic card'+(results.length===1?'':'s')+' · '+state.data.rows.length+' matched source questions · '+state.data.unmapped.length+' topic tags needing mapping';
+ $('#notice').innerHTML=(state.data.issues.length?'<div class="note warning">'+state.data.issues.map(esc).join(' ')+'</div>':'')+
+ '<div class="note">Priorities recalculate from completed website papers whenever you open this page. A topic moves toward recovery only after correct answers on later source questions; reviewing a card alone cannot change exam accuracy. Earlier chat notes are separate qualitative hints. Your results remain local to this browser.</div>';
+ $('#cards').innerHTML=results.length?results.map(renderCard).join(''):'<div class="empty">No cards match these filters. Choose “All topics” or clear your search.</div>';
+ const unresolved=state.data.unmapped.filter(q=>q.status==='wrong'||q.status==='skipped').sort((a,b)=>b.date.localeCompare(a.date));
+ $('#unmapped').innerHTML=unresolved.length?'<details class="card" style="margin-top:16px"><summary><b>'+unresolved.length+' missed source question(s) awaiting topic mapping</b></summary><p class="muted">These are not assigned to a possibly incorrect formula card. Review the original question while its subject/topic classification is audited.</p>'+
+ unresolved.slice(0,20).map(q=>'<p><a href="'+esc(q.questionLink)+'">'+esc(q.date+' · '+q.sourceId)+'</a> · '+esc(q.subject+' / '+q.topic)+'</p>').join('')+'</details>':'';
+ $('#cards').querySelectorAll('[data-action]').forEach(b=>b.onclick=()=>{
+  GateRevision.markCard(b.dataset.id,b.dataset.action,GateRevision.istDate());
+  state.stats=GateRevision.evaluate(state.data);render();
+ });
+ if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([$('#cards')]).catch(console.warn);
+}
+async function refresh(){
+ const response=await fetch('./quick-revision-content.json?ts='+Date.now(),{cache:'no-store'});
+ if(!response.ok)throw Error('Topic card catalog is unavailable');
+ const catalog=await response.json();if(!Array.isArray(catalog.packs)||!catalog.packs.length)throw Error('Revision catalog has no topics');
+ state.data=await GateRevision.load(catalog.packs);
+ state.stats=GateRevision.evaluate(state.data);
+ state.ready=true;render();
+}
+document.querySelectorAll('.navtabs button').forEach(b=>b.onclick=()=>{state.view=b.dataset.view;render()});
+$('#search').oninput=e=>{state.search=e.target.value;render();$('#search').focus();$('#search').setSelectionRange(state.search.length,state.search.length)};
+$('#sort').onchange=e=>{state.sort=e.target.value;render()};
+$('#todayOnly').onchange=e=>{state.todayOnly=e.target.checked;render()};
+$('#clear').onclick=()=>{state.view='all';state.subject='All';state.search='';state.sort='subject';state.todayOnly=false;render()};
+window.addEventListener('storage',e=>{if(e.key?.startsWith(GateRevision.PREFIX)||e.key===GateRevision.REVIEW_KEY||e.key===GateRevision.CHAT_KEY)refresh().catch(console.warn)});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)refresh().catch(console.warn)});
+refresh().catch(e=>{$('#description').textContent='The revision library could not load';$('#cards').innerHTML='<div class="empty">'+esc(e.message)+' <a href="./quick-revision.html">Open short revision</a></div>'});
+</script>
+</body></html>
