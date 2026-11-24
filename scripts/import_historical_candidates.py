@@ -49,10 +49,23 @@ def anchors(doc):
 def technical_anchors(doc,year,branch):
     allpoints=anchors(doc)
     ones=[(pi,y) for pi,y,n,t in allpoints if n==1]
-    if len(ones)<2:
+    # Reliable gate for 2020: paper has GA Q1-Q10 followed by branch
+    # Q1-Q55, with an explicit "Q1-Q25 carry one mark each" heading.
+    headings=[]
+    for pi,pg in enumerate(doc):
+        for block in pg.get_text("dict")["blocks"]:
+            for line in block.get("lines",[]):
+                t="".join(sp.get("text","") for sp in line.get("spans",[]))
+                low=t.lower().replace(" ", "")
+                if "q1-q25carryonemarkeach" in low or "q1–q25carryonemarkeach" in low:
+                    headings.append((pi,line["bbox"][1]))
+    if headings:
+        start=max(headings)
+    elif len(ones)>=2:
+        start=sorted(ones)[-1]   # final Q1 (not a duplicated GA label)
+    else:
         return {},allpoints,False
-    # Q1 appears once in General Aptitude and once in technical question section.
-    start=sorted(ones)[1]
+    print("BOUNDARY",year,branch,"first Q1 locations",ones,"headings",headings,"technical start",start,flush=True)
     final={}
     for pi,y,n,t in allpoints:
         if (pi,y)<start:continue
@@ -68,7 +81,7 @@ def render_crop(doc,start,end,id):
         pg=doc[pi]
         top=max(18,(y0-7 if pi==pi0 else 40))
         bottom=min(pg.rect.height-28,(y1-5 if pi==pi1 else pg.rect.height-30))
-        if bottom-top<35:raise ValueError("Question crop too short")
+        if bottom-top<8:raise ValueError("Question crop too short")
         pix=pg.get_pixmap(matrix=fitz.Matrix(1.55,1.55),
                           clip=fitz.Rect(25,top,pg.rect.width-25,bottom),
                           alpha=False,colorspace=fitz.csRGB)
