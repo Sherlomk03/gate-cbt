@@ -363,14 +363,18 @@
       "sourceStatus": "official_pdf_http_and_format_verified",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2021/ec_2021.pdf",
       "keyStatus": "all_55_official_technical_key_rows_visually_transcribed_crop_mapping_pending",
-      "cbtStatus": "key_verified_photo_crops_pending",
+      "cbtStatus": "partially_verified_question_level",
       "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
       "lastProbeIST": "2026-11-24T20:06:41+05:30",
       "pdfPages": 39,
       "pdfSha256": "cab9167225d3c92c96e7397bce53f3ebdc0f39a64c9740996a166e9913ff415c",
       "textExtractable": false,
       "reviewedTechnicalKeyCount": 55,
-      "reviewedKeyRecord": "pyq/historical/keys-reviewed/2021-EC-S4.json"
+      "reviewedKeyRecord": "pyq/historical/keys-reviewed/2021-EC-S4.json",
+      "verifiedQuestionCount": 8,
+      "gradeableQuestionCount": 8,
+      "verifiedQuestionBank": "pyq/historical/verified/2021-EC-S4.json",
+      "reviewNote": "8 exact source question photographs visually inspected and matched to official 2021 scanned final-key table; all remaining questions are still quarantined."
     },
     {
       "year": 2021,
@@ -380,14 +384,18 @@
       "sourceStatus": "official_pdf_http_and_format_verified",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2021/ee_2021.pdf",
       "keyStatus": "all_55_official_technical_key_rows_visually_transcribed_crop_mapping_pending",
-      "cbtStatus": "key_verified_photo_crops_pending",
+      "cbtStatus": "partially_verified_question_level",
       "sessionNote": "Question IDs, GA section, and answer keys must be aligned before CBT import",
       "lastProbeIST": "2026-11-24T20:06:41+05:30",
       "pdfPages": 33,
       "pdfSha256": "198f5ebecf32291aaaa1468bab5ed6b163100b5cc2b7674bb77c0153890c201f",
       "textExtractable": false,
       "reviewedTechnicalKeyCount": 55,
-      "reviewedKeyRecord": "pyq/historical/keys-reviewed/2021-EE-S3.json"
+      "reviewedKeyRecord": "pyq/historical/keys-reviewed/2021-EE-S3.json",
+      "verifiedQuestionCount": 4,
+      "gradeableQuestionCount": 4,
+      "verifiedQuestionBank": "pyq/historical/verified/2021-EE-S3.json",
+      "reviewNote": "4 exact source question photographs visually inspected and matched to official 2021 scanned final-key table; all remaining questions are still quarantined."
     },
     {
       "year": 2022,
