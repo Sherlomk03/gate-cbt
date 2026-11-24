@@ -45,9 +45,10 @@ jobs:
           PY
       - name: Commit original question crops and preliminary source metadata
         run: |
+          rm -rf pyq/historical/crops/2020-EE-S4/
           git config user.name "gate-cbt-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add pyq/historical/crops/ pyq/historical/candidates/
+          git add -A pyq/historical/crops/ pyq/historical/candidates/ pyq/historical/key-pages/
           if ! git diff --staged --quiet; then
             git commit -m "Stage original 2020-2021 per-question source crops and keys for audit"
             git fetch origin main
