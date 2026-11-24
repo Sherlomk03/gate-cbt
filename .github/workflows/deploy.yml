@@ -42,6 +42,8 @@ jobs:
           ref: main
       - name: Verify PYQ subject labels, answer keys and future eligibility
         run: python scripts/validate_taxonomy.py
+      - name: Validate pre-exam quick revision cards and simulated scoring
+        run: node scripts/test_quick_revision.mjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
