@@ -1,0 +1,488 @@
+{
+  "year": 2020,
+  "branch": "EC",
+  "sourceId": "2020-EC",
+  "sourcePaperUrl": "https://gate2026.iitg.ac.in/doc/download/2020/ec_2020.pdf",
+  "sourcePaperSha256": "f6b51c7f9f433cd7eaaeb276e66abe5b9e9b2e7b8b14034d551515b6d6e7de2d",
+  "sourcePages": [
+    "pyq/historical/source-pages/2020-EC/p001.webp",
+    "pyq/historical/source-pages/2020-EC/p002.webp",
+    "pyq/historical/source-pages/2020-EC/p003.webp",
+    "pyq/historical/source-pages/2020-EC/p004.webp",
+    "pyq/historical/source-pages/2020-EC/p005.webp",
+    "pyq/historical/source-pages/2020-EC/p006.webp",
+    "pyq/historical/source-pages/2020-EC/p007.webp",
+    "pyq/historical/source-pages/2020-EC/p008.webp",
+    "pyq/historical/source-pages/2020-EC/p009.webp",
+    "pyq/historical/source-pages/2020-EC/p010.webp",
+    "pyq/historical/source-pages/2020-EC/p011.webp",
+    "pyq/historical/source-pages/2020-EC/p012.webp",
+    "pyq/historical/source-pages/2020-EC/p013.webp",
+    "pyq/historical/source-pages/2020-EC/p014.webp",
+    "pyq/historical/source-pages/2020-EC/p015.webp",
+    "pyq/historical/source-pages/2020-EC/p016.webp",
+    "pyq/historical/source-pages/2020-EC/p017.webp",
+    "pyq/historical/source-pages/2020-EC/p018.webp",
+    "pyq/historical/source-pages/2020-EC/p019.webp",
+    "pyq/historical/source-pages/2020-EC/p020.webp"
+  ],
+  "sourcePageCount": 20,
+  "officialKeyUrl": "https://gate2026.iitg.ac.in/doc/download/2020/ec_2020.pdf",
+  "officialKeySha256": "f6b51c7f9f433cd7eaaeb276e66abe5b9e9b2e7b8b14034d551515b6d6e7de2d",
+  "extractedKeyRows": [
+    {
+      "number": 1,
+      "section": "GA",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 2,
+      "section": "GA",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "B"
+    },
+    {
+      "number": 3,
+      "section": "GA",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "B"
+    },
+    {
+      "number": 4,
+      "section": "GA",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "C"
+    },
+    {
+      "number": 5,
+      "section": "GA",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 6,
+      "section": "GA",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 7,
+      "section": "GA",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "B"
+    },
+    {
+      "number": 8,
+      "section": "GA",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "C"
+    },
+    {
+      "number": 9,
+      "section": "GA",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "C"
+    },
+    {
+      "number": 10,
+      "section": "GA",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "B"
+    },
+    {
+      "number": 1,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "C"
+    },
+    {
+      "number": 2,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "C"
+    },
+    {
+      "number": 3,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "B"
+    },
+    {
+      "number": 4,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "C"
+    },
+    {
+      "number": 5,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "C"
+    },
+    {
+      "number": 6,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "B"
+    },
+    {
+      "number": 7,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "B"
+    },
+    {
+      "number": 8,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "D"
+    },
+    {
+      "number": 9,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "C"
+    },
+    {
+      "number": 10,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 11,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "B"
+    },
+    {
+      "number": 12,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "D"
+    },
+    {
+      "number": 13,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 14,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 15,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 1,
+      "officialKeyAsPrinted": "48 to 48"
+    },
+    {
+      "number": 16,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 1,
+      "officialKeyAsPrinted": "2.80 to 2.85"
+    },
+    {
+      "number": 17,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 1,
+      "officialKeyAsPrinted": "644 to 657"
+    },
+    {
+      "number": 18,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 1,
+      "officialKeyAsPrinted": "6 to 6"
+    },
+    {
+      "number": 19,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 1,
+      "officialKeyAsPrinted": "14 to 14"
+    },
+    {
+      "number": 20,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 1,
+      "officialKeyAsPrinted": "3.050 to 3.080"
+    },
+    {
+      "number": 21,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 1,
+      "officialKeyAsPrinted": "6.25 to 6.25"
+    },
+    {
+      "number": 22,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 1,
+      "officialKeyAsPrinted": "0.5 to 0.5"
+    },
+    {
+      "number": 23,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 1,
+      "officialKeyAsPrinted": "160 to 160"
+    },
+    {
+      "number": 24,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 1,
+      "officialKeyAsPrinted": "6 to 6"
+    },
+    {
+      "number": 25,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 1,
+      "officialKeyAsPrinted": "0.25 to 0.25"
+    },
+    {
+      "number": 26,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 27,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 28,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "C"
+    },
+    {
+      "number": 29,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "C"
+    },
+    {
+      "number": 30,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 31,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "MTA"
+    },
+    {
+      "number": 32,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 33,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "MTA"
+    },
+    {
+      "number": 35,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 36,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "C"
+    },
+    {
+      "number": 37,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "B"
+    },
+    {
+      "number": 38,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 39,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 40,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 41,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "D"
+    },
+    {
+      "number": 42,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "B"
+    },
+    {
+      "number": 43,
+      "section": "EC",
+      "type": "MCQ",
+      "marks": 2,
+      "officialKeyAsPrinted": "A"
+    },
+    {
+      "number": 44,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 2,
+      "officialKeyAsPrinted": "800 to 800"
+    },
+    {
+      "number": 45,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 2,
+      "officialKeyAsPrinted": "1 to 1"
+    },
+    {
+      "number": 46,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 2,
+      "officialKeyAsPrinted": "0.8 to 0.8"
+    },
+    {
+      "number": 47,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 2,
+      "officialKeyAsPrinted": "2 to 2"
+    },
+    {
+      "number": 48,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 2,
+      "officialKeyAsPrinted": "3 to 3"
+    },
+    {
+      "number": 49,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 2,
+      "officialKeyAsPrinted": "3.95 to 4.05"
+    },
+    {
+      "number": 50,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 2,
+      "officialKeyAsPrinted": "76 to 77"
+    },
+    {
+      "number": 51,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 2,
+      "officialKeyAsPrinted": "2.25 to 2.25"
+    },
+    {
+      "number": 52,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 2,
+      "officialKeyAsPrinted": "58.50 to 58.80"
+    },
+    {
+      "number": 53,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 2,
+      "officialKeyAsPrinted": "-2 to -2"
+    },
+    {
+      "number": 54,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 2,
+      "officialKeyAsPrinted": "0.299 to 0.301"
+    },
+    {
+      "number": 55,
+      "section": "EC",
+      "type": "NAT",
+      "marks": 2,
+      "officialKeyAsPrinted": "30 to 30"
+    }
+  ],
+  "keyRowsComplete": false,
+  "keyStatus": "partial_key_needs_manual_review",
+  "cbtStatus": "staged_original_pages_not_question_crops",
+  "selectionEligible": false,
+  "subjectTagsReviewStatus": "not_reviewed",
+  "notes": "Source page images retain original diagrams and options. Before daily selection, split into exact question crops, verify each source/question number and key, audit syllabus tags. Never infer missing keys."
+}

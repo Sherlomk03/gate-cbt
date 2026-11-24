@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "sourceYears": [
+    2019,
+    2020,
+    2021
+  ],
+  "readyForCBT": false,
+  "sourceSessionsNeedAudit": true,
+  "reports": [
+    {
+      "id": "2019-EC",
+      "file": "2019-EC.json",
+      "sourcePageCount": 31,
+      "extractedKeyRowCount": 0,
+      "keyRowsComplete": false,
+      "eligibleForDaily": false
+    },
+    {
+      "id": "2019-EE",
+      "file": "2019-EE.json",
+      "sourcePageCount": 16,
+      "extractedKeyRowCount": 0,
+      "keyRowsComplete": false,
+      "eligibleForDaily": false
+    },
+    {
+      "id": "2020-EC",
+      "file": "2020-EC.json",
+      "sourcePageCount": 20,
+      "extractedKeyRowCount": 64,
+      "keyRowsComplete": false,
+      "eligibleForDaily": false
+    },
+    {
+      "id": "2020-EE",
+      "file": "2020-EE.json",
+      "sourcePageCount": 20,
+      "extractedKeyRowCount": 64,
+      "keyRowsComplete": false,
+      "eligibleForDaily": false
+    },
+    {
+      "id": "2021-EC",
+      "file": "2021-EC.json",
+      "sourcePageCount": 39,
+      "extractedKeyRowCount": 0,
+      "keyRowsComplete": false,
+      "eligibleForDaily": false
+    },
+    {
+      "id": "2021-EE",
+      "file": "2021-EE.json",
+      "sourcePageCount": 33,
+      "extractedKeyRowCount": 0,
+      "keyRowsComplete": false,
+      "eligibleForDaily": false
+    }
+  ],
+  "description": "Authentic PDF page images and extracted key inventory only; no question-level verification yet."
+}
