@@ -16,7 +16,7 @@ CAND=pathlib.Path("pyq/historical/candidates")
 CROP=pathlib.Path("pyq/historical/crops")
 AGENT={"User-Agent":"Mozilla/5.0 GATE historical source importer"}
 QUESTION=re.compile(r'^\s*Q\s*\.?\s*(?:No\.?\s*)?(\d{1,2})(?:\s|[.:]|$)',re.I)
-SESSION={2020:4,2021:4}
+SESSION={2020:{"EC":4,"EE":5},2021:{"EC":4,"EE":5}}
 
 def getpdf(url):
     for attempt in range(3):
@@ -137,12 +137,20 @@ def main():
         keys=staged["extractedKeyRows"]
         if year==2021:
             key_bytes=getpdf(original["keyUrl"])
+            key_doc=fitz.open(stream=key_bytes,filetype="pdf")
+            key_dest=pathlib.Path("pyq/historical/key-pages")/id
+            key_dest.mkdir(parents=True,exist_ok=True)
+            for i,pg in enumerate(key_doc):
+                pix=pg.get_pixmap(matrix=fitz.Matrix(1.6,1.6),alpha=False)
+                pic=Image.frombytes("RGB",(pix.width,pix.height),pix.samples)
+                pic.save(key_dest/f"p{i+1:03d}.webp",format="WEBP",quality=80,method=4)
+            key_doc.close()
             newkeys=parse_text_key(key_bytes,branch)
             if len(newkeys)>len(keys):keys=newkeys
             print("2021 KEY EXTRACTION",id,len(keys),flush=True)
         keymap={r["number"]:r for r in keys if r["section"]==branch}
         sessions={k.get("session") for k in keys if k.get("section")==branch and k.get("session") is not None}
-        session=(next(iter(sessions)) if len(sessions)==1 else SESSION[year])
+        session=(next(iter(sessions)) if len(sessions)==1 else SESSION[year][branch])
         stem_candidates=[]
         if complete and len(keymap)==55:
             print("CROP ALL",id,"55 anchors and keys",flush=True)
