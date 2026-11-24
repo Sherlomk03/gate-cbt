@@ -44,6 +44,26 @@ def main():
                     assert not MATH_GUARD.search((q.get("sourceExtract") or "")[:480]),(
                         "Wrong-subject math PYQ",q["id"])
     assert len(bank)==650
+    # Only explicitly audited historical questions are eligible for daily use.
+    # Key and crop checks are performed against the locked official-source record.
+    VERIFIED=pathlib.Path("pyq/historical/verified")
+    for path in sorted(VERIFIED.glob("20??-??*.json")):
+        paper=json.loads(path.read_text(encoding="utf-8"))
+        assert paper["verificationStatus"]=="question_level_official_key_and_image_audited",path
+        assert paper["paperUrl"] and paper["keyUrl"],path
+        assert paper["imageBase"]=="./pyq/historical/",path
+        for q in paper["questions"]:
+            assert q["id"] not in bank,q["id"]
+            assert q["year"]==paper["year"] and q["branch"]==paper["branch"],q["id"]
+            assert q["section"]==paper["branch"],q["id"]
+            assert q["id"].startswith(f'{paper["year"]}-{paper["branch"]}-S'),q["id"]
+            assert all(q.get(k) is True for k in ("sessionVerified","keyVerifiedForQuestion",
+                        "imageCropReviewed","selectionEligible")),q["id"]
+            assert q["subject"]!="Unclassified" and q["topic"],q["id"]
+            assert q["type"] in ("MCQ","MSQ","NAT"),q["id"]
+            assert q["officialKey"] and q["officialKey"]!="MTA",q["id"]
+            assert (VERIFIED.parent/q["imagePath"]).is_file(),q["id"]
+            bank[q["id"]]=q
     summary=json.loads((BANK/"taxonomy-summary.json").read_text(encoding="utf-8"))
     assert summary["technicalQuestions"]==550
     assert summary["changedSubjectCount"]==44
