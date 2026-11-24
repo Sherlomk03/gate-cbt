@@ -20,6 +20,30 @@ PAIRS=[
 ]
 EXCLUDED={"Control Systems","Unclassified","Communication Systems","Electromagnetics","Microprocessors"}
 REQUIRED=("Engineering Mathematics","Network Theory")
+# Keep this syllabus focus until it is explicitly changed. Topic tags remain
+# provisional: this is a source-text review, not full human verification of crops.
+MATHS_FOCUS=("Linear Algebra","Probability and Statistics","Complex Variables")
+# Additional source-text inspected official PYQs. Other unapproved bank entries
+# remain withheld; visual-review-required entries are not silently approved.
+MATHS_SOURCE_TEXT_APPROVED={
+    "2022-EC-Q32","2022-EC-Q37","2022-EC-Q48",
+    "2022-EE-Q40","2022-EE-Q54",
+    "2023-EC-Q15","2023-EC-Q36",
+    "2023-EE-Q25","2023-EE-Q45",
+    "2024-EC-Q30","2024-EC-Q33","2024-EC-Q55",
+    "2024-EE-Q29","2024-EE-Q30","2024-EE-Q32",
+    "2025-EC-Q11","2025-EC-Q13","2025-EC-Q52","2025-EC-Q58",
+    "2025-EE-Q12","2025-EE-Q36","2025-EE-Q55",
+    "2026-EC-Q38","2026-EE-Q30",
+}
+
+def maths_focus_topic(q):
+    if q.get("subject")!="Engineering Mathematics":return None
+    topic=(q.get("topic") or "").lower()
+    if "linear algebra" in topic:return "Linear Algebra"
+    if "probability" in topic:return "Probability and Statistics"
+    if "complex" in topic:return "Complex Variables"
+    return None
 
 def get_questions():
     questions=[]
@@ -28,8 +52,12 @@ def get_questions():
         for q in source["questions"]:
             if q["number"]<=10:continue
             if q.get("subject") in EXCLUDED:continue
-            # Never select questions whose source-based category was not approved.
-            if q.get("selectionEligible") is not True:continue
+            # Focus mathematics strictly on the user's three topics. Source
+            # text-screened exceptions are explicit rather than auto-approved.
+            if q["subject"]=="Engineering Mathematics":
+                if not maths_focus_topic(q):continue
+                if q.get("selectionEligible") is not True and q["id"] not in MATHS_SOURCE_TEXT_APPROVED:continue
+            elif q.get("selectionEligible") is not True:continue
             lead=(q.get("sourceExtract") or "")[:480].lower()
             if q["subject"]=="Engineering Mathematics" and re.search(r"standing wave ratio|economic dispatch|generator buses|nominal.π model|nominal.pi model|transmission line|\bpower system\b|\bpower network\b|\bthevenin\b|\bload flow\b",lead):continue
             if not q.get("imagePath") or not q.get("officialKey"):continue
@@ -42,6 +70,8 @@ def get_questions():
               "taxonomyReviewStatus":q.get("taxonomyReviewStatus","requires_visual_review"),
               "selectionEligibleForFuture":True,
               "classificationMethod":q.get("classificationMethod","source-linked classification"),
+              "mathsFocusTopic":maths_focus_topic(q),
+              "mathsFocusSourceTextScreened":q["id"] in MATHS_SOURCE_TEXT_APPROVED,
               "sourceExcerpt":(q.get("sourceExtract") or "")[:220],
               "type":q["type"],"marks":q["marks"],"officialKey":q["officialKey"],
               "imagePath":"./pyq/five-years/"+q["imagePath"],
@@ -52,62 +82,39 @@ def get_questions():
     return questions
 
 
-def get_ace_signals():
-    """Supplement Signals block with user-provided ACE classroom questions.
-    A classroom question is NEVER labeled as an official GATE PYQ.
-    Exclude missing keys or ambiguous questions; preserve explanatory diagram descriptions.
-    """
-    source=json.loads(pathlib.Path("practice/ace-signals-2022.json").read_text())
-    allowed={1,2,3,4,5,6,8,9,10,11,12,13,14,15,16,17,18}
-    output=[]
-    for q in source["questions"]:
-        if q["number"] not in allowed or q["answer"] is None:
-            continue
-        output.append({
-          "id":q["id"],"sourceId":f'ACE 2022 Signals & Systems Q{q["number"]}',
-          "year":2022,"branch":"ACE EEE","questionNumber":q["number"],
-          "subject":"Signals & Systems","topic":q["topic"],
-          "classificationStatus":"user_supplied_classroom_test",
-          "sourceType":"ace_classroom","officialGatePYQ":False,
-          "answerStatus":q["answerStatus"],
-          "type":q["type"],"marks":q["marks"],"officialKey":",".join(q["answer"]) if isinstance(q["answer"],list) else str(q["answer"]),
-          "stem":q["stem"],"options":q.get("options",[]),
-          "imagePath":None,"paperUrl":None,"keyUrl":None,
-          "pdfPage":q["sourcePages"],
-          "sourceNote":"ACE Engineering Academy 2022 classroom test photographed by user; individually solved key, not official GATE answer key."
-        })
-    return output
-
 def deterministic_sort(questions,day,seed):
     return sorted(questions,key=lambda q:hashlib.sha256(f'{seed}-{day.isoformat()}-{q["id"]}'.encode()).hexdigest())
 
-def choose(items, subject, today,used,history):
+def choose(items, subject, today, used, history):
     candidates=[q for q in items if q["subject"]==subject]
-    distinct=[q for q in candidates if q["id"] not in used]
+    fresh=[q for q in candidates if q["id"] not in used]
     selected=[]
-    if subject=="Signals & Systems":
-        # Six actual GATE PYQs + four explicitly labeled ACE classroom problems.
-        # Prefer unseen for both sources; fall back transparently if exhausted.
-        pools=[
-            ([q for q in candidates if q.get("sourceType")=="ace_classroom"],4),
-            ([q for q in candidates if q.get("sourceType")!="ace_classroom"],6)
-        ]
+    if subject=="Engineering Mathematics":
+        # Spread maths across all three requested areas, without repeating a
+        # previously published question while any unused focus PYQ is available.
+        quotas=[("Linear Algebra",4),("Probability and Statistics",3),("Complex Variables",3)]
+        for focus,quota in quotas:
+            pool=[q for q in fresh if q.get("mathsFocusTopic")==focus]
+            # Prefer EC sources for shared GATE EE/EC subjects.
+            ordered=sorted(pool,key=lambda q:(q["branch"]!="EC",hashlib.sha256(f'maths-{focus}-{today}-{q["id"]}'.encode()).hexdigest()))
+            selected+=ordered[:quota]
+        picked={q["id"] for q in selected}
+        for q in deterministic_sort([q for q in fresh if q["id"] not in picked],today,"maths-unused"):
+            if len(selected)>=10:break
+            selected.append(q)
+        picked={q["id"] for q in selected}
+        for q in deterministic_sort([q for q in candidates if q["id"] in used and q["id"] not in picked],today,"maths-repeat"):
+            if len(selected)>=10:break
+            selected.append(q)
     else:
-        pools=[(candidates,10)]
-    for pool,limit in pools:
-        start=len(selected)
-        for q in deterministic_sort([x for x in pool if x["id"] not in used],today,subject+"fresh"):
-            if len(selected)-start>=limit:break
-            if q["id"] not in {x["id"] for x in selected}:selected.append(q)
-        for q in deterministic_sort([x for x in pool if x["id"] in used],today,subject+"repeat"):
-            if len(selected)-start>=limit:break
-            if q["id"] not in {x["id"] for x in selected}:selected.append(q)
-    # Avoid failing a daily paper if fewer than 4 ACE problems are eligible.
-    if len(selected)<10:
-        for q in deterministic_sort(candidates,today,subject+"remaining"):
-            if len(selected)==10:break
-            if q["id"] not in {x["id"] for x in selected}:selected.append(q)
-    return selected,len(distinct),len(candidates)
+        for q in deterministic_sort(fresh,today,subject+"fresh"):
+            if len(selected)>=10:break
+            selected.append(q)
+        picked={q["id"] for q in selected}
+        for q in deterministic_sort([q for q in candidates if q["id"] in used and q["id"] not in picked],today,subject+"repeat"):
+            if len(selected)>=10:break
+            selected.append(q)
+    return selected,len(fresh),len(candidates)
 
 def day_subjects(allq,today):
     base=(today-START).days
@@ -123,7 +130,7 @@ def day_subjects(allq,today):
     return list(REQUIRED)+[a,b],f'Requested pair {pair} is too small in current classified bank; used {a}, {b} as verified-source substitutes.'
 
 def main():
-    bank=get_questions()+get_ace_signals()
+    bank=get_questions()
     existing=[]
     for path in sorted(OUT.glob("20??-??-??.json")):
         try:
@@ -156,10 +163,10 @@ def main():
       "title":"GATE EE/EC Actual PYQs · "+target.isoformat(),
       "questionCount":40,"durationMinutes":180,
       "subjects":subjects,"sourceYears":[2022,2023,2024,2025,2026],
-      "status":"official_gate_pyqs_plus_labeled_ace_classroom_problems",
-      "classificationNote":"Official GATE screenshots and keys are retained. Only subject-tagged questions approved by source-text audit or specific contextual matching enter daily technical paper selection; remaining classifications are withheld pending review. ACE classroom questions are labeled separately.",
+      "status":"official_gate_pyqs_only",
+      "classificationNote":"Official 2022–2026 GATE EE/EC source screenshots and matched keys; no classroom or AI-generated questions. Subject/topic tags remain provisional. Mathematics permits explicitly screened source-text IDs in addition to previously eligible items; some crops still require visual review.",
       "rotationNote":note,
-      "selectionNote":f'Selected {sum(q.get("sourceType")=="ace_classroom" for q in picks)} labeled ACE classroom questions alongside original GATE PYQs; {repeats} source question IDs were previously published.',
+      "selectionNote":f'All 40 questions are original GATE PYQs. Mathematics: Linear Algebra, Probability and Statistics, Complex Variables only. {repeats} source question IDs were previously published; repeats occur only when unused questions in the eligible pool have been exhausted.',
       "repeatCount":repeats,"selectionCounts":counts,
       "questions":picks
     }
