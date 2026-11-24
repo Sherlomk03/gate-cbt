@@ -1088,7 +1088,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ee_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ee_2022.pdf",
       "pdfPage": 36,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Internal excitation emf of a leading-power-factor synchronous motor",
+        "mathFormula": "\\[\\begin{aligned}I_L&=\\frac{12000}{\\sqrt3(400)(0.8)}=21.65\\text{ A}\\\\E_f&=V_\\phi-jX_sI_\\phi,\\quad|E_f|\\approx244.5\\text{ V}\\end{aligned}\\]",
+        "steps": [
+          "The motor needs 10 kW shaft output plus 2 kW losses, hence its electrical input power is \\(P_{\\mathrm{in}}=12\\) kW.",
+          "With \\(0.8\\) leading power factor, \\(I_L=12000/(\\sqrt3\\cdot400\\cdot0.8)=21.65\\) A, and current leads phase voltage by \\(\\cos^{-1}(0.8)=36.87^\\circ\\).",
+          "As the motor is star connected, \\(V_\\phi=400/\\sqrt3=230.94\\) V. Ignoring armature resistance, the motor phasor relation is \\(E_f=V_\\phi-jX_sI_\\phi\\), with \\(X_s=1\\,\\Omega\\).",
+          "Insert \\(I_\\phi=21.65(0.8+j0.6)\\) A: \\(E_f=230.94-j[21.65(0.8+j0.6)]=243.93-j17.32\\) V.",
+          "Therefore \\(|E_f|=\\sqrt{243.93^2+17.32^2}=244.54\\) V, so the nearest integer is **245 V**."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2025-EE-Q26",
@@ -1110,7 +1123,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
       "pdfPage": 21,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Time-optimal induction-motor acceleration",
+        "mathFormula": "\\[J\\frac{d\\omega}{dt}=T_{em}-T_L(\\omega)\\]",
+        "steps": [
+          "For a given speed, maximum angular acceleration requires maximum positive difference \\(T_{em}-T_L\\).",
+          "In the diagram, the upper horizontal boundary \\(Q\\!-\\!R\\) is the maximum available electromagnetic torque, while \\(T_L(\\omega)\\) is the load-torque curve.",
+          "Select maximum torque while speeding up (path \\(O\\to Q\\to R\\)), then reduce electromagnetic torque to meet the load at the final point \\(S\\).",
+          "This trajectory gives the largest acceleration throughout the speed rise and therefore the shortest time. **Answer: (A), \\(O-Q-R-S\\).**"
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2023-EE-Q22",
@@ -1132,7 +1157,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 18,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Coil pitch in a spatial multipole magnetic field",
+        "steps": [
+          "The four equal DC stator currents are positioned as shown: the top and bottom conductors carry current into the page, while the left and right conductors carry it out. This produces a stationary **four-pole spatial field**.",
+          "Each rotor coil \\(a-a'\\) or \\(b-b'\\) connects diametrically opposite conductors (a span of \\(180^\\circ\\) mechanical). For this four-pole field, opposite conductors span two pole pitches.",
+          "The induced contributions from each pair cancel for that coil connection; rotating the rotor does not create a net changing flux linkage across either complete coil.",
+          "Thus \\(E_{a-a'}=E_{b-b'}=0\\). **Answer: (D).**"
+        ],
+        "examTip": "A full-pitched coil for a four-pole field spans 90 mechanical degrees, not 180 degrees.",
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2023-EE-Q53",
@@ -1154,7 +1191,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 37,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Transformer turns, magnetizing inductance, and leakage inductance",
+        "mathFormula": "\\[\\begin{aligned}\\Phi_{\\max}&=B_{\\max}A_c=0.005\\text{ Wb}\\\\N_1&=\\frac{200}{4.44\\cdot50\\cdot0.005}\\approx180.18\\\\L_1&=\\frac{\\mu_0\\mu_rN_1^2A_c}{\\ell_c}+L_{\\ell1}\\approx2.0398+0.16=2.1998\\text{ H}\\end{aligned}\\]",
+        "steps": [
+          "Core area is \\(A_c=5000\\,\\mathrm{mm}^2=0.005\\,\\mathrm m^2\\). With \\(B_{\\max}=1\\,\\mathrm{Wb/m}^2\\), peak mutual flux is \\(\\Phi_{\\max}=0.005\\) Wb.",
+          "For the open-circuit 200 V rms winding \\(a-b\\), the sinusoidal emf relation \\(E=4.44fN_1\\Phi_{\\max}\\) gives \\(N_1=200/(4.44\\cdot50\\cdot0.005)\\approx180.18\\) turns.",
+          "The magnetizing inductance referred to that winding is \\(L_m=(\\mu_0\\mu_rN_1^2A_c)/\\ell_c\\), with \\(\\ell_c=0.5\\) m and \\(\\mu_r=5000\\), yielding \\(L_m\\approx2.0398\\) H.",
+          "The given \\(a-b\\) leakage impedance has reactance \\(j100\\pi\\cdot0.16=j\\omega L_{\\ell1}\\), hence leakage inductance \\(L_{\\ell1}=0.16\\) H.",
+          "The self-inductance is \\(L_1=L_m+L_{\\ell1}=2.1998\\) H \\(=\\mathbf{2199.8}\\) mH, approximately 2200 mH (within the official tolerance)."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2022-EE-Q62",
@@ -1176,7 +1226,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ee_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ee_2022.pdf",
       "pdfPage": 35,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "DC motor back emf and speed-proportional load torque",
+        "mathFormula": "\\[\\begin{aligned}E_1&=280-30(1)=250\\text{ V}\\\\E_2&=250\\frac{N_2}{1000},\\quad I_2=30\\frac{N_2}{1000}\\\\280&=E_2+11I_2=0.58N_2\\Rightarrow N_2\\approx483\\text{ rpm}\\end{aligned}\\]",
+        "steps": [
+          "Initially, back emf is \\(E_1=V-I_aR_a=280-30(1)=250\\) V at 1000 rpm. With fixed flux, \\(E\\propto N\\), so \\(E_2=250(N_2/1000)\\).",
+          "Motor torque is proportional to \\(I_a\\) when field excitation is constant. Since load torque is proportional to speed, \\(I_{a2}=30(N_2/1000)\\) A.",
+          "The new series resistance is \\(R_{\\rm total}=1+10=11\\,\\Omega\\). Substitute into \\(V=E+IR\\): \\(280=0.25N_2+11(0.03N_2)=0.58N_2\\).",
+          "Thus \\(N_2=280/0.58=482.76\\) rpm, rounded to **483 rpm**."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2026-EE-Q59",
@@ -1198,7 +1260,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EE.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EE_Keys.pdf",
       "pdfPage": 54,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Slip proportional to rotor resistance at constant torque (low-slip region)",
+        "mathFormula": "\\[\\frac{s_2}{s_1}=\\frac{r_2+0.27}{r_2}=\\frac{1500-1404}{1500-1476}=4\\quad\\Rightarrow\\quad r_2=0.09\\,\\Omega\\]",
+        "steps": [
+          "Synchronous speed is \\(N_s=120f/P=120(50)/4=1500\\) rpm.",
+          "Before resistance insertion, slip \\(s_1=(1500-1476)/1500=0.016\\). Afterwards, \\(s_2=(1500-1404)/1500=0.064\\).",
+          "For the same load torque in the normal low-slip range, \\(s\\) is proportional to the rotor circuit resistance. Thus \\(0.064/0.016=(r_2+0.27)/r_2=4\\).",
+          "Solve \\(4r_2=r_2+0.27\\), giving \\(r_2=0.27/3=\\mathbf{0.09}\\,\\Omega\\) per phase."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2022-EE-Q65",
@@ -1220,7 +1294,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ee_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ee_2022.pdf",
       "pdfPage": 36,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Autotransformer reduced-voltage starting",
+        "mathFormula": "\\[I_{\\rm supply,start}=k^2I_{\\rm DOL}=k^2(5I_{\\rm rated})=2I_{\\rm rated}\\ \\Rightarrow\\ k=\\sqrt{2/5}=0.6325\\]",
+        "steps": [
+          "Direct-on-line starting current is \\(5I_{\\rm rated}\\). Let \\(k=V_{\\rm motor}/V_{\\rm supply}\\) be the autotransformer voltage ratio.",
+          "At reduced motor voltage, motor starting current becomes \\(k(5I_{\\rm rated})\\). The line current drawn from the source is another factor \\(k\\) smaller for an ideal autotransformer.",
+          "Therefore \\(I_{\\rm supply,start}=5k^2I_{\\rm rated}\\). Setting it to \\(2I_{\\rm rated}\\) gives \\(k^2=2/5\\).",
+          "Hence \\(k=\\sqrt{0.4}=0.63246\\), so **0.63** to two decimals."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2026-EE-Q41",
@@ -1242,7 +1328,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EE.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EE_Keys.pdf",
       "pdfPage": 37,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Bus-admittance matrix of a complex off-nominal transformer tap",
+        "mathFormula": "\\[\\begin{bmatrix}I_P\\\\I_S\\end{bmatrix}=\\begin{bmatrix}y_t/|a|^2&-y_t/a^*\\\\-y_t/a&y_t\\end{bmatrix}\\begin{bmatrix}V_P\\\\V_S\\end{bmatrix},\\quad a=0.866+j0.5\\]",
+        "steps": [
+          "The transformer complex voltage ratio is \\(a=V_P/V_S=0.866+j0.5\\). Its magnitude is approximately 1 and its conjugate is \\(a^*=0.866-j0.5\\).",
+          "With leakage admittance \\(y_t\\) referred to the secondary and no magnetizing branch, the off-nominal transformer contributes \\(Y_{PP}=y_t/|a|^2\\), \\(Y_{SS}=y_t\\), \\(Y_{PS}=-y_t/a^*\\), \\(Y_{SP}=-y_t/a\\).",
+          "Since \\(|a|\\approx1\\), both diagonal entries are \\(y_t\\), but the off-diagonal entries have *opposite conjugate denominators*.",
+          "The matching choice is **(D)**."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2023-EE-Q30",
@@ -1264,7 +1362,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 24,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "DC motor voltage control at unchanged load torque",
+        "mathFormula": "\\[N_2=1500\\,\\frac{360-15(1.2)}{400-15(1.2)}=1500\\frac{342}{382}\\approx1343\\text{ rpm}\\]",
+        "steps": [
+          "Because field current stays unchanged, flux remains constant. The load torque is constant, so the armature current remains at its original 15 A.",
+          "Original back emf is \\(E_1=400-(15)(1.2)=382\\) V. The supply drops 10% to \\(V_2=360\\) V, giving new back emf \\(E_2=360-18=342\\) V.",
+          "With constant flux, speed is proportional to back emf: \\(N_2/N_1=E_2/E_1\\).",
+          "Therefore \\(N_2=1500(342/382)=1342.93\\) rpm, rounded to **1343 rpm**."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     },
     {
       "id": "2024-EE-Q55",
@@ -1286,7 +1396,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
       "pdfPage": 41,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Separating no-load losses from armature copper loss",
+        "mathFormula": "\\[220I=5000+220+438+\\frac12(I-1)^2\\quad\\Rightarrow\\quad I\\approx27.29\\,\\mathrm A\\]",
+        "steps": [
+          "At no load, line current is 3 A and field current is 1 A, so no-load armature current is \\(I_{a0}=2\\) A. No-load input is \\(220(3)=660\\) W.",
+          "Field copper loss is \\(220(1)=220\\) W. No-load armature copper loss is \\(I_{a0}^2R_a=2^2(0.5)=2\\) W. Hence constant rotational/core loss is \\(660-220-2=438\\) W.",
+          "At rated shaft output 5000 W, let the new line current be \\(I\\), so armature current is \\(I_a=I-1\\). Power balance: \\(220I=5000+220+438+0.5(I-1)^2\\).",
+          "Solving the quadratic yields approximately \\(I=27.29\\) A or \\(I=414.71\\) A. The smaller-current solution gives the best efficiency and is physically relevant.",
+          "Thus line current is **27.29 A**, matching the official accepted interval."
+        ],
+        "verificationBasis": "Original GATE source question screenshot and matching key"
+      }
     }
   ],
   "revisionId": "maths-focus-2026-11-24-v2",
