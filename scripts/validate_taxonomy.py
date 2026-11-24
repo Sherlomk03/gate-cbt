@@ -44,6 +44,7 @@ def main():
                     assert not MATH_GUARD.search((q.get("sourceExtract") or "")[:480]),(
                         "Wrong-subject math PYQ",q["id"])
     assert len(bank)==650
+    base_eligible_count=sum(q.get("selectionEligible") is True for q in bank.values())
     # Only explicitly audited historical questions are eligible for daily use.
     # Key and crop checks are performed against the locked official-source record.
     VERIFIED=pathlib.Path("pyq/historical/verified")
@@ -67,9 +68,7 @@ def main():
     summary=json.loads((BANK/"taxonomy-summary.json").read_text(encoding="utf-8"))
     assert summary["technicalQuestions"]==550
     assert summary["changedSubjectCount"]==44
-    assert summary["eligibleForDaily"]==sum(
-        q.get("selectionEligible") is True for q in bank.values()
-    )
+    assert summary["eligibleForDaily"]==base_eligible_count
     for correction in summary["subjectCorrections"]:
         actual=bank[correction["id"]]
         assert actual["subject"]==correction["to"],correction["id"]
