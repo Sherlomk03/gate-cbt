@@ -1,0 +1,48 @@
+{
+  "year": 2020,
+  "branch": "EE",
+  "session": 5,
+  "verificationStatus": "question_level_official_key_and_image_audited",
+  "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2020/ee_2020.pdf",
+  "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2020/ee_2020.pdf",
+  "imageBase": "./pyq/historical/",
+  "sourcePdfSha256": "58a2d8e4e88d6f60af965404f92fdce4af17c080cbc766ed1e7812758ce8d385",
+  "questionCount": 1,
+  "questionEligibilityNote": "Only the listed source-image-reviewed questions; unreviewed candidates remain quarantined",
+  "sourceYears": [
+    2020
+  ],
+  "subjects": {
+    "Engineering Mathematics": 1
+  },
+  "questions": [
+    {
+      "id": "2020-EE-S5-Q05",
+      "number": 5,
+      "section": "EE",
+      "year": 2020,
+      "branch": "EE",
+      "session": 5,
+      "sessionVerified": true,
+      "type": "MCQ",
+      "marks": 1,
+      "officialKey": "C",
+      "keyVerifiedForQuestion": true,
+      "imagePath": "crops/2020-EE-S5/Q05.webp",
+      "imageCropReviewed": true,
+      "imageAuditStatus": "manually_inspected_full_question",
+      "imageStartPage": 4,
+      "imageEndPage": 4,
+      "subject": "Engineering Mathematics",
+      "topic": "Complex Variables · Contour Integration",
+      "selectionEligible": true,
+      "taxonomyReviewStatus": "source_image_audited",
+      "classificationStatus": "manually_audited_source_image",
+      "sourceExtract": "Q.No. 5 (A) (B) (C) (D)",
+      "sourcePdfSha256": "58a2d8e4e88d6f60af965404f92fdce4af17c080cbc766ed1e7812758ce8d385",
+      "classificationMethod": "source PDF original screenshot reviewed alongside official answer table",
+      "sourceType": "official_gate",
+      "officialGatePYQ": true
+    }
+  ]
+}
