@@ -37,7 +37,8 @@
     "No 2010-2021 question can enter the daily CBT until a matched official answer key, exact source image, subject review, and uniqueness checks pass.",
     "Keep question ID as YEAR-BRANCH-SESSION-QNUMBER for multiple-session papers to avoid collisions.",
     "2010 original paper uses different technical/GA numbering and linked-answer conventions; do not treat like later CBT.",
-    "Control Systems is in the collection request but remains excluded from the technical daily test unless the user changes that rule."
+    "Control Systems is in the collection request but remains excluded from the technical daily test unless the user changes that rule.",
+    "For older PDFs not reachable through the IIT Kanpur mirror, the GATE 2027 official download page links a Google Drive bulk archive of source question papers 2007–2026."
   ],
   "papers": [
     {
@@ -502,5 +503,7 @@
     "totalChecked": 24,
     "verifiedPdf": 6,
     "unresolved": 18
-  }
+  },
+  "officialBulkArchiveUrl": "https://drive.google.com/drive/folders/1xUn7rGTzKlfvJDoo4SzCRi8jRlBD63ud?usp=sharing",
+  "officialBulkArchiveSource": "https://gate2027.iitm.ac.in/download"
 }
