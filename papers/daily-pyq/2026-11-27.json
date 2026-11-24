@@ -287,27 +287,27 @@
       "imageAuditStatus": "automatic_boundary_needs_visual_review"
     },
     {
-      "id": "2024-EC-Q62",
-      "sourceId": "GATE 2024 EC Q62",
+      "id": "2024-EE-Q14",
+      "sourceId": "GATE 2024 EE Q14",
       "year": 2024,
-      "branch": "EC",
-      "questionNumber": 62,
+      "branch": "EE",
+      "questionNumber": 14,
       "subject": "Network Theory",
-      "topic": "Maximum Power Transfer",
+      "topic": "Inductor Switching Transients",
       "classificationStatus": "manually_audited_source_text",
       "taxonomyReviewStatus": "source_text_audited",
       "selectionEligibleForFuture": true,
       "classificationMethod": "Subject/topic assigned after reviewing official question extract; original screenshot is primary source",
       "mathsFocusTopic": null,
       "mathsFocusSourceTextScreened": false,
-      "sourceExcerpt": "Q.62 In the network shown below, maximum power is to be transferred to the load 𝑅𝐿. 2 3 - vx + - + 2 vx 50 V RL The value of 𝑅𝐿 (in Ω) is ________ . Page 45 of 46 Organizing Institute: IISc, Bengaluru Electronics and Com",
-      "type": "NAT",
-      "marks": 2,
-      "officialKey": "2.5 to 2.5",
-      "imagePath": "./pyq/five-years/crops/2024-EC/Q62.webp",
-      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EC24S7.pdf",
-      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/ECFinalAnswerKey.pdf",
-      "pdfPage": 45,
+      "sourceExcerpt": "Q.14 The circuit shown in the figure with the switch 𝑆 open, is in steady state. After the switch 𝑆 is closed, the time constant of the circuit in seconds is 𝑆 1 Ω 1 H 1 Ω 1 H 1 A 1 H 1 H (A) 1.25 (B) 0 (C) 1 (D) 1.5 ",
+      "type": "MCQ",
+      "marks": 1,
+      "officialKey": "A",
+      "imagePath": "./pyq/five-years/crops/2024-EE/Q14.webp",
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
+      "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
+      "pdfPage": 13,
       "imageAuditStatus": "automatic_boundary_needs_visual_review"
     },
     {
@@ -1021,5 +1021,6 @@
   ],
   "revisionId": "historical-2020-verified-v1-2026-11-27",
   "revisionNote": "Updated 24 Nov 2026 with individually source-image-reviewed official 2020 GATE EE/EC questions. Any saved attempt on an earlier revision is locally backed up and unchanged answers are preserved.",
-  "historical2020VerifiedCount": 6
+  "historical2020VerifiedCount": 6,
+  "repeatAuditNote": "Historical 2020 update; duplicate-source IDs rebalanced to prioritize unused verified PYQs. Repeats accurately counted relative to earlier published paper dates."
 }
