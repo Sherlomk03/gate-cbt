@@ -8,7 +8,7 @@ from zoneinfo import ZoneInfo
 import json,pathlib,hashlib,random,re,sys
 
 ROOT=pathlib.Path("pyq/five-years")
-HISTORICAL_VERIFIED=pathlib.Path("pyq/historical/verified")  # never read raw staging papers
+HISTORICAL_VERIFIED=pathlib.Path("pyq/historical/verified")  # only individually image-and-official-key-reviewed 2020–2021 sources; never raw staging
 OUT=pathlib.Path("papers/daily-pyq")
 OUT.mkdir(parents=True,exist_ok=True)
 START=date(2026,11,21)
