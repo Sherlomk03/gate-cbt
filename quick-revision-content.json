@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "usage": "General GATE EE/EC pre-exam refresher formulas and rapid checks, not official exam questions or keys",
   "packs": [
     {
@@ -609,6 +609,435 @@
       "pitfall": "Convert SNR in dB to a linear ratio before Shannon's expression.",
       "question": "An 8-bit PCM sampler at 10 kHz has what raw bit rate?",
       "answer": "80 kbps."
+    },
+    {
+      "id": "matrix-definite",
+      "subject": "Engineering Mathematics",
+      "title": "Positive definite matrices",
+      "patterns": [
+        "positive definite",
+        "positive semidefinite",
+        "quadratic form",
+        "matrix definiteness"
+      ],
+      "formula": [
+        "x^TAx>0\\quad\\forall x\\ne0",
+        "A=A^T,\\ A\\succ0\\ \\Longleftrightarrow\\ \\lambda_i(A)>0"
+      ],
+      "pitfall": "Eigenvalue criterion applies to a real symmetric matrix; use the Hermitian analogue for complex matrices.",
+      "question": "If a symmetric matrix has eigenvalues 2 and −1, is it positive definite?",
+      "answer": "No; one eigenvalue is negative."
+    },
+    {
+      "id": "matrix-diag",
+      "subject": "Engineering Mathematics",
+      "title": "Diagonalization and eigenvectors",
+      "patterns": [
+        "diagonalizable",
+        "diagonalization",
+        "eigenvectors",
+        "characteristic polynomial"
+      ],
+      "formula": [
+        "A=PDP^{-1}",
+        "\\det(A-\\lambda I)=0"
+      ],
+      "pitfall": "Repeated eigenvalues need not have enough independent eigenvectors for diagonalization.",
+      "question": "Is every real symmetric matrix diagonalizable?",
+      "answer": "Yes, by an orthogonal matrix (spectral theorem)."
+    },
+    {
+      "id": "prob-bayes",
+      "subject": "Engineering Mathematics",
+      "title": "Bayes' theorem and independence",
+      "patterns": [
+        "bayes",
+        "independent events",
+        "conditional probability",
+        "total probability"
+      ],
+      "formula": [
+        "P(A\\mid B)=\\frac{P(B\\mid A)P(A)}{P(B)}",
+        "P(A\\cap B)=P(A)P(B)\\quad\\text{if independent}"
+      ],
+      "pitfall": "Independence and mutual exclusivity are different. For nonzero probabilities they cannot both hold.",
+      "question": "If P(A)=0.3 and P(B)=0.4, independent: P(A∩B)?",
+      "answer": "0.12."
+    },
+    {
+      "id": "complex-cr",
+      "subject": "Engineering Mathematics",
+      "title": "Analyticity and Cauchy–Riemann",
+      "patterns": [
+        "cauchy-riemann",
+        "analytic",
+        "holomorphic",
+        "entire function",
+        "complex differentiable"
+      ],
+      "formula": [
+        "u_x=v_y,\\quad u_y=-v_x",
+        "f'(z)=u_x+jv_x\\quad\\text{when analytic}"
+      ],
+      "pitfall": "Cauchy–Riemann at an isolated point alone does not prove analyticity throughout a neighbourhood.",
+      "question": "Is f(z)=|z|² analytic on an open set?",
+      "answer": "No."
+    },
+    {
+      "id": "network-superposition",
+      "subject": "Network Theory",
+      "title": "Superposition and dependent sources",
+      "patterns": [
+        "superposition",
+        "dependent source",
+        "independent source",
+        "source transformation"
+      ],
+      "formula": [
+        "v=v_1+v_2+\\cdots\\quad(\\text{linear circuit})",
+        "R_{\\mathrm{eq}}=\\frac{V_{\\mathrm{test}}}{I_{\\mathrm{test}}}"
+      ],
+      "pitfall": "Suppress independent voltage sources by shorting and independent current sources by opening. Do not suppress dependent sources.",
+      "question": "When checking the effect of one current source, what replaces another independent ideal current source?",
+      "answer": "An open circuit."
+    },
+    {
+      "id": "network-resonance",
+      "subject": "Network Theory",
+      "title": "Series RLC resonance and Q factor",
+      "patterns": [
+        "series resonance",
+        "quality factor",
+        "resonant frequency",
+        "rlc bandwidth"
+      ],
+      "formula": [
+        "\\omega_0=\\frac1{\\sqrt{LC}}",
+        "Q=\\frac{\\omega_0L}{R}=\\frac1{\\omega_0CR}\\quad(\\text{series RLC})"
+      ],
+      "pitfall": "Series resonance cancels reactance but leaves resistance; in parallel RLC current and impedance trends differ.",
+      "question": "At series resonance, what is input impedance of ideal series RLC?",
+      "answer": "R, purely resistive."
+    },
+    {
+      "id": "analog-slew",
+      "subject": "Analog Electronics",
+      "title": "Op-amp slew rate and gain bandwidth",
+      "patterns": [
+        "slew rate",
+        "gain bandwidth",
+        "gain-bandwidth",
+        "op amp bandwidth",
+        "op-amp frequency response"
+      ],
+      "formula": [
+        "\\mathrm{SR}\\ge2\\pi f V_{\\mathrm{pk}}",
+        "|A_{CL}|\\,f_{BW}\\approx \\mathrm{GBW}\\quad(\\text{single dominant pole})"
+      ],
+      "pitfall": "Slew-rate distortion is a large-signal constraint, distinct from small-signal closed-loop bandwidth.",
+      "question": "For a 1 V peak sine at 1 MHz, minimum slew rate?",
+      "answer": "≈6.28 V/μs."
+    },
+    {
+      "id": "analog-diode",
+      "subject": "Analog Electronics",
+      "title": "Diodes: bias and small-signal resistance",
+      "patterns": [
+        "diode equation",
+        "diode transfer",
+        "small signal diode",
+        "diode resistance",
+        "pn junction"
+      ],
+      "formula": [
+        "I_D\\approx I_S(e^{V_D/(nV_T)}-1)",
+        "r_d\\approx\\frac{nV_T}{I_D}\\quad(I_D\\gg I_S)"
+      ],
+      "pitfall": "The small-signal resistance is the inverse slope at the DC operating point, not the DC ratio V/I.",
+      "question": "If diode current doubles at fixed temperature, what happens to r_d approximately?",
+      "answer": "It halves."
+    },
+    {
+      "id": "analog-diff",
+      "subject": "Analog Electronics",
+      "title": "Differential amplifier fundamentals",
+      "patterns": [
+        "differential amplifier",
+        "common mode rejection",
+        "cmrr",
+        "instrumentation amplifier"
+      ],
+      "formula": [
+        "V_d=V_1-V_2,\\quad V_{cm}=\\frac{V_1+V_2}{2}",
+        "\\mathrm{CMRR}=|A_d/A_{cm}|"
+      ],
+      "pitfall": "CMRR is a gain ratio (often quoted in dB); do not mistake it for differential gain alone.",
+      "question": "For Ad=1000 and Acm=0.1, CMRR?",
+      "answer": "10,000 (80 dB)."
+    },
+    {
+      "id": "digital-kmap",
+      "subject": "Digital Electronics",
+      "title": "Karnaugh maps and minimization",
+      "patterns": [
+        "karnaugh",
+        "k-map",
+        "kmap",
+        "minterm",
+        "don't care",
+        "boolean minimization"
+      ],
+      "formula": [
+        "2^n\\ \\text{minterms for }n\\text{ binary variables}",
+        "A+\\bar A=1,\\quad A\\bar A=0"
+      ],
+      "pitfall": "Adjacent K-map cells differ in only one variable. Groups must have sizes 1, 2, 4, 8, …; wrap-around adjacency is allowed.",
+      "question": "How many minterms in a Boolean function of 4 variables?",
+      "answer": "16."
+    },
+    {
+      "id": "digital-counters",
+      "subject": "Digital Electronics",
+      "title": "Counters and flip-flop requirements",
+      "patterns": [
+        "mod counter",
+        "counter design",
+        "flip flop",
+        "flip-flop",
+        "frequency divider"
+      ],
+      "formula": [
+        "n_{\\mathrm{FF}}=\\lceil\\log_2 N\\rceil\\quad(\\text{MOD-}N\\text{ counter})",
+        "f_{\\mathrm{out}}=\\frac{f_{\\mathrm{in}}}{2^n}\\quad(\\text{ideal }n\\text{-stage binary divider})"
+      ],
+      "pitfall": "A MOD-10 counter needs 4 flip-flops, but 6 of its 16 possible states are unused.",
+      "question": "Minimum flip-flops for MOD-13 counter?",
+      "answer": "4."
+    },
+    {
+      "id": "signals-scaling",
+      "subject": "Signals & Systems",
+      "title": "Time scaling and frequency-domain effects",
+      "patterns": [
+        "time scaling",
+        "frequency scaling",
+        "time compression",
+        "frequency duality"
+      ],
+      "formula": [
+        "x(at)\\longleftrightarrow\\frac1{|a|}X(j\\omega/a)",
+        "x(-t)\\longleftrightarrow X(-j\\omega)"
+      ],
+      "pitfall": "Compressing a signal in time expands its spectrum in frequency. Include the 1/|a| amplitude factor.",
+      "question": "For x(2t), what is its Fourier transform?",
+      "answer": "(1/2)X(jω/2)."
+    },
+    {
+      "id": "signals-energy",
+      "subject": "Signals & Systems",
+      "title": "Energy signals and Parseval's theorem",
+      "patterns": [
+        "signal energy",
+        "energy spectral density",
+        "energy signal",
+        "parseval energy",
+        "square integrable"
+      ],
+      "formula": [
+        "E=\\int_{-\\infty}^{\\infty}|x(t)|^2dt",
+        "E=\\frac1{2\\pi}\\int_{-\\infty}^{\\infty}|X(j\\omega)|^2d\\omega"
+      ],
+      "pitfall": "A nonzero finite-amplitude periodic continuous-time signal generally has infinite energy but finite average power.",
+      "question": "Does a nonzero sine wave over all time have finite energy?",
+      "answer": "No; infinite energy and finite average power."
+    },
+    {
+      "id": "power-buck-boost",
+      "subject": "Power Electronics",
+      "title": "DC–DC converters: buck and boost",
+      "patterns": [
+        "buck converter",
+        "boost converter",
+        "chopper duty",
+        "dc-dc",
+        "duty cycle"
+      ],
+      "formula": [
+        "V_o=D V_{in}\\quad(\\text{ideal buck, CCM})",
+        "V_o=\\frac{V_{in}}{1-D}\\quad(\\text{ideal boost, CCM})"
+      ],
+      "pitfall": "These formulas assume steady-state continuous-conduction mode and ideal switching. They do not apply unchanged in DCM.",
+      "question": "An ideal buck converter has D=0.4, Vin=20 V. Output?",
+      "answer": "8 V."
+    },
+    {
+      "id": "power-rectifier6",
+      "subject": "Power Electronics",
+      "title": "Three-phase diode bridge rectifiers",
+      "patterns": [
+        "three-phase rectifier",
+        "six pulse",
+        "six-pulse",
+        "rectifier average"
+      ],
+      "formula": [
+        "V_{dc}\\approx1.35\\,V_{LL,\\mathrm{rms}}",
+        "f_{\\mathrm{ripple}}=6f\\quad(\\text{ideal six-pulse})"
+      ],
+      "pitfall": "The 1.35 factor is for an ideal three-phase full bridge with continuous DC current and negligible overlap.",
+      "question": "At 50 Hz mains, six-pulse ripple frequency?",
+      "answer": "300 Hz."
+    },
+    {
+      "id": "machine-transformer",
+      "subject": "Electrical Machines",
+      "title": "Transformer EMF and turns ratio",
+      "patterns": [
+        "transformer",
+        "turns ratio",
+        "magnetizing",
+        "open circuit test",
+        "core flux"
+      ],
+      "formula": [
+        "E_{\\mathrm{rms}}\\approx4.44fN\\Phi_{\\max}",
+        "\\frac{V_1}{V_2}\\approx\\frac{N_1}{N_2}\\quad(\\text{ideal transformer})"
+      ],
+      "pitfall": "Use peak flux Φmax, not rms flux. Copper and leakage effects make terminal and induced voltage differ on load.",
+      "question": "If turns ratio N1/N2=2, ideal secondary voltage for 230 V primary?",
+      "answer": "115 V."
+    },
+    {
+      "id": "machine-airgap",
+      "subject": "Electrical Machines",
+      "title": "Induction motor rotor power flow",
+      "patterns": [
+        "air gap power",
+        "air-gap power",
+        "rotor copper",
+        "rotor losses",
+        "induction torque",
+        "mechanical power"
+      ],
+      "formula": [
+        "P_{\\mathrm{rotor\\,Cu}}=sP_g",
+        "P_{\\mathrm{mech,developed}}=(1-s)P_g"
+      ],
+      "pitfall": "Developed mechanical power is before friction and windage; shaft output is lower.",
+      "question": "For air-gap power 10 kW and slip 4%, rotor copper loss?",
+      "answer": "0.4 kW."
+    },
+    {
+      "id": "system-sequence",
+      "subject": "Power Systems",
+      "title": "Symmetrical components",
+      "patterns": [
+        "symmetrical components",
+        "zero sequence",
+        "positive sequence",
+        "negative sequence",
+        "unbalanced fault"
+      ],
+      "formula": [
+        "V_0=\\frac{V_a+V_b+V_c}{3}",
+        "a=e^{j2\\pi/3},\\quad 1+a+a^2=0"
+      ],
+      "pitfall": "In a balanced positive-sequence system the zero-sequence component is zero. Phase rotation matters.",
+      "question": "For three balanced phasors 120° apart, Va+Vb+Vc?",
+      "answer": "Zero."
+    },
+    {
+      "id": "system-pf",
+      "subject": "Power Systems",
+      "title": "Power factor correction and capacitor sizing",
+      "patterns": [
+        "power factor correction",
+        "capacitor bank",
+        "reactive power compensation",
+        "reactive compensation"
+      ],
+      "formula": [
+        "Q_c=P(\\tan\\phi_1-\\tan\\phi_2)",
+        "I_c=\\frac{Q_c}{\\sqrt3V_{LL}}\\quad(\\text{balanced three-phase})"
+      ],
+      "pitfall": "A capacitor changes reactive power but does not directly reduce required real load power.",
+      "question": "If Q before=100 kVAr and Q after=30 kVAr, required capacitor reactive power?",
+      "answer": "70 kVAr."
+    },
+    {
+      "id": "control-routh",
+      "subject": "Control Systems",
+      "title": "Routh–Hurwitz stability test",
+      "patterns": [
+        "routh hurwitz",
+        "routh table",
+        "routh array",
+        "number of unstable poles"
+      ],
+      "formula": [
+        "\\text{First-column sign changes}=\\text{number of RHP roots}",
+        "\\text{stable}\\ \\Longrightarrow\\ \\text{no RHP roots}"
+      ],
+      "pitfall": "Special cases such as zero first-column elements or a zero row need auxiliary procedures; don't ignore them.",
+      "question": "If a Routh array's first column has two sign changes, how many RHP roots?",
+      "answer": "Two."
+    },
+    {
+      "id": "control-rootlocus",
+      "subject": "Control Systems",
+      "title": "Root locus geometry",
+      "patterns": [
+        "root locus",
+        "departure angle",
+        "arrival angle",
+        "breakaway point"
+      ],
+      "formula": [
+        "1+K G(s)H(s)=0",
+        "\\theta_{\\mathrm{asym}}=\\frac{(2q+1)180^\\circ}{n-m}"
+      ],
+      "pitfall": "For positive K, real-axis segments are on the root locus when the number of real open-loop poles and zeros to their right is odd.",
+      "question": "With 3 poles and 1 finite zero, how many asymptotes?",
+      "answer": "2."
+    },
+    {
+      "id": "comm-amfm",
+      "subject": "Communication Systems",
+      "title": "AM and FM bandwidth basics",
+      "patterns": [
+        "am modulation",
+        "fm bandwidth",
+        "carson rule",
+        "frequency modulation",
+        "amplitude modulation"
+      ],
+      "formula": [
+        "B_{\\mathrm{AM}}=2f_{m,\\max}\\quad(\\text{conventional DSB-AM})",
+        "B_{\\mathrm{FM}}\\approx2(\\Delta f+f_{m,\\max})\\quad(\\text{Carson})"
+      ],
+      "pitfall": "Carson's rule approximates significant FM bandwidth; it is not a strict bandlimit.",
+      "question": "Conventional AM with highest modulating frequency 5 kHz needs how much bandwidth?",
+      "answer": "10 kHz."
+    },
+    {
+      "id": "em-fields",
+      "subject": "Electromagnetics",
+      "title": "Poynting vector and wave impedance",
+      "patterns": [
+        "poynting",
+        "plane wave",
+        "wave impedance",
+        "energy flux"
+      ],
+      "formula": [
+        "\\mathbf S=\\mathbf E\\times\\mathbf H",
+        "\\eta_0=\\sqrt{\\mu_0/\\epsilon_0}\\approx377\\ \\Omega"
+      ],
+      "pitfall": "Poynting vector is power flux density; for time-harmonic fields the average uses (1/2)Re{E×H*} with peak phasors.",
+      "question": "For a free-space plane wave E=377 V/m rms, H rms?",
+      "answer": "1 A/m."
     }
-  ]
+  ],
+  "lastContentReviewIST": "2026-11-24",
+  "sourceNote": "General GATE EE/EC formula reminders, not original GATE/ACE questions; topic priority calculated locally from authentic submitted CBT grading and separately labelled qualitative practice flags."
 }
