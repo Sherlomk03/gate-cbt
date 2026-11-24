@@ -6,13 +6,13 @@
       "date": "2026-11-27",
       "id": "gate-daily-pyq-2026-11-27",
       "file": "2026-11-27.json",
-      "repeatCount": 14
+      "repeatCount": 15
     },
     {
       "date": "2026-11-26",
       "id": "gate-daily-pyq-2026-11-26",
       "file": "2026-11-26.json",
-      "repeatCount": 2
+      "repeatCount": 0
     },
     {
       "date": "2026-11-25",
