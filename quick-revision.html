@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#142b4d">
+<title>GATE 2027 | Pre-exam Weak Topic Revision</title>
+<style>
+:root{font:15px/1.55 system-ui,-apple-system,Segoe UI,sans-serif;color:#172a45;background:#f5f7fb}
+*{box-sizing:border-box}body{margin:0}a{color:#215ca9}header{background:#142b4d;color:white;padding:16px max(15px,calc((100% - 1100px)/2));display:flex;gap:15px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+header h1{font-size:20px;margin:0}header small{color:#c5d5ee}nav{display:flex;gap:17px;flex-wrap:wrap}nav a{color:white}
+main{max-width:1100px;margin:0 auto;padding:20px 16px 44px}
+.intro{margin-bottom:14px}.intro h2{font-size:27px;line-height:1.22;margin:4px 0}.muted{color:#5f7087;font-size:13px}.small{font-size:12px;color:#63748b}
+.topbar{border:1px solid #dbe3ee;background:white;border-radius:13px;padding:17px 19px;display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.topbar strong{font-size:17px}.topbar p{margin:4px 0 0;color:#5c6e87}
+.actions{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+button,.btn{display:inline-block;background:#fff;border:1px solid #c8d6e6;border-radius:9px;padding:10px 14px;font:inherit;font-weight:650;color:#18345e;text-decoration:none;cursor:pointer}
+.btn.primary{background:#2463bd;color:white;border-color:#2463bd}button:hover,.btn:hover{filter:brightness(.97)}button:focus-visible,.btn:focus-visible,summary:focus-visible{outline:3px solid #7eabef;outline-offset:2px}
+.switches{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:19px 0 12px}
+.switches button{font-size:13px;padding:8px 13px}.switches button.active{background:#e7effd;border-color:#a6c2ed;color:#174c90}
+.meta-row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:10px 0 16px}
+.progress{background:#e5ebf5;height:7px;border-radius:9px;width:170px;overflow:hidden}.progress>div{height:100%;background:#2d71ba;width:0;transition:width .2s}
+.stack{display:grid;gap:13px}.card{background:white;border:1px solid #dae2ee;border-radius:12px;padding:17px 20px}
+.card-header{display:flex;justify-content:space-between;align-items:start;gap:10px;flex-wrap:wrap}
+.card-header h3{margin:3px 0 2px;font-size:18px}.pill{display:inline-block;padding:3px 8px;background:#eef3fa;border-radius:20px;color:#345179;font-size:12px;font-weight:600}
+.card .evidence{color:#6b7890;font-size:12px;margin:5px 0 11px}.formulas{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:8px}
+.formula{background:#f6f9fd;border:1px solid #e5edf8;padding:12px 14px;border-radius:8px;overflow-x:auto;font-size:15px;min-height:65px;display:flex;align-items:center;justify-content:center}
+.trap{font-size:13px;line-height:1.6;margin:11px 0;color:#3d5069}.trap strong{color:#243b61}
+details.check{background:#f9fbfe;border:1px solid #e3eaf5;border-radius:9px;margin-top:12px}
+details.check summary{cursor:pointer;padding:11px 12px;font-weight:650;font-size:13px}
+.check-answer{padding:0 12px 12px;font-size:13px;color:#38516c}.check-answer strong{display:block;margin-bottom:3px}
+.mark{font-size:12px;padding:7px 11px}.mark.done{background:#e8f6ed;border-color:#add6bb;color:#24623a}
+.notice{font-size:13px;color:#536984;border-left:3px solid #789cce;padding:8px 12px;background:#eef4fc;border-radius:6px;margin:14px 0}
+.notes{font-size:12px;color:#60738d;margin-top:15px}
+.empty{border:1px dashed #cbd7e6;background:white;border-radius:11px;padding:26px 20px;color:#62758c}
+footer{margin-top:24px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+mjx-container[display="true"]{max-width:100%;overflow-x:auto;overflow-y:hidden;padding:3px 0;margin:0!important}
+@media(max-width:650px){main{padding:15px 10px 28px}.intro h2{font-size:23px}.topbar{padding:14px}.card{padding:14px}.formula{min-height:60px}header h1{font-size:18px}}
+@media print{header,.switches,.actions,footer,.mark,.check summary{display:none!important}main{max-width:100%}.card{break-inside:avoid}details.check:not([open]){display:none}.topbar{border:0}}
+</style>
+<script>
+window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head>
+<body>
+<header><div><h1>GATE 2027 · Before the paper</h1><small>Fast revision · key formulas · mistake traps · recall</small></div>
+<nav><a href="./daily-pyq.html" id="headExam">Daily CBT</a><a href="./performance.html">Performance</a><a href="./index.html">Dashboard</a></nav></header>
+<main>
+<div class="intro"><div class="muted">PRE-EXAM CHECKLIST · 5 MINUTES</div><h2>Revise what costs you marks</h2><p class="muted" id="context">Checking your submitted tests and today's paper…</p></div>
+<div class="topbar">
+<div><strong id="headline">Your focused revision</strong><p id="subline">Small concepts. No long notes.</p></div>
+<div class="actions"><a class="btn primary" id="examLink" href="./daily-pyq.html">Open daily exam</a><a class="btn" href="./performance.html">Full analysis</a></div>
+</div>
+<div class="switches" role="group" aria-label="Revision scope">
+<button id="today" class="active" type="button">Today's paper subjects</button><button id="all" type="button">All weak areas</button>
+<span class="small" id="updated">Scores are private to this browser</span>
+</div>
+<div class="meta-row"><span id="status" class="muted" role="status">Loading your revision list…</span><div class="actions"><span id="complete" class="small">0 reviewed</span><div class="progress" role="progressbar" aria-label="Revision cards completed" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="progress"><div id="progressValue"></div></div></div></div>
+<div id="notes"></div><div class="stack" id="cards"></div>
+<footer><span class="small">Formula cards are concise general study reminders, not official GATE questions or worked PYQ solutions.</span><a class="btn primary" id="bottomExam" href="./daily-pyq.html">Open daily exam</a></footer>
+</main>
+<script>
+'use strict';
+const $=s=>document.querySelector(s);
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','&#39;':"'"}[c]));
+const PREFIX='gateCBT.realDaily.v1.',CHAT_KEY='gateCBT.chatHistory.v1',LEGACY_KEY='gateCBT.v2';
+const fixedLabels={
+ '2023-EC-Q52':{subject:'Electromagnetics',topic:'Transmission Lines / Standing Waves'},
+ '2026-EE-Q58':{subject:'Power Systems',topic:'Economic Dispatch / Transmission Losses'},
+ '2025-EC-Q41':{subject:'Communication Systems',topic:'Maximum-Likelihood Symbol Detection'},
+ '2024-EC-Q57':{subject:'Communication Systems',topic:'Quantization / SQNR'}
+};
+const aliases={'Mathematics':'Engineering Mathematics','Maths':'Engineering Mathematics','Networks':'Network Theory','Network':'Network Theory','Signals and Systems':'Signals & Systems','Signals':'Signals & Systems','Digital':'Digital Electronics','Analog':'Analog Electronics','EC':'Electronics and Communication'};
+const state={packs:[],paper:null,subjectMode:'today',selectedDate:'',rows:[],signals:[],reviewed:new Set(),issues:[],siteDates:new Set(),cacheReady:false};
+function dayIST(){const p=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Kolkata',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());const x=Object.fromEntries(p.map(v=>[v.type,v.value]));return x.year+'-'+x.month+'-'+x.day}
+function localRead(key){try{const o=JSON.parse(localStorage.getItem(key)||'null');return o&&typeof o==='object'?o:null}catch{return null}}
+function canonical(s){return aliases[s]||s||''}
+function clearText(s){return String(s||'').toLowerCase().replace(/[–—]/g,'-').replace(/&/g,'and').replace(/\s+/g,' ').trim()}
+function matchScore(pack,subject,topic){
+ const sub=canonical(subject),name=clearText(topic),full=clearText(sub+' '+topic);
+ if(sub&&pack.subject!==sub)return 0;
+ let score=0;
+ for(const word of pack.patterns){
+  const term=clearText(word);
+  if(name.includes(term)||full.includes(term)){
+   const broad=/^(linear algebra|probability|complex|transforms|lti|analog|digital|network|machine|amplifier|diode|signal|control|field|converter|logic)$/i.test(term);
+   score=Math.max(score, (broad?2:7)+Math.min(4,term.length/11));
+  }
+ }
+ return score;
+}
+function matched(subject,topic){
+ let best=null,max=0;
+ for(const p of state.packs){const score=matchScore(p,subject,topic);if(score>max){max=score;best=p}}
+ // A subject-specific basic refresher is preferable to a misleading unrelated formula.
+ if(!best&&subject){best=state.packs.find(p=>p.subject===canonical(subject))||null}
+ return best;
+}
+function qualitativeMatch(name){
+ const text=clearText(name);
+ const subject=/fourier|parseval|sinc|roc|z-transform|sampling|lti|convolution/.test(text)?'Signals & Systems'
+ :/routh|root locus|pi controller|nyquist stability/.test(text)?'Control Systems'
+ :/probability|complex|matrix|linear algebra|calculus/.test(text)?'Engineering Mathematics'
+ :/thevenin|rlc|network|kcl|kvl/.test(text)?'Network Theory'
+ :/op-amp|mosfet|bjt/.test(text)?'Analog Electronics'
+ :/sequential|flip flop|boolean|logic gates/.test(text)?'Digital Electronics':'';
+ return matched(subject,name);
+}
+function uniqueLetters(v){return [...new Set(String(v??'').toUpperCase().match(/[A-D]/g)||[])].sort().join('')}
+function acceptedRanges(k){
+ return String(k).replace(/[−–]/g,'-').split(/\s+OR\s+/i).flatMap(part=>{
+  const m=part.match(/(-?\d+(?:\.\d+)?)\s+to\s+(-?\d+(?:\.\d+)?)/i);
+  if(m)return [[Number(m[1]),Number(m[2])]];
+  const n=Number(part.trim());return Number.isFinite(n)?[[n-.005,n+.005]]:[];
+ });
+}
+function scoreAnswer(q,v){
+ if(/\bMTA\b/i.test(String(q.officialKey)))return 'MTA';
+ if(v===undefined||v===null||v===''||(Array.isArray(v)&&!v.length))return 'skipped';
+ const keys=String(q.officialKey).split(/\s+OR\s+/i);
+ let correct=false;
+ if(q.type==='MCQ')correct=keys.some(k=>String(v).trim().toUpperCase()===k.trim().toUpperCase());
+ else if(q.type==='MSQ')correct=keys.some(k=>uniqueLetters(Array.isArray(v)?v.join(''):v)===uniqueLetters(k));
+ else {const n=Number(v);correct=Number.isFinite(n)&&acceptedRanges(q.officialKey).some(r=>n>=r[0]&&n<=r[1])}
+ return correct?'correct':'wrong';
+}
+function storageKey(){return 'gateCBT.quickRevision.v1.'+state.selectedDate}
+function loadReviewed(){const x=localRead(storageKey());state.reviewed=new Set(Array.isArray(x?.ids)?x.ids:[])}
+function saveReviewed(){try{localStorage.setItem(storageKey(),JSON.stringify({ids:[...state.reviewed],updatedAt:new Date().toISOString()}))}catch(e){console.warn(e)}}
+function addSiteRows(date,paper,attempt){
+ if(!paper||!Array.isArray(paper.questions)||!attempt.answers)return;
+ const drift=!!(attempt.paperRevisionId&&paper.revisionId&&attempt.paperRevisionId!==paper.revisionId);
+ if(drift)state.issues.push('A saved attempt for '+date+' predates a paper revision. Only its still-matching answered question IDs are counted; changed or missing IDs are not treated as skipped.');
+ for(const q of paper.questions){
+  const has=Object.prototype.hasOwnProperty.call(attempt.answers,q.id);
+  if(drift&&!has)continue;
+  const status=scoreAnswer(q,attempt.answers[q.id]);
+  if(status==='MTA')continue;
+  const corrected=fixedLabels[q.id];
+  const subj=canonical(corrected?.subject||q.subject);
+  const topic=corrected?.topic||q.topic||'Unclassified';
+  const pack=matched(subj,topic);
+  if(!pack)continue;
+  state.rows.push({packId:pack.id,subject:subj,topic,date,status,marks:Number(q.marks)||1,sourceId:q.sourceId||q.id});
+ }
+ state.siteDates.add(date);
+}
+async function loadSiteResults(manifest){
+ const eligible=(manifest.papers||[]).filter(e=>/^\d{4}-\d{2}-\d{2}$/.test(e.date)&&e.file).map(e=>({entry:e,attempt:localRead(PREFIX+e.date)})).filter(x=>x.attempt?.submittedAt&&x.attempt.answers);
+ await Promise.all(eligible.map(async ({entry,attempt})=>{
+  try{const res=await fetch('./papers/daily-pyq/'+encodeURIComponent(entry.file),{cache:'no-store'});if(!res.ok)throw Error('HTTP '+res.status);const paper=await res.json();if(paper.date!==entry.date||!Array.isArray(paper.questions))throw Error('date or question mismatch');addSiteRows(entry.date,paper,attempt)}
+  catch(e){state.issues.push('Saved '+entry.date+' paper could not be loaded for accurate revision scoring ('+e.message+').')}
+ }));
+}
+function loadOlderSignals(){
+ const chat=localRead(CHAT_KEY);
+ if(chat?.schema==='gate-chat-history-v1'&&Array.isArray(chat.records))
+ for(const r of chat.records){
+  if(r.category==='daily'&&state.siteDates.has(r.date))continue;
+  for(const topic of r.reviewTopics||[]){const p=qualitativeMatch(topic);if(p)state.signals.push({id:p.id,text:String(topic),origin:'Earlier ChatGPT feedback'});}
+ }
+ const legacy=localRead(LEGACY_KEY);
+ for(const r of Array.isArray(legacy?.prior)?legacy.prior:[]){
+  if(r?.status!=='wrong'&&r?.status!=='skipped')continue;
+  if(String(r.paperId||'').startsWith('gate-daily-pyq-'))continue;
+  if(r.date&&state.siteDates.has(String(r.date)))continue;
+  const p=matched(canonical(r.subject),r.topic||'');
+  if(p)state.signals.push({id:p.id,text:String(r.topic||p.title),origin:'Earlier practice mistake'});
+ }
+}
+function aggregate(){
+ const m=new Map(state.packs.map(p=>[p.id,{pack:p,correct:0,wrong:0,skipped:0,total:0,missedMarks:0,lastDate:'',hints:0,topics:new Set()}]));
+ for(const r of state.rows){const v=m.get(r.packId);if(!v)continue;v.total++;v[r.status]++;if(r.status==='wrong'||r.status==='skipped')v.missedMarks+=r.marks;v.lastDate=r.date>v.lastDate?r.date:v.lastDate;v.topics.add(r.topic)}
+ for(const s of state.signals){const v=m.get(s.id);if(v)v.hints++}
+ return [...m.values()];
+}
+function pickItems(){
+ const allowed=new Set(state.paper?.subjects?.map(canonical)||[]);
+ const pool=aggregate().filter(x=>state.subjectMode==='all'||!allowed.size||allowed.has(x.pack.subject));
+ const seen=pool.filter(x=>x.wrong+x.skipped>0||x.hints>0);
+ seen.sort((a,b)=>{
+  const score=x=>x.missedMarks*3+x.wrong*2.5+x.skipped*1.2+x.hints*1.5-Math.min(3,x.correct*.3);
+  return score(b)-score(a)||b.lastDate.localeCompare(a.lastDate)||a.pack.title.localeCompare(b.pack.title);
+ });
+ const max=state.subjectMode==='all'?9:5;
+ if(seen.length){
+   const selected=seen.slice(0,max);
+   // A minimum of three short concepts helps even when only one missed topic exists.
+   if(state.subjectMode==='today'&&selected.length<3){
+    for(const v of pool.filter(x=>!selected.includes(x)).sort((a,b)=>Number(allowed.has(b.pack.subject))-Number(allowed.has(a.pack.subject))||a.pack.title.localeCompare(b.pack.title))){
+     if(selected.length>=3)break;
+     selected.push({...v,suggested:true});
+    }
+   }
+   return {items:selected,hasEvidence:true};
+ }
+ const preferred=['fourier','zroc','linear-core','probability','complex','network-thevenin','network-transient','network-ac','analog-opamp','digital-sequential','machines','power-electronics','power-systems'];
+ const starters=pool.sort((a,b)=>preferred.indexOf(a.pack.id)-preferred.indexOf(b.pack.id));
+ return {items:starters.slice(0,state.subjectMode==='all'?7:4).map(v=>({...v,suggested:true})),hasEvidence:false};
+}
+function render(){
+ const {items,hasEvidence}=pickItems(),today=state.subjectMode==='today',done=items.filter(x=>state.reviewed.has(x.pack.id)).length;
+ $('#today').classList.toggle('active',today);$('#all').classList.toggle('active',!today);
+ const totalSite=state.rows.length,flagCount=state.signals.length;
+ $('#headline').textContent=hasEvidence?'Your '+items.length+' revision priorities':'Suggested 5-minute refresh';
+ $('#subline').textContent=hasEvidence?'Ranked by missed marks and recurring mistakes from completed tests.':'No scored weak-topic evidence in this browser for this selection yet.';
+ $('#status').textContent=items.length+' compact cards · '+done+' reviewed · '+(totalSite?totalSite+' scored question records':'no scored question records')+(flagCount?' · '+flagCount+' earlier feedback flags':'');
+ $('#complete').textContent=done+' / '+items.length+' reviewed';
+ $('#progressValue').style.width=(items.length?100*done/items.length:0)+'%';$('#progress').setAttribute('aria-valuenow',String(items.length?Math.round(100*done/items.length):0));
+ $('#notes').innerHTML=(state.issues.length?'<div class="notice">'+state.issues.map(esc).join(' ')+'</div>':'')+
+  (hasEvidence?'<p class="small">Wrong and skipped counts are computed from submitted daily CBT answers. Earlier ChatGPT practice flags are qualitative, not additional scored answers. Topic labels in historical papers may be provisional.</p>':
+  '<p class="small">These are <b>suggested</b> subject refreshers, not claimed personal weak areas. Submit a daily CBT in this browser or import earlier test history from <a href="./performance.html">Performance</a> to prioritize actual mistakes.</p>');
+ $('#cards').innerHTML=items.length?items.map((v,i)=>{
+  const p=v.pack,finished=state.reviewed.has(p.id),misses=v.wrong+v.skipped;
+  const verdict=misses>=2&&v.total>=3?'Needs revision':misses?'Recent mistake · limited evidence':v.hints?'Earlier feedback flag':'Suggested refresher';
+  const evidence=v.total?(v.wrong+' wrong · '+v.skipped+' skipped · '+v.correct+' correct across '+v.total+' questions'):(v.hints?v.hints+' earlier review flag(s)':'No scored result for this topic');
+  return '<article class="card"><div class="card-header"><div><span class="pill">'+esc(p.subject)+'</span><h3>'+(i+1)+'. '+esc(p.title)+'</h3></div><button type="button" class="mark '+(finished?'done':'')+'" data-id="'+esc(p.id)+'">'+(finished?'✓ Reviewed':'Mark reviewed')+'</button></div>'+
+    '<div class="evidence">'+esc(verdict)+' · '+esc(evidence)+'</div>'+
+    '<div class="formulas">'+p.formula.slice(0,2).map(f=>'<div class="formula">\\['+esc(f)+'\\]</div>').join('')+'</div>'+
+    '<p class="trap"><strong>Watch out:</strong> '+esc(p.pitfall)+'</p>'+
+    '<details class="check"><summary>15-second self-check: '+esc(p.question)+'</summary><div class="check-answer"><strong>Answer</strong>'+esc(p.answer)+'</div></details></article>';
+ }).join(''):'<div class="empty">No matching revision cards for this view. Try “All weak areas” or the complete performance page.</div>';
+ document.querySelectorAll('.mark').forEach(b=>b.onclick=()=>{const id=b.dataset.id;state.reviewed.has(id)?state.reviewed.delete(id):state.reviewed.add(id);saveReviewed();render()});
+ if(window.MathJax?.typesetPromise)window.MathJax.typesetPromise([$('#cards')]).catch(console.warn);
+}
+async function init(){
+ const query=new URLSearchParams(location.search);
+ const request=query.get('date');
+ state.selectedDate=/^\d{4}-\d{2}-\d{2}$/.test(request||'')?request:dayIST();
+ loadReviewed();
+ const [cardsRes,manifestRes]=await Promise.all([
+   fetch('./quick-revision-content.json',{cache:'no-store'}),
+   fetch('./papers/daily-pyq/manifest.json',{cache:'no-store'})
+ ]);
+ if(!cardsRes.ok)throw Error('Revision cards unavailable (HTTP '+cardsRes.status+')');
+ const library=await cardsRes.json();
+ if(!Array.isArray(library.packs)||!library.packs.length)throw Error('Revision card library is empty');
+ state.packs=library.packs;
+ if(!manifestRes.ok)state.issues.push('Paper manifest not reachable; revision suggestions are available, but new submitted scores cannot be checked.');
+ else{
+  const manifest=await manifestRes.json();
+  const entry=(manifest.papers||[]).find(e=>e.date===state.selectedDate);
+  if(entry){
+   const r=await fetch('./papers/daily-pyq/'+encodeURIComponent(entry.file),{cache:'no-store'});
+   if(r.ok)state.paper=await r.json();else state.issues.push('Requested paper is not currently accessible.');
+  }else state.issues.push('No published daily paper found for '+state.selectedDate+'.');
+  await loadSiteResults(manifest);
+ }
+ loadOlderSignals();
+ $('#context').textContent=(state.paper?.date||state.selectedDate)+' · '+(state.paper?.subjects?.join(' / ')||'No dated paper selected');
+ const link='./daily-pyq.html?date='+encodeURIComponent(state.selectedDate);
+ for(const id of ['examLink','bottomExam','headExam'])$('#'+id).href=link;
+ if(!state.paper)$('#examLink').textContent='View available daily papers';
+ $('#updated').textContent='Updates after each submitted CBT · saved only in this browser';
+ state.cacheReady=true;render();
+}
+$('#today').onclick=()=>{state.subjectMode='today';render()};
+$('#all').onclick=()=>{state.subjectMode='all';render()};
+window.addEventListener('storage',e=>{if(e.key?.startsWith(PREFIX)||e.key===CHAT_KEY||e.key===LEGACY_KEY)location.reload()});
+window.addEventListener('load',()=>{if(state.cacheReady&&window.MathJax?.typesetPromise)window.MathJax.typesetPromise([$('#cards')]).catch(console.warn)});
+init().catch(e=>{$('#context').textContent='The quick revision list could not load.';$('#status').textContent='Revision unavailable';$('#cards').innerHTML='<div class="empty">'+esc(e.message)+' <a href="./daily-pyq.html">Go to daily CBT</a></div>'});
+</script>
+</body>
+</html>
