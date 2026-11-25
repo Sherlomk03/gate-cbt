@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>GATE CBT · Solved Paper Studio</title>
+<style>
+:root{
+ --ink:#192a3c;--muted:#607086;--hair:#dce3ed;--surface:#fff;--page:#f5f7fa;
+ --navy:#152c46;--blue:#235a9b;--blue-pale:#eaf2ff;--green:#196c4a;--red:#a63636;
+ --solution-font:16px;
+ color:var(--ink);background:var(--page);font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}body{margin:0}button,select{font:inherit}
+a{color:#23599a}button{cursor:pointer}button:disabled{opacity:.42;cursor:not-allowed}
+button:focus-visible,select:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #7cb4ff;outline-offset:3px}
+button,.button{border:1px solid #c8d4e3;border-radius:9px;background:#fff;color:#24446d;padding:9px 13px;font-weight:650;text-decoration:none;display:inline-flex;gap:8px;align-items:center;justify-content:center}
+button:hover:not(:disabled),.button:hover{background:#f2f6fc}.button.primary,button.primary{background:#25599c;border-color:#25599c;color:white}
+.top{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:14px max(18px,calc((100% - 1530px)/2));background:var(--navy);color:white}
+.brand{text-decoration:none;color:#fff;display:flex;flex-direction:column}.brand strong{font-size:18px;letter-spacing:-.02em}.brand small{font-size:12px;color:#c0d1e6}
+.top-links{display:flex;gap:17px;flex-wrap:wrap}.top-links a{color:#d9e8fb;font-size:13px}
+.shell{max-width:1550px;padding:20px 18px 50px;margin:0 auto}
+.headline{display:flex;align-items:end;justify-content:space-between;flex-wrap:wrap;gap:16px;margin:0 0 15px}
+.eyebrow{color:#537095;text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:.10em}
+h1{font-size:27px;line-height:1.2;letter-spacing:-.035em;margin:5px 0 6px}
+.subhead{color:var(--muted);font-size:13px;margin:0}
+.meta-line{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.meta-line label{font-size:12px;color:#58708c}
+.meta-line select{border:1px solid #c8d3e2;border-radius:8px;padding:9px 12px;background:#fff;color:#213a57}
+.score-strip{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:13px;background:white;border:1px solid var(--hair);border-radius:12px;padding:13px 16px;margin-bottom:13px}
+.score-values{display:flex;gap:18px;flex-wrap:wrap;align-items:center}.score-values span{font-size:12px;color:#5d708a}.score-values strong{display:block;font-size:18px;color:#1f3550}
+.tag{display:inline-block;border-radius:999px;font-weight:750;font-size:11px;padding:4px 9px;background:#eaf0f8;color:#345675;letter-spacing:.01em}
+.tag.correct{background:#e9f7ef;color:#17613f}.tag.wrong{background:#fff0f0;color:#a33737}.tag.skipped{background:#fff5e3;color:#87581c}.tag.MTA{background:#e9effc;color:#4b619a}
+.control-bar{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:10px 13px;background:white;border:1px solid var(--hair);border-radius:12px;margin-bottom:14px}
+.filters{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.filters button{font-size:12px;border-radius:8px;padding:7px 10px}
+.filters button.active{background:#e7f0fc;border-color:#90b1df;color:#214b84}
+.controls{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.controls button{padding:7px 11px;font-size:12px}
+.label{font-size:12px;font-weight:750;color:#5d6d83}
+.study-layout{display:grid;grid-template-columns:194px minmax(0,1fr);gap:15px;align-items:start}
+.question-rail{background:white;border:1px solid var(--hair);border-radius:12px;padding:13px;position:sticky;top:14px;max-height:calc(100vh - 28px);overflow:auto}
+.question-rail h2{font-size:14px;margin:4px 0 10px}
+.rail-section{padding-top:12px;border-top:1px solid #ebeff5;margin-top:11px}
+.rail-title{color:#536780;font-weight:750;font-size:11px;line-height:1.35;margin:0 0 8px}
+.rail-buttons{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px}
+.rail-buttons button{padding:6px 0;font-size:12px;font-weight:750;border-radius:6px;min-height:32px}
+.rail-buttons button.correct{background:#ecf8f0;color:#176442;border-color:#c6e9d2}
+.rail-buttons button.wrong{background:#fff0ef;color:#9b3333;border-color:#f0cbca}
+.rail-buttons button.skipped{background:#fff5df;color:#82561b;border-color:#f3dfb0}
+.rail-buttons button.MTA{background:#eaf1ff;color:#445c93;border-color:#d2def6}
+.rail-buttons button.current{outline:3px solid #2d64ad;outline-offset:1px}
+.rail-legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px;font-size:10px;color:#66738a}
+.rail-legend span{display:flex;gap:4px;align-items:center}
+.dot{width:8px;height:8px;border-radius:50%;background:#a8b3c5}.dot.correct{background:#2b8b5e}.dot.wrong{background:#d45a54}.dot.skipped{background:#db9c37}
+.reading-area{min-width:0;display:grid;gap:14px}
+.content-row{display:grid;grid-template-columns:minmax(280px,.91fr) minmax(370px,1.15fr);gap:14px;align-items:start}
+.panel{border:1px solid var(--hair);border-radius:13px;background:white;min-width:0}
+.question-panel{position:sticky;top:12px;overflow:hidden}
+.panel-head{padding:15px 17px;border-bottom:1px solid #e8edf4;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:9px}
+.panel-head h2{margin:0;font-size:17px;line-height:1.35}
+.small{font-size:12px;color:var(--muted)}
+.question-detail{padding:15px 18px 17px}
+.question-info{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-bottom:13px}
+.question-topic{color:#5f7189;font-size:12px;margin-top:6px;line-height:1.5}
+.source-image{width:100%;max-width:100%;height:auto;border:1px solid #e0e7f0;border-radius:7px;background:white;display:block;cursor:zoom-in}
+.question-paper-link{display:flex;gap:12px;margin-top:14px;flex-wrap:wrap;font-size:12px}
+.question-text{padding:15px;background:#fbfcfe;border:1px solid #e3e9f0;border-radius:7px;white-space:pre-wrap;overflow-wrap:break-word;font-size:16px}
+.option{padding:8px 12px;border:1px solid #e5ebf3;border-radius:7px;margin:7px 0;font-size:14px}
+.answer-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:15px}
+.answer-cell{border-radius:8px;background:#f4f7fb;padding:11px 12px;min-width:0;overflow-wrap:anywhere}
+.answer-cell span{font-size:11px;font-weight:650;color:#5e7088;display:block}
+.answer-cell strong{display:block;font-size:17px;color:#1f3857;margin-top:3px}
+.solution-panel{overflow:hidden}
+.solution-body{padding:18px 21px 22px;font-size:var(--solution-font);min-width:0}
+.solution-intro{background:#f1f5fb;padding:14px 16px;border-radius:9px;border-left:3px solid #6390c4;margin-bottom:18px}
+.solution-intro .minihead{font-size:11px;font-weight:800;color:#517198;letter-spacing:.07em;text-transform:uppercase}
+.solution-intro p{margin:5px 0 0;font-weight:650;color:#243c58;line-height:1.55;font-size:1em}
+.section-title{font-size:14px;letter-spacing:.02em;color:#52677e;margin:0 0 9px;font-weight:800}
+.math-card{background:#fbfcff;border:1px solid #dae5f3;border-radius:9px;padding:15px 10px;margin-bottom:20px;min-width:0}
+.math-card .minihead{font-size:11px;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#567393;padding:0 8px}
+.math-display{overflow-x:auto;overflow-y:hidden;padding:6px 8px;max-width:100%;text-align:center}
+.math-display mjx-container[display="true"]{overflow-x:auto;overflow-y:hidden;max-width:100%;margin:4px auto!important;padding:5px 0!important}
+.step-grid{display:grid;gap:5px}
+.step{display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;align-items:start;padding:12px 0;border-top:1px solid #e7edf3;min-width:0}
+.step:first-child{border-top:0}
+.step-count{display:grid;place-items:center;background:#e8f0fa;border-radius:50%;font-size:12px;font-weight:800;color:#2b5a99;height:29px;width:29px}
+.step-content{min-width:0;color:#30435a;line-height:1.74;font-size:1em}
+.step-content p{margin:0 0 10px;max-width:75ch;overflow-wrap:break-word}.step-content p:last-child{margin-bottom:0}
+.step-content strong{color:#1b344e}
+.step-content mjx-container:not([display]){max-width:100%;overflow-x:auto;overflow-y:hidden;vertical-align:middle}
+.step-content mjx-container[display="true"]{max-width:100%;overflow-x:auto;overflow-y:hidden;margin:5px 0!important}
+.step.hidden-step{display:none}
+.result-line{margin-top:17px;padding:14px 16px;border-radius:9px;background:#eef5ff;border:1px solid #c7daef;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:9px}
+.result-line span{font-size:12px;font-weight:700;color:#527094}.result-line strong{font-size:22px;color:#19477f}
+.exam-tip{border-left:3px solid #d3b26b;padding:10px 13px;margin-top:15px;background:#fffbf1;border-radius:5px;font-size:.92em}
+.studymode-note{font-size:12px;color:#63758c;margin:12px 0 0}
+.solution-foot{display:flex;gap:7px;flex-wrap:wrap;margin-top:16px;align-items:center}
+.footer-nav{display:flex;justify-content:space-between;gap:9px;align-items:center;background:white;border:1px solid var(--hair);padding:12px 14px;border-radius:12px}
+.footer-nav .position{font-size:13px;color:#526984;font-weight:650}
+.empty{background:white;border:1px solid #d8e2ee;border-radius:11px;padding:24px;max-width:780px;margin:16px auto}
+.empty h2{margin-top:0}.empty p{color:#5b6e83}
+#reader[hidden],#message[hidden],#lightbox[hidden]{display:none!important}
+#lightbox{position:fixed;inset:0;background:rgba(12,22,36,.92);z-index:50;display:grid;grid-template-rows:auto minmax(0,1fr);padding:18px;gap:10px}
+#lightbox button{justify-self:end}#lightbox img{max-width:100%;max-height:100%;margin:auto;object-fit:contain;background:#fff;border-radius:7px}
+.load-caption{font-size:12px;color:#73839c}
+@media(max-width:1220px){.content-row{grid-template-columns:1fr}.question-panel{position:static}.source-image{max-height:550px;object-fit:contain;object-position:left;background:#fff}.question-detail{display:grid;grid-template-columns:minmax(0,1fr);gap:8px}}
+@media(max-width:830px){.study-layout{grid-template-columns:1fr}.question-rail{position:static;max-height:none}.rail-section{display:inline-block;min-width:170px;margin-right:10px;vertical-align:top}.rail-buttons{grid-template-columns:repeat(5,31px)}.rail-legend{margin-top:6px}.shell{padding:14px 10px 28px}.top{padding:12px 14px}.headline h1{font-size:23px}}
+@media(max-width:550px){.solution-body{padding:15px 13px 17px}.panel-head{padding:12px 13px}.question-detail{padding:12px}.step{grid-template-columns:26px minmax(0,1fr);gap:8px}.step-count{width:26px;height:26px}.answer-comparison{grid-template-columns:1fr}.controls button{padding:6px 8px}.score-values{gap:12px}.rail-section{min-width:0;margin-right:0}.rail-buttons{grid-template-columns:repeat(10,1fr)}.rail-title{font-size:10px}.question-rail{padding:10px}}
+@media print{
+ body{background:#fff}.top,.control-bar,.question-rail,.footer-nav,.solution-foot,#lightbox,.meta-line{display:none!important}
+ .shell{max-width:100%;padding:0}.content-row{display:block}.panel{border:0;break-inside:auto}
+ .question-panel{position:static}.solution-panel{margin-top:14px}
+ .source-image{max-width:650px;max-height:none}.step{break-inside:avoid}.math-card{break-inside:avoid}
+ .step.hidden-step{display:grid}.solution-body{padding:0}.panel-head{padding:0 0 8px}.score-strip{padding:0;border:0}
+}
+</style>
+<script>
+window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</head><body>
+<header class="top">
+<a class="brand" href="./daily-pyq.html"><strong>GATE CBT · Solved Papers</strong><small>Understand the method, not just the answer</small></a>
+<nav class="top-links"><a href="./daily-pyq.html">Daily CBT</a><a href="./revision-library.html">Topic revision</a><a href="./performance.html">Performance</a></nav>
+</header>
+<main class="shell">
+<div class="headline"><div><div class="eyebrow">POST-EXAM STUDY MODE</div><h1>Worked solutions, one question at a time</h1><p class="subhead" id="paperIntro">Loading your paper…</p></div><div class="meta-line"><label for="paperDate">Paper date</label><select id="paperDate" aria-label="Choose a published paper"></select></div></div>
+<div id="message" class="empty" hidden></div>
+<div id="reader" hidden>
+<div class="score-strip"><div id="scoreValues" class="score-values"></div><span class="small">Questions and official answer keys are unchanged</span></div>
+<div class="control-bar">
+<div class="filters" id="filters" role="group" aria-label="Choose which questions to review">
+<button data-filter="all" class="active">All questions</button><button data-filter="wrong">Wrong</button><button data-filter="skipped">Skipped</button><button data-filter="correct">Correct</button>
+</div>
+<div class="controls">
+<label class="label" for="subjectFilter">Subject</label><select id="subjectFilter" aria-label="Filter by subject"><option value="all">All subjects</option></select>
+<button id="stepMode" aria-pressed="false" title="Reveal the derivation one step at a time">One step at a time</button>
+<button id="fontMinus" title="Make explanation smaller" aria-label="Decrease explanation text size">A−</button>
+<button id="fontPlus" title="Make explanation larger" aria-label="Increase explanation text size">A+</button>
+</div>
+</div>
+<div class="study-layout">
+<aside class="question-rail" aria-label="Question navigator"><h2>Paper navigator</h2><div id="rail"></div><div class="rail-legend"><span><i class="dot correct"></i>Correct</span><span><i class="dot wrong"></i>Wrong</span><span><i class="dot skipped"></i>Skipped</span></div></aside>
+<div class="reading-area">
+<div class="content-row">
+<section class="panel question-panel" aria-labelledby="questionHeading">
+<div class="panel-head"><h2 id="questionHeading">Original GATE question</h2><span id="sourceMeta" class="small"></span></div>
+<div class="question-detail">
+<div class="question-info"><span class="tag" id="questionStatus">Question</span><span class="small" id="questionTopic"></span></div>
+<div id="questionMedia"></div>
+<div class="answer-comparison" id="answerComparison"></div>
+<div class="question-paper-link" id="paperLinks"></div>
+</div></section>
+<section class="panel solution-panel" aria-labelledby="solutionHeading">
+<div class="panel-head"><h2 id="solutionHeading">Worked explanation</h2><span id="solutionCount" class="small"></span></div>
+<div id="solutionBody" class="solution-body"></div>
+</section>
+</div>
+<div class="footer-nav">
+<button id="previous">← Previous</button><span class="position" id="position">Question 1 / 40</span><button id="next" class="primary">Next question →</button>
+</div>
+<div class="load-caption">Tip: use the left/right arrow keys to move between questions when you are not typing in a control. Your original results are read-only.</div>
+</div>
+</div>
+</div>
+</main>
+<div id="lightbox" role="dialog" aria-label="Enlarged original question image" aria-modal="true" hidden><button id="closeLightbox">Close image ✕</button><img id="largeImage" alt="Enlarged GATE question"></div>
+<script>
+'use strict';
+const $=s=>document.querySelector(s);
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const state={manifest:null,paper:null,attempt:null,rows:[],visible:[],selected:0,filter:'all',subject:'all',stepMode:false,revealed:1,fontSize:16};
+const dayIST=()=>{const a=Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Kolkata',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date()).map(x=>[x.type,x.value]));return a.year+'-'+a.month+'-'+a.day};
+const letters=v=>[...new Set(String(v??'').toUpperCase().match(/[A-D]/g)||[])].sort().join('');
+function numericRanges(key){
+ return String(key).replace(/[−–]/g,'-').split(/\s+OR\s+/i).flatMap(p=>{
+  const m=p.match(/(-?\d+(?:\.\d+)?)\s+to\s+(-?\d+(?:\.\d+)?)/i);
+  if(m)return [[Number(m[1]),Number(m[2])]];
+  const v=Number(p.trim());return Number.isFinite(v)?[[v-.005,v+.005]]:[];
+ });
+}
+function grade(q,value){
+ if(/\bMTA\b/i.test(String(q.officialKey)))return {status:'MTA',net:Number(q.marks)||0};
+ if(value===undefined||value===null||value===''||(Array.isArray(value)&&!value.length))return {status:'skipped',net:0};
+ const choices=String(q.officialKey).split(/\s+OR\s+/i);let correct=false;
+ if(q.type==='MCQ')correct=choices.some(x=>String(value).trim().toUpperCase()===x.trim().toUpperCase());
+ else if(q.type==='MSQ')correct=choices.some(x=>letters(Array.isArray(value)?value.join(''):value)===letters(x));
+ else if(q.type==='NAT'){const v=Number(value);correct=Number.isFinite(v)&&numericRanges(q.officialKey).some(([a,b])=>v>=a&&v<=b)}
+ return {status:correct?'correct':'wrong',net:correct?(Number(q.marks)||0):q.type==='MCQ'?-(Number(q.marks)||0)/3:0};
+}
+function getAnswer(q){
+ const v=state.attempt?.answers?.[q.id];
+ return Array.isArray(v)?v.length?v.join(', '):'Skipped':String(v??'').trim()||'Skipped';
+}
+function showMessage(title,message,withLink){
+ $('#reader').hidden=true;$('#message').hidden=false;
+ $('#message').innerHTML='<h2>'+esc(title)+'</h2><p>'+esc(message)+'</p>'+(withLink?'<p><a class="button primary" href="./daily-pyq.html?date='+encodeURIComponent(state.paper?.date||'')+'">'+esc(withLink)+'</a></p>':'');
+}
+async function getJSON(relative){
+ // Fresh GitHub question-file commits can take a few moments to reach Pages.
+ const urls=['https://raw.githubusercontent.com/Sherlomk03/gate-cbt/main/'+relative,'./'+relative];
+ for(const u of urls){try{const r=await fetch(u+'?v='+Date.now(),{cache:'no-store'});if(r.ok)return await r.json()}catch(e){console.warn('Source unavailable',u,e)}}
+ throw Error('Could not load '+relative);
+}
+function splitSentences(text){
+ const place=[];
+ const source=String(text||'').replace(/\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)/g,m=>{
+  const key='__MATH'+place.length+'__';place.push(m);return key;
+ });
+ // Break dense multi-sentence GATE reasoning into readable lines, preserving math.
+ const sentences=source.replace(/([.!?])\s+(?=[A-Z])/g,'$1\n').split(/\n+/).filter(Boolean);
+ return sentences.map(sentence=>{
+  let safe=esc(sentence.trim()).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+  safe=safe.replace(/__MATH(\d+)__/g,(_,n)=>esc(place[Number(n)]||''));
+  return '<p>'+safe+'</p>';
+ }).join('');
+}
+function typeset(node){
+ if(window.MathJax?.typesetPromise)return window.MathJax.typesetPromise([node]).catch(err=>console.warn('Math rendering error',err));
+}
+function showFormula(source){
+ let tex=String(source||'').trim();
+ if(!tex)return '';
+ if(!tex.startsWith('\\['))tex='\\['+tex+'\\]';
+ return '<section class="math-card"><div class="minihead">Core equation</div><div class="math-display">'+esc(tex)+'</div></section>';
+}
+function renderSolution(q){
+ const sol=q.verifiedSolution;
+ const body=$('#solutionBody');
+ if(sol?.status!=='verified'||!Array.isArray(sol.steps)||!sol.steps.length){
+  body.innerHTML='<p>No independently reviewed worked solution is available for this question yet. Refer to the original paper and its answer key.</p>';$('#solutionCount').textContent='Explanation pending';return;
+ }
+ const steps=Array.isArray(sol.mathSteps)&&sol.mathSteps.length?sol.mathSteps:sol.steps;
+ $('#solutionCount').textContent=steps.length+' reasoning steps';
+ body.innerHTML=
+ (sol.concept?'<section class="solution-intro"><div class="minihead">Core idea</div><p>'+esc(sol.concept)+'</p></section>':'')+
+ showFormula(sol.mathFormula||sol.formula)+
+ '<section><h3 class="section-title">The derivation</h3><div id="steps" class="step-grid">'+steps.map((step,i)=>
+ '<div class="step'+(state.stepMode&&i>=state.revealed?' hidden-step':'')+'" data-step="'+i+'"><span class="step-count">'+String(i+1).padStart(2,'0')+'</span><div class="step-content">'+splitSentences(step)+'</div></div>').join('')+'</div></section>'+
+ (state.stepMode?'<div class="solution-foot"><button id="revealNext" class="primary" '+(state.revealed>=steps.length?'disabled':'')+'>Reveal next step ('+Math.min(state.revealed,steps.length)+' / '+steps.length+')</button><button id="showAll">Show complete derivation</button></div>':'')+
+ '<div class="result-line"><span>OFFICIAL ANSWER'+(q.type==='NAT'?' · ACCEPTED RANGE':'')+'</span><strong>'+esc(q.officialKey)+'</strong></div>'+
+ (sol.examTip?'<div class="exam-tip"><strong>Exam tip:</strong> '+esc(sol.examTip)+'</div>':'')+
+ '<p class="studymode-note">Source: '+esc(sol.reference||q.sourceId||'Original examination')+'. The question and answer key have not been modified.</p>';
+ if(state.stepMode){
+  $('#revealNext').onclick=()=>{state.revealed=Math.min(steps.length,state.revealed+1);renderSolution(q);};
+  $('#showAll').onclick=()=>{state.stepMode=false;$('#stepMode').setAttribute('aria-pressed','false');$('#stepMode').textContent='One step at a time';renderSolution(q);};
+ }
+ typeset(body);
+}
+function rowsForFilter(){
+ return state.rows.filter(({q,r})=>(state.filter==='all'||r.status===state.filter)&&(state.subject==='all'||q.subject===state.subject));
+}
+function renderRail(){
+ const grouped=[...new Set(state.visible.map(x=>x.q.subject))];
+ $('#rail').innerHTML=grouped.map(sub=>{
+  const items=state.visible.filter(x=>x.q.subject===sub);
+  return '<section class="rail-section"><h3 class="rail-title">'+esc(sub)+'</h3><div class="rail-buttons">'+items.map(x=>'<button title="Question '+(x.i+1)+' · '+esc(x.r.status)+'" class="'+esc(x.r.status)+(x.i===state.selected?' current':'')+'" data-qi="'+x.i+'" aria-label="Question '+(x.i+1)+'">'+(x.i+1)+'</button>').join('')+'</div></section>';
+ }).join('');
+ $('#rail').querySelectorAll('button').forEach(b=>b.onclick=()=>navigate(Number(b.dataset.qi)));
+}
+function navigate(i,scroll=true){
+ if(!state.rows.some(x=>x.i===i)||!state.visible.some(x=>x.i===i))return;
+ state.selected=i;state.revealed=1;
+ const {q,r}=state.rows[i];
+ const originalIndex=i+1;
+ $('#questionHeading').textContent='Question '+originalIndex+' · Original source';
+ $('#sourceMeta').textContent=q.sourceId||'GATE paper';
+ $('#questionStatus').textContent=r.status==='MTA'?'Marks to all':r.status.toUpperCase();
+ $('#questionStatus').className='tag '+r.status;
+ $('#questionTopic').textContent=q.subject+' · '+q.topic+' · '+q.type+' · '+q.marks+' mark'+(q.marks===1?'':'s');
+ const ace=q.sourceType==='ace_classroom';
+ $('#questionMedia').innerHTML=ace?
+  '<div class="question-text">'+esc(q.stem||'Classroom question')+'</div>'+(q.options?.length?q.options.map((o,j)=>'<div class="option">'+String.fromCharCode(65+j)+'. '+esc(o)+'</div>').join(''):''):
+  '<img class="source-image" id="questionImage" alt="'+esc(q.sourceId||'Original GATE question')+'" src="'+esc(q.imagePath)+'" title="Click to enlarge the original question">';
+ const img=$('#questionImage');
+ if(img)img.onclick=()=>{$('#largeImage').src=q.imagePath;$('#lightbox').hidden=false;$('#closeLightbox').focus();};
+ $('#answerComparison').innerHTML='<div class="answer-cell"><span>YOUR ANSWER</span><strong>'+esc(getAnswer(q))+'</strong></div><div class="answer-cell"><span>'+(ace?'SOLVED ANSWER':'OFFICIAL ANSWER')+'</span><strong>'+esc(q.officialKey)+'</strong></div>';
+ $('#paperLinks').innerHTML=(q.paperUrl?'<a target="_blank" rel="noopener noreferrer" href="'+esc(q.paperUrl)+'#page='+(q.pdfPage||1)+'">Original paper ↗</a>':'')+(q.keyUrl?'<a target="_blank" rel="noopener noreferrer" href="'+esc(q.keyUrl)+'">Answer key ↗</a>':'')+'<a href="./revision-library.html">Revise this subject ↗</a>';
+ renderSolution(q);
+ const place=state.visible.findIndex(x=>x.i===state.selected);
+ $('#position').textContent='Question '+(place+1)+' of '+state.visible.length+' in this view';
+ $('#previous').disabled=place<=0;
+ $('#next').disabled=place===state.visible.length-1;
+ $('#previous').onclick=()=>{if(place>0)navigate(state.visible[place-1].i);};
+ $('#next').onclick=()=>{if(place<state.visible.length-1)navigate(state.visible[place+1].i);};
+ renderRail();
+ const u=new URL(location.href);u.searchParams.set('date',state.paper.date);u.searchParams.set('q',q.id);history.replaceState(null,'',u);
+ if(scroll&&window.innerWidth<1000)document.querySelector('.reading-area').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function renderFilters(){
+ const counts={all:state.rows.length,correct:0,wrong:0,skipped:0};
+ for(const x of state.rows)if(Object.prototype.hasOwnProperty.call(counts,x.r.status))counts[x.r.status]++;
+ $('#filters').querySelectorAll('button').forEach(b=>{const type=b.dataset.filter;b.classList.toggle('active',type===state.filter);b.textContent=({all:'All questions',correct:'Correct',wrong:'Wrong',skipped:'Skipped'})[type]+' · '+counts[type];b.onclick=()=>{state.filter=type;applyFilters()}});
+ const subjects=[...new Set(state.rows.map(x=>x.q.subject))];
+ $('#subjectFilter').innerHTML='<option value="all">All subjects</option>'+subjects.map(sub=>'<option value="'+esc(sub)+'">'+esc(sub)+'</option>').join('');
+ $('#subjectFilter').value=state.subject;
+ $('#subjectFilter').onchange=()=>{state.subject=$('#subjectFilter').value;applyFilters()};
+}
+function applyFilters(){
+ state.visible=rowsForFilter();
+ renderFilters();
+ if(!state.visible.length){
+  $('#rail').innerHTML='<p class="small">No questions in this category.</p>';
+  $('.content-row').style.display='none';
+  $('#position').textContent='No matching questions';
+  $('#previous').disabled=$('#next').disabled=true;
+  return;
+ }
+ $('.content-row').style.display='';
+ const target=state.visible.some(x=>x.i===state.selected)?state.selected:state.visible[0].i;
+ navigate(target,false);
+}
+function setupScores(){
+ const rows=state.rows;const sum=rows.reduce((s,x)=>s+x.r.net,0),max=rows.reduce((s,x)=>s+Number(x.q.marks||0),0);
+ const correct=rows.filter(x=>x.r.status==='correct').length,wrong=rows.filter(x=>x.r.status==='wrong').length,skipped=rows.filter(x=>x.r.status==='skipped').length;
+ $('#scoreValues').innerHTML='<span><strong>'+sum.toFixed(2)+' / '+max+'</strong>Final score</span><span><strong>'+correct+'</strong>Correct</span><span><strong>'+wrong+'</strong>Wrong</span><span><strong>'+skipped+'</strong>Skipped</span>';
+}
+async function openPaper(date){
+ $('#paperIntro').textContent='Opening '+date+'…';
+ const entry=state.manifest.papers.find(x=>x.date===date);
+ if(!entry){showMessage('Paper not found','There is no published paper for '+date+'.');return;}
+ try{
+  const paper=await getJSON('papers/daily-pyq/'+entry.file);
+  if(paper.date!==date||paper.questions?.length!==40)throw Error('The published paper is incomplete or has a different date.');
+  state.paper=paper;
+  let attempt=null;try{attempt=JSON.parse(localStorage.getItem('gateCBT.realDaily.v1.'+date)||'null')}catch(e){console.warn(e)}
+  if(!attempt?.submittedAt){
+   $('#paperIntro').textContent='Solutions unlock after submitting this paper.';
+   showMessage('Finish the paper first','Solutions are hidden until you submit the daily CBT in this same browser. This protects your test from accidental answer spoilers.','Return to the exam');
+   return;
+  }
+  if(paper.revisionId&&attempt.paperRevisionId&&paper.revisionId!==attempt.paperRevisionId){
+   $('#paperIntro').textContent='This paper was revised after your saved attempt.';
+   showMessage('Paper version changed','Your saved answers were made against a different paper revision. Reopen the CBT to migrate them safely before reviewing, rather than grading mismatched questions.','Open revised CBT');
+   return;
+  }
+  state.attempt=attempt;
+  state.rows=paper.questions.map((q,i)=>({q,i,r:grade(q,attempt.answers?.[q.id])}));
+  state.filter='all';state.subject='all';state.stepMode=false;$('#stepMode').textContent='One step at a time';$('#stepMode').setAttribute('aria-pressed','false');
+  $('#paperIntro').textContent=paper.date+' · '+[...new Set(paper.questions.map(q=>q.subject))].join(' · ')+' · Your attempt is read-only';
+  $('#message').hidden=true;$('#reader').hidden=false;
+  setupScores();
+  renderFilters();applyFilters();
+  const requested=new URLSearchParams(location.search).get('q');
+  const found=paper.questions.findIndex(q=>q.id===requested);
+  if(found>=0)navigate(found,false);
+ }catch(err){
+  $('#paperIntro').textContent='Unable to load this published paper';
+  showMessage('Could not load the paper',err.message||String(err));
+ }
+}
+async function init(){
+ try{
+  state.manifest=await getJSON('papers/daily-pyq/manifest.json');
+  const dates=(state.manifest.papers||[]).filter(x=>/^\d{4}-\d{2}-\d{2}$/.test(x.date));
+  if(!dates.length)throw Error('No dated paper entries found.');
+  $('#paperDate').innerHTML=dates.map(x=>'<option value="'+esc(x.date)+'">'+esc(x.date)+'</option>').join('');
+  const requested=new URLSearchParams(location.search).get('date'),today=dayIST();
+  const initial=dates.some(x=>x.date===requested)?requested:dates.some(x=>x.date===today)?today:dates[0].date;
+  $('#paperDate').value=initial;
+  $('#paperDate').onchange=()=>{const u=new URL(location.href);u.searchParams.set('date',$('#paperDate').value);u.searchParams.delete('q');history.replaceState(null,'',u);openPaper($('#paperDate').value)};
+  await openPaper(initial);
+ }catch(e){showMessage('Source currently unavailable',e.message||String(e))}
+}
+$('#stepMode').onclick=()=>{
+ if(!state.paper)return;
+ state.stepMode=!state.stepMode;
+ state.revealed=1;
+ $('#stepMode').textContent=state.stepMode?'Show full solution':'One step at a time';
+ $('#stepMode').setAttribute('aria-pressed',String(state.stepMode));
+ const current=state.rows[state.selected];if(current)renderSolution(current.q);
+};
+$('#fontMinus').onclick=()=>{state.fontSize=Math.max(14,state.fontSize-1);document.documentElement.style.setProperty('--solution-font',state.fontSize+'px')};
+$('#fontPlus').onclick=()=>{state.fontSize=Math.min(21,state.fontSize+1);document.documentElement.style.setProperty('--solution-font',state.fontSize+'px')};
+$('#closeLightbox').onclick=()=>{$('#lightbox').hidden=true};
+$('#lightbox').onclick=e=>{if(e.target.id==='lightbox')$('#lightbox').hidden=true};
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape'){$('#lightbox').hidden=true;return;}
+ if(!state.paper||!$('#lightbox').hidden||['INPUT','SELECT','TEXTAREA','BUTTON'].includes(document.activeElement?.tagName))return;
+ const at=state.visible.findIndex(x=>x.i===state.selected);
+ if(e.key==='ArrowRight'&&at>=0&&at<state.visible.length-1)navigate(state.visible[at+1].i);
+ if(e.key==='ArrowLeft'&&at>0)navigate(state.visible[at-1].i);
+});
+init();
+</script></body></html>
