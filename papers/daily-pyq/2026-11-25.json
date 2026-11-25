@@ -70,7 +70,20 @@
       "pdfPage": 9,
       "imageAuditStatus": "manually_inspected_full_question",
       "sourceType": "official_gate",
-      "officialGatePYQ": true
+      "officialGatePYQ": true,
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Consistency conditions for an overdetermined linear system",
+        "mathFormula": "\\[b_2=2b_1,\\qquad 6b_1-3b_3+b_4=0\\]",
+        "steps": [
+          "The four equations are \\(x_1+2x_2=b_1,\\ 2x_1+4x_2=b_2,\\ 3x_1+7x_2=b_3,\\ 3x_1+9x_2=b_4\\).",
+          "The second left-hand side is twice the first, so consistency requires \\(b_2=2b_1\\).",
+          "Subtract three times the first equation from the third to obtain \\(x_2=b_3-3b_1\\).",
+          "The fourth left-hand side is three times the first plus \\(3x_2\\), so \\(b_4=3b_1+3(b_3-3b_1)=3b_3-6b_1\\). Thus \\(6b_1-3b_3+b_4=0\\). **Answer: (A).**"
+        ],
+        "verificationBasis": "Original official GATE question image individually inspected against recorded official key",
+        "reference": "GATE 2020 EC Question 26"
+      }
     },
     {
       "id": "2020-EC-S4-Q01",
@@ -96,7 +109,20 @@
       "pdfPage": 3,
       "imageAuditStatus": "manually_inspected_full_question",
       "sourceType": "official_gate",
-      "officialGatePYQ": true
+      "officialGatePYQ": true,
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Dimension, span and basis in a vector space",
+        "mathFormula": "\\[\\dim(\\mathbb R^4)=4,\\qquad 6>4\\]",
+        "steps": [
+          "Any linearly independent set in the four-dimensional space \\(\\mathbb R^4\\) has at most four vectors; therefore six vectors are necessarily linearly dependent (B is true).",
+          "Six vectors need not span \\(\\mathbb R^4\\): for instance they could all be multiples of one vector (A is true).",
+          "Any four vectors **need not** form a basis: they may be linearly dependent, so (C) is false.",
+          "If the four listed vectors \\(v_1,v_3,v_5,v_6\\) span the four-dimensional space, they automatically form a basis (D is true). **Answer: (C), the false statement.**"
+        ],
+        "verificationBasis": "Original official GATE question image individually inspected against recorded official key",
+        "reference": "GATE 2020 EC Question 1"
+      }
     },
     {
       "id": "2025-EC-Q11",
@@ -120,7 +146,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EC2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EC_Keys.pdf",
       "pdfPage": 10,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Rank of an upper-block triangular matrix",
+        "mathFormula": "\\[A=\\begin{bmatrix}2&3&4&5\\\\0&6&7&8\\\\0&0&\\alpha&\\beta\\\\0&0&0&\\gamma\\end{bmatrix},\\quad \\operatorname{rank}(A)\\ge3\\iff(\\alpha,\\beta,\\gamma)\\ne(0,0,0)\\]",
+        "steps": [
+          "The first two rows are linearly independent because their leading nonzero entries occur in different columns (first and second). Hence \\(\\operatorname{rank}(A)\\ge2\\) regardless of \\(\\alpha,\\beta,\\gamma\\).",
+          "If \\(\\alpha=\\beta=\\gamma=0\\), both lower rows vanish and the rank is exactly 2: statement (ii) does not qualify.",
+          "For (i), \\(\\alpha=0,\\ \\beta=\\gamma\\ne0\\): at least one lower row is nonzero and independent of the first two. For (iii), \\(\\alpha\\ne0\\) also supplies a third pivot. For (iv), \\(\\gamma\\ne0\\) supplies a lower pivot.",
+          "Therefore (i), (iii), (iv) give rank at least three. **Answer: (A).**"
+        ],
+        "verificationBasis": "Original official GATE question image individually inspected against recorded official key",
+        "reference": "GATE 2025 EC Question 11"
+      }
     },
     {
       "id": "2022-EC-Q37",
@@ -144,7 +183,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ec_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ec_2022.pdf",
       "pdfPage": 30,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Eigenvalues of weighted orthogonal projection matrices",
+        "mathFormula": "\\[A=\\alpha v_1v_1^T+\\beta v_2v_2^T,\\quad Av_1=\\alpha v_1,\\quad Av_2=\\beta v_2\\]",
+        "steps": [
+          "The supplied vectors satisfy \\(v_1^Tv_2=0\\) and \\(v_1^Tv_1=v_2^Tv_2=1\\), so they are orthonormal.",
+          "Multiplying \\(A\\) by \\(v_1\\) gives \\(Av_1=\\alpha v_1(v_1^Tv_1)+\\beta v_2(v_2^Tv_1)=\\alpha v_1\\). Similarly \\(Av_2=\\beta v_2\\).",
+          "A third unit vector \\(v_3\\), orthogonal to both \\(v_1\\) and \\(v_2\\), satisfies \\(Av_3=0\\).",
+          "The eigenvalues are therefore \\(\\boxed{0,\\alpha,\\beta}\\). **Answer: (A).**"
+        ],
+        "verificationBasis": "Original official GATE question image individually inspected against recorded official key",
+        "reference": "GATE 2022 EC Question 37"
+      }
     },
     {
       "id": "2020-EC-S4-Q54",
@@ -170,7 +222,20 @@
       "pdfPage": 18,
       "imageAuditStatus": "manually_inspected_full_question",
       "sourceType": "official_gate",
-      "officialGatePYQ": true
+      "officialGatePYQ": true,
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Conditional probability under a linear transformation",
+        "mathFormula": "\\[P(Y\\le7\\mid X\\ge5)=P(X\\le6.5\\mid X\\ge5)=\\frac{6.5-5}{10-5}=0.300\\]",
+        "steps": [
+          "The source specifies \\(X\\) uniformly distributed on \\([-2,10]\\) and \\(Y=2X-6\\).",
+          "Translate the event: \\(Y\\le7\\iff2X-6\\le7\\iff X\\le6.5\\).",
+          "Given \\(X\\ge5\\), the conditional sample interval is \\([5,10]\\). The favourable interval is \\([5,6.5]\\).",
+          "The uniform density cancels in the ratio of interval lengths, yielding \\(1.5/5=\\boxed{0.300}\\)."
+        ],
+        "verificationBasis": "Original official GATE question image individually inspected against recorded official key",
+        "reference": "GATE 2020 EC Question 54"
+      }
     },
     {
       "id": "2023-EC-Q36",
@@ -194,7 +259,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ec_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EC_ANS_GATE2023.pdf",
       "pdfPage": 24,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Probability distribution after clipping a continuous random variable",
+        "mathFormula": "\\[f_Y(y)=a\\,\\delta(y+1)+b\\,\\delta(y)+c\\,\\delta(y-1)+g(y)\\]",
+        "steps": [
+          "The graph clips \\(X\\) to \\(-1\\) when \\(X\\le-2\\), to \\(0\\) when \\(-1\\le X\\le1\\), and to \\(1\\) when \\(X\\ge2\\). These intervals have positive probability for a standard normal input.",
+          "Therefore \\(Y\\) has nonzero point masses at **three** locations: \\(-1,0,1\\), represented by Dirac delta terms in the generalized density.",
+          "On the two sloped sections (\\(-2<X<-1\\) and \\(1<X<2\\)), \\(Y\\) has a continuous distribution, denoted \\(g(y)\\).",
+          "The density must therefore contain \\(a\\delta(y+1)+b\\delta(y)+c\\delta(y-1)+g(y)\\). **Answer: (B).**"
+        ],
+        "verificationBasis": "Original official GATE question image individually inspected against recorded official key",
+        "reference": "GATE 2023 EC Question 36"
+      }
     },
     {
       "id": "2022-EC-Q48",
@@ -217,7 +295,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ec_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ec_2022.pdf",
       "pdfPage": 41,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Markov-chain transition probabilities sum to one at each state",
+        "mathFormula": "\\[p_1+p_4+p_7=1,\\quad p_2+p_3=1,\\quad p_5+p_6=1\\]",
+        "steps": [
+          "For any state of a Markov chain, add all **outgoing** transition probabilities, including self-loops; the sum must be 1.",
+          "From state \\(A\\), transitions go to \\(B\\) via \\(p_1\\), \\(C\\) via \\(p_4\\), and itself via \\(p_7\\): \\(p_1+p_4+p_7=1\\). This is statement (C).",
+          "From \\(B\\): \\(p_2+p_3=1\\). From \\(C\\): \\(p_5+p_6=1\\). Hence \\(p_2+p_3=p_5+p_6\\), which is statement (A).",
+          "Statements (B) and (D) combine unrelated source-state transitions and are not universally true. **Answer: (A) and (C).**"
+        ],
+        "verificationBasis": "Original official GATE question image individually inspected against recorded official key",
+        "reference": "GATE 2022 EC Question 48"
+      }
     },
     {
       "id": "2020-EE-S5-Q05",
@@ -243,7 +334,20 @@
       "pdfPage": 4,
       "imageAuditStatus": "manually_inspected_full_question",
       "sourceType": "official_gate",
-      "officialGatePYQ": true
+      "officialGatePYQ": true,
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Residue theorem for a rational function on the unit circle",
+        "mathFormula": "\\[\\oint_{|z|=1}\\frac{z^2+1}{z^2-2z}\\,dz=2\\pi i\\left(-\\frac12\\right)=-\\pi i\\]",
+        "steps": [
+          "Factor the denominator: \\(z^2-2z=z(z-2)\\). The poles are \\(z=0\\) and \\(z=2\\).",
+          "The counterclockwise unit circle \\(|z|=1\\) encloses only \\(z=0\\).",
+          "The residue at zero is \\(\\lim_{z\\to0} z(z^2+1)/[z(z-2)]=(0^2+1)/(0-2)=-1/2\\).",
+          "Multiply by \\(2\\pi i\\) to get \\(-\\pi i\\). **Answer: (C).**"
+        ],
+        "verificationBasis": "Original official GATE question image individually inspected against recorded official key",
+        "reference": "GATE 2020 EE Question 5"
+      }
     },
     {
       "id": "2022-EC-Q32",
@@ -267,7 +371,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ec_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ec_2022.pdf",
       "pdfPage": 28,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Residue of an exponential numerator at a simple pole",
+        "mathFormula": "\\[\\operatorname{Res}_{z=-1}\\frac{2^z}{z^2-1}=\\frac{2^{-1}}{-2}=-\\frac14,\\quad \\oint_C=-\\frac{i\\pi}{2}\\]",
+        "steps": [
+          "The denominator factors as \\((z-1)(z+1)\\), giving simple poles at \\(z=\\pm1\\). The pictured counterclockwise contour contains \\(z=-1\\) but excludes \\(z=1\\).",
+          "At the enclosed pole \\(z=-1\\), the residue is \\(2^{-1}/(2z)|_{z=-1}=(1/2)/(-2)=-1/4\\).",
+          "The residue theorem gives \\(2\\pi i(-1/4)=-i\\pi/2\\). Comparing with the given \\(-i\\pi A\\), we obtain \\(\\boxed{A=0.50}\\)."
+        ],
+        "verificationBasis": "Original official GATE question image individually inspected against recorded official key",
+        "reference": "GATE 2022 EC Question 32"
+      }
     },
     {
       "id": "2023-EC-Q13",
@@ -291,7 +407,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ec_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EC_ANS_GATE2023.pdf",
       "pdfPage": 10,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Fourth roots of a complex number in polar form",
+        "mathFormula": "\\[w^4=16i=16e^{i\\pi/2}\\implies w=2e^{i(\\pi/8+k\\pi/2)},\\quad k=0,1,2,3\\]",
+        "steps": [
+          "The modulus of \\(16i\\) is 16, so each fourth root has modulus \\(16^{1/4}=2\\).",
+          "The principal argument is \\(\\pi/2\\); allowing full rotations gives angles \\((\\pi/2+2\\pi k)/4=\\pi/8+k\\pi/2\\).",
+          "Thus the possible root arguments are \\(\\pi/8,5\\pi/8,9\\pi/8,13\\pi/8\\) (modulo \\(2\\pi\\)).",
+          "Option (A) has argument \\(2\\pi/8=\\pi/4\\), which is not in this set. **Answer: (A).**"
+        ],
+        "verificationBasis": "Original official GATE question image individually inspected against recorded official key",
+        "reference": "GATE 2023 EC Question 13"
+      }
     },
     {
       "id": "2020-EC-S4-Q09",
