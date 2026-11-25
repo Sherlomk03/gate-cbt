@@ -86,6 +86,25 @@ assert.equal(stat.length,40);
 assert.equal(stat.filter(s=>s==='wrong').length,0,'Mock right answers should be graded correct');
 assert(!scored.store.has('gateCBT.realDaily.v1.2026-11-25.changes'),'Reader changed exam storage');
 
+const firstMCQ=paper.questions.find(q=>q.type==='MCQ'&&q.officialKey!=='MTA');
+const firstNAT=paper.questions.find(q=>q.type==='NAT'&&q.id!==firstMCQ.id);
+assert(firstMCQ&&firstNAT);
+const modified=mockAttempt();
+modified.answers[firstMCQ.id]='Z';
+delete modified.answers[firstNAT.id];
+const mistakes=fakeUI(modified);
+await mistakes.ready;
+const statuses=vm.runInContext('state.rows.map(x=>x.r.status)',mistakes.context);
+assert.equal(statuses.filter(v=>v==='wrong').length,1);
+assert.equal(statuses.filter(v=>v==='skipped').length,1);
+mistakes.filterButtons.find(b=>b.dataset.filter==='wrong').onclick();
+assert.equal(vm.runInContext('state.visible.length',mistakes.context),1);
+assert(mistakes.el('#position').textContent.includes('Question 1 of 1'));
+mistakes.filterButtons.find(b=>b.dataset.filter==='skipped').onclick();
+assert.equal(vm.runInContext('state.visible.length',mistakes.context),1);
+assert.equal(vm.runInContext('state.visible[0].q.type',mistakes.context),'NAT');
+
+
 // Check that clicking progressive-mode and revealing a step does not modify saved answers.
 scored.el('#stepMode').onclick();
 assert(scored.el('#solutionBody').innerHTML.includes('hidden-step'));
