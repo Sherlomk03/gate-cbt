@@ -11,6 +11,52 @@ mjx-container[display="true"]{display:block;overflow-x:auto;overflow-y:hidden;ma
 .solution-panel{font-size:15px;line-height:1.8}
 .solution-panel strong{color:#1d375a}
 @media print{mjx-container[display="true"]{overflow:visible;white-space:normal}.math-formula{break-inside:avoid}}
+
+/* Clear solution-reader layout: distinct concept, formula, numbered reasoning and answer. */
+.solution-panel{padding:0;overflow:hidden;background:#fff;border:1px solid #d5dfec;border-radius:13px;margin:20px 0;line-height:1.75}
+.solution-panel>h3{font-size:19px;line-height:1.35;margin:0;padding:17px 20px 0;font-weight:750}
+.solution-readable{display:grid;gap:19px;padding:13px 20px 21px;min-width:0}
+.solution-kicker{display:block;font-size:12px;font-weight:750;letter-spacing:.055em;text-transform:uppercase;color:#526b88;margin-bottom:5px}
+.solution-concept{padding:12px 15px;background:#f3f7fc;border-left:3px solid #5a81b6;border-radius:6px}
+.solution-concept p{margin:2px 0;font-size:16px;font-weight:600;color:#203951}
+.solution-key-equation{min-width:0}
+.solution-equation{max-width:100%;min-width:0;overflow-x:auto;overflow-y:hidden;padding:12px 14px;border:1px solid #dde6f1;border-radius:9px;background:#fafcff;text-align:center;font-size:1.06rem}
+.solution-equation mjx-container[display="true"]{padding:6px 2px!important;margin:0!important}
+.solution-derivation h4{font-size:15px;font-weight:750;margin:0 0 11px;color:#31455e}
+.solution-steps{display:grid;gap:12px;min-width:0}
+.solution-step{display:grid;grid-template-columns:32px minmax(0,1fr);gap:12px;align-items:start;min-width:0}
+.solution-step-number{width:31px;height:31px;display:grid;place-items:center;border-radius:50%;font-size:14px;font-weight:800;background:#e8eef8;color:#254879}
+.solution-step-text{min-width:0;padding:1px 0 13px;border-bottom:1px solid #e9eef5;font-size:16px;line-height:1.8;color:#263b52;overflow-wrap:break-word}
+.solution-step:last-child .solution-step-text{border-bottom:0;padding-bottom:0}
+.solution-step-text p{margin:0 0 9px;max-width:90ch}
+.solution-step-text p:last-child{margin-bottom:0}
+.solution-step-text strong{color:#172b45}
+.solution-step-text mjx-container:not([display]){max-width:100%;overflow-x:auto;overflow-y:hidden;vertical-align:middle}
+.solution-step-text mjx-container[display="true"]{overflow-x:auto;max-width:100%;padding:8px 0!important}
+.solution-final{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:13px 15px;border-top:2px solid #dbe6f2;border-bottom:1px solid #dbe6f2;background:#f6f9fd;border-radius:8px}
+.solution-final>span{display:grid;gap:2px;font-size:15px}
+.solution-final small{color:#586c83;font-size:12px}
+.solution-final>strong{font-size:20px;font-weight:800;color:#173b69;overflow-wrap:anywhere}
+.solution-tip{padding:11px 13px;border-left:3px solid #c5a254;background:#fffbf2;border-radius:5px;font-size:14px}
+.solution-reference{font-size:12px;color:#64748b;margin:0}
+.solution-pending{margin:13px 18px 20px}
+@media(max-width:600px){
+ .solution-panel>h3{padding:15px 13px 0;font-size:18px}
+ .solution-readable{padding:12px 13px 16px;gap:15px}
+ .solution-step{grid-template-columns:27px minmax(0,1fr);gap:9px}
+ .solution-step-number{height:27px;width:27px;font-size:13px}
+ .solution-step-text{font-size:15.5px;line-height:1.72}
+ .solution-equation{padding:10px 7px;font-size:.98rem}
+ .solution-final>strong{font-size:18px}
+ .review-question{padding:12px}
+}
+@media print{
+ .solution-panel{break-inside:auto!important}
+ .solution-step{break-inside:avoid}
+ .solution-key-equation,.solution-final{break-inside:avoid}
+ .solution-equation{overflow:visible}
+}
+
 </style>
 <script>
 window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};
@@ -125,11 +171,32 @@ $('#printReview').onclick=async()=>{el.querySelectorAll('.review-question').forE
 const jump=$('#jumpReview');if(jump)jump.onclick=()=>el.scrollIntoView({behavior:'smooth',block:'start'});
 typesetReviewMath(el);
 }
-function mathProse(t){return esc(t).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')}
-function solutionHTML(q){const sol=q.verifiedSolution;if(!sol||sol.status!=='verified'||!Array.isArray(sol.steps)||!sol.steps.length){return '<p class="solution-pending"><b>Worked solution pending verification.</b> The answer key is available, but a complete derivation has not yet been checked against this exact question.</p>'}
-const formula=sol.mathFormula||sol.formula||'';
-const steps=Array.isArray(sol.mathSteps)&&sol.mathSteps.length?sol.mathSteps:sol.steps;
-return (sol.concept?'<p><b>Concept:</b> '+esc(sol.concept)+'</p>':'')+(formula?'<div class="math-formula"><b>Key formula</b><div>'+esc(formula)+'</div></div>':'')+'<ol class="math-steps">'+steps.map(x=>'<li>'+mathProse(x)+'</li>').join('')+'</ol>'+(sol.examTip?'<p><b>GATE exam tip:</b> '+esc(sol.examTip)+'</p>':'')+(sol.reference?'<p class="small"><b>Source:</b> '+esc(sol.reference)+'</p>':'')
+function mathProse(t){
+// Keep the original verified mathematical content; only add safe emphasis and spacing.
+return esc(String(t??'')).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')
+  .replace(/\n\s*\n/g,'</p><p>').replace(/\n/g,' ');
+}
+function solutionHTML(q){
+ const sol=q.verifiedSolution;
+ if(!sol||sol.status!=='verified'||!Array.isArray(sol.steps)||!sol.steps.length){
+  return '<p class="solution-pending"><b>Worked solution pending verification.</b> The answer key is available, but a complete derivation has not yet been checked against this exact question.</p>';
+ }
+ const formula=sol.mathFormula||sol.formula||'';
+ const steps=Array.isArray(sol.mathSteps)&&sol.mathSteps.length?sol.mathSteps:sol.steps;
+ const equation=String(formula).trim();
+ const displayMath=equation?(equation.startsWith('\\[')?equation:'\\['+equation+'\\]'):'';
+ const label=q.type==='NAT'?'Accepted numerical answer':q.type==='MSQ'?'Correct choices':'Correct choice';
+ const sourceLabel=q.sourceType==='ace_classroom'?'Independently solved answer':'Official GATE answer key';
+ return '<div class="solution-readable">'+
+  (sol.concept?'<section class="solution-concept"><span class="solution-kicker">What to use</span><p>'+esc(sol.concept)+'</p></section>':'')+
+  (displayMath?'<section class="solution-key-equation"><span class="solution-kicker">Key formula / calculation</span><div class="solution-equation">'+esc(displayMath)+'</div></section>':'')+
+  '<section class="solution-derivation"><h4>Step-by-step explanation</h4><div class="solution-steps">'+
+   steps.map((step,i)=>'<div class="solution-step"><span class="solution-step-number" aria-label="Step '+(i+1)+'">'+(i+1)+'</span><div class="solution-step-text"><p>'+mathProse(step)+'</p></div></div>').join('')+
+  '</div></section>'+
+  '<div class="solution-final"><span><b>Final answer</b><small>'+esc(label)+' · '+esc(sourceLabel)+'</small></span><strong>'+esc(q.officialKey)+'</strong></div>'+
+  (sol.examTip?'<aside class="solution-tip"><b>Exam shortcut:</b> '+esc(sol.examTip)+'</aside>':'')+
+  (sol.reference?'<p class="solution-reference">Source: '+esc(sol.reference)+'</p>':'')+
+  '</div>';
 }
 function typesetReviewMath(el){if(window.MathJax?.typesetPromise){window.MathJax.typesetPromise([el]).catch(e=>console.warn('Math typesetting issue:',e))}}
 function syncMistakes(){const p=data.paper,a=data.attempt;try{const K='gateCBT.v2';const main=JSON.parse(localStorage.getItem(K)||'null')||{};main.papers??={};main.attempts??={};main.prior??=[];main.prior=main.prior.filter(x=>x.paperId!==p.id);
