@@ -819,7 +819,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ee_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ee_2022.pdf",
       "pdfPage": 16,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Selecting a semiconductor for high-frequency low/medium-power converters",
+        "mathFormula": "\\[I_{\\rm out}=\\frac{P}{V}=\\frac{100}{20}=5\\ \\mathrm A,\\qquad f_s=200\\ \\mathrm{kHz}\\]",
+        "steps": [
+          "The laptop charger supplies \\(100\\) W at \\(20\\) V, so output current is approximately \\(5\\) A. Its converter switches at a relatively high frequency of \\(200\\) kHz.",
+          "A power MOSFET is a majority-carrier, voltage-controlled device with fast switching suited to this frequency and power level.",
+          "IGBTs and thyristors are generally less suitable for this high switching frequency; power BJTs also require drive current and are slower than power MOSFETs. **Answer: (C), MOSFET.**"
+        ],
+        "verificationBasis": "Individual GATE source screenshot and corresponding official answer key inspected",
+        "reference": "GATE 2022 EE Q22"
+      }
     },
     {
       "id": "2025-EE-Q47",
@@ -843,7 +855,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
       "pdfPage": 35,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Peak current in an ideal inductor fed through an SCR",
+        "mathFormula": "\\[L\\frac{di}{dt}=V_m\\sin\\omega t\\implies i(t)=\\frac{V_m}{\\omega L}(1-\\cos\\omega t),\\quad i_{\\max}=\\frac{2V_m}{\\omega L}=20.71\\ \\mathrm A\\]",
+        "steps": [
+          "At zero firing angle the ideal SCR begins conduction at the positive zero crossing. Set initial current \\(i(0)=0\\).",
+          "The voltage is \\(v(t)=230\\sqrt2\\sin(100\\pi t)\\) V, \\(L=0.1\\) H, and \\(\\omega=100\\pi\\) rad/s. Integrate \\(L\\,di/dt=v(t)\\) to obtain \\(i(t)=(230\\sqrt2/(100\\pi\\cdot0.1))(1-\\cos100\\pi t)\\).",
+          "The maximum occurs at \\(\\omega t=\\pi\\), because \\(1-\\cos\\pi=2\\). Thus \\(i_{\\max}=2(230\\sqrt2)/(100\\pi\\cdot0.1)\\approx\\boxed{20.71\\ \\mathrm A}\\). **Answer: (A).**"
+        ],
+        "verificationBasis": "Individual GATE source screenshot and corresponding official answer key inspected",
+        "reference": "GATE 2025 EE Q47"
+      }
     },
     {
       "id": "2024-EE-Q35",
@@ -867,7 +891,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
       "pdfPage": 29,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Turn-off time of a force-commutated thyristor from capacitor discharge",
+        "mathFormula": "\\[t_{\\rm off}=\\frac{C\\,\\Delta V}{I_L}=\\frac{10\\,\\mu\\mathrm F\\times50\\,\\mathrm V}{10\\,\\mathrm A}=50\\ \\mu\\mathrm s\\]",
+        "steps": [
+          "When auxiliary thyristor \\(\\mathrm{Th}_A\\) is triggered, the precharged \\(10\\,\\mu\\mathrm F\\) commutating capacitor applies reverse bias across the initially conducting main thyristor \\(\\mathrm{Th}_M\\).",
+          "With the constant load current \\(I_L=10\\) A, capacitor voltage changes approximately linearly as \\(dV_C/dt=I_L/C\\).",
+          "The initial reverse-bias voltage is \\(50\\) V. The time for it to fall to zero is \\(t=C V/I=10\\times10^{-6}\\cdot50/10=50\\times10^{-6}\\) s.",
+          "The available turn-off interval is therefore \\(\\boxed{50\\,\\mu\\mathrm s}\\)."
+        ],
+        "verificationBasis": "Individual GATE source screenshot and corresponding official answer key inspected",
+        "reference": "GATE 2024 EE Q35"
+      }
     },
     {
       "id": "2025-EE-Q46",
@@ -891,7 +928,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
       "pdfPage": 34,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Fundamental phase voltage in sinusoidal PWM",
+        "mathFormula": "\\[m_a=\\frac{0.8}{1}=0.8,\\qquad V_{\\phi,1,\\rm rms}=\\frac{m_aV_{dc}}{2\\sqrt2}=\\frac{0.8(600)}{2\\sqrt2}=169.71\\ \\mathrm V\\]",
+        "steps": [
+          "The sinusoidal modulating signals have peak amplitude \\(0.8\\) V. The triangular carrier varies from \\(-1\\) to \\(+1\\) V, so the amplitude modulation index is \\(m_a=0.8/1=0.8\\).",
+          "For a linear-region, two-level three-phase VSI with sinusoidal PWM, fundamental **phase-to-neutral peak voltage** is \\(m_aV_{dc}/2\\).",
+          "The fundamental per-phase RMS value is \\((m_aV_{dc}/2)/\\sqrt2=0.8(600)/(2\\sqrt2)=\\boxed{169.71\\ {\\rm V}}\\). **Answer: (A).**",
+          "The 10 kHz carrier frequency does not enter this fundamental-amplitude calculation; it affects the switching-harmonic spectrum."
+        ],
+        "verificationBasis": "Individual GATE source screenshot and corresponding official answer key inspected",
+        "reference": "GATE 2025 EE Q46"
+      }
     },
     {
       "id": "2022-EE-Q60",
@@ -915,7 +965,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ee_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ee_2022.pdf",
       "pdfPage": 34,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Modulation index from three-phase complex power and current",
+        "mathFormula": "\\[|S|=\\sqrt{4000^2+3000^2}=5000\\ \\mathrm{VA},\\quad V_{\\phi,\\rm rms}=\\frac{|S|}{3I_\\phi}=\\frac{5000}{30}=166.67\\ \\mathrm V,\\quad m_a=\\frac{2\\sqrt2 V_{\\phi,\\rm rms}}{V_{dc}}\\approx0.47\\]",
+        "steps": [
+          "The converter supplies a complex power \\(-4000-j3000\\) VA. Its **magnitude** is \\(|S|=\\sqrt{4000^2+3000^2}=5000\\) VA; the negative sign sets power-flow direction but not apparent-power magnitude.",
+          "At \\(I_\\phi=10\\) A, a balanced three-phase source with per-phase voltage \\(V_{\\phi,\\rm rms}\\) has \\(|S|=3V_{\\phi,\\rm rms}I_\\phi\\). Thus \\(V_{\\phi,\\rm rms}=5000/(3\\cdot10)=166.67\\) V.",
+          "In linear sinusoidal PWM, \\(V_{\\phi,1,\\rm rms}=m_aV_{dc}/(2\\sqrt2)\\), so \\(m_a=2\\sqrt2(166.67)/1000\\approx0.4714\\).",
+          "The rounded modulation index is \\(\\boxed{0.47}\\), within the official accepted NAT range."
+        ],
+        "verificationBasis": "Individual GATE source screenshot and corresponding official answer key inspected",
+        "reference": "GATE 2022 EE Q60"
+      }
     },
     {
       "id": "2023-EE-Q23",
@@ -939,7 +1002,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 19,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Average chopper output voltage from upper- and lower-switch conduction",
+        "mathFormula": "\\[T_s=\\frac1{100\\,\\mathrm{kHz}}=10\\ \\mu\\mathrm s,\\quad V_{\\rm avg}=20\\frac{3}{10}=6\\ \\mathrm V\\]",
+        "steps": [
+          "The switching period is \\(10\\,\\mu\\mathrm s\\). From the original gating diagram, \\(S_1\\) is ON for \\(0\\)–\\(3\\,\\mu\\mathrm s\\), while \\(S_2\\) is ON for \\(5\\)–\\(8\\,\\mu\\mathrm s\\).",
+          "During upper-switch conduction the output is connected to the \\(+20\\) V rail. During lower-switch conduction it is \\(0\\) V. During dead-time intervals the constant positive load current freewheels through the lower antiparallel diode, keeping the output at \\(0\\) V.",
+          "The output sees \\(20\\) V for \\(3\\) of every \\(10\\,\\mu\\mathrm s\\). Therefore \\(V_{\\rm avg}=20(3/10)=\\boxed{6\\ \\mathrm V}\\). **Answer: (B).**"
+        ],
+        "verificationBasis": "Individual GATE source screenshot and corresponding official answer key inspected",
+        "reference": "GATE 2023 EE Q23"
+      }
     },
     {
       "id": "2023-EE-Q26",
@@ -963,7 +1038,19 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 22,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Semiconductor switch combinations for one-polarity blocking and bidirectional conduction",
+        "steps": [
+          "The specification is to block **only positive** \\(V_{PQ}\\) when OFF and allow \\(I\\) in either direction when ON. Examine the paths separately for positive and negative current.",
+          "In (A), the transistor conducts \\(P\\to Q\\) when gated ON, while its antiparallel diode permits \\(Q\\to P\\); when the transistor is OFF, positive \\(V_{PQ}\\) reverse-biases the diode and can be blocked. So (A) qualifies.",
+          "In (D), the main transistor-plus-series-diode path can carry one direction when ON, and the bypass diode supplies the other direction. The resulting OFF-state path also blocks the specified positive voltage.",
+          "The other two configurations include diode orientations that either prevent required one-direction conduction or give an unwanted conduction path for the specified blocking state. **Answers: (A) and (D).**"
+        ],
+        "verificationBasis": "Individual GATE source screenshot and corresponding official answer key inspected",
+        "reference": "GATE 2023 EE Q26"
+      }
     },
     {
       "id": "2024-EE-Q62",
@@ -987,7 +1074,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
       "pdfPage": 45,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Input-current fundamental RMS and total RMS of a semi-converter",
+        "mathFormula": "\\[\\frac{I_{1,\\rm rms}}{I_{\\rm rms}}=\\frac{\\frac{2\\sqrt2}{\\pi}I_d\\cos(\\alpha/2)}{I_d\\sqrt{(\\pi-\\alpha)/\\pi}}\\bigg|_{\\alpha=\\pi/3}=\\frac{3}{\\pi}=0.955\\]",
+        "steps": [
+          "For continuous ripple-free DC load current \\(I_d\\), the AC-side current of a single-phase semi-controlled bridge has positive and negative rectangular pulses of duration \\(\\pi-\\alpha\\), separated by freewheeling intervals.",
+          "Its total RMS is \\(I_{\\rm rms}=I_d\\sqrt{(\\pi-\\alpha)/\\pi}\\). Its fundamental RMS is \\(I_{1,\\rm rms}=(2\\sqrt2/\\pi)I_d\\cos(\\alpha/2)\\).",
+          "With \\(\\alpha=60^\\circ=\\pi/3\\), \\(I_{\\rm rms}=I_d\\sqrt{2/3}\\) and \\(I_{1,\\rm rms}=(2\\sqrt2/\\pi)I_d(\\sqrt3/2)\\).",
+          "Divide to obtain \\(I_{1,\\rm rms}/I_{\\rm rms}=3/\\pi\\approx\\boxed{0.955}\\)."
+        ],
+        "verificationBasis": "Individual GATE source screenshot and corresponding official answer key inspected",
+        "reference": "GATE 2024 EE Q62"
+      }
     },
     {
       "id": "2024-EE-Q63",
@@ -1011,7 +1111,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EE24S8.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EEFinalAnswerKey.pdf",
       "pdfPage": 45,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Peak-to-peak inductor current under square-wave VSI excitation",
+        "mathFormula": "\\[\\Delta i_{\\rm pp}=\\frac{V_{dc}}{L}\\frac{T}{2}=\\frac{100}{0.02}\\frac{1}{2(50)}=50\\ \\mathrm A\\]",
+        "steps": [
+          "In 180° conduction, the full-bridge inverter applies \\(+V_{dc}\\) for half of each cycle and \\(-V_{dc}\\) for the other half to the purely inductive load.",
+          "Because \\(v_L=L\\,di/dt\\), current changes linearly with slope magnitude \\(V_{dc}/L=100/0.02=5000\\) A/s.",
+          "The fundamental period is \\(T=1/50=0.02\\) s. In the positive half-cycle \\(T/2=0.01\\) s, current rises from its minimum to its maximum by \\(\\Delta i=5000(0.01)=50\\) A.",
+          "Thus the peak-to-peak load current is \\(\\boxed{50\\ \\mathrm A}\\)."
+        ],
+        "verificationBasis": "Individual GATE source screenshot and corresponding official answer key inspected",
+        "reference": "GATE 2024 EE Q63"
+      }
     },
     {
       "id": "2026-EE-Q61",
@@ -1035,7 +1148,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EE.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EE_Keys.pdf",
       "pdfPage": 54,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Average diode current with AC sinusoid opposed by a DC source",
+        "mathFormula": "\\[I_{\\rm avg}=\\frac{1}{2\\pi}\\int_{\\pi/6}^{5\\pi/6}\\frac{100\\sin\\theta-50}{10}\\,d\\theta=\\frac{5\\sqrt3}{\\pi}-\\frac53\\approx1.09\\ \\mathrm A\\]",
+        "steps": [
+          "With an ideal diode, current flows only when \\(v_s=100\\sin\\theta>V_{dc}=50\\) V. During conduction, \\(i_D(\\theta)=[100\\sin\\theta-50]/10=10\\sin\\theta-5\\) A.",
+          "The conducting interval is \\(\\theta\\in[\\sin^{-1}0.5,\\pi-\\sin^{-1}0.5]=[\\pi/6,5\\pi/6]\\), and current is zero elsewhere in the \\(2\\pi\\) period.",
+          "Average over the **full** cycle: \\(I_{\\rm avg}=(1/2\\pi)\\int_{\\pi/6}^{5\\pi/6}(10\\sin\\theta-5)\\,d\\theta\\).",
+          "This evaluates to \\((10\\sqrt3-10\\pi/3)/(2\\pi)=5\\sqrt3/\\pi-5/3\\approx\\boxed{1.09\\ \\mathrm A}\\)."
+        ],
+        "verificationBasis": "Individual GATE source screenshot and corresponding official answer key inspected",
+        "reference": "GATE 2026 EE Q61"
+      }
     },
     {
       "id": "2020-EC-S4-Q14",
