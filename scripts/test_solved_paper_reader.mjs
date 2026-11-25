@@ -126,6 +126,12 @@ for(const q of paper.questions){
  if(q.verifiedSolution.mathFormula){formulas++;assert(out.includes('math-card'),'Missing equation card in '+q.id)}
 }
 assert(formulas>=35,'Display math was unexpectedly removed');
+const systemOfEquations=paper.questions[0].verifiedSolution.steps[0];
+const typesetEquations=scored.context.splitSentences(systemOfEquations);
+assert(typesetEquations.includes('worked-math-block'),'Long system of equations was not separated for easy reading');
+assert(typesetEquations.includes('gathered'),'System of equations should be stacked vertically');
+assert(typesetEquations.includes('x_1+2x_2=b_1'),'The original equation was altered');
+assert(html.includes('.worked-math-block'),'Missing readable long-equation styling');
 assert(allSteps>=130,'A significant number of worked steps were lost');
 
 // Paper revision mismatch must never be graded against the wrong question set.
