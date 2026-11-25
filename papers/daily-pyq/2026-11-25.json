@@ -446,7 +446,20 @@
       "pdfPage": 4,
       "imageAuditStatus": "manually_inspected_full_question",
       "sourceType": "official_gate",
-      "officialGatePYQ": true
+      "officialGatePYQ": true,
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Open-circuit voltage of a Thevenin equivalent",
+        "mathFormula": "\\[V_{\\rm Th}=V_C=3.6\\ {\\rm V}\\]",
+        "steps": [
+          "With the output open-circuited, no current flows through the outer \\(4\\,\\Omega\\) resistor, so the output voltage equals the central node voltage \\(V_C\\). Take the bottom wire as ground.",
+          "Let the left upper voltage be \\(V_A\\), the voltage after the 2 V source \\(V_B=V_A+2\\), and the central voltage \\(V_C\\).",
+          "KCL for the left supernode: \\(V_A+(V_B-V_C)/2=1\\). KCL at \\(C\\): \\(V_C/2+(V_C-V_B)/2=2\\).",
+          "Substituting \\(V_B=V_A+2\\), these give \\(V_C=3V_A\\) and \\(2V_C-V_A=6\\); hence \\(V_A=1.2\\) V and \\(V_C=3.6\\) V. **Answer: (C).**"
+        ],
+        "verificationBasis": "Original GATE question image inspected with exact branch/year key",
+        "reference": "GATE 2020 EC Q9"
+      }
     },
     {
       "id": "2020-EC-S4-Q16",
@@ -472,7 +485,19 @@
       "pdfPage": 7,
       "imageAuditStatus": "manually_inspected_full_question",
       "sourceType": "official_gate",
-      "officialGatePYQ": true
+      "officialGatePYQ": true,
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Impedance magnitude and current phase in a series RL circuit",
+        "mathFormula": "\\[|Z|=\\frac{200}{10}=20\\ \\Omega,\\quad X_L=20\\sin\\frac{\\pi}{4}=10\\sqrt2,\\quad L=\\frac{X_L}{5}=2.83\\ {\\rm H}\\]",
+        "steps": [
+          "The source is \\(v(t)=200\\cos5t\\) V and the current is \\(i(t)=10\\cos(5t-\\pi/4)\\) A. The current lags the voltage by \\(45^\\circ\\), consistent with series RL impedance.",
+          "The magnitude is \\(|Z|=V_{\\rm pk}/I_{\\rm pk}=200/10=20\\,\\Omega\\), and the reactance is \\(X_L=|Z|\\sin45^\\circ=10\\sqrt2\\,\\Omega\\).",
+          "Since \\(X_L=\\omega L\\) and \\(\\omega=5\\) rad/s, \\(L=10\\sqrt2/5=2\\sqrt2=\\boxed{2.83\\ {\\rm H}}\\)."
+        ],
+        "verificationBasis": "Original GATE question image inspected with exact branch/year key",
+        "reference": "GATE 2020 EC Q16"
+      }
     },
     {
       "id": "2022-EC-Q38",
@@ -496,7 +521,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ec_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ec_2022.pdf",
       "pdfPage": 31,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "High- and low-frequency limits of a parallel RC impedance locus",
+        "mathFormula": "\\[Z(j\\omega)=R_1+\\frac{R_2}{1+j\\omega R_2C},\\quad Z(0)=R_1+R_2,\\quad Z(\\infty)=R_1\\]",
+        "steps": [
+          "The input sees series \\(R_1\\) followed by \\(R_2\\) in parallel with \\(C\\): \\(Z=R_1+(R_2\\parallel 1/j\\omega C)\\).",
+          "At DC, the capacitor is open and \\(Z(0)=R_1+R_2\\). The graph's right intercept is \\(5\\) kΩ.",
+          "At \\(\\omega\\to\\infty\\), the capacitor is shorted and \\(Z(\\infty)=R_1\\). The graph's left intercept is \\(2\\) kΩ.",
+          "Thus \\(R_1=2\\) kΩ and \\(R_2=5-2=3\\) kΩ. **Answer: (A).**"
+        ],
+        "verificationBasis": "Original GATE question image inspected with exact branch/year key",
+        "reference": "GATE 2022 EC Q38"
+      }
     },
     {
       "id": "2025-EE-Q31",
@@ -520,7 +558,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2025/EE2025.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2025_Key/EE_Keys.pdf",
       "pdfPage": 24,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Maximum percentage error of a homogeneous equivalent-resistance expression",
+        "mathFormula": "\\[R_{\\rm eq}=\\frac{R_1R_2}{R_1+R_2},\\quad R_{\\rm eq}(1.05R_1,1.05R_2)=1.05R_{\\rm eq}(R_1,R_2)\\]",
+        "steps": [
+          "Both resistors \\(100\\,\\Omega\\) and \\(900\\,\\Omega\\) independently have a possible \\(5\\%\\) error.",
+          "The equivalent parallel resistance is monotonically increasing in each resistor; the largest positive error occurs when both are \\(5\\%\\) high, and the largest negative error when both are \\(5\\%\\) low.",
+          "Since the parallel-resistance expression scales linearly if both inputs scale by the same factor, the equivalent resistance also changes by exactly \\(5\\%\\).",
+          "Therefore the maximum percentage error is \\(\\boxed{5\\%}\\)."
+        ],
+        "verificationBasis": "Original GATE question image inspected with exact branch/year key",
+        "reference": "GATE 2025 EE Q31"
+      }
     },
     {
       "id": "2024-EC-Q62",
@@ -544,7 +595,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2024/EC24S7.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2024/ECFinalAnswerKey.pdf",
       "pdfPage": 45,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Thevenin resistance with a dependent voltage source",
+        "mathFormula": "\\[R_{\\rm Th}=\\frac{V_{\\rm test}}{I_{\\rm test}}=\\frac{V}{2V/5}=\\frac52=2.5\\ \\Omega\\]",
+        "steps": [
+          "Maximum power transfer into a resistive load occurs when \\(R_L=R_{\\rm Th}\\). The dependent voltage source must **remain active** when finding \\(R_{\\rm Th}\\).",
+          "Short the independent 50 V source and apply a test voltage \\(V\\) at the load terminals. Let \\(V_B\\) be the junction voltage between the top \\(2\\,\\Omega\\) and \\(3\\,\\Omega\\) resistors, with the load node at \\(V\\).",
+          "KCL at the top junction: \\(V_B/2+(V_B-V)/3=0\\), giving \\(V_B=2V/5\\). The defined controlling voltage is \\(V_x=V-V_B=3V/5\\).",
+          "The dependent source makes its right-hand node voltage \\(V_x=3V/5\\). The test-source current is \\(I_{\\rm test}=(V-V_B)/3+(V-V_x)/2=V/5+V/5=2V/5\\).",
+          "Therefore \\(R_{\\rm Th}=V/I_{\\rm test}=\\boxed{2.5\\ \\Omega}\\), and the optimum load resistance is \\(R_L=2.5\\,\\Omega\\)."
+        ],
+        "verificationBasis": "Original GATE question image inspected with exact branch/year key",
+        "reference": "GATE 2024 EC Q62"
+      }
     },
     {
       "id": "2023-EE-Q64",
@@ -568,7 +633,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 42,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Balanced delta load with series line reactance",
+        "mathFormula": "\\[Z_\\Delta=15-j15\\ \\Omega,\\quad Z_Y=\\frac{Z_\\Delta}{3}=5-j5\\ \\Omega,\\quad Z_{\\rm total}=Z_Y+j10=5+j5\\ \\Omega\\]",
+        "steps": [
+          "At 50 Hz, each delta branch has \\(R=15\\,\\Omega\\) and capacitive reactance \\(X_C=1/(2\\pi f C)\\approx15\\,\\Omega\\). Thus \\(Z_\\Delta=15-j15\\,\\Omega\\).",
+          "Convert the balanced delta to an equivalent star: \\(Z_Y=Z_\\Delta/3=5-j5\\,\\Omega\\). Each line inductor has \\(X_L=2\\pi(50)(31.83\\,\\mathrm{mH})\\approx10\\,\\Omega\\).",
+          "The total per-phase impedance seen by the supply is \\(j10+5-j5=5+j5\\,\\Omega\\). Its magnitude equals \\(|Z_Y|=\\sqrt{5^2+5^2}\\,\\Omega\\).",
+          "Therefore the **magnitude** of the receiving-end phase voltage equals the supply phase voltage. The line-to-line voltage at the balanced load is also unchanged in magnitude: \\(\\boxed{|V_{AB}|=415\\ {\\rm V}}\\)."
+        ],
+        "verificationBasis": "Original GATE question image inspected with exact branch/year key",
+        "reference": "GATE 2023 EE Q64"
+      }
     },
     {
       "id": "2023-EE-Q39",
@@ -592,7 +670,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ee_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EE_ANS_GATE2023.pdf",
       "pdfPage": 30,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Wattmeter reading and phase angle for a leading three-phase load",
+        "mathFormula": "\\[W=V_{YB}I_R\\cos(90^\\circ+\\phi)=-400,\\quad 400(2)(-\\sin\\phi)=-400\\]",
+        "steps": [
+          "Take the R-phase voltage as angle \\(0^\\circ\\). With R-Y-B phase sequence, the line voltage \\(V_{YB}=400\\angle-90^\\circ\\) V. The wattmeter current coil carries \\(I_R=2\\) A.",
+          "For a load with current leading its R-phase voltage by \\(\\phi\\), \\(I_R=2\\angle+\\phi\\) A, so the wattmeter reads \\(W=400(2)\\cos(-90^\\circ-\\phi)=-800\\sin\\phi\\).",
+          "Given \\(-800\\sin\\phi=-400\\), we get \\(\\sin\\phi=0.5\\) and \\(\\phi=30^\\circ\\).",
+          "Hence the load power factor is \\(\\cos30^\\circ=\\sqrt3/2\\approx\\boxed{0.866\\ \\text{leading}}\\). **Answer: (C).**"
+        ],
+        "verificationBasis": "Original GATE question image inspected with exact branch/year key",
+        "reference": "GATE 2023 EE Q39"
+      }
     },
     {
       "id": "2023-EC-Q35",
@@ -616,7 +707,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2023/ec_2023.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2023/EC_ANS_GATE2023.pdf",
       "pdfPage": 23,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Inductor-current continuity and natural response after switching",
+        "mathFormula": "\\[i_L(0^-)=\\frac{2}{1}=2\\ {\\rm A},\\qquad |v_R(0^+)|=(2\\ \\Omega)(2\\ {\\rm A})=4\\ {\\rm V}\\]",
+        "steps": [
+          "With S closed for a long time, the 1 H inductor behaves as a short circuit at DC. The parallel \\(2\\,\\Omega\\) resistor is bypassed; therefore the current through the \\(1\\,\\Omega\\) series resistor and inductor is \\(2/1=2\\) A.",
+          "After S opens, the source and \\(1\\,\\Omega\\) resistor are disconnected. The inductor discharges through the parallel \\(2\\,\\Omega\\) resistor. Inductor current cannot change instantaneously: \\(i_L(0^+)=2\\) A.",
+          "The initial resistor-voltage magnitude is \\(2\\,\\Omega\\times2\\,\\mathrm A=4\\) V, and then it decays as \\(e^{-(R/L)t}=e^{-2t}\\).",
+          "Thus the maximum magnitude is at \\(t=0^+\\): \\(\\boxed{4\\ \\mathrm V}\\)."
+        ],
+        "verificationBasis": "Original GATE question image inspected with exact branch/year key",
+        "reference": "GATE 2023 EC Q35"
+      }
     },
     {
       "id": "2022-EC-Q54",
@@ -640,7 +744,21 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ec_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ec_2022.pdf",
       "pdfPage": 46,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Finding port current from a measured Thevenin characteristic",
+        "mathFormula": "\\[V_{\\rm Th}=5\\ {\\rm V},\\quad R_{\\rm Th}=\\frac{5-4}{4\\ {\\rm mA}}=250\\ \\Omega,\\quad I_2=4.0\\ {\\rm mA}\\]",
+        "steps": [
+          "The graph of output voltage \\(V_2\\) versus delivered current \\(-I_2\\) gives an open-circuit voltage \\(V_{\\rm Th}=5\\) V and a \\(1\\) V drop for \\(4\\) mA delivered. Therefore \\(R_{\\rm Th}=1/(0.004)=250\\,\\Omega\\).",
+          "Since \\(I_2\\) is defined **entering** the network, its port relation is \\(V_2=5+250I_2\\), where \\(I_2\\) is in amperes.",
+          "The replacement load consists of \\(1\\,\\mathrm{k}\\Omega\\) in series with a \\(10\\) V source (positive at the top). Its current leaving the top port node is \\((V_2-10)/1000\\), which equals \\(-I_2\\).",
+          "Hence \\(I_2+(V_2-10)/1000=0\\). Substitute \\(V_2=5+250I_2\\): \\(1000I_2+5+250I_2-10=0\\), so \\(I_2=5/1250=0.004\\) A.",
+          "Therefore \\(\\boxed{I_2=4.0\\ {\\rm mA}}\\)."
+        ],
+        "verificationBasis": "Original GATE question image inspected with exact branch/year key",
+        "reference": "GATE 2022 EC Q54"
+      }
     },
     {
       "id": "2022-EE-Q21",
@@ -664,7 +782,20 @@
       "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2022/ee_2022.pdf",
       "keyUrl": "https://gate2026.iitg.ac.in/doc/download/Answer_keys2022/ee_2022.pdf",
       "pdfPage": 16,
-      "imageAuditStatus": "automatic_boundary_needs_visual_review"
+      "imageAuditStatus": "automatic_boundary_needs_visual_review",
+      "verifiedSolution": {
+        "status": "verified",
+        "concept": "Unbalanced star load with zero neutral displacement",
+        "mathFormula": "\\[I_A+I_B+I_C=0,\\quad I_A=10\\angle0^\\circ,\\quad I_B=5\\angle(-180^\\circ)\\implies Z_C=20\\angle(-60^\\circ)\\ \\Omega\\]",
+        "steps": [
+          "No voltage between \\(n\\) and \\(n'\\) means the load neutral has no displacement. Apply KCL at the star point: \\(I_A+I_B+I_C=0\\).",
+          "Using the ABC phase sequence and \\(V_{\\rm ph}=100\\) V, choose \\(E_A=100\\angle0^\\circ\\), \\(E_B=100\\angle-120^\\circ\\), and \\(E_C=100\\angle120^\\circ\\).",
+          "With \\(Z_A=10\\,\\Omega\\), \\(I_A=100/10=10\\angle0^\\circ\\) A. With \\(Z_B=20\\angle60^\\circ\\,\\Omega\\), \\(I_B=(100\\angle-120^\\circ)/(20\\angle60^\\circ)=5\\angle-180^\\circ=-5\\) A.",
+          "Therefore \\(I_C=-(10-5)=-5=5\\angle180^\\circ\\) A. It follows that \\(Z_C=E_C/I_C=(100\\angle120^\\circ)/(5\\angle180^\\circ)=\\boxed{20\\angle-60^\\circ\\ \\Omega}\\). **Answer: (C).**"
+        ],
+        "verificationBasis": "Original GATE question image inspected with exact branch/year key",
+        "reference": "GATE 2022 EE Q21"
+      }
     },
     {
       "id": "2022-EE-Q22",
