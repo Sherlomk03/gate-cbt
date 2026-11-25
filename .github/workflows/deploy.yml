@@ -14,6 +14,8 @@ on:
       - 'index.html'
       - 'five-years.html'
       - 'daily-pyq.html'
+      - 'solved-paper.html'
+      - 'scripts/test_solved_paper_reader.mjs'
       - 'quick-revision.html'
       - 'revision-library.html'
       - 'revision-engine.js'
@@ -49,6 +51,8 @@ jobs:
         run: node scripts/test_quick_revision.mjs
       - name: Check all 40 worked solutions render clearly with MathJax and mobile formatting
         run: node scripts/test_solution_readability.mjs
+      - name: Test focused post-exam solution reader, filtering and protected attempts
+        run: node scripts/test_solved_paper_reader.mjs
       - name: Verify full topic library, daily corrective learning and browser data safety
         run: node scripts/test_revision_library.mjs
       - uses: actions/configure-pages@v5
