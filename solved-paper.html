@@ -111,6 +111,10 @@ h1{font-size:27px;line-height:1.2;letter-spacing:-.035em;margin:5px 0 6px}
  .source-image{max-width:650px;max-height:none}.step{break-inside:avoid}.math-card{break-inside:avoid}
  .step.hidden-step{display:grid}.solution-body{padding:0}.panel-head{padding:0 0 8px}.score-strip{padding:0;border:0}
 }
+
+.worked-math-block{background:#f5f8fd;border:1px solid #e0e9f6;border-radius:8px;margin:7px 0 13px;padding:10px 11px;max-width:100%;overflow-x:auto;overflow-y:hidden;text-align:center}
+.worked-math-block mjx-container[display="true"]{max-width:100%;overflow-x:auto;margin:0!important;padding:7px 0!important}
+
 </style>
 <script>
 window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']],processEscapes:true},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};
@@ -200,17 +204,45 @@ async function getJSON(relative){
  for(const u of urls){try{const r=await fetch(u+'?v='+Date.now(),{cache:'no-store'});if(r.ok)return await r.json()}catch(e){console.warn('Source unavailable',u,e)}}
  throw Error('Could not load '+relative);
 }
+function readableMarkup(value){
+ return esc(value).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+}
+function mathematicalBlock(token){
+ const display=token.startsWith('\\[');
+ const core=token.slice(2,-2).trim();
+ const terms=core.split(/,\\\s*/);
+ // Group long original systems of equations vertically without changing their terms.
+ if(terms.length>=3&&terms.every(x=>x.includes('='))){
+  return '\\[\\begin{gathered}'+terms.join('\\\\')+'\\end{gathered}\\]';
+ }
+ if(display)return token;
+ if(core.length>76&&(core.match(/=/g)||[]).length>=2)return '\\['+core+'\\]';
+ return null;
+}
 function splitSentences(text){
  const place=[];
  const source=String(text||'').replace(/\\\[[\s\S]*?\\\]|\\\([\s\S]*?\\\)/g,m=>{
   const key='__MATH'+place.length+'__';place.push(m);return key;
  });
- // Break dense multi-sentence GATE reasoning into readable lines, preserving math.
+ // Keep mathematical substrings intact while breaking dense prose into sentences.
  const sentences=source.replace(/([.!?])\s+(?=[A-Z])/g,'$1\n').split(/\n+/).filter(Boolean);
  return sentences.map(sentence=>{
-  let safe=esc(sentence.trim()).replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
-  safe=safe.replace(/__MATH(\d+)__/g,(_,n)=>esc(place[Number(n)]||''));
-  return '<p>'+safe+'</p>';
+  let chunks=[],acc='',last=0;
+  for(const match of sentence.matchAll(/__MATH(\d+)__/g)){
+   const raw=place[Number(match[1])]||'';
+   const block=mathematicalBlock(raw);
+   acc+=sentence.slice(last,match.index);
+   if(block){
+    if(acc.trim())chunks.push('<p>'+readableMarkup(acc.trim())+'</p>');
+    chunks.push('<div class="worked-math-block">'+esc(block)+'</div>');
+    acc='';
+   }else acc+=raw;
+   last=match.index+match[0].length;
+  }
+  acc+=sentence.slice(last);
+  // Don't create a standalone full stop left behind after moving an equation.
+  if(acc.trim()&&!/^[.;:,]+$/.test(acc.trim()))chunks.push('<p>'+readableMarkup(acc.trim())+'</p>');
+  return chunks.join('');
  }).join('');
 }
 function typeset(node){
