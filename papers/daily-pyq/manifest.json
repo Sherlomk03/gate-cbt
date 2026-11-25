@@ -3,6 +3,12 @@
   "startDate": "2026-11-21",
   "papers": [
     {
+      "date": "2026-11-29",
+      "id": "gate-daily-pyq-2026-11-29",
+      "file": "2026-11-29.json",
+      "repeatCount": 30
+    },
+    {
       "date": "2026-11-28",
       "id": "gate-daily-pyq-2026-11-28",
       "file": "2026-11-28.json",
